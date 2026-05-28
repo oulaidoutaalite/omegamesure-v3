@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { AdminSidebar } from '@/components/admin/AdminSidebar'
 import { AdminTopbar } from '@/components/admin/AdminTopbar'
 import { SessionProvider } from '@/components/providers/SessionProvider'
+import { ToastProvider } from '@/components/providers/ToastProvider'
 import { requireAuth } from '@/lib/auth-helpers'
 
 /**
@@ -25,6 +26,7 @@ export default async function AdminAuthenticatedLayout({ children }: { children:
           <main className="flex-1 p-6 md:p-8">{children}</main>
         </div>
       </div>
+      <ToastProvider />
     </SessionProvider>
   )
 }

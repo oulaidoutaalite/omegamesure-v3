@@ -39,14 +39,14 @@ const groups: NavGroup[] = [
     title: 'Catalogue',
     items: [
       { label: 'Produits',         href: '/admin/products',       icon: IconPackage,    soon: true },
-      { label: 'Catégories',       href: '/admin/categories',     icon: IconList,       soon: true },
+      { label: 'Catégories',       href: '/admin/categories',     icon: IconList },
       { label: 'Médias',           href: '/admin/media',          icon: IconPhoto,      soon: true },
     ],
   },
   {
     title: 'Site public',
     items: [
-      { label: 'Navigation',       href: '/admin/navigation',     icon: IconList,       soon: true },
+      { label: 'Navigation',       href: '/admin/navigation',     icon: IconList },
       { label: 'Page d\'accueil',  href: '/admin/homepage',       icon: IconHome,       soon: true },
       { label: 'Configuration',    href: '/admin/settings',       icon: IconSettings,   soon: true },
       { label: 'Langues',          href: '/admin/languages',      icon: IconWorld,      soon: true },
