@@ -1,0 +1,26 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "search": "Search",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "back": "Back"
+  },
+  "cta": {
+    "requestQuote": "Request a quote",
+    "discover": "Discover",
+    "contactUs": "Contact us"
+  },
+  "navbar": {
+    "home": "Home",
+    "labEquipment": "Lab & biomedical equipment",
+    "balances": "Scales & balances",
+    "consumables": "Consumables",
+    "metrology": "Metrology",
+    "consulting": "Consulting",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

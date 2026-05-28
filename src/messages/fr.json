@@ -1,0 +1,26 @@
+{
+  "common": {
+    "loading": "Chargement…",
+    "search": "Rechercher",
+    "submit": "Envoyer",
+    "cancel": "Annuler",
+    "back": "Retour"
+  },
+  "cta": {
+    "requestQuote": "Demander un devis",
+    "discover": "Découvrir",
+    "contactUs": "Nous contacter"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "labEquipment": "Équipements labo & biomédicales",
+    "balances": "Balances & bascules",
+    "consumables": "Consommables",
+    "metrology": "Métrologie",
+    "consulting": "Consulting",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "Tous droits réservés"
+  }
+}

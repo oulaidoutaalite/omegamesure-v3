@@ -1,0 +1,451 @@
+// ═════════════════════════════════════════════════════════════════════════════
+// Omega Mesure v3 — Prisma schema
+// PostgreSQL. All admin-managed content lives in DB; site renders from DB.
+// ═════════════════════════════════════════════════════════════════════════════
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ENUMS
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+}
+
+enum QuoteStatus {
+  NEW
+  IN_PROGRESS
+  QUOTE_SENT
+  WON
+  LOST
+}
+
+enum ContactStatus {
+  NEW
+  READ
+  REPLIED
+  ARCHIVED
+}
+
+enum PostStatus {
+  DRAFT
+  PUBLISHED
+  SCHEDULED
+}
+
+enum RequestType {
+  EQUIPMENT
+  BALANCE
+  CONSUMABLE
+  METROLOGY
+  CONSULTING
+  OTHER
+}
+
+enum Sector {
+  PHARMA
+  INDUSTRY
+  BIOMEDICAL
+  AGRO
+  RESEARCH
+  LOGISTICS
+  OTHER
+}
+
+enum MediaType {
+  IMAGE
+  DOCUMENT
+  VIDEO
+  OTHER
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// AUTH & USERS
+// Credentials provider (NextAuth) + JWT strategy. No Account/Session tables
+// needed unless OAuth providers are added later.
+// ─────────────────────────────────────────────────────────────────────────────
+
+model User {
+  id          String    @id @default(cuid())
+  email       String    @unique
+  password    String                          // bcrypt hash
+  name        String?
+  avatarUrl   String?
+  role        Role      @default(EDITOR)
+  isActive    Boolean   @default(true)
+  lastLoginAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  uploadedMedia Media[]
+  activities    ActivityLog[]
+  blogPosts     BlogPost[]
+  assignedQuotes QuoteRequest[]
+
+  @@index([role])
+}
+
+model ActivityLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action     String                          // CREATE | UPDATE | DELETE | LOGIN | LOGOUT | ...
+  entityType String                          // "Product" | "QuoteRequest" | ...
+  entityId   String?
+  metadata   Json?
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+
+  @@index([userId])
+  @@index([entityType, entityId])
+  @@index([createdAt])
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// NAVIGATION — navbar items (configurable order + visibility, optional submenu)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model NavItem {
+  id           String   @id @default(cuid())
+  label        String                        // default-locale label
+  slug         String   @unique              // URL segment, e.g. "equipements-labo"
+  icon         String?                       // Tabler icon name (e.g. "IconFlask")
+  href         String?                       // override URL (null = computed from slug)
+  order        Int      @default(0)
+  isPublished  Boolean  @default(true)
+  isCta        Boolean  @default(false)      // marks the "Demander un devis" CTA button
+  translations Json?                         // { ar: { label }, en: { label } }
+
+  // self-relation for sub-menus
+  parentId String?
+  parent   NavItem?  @relation("NavTree", fields: [parentId], references: [id], onDelete: Cascade)
+  children NavItem[] @relation("NavTree")
+
+  // categories bound to this nav item (typically 1 per top-level item)
+  categories Category[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([order])
+  @@index([parentId])
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CATEGORIES & SUB-CATEGORIES
+// One Category typically maps 1:1 to a top-level NavItem (Équipements labo,
+// Balances, Consommables, Métrologie, Consulting, …).
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Category {
+  id           String  @id @default(cuid())
+  name         String                          // default-locale name
+  slug         String  @unique
+  description  String?
+  icon         String?                         // Tabler icon name
+  color        String?                         // hex / token (#185FA5, "teal", …)
+  heroImageUrl String?
+  order        Int     @default(0)
+  isPublished  Boolean @default(true)
+  translations Json?
+
+  navItemId String?
+  navItem   NavItem? @relation(fields: [navItemId], references: [id], onDelete: SetNull)
+
+  subCategories SubCategory[]
+  products      Product[]
+
+  // SEO
+  metaTitle       String?
+  metaDescription String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([order])
+}
+
+model SubCategory {
+  id            String  @id @default(cuid())
+  name          String
+  slug          String
+  description   String?
+  icon          String?
+  imageUrl      String?
+  order         Int     @default(0)
+  isAutresSlot  Boolean @default(false)        // marks the "Autres" sub-category
+  isPublished   Boolean @default(true)
+  translations  Json?
+
+  categoryId String
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  products Product[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([categoryId, slug])
+  @@index([order])
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PRODUCTS
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Product {
+  id               String   @id @default(cuid())
+  name             String
+  slug             String   @unique
+  shortDescription String?
+  description      String?
+  brand            String?
+  model            String?
+
+  price    Decimal? @db.Decimal(10, 2)
+  currency String   @default("MAD")
+
+  // Media — images stored as JSON array of { url, alt, isPrimary, order }
+  // datasheetUrl points to a PDF (Media.url or external URL).
+  images       Json?
+  datasheetUrl String?
+
+  categoryId    String?
+  category      Category?    @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  subCategoryId String?
+  subCategory   SubCategory? @relation(fields: [subCategoryId], references: [id], onDelete: SetNull)
+
+  isPublished Boolean   @default(false)
+  isFeatured  Boolean   @default(false)
+  publishedAt DateTime?
+
+  // SEO
+  metaTitle       String?
+  metaDescription String?
+
+  // i18n — { ar: { name, description, shortDescription }, en: {...} }
+  translations Json?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([categoryId])
+  @@index([subCategoryId])
+  @@index([isPublished])
+  @@index([isFeatured])
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// QUOTE REQUESTS — `/demander-un-devis`
+// Workflow: NEW → IN_PROGRESS → QUOTE_SENT → WON | LOST
+// ─────────────────────────────────────────────────────────────────────────────
+
+model QuoteRequest {
+  id        String @id @default(cuid())
+  reference String @unique // app-generated "OM-2026-0001"
+
+  // Submitter
+  fullName String
+  company  String?
+  email    String
+  phone    String?
+
+  // Request details
+  requestType RequestType
+  sector      Sector?
+  quantity    String? // free-form "10 unités", "~50kg/an"
+  deadline    String? // free-form "avant juin 2026"
+  description String  @db.Text
+
+  // Optional context
+  productId String? // if launched from a product page (no FK to keep history if product deleted)
+  locale    String  @default("fr")
+
+  // Workflow
+  status        QuoteStatus @default(NEW)
+  internalNotes String?     @db.Text
+  assignedToId  String?
+  assignedTo    User?       @relation(fields: [assignedToId], references: [id], onDelete: SetNull)
+
+  // Reply tracking
+  emailSentAt    DateTime?
+  emailReplyText String?   @db.Text
+  closedAt       DateTime?
+
+  // Metadata
+  ipAddress String?
+  userAgent String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@index([createdAt])
+  @@index([email])
+  @@index([assignedToId])
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CONTACT MESSAGES — `/contact`
+// ─────────────────────────────────────────────────────────────────────────────
+
+model ContactMessage {
+  id      String  @id @default(cuid())
+  name    String
+  email   String
+  phone   String?
+  subject String?
+  message String  @db.Text
+
+  status      ContactStatus @default(NEW)
+  repliedAt   DateTime?
+  replyText   String?       @db.Text
+  archivedAt  DateTime?
+
+  ipAddress String?
+  userAgent String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SITE CONFIG — flexible key/value store
+// Categories: "general" | "branding" | "social" | "seo" | "quoteForm" |
+//             "homepage" | "contact"
+// ─────────────────────────────────────────────────────────────────────────────
+
+model SiteConfig {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  category  String?
+  value     Json     // flexible: string | number | object | array
+  label     String?  // human-readable label for the admin UI
+  description String?
+  updatedAt DateTime @updatedAt
+
+  @@index([category])
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MEDIA LIBRARY
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Media {
+  id           String    @id @default(cuid())
+  filename     String                          // stored filename (hashed/unique)
+  originalName String                          // user-provided filename
+  url          String                          // public URL (/uploads/... or external)
+  type         MediaType @default(IMAGE)
+  mimeType     String
+  size         Int                             // bytes
+  width        Int?
+  height       Int?
+  alt          String?
+  folder       String?                         // logical group: "products", "hero", "icons"
+  tags         String[]
+
+  uploadedById String?
+  uploadedBy   User?   @relation(fields: [uploadedById], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+
+  @@index([folder])
+  @@index([type])
+  @@index([uploadedById])
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// I18N — locales + static translation strings
+// Strategy:
+//   - Static UI strings (navbar, footer, common buttons) live in Translation
+//   - Content-model field translations live in each model's `translations` Json
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Locale {
+  id         String  @id @default(cuid())
+  code       String  @unique                   // "fr" | "ar" | "en"
+  name       String                            // English name: "French", "Arabic"
+  nativeName String                            // "Français", "العربية"
+  isDefault  Boolean @default(false)
+  isActive   Boolean @default(true)
+  isRtl      Boolean @default(false)
+  order      Int     @default(0)
+}
+
+model Translation {
+  id        String   @id @default(cuid())
+  namespace String                              // "navbar" | "footer" | "home" | "common"
+  key       String                              // dotted, e.g. "cta.requestQuote"
+  locale    String                              // "fr" | "ar" | "en"
+  value     String   @db.Text
+  updatedAt DateTime @updatedAt
+
+  @@unique([namespace, key, locale])
+  @@index([locale])
+  @@index([namespace])
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BLOG / ACTUALITÉS (optional scaffold)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model BlogCategory {
+  id           String  @id @default(cuid())
+  name         String
+  slug         String  @unique
+  description  String?
+  translations Json?
+  order        Int     @default(0)
+
+  posts BlogPost[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model BlogPost {
+  id            String  @id @default(cuid())
+  title         String
+  slug          String  @unique
+  excerpt       String?
+  content       String  @db.Text                // Tiptap JSON serialized
+  coverImageUrl String?
+
+  authorId String?
+  author   User?   @relation(fields: [authorId], references: [id], onDelete: SetNull)
+
+  categoryId String?
+  category   BlogCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+
+  status      PostStatus @default(DRAFT)
+  publishedAt DateTime?
+  scheduledAt DateTime?
+
+  // SEO
+  metaTitle       String?
+  metaDescription String?
+
+  translations Json?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@index([publishedAt])
+  @@index([categoryId])
+}

@@ -1,0 +1,26 @@
+{
+  "common": {
+    "loading": "جارٍ التحميل…",
+    "search": "بحث",
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "back": "رجوع"
+  },
+  "cta": {
+    "requestQuote": "طلب عرض سعر",
+    "discover": "اكتشف",
+    "contactUs": "اتصل بنا"
+  },
+  "navbar": {
+    "home": "الرئيسية",
+    "labEquipment": "معدات المختبر والطبية",
+    "balances": "الموازين والميزانيات",
+    "consumables": "المستهلكات",
+    "metrology": "المعايرة",
+    "consulting": "الاستشارات",
+    "contact": "اتصل بنا"
+  },
+  "footer": {
+    "rights": "جميع الحقوق محفوظة"
+  }
+}
