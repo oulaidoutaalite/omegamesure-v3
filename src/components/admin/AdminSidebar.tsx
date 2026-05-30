@@ -48,7 +48,7 @@ const groups: NavGroup[] = [
     items: [
       { label: 'Navigation',       href: '/admin/navigation',     icon: IconList },
       { label: 'Page d\'accueil',  href: '/admin/homepage',       icon: IconHome,       soon: true },
-      { label: 'Configuration',    href: '/admin/settings',       icon: IconSettings,   soon: true },
+      { label: 'Configuration',    href: '/admin/config',         icon: IconSettings },
       { label: 'Langues',          href: '/admin/languages',      icon: IconWorld,      soon: true },
     ],
   },
@@ -68,7 +68,7 @@ const groups: NavGroup[] = [
   {
     title: 'Administration',
     items: [
-      { label: 'Utilisateurs',     href: '/admin/users',          icon: IconUsers,       soon: true, superOnly: true },
+      { label: 'Utilisateurs',     href: '/admin/users',          icon: IconUsers,       superOnly: true },
       { label: 'Journal d\'activité', href: '/admin/activity',    icon: IconBriefcase,   soon: true },
     ],
   },
