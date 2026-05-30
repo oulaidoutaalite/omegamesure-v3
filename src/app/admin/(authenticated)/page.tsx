@@ -4,6 +4,7 @@ import {
   IconPackage,
   IconUsers,
 } from '@tabler/icons-react'
+import Link from 'next/link'
 
 import { db } from '@/lib/db'
 import { requireAuth } from '@/lib/auth-helpers'
@@ -95,19 +96,22 @@ export default async function DashboardPage() {
             {recentQuotes.map((q) => {
               const s = statusLabels[q.status] ?? { label: q.status, className: 'bg-muted text-foreground' }
               return (
-                <li key={q.id} className="flex items-center justify-between gap-4 px-5 py-3">
-                  <div className="min-w-0">
-                    <div className="truncate text-sm font-medium">
-                      {q.company ?? q.fullName} ·{' '}
-                      <span className="text-muted-foreground">{q.email}</span>
+                <li key={q.id}>
+                  <Link href={`/admin/quotes/${q.id}`}
+                        className="flex items-center justify-between gap-4 px-5 py-3 hover:bg-accent/40">
+                    <div className="min-w-0">
+                      <div className="truncate text-sm font-medium">
+                        {q.company ?? q.fullName} ·{' '}
+                        <span className="text-muted-foreground">{q.email}</span>
+                      </div>
+                      <div className="text-xs text-muted-foreground">
+                        {q.reference} · {q.requestType}
+                      </div>
                     </div>
-                    <div className="text-xs text-muted-foreground">
-                      {q.reference} · {q.requestType}
-                    </div>
-                  </div>
-                  <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-medium ${s.className}`}>
-                    {s.label}
-                  </span>
+                    <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-medium ${s.className}`}>
+                      {s.label}
+                    </span>
+                  </Link>
                 </li>
               )
             })}
@@ -115,9 +119,23 @@ export default async function DashboardPage() {
         )}
       </section>
 
-      <section className="rounded-xl border border-dashed border-border bg-muted/30 p-6 text-sm text-muted-foreground">
-        🚧 Les modules CRUD (Produits, Catégories, Médias, Devis, Configuration…)
-        seront implémentés dans les prochaines étapes. Le squelette d&apos;auth + sidebar est prêt.
+      <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <Link href="/admin/products"   className="rounded-xl border border-border bg-card p-4 hover:bg-accent">
+          <div className="text-xs uppercase text-muted-foreground">Catalogue</div>
+          <div className="mt-1 text-sm font-semibold">Gérer les produits →</div>
+        </Link>
+        <Link href="/admin/categories" className="rounded-xl border border-border bg-card p-4 hover:bg-accent">
+          <div className="text-xs uppercase text-muted-foreground">Structure</div>
+          <div className="mt-1 text-sm font-semibold">Catégories & sous-cats →</div>
+        </Link>
+        <Link href="/admin/quotes"     className="rounded-xl border border-border bg-card p-4 hover:bg-accent">
+          <div className="text-xs uppercase text-muted-foreground">Commercial</div>
+          <div className="mt-1 text-sm font-semibold">Traiter les devis →</div>
+        </Link>
+        <Link href="/admin/media"      className="rounded-xl border border-border bg-card p-4 hover:bg-accent">
+          <div className="text-xs uppercase text-muted-foreground">Bibliothèque</div>
+          <div className="mt-1 text-sm font-semibold">Médias →</div>
+        </Link>
       </section>
     </div>
   )

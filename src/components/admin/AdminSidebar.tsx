@@ -55,8 +55,8 @@ const groups: NavGroup[] = [
   {
     title: 'CRM',
     items: [
-      { label: 'Devis',            href: '/admin/quotes',         icon: IconFileInvoice, soon: true },
-      { label: 'Messages contact', href: '/admin/messages',       icon: IconMail,        soon: true },
+      { label: 'Devis',            href: '/admin/quotes',         icon: IconFileInvoice },
+      { label: 'Messages contact', href: '/admin/messages',       icon: IconMail },
     ],
   },
   {
