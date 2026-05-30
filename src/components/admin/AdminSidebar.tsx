@@ -38,9 +38,9 @@ const groups: NavGroup[] = [
   {
     title: 'Catalogue',
     items: [
-      { label: 'Produits',         href: '/admin/products',       icon: IconPackage,    soon: true },
+      { label: 'Produits',         href: '/admin/products',       icon: IconPackage },
       { label: 'Catégories',       href: '/admin/categories',     icon: IconList },
-      { label: 'Médias',           href: '/admin/media',          icon: IconPhoto,      soon: true },
+      { label: 'Médias',           href: '/admin/media',          icon: IconPhoto },
     ],
   },
   {
