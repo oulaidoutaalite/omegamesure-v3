@@ -6,45 +6,58 @@ import {
   IconCircleCheck,
   IconFlask,
   IconHome,
-  IconList,
   IconPackage,
   IconRuler,
   IconScale,
 } from '@tabler/icons-react'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 
 import { Container } from '@/components/public/Container'
 import { Button } from '@/components/ui/button'
+import { defaultLocale, type Locale } from '@/i18n'
 import { db } from '@/lib/db'
+import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
 import { loadAllConfig } from '@/lib/site-config'
-import { cn } from '@/lib/utils'
 
 export const dynamic = 'force-dynamic'
 
 const ICONS: Record<string, typeof IconFlask> = {
-  'IconFlask': IconFlask,
-  'IconScale': IconScale,
-  'IconRuler': IconRuler,
-  'IconBriefcase': IconBriefcase,
-  'IconPackage': IconPackage,
-  'IconHome': IconHome,
+  IconFlask, IconScale, IconRuler, IconBriefcase, IconPackage, IconHome,
 }
 
-export default async function HomePage() {
-  const [categories, productCount, config] = await Promise.all([
+function withLocale(path: string, locale: Locale): string {
+  if (locale === defaultLocale) return path
+  if (path === '/') return `/${locale}`
+  return `/${locale}${path}`
+}
+
+export default async function HomePage({
+  params,
+}: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params
+  setRequestLocale(locale)
+
+  const [categories, productCount, config, t] = await Promise.all([
     db.category.findMany({
       where: { isPublished: true },
       orderBy: { order: 'asc' },
       take: 8,
-      select: { id: true, name: true, slug: true, description: true, icon: true, color: true,
-                _count: { select: { products: { where: { isPublished: true } } } } },
+      select: {
+        id: true, name: true, slug: true, description: true, icon: true, color: true,
+        translations: true,
+        _count: { select: { products: { where: { isPublished: true } } } },
+      },
     }),
     db.product.count({ where: { isPublished: true } }),
     loadAllConfig(),
+    getTranslations({ locale, namespace: 'home' }),
   ])
 
+  const tCta = await getTranslations({ locale, namespace: 'cta' })
+
   const siteName    = (config['site.name']        as string) ?? 'Omega Mesure'
-  const tagline     = (config['site.tagline']     as string) ?? 'Votre partenaire scientifique & industriel'
+  const tagline     = (config['site.tagline']     as string) ?? ''
   const description = (config['site.description'] as string) ?? ''
   const certs       = Array.isArray(config['certifications'])
     ? (config['certifications'] as unknown[]).filter((v): v is string => typeof v === 'string')
@@ -54,30 +67,29 @@ export default async function HomePage() {
     <>
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-50 via-background to-background py-16 sm:py-24">
-        <div
-          aria-hidden
-          className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-brand/10 blur-3xl"
-        />
+        <div aria-hidden className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-brand/10 blur-3xl" />
         <Container>
           <div className="relative mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-3 py-1 text-xs font-medium text-brand">
-              <IconCircleCheck size={14} /> Maroc · Distributeur agréé multi-marques
+              <IconCircleCheck size={14} /> {t('heroBadge')}
             </span>
             <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
               {siteName}
-              <span className="mt-2 block text-2xl font-semibold text-brand sm:text-3xl">{tagline}</span>
+              {tagline && (
+                <span className="mt-2 block text-2xl font-semibold text-brand sm:text-3xl">{tagline}</span>
+              )}
             </h1>
             {description && (
-              <p className="mx-auto mt-5 max-w-2xl text-base text-muted-foreground">
-                {description}
-              </p>
+              <p className="mx-auto mt-5 max-w-2xl text-base text-muted-foreground">{description}</p>
             )}
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Button asChild size="lg">
-                <Link href="/devis">Demander un devis</Link>
+                <Link href={withLocale('/devis', locale)}>{tCta('requestQuote')}</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="/equipements-labo">Voir le catalogue <IconArrowRight size={16} /></Link>
+                <Link href={withLocale('/equipements-labo', locale)}>
+                  {tCta('viewCatalog')} <IconArrowRight size={16} />
+                </Link>
               </Button>
             </div>
           </div>
@@ -87,9 +99,9 @@ export default async function HomePage() {
       {/* ── Stats ──────────────────────────────────────────────── */}
       <section className="border-y border-border bg-card">
         <Container className="grid gap-px overflow-hidden rounded-none border-x border-border bg-border sm:grid-cols-3">
-          <StatCard label="Produits référencés" value={`${productCount}+`} icon={IconPackage} />
-          <StatCard label="Années d'expérience" value="15+"               icon={IconCalendarTime} />
-          <StatCard label="Métrologie sur site" value="ISO 17025"         icon={IconRuler} />
+          <StatCard label={t('statProducts')}   value={`${productCount}+`} icon={IconPackage} />
+          <StatCard label={t('statExperience')} value="15+"               icon={IconCalendarTime} />
+          <StatCard label={t('statMetrology')}  value="ISO 17025"         icon={IconRuler} />
         </Container>
       </section>
 
@@ -97,20 +109,20 @@ export default async function HomePage() {
       <section className="py-16 sm:py-24">
         <Container>
           <div className="mb-10 text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-brand">Nos univers</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight">Catalogue & services</h2>
-            <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">
-              Équipements pharmaceutiques, balances industrielles, consommables, étalonnage COFRAC et accompagnement BPF.
-            </p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">{t('statsTitle')}</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight">{t('statsHeading')}</h2>
+            <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">{t('statsLead')}</p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {categories.map((c) => {
               const Icon = (c.icon && ICONS[c.icon]) ?? IconFlask
+              const name = pickLocaleField(c.name, c.translations as TranslationsJson, 'name', locale)
+              const desc = pickLocaleField(c.description, c.translations as TranslationsJson, 'description', locale)
               return (
                 <Link
                   key={c.id}
-                  href={`/${c.slug}`}
+                  href={withLocale(`/${c.slug}`, locale)}
                   className="group rounded-2xl border border-border bg-card p-6 transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md"
                 >
                   <div className="flex items-start justify-between">
@@ -121,15 +133,13 @@ export default async function HomePage() {
                       <Icon size={20} />
                     </span>
                     <span className="text-xs text-muted-foreground">
-                      {c._count.products} produit{c._count.products > 1 ? 's' : ''}
+                      {t('productCount', { count: c._count.products })}
                     </span>
                   </div>
-                  <h3 className="mt-4 text-base font-semibold">{c.name}</h3>
-                  {c.description && (
-                    <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{c.description}</p>
-                  )}
+                  <h3 className="mt-4 text-base font-semibold">{name}</h3>
+                  {desc && <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{desc}</p>}
                   <div className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand">
-                    Découvrir <IconArrowRight size={14} className="transition group-hover:translate-x-0.5" />
+                    {tCta('discover')} <IconArrowRight size={14} className="transition group-hover:translate-x-0.5 rtl:rotate-180" />
                   </div>
                 </Link>
               )
@@ -144,12 +154,11 @@ export default async function HomePage() {
           <Container>
             <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                Qualité & conformité
+                {t('certsTitle')}
               </p>
               <ul className="flex flex-wrap items-center justify-center gap-3">
                 {certs.map((c) => (
-                  <li key={c}
-                      className="inline-flex items-center gap-1.5 rounded-full border border-brand/20 bg-brand/5 px-3 py-1 text-xs font-medium text-brand">
+                  <li key={c} className="inline-flex items-center gap-1.5 rounded-full border border-brand/20 bg-brand/5 px-3 py-1 text-xs font-medium text-brand">
                     <IconCircleCheck size={14} /> {c}
                   </li>
                 ))}
@@ -163,18 +172,14 @@ export default async function HomePage() {
       <section className="py-16 sm:py-24">
         <Container size="narrow" className="text-center">
           <IconBuildingFactory2 className="mx-auto h-10 w-10 text-brand" />
-          <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
-            Un besoin précis ? Parlons-en.
-          </h2>
-          <p className="mt-3 text-sm text-muted-foreground">
-            Décrivez-nous votre projet — équipement, étalonnage, qualification — et nous revenons vers vous sous 48 h ouvrées.
-          </p>
+          <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">{t('ctaTitle')}</h2>
+          <p className="mt-3 text-sm text-muted-foreground">{t('ctaLead')}</p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Button asChild size="lg">
-              <Link href="/devis">Demander un devis</Link>
+              <Link href={withLocale('/devis', locale)}>{tCta('requestQuote')}</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="/contact">Nous contacter</Link>
+              <Link href={withLocale('/contact', locale)}>{tCta('contactUs')}</Link>
             </Button>
           </div>
         </Container>
@@ -187,13 +192,10 @@ function StatCard({
   label, value, icon: Icon,
 }: { label: string; value: string; icon: typeof IconFlask }) {
   return (
-    <div className={cn('bg-card px-6 py-8 text-center')}>
+    <div className="bg-card px-6 py-8 text-center">
       <Icon className="mx-auto h-7 w-7 text-brand" />
       <div className="mt-3 text-3xl font-bold text-brand">{value}</div>
       <div className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">{label}</div>
     </div>
   )
 }
-
-// Unused import safeguard — keeps icons tree-shaken
-void IconList

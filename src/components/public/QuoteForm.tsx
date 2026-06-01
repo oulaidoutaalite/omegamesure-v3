@@ -1,6 +1,7 @@
 'use client'
 
 import { IconCircleCheck, IconSend } from '@tabler/icons-react'
+import { useLocale, useTranslations } from 'next-intl'
 import { useState, useTransition } from 'react'
 import { toast } from 'sonner'
 
@@ -20,23 +21,11 @@ type FormConfig = {
   confirmationMessage: string
 }
 
-const REQUEST_TYPES: Array<{ value: PublicQuoteInput['requestType']; label: string }> = [
-  { value: 'EQUIPMENT',  label: 'Équipement labo / biomédical' },
-  { value: 'BALANCE',    label: 'Balance / bascule' },
-  { value: 'CONSUMABLE', label: 'Consommables' },
-  { value: 'METROLOGY',  label: 'Métrologie / étalonnage' },
-  { value: 'CONSULTING', label: 'Consulting / validation' },
-  { value: 'OTHER',      label: 'Autres' },
+const REQUEST_TYPES: Array<PublicQuoteInput['requestType']> = [
+  'EQUIPMENT', 'BALANCE', 'CONSUMABLE', 'METROLOGY', 'CONSULTING', 'OTHER',
 ]
-
-const SECTORS: Array<{ value: NonNullable<PublicQuoteInput['sector']>; label: string }> = [
-  { value: 'PHARMA',     label: 'Pharmaceutique' },
-  { value: 'INDUSTRY',   label: 'Industrie' },
-  { value: 'BIOMEDICAL', label: 'Biomédical' },
-  { value: 'AGRO',       label: 'Agroalimentaire' },
-  { value: 'RESEARCH',   label: 'Recherche' },
-  { value: 'LOGISTICS',  label: 'Logistique' },
-  { value: 'OTHER',      label: 'Autre' },
+const SECTORS: Array<NonNullable<PublicQuoteInput['sector']>> = [
+  'PHARMA', 'INDUSTRY', 'BIOMEDICAL', 'AGRO', 'RESEARCH', 'LOGISTICS', 'OTHER',
 ]
 
 type Props = {
@@ -46,6 +35,11 @@ type Props = {
 }
 
 export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
+  const t       = useTranslations('quote.form')
+  const tTypes  = useTranslations('quote.types')
+  const tSector = useTranslations('quote.sectors')
+  const locale  = useLocale()
+
   const [pending, startTransition] = useTransition()
   const [success, setSuccess] = useState<string | null>(null)
 
@@ -62,7 +56,7 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
   function onSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (description.trim().length < 10) {
-      toast.error('La description doit faire au moins 10 caractères')
+      toast.error(t('minLength'))
       return
     }
     startTransition(async () => {
@@ -77,10 +71,10 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
         deadline:    config.showDeadline ? deadline : '',
         description,
         productId:   productSlug ?? '',
-        locale:      'fr',
+        locale,
       })
       if (!res.ok) { toast.error(res.error); return }
-      toast.success(`Demande envoyée — réf. ${res.data.reference}`)
+      toast.success(t('successTitle'))
       setSuccess(res.data.reference)
     })
   }
@@ -89,10 +83,9 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
     return (
       <div className="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-10 text-center">
         <IconCircleCheck size={40} className="mx-auto text-emerald-600" />
-        <h2 className="mt-4 text-xl font-bold tracking-tight">Demande bien reçue !</h2>
+        <h2 className="mt-4 text-xl font-bold tracking-tight">{t('successTitle')}</h2>
         <p className="mt-2 text-sm text-emerald-900/80">
-          Référence : <strong>{success}</strong>. Vous recevrez un email de confirmation,
-          et notre équipe vous répondra sous 24 à 48 h ouvrées.
+          {t('successBody', { ref: success })}
         </p>
         {config.confirmationMessage && (
           <p className="mt-4 whitespace-pre-line text-sm text-muted-foreground">
@@ -107,22 +100,22 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
     <form onSubmit={onSubmit} className="space-y-5">
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-1.5">
-          <Label htmlFor="fullName">Nom complet *</Label>
+          <Label htmlFor="fullName">{t('fullName')} *</Label>
           <Input id="fullName" required value={fullName} onChange={(e) => setFullName(e.target.value)} />
         </div>
         {config.showCompany && (
           <div className="space-y-1.5">
-            <Label htmlFor="company">Société</Label>
+            <Label htmlFor="company">{t('company')}</Label>
             <Input id="company" value={company} onChange={(e) => setCompany(e.target.value)} />
           </div>
         )}
         <div className="space-y-1.5">
-          <Label htmlFor="email">Email professionnel *</Label>
+          <Label htmlFor="email">{t('email')} *</Label>
           <Input id="email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
         {config.showPhone && (
           <div className="space-y-1.5">
-            <Label htmlFor="phone">Téléphone</Label>
+            <Label htmlFor="phone">{t('phone')}</Label>
             <Input id="phone" type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} />
           </div>
         )}
@@ -130,52 +123,50 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-1.5">
-          <Label htmlFor="requestType">Type de demande *</Label>
+          <Label htmlFor="requestType">{t('requestType')} *</Label>
           <select id="requestType" value={requestType}
                   onChange={(e) => setRequestType(e.target.value as PublicQuoteInput['requestType'])}
                   className="flex h-10 w-full rounded-lg border border-input bg-background px-3 text-sm">
-            {REQUEST_TYPES.map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
+            {REQUEST_TYPES.map((v) => <option key={v} value={v}>{tTypes(v)}</option>)}
           </select>
         </div>
         {config.showSector && (
           <div className="space-y-1.5">
-            <Label htmlFor="sector">Secteur d&apos;activité</Label>
+            <Label htmlFor="sector">{t('sector')}</Label>
             <select id="sector" value={sector ?? ''}
                     onChange={(e) => setSector(e.target.value as NonNullable<PublicQuoteInput['sector']>)}
                     className="flex h-10 w-full rounded-lg border border-input bg-background px-3 text-sm">
-              {SECTORS.map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
+              {SECTORS.map((v) => <option key={v} value={v}>{tSector(v)}</option>)}
             </select>
           </div>
         )}
         {config.showQuantity && (
           <div className="space-y-1.5">
-            <Label htmlFor="quantity">Quantité estimée</Label>
-            <Input id="quantity" placeholder="ex: 10 unités, ~50 kg/an…"
+            <Label htmlFor="quantity">{t('quantity')}</Label>
+            <Input id="quantity" placeholder={t('quantityPlaceholder')}
                    value={quantity} onChange={(e) => setQuantity(e.target.value)} />
           </div>
         )}
         {config.showDeadline && (
           <div className="space-y-1.5">
-            <Label htmlFor="deadline">Délai souhaité</Label>
-            <Input id="deadline" placeholder="ex: avant juin 2026"
+            <Label htmlFor="deadline">{t('deadline')}</Label>
+            <Input id="deadline" placeholder={t('deadlinePlaceholder')}
                    value={deadline} onChange={(e) => setDeadline(e.target.value)} />
           </div>
         )}
       </div>
 
       <div className="space-y-1.5">
-        <Label htmlFor="description">Décrivez votre besoin *</Label>
+        <Label htmlFor="description">{t('description')} *</Label>
         <Textarea id="description" rows={6} required minLength={10}
-                  placeholder="Application, contraintes techniques, normes, environnement de travail…"
+                  placeholder={t('descriptionPlaceholder')}
                   value={description} onChange={(e) => setDescription(e.target.value)} />
       </div>
 
       <div className="flex flex-col-reverse items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-[11px] text-muted-foreground">
-          En envoyant, vous acceptez d&apos;être recontacté concernant votre demande.
-        </p>
+        <p className="text-[11px] text-muted-foreground">{t('consent')}</p>
         <Button type="submit" size="lg" disabled={pending}>
-          <IconSend size={16} /> {pending ? 'Envoi…' : 'Envoyer ma demande'}
+          <IconSend size={16} /> {pending ? t('submitting') : t('submit')}
         </Button>
       </div>
     </form>

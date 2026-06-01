@@ -4,12 +4,18 @@
     "search": "Rechercher",
     "submit": "Envoyer",
     "cancel": "Annuler",
-    "back": "Retour"
+    "back": "Retour",
+    "discover": "Découvrir",
+    "details": "Détails",
+    "learnMore": "En savoir plus",
+    "yes": "Oui",
+    "no": "Non"
   },
   "cta": {
     "requestQuote": "Demander un devis",
     "discover": "Découvrir",
-    "contactUs": "Nous contacter"
+    "contactUs": "Nous contacter",
+    "viewCatalog": "Voir le catalogue"
   },
   "navbar": {
     "home": "Accueil",
@@ -20,7 +26,124 @@
     "consulting": "Consulting",
     "contact": "Contact"
   },
+  "breadcrumb": {
+    "home": "Accueil"
+  },
+  "home": {
+    "heroBadge": "Maroc · Distributeur agréé multi-marques",
+    "statsTitle": "Nos univers",
+    "statsHeading": "Catalogue & services",
+    "statsLead": "Équipements pharmaceutiques, balances industrielles, consommables, étalonnage COFRAC et accompagnement BPF.",
+    "certsTitle": "Qualité & conformité",
+    "ctaTitle": "Un besoin précis ? Parlons-en.",
+    "ctaLead": "Décrivez-nous votre projet — équipement, étalonnage, qualification — et nous revenons vers vous sous 48 h ouvrées.",
+    "statProducts": "Produits référencés",
+    "statExperience": "Années d'expérience",
+    "statMetrology": "Métrologie sur site",
+    "productCount": "{count, plural, =0 {0 produit} one {1 produit} other {# produits}}"
+  },
+  "category": {
+    "subCategoriesTitle": "Sous-catégories",
+    "productsHeading": "Produits disponibles",
+    "selection": "Sélection",
+    "shown": "{n} affichés",
+    "shownOne": "{n} affiché",
+    "noProducts": "Aucun produit publié pour cette catégorie pour le moment.",
+    "noProductsCta": "Demander un devis sur mesure",
+    "asideTitle": "Besoin spécifique ?",
+    "asideLead": "Notre équipe vous accompagne pour identifier l'équipement le plus adapté à vos contraintes.",
+    "metrologyNotice": "Notre laboratoire COFRAC étalonne <strong>le matériel que nous vendons ET le matériel tiers, toutes marques</strong>.",
+    "autresBadge": "Autres",
+    "productCountLabel": "{n} produit{n, plural, one {} other {s}}"
+  },
+  "product": {
+    "from": "À partir de",
+    "onRequest": "Prix sur demande",
+    "shippingNote": "HT · Livraison & installation sur devis",
+    "datasheet": "Fiche technique",
+    "categoryLabel": "Catégorie :",
+    "descriptionTitle": "Description détaillée"
+  },
+  "quote": {
+    "badge": "Devis",
+    "heading": "Décrivez-nous votre besoin",
+    "lead": "Notre équipe vous répond sous 24 à 48 h ouvrées avec une proposition adaptée.",
+    "trust": {
+      "quickTitle": "Réponse rapide",
+      "quickText": "Sous 24 à 48 h ouvrées.",
+      "privacyTitle": "Confidentialité",
+      "privacyText": "Vos données restent strictement internes.",
+      "noCommitTitle": "Sans engagement",
+      "noCommitText": "Études techniques et chiffrage gratuits."
+    },
+    "form": {
+      "fullName": "Nom complet",
+      "company": "Société",
+      "email": "Email professionnel",
+      "phone": "Téléphone",
+      "requestType": "Type de demande",
+      "sector": "Secteur d'activité",
+      "quantity": "Quantité estimée",
+      "quantityPlaceholder": "ex: 10 unités, ~50 kg/an…",
+      "deadline": "Délai souhaité",
+      "deadlinePlaceholder": "ex: avant juin 2026",
+      "description": "Décrivez votre besoin",
+      "descriptionPlaceholder": "Application, contraintes techniques, normes, environnement de travail…",
+      "submit": "Envoyer ma demande",
+      "submitting": "Envoi…",
+      "consent": "En envoyant, vous acceptez d'être recontacté concernant votre demande.",
+      "minLength": "La description doit faire au moins 10 caractères",
+      "successTitle": "Demande bien reçue !",
+      "successBody": "Référence : {ref}. Vous recevrez un email de confirmation, et notre équipe vous répondra sous 24 à 48 h ouvrées."
+    },
+    "types": {
+      "EQUIPMENT": "Équipement labo / biomédical",
+      "BALANCE": "Balance / bascule",
+      "CONSUMABLE": "Consommables",
+      "METROLOGY": "Métrologie / étalonnage",
+      "CONSULTING": "Consulting / validation",
+      "OTHER": "Autres"
+    },
+    "sectors": {
+      "PHARMA": "Pharmaceutique",
+      "INDUSTRY": "Industrie",
+      "BIOMEDICAL": "Biomédical",
+      "AGRO": "Agroalimentaire",
+      "RESEARCH": "Recherche",
+      "LOGISTICS": "Logistique",
+      "OTHER": "Autre"
+    }
+  },
+  "contact": {
+    "badge": "Contact",
+    "heading": "Une question ? Parlons-en.",
+    "lead": "Nous restons à votre disposition pour tout renseignement technique ou commercial.",
+    "labels": {
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email",
+      "hours": "Horaires"
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer",
+      "submitting": "Envoi…",
+      "tooShort": "Message trop court",
+      "successTitle": "Message reçu",
+      "successBody": "Merci, nous vous répondons rapidement."
+    }
+  },
   "footer": {
-    "rights": "Tous droits réservés"
+    "rights": "© {year} {name}. Tous droits réservés.",
+    "catalogue": "Catalogue",
+    "services": "Services",
+    "enterprise": "Entreprise",
+    "certifications": "Certifications",
+    "contact": "Contact"
   }
 }

@@ -4,12 +4,18 @@
     "search": "بحث",
     "submit": "إرسال",
     "cancel": "إلغاء",
-    "back": "رجوع"
+    "back": "رجوع",
+    "discover": "اكتشف",
+    "details": "تفاصيل",
+    "learnMore": "اعرف المزيد",
+    "yes": "نعم",
+    "no": "لا"
   },
   "cta": {
     "requestQuote": "طلب عرض سعر",
     "discover": "اكتشف",
-    "contactUs": "اتصل بنا"
+    "contactUs": "اتصل بنا",
+    "viewCatalog": "تصفح الكتالوج"
   },
   "navbar": {
     "home": "الرئيسية",
@@ -20,7 +26,124 @@
     "consulting": "الاستشارات",
     "contact": "اتصل بنا"
   },
+  "breadcrumb": {
+    "home": "الرئيسية"
+  },
+  "home": {
+    "heroBadge": "المغرب · موزع معتمد متعدد العلامات التجارية",
+    "statsTitle": "مجالاتنا",
+    "statsHeading": "الكتالوج والخدمات",
+    "statsLead": "معدات صيدلانية، موازين صناعية، مستهلكات، معايرة COFRAC ومرافقة BPF.",
+    "certsTitle": "الجودة والمطابقة",
+    "ctaTitle": "هل لديك حاجة محددة؟ لنتحدث.",
+    "ctaLead": "صف لنا مشروعك — معدات، معايرة، مؤهلات — وسنرد عليك خلال 48 ساعة عمل.",
+    "statProducts": "منتجات مدرجة",
+    "statExperience": "سنوات من الخبرة",
+    "statMetrology": "معايرة في الموقع",
+    "productCount": "{count, plural, =0 {لا منتجات} one {منتج واحد} other {# منتجات}}"
+  },
+  "category": {
+    "subCategoriesTitle": "الفئات الفرعية",
+    "productsHeading": "المنتجات المتاحة",
+    "selection": "اختيار",
+    "shown": "{n} معروضات",
+    "shownOne": "{n} معروض",
+    "noProducts": "لا توجد منتجات منشورة في هذه الفئة حتى الآن.",
+    "noProductsCta": "طلب عرض سعر مخصص",
+    "asideTitle": "حاجة محددة؟",
+    "asideLead": "يساعدك فريقنا على تحديد المعدات الأنسب لمتطلباتك.",
+    "metrologyNotice": "يقوم مختبرنا المعتمد من COFRAC بمعايرة <strong>المعدات التي نبيعها وكذلك معدات الأطراف الثالثة من جميع العلامات التجارية</strong>.",
+    "autresBadge": "أخرى",
+    "productCountLabel": "{n, plural, one {منتج واحد} other {# منتجات}}"
+  },
+  "product": {
+    "from": "ابتداءً من",
+    "onRequest": "السعر عند الطلب",
+    "shippingNote": "بدون ضريبة · الشحن والتركيب بعرض سعر منفصل",
+    "datasheet": "ورقة البيانات",
+    "categoryLabel": "الفئة:",
+    "descriptionTitle": "الوصف التفصيلي"
+  },
+  "quote": {
+    "badge": "عرض سعر",
+    "heading": "صف لنا حاجتك",
+    "lead": "يرد فريقنا خلال 24 إلى 48 ساعة عمل بعرض مخصص.",
+    "trust": {
+      "quickTitle": "رد سريع",
+      "quickText": "خلال 24 إلى 48 ساعة عمل.",
+      "privacyTitle": "السرية",
+      "privacyText": "تبقى بياناتك سرية تمامًا.",
+      "noCommitTitle": "بدون التزام",
+      "noCommitText": "الدراسات والعروض الفنية مجانية."
+    },
+    "form": {
+      "fullName": "الاسم الكامل",
+      "company": "الشركة",
+      "email": "البريد الإلكتروني المهني",
+      "phone": "الهاتف",
+      "requestType": "نوع الطلب",
+      "sector": "قطاع النشاط",
+      "quantity": "الكمية التقريبية",
+      "quantityPlaceholder": "مثال: 10 وحدات، ~50 كغ/سنة…",
+      "deadline": "الموعد المطلوب",
+      "deadlinePlaceholder": "مثال: قبل يونيو 2026",
+      "description": "صف حاجتك",
+      "descriptionPlaceholder": "التطبيق، القيود الفنية، المعايير، بيئة العمل…",
+      "submit": "إرسال طلبي",
+      "submitting": "جارٍ الإرسال…",
+      "consent": "بالإرسال، أنت توافق على أن نتصل بك بخصوص طلبك.",
+      "minLength": "يجب أن يحتوي الوصف على 10 أحرف على الأقل",
+      "successTitle": "تم استلام الطلب!",
+      "successBody": "المرجع: {ref}. ستتلقى بريد تأكيد، وسيرد عليك فريقنا خلال 24 إلى 48 ساعة عمل."
+    },
+    "types": {
+      "EQUIPMENT": "معدات مختبر / طبية",
+      "BALANCE": "ميزان / موازين",
+      "CONSUMABLE": "مستهلكات",
+      "METROLOGY": "معايرة",
+      "CONSULTING": "استشارات / تحقق",
+      "OTHER": "أخرى"
+    },
+    "sectors": {
+      "PHARMA": "صيدلاني",
+      "INDUSTRY": "صناعي",
+      "BIOMEDICAL": "طبي حيوي",
+      "AGRO": "زراعي غذائي",
+      "RESEARCH": "بحث",
+      "LOGISTICS": "لوجستيات",
+      "OTHER": "أخرى"
+    }
+  },
+  "contact": {
+    "badge": "اتصل بنا",
+    "heading": "هل لديك سؤال؟ لنتحدث.",
+    "lead": "نحن في خدمتك لأي استفسار فني أو تجاري.",
+    "labels": {
+      "address": "العنوان",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "hours": "أوقات العمل"
+    },
+    "form": {
+      "title": "أرسل لنا رسالة",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "subject": "الموضوع",
+      "message": "الرسالة",
+      "submit": "إرسال",
+      "submitting": "جارٍ الإرسال…",
+      "tooShort": "الرسالة قصيرة جدًا",
+      "successTitle": "تم استلام الرسالة",
+      "successBody": "شكرًا، سنرد عليك قريبًا."
+    }
+  },
   "footer": {
-    "rights": "جميع الحقوق محفوظة"
+    "rights": "© {year} {name}. جميع الحقوق محفوظة.",
+    "catalogue": "الكتالوج",
+    "services": "الخدمات",
+    "enterprise": "الشركة",
+    "certifications": "الشهادات",
+    "contact": "اتصل بنا"
   }
 }

@@ -1,19 +1,34 @@
-import {
-  IconClock,
-  IconMail,
-  IconMapPin,
-  IconPhone,
-} from '@tabler/icons-react'
+import { IconClock, IconMail, IconMapPin, IconPhone } from '@tabler/icons-react'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 import { ContactForm } from '@/components/public/ContactForm'
 import { Container } from '@/components/public/Container'
+import { type Locale } from '@/i18n'
 import { getContactConfig, loadAllConfig } from '@/lib/site-config'
 
-export const metadata = { title: 'Contact' }
 export const dynamic = 'force-dynamic'
 
-export default async function ContactPage() {
-  const [contact, config] = await Promise.all([getContactConfig(), loadAllConfig()])
+export async function generateMetadata({
+  params,
+}: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'contact' })
+  return { title: t('badge') }
+}
+
+export default async function ContactPage({
+  params,
+}: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params
+  setRequestLocale(locale)
+
+  const [contact, config, t, tLabels] = await Promise.all([
+    getContactConfig(),
+    loadAllConfig(),
+    getTranslations({ locale, namespace: 'contact' }),
+    getTranslations({ locale, namespace: 'contact.labels' }),
+  ])
+  const tForm = await getTranslations({ locale, namespace: 'contact.form' })
   const mapUrl = (config['contact.mapUrl'] as string) ?? ''
 
   return (
@@ -21,13 +36,9 @@ export default async function ContactPage() {
       <section className="border-b border-border py-12">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-brand">Contact</p>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-              Une question ? Parlons-en.
-            </h1>
-            <p className="mt-3 text-base text-muted-foreground">
-              Nous restons à votre disposition pour tout renseignement technique ou commercial.
-            </p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">{t('badge')}</p>
+            <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">{t('heading')}</h1>
+            <p className="mt-3 text-base text-muted-foreground">{t('lead')}</p>
           </div>
         </Container>
       </section>
@@ -37,30 +48,24 @@ export default async function ContactPage() {
           <div className="grid gap-10 lg:grid-cols-3">
             <aside className="space-y-4 lg:col-span-1">
               {contact.address && (
-                <ContactRow icon={IconMapPin} label="Adresse" value={contact.address} multiline />
+                <ContactRow icon={IconMapPin} label={tLabels('address')} value={contact.address} multiline />
               )}
               {contact.phone && (
-                <ContactRow
-                  icon={IconPhone} label="Téléphone"
-                  value={contact.phone}
-                  href={`tel:${contact.phone.replace(/\s+/g, '')}`}
-                />
+                <ContactRow icon={IconPhone} label={tLabels('phone')} value={contact.phone}
+                            href={`tel:${contact.phone.replace(/\s+/g, '')}`} />
               )}
               {contact.email && (
-                <ContactRow
-                  icon={IconMail} label="Email"
-                  value={contact.email}
-                  href={`mailto:${contact.email}`}
-                />
+                <ContactRow icon={IconMail} label={tLabels('email')} value={contact.email}
+                            href={`mailto:${contact.email}`} />
               )}
               {contact.hours && (
-                <ContactRow icon={IconClock} label="Horaires" value={contact.hours} />
+                <ContactRow icon={IconClock} label={tLabels('hours')} value={contact.hours} />
               )}
             </aside>
 
             <div className="lg:col-span-2">
               <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
-                <h2 className="mb-5 text-lg font-semibold">Envoyez-nous un message</h2>
+                <h2 className="mb-5 text-lg font-semibold">{tForm('title')}</h2>
                 <ContactForm />
               </div>
             </div>
@@ -68,13 +73,9 @@ export default async function ContactPage() {
 
           {mapUrl && (
             <div className="mt-10 overflow-hidden rounded-2xl border border-border">
-              <iframe
-                src={mapUrl}
-                title="Localisation"
-                className="h-[360px] w-full"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <iframe src={mapUrl} title="Localisation"
+                      className="h-[360px] w-full"
+                      loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
             </div>
           )}
         </Container>

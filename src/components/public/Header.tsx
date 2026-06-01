@@ -1,12 +1,15 @@
 'use client'
 
 import { IconMenu2, IconX } from '@tabler/icons-react'
+import { useLocale } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 import { Container } from '@/components/public/Container'
+import { LocaleSwitcher } from '@/components/public/LocaleSwitcher'
 import { Button } from '@/components/ui/button'
+import { defaultLocale, type Locale } from '@/i18n'
 import { cn } from '@/lib/utils'
 
 export type HeaderNavItem = {
@@ -28,15 +31,23 @@ type Props = {
   items: HeaderNavItem[]
 }
 
-function itemHref(item: HeaderNavItem): string {
+/** Prepend the active locale to an internal path (except the default locale). */
+function withLocale(path: string, locale: Locale): string {
+  if (locale === defaultLocale) return path
+  if (path === '/') return `/${locale}`
+  return `/${locale}${path}`
+}
+
+function itemPath(item: HeaderNavItem): string {
   if (item.href) return item.href
   if (item.slug === 'accueil') return '/'
   return `/${item.slug}`
 }
 
 export function Header({ brand, items }: Props) {
-  const pathname = usePathname()
-  const [open, setOpen]   = useState(false)
+  const pathname = usePathname() ?? '/'
+  const locale = useLocale() as Locale
+  const [open, setOpen]         = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => { setOpen(false) }, [pathname])
@@ -48,7 +59,7 @@ export function Header({ brand, items }: Props) {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const cta = items.find((i) => i.isCta)
+  const cta   = items.find((i) => i.isCta)
   const links = items.filter((i) => !i.isCta)
 
   return (
@@ -62,7 +73,7 @@ export function Header({ brand, items }: Props) {
     >
       <Container>
         <div className="flex h-16 items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href={withLocale('/', locale)} className="flex items-center gap-2">
             {brand.logoUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={brand.logoUrl} alt={brand.siteName} className="h-9 w-auto" />
@@ -81,12 +92,12 @@ export function Header({ brand, items }: Props) {
 
           <nav className="hidden items-center gap-1 lg:flex">
             {links.map((it) => {
-              const href = itemHref(it)
-              const isActive = pathname === href || (href !== '/' && pathname.startsWith(href))
+              const path = withLocale(itemPath(it), locale)
+              const isActive = pathname === path || (path !== withLocale('/', locale) && pathname.startsWith(path))
               return (
                 <Link
                   key={it.id}
-                  href={href}
+                  href={path}
                   className={cn(
                     'rounded-md px-3 py-2 text-sm font-medium transition',
                     isActive
@@ -101,9 +112,10 @@ export function Header({ brand, items }: Props) {
           </nav>
 
           <div className="flex items-center gap-2">
+            <LocaleSwitcher />
             {cta && (
               <Button asChild className="hidden sm:inline-flex">
-                <Link href={itemHref(cta)}>{cta.label}</Link>
+                <Link href={withLocale(itemPath(cta), locale)}>{cta.label}</Link>
               </Button>
             )}
             <button
@@ -123,12 +135,12 @@ export function Header({ brand, items }: Props) {
           <nav className="border-t border-border py-3 lg:hidden">
             <ul className="space-y-1">
               {links.map((it) => {
-                const href = itemHref(it)
-                const isActive = pathname === href || (href !== '/' && pathname.startsWith(href))
+                const path = withLocale(itemPath(it), locale)
+                const isActive = pathname === path || (path !== withLocale('/', locale) && pathname.startsWith(path))
                 return (
                   <li key={it.id}>
                     <Link
-                      href={href}
+                      href={path}
                       className={cn(
                         'block rounded-md px-3 py-2 text-sm font-medium',
                         isActive ? 'bg-brand/10 text-brand' : 'text-foreground hover:bg-accent',
@@ -142,7 +154,7 @@ export function Header({ brand, items }: Props) {
               {cta && (
                 <li className="pt-2">
                   <Button asChild className="w-full">
-                    <Link href={itemHref(cta)}>{cta.label}</Link>
+                    <Link href={withLocale(itemPath(cta), locale)}>{cta.label}</Link>
                   </Button>
                 </li>
               )}

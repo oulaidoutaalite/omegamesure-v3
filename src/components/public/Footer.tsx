@@ -8,10 +8,12 @@ import {
   IconMapPin,
   IconPhone,
 } from '@tabler/icons-react'
+import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 import { type ReactNode } from 'react'
 
 import { Container } from '@/components/public/Container'
+import { defaultLocale, type Locale } from '@/i18n'
 
 export type FooterContact = {
   address: string
@@ -33,13 +35,23 @@ export type FooterCategory = { name: string; slug: string }
 type Props = {
   siteName: string
   tagline: string
+  locale: Locale
   certifications: string[]
   contact: FooterContact
   social: FooterSocial
   categories: FooterCategory[]
 }
 
-export function Footer({ siteName, tagline, certifications, contact, social, categories }: Props) {
+function withLocale(path: string, locale: Locale): string {
+  if (locale === defaultLocale) return path
+  if (path === '/') return `/${locale}`
+  return `/${locale}${path}`
+}
+
+export async function Footer({
+  siteName, tagline, locale, certifications, contact, social, categories,
+}: Props) {
+  const t = await getTranslations({ locale, namespace: 'footer' })
   const year = new Date().getFullYear()
 
   return (
@@ -77,27 +89,27 @@ export function Footer({ siteName, tagline, certifications, contact, social, cat
           </div>
 
           {/* Col 2 — Catalogue */}
-          <FooterCol title="Catalogue">
+          <FooterCol title={t('catalogue')}>
             {categories.map((c) => (
-              <FooterLink key={c.slug} href={`/${c.slug}`}>{c.name}</FooterLink>
+              <FooterLink key={c.slug} href={withLocale(`/${c.slug}`, locale)}>{c.name}</FooterLink>
             ))}
           </FooterCol>
 
           {/* Col 3 — Services */}
-          <FooterCol title="Services">
-            <FooterLink href="/metrologie">Métrologie COFRAC</FooterLink>
-            <FooterLink href="/consulting">Consulting & validation</FooterLink>
-            <FooterLink href="/devis">Demander un devis</FooterLink>
+          <FooterCol title={t('services')}>
+            <FooterLink href={withLocale('/metrologie', locale)}>{(await getTranslations({ locale, namespace: 'navbar' }))('metrology')}</FooterLink>
+            <FooterLink href={withLocale('/consulting', locale)}>{(await getTranslations({ locale, namespace: 'navbar' }))('consulting')}</FooterLink>
+            <FooterLink href={withLocale('/devis', locale)}>{(await getTranslations({ locale, namespace: 'cta' }))('requestQuote')}</FooterLink>
           </FooterCol>
 
           {/* Col 4 — Entreprise */}
-          <FooterCol title="Entreprise">
-            <FooterLink href="/contact">Contact</FooterLink>
-            <FooterLink href="/devis">Demander un devis</FooterLink>
+          <FooterCol title={t('enterprise')}>
+            <FooterLink href={withLocale('/contact', locale)}>{t('contact')}</FooterLink>
+            <FooterLink href={withLocale('/devis', locale)}>{(await getTranslations({ locale, namespace: 'cta' }))('requestQuote')}</FooterLink>
           </FooterCol>
 
           {/* Col 5 — Certifications */}
-          <FooterCol title="Certifications">
+          <FooterCol title={t('certifications')}>
             {certifications.length === 0
               ? <li className="text-xs text-muted-foreground">—</li>
               : certifications.map((cert) => (
@@ -113,7 +125,7 @@ export function Footer({ siteName, tagline, certifications, contact, social, cat
         <hr className="my-8 border-border" />
 
         <div className="flex flex-col-reverse items-start justify-between gap-4 text-xs text-muted-foreground sm:flex-row sm:items-center">
-          <p>© {year} {siteName}. Tous droits réservés.</p>
+          <p>{t('rights', { year, name: siteName })}</p>
           {contact.hours && <p>{contact.hours}</p>}
         </div>
       </Container>

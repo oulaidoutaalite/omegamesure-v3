@@ -1,6 +1,8 @@
 import { IconArrowRight, IconPhoto } from '@tabler/icons-react'
+import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 
+import { defaultLocale, type Locale } from '@/i18n'
 import { cn } from '@/lib/utils'
 
 export type ProductCardData = {
@@ -15,10 +17,24 @@ export type ProductCardData = {
   categoryColor?: string | null
 }
 
-export function ProductCard({ data, className }: { data: ProductCardData; className?: string }) {
+function withLocale(path: string, locale: Locale): string {
+  if (locale === defaultLocale) return path
+  return `/${locale}${path}`
+}
+
+export async function ProductCard({
+  data, locale, className,
+}: {
+  data: ProductCardData
+  locale: Locale
+  className?: string
+}) {
+  const t = await getTranslations({ locale, namespace: 'product' })
+  const tCommon = await getTranslations({ locale, namespace: 'common' })
+
   return (
     <Link
-      href={`/produits/${data.slug}`}
+      href={withLocale(`/produits/${data.slug}`, locale)}
       className={cn(
         'group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:-translate-y-0.5 hover:shadow-md',
         className,
@@ -59,13 +75,13 @@ export function ProductCard({ data, className }: { data: ProductCardData; classN
         <div className="mt-auto flex items-center justify-between pt-3">
           {data.price !== null ? (
             <span className="text-sm font-semibold text-brand">
-              {data.price.toLocaleString('fr-FR')} {data.currency}
+              {data.price.toLocaleString(locale === 'ar' ? 'ar-MA' : locale === 'en' ? 'en-US' : 'fr-FR')} {data.currency}
             </span>
           ) : (
-            <span className="text-xs text-muted-foreground">Prix sur demande</span>
+            <span className="text-xs text-muted-foreground">{t('onRequest')}</span>
           )}
           <span className="inline-flex items-center gap-1 text-xs font-medium text-brand">
-            Détails <IconArrowRight size={12} className="transition group-hover:translate-x-0.5" />
+            {tCommon('details')} <IconArrowRight size={12} className="transition group-hover:translate-x-0.5 rtl:rotate-180" />
           </span>
         </div>
       </div>

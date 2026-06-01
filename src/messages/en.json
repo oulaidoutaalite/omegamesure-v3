@@ -4,12 +4,18 @@
     "search": "Search",
     "submit": "Submit",
     "cancel": "Cancel",
-    "back": "Back"
+    "back": "Back",
+    "discover": "Discover",
+    "details": "Details",
+    "learnMore": "Learn more",
+    "yes": "Yes",
+    "no": "No"
   },
   "cta": {
     "requestQuote": "Request a quote",
     "discover": "Discover",
-    "contactUs": "Contact us"
+    "contactUs": "Contact us",
+    "viewCatalog": "Browse catalog"
   },
   "navbar": {
     "home": "Home",
@@ -20,7 +26,124 @@
     "consulting": "Consulting",
     "contact": "Contact"
   },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "home": {
+    "heroBadge": "Morocco · Authorized multi-brand distributor",
+    "statsTitle": "Our offering",
+    "statsHeading": "Catalog & services",
+    "statsLead": "Pharmaceutical equipment, industrial scales, consumables, COFRAC calibration and GMP support.",
+    "certsTitle": "Quality & compliance",
+    "ctaTitle": "Got a specific need? Let's talk.",
+    "ctaLead": "Tell us about your project — equipment, calibration, qualification — and we'll get back to you within 48 business hours.",
+    "statProducts": "Listed products",
+    "statExperience": "Years of experience",
+    "statMetrology": "On-site metrology",
+    "productCount": "{count, plural, =0 {0 products} one {1 product} other {# products}}"
+  },
+  "category": {
+    "subCategoriesTitle": "Sub-categories",
+    "productsHeading": "Available products",
+    "selection": "Selection",
+    "shown": "{n} shown",
+    "shownOne": "{n} shown",
+    "noProducts": "No published product in this category yet.",
+    "noProductsCta": "Request a custom quote",
+    "asideTitle": "Specific need?",
+    "asideLead": "Our team helps you identify the right equipment for your constraints.",
+    "metrologyNotice": "Our COFRAC-accredited lab calibrates <strong>equipment we sell AND third-party gear, all brands</strong>.",
+    "autresBadge": "Other",
+    "productCountLabel": "{n, plural, one {1 product} other {# products}}"
+  },
+  "product": {
+    "from": "From",
+    "onRequest": "Price on request",
+    "shippingNote": "Excl. tax · Shipping & install quoted separately",
+    "datasheet": "Datasheet",
+    "categoryLabel": "Category:",
+    "descriptionTitle": "Full description"
+  },
+  "quote": {
+    "badge": "Quote",
+    "heading": "Tell us about your need",
+    "lead": "Our team responds within 24-48 business hours with a tailored proposal.",
+    "trust": {
+      "quickTitle": "Quick response",
+      "quickText": "Within 24-48 business hours.",
+      "privacyTitle": "Confidentiality",
+      "privacyText": "Your data stays strictly internal.",
+      "noCommitTitle": "No commitment",
+      "noCommitText": "Engineering studies and quotes are free."
+    },
+    "form": {
+      "fullName": "Full name",
+      "company": "Company",
+      "email": "Business email",
+      "phone": "Phone",
+      "requestType": "Request type",
+      "sector": "Industry",
+      "quantity": "Estimated quantity",
+      "quantityPlaceholder": "e.g. 10 units, ~50 kg/yr…",
+      "deadline": "Desired timeline",
+      "deadlinePlaceholder": "e.g. before June 2026",
+      "description": "Describe your need",
+      "descriptionPlaceholder": "Application, technical constraints, standards, work environment…",
+      "submit": "Send my request",
+      "submitting": "Sending…",
+      "consent": "By submitting, you agree to be contacted about your request.",
+      "minLength": "Description must be at least 10 characters",
+      "successTitle": "Request received!",
+      "successBody": "Reference: {ref}. You will receive a confirmation email, and our team will reply within 24-48 business hours."
+    },
+    "types": {
+      "EQUIPMENT": "Lab / biomedical equipment",
+      "BALANCE": "Scale / balance",
+      "CONSUMABLE": "Consumables",
+      "METROLOGY": "Metrology / calibration",
+      "CONSULTING": "Consulting / validation",
+      "OTHER": "Other"
+    },
+    "sectors": {
+      "PHARMA": "Pharmaceutical",
+      "INDUSTRY": "Industry",
+      "BIOMEDICAL": "Biomedical",
+      "AGRO": "Agribusiness",
+      "RESEARCH": "Research",
+      "LOGISTICS": "Logistics",
+      "OTHER": "Other"
+    }
+  },
+  "contact": {
+    "badge": "Contact",
+    "heading": "A question? Let's talk.",
+    "lead": "We are available for any technical or commercial inquiry.",
+    "labels": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Hours"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send",
+      "submitting": "Sending…",
+      "tooShort": "Message too short",
+      "successTitle": "Message received",
+      "successBody": "Thank you, we will reply shortly."
+    }
+  },
   "footer": {
-    "rights": "All rights reserved"
+    "rights": "© {year} {name}. All rights reserved.",
+    "catalogue": "Catalog",
+    "services": "Services",
+    "enterprise": "Company",
+    "certifications": "Certifications",
+    "contact": "Contact"
   }
 }
