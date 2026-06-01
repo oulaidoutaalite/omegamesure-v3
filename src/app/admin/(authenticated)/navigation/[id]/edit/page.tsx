@@ -5,6 +5,7 @@ import { NavItemForm } from '@/components/admin/nav/NavItemForm'
 import { listNavItemsFlat } from '@/lib/actions/nav-items'
 import { requireRole } from '@/lib/auth-helpers'
 import { db } from '@/lib/db'
+import { loadTranslatableLocales } from '@/lib/locales'
 
 export const metadata = { title: 'Éditer un item de navigation' }
 export const dynamic = 'force-dynamic'
@@ -13,10 +14,13 @@ export default async function EditNavItemPage({ params }: { params: Promise<{ id
   await requireRole(['SUPER_ADMIN', 'ADMIN'])
   const { id } = await params
 
-  const item = await db.navItem.findUnique({ where: { id } })
+  const [item, all, translatableLocales] = await Promise.all([
+    db.navItem.findUnique({ where: { id } }),
+    listNavItemsFlat(),
+    loadTranslatableLocales(),
+  ])
   if (!item) notFound()
 
-  const all = await listNavItemsFlat()
   const parentOptions = all
     .filter((i) => i.parentId === null && i.id !== id)
     .map((i) => ({ id: i.id, label: i.label }))
@@ -34,6 +38,7 @@ export default async function EditNavItemPage({ params }: { params: Promise<{ id
         <NavItemForm
           mode={{ type: 'edit', id }}
           parentOptions={parentOptions}
+          translatableLocales={translatableLocales}
           defaultValues={{
             label:       item.label,
             slug:        item.slug,
@@ -42,6 +47,7 @@ export default async function EditNavItemPage({ params }: { params: Promise<{ id
             parentId:    item.parentId,
             isPublished: item.isPublished,
             isCta:       item.isCta,
+            translations: (item.translations as Record<string, Record<string, string>> | null) ?? undefined,
           }}
         />
       </div>

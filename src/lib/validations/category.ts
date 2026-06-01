@@ -2,6 +2,13 @@ import { z } from 'zod'
 
 const slugRegex = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
+/** Per-locale field map: { ar: { name, description }, en: {…} } */
+export const translationsJsonSchema = z
+  .record(z.string(), z.record(z.string(), z.string()).partial())
+  .optional()
+  .nullable()
+export type TranslationsJsonInput = z.infer<typeof translationsJsonSchema>
+
 export const categorySchema = z.object({
   name:            z.string().trim().min(1, 'Le nom est requis').max(120),
   slug:            z.string().trim().min(1).max(120).regex(slugRegex, 'Slug invalide'),
@@ -13,6 +20,7 @@ export const categorySchema = z.object({
   isPublished:     z.boolean().default(true),
   metaTitle:       z.string().max(120).optional().or(z.literal('')),
   metaDescription: z.string().max(300).optional().or(z.literal('')),
+  translations:    translationsJsonSchema,
 })
 export type CategoryInput = z.infer<typeof categorySchema>
 
@@ -30,6 +38,7 @@ export const subCategorySchema = z.object({
   imageUrl:     z.string().max(500).optional().or(z.literal('')),
   isPublished:  z.boolean().default(true),
   isAutresSlot: z.boolean().default(false),
+  translations: translationsJsonSchema,
 })
 export type SubCategoryInput = z.infer<typeof subCategorySchema>
 

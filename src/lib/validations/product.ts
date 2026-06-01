@@ -1,5 +1,7 @@
 import { z } from 'zod'
 
+import { translationsJsonSchema } from './category'
+
 const slugRegex = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 export const productImageSchema = z.object({
@@ -30,6 +32,7 @@ export const productSchema = z.object({
 
   metaTitle:       z.string().max(200).optional().or(z.literal('')),
   metaDescription: z.string().max(400).optional().or(z.literal('')),
+  translations:    translationsJsonSchema,
 })
 export type ProductInput = z.infer<typeof productSchema>
 

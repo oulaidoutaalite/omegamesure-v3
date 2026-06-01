@@ -8,6 +8,7 @@ import {
 } from '@/components/admin/categories/SubCategoriesSection'
 import { requireRole } from '@/lib/auth-helpers'
 import { db } from '@/lib/db'
+import { loadTranslatableLocales } from '@/lib/locales'
 
 export const metadata = { title: 'Éditer la catégorie' }
 export const dynamic = 'force-dynamic'
@@ -18,7 +19,7 @@ export default async function EditCategoryPage({
   await requireRole(['SUPER_ADMIN', 'ADMIN'])
   const { id } = await params
 
-  const [category, navItems, subs] = await Promise.all([
+  const [category, navItems, subs, translatableLocales] = await Promise.all([
     db.category.findUnique({ where: { id } }),
     db.navItem.findMany({
       where: { parentId: null },
@@ -30,9 +31,10 @@ export default async function EditCategoryPage({
       orderBy: { order: 'asc' },
       select: {
         id: true, name: true, slug: true, description: true,
-        isPublished: true, isAutresSlot: true,
+        isPublished: true, isAutresSlot: true, translations: true,
       },
     }),
+    loadTranslatableLocales(),
   ])
 
   if (!category) notFound()
@@ -44,6 +46,7 @@ export default async function EditCategoryPage({
     description: s.description,
     isPublished: s.isPublished,
     isAutresSlot: s.isAutresSlot,
+    translations: (s.translations as Record<string, Record<string, string>> | null) ?? null,
   }))
 
   return (
@@ -71,6 +74,7 @@ export default async function EditCategoryPage({
         <CategoryForm
           mode={{ type: 'edit', id }}
           navItemOptions={navItems.map((n) => ({ id: n.id, label: n.label }))}
+          translatableLocales={translatableLocales}
           defaultValues={{
             name:            category.name,
             slug:            category.slug,
@@ -82,12 +86,13 @@ export default async function EditCategoryPage({
             isPublished:     category.isPublished,
             metaTitle:       category.metaTitle ?? '',
             metaDescription: category.metaDescription ?? '',
+            translations:    (category.translations as Record<string, Record<string, string>> | null) ?? undefined,
           }}
         />
       </section>
 
       <section>
-        <SubCategoriesSection categoryId={id} items={subRows} />
+        <SubCategoriesSection categoryId={id} items={subRows} translatableLocales={translatableLocales} />
       </section>
     </div>
   )

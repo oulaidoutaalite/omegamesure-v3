@@ -6,6 +6,7 @@ import { useTransition } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
+import { TranslationsEditor, type LocaleDef } from '@/components/admin/i18n/TranslationsEditor'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -19,9 +20,10 @@ type Props = {
   mode: Mode
   defaultValues?: Partial<NavItemInput>
   parentOptions: Array<{ id: string; label: string }>
+  translatableLocales?: LocaleDef[]
 }
 
-export function NavItemForm({ mode, defaultValues, parentOptions }: Props) {
+export function NavItemForm({ mode, defaultValues, parentOptions, translatableLocales = [] }: Props) {
   const router = useRouter()
   const [pending, startTransition] = useTransition()
 
@@ -41,11 +43,13 @@ export function NavItemForm({ mode, defaultValues, parentOptions }: Props) {
       parentId:    defaultValues?.parentId    ?? null,
       isPublished: defaultValues?.isPublished ?? true,
       isCta:       defaultValues?.isCta       ?? false,
+      translations: (defaultValues?.translations as Record<string, Record<string, string>> | undefined) ?? undefined,
     },
   })
 
-  const isPublished = watch('isPublished')
-  const isCta       = watch('isCta')
+  const isPublished  = watch('isPublished')
+  const isCta        = watch('isCta')
+  const translations = (watch('translations') as Record<string, Record<string, string>>) ?? {}
 
   function onSubmit(data: NavItemInput) {
     startTransition(async () => {
@@ -135,6 +139,16 @@ export function NavItemForm({ mode, defaultValues, parentOptions }: Props) {
           </div>
         </label>
       </div>
+
+      {translatableLocales.length > 0 && (
+        <TranslationsEditor
+          locales={translatableLocales}
+          fields={[{ key: 'label', label: 'Libellé', type: 'text' }]}
+          value={translations}
+          onChange={(v) => setValue('translations', v, { shouldDirty: true })}
+          defaultOpen={false}
+        />
+      )}
 
       <div className="flex justify-end gap-3">
         <Button type="button" variant="ghost" onClick={() => router.back()}>

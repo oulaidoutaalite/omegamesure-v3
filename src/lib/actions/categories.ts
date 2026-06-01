@@ -54,6 +54,7 @@ export async function createCategory(input: CategoryInput): Promise<ActionResult
         isPublished:     data.isPublished,
         metaTitle:       data.metaTitle || null,
         metaDescription: data.metaDescription || null,
+        translations:    (data.translations ?? undefined) as Prisma.InputJsonValue | undefined,
         order:           nextOrder,
       },
     })
@@ -88,6 +89,7 @@ export async function updateCategory(input: CategoryUpdate): Promise<ActionResul
         ...(rest.isPublished     !== undefined ? { isPublished:     rest.isPublished }            : {}),
         ...(rest.metaTitle       !== undefined ? { metaTitle:       rest.metaTitle || null }      : {}),
         ...(rest.metaDescription !== undefined ? { metaDescription: rest.metaDescription || null }: {}),
+        ...(rest.translations    !== undefined ? { translations:    (rest.translations ?? Prisma.JsonNull) as Prisma.InputJsonValue | typeof Prisma.JsonNull } : {}),
       },
     })
     await logActivity({ userId: session.user.id, action: 'UPDATE', entityType: 'Category', entityId: id })
@@ -151,6 +153,7 @@ export async function createSubCategory(input: SubCategoryInput): Promise<Action
         imageUrl:     data.imageUrl || null,
         isPublished:  data.isPublished,
         isAutresSlot: data.isAutresSlot,
+        translations: (data.translations ?? undefined) as Prisma.InputJsonValue | undefined,
         order:        nextOrder,
       },
     })
@@ -182,6 +185,7 @@ export async function updateSubCategory(input: SubCategoryUpdate): Promise<Actio
         ...(rest.imageUrl     !== undefined ? { imageUrl: rest.imageUrl || null }       : {}),
         ...(rest.isPublished  !== undefined ? { isPublished: rest.isPublished }         : {}),
         ...(rest.isAutresSlot !== undefined ? { isAutresSlot: rest.isAutresSlot }       : {}),
+        ...(rest.translations !== undefined ? { translations: (rest.translations ?? Prisma.JsonNull) as Prisma.InputJsonValue | typeof Prisma.JsonNull } : {}),
       },
       select: { categoryId: true },
     })

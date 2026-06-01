@@ -6,6 +6,7 @@ import { useTransition } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
+import { TranslationsEditor, type LocaleDef } from '@/components/admin/i18n/TranslationsEditor'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -20,9 +21,10 @@ type Props = {
   mode: Mode
   defaultValues?: Partial<CategoryInput>
   navItemOptions: Array<{ id: string; label: string }>
+  translatableLocales?: LocaleDef[]
 }
 
-export function CategoryForm({ mode, defaultValues, navItemOptions }: Props) {
+export function CategoryForm({ mode, defaultValues, navItemOptions, translatableLocales = [] }: Props) {
   const router = useRouter()
   const [pending, startTransition] = useTransition()
 
@@ -45,10 +47,12 @@ export function CategoryForm({ mode, defaultValues, navItemOptions }: Props) {
       isPublished:     defaultValues?.isPublished     ?? true,
       metaTitle:       defaultValues?.metaTitle       ?? '',
       metaDescription: defaultValues?.metaDescription ?? '',
+      translations:    (defaultValues?.translations as Record<string, Record<string, string>> | undefined) ?? undefined,
     },
   })
 
-  const isPublished = watch('isPublished')
+  const isPublished  = watch('isPublished')
+  const translations = (watch('translations') as Record<string, Record<string, string>>) ?? {}
 
   function onSubmit(data: CategoryInput) {
     startTransition(async () => {
@@ -137,6 +141,18 @@ export function CategoryForm({ mode, defaultValues, navItemOptions }: Props) {
           <div className="text-[11px] text-muted-foreground">Visible sur le site public</div>
         </div>
       </label>
+
+      {translatableLocales.length > 0 && (
+        <TranslationsEditor
+          locales={translatableLocales}
+          fields={[
+            { key: 'name',        label: 'Nom',         type: 'text' },
+            { key: 'description', label: 'Description', type: 'textarea', rows: 3 },
+          ]}
+          value={translations}
+          onChange={(v) => setValue('translations', v, { shouldDirty: true })}
+        />
+      )}
 
       <div className="flex justify-end gap-3">
         <Button type="button" variant="ghost" onClick={() => router.back()}>Annuler</Button>

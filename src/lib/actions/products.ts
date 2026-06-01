@@ -65,6 +65,7 @@ export async function createProduct(input: ProductInput): Promise<ActionResult<{
         publishedAt:      d.isPublished ? new Date() : null,
         metaTitle:        d.metaTitle       || null,
         metaDescription:  d.metaDescription || null,
+        translations:     (d.translations ?? undefined) as Prisma.InputJsonValue | undefined,
       },
     })
     await logActivity({ userId: session.user.id, action: 'CREATE', entityType: 'Product', entityId: created.id, metadata: { slug: created.slug } })
@@ -119,6 +120,7 @@ export async function updateProduct(input: ProductUpdate): Promise<ActionResult>
         ...(publishedAt           !== undefined ? { publishedAt }                                    : {}),
         ...(rest.metaTitle        !== undefined ? { metaTitle:        rest.metaTitle || null }       : {}),
         ...(rest.metaDescription  !== undefined ? { metaDescription:  rest.metaDescription || null } : {}),
+        ...(rest.translations     !== undefined ? { translations:     (rest.translations ?? Prisma.JsonNull) as Prisma.InputJsonValue | typeof Prisma.JsonNull } : {}),
       },
     })
     await logActivity({ userId: session.user.id, action: 'UPDATE', entityType: 'Product', entityId: id })

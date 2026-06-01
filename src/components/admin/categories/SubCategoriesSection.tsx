@@ -30,6 +30,7 @@ import { useState, useTransition } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
+import { TranslationsEditor, type LocaleDef } from '@/components/admin/i18n/TranslationsEditor'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Switch } from '@/components/ui/switch'
@@ -50,11 +51,16 @@ export type SubRow = {
   description: string | null
   isPublished: boolean
   isAutresSlot: boolean
+  translations?: Record<string, Record<string, string>> | null
 }
 
-type Props = { categoryId: string; items: SubRow[] }
+type Props = {
+  categoryId: string
+  items: SubRow[]
+  translatableLocales?: LocaleDef[]
+}
 
-export function SubCategoriesSection({ categoryId, items: initial }: Props) {
+export function SubCategoriesSection({ categoryId, items: initial, translatableLocales = [] }: Props) {
   const [items, setItems] = useState(initial)
   const [creating, setCreating] = useState(false)
   const [editingId, setEditingId] = useState<string | null>(null)
@@ -110,6 +116,7 @@ export function SubCategoriesSection({ categoryId, items: initial }: Props) {
                       initialValue={it}
                       onCancel={() => setEditingId(null)}
                       onSaved={onUpdated}
+                      translatableLocales={translatableLocales}
                     />
                   </li>
                 ) : (
@@ -124,6 +131,7 @@ export function SubCategoriesSection({ categoryId, items: initial }: Props) {
                     categoryId={categoryId}
                     onCancel={() => setCreating(false)}
                     onSaved={onCreated}
+                    translatableLocales={translatableLocales}
                   />
                 </li>
               )}
@@ -213,11 +221,13 @@ function SubForm({
   initialValue,
   onCancel,
   onSaved,
+  translatableLocales,
 }: {
   categoryId: string
   initialValue?: SubRow
   onCancel: () => void
   onSaved: (row: SubRow) => void
+  translatableLocales: LocaleDef[]
 }) {
   const isEdit = !!initialValue
   const [pending, startTransition] = useTransition()
@@ -239,12 +249,14 @@ function SubForm({
       imageUrl:     '',
       isPublished:  initialValue?.isPublished ?? true,
       isAutresSlot: initialValue?.isAutresSlot ?? false,
+      translations: (initialValue?.translations as Record<string, Record<string, string>> | undefined) ?? undefined,
     },
   })
 
-  const name = watch('name')
-  const isPublished = watch('isPublished')
+  const name         = watch('name')
+  const isPublished  = watch('isPublished')
   const isAutresSlot = watch('isAutresSlot')
+  const translations = (watch('translations') as Record<string, Record<string, string>>) ?? {}
 
   function onSubmit(data: SubCategoryInput) {
     startTransition(async () => {
@@ -260,6 +272,7 @@ function SubForm({
         description: data.description || null,
         isPublished: data.isPublished,
         isAutresSlot: data.isAutresSlot,
+        translations: data.translations ?? null,
       })
     })
   }
@@ -279,6 +292,18 @@ function SubForm({
       </div>
 
       <Textarea rows={2} placeholder="Description (optionnel)" {...register('description')} />
+
+      {translatableLocales.length > 0 && (
+        <TranslationsEditor
+          locales={translatableLocales}
+          fields={[
+            { key: 'name',        label: 'Nom',         type: 'text' },
+            { key: 'description', label: 'Description', type: 'textarea', rows: 2 },
+          ]}
+          value={translations}
+          onChange={(v) => setValue('translations', v, { shouldDirty: true })}
+        />
+      )}
 
       <div className="flex flex-wrap items-center gap-4">
         <label className="flex cursor-pointer items-center gap-2 text-xs">

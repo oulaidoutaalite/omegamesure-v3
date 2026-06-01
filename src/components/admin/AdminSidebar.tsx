@@ -49,7 +49,7 @@ const groups: NavGroup[] = [
       { label: 'Navigation',       href: '/admin/navigation',     icon: IconList },
       { label: 'Page d\'accueil',  href: '/admin/homepage',       icon: IconHome,       soon: true },
       { label: 'Configuration',    href: '/admin/config',         icon: IconSettings },
-      { label: 'Langues',          href: '/admin/languages',      icon: IconWorld,      soon: true },
+      { label: 'Langues',          href: '/admin/languages',      icon: IconWorld },
     ],
   },
   {

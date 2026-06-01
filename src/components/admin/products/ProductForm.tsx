@@ -6,6 +6,7 @@ import { useMemo, useTransition } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
+import { TranslationsEditor, type LocaleDef } from '@/components/admin/i18n/TranslationsEditor'
 import { MediaPicker, type PickedItem } from '@/components/admin/media/MediaPicker'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -28,9 +29,10 @@ type Props = {
   mode: Mode
   defaultValues?: Partial<ProductInput>
   categories: CategoryOption[]
+  translatableLocales?: LocaleDef[]
 }
 
-export function ProductForm({ mode, defaultValues, categories }: Props) {
+export function ProductForm({ mode, defaultValues, categories, translatableLocales = [] }: Props) {
   const router = useRouter()
   const [pending, startTransition] = useTransition()
 
@@ -59,6 +61,7 @@ export function ProductForm({ mode, defaultValues, categories }: Props) {
       isFeatured:       defaultValues?.isFeatured       ?? false,
       metaTitle:        defaultValues?.metaTitle        ?? '',
       metaDescription:  defaultValues?.metaDescription  ?? '',
+      translations:     (defaultValues?.translations as Record<string, Record<string, string>> | undefined) ?? undefined,
     },
   })
 
@@ -70,6 +73,7 @@ export function ProductForm({ mode, defaultValues, categories }: Props) {
   const datasheetUrl  = watch('datasheetUrl')
   const isPublished   = watch('isPublished')
   const isFeatured    = watch('isFeatured')
+  const translations  = (watch('translations') as Record<string, Record<string, string>>) ?? {}
 
   const availableSubs = useMemo(() => {
     const cat = categories.find((c) => c.id === categoryId)
@@ -181,6 +185,19 @@ export function ProductForm({ mode, defaultValues, categories }: Props) {
             </div>
           </div>
         </details>
+
+        {translatableLocales.length > 0 && (
+          <TranslationsEditor
+            locales={translatableLocales}
+            fields={[
+              { key: 'name',             label: 'Nom du produit',     type: 'text' },
+              { key: 'shortDescription', label: 'Description courte', type: 'textarea', rows: 2 },
+              { key: 'description',      label: 'Description longue', type: 'textarea', rows: 6 },
+            ]}
+            value={translations}
+            onChange={(v) => setValue('translations', v, { shouldDirty: true })}
+          />
+        )}
       </div>
 
       {/* Sidebar column */}

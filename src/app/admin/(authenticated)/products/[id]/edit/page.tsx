@@ -7,6 +7,7 @@ import {
 } from '@/components/admin/products/ProductForm'
 import { requireAuth } from '@/lib/auth-helpers'
 import { db } from '@/lib/db'
+import { loadTranslatableLocales } from '@/lib/locales'
 
 export const metadata = { title: 'Éditer le produit' }
 export const dynamic = 'force-dynamic'
@@ -19,7 +20,7 @@ export default async function EditProductPage({
   await requireAuth()
   const { id } = await params
 
-  const [product, cats] = await Promise.all([
+  const [product, cats, translatableLocales] = await Promise.all([
     db.product.findUnique({ where: { id } }),
     db.category.findMany({
       orderBy: { order: 'asc' },
@@ -28,6 +29,7 @@ export default async function EditProductPage({
         subCategories: { orderBy: { order: 'asc' }, select: { id: true, name: true } },
       },
     }),
+    loadTranslatableLocales(),
   ])
   if (!product) notFound()
 
@@ -52,6 +54,7 @@ export default async function EditProductPage({
       <ProductForm
         mode={{ type: 'edit', id }}
         categories={categories}
+        translatableLocales={translatableLocales}
         defaultValues={{
           name:             product.name,
           slug:             product.slug,
@@ -69,6 +72,7 @@ export default async function EditProductPage({
           isFeatured:       product.isFeatured,
           metaTitle:        product.metaTitle       ?? '',
           metaDescription:  product.metaDescription ?? '',
+          translations:     (product.translations as Record<string, Record<string, string>> | null) ?? undefined,
         }}
       />
     </div>
