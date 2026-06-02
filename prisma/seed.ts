@@ -31,16 +31,20 @@ async function main() {
   console.log('✓ Locales (fr, ar, en)')
 
   // ─── 2. Admin user ───────────────────────────────────────────────────────
-  const adminEmail = process.env.SEED_ADMIN_EMAIL ?? 'admin@omegamesure.com'
-  const adminPassword = process.env.SEED_ADMIN_PASSWORD ?? 'ChangeMe2026!'
+  const adminEmail = process.env.SEED_ADMIN_EMAIL ?? 'oulaid.outaalite@gmail.com'
+  const adminPassword = process.env.SEED_ADMIN_PASSWORD ?? 'Oulaid@1990'
   const passwordHash = await bcrypt.hash(adminPassword, 12)
   await db.user.upsert({
     where: { email: adminEmail },
-    update: { role: Role.SUPER_ADMIN, isActive: true },
+    update: {
+      password: passwordHash, // refresh password on re-seed if value changed
+      role:     Role.SUPER_ADMIN,
+      isActive: true,
+    },
     create: {
       email:    adminEmail,
       password: passwordHash,
-      name:     process.env.SEED_ADMIN_NAME ?? 'Admin Omega',
+      name:     process.env.SEED_ADMIN_NAME ?? 'Oulaid Outaalite',
       role:     Role.SUPER_ADMIN,
     },
   })

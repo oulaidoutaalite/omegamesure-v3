@@ -170,7 +170,7 @@ ou ajoutez un module `/admin/activity` (cf. roadmap).
 
 - ☑ Créez un compte `ADMIN` par utilisateur réel (ne partagez pas le compte
   super-admin de production)
-- ☑ Changez le mot de passe par défaut (`ChangeMe2026!`) au premier login
+- ☑ Changez le mot de passe par défaut au premier login depuis `/admin/users`
 - ☑ Définissez des images claires (1200×630) pour l'OG image et les heros
 - ☑ Remplissez les meta SEO sur les catégories et produits principaux
 - ☑ Mettez à jour `EMAIL_QUOTE_RECIPIENT` quand vous changez d'équipe commerciale

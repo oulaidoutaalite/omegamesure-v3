@@ -68,12 +68,14 @@ npm run dev
 # → http://localhost:3000/admin/login dashboard
 ```
 
-Identifiants admin par défaut (changez le mot de passe immédiatement) :
+Identifiants admin par défaut (créés par le seed) :
 
 ```
-Email     admin@omegamesure.com
-Password  ChangeMe2026!
+Email     oulaid.outaalite@gmail.com
+Password  Oulaid@1990
 ```
+
+> Personnalisables via `SEED_ADMIN_EMAIL` / `SEED_ADMIN_PASSWORD` dans `.env`.
 
 ## Variables d'environnement
 
