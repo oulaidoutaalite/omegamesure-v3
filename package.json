@@ -5,8 +5,9 @@
   "description": "Omega Mesure — site B2B multilingue (FR/AR/EN) avec dashboard admin complet. Équipements de laboratoire, balances, consommables, métrologie COFRAC et consulting.",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "prisma generate && prisma migrate deploy && next build",
     "start": "next start",
+    "postinstall": "prisma generate",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write \"src/**/*.{ts,tsx,json,css}\" \"prisma/*.prisma\"",
