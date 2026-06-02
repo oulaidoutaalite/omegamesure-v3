@@ -30,6 +30,7 @@ export default async function ProductsPage() {
       id: r.id,
       name: r.name,
       slug: r.slug,
+      kind: r.kind,
       brand: r.brand,
       model: r.model,
       price: r.price ? Number(r.price) : null,
@@ -48,9 +49,9 @@ export default async function ProductsPage() {
     <div className="space-y-6">
       <header className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight">Produits</h1>
+          <h1 className="text-2xl font-bold tracking-tight">Produits &amp; Services</h1>
           <p className="text-sm text-muted-foreground">
-            Catalogue complet — filtrez par catégorie / statut, recherchez par nom / marque / slug.
+            Catalogue complet — filtrez par type, catégorie ou statut, recherchez par nom / marque / slug.
           </p>
         </div>
         <Button asChild>

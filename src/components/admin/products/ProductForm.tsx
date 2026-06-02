@@ -1,6 +1,7 @@
 'use client'
 
 import { zodResolver } from '@hookform/resolvers/zod'
+import { IconBriefcase, IconPackage } from '@tabler/icons-react'
 import { useRouter } from 'next/navigation'
 import { useMemo, useTransition } from 'react'
 import { useForm } from 'react-hook-form'
@@ -47,6 +48,7 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
     defaultValues: {
       name:             defaultValues?.name             ?? '',
       slug:             defaultValues?.slug             ?? '',
+      kind:             defaultValues?.kind             ?? 'PRODUCT',
       shortDescription: defaultValues?.shortDescription ?? '',
       description:      defaultValues?.description      ?? '',
       brand:            defaultValues?.brand            ?? '',
@@ -73,6 +75,8 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
   const datasheetUrl  = watch('datasheetUrl')
   const isPublished   = watch('isPublished')
   const isFeatured    = watch('isFeatured')
+  const kind          = watch('kind')
+  const isService     = kind === 'SERVICE'
   const translations  = (watch('translations') as Record<string, Record<string, string>>) ?? {}
 
   const availableSubs = useMemo(() => {
@@ -105,8 +109,48 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
     <form onSubmit={handleSubmit(onSubmit)} className="grid gap-6 lg:grid-cols-3">
       {/* Main column */}
       <div className="space-y-6 lg:col-span-2">
+        <section className="rounded-xl border border-border bg-card p-6">
+          <fieldset className="space-y-3">
+            <legend className="text-base font-semibold">Type</legend>
+            <p className="text-[11px] text-muted-foreground">
+              Un <strong>produit</strong> est un bien matériel (équipement, balance, consommable).
+              Un <strong>service</strong> est une prestation (étalonnage, qualification, formation, consulting).
+            </p>
+            <div className="grid gap-2 sm:grid-cols-2">
+              <label className="flex cursor-pointer items-start gap-3 rounded-lg border border-border bg-muted/30 p-3 has-[:checked]:border-brand has-[:checked]:bg-brand/5">
+                <input type="radio" value="PRODUCT"
+                       checked={kind === 'PRODUCT'}
+                       onChange={() => setValue('kind', 'PRODUCT', { shouldDirty: true })}
+                       className="mt-1" />
+                <div className="flex items-start gap-2">
+                  <IconPackage size={18} className="mt-0.5 text-brand" />
+                  <div>
+                    <div className="text-sm font-medium">Produit</div>
+                    <div className="text-[11px] text-muted-foreground">Bien physique avec photos, marque, modèle, prix.</div>
+                  </div>
+                </div>
+              </label>
+              <label className="flex cursor-pointer items-start gap-3 rounded-lg border border-border bg-muted/30 p-3 has-[:checked]:border-brand has-[:checked]:bg-brand/5">
+                <input type="radio" value="SERVICE"
+                       checked={kind === 'SERVICE'}
+                       onChange={() => setValue('kind', 'SERVICE', { shouldDirty: true })}
+                       className="mt-1" />
+                <div className="flex items-start gap-2">
+                  <IconBriefcase size={18} className="mt-0.5 text-brand" />
+                  <div>
+                    <div className="text-sm font-medium">Service</div>
+                    <div className="text-[11px] text-muted-foreground">Prestation (métrologie, IQ/OQ/PQ, formation, consulting…).</div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+        </section>
+
         <section className="space-y-4 rounded-xl border border-border bg-card p-6">
-          <h2 className="text-base font-semibold">Informations générales</h2>
+          <h2 className="text-base font-semibold">
+            Informations {isService ? 'du service' : 'du produit'}
+          </h2>
 
           <div className="space-y-2">
             <Label htmlFor="name">Nom *</Label>
@@ -122,11 +166,11 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
               {errors.slug && <p className="text-xs text-destructive">{errors.slug.message}</p>}
             </div>
             <div className="space-y-2">
-              <Label htmlFor="brand">Marque</Label>
+              <Label htmlFor="brand">{isService ? 'Prestataire / Marque' : 'Marque'}</Label>
               <Input id="brand" {...register('brand')} />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="model">Modèle / Référence</Label>
+              <Label htmlFor="model">{isService ? 'Référence interne' : 'Modèle / Référence'}</Label>
               <Input id="model" {...register('model')} />
             </div>
             <div className="space-y-2">
@@ -152,10 +196,10 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
 
         <section className="rounded-xl border border-border bg-card p-6">
           <MediaPicker
-            label="Images du produit"
+            label={isService ? 'Images illustrant le service' : 'Images du produit'}
             multiple
             accept="IMAGE"
-            folder="products"
+            folder={isService ? 'services' : 'products'}
             value={images.map((img) => ({ url: img.url, alt: img.alt, isPrimary: img.isPrimary }))}
             onChange={(next) => setValue('images', next.map((n) => ({ url: n.url, alt: n.alt ?? '', isPrimary: !!n.isPrimary })), { shouldDirty: true })}
           />
@@ -163,10 +207,10 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
 
         <section className="rounded-xl border border-border bg-card p-6">
           <MediaPicker
-            label="Fiche technique (PDF)"
+            label={isService ? 'Plaquette / Programme (PDF)' : 'Fiche technique (PDF)'}
             multiple={false}
             accept="DOCUMENT"
-            folder="datasheets"
+            folder={isService ? 'services-docs' : 'datasheets'}
             value={datasheetPicks}
             onChange={(next) => setValue('datasheetUrl', next[0]?.url ?? '', { shouldDirty: true })}
           />

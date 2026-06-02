@@ -40,9 +40,16 @@ export default async function EditProductPage({
     <div className="mx-auto max-w-6xl space-y-6">
       <header>
         <Link href="/admin/products" className="text-xs text-muted-foreground hover:underline">
-          ← Retour aux produits
+          ← Retour aux produits &amp; services
         </Link>
-        <h1 className="mt-2 text-2xl font-bold tracking-tight">{product.name}</h1>
+        <h1 className="mt-2 flex items-center gap-2 text-2xl font-bold tracking-tight">
+          {product.name}
+          <span className={`rounded px-2 py-0.5 text-[10px] font-semibold uppercase ${
+            product.kind === 'SERVICE' ? 'bg-purple-100 text-purple-800' : 'bg-blue-100 text-blue-800'
+          }`}>
+            {product.kind === 'SERVICE' ? 'Service' : 'Produit'}
+          </span>
+        </h1>
         <p className="text-sm text-muted-foreground">
           <code className="rounded bg-muted px-1.5 py-0.5">/{product.slug}</code>
           {!product.isPublished && (
@@ -58,6 +65,7 @@ export default async function EditProductPage({
         defaultValues={{
           name:             product.name,
           slug:             product.slug,
+          kind:             product.kind,
           shortDescription: product.shortDescription ?? '',
           description:      product.description      ?? '',
           brand:            product.brand            ?? '',

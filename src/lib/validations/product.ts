@@ -11,9 +11,13 @@ export const productImageSchema = z.object({
 })
 export type ProductImage = z.infer<typeof productImageSchema>
 
+export const itemKindEnum = z.enum(['PRODUCT', 'SERVICE'])
+export type ItemKindValue = z.infer<typeof itemKindEnum>
+
 export const productSchema = z.object({
   name:             z.string().trim().min(1, 'Le nom est requis').max(200),
   slug:             z.string().trim().min(1).max(200).regex(slugRegex, 'Slug invalide'),
+  kind:             itemKindEnum.default('PRODUCT'),
   shortDescription: z.string().max(300).optional().or(z.literal('')),
   description:      z.string().max(8000).optional().or(z.literal('')),
   brand:            z.string().max(120).optional().or(z.literal('')),

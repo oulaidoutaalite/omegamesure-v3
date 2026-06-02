@@ -50,6 +50,7 @@ export async function createProduct(input: ProductInput): Promise<ActionResult<{
       data: {
         name:             d.name,
         slug:             d.slug,
+        kind:             d.kind,
         shortDescription: d.shortDescription || null,
         description:      d.description      || null,
         brand:            d.brand            || null,
@@ -105,6 +106,7 @@ export async function updateProduct(input: ProductUpdate): Promise<ActionResult>
       data: {
         ...(rest.name             !== undefined ? { name:             rest.name }                    : {}),
         ...(rest.slug             !== undefined ? { slug:             rest.slug }                    : {}),
+        ...(rest.kind             !== undefined ? { kind:             rest.kind }                    : {}),
         ...(rest.shortDescription !== undefined ? { shortDescription: rest.shortDescription || null }: {}),
         ...(rest.description      !== undefined ? { description:      rest.description      || null }: {}),
         ...(rest.brand            !== undefined ? { brand:            rest.brand            || null }: {}),
@@ -184,6 +186,7 @@ export type ProductFilters = {
   categoryId?: string
   subCategoryId?: string
   status?: 'published' | 'draft' | 'all'
+  kind?: 'PRODUCT' | 'SERVICE' | 'all'
   page?: number
   perPage?: number
 }
@@ -196,6 +199,7 @@ export async function listProducts(filters: ProductFilters = {}) {
   const where: Prisma.ProductWhereInput = {
     ...(filters.status === 'published' ? { isPublished: true }  : {}),
     ...(filters.status === 'draft'     ? { isPublished: false } : {}),
+    ...(filters.kind && filters.kind !== 'all' ? { kind: filters.kind } : {}),
     ...(filters.categoryId    ? { categoryId:    filters.categoryId }    : {}),
     ...(filters.subCategoryId ? { subCategoryId: filters.subCategoryId } : {}),
     ...(filters.search
@@ -217,7 +221,7 @@ export async function listProducts(filters: ProductFilters = {}) {
       skip: (page - 1) * perPage,
       take: perPage,
       select: {
-        id: true, name: true, slug: true, brand: true, model: true,
+        id: true, name: true, slug: true, kind: true, brand: true, model: true,
         price: true, currency: true, images: true, isPublished: true,
         isFeatured: true, updatedAt: true,
         category:    { select: { name: true, color: true } },

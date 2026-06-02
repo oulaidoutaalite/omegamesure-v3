@@ -162,17 +162,18 @@ async function main() {
   }
   console.log(`✓ Categories (${tree.length}) + sub-categories`)
 
-  // ─── 6. A few demo products ──────────────────────────────────────────────
+  // ─── 6. A few demo products + services ───────────────────────────────────
   const balanceCat   = await db.category.findUnique({ where: { slug: 'balances-bascules' } })
   const balanceSubAn = balanceCat ? await db.subCategory.findFirst({ where: { categoryId: balanceCat.id, slug: 'analytiques' } }) : null
 
   if (balanceCat && balanceSubAn) {
     await db.product.upsert({
       where: { slug: 'balance-analytique-mb220' },
-      update: {},
+      update: { kind: 'PRODUCT' },
       create: {
         name:             'Balance analytique MB220',
         slug:             'balance-analytique-mb220',
+        kind:             'PRODUCT',
         shortDescription: 'Balance analytique 220 g · résolution 0,0001 g',
         description:      'Balance analytique haute précision avec calibration interne automatique, écran tactile, conformité USP/EP.',
         brand:            'OmegaMet',
@@ -193,10 +194,11 @@ async function main() {
   if (consumablesCat && colonnesSub) {
     await db.product.upsert({
       where: { slug: 'colonne-hplc-c18-150x46' },
-      update: {},
+      update: { kind: 'PRODUCT' },
       create: {
         name:          'Colonne HPLC C18 150×4,6 mm',
         slug:          'colonne-hplc-c18-150x46',
+        kind:          'PRODUCT',
         shortDescription: 'Colonne phase inverse C18, particules 5 µm',
         description:   'Colonne chromatographique haute performance, conforme USP L1.',
         brand:         'ChromaPro',
@@ -208,7 +210,54 @@ async function main() {
       },
     })
   }
-  console.log('✓ Demo products (2)')
+
+  // Demo services (Métrologie + Consulting)
+  const metrologieCat = await db.category.findUnique({ where: { slug: 'metrologie' } })
+  const tempSub       = metrologieCat ? await db.subCategory.findFirst({ where: { categoryId: metrologieCat.id, slug: 'temperature' } }) : null
+  if (metrologieCat && tempSub) {
+    await db.product.upsert({
+      where: { slug: 'etalonnage-temperature-cofrac' },
+      update: { kind: 'SERVICE' },
+      create: {
+        name:             'Étalonnage température COFRAC',
+        slug:             'etalonnage-temperature-cofrac',
+        kind:             'SERVICE',
+        shortDescription: 'Étalonnage sur site ou en laboratoire pour enceintes, sondes, thermomètres.',
+        description:      'Prestation COFRAC (ISO 17025) : raccordement aux étalons nationaux, certificat normalisé, validation des moyens de mesure. Délai 5 jours ouvrés.',
+        brand:            'Labo Omega Mesure',
+        model:            'ETAL-T',
+        categoryId:       metrologieCat.id,
+        subCategoryId:    tempSub.id,
+        isPublished:      true,
+        isFeatured:       true,
+        publishedAt:      new Date(),
+      },
+    })
+  }
+
+  const consultingCat = await db.category.findUnique({ where: { slug: 'consulting' } })
+  const qualifSub     = consultingCat ? await db.subCategory.findFirst({ where: { categoryId: consultingCat.id, slug: 'qualification' } }) : null
+  if (consultingCat && qualifSub) {
+    await db.product.upsert({
+      where: { slug: 'qualification-iqoqpq' },
+      update: { kind: 'SERVICE' },
+      create: {
+        name:             'Qualification IQ / OQ / PQ',
+        slug:             'qualification-iqoqpq',
+        kind:             'SERVICE',
+        shortDescription: 'Qualification d\'installation, opérationnelle et de performance des équipements GMP.',
+        description:      'Protocoles, exécution sur site, rapports normalisés conformes GAMP 5 / FDA / EMA. Intervient sur enceintes, autoclaves, balances, équipements de production.',
+        brand:            'Consulting Omega',
+        model:            'QUAL-IQOQPQ',
+        categoryId:       consultingCat.id,
+        subCategoryId:    qualifSub.id,
+        isPublished:      true,
+        publishedAt:      new Date(),
+      },
+    })
+  }
+
+  console.log('✓ Demo items: 2 produits + 2 services')
 
   console.log('\n✅ Seed complete!')
   console.log(`   Login → /admin    ${adminEmail}  ·  ${adminPassword}`)

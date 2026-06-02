@@ -1,6 +1,8 @@
 'use client'
 
 import {
+  IconBriefcase,
+  IconPackage,
   IconPencil,
   IconPhoto,
   IconSearch,
@@ -25,6 +27,7 @@ export type ProductRow = {
   id: string
   name: string
   slug: string
+  kind: 'PRODUCT' | 'SERVICE'
   brand: string | null
   model: string | null
   price: number | null
@@ -49,11 +52,13 @@ export function ProductsTable({ items: initial, total, categories }: Props) {
   const [search, setSearch]       = useState('')
   const [categoryId, setCategoryId] = useState<string>('')
   const [status, setStatus]       = useState<'all' | 'published' | 'draft'>('all')
+  const [kind, setKind]           = useState<'all' | 'PRODUCT' | 'SERVICE'>('all')
 
   const filtered = useMemo(() => {
     return rows.filter((r) => {
       if (status === 'published' && !r.isPublished) return false
       if (status === 'draft'     &&  r.isPublished) return false
+      if (kind !== 'all'         &&  r.kind !== kind) return false
       if (categoryId) {
         const found = initial.find((x) => x.id === r.id)
         if (!found?.categoryName) return false
@@ -67,7 +72,7 @@ export function ProductsTable({ items: initial, total, categories }: Props) {
       }
       return true
     })
-  }, [rows, search, categoryId, status, initial, categories])
+  }, [rows, search, categoryId, status, kind, initial, categories])
 
   function patchRow(id: string, patch: Partial<ProductRow>) {
     setRows((prev) => prev.map((r) => (r.id === id ? { ...r, ...patch } : r)))
@@ -94,6 +99,25 @@ export function ProductsTable({ items: initial, total, categories }: Props) {
           <option value="">Toutes catégories</option>
           {categories.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
         </select>
+
+        <div className="inline-flex rounded-lg border border-border bg-card text-xs">
+          {([
+            { v: 'all',     l: 'Tout',     i: null },
+            { v: 'PRODUCT', l: 'Produits', i: IconPackage },
+            { v: 'SERVICE', l: 'Services', i: IconBriefcase },
+          ] as const).map((opt) => {
+            const Icon = opt.i
+            return (
+              <button key={opt.v} type="button" onClick={() => setKind(opt.v)}
+                className={cn(
+                  'inline-flex items-center gap-1.5 px-3 py-1.5',
+                  kind === opt.v ? 'bg-brand text-white' : 'text-muted-foreground hover:bg-accent',
+                )}>
+                {Icon && <Icon size={12} />} {opt.l}
+              </button>
+            )
+          })}
+        </div>
 
         <div className="ml-auto inline-flex rounded-lg border border-border bg-card text-xs">
           {([
@@ -187,7 +211,18 @@ function Row({
             )}
           </div>
           <div className="min-w-0">
-            <div className="truncate font-medium">{row.name}</div>
+            <div className="flex items-center gap-2">
+              <span className="truncate font-medium">{row.name}</span>
+              {row.kind === 'SERVICE' ? (
+                <span className="inline-flex items-center gap-0.5 rounded bg-purple-100 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-purple-800">
+                  <IconBriefcase size={10} /> Service
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-0.5 rounded bg-blue-100 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-blue-800">
+                  <IconPackage size={10} /> Produit
+                </span>
+              )}
+            </div>
             <div className="truncate text-xs text-muted-foreground">
               {row.brand || row.model ? `${row.brand ?? ''} ${row.model ?? ''}`.trim() + ' · ' : ''}
               <code className="rounded bg-muted px-1 py-0.5">/{row.slug}</code>

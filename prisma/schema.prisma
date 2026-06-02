@@ -69,6 +69,13 @@ enum MediaType {
   OTHER
 }
 
+/// Discriminates between a physical product (equipment, consumable, …)
+/// and a service offering (calibration, qualification, consulting…).
+enum ItemKind {
+  PRODUCT
+  SERVICE
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // AUTH & USERS
 // Credentials provider (NextAuth) + JWT strategy. No Account/Session tables
@@ -208,6 +215,9 @@ model Product {
   id               String   @id @default(cuid())
   name             String
   slug             String   @unique
+  /// Whether this entry represents a physical product or a service offering.
+  /// Defaults to PRODUCT so existing rows keep their meaning after migration.
+  kind             ItemKind @default(PRODUCT)
   shortDescription String?
   description      String?
   brand            String?
@@ -244,6 +254,7 @@ model Product {
   @@index([subCategoryId])
   @@index([isPublished])
   @@index([isFeatured])
+  @@index([kind])
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
