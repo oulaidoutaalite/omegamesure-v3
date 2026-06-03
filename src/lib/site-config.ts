@@ -32,12 +32,19 @@ export async function getConfigGroup(category: string): Promise<ConfigMap> {
   return map
 }
 
-/** Convenience: shortcut for common values. */
-export async function getBrandConfig() {
+/** Convenience: shortcut for common values.
+ *  Pass a locale to get the localized tagline (falls back to the default
+ *  `site.tagline` when `site.tagline.<locale>` is not set). The site name
+ *  is a brand name and stays identical across locales. */
+export async function getBrandConfig(locale?: string) {
   const all = await loadAllConfig()
+  const localizedTagline =
+    locale && typeof all[`site.tagline.${locale}`] === 'string' && (all[`site.tagline.${locale}`] as string).trim()
+      ? (all[`site.tagline.${locale}`] as string)
+      : (all['site.tagline'] as string) ?? ''
   return {
     siteName:   (all['site.name']        as string)  ?? 'Omega Mesure',
-    tagline:    (all['site.tagline']     as string)  ?? '',
+    tagline:    localizedTagline,
     primary:    (all['branding.primary'] as string)  ?? '#185FA5',
     logoUrl:    (all['branding.logo']    as string)  ?? '',
     faviconUrl: (all['branding.favicon'] as string)  ?? '',

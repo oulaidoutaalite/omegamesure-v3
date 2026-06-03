@@ -57,8 +57,14 @@ export default async function HomePage({
   const tCta = await getTranslations({ locale, namespace: 'cta' })
 
   const siteName    = (config['site.name']        as string) ?? 'Omega Mesure'
-  const tagline     = (config['site.tagline']     as string) ?? ''
-  const description = (config['site.description'] as string) ?? ''
+  const tagline     =
+    (typeof config[`site.tagline.${locale}`] === 'string' && (config[`site.tagline.${locale}`] as string).trim()
+      ? (config[`site.tagline.${locale}`] as string)
+      : (config['site.tagline'] as string)) ?? ''
+  const description =
+    (typeof config[`site.description.${locale}`] === 'string' && (config[`site.description.${locale}`] as string).trim()
+      ? (config[`site.description.${locale}`] as string)
+      : (config['site.description'] as string)) ?? ''
   const certs       = Array.isArray(config['certifications'])
     ? (config['certifications'] as unknown[]).filter((v): v is string => typeof v === 'string')
     : []

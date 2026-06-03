@@ -50,7 +50,7 @@ export default async function PublicLayout({
   const { locale } = await params
 
   const [brand, contact, social, items, categories, config] = await Promise.all([
-    getBrandConfig(),
+    getBrandConfig(locale),
     getContactConfig(),
     getSocialConfig(),
     loadHeaderItems(locale),
