@@ -116,7 +116,7 @@ export default async function HomePage({
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {categories.map((c) => {
-              const Icon = (c.icon && ICONS[c.icon]) ?? IconFlask
+              const Icon = (c.icon && ICONS[c.icon]) || IconFlask
               const name = pickLocaleField(c.name, c.translations as TranslationsJson, 'name', locale)
               const desc = pickLocaleField(c.description, c.translations as TranslationsJson, 'description', locale)
               return (

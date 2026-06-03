@@ -2,9 +2,11 @@ import { z } from 'zod'
 
 const slugRegex = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
-/** Per-locale field map: { ar: { name, description }, en: {…} } */
+/** Per-locale field map: { ar: { name, description }, en: {…} }
+ * A record is already "all-keys-optional", so no .partial() is needed
+ * (and .partial() is not available on ZodRecord). */
 export const translationsJsonSchema = z
-  .record(z.string(), z.record(z.string(), z.string()).partial())
+  .record(z.string(), z.record(z.string(), z.string()))
   .optional()
   .nullable()
 export type TranslationsJsonInput = z.infer<typeof translationsJsonSchema>
