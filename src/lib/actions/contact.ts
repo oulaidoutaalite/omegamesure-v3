@@ -73,12 +73,6 @@ async function notifyAdminOfNewContact(id: string) {
     ${c.phone ? ` — ${escapeHtml(c.phone)}` : ''}</p>
     ${c.subject ? `<p style="color:#64748b;">Sujet : <strong style="color:#0f172a">${escapeHtml(c.subject)}</strong></p>` : ''}
     <div style="margin-top:16px;padding:12px;background:#f8fafc;border-left:3px solid #185FA5;white-space:pre-wrap;">${escapeHtml(c.message)}</div>
-    <p style="margin-top:20px;">
-      <a href="${process.env.NEXT_PUBLIC_SITE_URL ?? ''}/admin/messages/${c.id}"
-         style="background:#185FA5;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block;">
-        Ouvrir dans l'admin →
-      </a>
-    </p>
     `,
     { title: `Contact — ${c.name}` },
   )

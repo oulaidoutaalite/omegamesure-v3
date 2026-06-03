@@ -96,12 +96,6 @@ async function notifyAdminOfNewQuote(quoteId: string) {
       ${q.deadline ? `<tr><td style="color:#64748b;">Délai</td><td>${escapeHtml(q.deadline)}</td></tr>` : ''}
     </table>
     <div style="margin-top:16px;padding:12px;background:#f8fafc;border-left:3px solid #185FA5;white-space:pre-wrap;">${escapeHtml(q.description)}</div>
-    <p style="margin-top:20px;">
-      <a href="${process.env.NEXT_PUBLIC_SITE_URL ?? ''}/admin/quotes/${q.id}"
-         style="background:#185FA5;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block;">
-        Ouvrir dans l'admin →
-      </a>
-    </p>
     `,
     { title: `Nouveau devis ${q.reference}` },
   )
