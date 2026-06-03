@@ -11,9 +11,10 @@ datasource db {
   provider  = "postgresql"
   url       = env("DATABASE_URL")
   // directUrl is used by `prisma migrate` to bypass connection poolers
-  // (PgBouncer on Supabase, Data API on Neon, etc.). In dev or on a host
-  // without a pooler, leave DIRECT_DATABASE_URL = DATABASE_URL.
-  directUrl = env("DIRECT_DATABASE_URL")
+  // (PgBouncer on Supabase, Data API on Neon, etc.). On Supabase this is
+  // the "session pooler" string (port 5432). In dev or on a host without a
+  // pooler, set DIRECT_URL to the same value as DATABASE_URL.
+  directUrl = env("DIRECT_URL")
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
