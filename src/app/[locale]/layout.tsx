@@ -3,6 +3,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { type ReactNode } from 'react'
 
+import { HtmlLangDir } from '@/components/public/HtmlLangDir'
 import { isLocale, isRtl, locales } from '@/i18n'
 
 export function generateStaticParams() {
@@ -24,17 +25,18 @@ export default async function LocaleLayout({
 
   const messages = await getMessages({ locale })
 
-  // We can't set <html lang dir> from a nested layout, so we rely on
-  // setting them on document.documentElement at runtime via a script tag.
+  // We can't set <html lang dir> directly from a nested layout, so:
+  //  1. the inline script sets it before first paint (no flash of wrong dir)
+  //  2. <HtmlLangDir> re-applies it on every client-side locale switch
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       {/* eslint-disable-next-line @next/next/no-sync-scripts */}
       <script
-        // Apply lang/dir on <html> before content paints (no FOUC).
         dangerouslySetInnerHTML={{
           __html: `(function(){var d=document.documentElement;d.lang=${JSON.stringify(locale)};d.dir=${JSON.stringify(isRtl(locale) ? 'rtl' : 'ltr')};})();`,
         }}
       />
+      <HtmlLangDir locale={locale} />
       {children}
     </NextIntlClientProvider>
   )
