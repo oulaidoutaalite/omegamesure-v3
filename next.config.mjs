@@ -27,6 +27,15 @@ const nextConfig = {
   experimental: {
     serverActions: {
       bodySizeLimit: '8mb', // file uploads via server actions
+      // Explicitly allow the production hostnames so Server Actions are not
+      // rejected by the Origin check when served behind Vercel's proxy and,
+      // later, the custom domain.
+      allowedOrigins: [
+        'omegamesure-v3.vercel.app',
+        'omegamesure-v3-git-main-outaalite-s-projects.vercel.app',
+        'omegamesure.com',
+        'www.omegamesure.com',
+      ],
     },
   },
 
