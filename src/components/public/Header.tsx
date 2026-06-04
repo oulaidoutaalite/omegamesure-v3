@@ -80,7 +80,7 @@ export function Header({ brand, items }: Props) {
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-1 lg:flex">
+          <nav className="hidden items-center gap-0.5 xl:flex">
             {links.map((it) => {
               const path = itemPath(it)
               const isActive = pathname === path || (path !== '/' && pathname.startsWith(path))
@@ -89,7 +89,7 @@ export function Header({ brand, items }: Props) {
                   key={it.id}
                   href={path}
                   className={cn(
-                    'rounded-md px-3 py-2 text-sm font-medium transition',
+                    'whitespace-nowrap rounded-md px-2.5 py-2 text-[13px] font-medium leading-none transition',
                     isActive
                       ? 'text-brand'
                       : 'text-foreground/80 hover:bg-accent hover:text-foreground',
@@ -111,7 +111,7 @@ export function Header({ brand, items }: Props) {
             <button
               type="button"
               onClick={() => setOpen((s) => !s)}
-              className="grid h-10 w-10 place-items-center rounded-lg text-foreground hover:bg-accent lg:hidden"
+              className="grid h-10 w-10 place-items-center rounded-lg text-foreground hover:bg-accent xl:hidden"
               aria-label="Menu"
               aria-expanded={open}
             >
@@ -122,7 +122,7 @@ export function Header({ brand, items }: Props) {
 
         {/* Mobile menu */}
         {open && (
-          <nav className="border-t border-border py-3 lg:hidden">
+          <nav className="border-t border-border py-3 xl:hidden">
             <ul className="space-y-1">
               {links.map((it) => {
                 const path = itemPath(it)
