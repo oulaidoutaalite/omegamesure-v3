@@ -144,6 +144,9 @@ export async function storeFile(
     const res = await fetch(endpoint, {
       method: 'POST',
       headers: {
+        // `apikey` supports the new sb_secret_* keys; Authorization keeps
+        // compatibility with the legacy service_role JWT.
+        apikey: SUPABASE_SERVICE_ROLE_KEY,
         Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
         'Content-Type': mime,
         'x-upsert': 'true',
@@ -186,7 +189,10 @@ export async function removeStoredFile(url: string): Promise<void> {
       if (!objectPath) return
       await fetch(`${SUPABASE_URL}/storage/v1/object/${STORAGE_BUCKET}/${objectPath}`, {
         method: 'DELETE',
-        headers: { Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}` },
+        headers: {
+          apikey: SUPABASE_SERVICE_ROLE_KEY,
+          Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
+        },
       })
       return
     }
