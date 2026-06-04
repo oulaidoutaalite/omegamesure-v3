@@ -62,7 +62,7 @@ export function Header({ brand, items }: Props) {
       )}
     >
       <Container>
-        <div className="flex h-16 items-center justify-between gap-4">
+        <div className="flex min-h-16 items-center justify-between gap-4 py-2">
           <Link href="/" className="flex shrink-0 items-center gap-2">
             {brand.logoUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
@@ -82,10 +82,11 @@ export function Header({ brand, items }: Props) {
             </span>
           </Link>
 
-          {/* Auto-aligning menu: every item stays on a single line; the row
-              scrolls horizontally if more items are added than fit. */}
+          {/* Auto-aligning menu: each item stays on a single line; when the
+              whole menu is too long it wraps onto additional lines below
+              (the header grows in height) instead of being clipped. */}
           <nav
-            className="hidden min-w-0 flex-1 items-center justify-start gap-0.5 overflow-x-auto px-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex"
+            className="hidden min-w-0 flex-1 flex-wrap items-center justify-start gap-x-0.5 gap-y-1 px-2 lg:flex"
           >
             {links.map((it) => {
               const path = itemPath(it)
