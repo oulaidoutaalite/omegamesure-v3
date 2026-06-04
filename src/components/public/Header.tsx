@@ -72,12 +72,12 @@ export function Header({ brand, items }: Props) {
                 Ω
               </span>
             )}
-            {/* Brand name shown from md; tagline only on very wide screens to
-                leave maximum room for the menu. */}
+            {/* Brand name + tagline shown from md. The menu wraps below when
+                it runs out of room, so the tagline can stay. */}
             <span className="hidden flex-col leading-tight md:flex">
               <span className="text-sm font-bold text-brand">{brand.siteName}</span>
               {brand.tagline && (
-                <span className="hidden text-[10px] text-muted-foreground 2xl:block">{brand.tagline}</span>
+                <span className="text-[10px] text-muted-foreground">{brand.tagline}</span>
               )}
             </span>
           </Link>
