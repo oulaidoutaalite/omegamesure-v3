@@ -2,11 +2,10 @@
 
 import { IconWorld } from '@tabler/icons-react'
 import { useLocale } from 'next-intl'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useTransition } from 'react'
 
-import { defaultLocale, locales, type Locale } from '@/i18n'
+import { locales, type Locale } from '@/i18n'
+import { usePathname, useRouter } from '@/navigation'
 import { cn } from '@/lib/utils'
 
 const LABELS: Record<Locale, { native: string; flag: string }> = {
@@ -15,28 +14,14 @@ const LABELS: Record<Locale, { native: string; flag: string }> = {
   en: { native: 'English',  flag: '🇬🇧' },
 }
 
-/** Strip a leading locale prefix (if any) from a pathname. */
-function stripLocalePrefix(pathname: string): string {
-  for (const l of locales) {
-    if (l === defaultLocale) continue
-    if (pathname === `/${l}` || pathname.startsWith(`/${l}/`)) {
-      return pathname.replace(`/${l}`, '') || '/'
-    }
-  }
-  return pathname || '/'
-}
-
-/** Compute the URL that swaps the current locale. */
-function localizedHref(basePath: string, target: Locale): string {
-  if (target === defaultLocale) return basePath || '/'
-  return `/${target}${basePath === '/' ? '' : basePath}`
-}
-
 export function LocaleSwitcher() {
   const currentLocale = useLocale() as Locale
-  const pathname = usePathname() ?? '/'
+  // next-intl-aware pathname: locale-agnostic (no prefix), e.g. "/metrologie"
+  const pathname = usePathname()
+  const router = useRouter()
   const ref = useRef<HTMLDivElement>(null)
   const [open, setOpen] = useState(false)
+  const [pending, startTransition] = useTransition()
 
   useEffect(() => {
     function onClick(e: MouseEvent) {
@@ -53,8 +38,16 @@ export function LocaleSwitcher() {
     }
   }, [])
 
-  const basePath = stripLocalePrefix(pathname)
-  const current = LABELS[currentLocale] ?? LABELS[defaultLocale]
+  function switchTo(target: Locale) {
+    setOpen(false)
+    if (target === currentLocale) return
+    // Re-render the SAME page in the chosen locale.
+    startTransition(() => {
+      router.replace(pathname, { locale: target })
+    })
+  }
+
+  const current = LABELS[currentLocale] ?? LABELS.fr
 
   return (
     <div ref={ref} className="relative">
@@ -63,7 +56,8 @@ export function LocaleSwitcher() {
         onClick={() => setOpen((s) => !s)}
         aria-haspopup="menu"
         aria-expanded={open}
-        className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs text-foreground/80 hover:bg-accent hover:text-foreground"
+        disabled={pending}
+        className="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs text-foreground/80 hover:bg-accent hover:text-foreground disabled:opacity-60"
       >
         <IconWorld size={14} />
         <span className="hidden sm:inline">{current.native}</span>
@@ -81,17 +75,17 @@ export function LocaleSwitcher() {
               const def = LABELS[l]
               return (
                 <li key={l}>
-                  <Link
-                    href={localizedHref(basePath, l)}
-                    onClick={() => setOpen(false)}
+                  <button
+                    type="button"
+                    onClick={() => switchTo(l)}
                     className={cn(
-                      'flex items-center gap-2 px-3 py-1.5 text-xs hover:bg-accent',
-                      isActive ? 'text-brand' : 'text-foreground',
+                      'flex w-full items-center gap-2 px-3 py-1.5 text-left text-xs hover:bg-accent',
+                      isActive ? 'text-brand font-medium' : 'text-foreground',
                     )}
                   >
                     <span>{def.flag}</span>
                     <span>{def.native}</span>
-                  </Link>
+                  </button>
                 </li>
               )
             })}

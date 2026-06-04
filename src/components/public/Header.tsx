@@ -1,15 +1,12 @@
 'use client'
 
 import { IconMenu2, IconX } from '@tabler/icons-react'
-import { useLocale } from 'next-intl'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 import { Container } from '@/components/public/Container'
 import { LocaleSwitcher } from '@/components/public/LocaleSwitcher'
 import { Button } from '@/components/ui/button'
-import { defaultLocale, type Locale } from '@/i18n'
+import { Link, usePathname } from '@/navigation'
 import { cn } from '@/lib/utils'
 
 export type HeaderNavItem = {
@@ -31,13 +28,7 @@ type Props = {
   items: HeaderNavItem[]
 }
 
-/** Prepend the active locale to an internal path (except the default locale). */
-function withLocale(path: string, locale: Locale): string {
-  if (locale === defaultLocale) return path
-  if (path === '/') return `/${locale}`
-  return `/${locale}${path}`
-}
-
+/** Locale-agnostic path for a nav item (next-intl's Link adds the locale). */
 function itemPath(item: HeaderNavItem): string {
   if (item.href) return item.href
   if (item.slug === 'accueil') return '/'
@@ -46,7 +37,6 @@ function itemPath(item: HeaderNavItem): string {
 
 export function Header({ brand, items }: Props) {
   const pathname = usePathname() ?? '/'
-  const locale = useLocale() as Locale
   const [open, setOpen]         = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -73,7 +63,7 @@ export function Header({ brand, items }: Props) {
     >
       <Container>
         <div className="flex h-16 items-center justify-between gap-4">
-          <Link href={withLocale('/', locale)} className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             {brand.logoUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={brand.logoUrl} alt={brand.siteName} className="h-9 w-auto" />
@@ -92,8 +82,8 @@ export function Header({ brand, items }: Props) {
 
           <nav className="hidden items-center gap-1 lg:flex">
             {links.map((it) => {
-              const path = withLocale(itemPath(it), locale)
-              const isActive = pathname === path || (path !== withLocale('/', locale) && pathname.startsWith(path))
+              const path = itemPath(it)
+              const isActive = pathname === path || (path !== '/' && pathname.startsWith(path))
               return (
                 <Link
                   key={it.id}
@@ -115,7 +105,7 @@ export function Header({ brand, items }: Props) {
             <LocaleSwitcher />
             {cta && (
               <Button asChild className="hidden sm:inline-flex">
-                <Link href={withLocale(itemPath(cta), locale)}>{cta.label}</Link>
+                <Link href={itemPath(cta)}>{cta.label}</Link>
               </Button>
             )}
             <button
@@ -135,8 +125,8 @@ export function Header({ brand, items }: Props) {
           <nav className="border-t border-border py-3 lg:hidden">
             <ul className="space-y-1">
               {links.map((it) => {
-                const path = withLocale(itemPath(it), locale)
-                const isActive = pathname === path || (path !== withLocale('/', locale) && pathname.startsWith(path))
+                const path = itemPath(it)
+                const isActive = pathname === path || (path !== '/' && pathname.startsWith(path))
                 return (
                   <li key={it.id}>
                     <Link
@@ -154,7 +144,7 @@ export function Header({ brand, items }: Props) {
               {cta && (
                 <li className="pt-2">
                   <Button asChild className="w-full">
-                    <Link href={withLocale(itemPath(cta), locale)}>{cta.label}</Link>
+                    <Link href={itemPath(cta)}>{cta.label}</Link>
                   </Button>
                 </li>
               )}
