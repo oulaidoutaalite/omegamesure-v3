@@ -8,11 +8,19 @@ import { db } from './db'
 
 type ConfigMap = Record<string, unknown>
 
-/** Load all SiteConfig rows as a plain map. Cached per request. */
+/** Keys never exposed through the config loader (secrets read elsewhere). */
+const PRIVATE_CONFIG_PREFIXES = ['storage.']
+
+/** Load all SiteConfig rows as a plain map. Cached per request.
+ *  Secret keys (e.g. `storage.*`) are excluded so they can never leak into
+ *  data that may reach the client. */
 export const loadAllConfig = cache(async (): Promise<ConfigMap> => {
   const rows = await db.siteConfig.findMany({ select: { key: true, value: true } })
   const map: ConfigMap = {}
-  for (const r of rows) map[r.key] = r.value
+  for (const r of rows) {
+    if (PRIVATE_CONFIG_PREFIXES.some((p) => r.key.startsWith(p))) continue
+    map[r.key] = r.value
+  }
   return map
 })
 

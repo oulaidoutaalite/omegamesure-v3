@@ -4,6 +4,8 @@ import path from 'node:path'
 
 import sharp from 'sharp'
 
+import { db } from './db'
+
 export const ALLOWED_IMAGE_TYPES = [
   'image/jpeg',
   'image/png',
@@ -31,14 +33,36 @@ export const MAX_UPLOAD_BYTES =
   (Number.parseInt(process.env.MAX_UPLOAD_SIZE_MB ?? '8', 10) || 8) * 1024 * 1024
 
 // ─── Supabase Storage config ────────────────────────────────────────────────
-const SUPABASE_URL =
-  process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL ?? ''
-const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY ?? ''
 const STORAGE_BUCKET = process.env.SUPABASE_STORAGE_BUCKET ?? 'media'
 
-/** True when Supabase Storage is configured (production on Vercel). */
-function useSupabaseStorage(): boolean {
-  return Boolean(SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY)
+type StorageCreds = { url: string; key: string }
+
+/**
+ * Resolve the Supabase Storage credentials. Prefers environment variables
+ * (SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY); if absent, falls back to values
+ * stored in the SiteConfig table (keys `storage.url` / `storage.key`). The DB
+ * fallback lets the storage be configured without touching the host's env
+ * vars. These values are read server-side only and are excluded from the
+ * public config loader. Returns null when no credentials are available.
+ */
+async function getStorageCreds(): Promise<StorageCreds | null> {
+  const envUrl = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL ?? ''
+  const envKey = process.env.SUPABASE_SERVICE_ROLE_KEY ?? ''
+  if (envUrl && envKey) return { url: envUrl, key: envKey }
+
+  try {
+    const rows = await db.siteConfig.findMany({
+      where: { key: { in: ['storage.url', 'storage.key'] } },
+      select: { key: true, value: true },
+    })
+    const map = Object.fromEntries(rows.map((r) => [r.key, r.value])) as Record<string, unknown>
+    const url = typeof map['storage.url'] === 'string' ? (map['storage.url'] as string) : ''
+    const key = typeof map['storage.key'] === 'string' ? (map['storage.key'] as string) : ''
+    if (url && key) return { url, key }
+  } catch {
+    /* ignore — fall through to null (local-disk fallback) */
+  }
+  return null
 }
 
 /** Root of local upload storage (dev fallback only). */
@@ -138,16 +162,17 @@ export async function storeFile(
   const { width, height } = await imageDimensions(bytes, mime)
 
   let url: string
+  const creds = await getStorageCreds()
 
-  if (useSupabaseStorage()) {
-    const endpoint = `${SUPABASE_URL}/storage/v1/object/${STORAGE_BUCKET}/${objectPath}`
+  if (creds) {
+    const endpoint = `${creds.url}/storage/v1/object/${STORAGE_BUCKET}/${objectPath}`
     const res = await fetch(endpoint, {
       method: 'POST',
       headers: {
         // `apikey` supports the new sb_secret_* keys; Authorization keeps
         // compatibility with the legacy service_role JWT.
-        apikey: SUPABASE_SERVICE_ROLE_KEY,
-        Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
+        apikey: creds.key,
+        Authorization: `Bearer ${creds.key}`,
         'Content-Type': mime,
         'x-upsert': 'true',
         'cache-control': '31536000',
@@ -158,7 +183,7 @@ export async function storeFile(
       const detail = await res.text().catch(() => '')
       throw new Error(`Échec du téléversement (Supabase ${res.status}) ${detail.slice(0, 120)}`)
     }
-    url = `${SUPABASE_URL}/storage/v1/object/public/${STORAGE_BUCKET}/${objectPath}`
+    url = `${creds.url}/storage/v1/object/public/${STORAGE_BUCKET}/${objectPath}`
   } else {
     // Local disk fallback (dev only)
     const dir = folder ? path.join(uploadRoot(), folder) : uploadRoot()
@@ -184,15 +209,13 @@ export async function removeStoredFile(url: string): Promise<void> {
   try {
     // Supabase public URL → delete via storage API
     const marker = `/storage/v1/object/public/${STORAGE_BUCKET}/`
-    if (useSupabaseStorage() && url.includes(marker)) {
+    if (url.includes(marker)) {
+      const creds = await getStorageCreds()
       const objectPath = url.split(marker)[1]
-      if (!objectPath) return
-      await fetch(`${SUPABASE_URL}/storage/v1/object/${STORAGE_BUCKET}/${objectPath}`, {
+      if (!creds || !objectPath) return
+      await fetch(`${creds.url}/storage/v1/object/${STORAGE_BUCKET}/${objectPath}`, {
         method: 'DELETE',
-        headers: {
-          apikey: SUPABASE_SERVICE_ROLE_KEY,
-          Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
-        },
+        headers: { apikey: creds.key, Authorization: `Bearer ${creds.key}` },
       })
       return
     }
