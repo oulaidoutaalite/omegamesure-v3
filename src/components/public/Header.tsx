@@ -63,7 +63,7 @@ export function Header({ brand, items }: Props) {
     >
       <Container>
         <div className="flex h-16 items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex shrink-0 items-center gap-2">
             {brand.logoUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={brand.logoUrl} alt={brand.siteName} className="h-9 w-auto" />
@@ -72,10 +72,12 @@ export function Header({ brand, items }: Props) {
                 Ω
               </span>
             )}
+            {/* Brand name shown from md; tagline only on very wide screens to
+                leave maximum room for the menu. */}
             <span className="hidden flex-col leading-tight md:flex">
               <span className="text-sm font-bold text-brand">{brand.siteName}</span>
               {brand.tagline && (
-                <span className="text-[10px] text-muted-foreground">{brand.tagline}</span>
+                <span className="hidden text-[10px] text-muted-foreground 2xl:block">{brand.tagline}</span>
               )}
             </span>
           </Link>
@@ -83,7 +85,7 @@ export function Header({ brand, items }: Props) {
           {/* Auto-aligning menu: every item stays on a single line; the row
               scrolls horizontally if more items are added than fit. */}
           <nav
-            className="hidden min-w-0 flex-1 items-center justify-center gap-0.5 overflow-x-auto px-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex"
+            className="hidden min-w-0 flex-1 items-center justify-start gap-0.5 overflow-x-auto px-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex"
           >
             {links.map((it) => {
               const path = itemPath(it)
@@ -105,10 +107,10 @@ export function Header({ brand, items }: Props) {
             })}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex shrink-0 items-center gap-2">
             <LocaleSwitcher />
             {cta && (
-              <Button asChild className="hidden sm:inline-flex">
+              <Button asChild className="hidden whitespace-nowrap sm:inline-flex">
                 <Link href={itemPath(cta)}>{cta.label}</Link>
               </Button>
             )}
