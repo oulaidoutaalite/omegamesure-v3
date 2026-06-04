@@ -20,6 +20,8 @@ const nextConfig = {
     remotePatterns: [
       { protocol: 'https', hostname: 'res.cloudinary.com' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
+      // Supabase Storage (product photos, datasheets, branding…)
+      { protocol: 'https', hostname: '*.supabase.co' },
     ],
     formats: ['image/avif', 'image/webp'],
   },
