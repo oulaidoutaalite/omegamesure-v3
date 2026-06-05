@@ -65,8 +65,6 @@ export function Header({ brand, items }: Props) {
         <div className="flex min-h-16 items-center justify-between gap-4 py-2">
           <Link href="/" className="flex shrink-0 items-center gap-2">
             {brand.logoUrl ? (
-              // A real logo usually already contains the company name, so we
-              // show it larger and skip the text block to avoid duplication.
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={brand.logoUrl}
@@ -74,19 +72,17 @@ export function Header({ brand, items }: Props) {
                 className="h-11 w-auto object-contain sm:h-12"
               />
             ) : (
-              <>
-                <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand text-base font-bold text-white">
-                  Ω
-                </span>
-                {/* Fallback wordmark + tagline (only when no logo is set). */}
-                <span className="hidden flex-col leading-tight md:flex">
-                  <span className="text-sm font-bold text-brand">{brand.siteName}</span>
-                  {brand.tagline && (
-                    <span className="text-[10px] text-muted-foreground">{brand.tagline}</span>
-                  )}
-                </span>
-              </>
+              <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand text-base font-bold text-white">
+                Ω
+              </span>
             )}
+            {/* Brand name + tagline, always shown next to the logo / mark. */}
+            <span className="hidden flex-col leading-tight md:flex">
+              <span className="text-sm font-bold text-brand">{brand.siteName}</span>
+              {brand.tagline && (
+                <span className="text-[10px] text-muted-foreground">{brand.tagline}</span>
+              )}
+            </span>
           </Link>
 
           {/* Auto-aligning menu: each item stays on a single line; when the
