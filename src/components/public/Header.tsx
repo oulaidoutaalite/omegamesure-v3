@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 
 import { Container } from '@/components/public/Container'
 import { LocaleSwitcher } from '@/components/public/LocaleSwitcher'
+import { SearchBar } from '@/components/public/SearchBar'
 import { Button } from '@/components/ui/button'
 import { Link, usePathname } from '@/navigation'
 import { cn } from '@/lib/utils'
@@ -85,6 +86,11 @@ export function Header({ brand, items }: Props) {
             </span>
           </Link>
 
+          {/* Search bar (Reagecon-style), centered between logo and actions */}
+          <div className="hidden flex-1 justify-center px-4 md:flex">
+            <SearchBar className="max-w-xl" />
+          </div>
+
           <div className="flex shrink-0 items-center gap-2">
             <LocaleSwitcher />
             {cta && (
@@ -138,6 +144,9 @@ export function Header({ brand, items }: Props) {
       {open && (
         <Container>
           <nav className="border-t border-border py-3 lg:hidden">
+            <div className="mb-3 md:hidden">
+              <SearchBar />
+            </div>
             <ul className="space-y-1">
               {links.map((it) => {
                 const path = itemPath(it)

@@ -145,5 +145,13 @@
     "enterprise": "Company",
     "certifications": "Certifications",
     "contact": "Contact"
+  },
+  "search": {
+    "placeholder": "Search a product or item number…",
+    "button": "Search",
+    "title": "Search",
+    "resultsFor": "Results for",
+    "noResults": "No results for your search.",
+    "count": "{n} result(s)"
   }
 }

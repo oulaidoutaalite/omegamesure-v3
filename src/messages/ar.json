@@ -145,5 +145,13 @@
     "enterprise": "الشركة",
     "certifications": "الشهادات",
     "contact": "اتصل بنا"
+  },
+  "search": {
+    "placeholder": "ابحث عن منتج أو مرجع…",
+    "button": "بحث",
+    "title": "بحث",
+    "resultsFor": "نتائج البحث عن",
+    "noResults": "لا توجد نتائج لبحثك.",
+    "count": "{n} نتيجة"
   }
 }

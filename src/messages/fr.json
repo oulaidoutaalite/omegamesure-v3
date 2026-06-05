@@ -145,5 +145,13 @@
     "enterprise": "Entreprise",
     "certifications": "Certifications",
     "contact": "Contact"
+  },
+  "search": {
+    "placeholder": "Rechercher un produit ou une référence…",
+    "button": "Rechercher",
+    "title": "Recherche",
+    "resultsFor": "Résultats pour",
+    "noResults": "Aucun résultat pour votre recherche.",
+    "count": "{n} résultat(s)"
   }
 }
