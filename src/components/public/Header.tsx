@@ -69,7 +69,7 @@ export function Header({ brand, items }: Props) {
               <img
                 src={brand.logoUrl}
                 alt={brand.siteName}
-                className="h-20 w-auto object-contain sm:h-24"
+                className="h-24 w-auto object-contain sm:h-28"
               />
             ) : (
               <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand text-base font-bold text-white">
