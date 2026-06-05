@@ -27,14 +27,14 @@ export function SearchBar({ className }: { className?: string }) {
         onChange={(e) => setQ(e.target.value)}
         placeholder={t('placeholder')}
         aria-label={t('button')}
-        className="min-w-0 flex-1 rounded-l-md border border-r-0 border-input bg-muted/50 px-4 py-2.5 text-sm italic text-foreground placeholder:text-muted-foreground focus:bg-background focus:outline-none focus:ring-2 focus:ring-orange/40"
+        className="min-w-0 flex-1 bg-[#e7e1d9] px-5 py-3 text-[15px] italic text-foreground placeholder:text-muted-foreground/80 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange/50"
       />
       <button
         type="submit"
         aria-label={t('button')}
-        className="grid shrink-0 place-items-center rounded-r-md bg-orange px-4 text-white transition hover:bg-orange-600"
+        className="grid shrink-0 place-items-center bg-orange px-5 text-white transition hover:bg-orange-600"
       >
-        <IconSearch size={18} />
+        <IconSearch size={20} />
       </button>
     </form>
   )

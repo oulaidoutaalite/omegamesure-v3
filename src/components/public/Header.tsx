@@ -56,7 +56,9 @@ export function Header({ brand, items }: Props) {
   return (
     <header
       className={cn(
-        'sticky top-0 z-40 w-full transition-shadow',
+        // The header itself is not sticky (the tall logo row scrolls away);
+        // only the navy menu bar below sticks to the top — see its classes.
+        'relative z-40 w-full transition-shadow',
         scrolled
           ? 'border-b border-border bg-background/95 shadow-sm backdrop-blur'
           : 'bg-background/95 backdrop-blur',
@@ -114,8 +116,10 @@ export function Header({ brand, items }: Props) {
         </div>
       </Container>
 
-      {/* Desktop menu bar — navy, full width (Reagecon-style) */}
-      <div className="hidden border-t border-white/10 bg-brand lg:block">
+      {/* Desktop menu bar — navy, full width (Reagecon-style).
+          Sticks to the top alone so the page content is never hidden
+          behind the tall logo row. */}
+      <div className="hidden border-t border-white/10 bg-brand shadow-sm lg:sticky lg:top-0 lg:z-40 lg:block">
         <Container>
           <nav className="flex flex-wrap items-center gap-x-1 gap-y-0.5 py-1.5">
             {links.map((it) => {
