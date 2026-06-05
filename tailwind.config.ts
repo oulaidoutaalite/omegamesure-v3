@@ -55,19 +55,28 @@ const config: Config = {
           foreground:'hsl(var(--card-foreground))',
         },
 
-        // Brand palette — Omega Mesure
+        // Brand palette — Omega Mesure (navy, Reagecon-inspired theme)
         brand: {
-          DEFAULT: '#185FA5',
-          50:  '#eff6fc',
-          100: '#dbeafe',
-          200: '#bedaf6',
-          300: '#8fc0ea',
-          400: '#5a9fdc',
-          500: '#367fc8',
-          600: '#185FA5',  // primary
-          700: '#114a82',
-          800: '#0e3d6a',
-          900: '#0c3257',
+          DEFAULT: '#2E2A52',
+          50:  '#f2f2f7',
+          100: '#e4e3ee',
+          200: '#c7c5dc',
+          300: '#a09cc1',
+          400: '#6f6a9c',
+          500: '#494472',
+          600: '#2E2A52',  // primary navy
+          700: '#262247',
+          800: '#1d1a39',
+          900: '#15132b',
+        },
+
+        // Accent — warm orange (Reagecon-style action color)
+        orange: {
+          DEFAULT: '#EA8423',
+          50:  '#fdf3e8',
+          400: '#f0993f',
+          500: '#EA8423',
+          600: '#cf6f12',
         },
 
         // Section accents

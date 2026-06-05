@@ -99,10 +99,10 @@ export function Header({ brand, items }: Props) {
                   key={it.id}
                   href={path}
                   className={cn(
-                    'shrink-0 whitespace-nowrap rounded-md px-2.5 py-2 text-[13px] font-medium leading-none transition',
+                    'shrink-0 whitespace-nowrap rounded-md px-2.5 py-2 text-[13px] font-semibold uppercase tracking-wide leading-none transition',
                     isActive
-                      ? 'text-brand'
-                      : 'text-foreground/80 hover:bg-accent hover:text-foreground',
+                      ? 'text-orange'
+                      : 'text-brand/80 hover:text-orange',
                   )}
                 >
                   {it.label}
@@ -114,7 +114,10 @@ export function Header({ brand, items }: Props) {
           <div className="flex shrink-0 items-center gap-2">
             <LocaleSwitcher />
             {cta && (
-              <Button asChild className="hidden whitespace-nowrap sm:inline-flex">
+              <Button
+                asChild
+                className="hidden whitespace-nowrap bg-orange uppercase tracking-wide text-white hover:bg-orange-600 sm:inline-flex"
+              >
                 <Link href={itemPath(cta)}>{cta.label}</Link>
               </Button>
             )}
@@ -142,8 +145,8 @@ export function Header({ brand, items }: Props) {
                     <Link
                       href={path}
                       className={cn(
-                        'block rounded-md px-3 py-2 text-sm font-medium',
-                        isActive ? 'bg-brand/10 text-brand' : 'text-foreground hover:bg-accent',
+                        'block rounded-md px-3 py-2 text-sm font-semibold uppercase tracking-wide',
+                        isActive ? 'bg-orange/10 text-orange' : 'text-brand hover:bg-accent',
                       )}
                     >
                       {it.label}
@@ -153,7 +156,7 @@ export function Header({ brand, items }: Props) {
               })}
               {cta && (
                 <li className="pt-2">
-                  <Button asChild className="w-full">
+                  <Button asChild className="w-full bg-orange uppercase tracking-wide text-white hover:bg-orange-600">
                     <Link href={itemPath(cta)}>{cta.label}</Link>
                   </Button>
                 </li>

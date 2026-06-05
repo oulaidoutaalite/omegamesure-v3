@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 47.4% 11.2%;
 
-    --primary: 211 74% 37%;            /* brand #185FA5 */
+    --primary: 31 82% 53%;             /* action orange #EA8423 (Reagecon-style) */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 211 74% 37%;
+    --ring: 246 32% 25%;
 
     --radius: 0.5rem;
   }
