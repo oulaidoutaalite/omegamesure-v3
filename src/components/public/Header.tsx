@@ -85,32 +85,6 @@ export function Header({ brand, items }: Props) {
             </span>
           </Link>
 
-          {/* Auto-aligning menu: each item stays on a single line; when the
-              whole menu is too long it wraps onto additional lines below
-              (the header grows in height) instead of being clipped. */}
-          <nav
-            className="hidden min-w-0 flex-1 flex-wrap items-center justify-start gap-x-0.5 gap-y-1 px-2 lg:flex"
-          >
-            {links.map((it) => {
-              const path = itemPath(it)
-              const isActive = pathname === path || (path !== '/' && pathname.startsWith(path))
-              return (
-                <Link
-                  key={it.id}
-                  href={path}
-                  className={cn(
-                    'shrink-0 whitespace-nowrap rounded-md px-2.5 py-2 text-[13px] font-semibold uppercase tracking-wide leading-none transition',
-                    isActive
-                      ? 'text-orange'
-                      : 'text-brand/80 hover:text-orange',
-                  )}
-                >
-                  {it.label}
-                </Link>
-              )
-            })}
-          </nav>
-
           <div className="flex shrink-0 items-center gap-2">
             <LocaleSwitcher />
             {cta && (
@@ -132,9 +106,37 @@ export function Header({ brand, items }: Props) {
             </button>
           </div>
         </div>
+      </Container>
 
-        {/* Mobile menu */}
-        {open && (
+      {/* Desktop menu bar — navy, full width (Reagecon-style) */}
+      <div className="hidden border-t border-white/10 bg-brand lg:block">
+        <Container>
+          <nav className="flex flex-wrap items-center gap-x-1 gap-y-0.5 py-1.5">
+            {links.map((it) => {
+              const path = itemPath(it)
+              const isActive = pathname === path || (path !== '/' && pathname.startsWith(path))
+              return (
+                <Link
+                  key={it.id}
+                  href={path}
+                  className={cn(
+                    'whitespace-nowrap rounded px-3 py-2 text-[13px] font-semibold uppercase tracking-wide transition',
+                    isActive
+                      ? 'text-orange'
+                      : 'text-white/90 hover:bg-white/10 hover:text-orange',
+                  )}
+                >
+                  {it.label}
+                </Link>
+              )
+            })}
+          </nav>
+        </Container>
+      </div>
+
+      {/* Mobile menu */}
+      {open && (
+        <Container>
           <nav className="border-t border-border py-3 lg:hidden">
             <ul className="space-y-1">
               {links.map((it) => {
@@ -163,8 +165,8 @@ export function Header({ brand, items }: Props) {
               )}
             </ul>
           </nav>
-        )}
-      </Container>
+        </Container>
+      )}
     </header>
   )
 }
