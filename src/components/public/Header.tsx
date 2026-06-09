@@ -88,8 +88,10 @@ export function Header({ brand, items }: Props) {
             </span>
           </Link>
 
-          {/* Search bar (Reagecon-style), centered between logo and actions */}
-          <div className="hidden flex-1 justify-center px-4 md:flex">
+          {/* Search bar (Reagecon-style), centered between logo and actions.
+              Shown inline only on desktop (lg+). On tablet/mobile it moves to its
+              own full-width row just below (so it never collides with the actions). */}
+          <div className="hidden flex-1 justify-center px-4 lg:flex">
             <SearchBar className="max-w-xl" />
           </div>
 
@@ -115,6 +117,16 @@ export function Header({ brand, items }: Props) {
           </div>
         </div>
       </Container>
+
+      {/* Search row for tablet/mobile (< lg): full width, always visible,
+          so the search stays prominent without crowding the actions row. */}
+      <div className="border-t border-border lg:hidden">
+        <Container>
+          <div className="py-2">
+            <SearchBar />
+          </div>
+        </Container>
+      </div>
 
       {/* Desktop menu bar — navy, full width (Reagecon-style).
           Sticks to the top alone so the page content is never hidden
@@ -148,9 +160,6 @@ export function Header({ brand, items }: Props) {
       {open && (
         <Container>
           <nav className="border-t border-border py-3 lg:hidden">
-            <div className="mb-3 md:hidden">
-              <SearchBar />
-            </div>
             <ul className="space-y-1">
               {links.map((it) => {
                 const path = itemPath(it)
