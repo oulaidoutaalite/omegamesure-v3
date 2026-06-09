@@ -29,7 +29,9 @@ async function loadHeaderItems(locale: Locale): Promise<HeaderNavItem[]> {
 
 async function loadFooterCategories(locale: Locale): Promise<FooterCategory[]> {
   const rows = await db.category.findMany({
-    where: { isPublished: true },
+    // Métrologie & Consulting belong under the footer "Services" column, so we
+    // exclude them here to avoid listing them twice (and to free catalogue slots).
+    where: { isPublished: true, slug: { notIn: ['metrologie', 'consulting'] } },
     orderBy: { order: 'asc' },
     take: 6,
     select: { name: true, slug: true, translations: true },
