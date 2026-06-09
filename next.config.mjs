@@ -41,6 +41,14 @@ const nextConfig = {
     },
   },
 
+  async redirects() {
+    return [
+      // The biomedical category used to live at the placeholder slug /biom.
+      // Redirect any old link/bookmark to its real page.
+      { source: '/biom', destination: '/equipements-biomedical', permanent: true },
+    ]
+  },
+
   async headers() {
     return [
       {
