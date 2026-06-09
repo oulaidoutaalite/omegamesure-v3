@@ -4,6 +4,8 @@
  *
  * Idempotent: re-running updates instead of duplicating.
  */
+import crypto from 'node:crypto'
+
 import { PrismaClient, Role } from '@prisma/client'
 import bcrypt from 'bcryptjs'
 
@@ -32,7 +34,10 @@ async function main() {
 
   // ─── 2. Admin user ───────────────────────────────────────────────────────
   const adminEmail = process.env.SEED_ADMIN_EMAIL ?? 'oulaid.outaalite@gmail.com'
-  const adminPassword = process.env.SEED_ADMIN_PASSWORD ?? 'Oulaid@1990'
+  // Never commit a default credential: use SEED_ADMIN_PASSWORD, otherwise generate
+  // a strong random password and print it once below.
+  const generatedPassword = !process.env.SEED_ADMIN_PASSWORD
+  const adminPassword = process.env.SEED_ADMIN_PASSWORD ?? crypto.randomBytes(12).toString('base64url')
   const passwordHash = await bcrypt.hash(adminPassword, 12)
   await db.user.upsert({
     where: { email: adminEmail },
@@ -264,7 +269,12 @@ async function main() {
   console.log('✓ Demo items: 2 produits + 2 services')
 
   console.log('\n✅ Seed complete!')
-  console.log(`   Login → /admin    ${adminEmail}  ·  ${adminPassword}`)
+  console.log(`   Login → /admin    ${adminEmail}`)
+  if (generatedPassword) {
+    console.log(`   Generated admin password (shown once, save it): ${adminPassword}`)
+  } else {
+    console.log('   Admin password: (from SEED_ADMIN_PASSWORD env)')
+  }
 }
 
 main()

@@ -129,11 +129,18 @@ export async function GET(req: Request) {
 
     // ─── Admin user ──────────────────────────────────────────────────────
     const adminEmail = process.env.SEED_ADMIN_EMAIL ?? 'oulaid.outaalite@gmail.com'
-    const adminPassword = process.env.SEED_ADMIN_PASSWORD ?? 'Oulaid@1990'
+    const adminPassword = process.env.SEED_ADMIN_PASSWORD
+    if (!adminPassword || adminPassword.length < 8) {
+      return NextResponse.json(
+        { ok: false, error: 'SEED_ADMIN_PASSWORD env var is required (min 8 chars).' },
+        { status: 500 },
+      )
+    }
     const passwordHash = await bcrypt.hash(adminPassword, 12)
     await db.user.upsert({
       where: { email: adminEmail },
-      update: { password: passwordHash, role: Role.SUPER_ADMIN, isActive: true },
+      // Never reset an existing admin's password on re-run — only ensure role/active.
+      update: { role: Role.SUPER_ADMIN, isActive: true },
       create: {
         email:    adminEmail,
         password: passwordHash,

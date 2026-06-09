@@ -68,14 +68,11 @@ npm run dev
 # → http://localhost:3000/admin/login dashboard
 ```
 
-Identifiants admin par défaut (créés par le seed) :
-
-```
-Email     oulaid.outaalite@gmail.com
-Password  Oulaid@1990
-```
-
-> Personnalisables via `SEED_ADMIN_EMAIL` / `SEED_ADMIN_PASSWORD` dans `.env`.
+Identifiants admin : définis par les variables `SEED_ADMIN_EMAIL` et
+`SEED_ADMIN_PASSWORD` dans votre `.env` (jamais commitées). Si
+`SEED_ADMIN_PASSWORD` n'est pas défini, le seed génère un mot de passe
+aléatoire et l'affiche **une seule fois** dans la console — à enregistrer
+immédiatement. Aucun identifiant par défaut n'est stocké dans le code.
 
 ## Variables d'environnement
 
