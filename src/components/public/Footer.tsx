@@ -95,11 +95,10 @@ export async function Footer({
             ))}
           </FooterCol>
 
-          {/* Col 3 — Services */}
+          {/* Col 3 — Services (the quote CTA lives under "Entreprise" + header). */}
           <FooterCol title={t('services')}>
             <FooterLink href={withLocale('/metrologie', locale)}>{(await getTranslations({ locale, namespace: 'navbar' }))('metrology')}</FooterLink>
             <FooterLink href={withLocale('/consulting', locale)}>{(await getTranslations({ locale, namespace: 'navbar' }))('consulting')}</FooterLink>
-            <FooterLink href={withLocale('/devis', locale)}>{(await getTranslations({ locale, namespace: 'cta' }))('requestQuote')}</FooterLink>
           </FooterCol>
 
           {/* Col 4 — Entreprise */}
