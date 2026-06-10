@@ -47,7 +47,7 @@ const groups: NavGroup[] = [
     title: 'Site public',
     items: [
       { label: 'Navigation',       href: '/admin/navigation',     icon: IconList },
-      { label: 'Page d\'accueil',  href: '/admin/homepage',       icon: IconHome,       soon: true },
+      { label: 'Page d\'accueil',  href: '/admin/homepage',       icon: IconHome },
       { label: 'Configuration',    href: '/admin/config',         icon: IconSettings },
       { label: 'Langues',          href: '/admin/languages',      icon: IconWorld },
     ],

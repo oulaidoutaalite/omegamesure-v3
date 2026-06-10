@@ -12,28 +12,6 @@ const GENERAL: FieldDef[] = [
   { key: 'certifications', label: 'Certifications', type: 'tags', helper: 'Affichées sur la home et le footer (séparées par virgule).', placeholder: 'ex : votre certification' },
 ]
 
-// All home-page editorial texts, editable in the 3 site languages (FR/AR/EN).
-const HOME_CONTENT: FieldDef[] = [
-  // — Hero (haut de page) —
-  { key: 'home.heroBadge',   label: 'Hero — badge',       type: 'multilang',          placeholder: 'Maroc · Distributeur agréé multi-marques' },
-  { key: 'site.tagline',     label: 'Hero — slogan',      type: 'multilang',          placeholder: 'Votre partenaire scientifique & industriel' },
-  { key: 'site.description', label: 'Hero — description', type: 'multilang-textarea', rows: 2, helper: 'Paragraphe sous le slogan. Laisser vide dans les 3 langues pour ne rien afficher.' },
-  // — Chiffres-clés (bandeau) —
-  { key: 'home.statProducts',        label: 'Chiffre 1 — libellé', type: 'multilang' },
-  { key: 'home.statExperience',      label: 'Chiffre 2 — libellé', type: 'multilang' },
-  { key: 'home.statExperienceValue', label: 'Chiffre 2 — valeur',  type: 'multilang', placeholder: '15+' },
-  { key: 'home.statMetrology',       label: 'Chiffre 3 — libellé', type: 'multilang' },
-  { key: 'home.statMetrologyValue',  label: 'Chiffre 3 — valeur',  type: 'multilang', placeholder: 'Toutes marques' },
-  // — Section « Catalogue & services » —
-  { key: 'home.statsTitle',   label: 'Section — sur-titre', type: 'multilang' },
-  { key: 'home.statsHeading', label: 'Section — titre',     type: 'multilang' },
-  { key: 'home.statsLead',    label: 'Section — texte',     type: 'multilang-textarea', rows: 2 },
-  { key: 'home.certsTitle',   label: 'Bandeau certifications — titre', type: 'multilang' },
-  // — Appel à l’action (bas de page) —
-  { key: 'home.ctaTitle', label: 'Appel à l’action — titre', type: 'multilang' },
-  { key: 'home.ctaLead',  label: 'Appel à l’action — texte', type: 'multilang-textarea', rows: 2 },
-]
-
 const BRANDING: FieldDef[] = [
   { key: 'branding.logo',    label: 'Logo (clair)',  type: 'image', folder: 'branding', helper: 'Logo principal — affiché sur fond clair.' },
   { key: 'branding.logoDark',label: 'Logo (sombre)', type: 'image', folder: 'branding', helper: 'Optionnel — affiché sur fond foncé (footer, etc.).' },
@@ -80,7 +58,6 @@ export default async function ConfigPage() {
 
   const tabs = [
     { value: 'general',  label: 'Général',          content: <ConfigForm category="general"  fields={GENERAL}    initialValues={config} /> },
-    { value: 'content',  label: 'Contenu accueil',  content: <ConfigForm category="content"  fields={HOME_CONTENT} initialValues={config} /> },
     { value: 'branding', label: 'Identité visuelle', content: <ConfigForm category="branding" fields={BRANDING}   initialValues={config} /> },
     { value: 'contact',  label: 'Coordonnées',      content: <ConfigForm category="contact"  fields={CONTACT}    initialValues={config} /> },
     { value: 'social',   label: 'Réseaux sociaux',  content: <ConfigForm category="social"   fields={SOCIAL}     initialValues={config} /> },
