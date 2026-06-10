@@ -66,7 +66,7 @@ async function main() {
     { key: 'branding.primary',  category: 'branding', value: '#185FA5',                                 label: 'Couleur primaire' },
     { key: 'social.linkedin',   category: 'social',   value: '',                                        label: 'LinkedIn URL' },
     { key: 'seo.description',   category: 'seo',      value: 'Fournisseur d\'équipements de laboratoire, balances industrielles, consommables, métrologie et consulting réglementaire au Maroc.', label: 'Meta description globale' },
-    { key: 'certifications',    category: 'general',  value: ['ISO 17025'],                             label: 'Certifications affichées' },
+    { key: 'certifications',    category: 'general',  value: [],                                        label: 'Certifications affichées' },
   ]
   for (const c of siteConfig) {
     await db.siteConfig.upsert({

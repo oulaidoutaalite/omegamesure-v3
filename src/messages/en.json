@@ -40,6 +40,7 @@
     "statProducts": "Listed products",
     "statExperience": "Years of experience",
     "statMetrology": "On-site metrology",
+    "statMetrologyValue": "All brands",
     "productCount": "{count, plural, =0 {0 products} one {1 product} other {# products}}"
   },
   "category": {

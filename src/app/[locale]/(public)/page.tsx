@@ -107,7 +107,7 @@ export default async function HomePage({
         <Container className="grid gap-px overflow-hidden rounded-none border-x border-border bg-border sm:grid-cols-3">
           <StatCard label={t('statProducts')}   value={`${productCount}+`} icon={IconPackage} />
           <StatCard label={t('statExperience')} value="15+"               icon={IconCalendarTime} />
-          <StatCard label={t('statMetrology')}  value="ISO 17025"         icon={IconRuler} />
+          <StatCard label={t('statMetrology')}  value={t('statMetrologyValue')} icon={IconRuler} />
         </Container>
       </section>
 
