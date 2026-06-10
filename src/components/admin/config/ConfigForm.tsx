@@ -25,6 +25,8 @@ export type FieldType =
   | 'boolean'
   | 'image'
   | 'tags' // comma-separated list
+  | 'multilang' // single-line text in FR/AR/EN
+  | 'multilang-textarea' // multi-line text in FR/AR/EN
 
 export type FieldDef = {
   key: string
@@ -37,6 +39,16 @@ export type FieldDef = {
   folder?: string
 }
 
+/** The three site locales. The default locale (FR) uses the bare key; AR/EN
+ *  use the `<key>.<code>` convention already understood by the public pages. */
+const LOCALES: { code: string; label: string; dir?: 'rtl' | 'ltr' }[] = [
+  { code: '',   label: 'Français' },
+  { code: 'ar', label: 'العربية', dir: 'rtl' },
+  { code: 'en', label: 'English' },
+]
+const subKey = (key: string, code: string) => (code ? `${key}.${code}` : key)
+const isMultilang = (t: FieldType) => t === 'multilang' || t === 'multilang-textarea'
+
 type Props = {
   category: string
   fields: FieldDef[]
@@ -47,6 +59,14 @@ export function ConfigForm({ category, fields, initialValues }: Props) {
   const [values, setValues] = useState<Record<string, unknown>>(() => {
     const out: Record<string, unknown> = {}
     for (const f of fields) {
+      if (isMultilang(f.type)) {
+        for (const l of LOCALES) {
+          const k = subKey(f.key, l.code)
+          const v = initialValues[k]
+          out[k] = typeof v === 'string' ? v : ''
+        }
+        continue
+      }
       const v = initialValues[f.key]
       if (v !== undefined && v !== null) {
         out[f.key] = f.type === 'tags' && Array.isArray(v) ? (v as string[]).join(', ') : v
@@ -67,7 +87,17 @@ export function ConfigForm({ category, fields, initialValues }: Props) {
 
   function onSubmit(e: React.FormEvent) {
     e.preventDefault()
-    const entries = fields.map((f) => {
+    const entries: { key: string; category: string; label: string; value: unknown }[] = []
+    for (const f of fields) {
+      if (isMultilang(f.type)) {
+        for (const l of LOCALES) {
+          const k = subKey(f.key, l.code)
+          let value: unknown = values[k]
+          if (typeof value === 'string') value = value.trim()
+          entries.push({ key: k, category, label: `${f.label} (${l.label})`, value })
+        }
+        continue
+      }
       let value: unknown = values[f.key]
       if (f.type === 'tags' && typeof value === 'string') {
         value = value.split(',').map((s) => s.trim()).filter(Boolean)
@@ -77,8 +107,8 @@ export function ConfigForm({ category, fields, initialValues }: Props) {
            f.type === 'color') && typeof value === 'string') {
         value = value.trim()
       }
-      return { key: f.key, category, label: f.label, value }
-    })
+      entries.push({ key: f.key, category, label: f.label, value })
+    }
 
     startTransition(async () => {
       const res = await saveConfigEntries({ entries })
@@ -89,15 +119,60 @@ export function ConfigForm({ category, fields, initialValues }: Props) {
 
   return (
     <form onSubmit={onSubmit} className="space-y-5">
-      {fields.map((f) => (
-        <FieldRow key={f.key} field={f} value={values[f.key]} onChange={(v) => setValue(f.key, v)} />
-      ))}
+      {fields.map((f) =>
+        isMultilang(f.type) ? (
+          <MultilangField key={f.key} field={f} values={values} onChange={setValue} />
+        ) : (
+          <FieldRow key={f.key} field={f} value={values[f.key]} onChange={(v) => setValue(f.key, v)} />
+        ),
+      )}
       <div className="flex justify-end">
         <Button type="submit" disabled={pending}>
           <IconCheck size={14} /> {pending ? 'Enregistrement…' : 'Enregistrer cette section'}
         </Button>
       </div>
     </form>
+  )
+}
+
+/** A single editorial text edited in the three site languages. */
+function MultilangField({
+  field, values, onChange,
+}: { field: FieldDef; values: Record<string, unknown>; onChange: (key: string, v: unknown) => void }) {
+  const isArea = field.type === 'multilang-textarea'
+  return (
+    <div className="space-y-2 rounded-lg border border-border bg-muted/20 p-3">
+      <Label>{field.label}</Label>
+      {field.helper && <p className="text-[11px] text-muted-foreground">{field.helper}</p>}
+      <div className="space-y-2.5">
+        {LOCALES.map((l) => {
+          const k = subKey(field.key, l.code)
+          const id = `cfg-${k.replace(/\W/g, '-')}`
+          return (
+            <div key={l.code || 'fr'} className="space-y-1">
+              <label htmlFor={id} className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                {l.label}
+              </label>
+              {isArea ? (
+                <Textarea
+                  id={id} rows={field.rows ?? 2} dir={l.dir}
+                  value={(values[k] as string) ?? ''}
+                  onChange={(e) => onChange(k, e.target.value)}
+                  placeholder={field.placeholder}
+                />
+              ) : (
+                <Input
+                  id={id} dir={l.dir}
+                  value={(values[k] as string) ?? ''}
+                  onChange={(e) => onChange(k, e.target.value)}
+                  placeholder={field.placeholder}
+                />
+              )}
+            </div>
+          )
+        })}
+      </div>
+    </div>
   )
 }
 

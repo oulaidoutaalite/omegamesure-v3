@@ -18,7 +18,7 @@ import { Button } from '@/components/ui/button'
 import { defaultLocale, type Locale } from '@/i18n'
 import { db } from '@/lib/db'
 import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
-import { loadAllConfig } from '@/lib/site-config'
+import { loadAllConfig, pickConfigText } from '@/lib/site-config'
 
 export const dynamic = 'force-dynamic'
 
@@ -56,15 +56,13 @@ export default async function HomePage({
 
   const tCta = await getTranslations({ locale, namespace: 'cta' })
 
-  const siteName    = (config['site.name']        as string) ?? 'Omega Mesure'
-  const tagline     =
-    (typeof config[`site.tagline.${locale}`] === 'string' && (config[`site.tagline.${locale}`] as string).trim()
-      ? (config[`site.tagline.${locale}`] as string)
-      : (config['site.tagline'] as string)) ?? ''
-  const description =
-    (typeof config[`site.description.${locale}`] === 'string' && (config[`site.description.${locale}`] as string).trim()
-      ? (config[`site.description.${locale}`] as string)
-      : (config['site.description'] as string)) ?? ''
+  // Resolve any editorial text from config (per-locale, with the message file as
+  // the ultimate fallback) so every string below can be overridden from the admin.
+  const txt = (key: string, fallback = '') => pickConfigText(config, key, locale, fallback)
+
+  const siteName    = (config['site.name'] as string) ?? 'Omega Mesure'
+  const tagline     = txt('site.tagline')
+  const description = txt('site.description')
   const certs       = Array.isArray(config['certifications'])
     ? (config['certifications'] as unknown[]).filter((v): v is string => typeof v === 'string')
     : []
@@ -77,7 +75,7 @@ export default async function HomePage({
         <Container>
           <div className="relative mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-3 py-1 text-xs font-medium text-brand">
-              <IconCircleCheck size={14} /> {t('heroBadge')}
+              <IconCircleCheck size={14} /> {txt('home.heroBadge', t('heroBadge'))}
             </span>
             <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
               {siteName}
@@ -105,9 +103,9 @@ export default async function HomePage({
       {/* ── Stats ──────────────────────────────────────────────── */}
       <section className="border-y border-border bg-card">
         <Container className="grid gap-px overflow-hidden rounded-none border-x border-border bg-border sm:grid-cols-3">
-          <StatCard label={t('statProducts')}   value={`${productCount}+`} icon={IconPackage} />
-          <StatCard label={t('statExperience')} value="15+"               icon={IconCalendarTime} />
-          <StatCard label={t('statMetrology')}  value={t('statMetrologyValue')} icon={IconRuler} />
+          <StatCard label={txt('home.statProducts', t('statProducts'))}     value={`${productCount}+`} icon={IconPackage} />
+          <StatCard label={txt('home.statExperience', t('statExperience'))} value={txt('home.statExperienceValue', '15+')} icon={IconCalendarTime} />
+          <StatCard label={txt('home.statMetrology', t('statMetrology'))}   value={txt('home.statMetrologyValue', t('statMetrologyValue'))} icon={IconRuler} />
         </Container>
       </section>
 
@@ -115,9 +113,9 @@ export default async function HomePage({
       <section className="py-16 sm:py-24">
         <Container>
           <div className="mb-10 text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-brand">{t('statsTitle')}</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight">{t('statsHeading')}</h2>
-            <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">{t('statsLead')}</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">{txt('home.statsTitle', t('statsTitle'))}</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight">{txt('home.statsHeading', t('statsHeading'))}</h2>
+            <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">{txt('home.statsLead', t('statsLead'))}</p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -160,7 +158,7 @@ export default async function HomePage({
           <Container>
             <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                {t('certsTitle')}
+                {txt('home.certsTitle', t('certsTitle'))}
               </p>
               <ul className="flex flex-wrap items-center justify-center gap-3">
                 {certs.map((c) => (
@@ -178,8 +176,8 @@ export default async function HomePage({
       <section className="py-16 sm:py-24">
         <Container size="narrow" className="text-center">
           <IconBuildingFactory2 className="mx-auto h-10 w-10 text-brand" />
-          <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">{t('ctaTitle')}</h2>
-          <p className="mt-3 text-sm text-muted-foreground">{t('ctaLead')}</p>
+          <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">{txt('home.ctaTitle', t('ctaTitle'))}</h2>
+          <p className="mt-3 text-sm text-muted-foreground">{txt('home.ctaLead', t('ctaLead'))}</p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Button asChild size="lg">
               <Link href={withLocale('/devis', locale)}>{tCta('requestQuote')}</Link>

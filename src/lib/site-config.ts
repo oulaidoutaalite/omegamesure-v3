@@ -24,6 +24,24 @@ export const loadAllConfig = cache(async (): Promise<ConfigMap> => {
   return map
 })
 
+/**
+ * Resolve an editorial text from the config map for a given locale.
+ * Fallback chain: `key.<locale>` → `key` (the default/FR value) → `fallback`.
+ * Used so admins can override any front-end text per language from the dashboard.
+ */
+export function pickConfigText(
+  config: ConfigMap,
+  key: string,
+  locale: string,
+  fallback = '',
+): string {
+  const localized = config[`${key}.${locale}`]
+  if (typeof localized === 'string' && localized.trim()) return localized
+  const base = config[key]
+  if (typeof base === 'string' && base.trim()) return base
+  return fallback
+}
+
 export async function getConfig<T = unknown>(key: string, fallback?: T): Promise<T> {
   const all = await loadAllConfig()
   const v = all[key]
