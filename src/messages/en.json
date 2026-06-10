@@ -33,7 +33,7 @@
     "heroBadge": "Morocco · Authorized multi-brand distributor",
     "statsTitle": "Our offering",
     "statsHeading": "Catalog & services",
-    "statsLead": "Pharmaceutical equipment, industrial scales, consumables, COFRAC calibration and GMP support.",
+    "statsLead": "Pharmaceutical equipment, industrial scales, consumables, calibration and GMP support.",
     "certsTitle": "Quality & compliance",
     "ctaTitle": "Got a specific need? Let's talk.",
     "ctaLead": "Tell us about your project — equipment, calibration, qualification — and we'll get back to you within 48 business hours.",
@@ -52,7 +52,7 @@
     "noProductsCta": "Request a custom quote",
     "asideTitle": "Specific need?",
     "asideLead": "Our team helps you identify the right equipment for your constraints.",
-    "metrologyNotice": "Our COFRAC-accredited lab calibrates <strong>equipment we sell AND third-party gear, all brands</strong>.",
+    "metrologyNotice": "Our lab calibrates <strong>equipment we sell AND third-party gear, all brands</strong>.",
     "autresBadge": "Other",
     "productCountLabel": "{n, plural, one {1 product} other {# products}}"
   },

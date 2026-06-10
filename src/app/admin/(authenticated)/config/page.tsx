@@ -11,7 +11,7 @@ const GENERAL: FieldDef[] = [
   { key: 'site.name',     label: 'Nom du site',            type: 'text',     placeholder: 'Omega Mesure' },
   { key: 'site.tagline',  label: 'Slogan',                 type: 'text',     placeholder: 'Votre partenaire scientifique & industriel' },
   { key: 'site.description', label: 'Description courte', type: 'textarea', rows: 2, helper: 'Pour les méta sociaux par défaut' },
-  { key: 'certifications', label: 'Certifications',        type: 'tags',     helper: 'Affichées sur la home et le footer (séparées par virgule).', placeholder: 'ISO 17025, COFRAC' },
+  { key: 'certifications', label: 'Certifications',        type: 'tags',     helper: 'Affichées sur la home et le footer (séparées par virgule).', placeholder: 'ex : ISO 17025' },
 ]
 
 const BRANDING: FieldDef[] = [

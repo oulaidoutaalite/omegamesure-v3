@@ -91,7 +91,7 @@ const SITE_CONFIG: Array<{ key: string; category: string; value: unknown; label:
   { key: 'contact.email',     category: 'contact',  value: 'contact@omegamesure.com',                                                                                                       label: 'Email contact' },
   { key: 'contact.hours',     category: 'contact',  value: 'Lundi – Vendredi · 08h00 – 18h00',                                                                                              label: 'Horaires' },
   { key: 'branding.primary',  category: 'branding', value: '#185FA5',                                                                                                                       label: 'Couleur primaire' },
-  { key: 'seo.description',   category: 'seo',      value: 'Fournisseur d\'équipements de laboratoire, balances industrielles, consommables, métrologie COFRAC et consulting réglementaire au Maroc.', label: 'Meta description globale' },
+  { key: 'seo.description',   category: 'seo',      value: 'Fournisseur d\'équipements de laboratoire, balances industrielles, consommables, métrologie et consulting réglementaire au Maroc.', label: 'Meta description globale' },
   { key: 'certifications',    category: 'general',  value: ['ISO 17025'],                                                                                                                   label: 'Certifications affichées' },
 ]
 

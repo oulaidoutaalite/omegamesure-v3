@@ -65,7 +65,7 @@ async function main() {
     { key: 'contact.hours',     category: 'contact',  value: 'Lundi – Vendredi · 08h00 – 18h00',        label: 'Horaires' },
     { key: 'branding.primary',  category: 'branding', value: '#185FA5',                                 label: 'Couleur primaire' },
     { key: 'social.linkedin',   category: 'social',   value: '',                                        label: 'LinkedIn URL' },
-    { key: 'seo.description',   category: 'seo',      value: 'Fournisseur d\'équipements de laboratoire, balances industrielles, consommables, métrologie COFRAC et consulting réglementaire au Maroc.', label: 'Meta description globale' },
+    { key: 'seo.description',   category: 'seo',      value: 'Fournisseur d\'équipements de laboratoire, balances industrielles, consommables, métrologie et consulting réglementaire au Maroc.', label: 'Meta description globale' },
     { key: 'certifications',    category: 'general',  value: ['ISO 17025'],                             label: 'Certifications affichées' },
   ]
   for (const c of siteConfig) {
@@ -225,14 +225,14 @@ async function main() {
   const tempSub       = metrologieCat ? await db.subCategory.findFirst({ where: { categoryId: metrologieCat.id, slug: 'temperature' } }) : null
   if (metrologieCat && tempSub) {
     await db.product.upsert({
-      where: { slug: 'etalonnage-temperature-cofrac' },
+      where: { slug: 'etalonnage-temperature' },
       update: { kind: 'SERVICE' },
       create: {
-        name:             'Étalonnage température COFRAC',
-        slug:             'etalonnage-temperature-cofrac',
+        name:             'Étalonnage température',
+        slug:             'etalonnage-temperature',
         kind:             'SERVICE',
         shortDescription: 'Étalonnage sur site ou en laboratoire pour enceintes, sondes, thermomètres.',
-        description:      'Prestation COFRAC (ISO 17025) : raccordement aux étalons nationaux, certificat normalisé, validation des moyens de mesure. Délai 5 jours ouvrés.',
+        description:      'Étalonnage : raccordement aux étalons nationaux, certificat normalisé, validation des moyens de mesure. Délai 5 jours ouvrés.',
         brand:            'Labo Omega Mesure',
         model:            'ETAL-T',
         categoryId:       metrologieCat.id,

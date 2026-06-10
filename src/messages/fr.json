@@ -33,7 +33,7 @@
     "heroBadge": "Maroc · Distributeur agréé multi-marques",
     "statsTitle": "Nos univers",
     "statsHeading": "Catalogue & services",
-    "statsLead": "Équipements pharmaceutiques, balances industrielles, consommables, étalonnage COFRAC et accompagnement BPF.",
+    "statsLead": "Équipements pharmaceutiques, balances industrielles, consommables, étalonnage et accompagnement BPF.",
     "certsTitle": "Qualité & conformité",
     "ctaTitle": "Un besoin précis ? Parlons-en.",
     "ctaLead": "Décrivez-nous votre projet — équipement, étalonnage, qualification — et nous revenons vers vous sous 48 h ouvrées.",
@@ -52,7 +52,7 @@
     "noProductsCta": "Demander un devis sur mesure",
     "asideTitle": "Besoin spécifique ?",
     "asideLead": "Notre équipe vous accompagne pour identifier l'équipement le plus adapté à vos contraintes.",
-    "metrologyNotice": "Notre laboratoire COFRAC étalonne <strong>le matériel que nous vendons ET le matériel tiers, toutes marques</strong>.",
+    "metrologyNotice": "Notre laboratoire étalonne <strong>le matériel que nous vendons ET le matériel tiers, toutes marques</strong>.",
     "autresBadge": "Autres",
     "productCountLabel": "{n} produit{n, plural, one {} other {s}}"
   },

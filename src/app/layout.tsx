@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: '%s | Omega Mesure',
   },
   description:
-    'Équipements de laboratoire pharmaceutique, balances industrielles, consommables, métrologie COFRAC et consulting réglementaire.',
+    'Équipements de laboratoire pharmaceutique, balances industrielles, consommables, métrologie et consulting réglementaire.',
 }
 
 // Pass-through root layout — html/body are provided by [locale]/layout.tsx

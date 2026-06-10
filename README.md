@@ -1,8 +1,8 @@
 # Omega Mesure — Site B2B multilingue + dashboard admin
 
 Site professionnel pour **Omega Mesure et instrumentation** : équipements de
-laboratoire pharmaceutique, balances industrielles, consommables, métrologie
-COFRAC et consulting réglementaire.
+laboratoire pharmaceutique, balances industrielles, consommables, métrologie et
+consulting réglementaire.
 
 Le projet inclut :
 
