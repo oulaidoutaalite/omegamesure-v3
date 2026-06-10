@@ -147,6 +147,18 @@
     "certifications": "Certifications",
     "contact": "Contact"
   },
+  "cart": {
+    "add": "Ajouter au devis",
+    "added": "Ajouté ✓",
+    "title": "Ma sélection",
+    "itemsCount": "{n} article(s)",
+    "empty": "Votre sélection est vide",
+    "emptyHint": "Ajoutez des produits depuis le catalogue, puis envoyez une seule demande de devis groupée.",
+    "requestQuote": "Demander un devis",
+    "clear": "Vider la sélection",
+    "remove": "Retirer",
+    "selectedTitle": "Produits sélectionnés"
+  },
   "search": {
     "placeholder": "Rechercher un produit ou une référence…",
     "button": "Rechercher",

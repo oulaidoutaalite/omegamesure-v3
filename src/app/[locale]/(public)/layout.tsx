@@ -1,5 +1,6 @@
 import { type ReactNode } from 'react'
 
+import { CartProvider } from '@/components/public/cart/CartProvider'
 import { Footer, type FooterCategory } from '@/components/public/Footer'
 import { Header, type HeaderNavItem } from '@/components/public/Header'
 import { type Locale } from '@/i18n'
@@ -66,7 +67,7 @@ export default async function PublicLayout({
   })()
 
   return (
-    <>
+    <CartProvider>
       <Header
         brand={{ siteName: brand.siteName, tagline: brand.tagline, logoUrl: brand.logoUrl }}
         items={items}
@@ -81,6 +82,6 @@ export default async function PublicLayout({
         social={social}
         categories={categories}
       />
-    </>
+    </CartProvider>
   )
 }

@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from 'next-intl'
 import { useState, useTransition } from 'react'
 import { toast } from 'sonner'
 
+import { useCart } from '@/components/public/cart/CartProvider'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -38,7 +39,12 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
   const t       = useTranslations('quote.form')
   const tTypes  = useTranslations('quote.types')
   const tSector = useTranslations('quote.sectors')
+  const tCart   = useTranslations('cart')
   const locale  = useLocale()
+
+  const cart      = useCart()
+  const cartItems = cart.items
+  const hasCart   = cart.ready && cartItems.length > 0
 
   const [pending, startTransition] = useTransition()
   const [success, setSuccess] = useState<string | null>(null)
@@ -55,7 +61,7 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
 
   function onSubmit(e: React.FormEvent) {
     e.preventDefault()
-    if (description.trim().length < 10) {
+    if (!hasCart && description.trim().length < 10) {
       toast.error(t('minLength'))
       return
     }
@@ -71,9 +77,11 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
         deadline:    config.showDeadline ? deadline : '',
         description,
         productId:   productSlug ?? '',
+        items:       hasCart ? cartItems.map((i) => ({ slug: i.slug, name: i.name, qty: i.qty })) : undefined,
         locale,
       })
       if (!res.ok) { toast.error(res.error); return }
+      if (hasCart) cart.clear()
       toast.success(t('successTitle'))
       setSuccess(res.data.reference)
     })
@@ -98,6 +106,21 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
 
   return (
     <form onSubmit={onSubmit} className="space-y-5">
+      {hasCart && (
+        <div className="rounded-xl border border-brand/20 bg-brand/5 p-4">
+          <p className="mb-2 text-sm font-semibold text-brand">
+            {tCart('selectedTitle')} ({cartItems.length})
+          </p>
+          <ul className="space-y-1.5">
+            {cartItems.map((it) => (
+              <li key={it.slug} className="flex items-center justify-between gap-2 text-sm">
+                <span className="min-w-0 truncate">{it.name}</span>
+                <span className="shrink-0 text-muted-foreground">× {it.qty}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-1.5">
           <Label htmlFor="fullName">{t('fullName')} *</Label>
@@ -157,8 +180,8 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
       </div>
 
       <div className="space-y-1.5">
-        <Label htmlFor="description">{t('description')} *</Label>
-        <Textarea id="description" rows={6} required minLength={10}
+        <Label htmlFor="description">{t('description')} {hasCart ? '' : '*'}</Label>
+        <Textarea id="description" rows={6} required={!hasCart} minLength={hasCart ? undefined : 10}
                   placeholder={t('descriptionPlaceholder')}
                   value={description} onChange={(e) => setDescription(e.target.value)} />
       </div>

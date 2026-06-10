@@ -1,6 +1,6 @@
 'use server'
 
-import { type QuoteStatus } from '@prisma/client'
+import { Prisma, type QuoteStatus } from '@prisma/client'
 import { headers } from 'next/headers'
 import { revalidatePath } from 'next/cache'
 
@@ -66,6 +66,7 @@ export async function submitPublicQuote(input: PublicQuoteInput): Promise<
       deadline:    d.deadline || null,
       description: d.description,
       productId:   d.productId || null,
+      items:       d.items && d.items.length ? (d.items as unknown as Prisma.InputJsonValue) : undefined,
       locale:      d.locale,
       ipAddress,
       userAgent,
@@ -83,6 +84,22 @@ async function notifyAdminOfNewQuote(quoteId: string) {
   const q = await db.quoteRequest.findUnique({ where: { id: quoteId } })
   if (!q) return
   const to = process.env.EMAIL_QUOTE_RECIPIENT ?? 'contact@omegamesure.com'
+
+  const itemsArr = Array.isArray(q.items)
+    ? (q.items as Array<{ slug?: string; name?: string; qty?: number }>)
+    : []
+  const itemsHtml = itemsArr.length
+    ? `<h3 style="margin:18px 0 6px;font-size:14px;color:#185FA5;">Produits sélectionnés (${itemsArr.length})</h3>
+       <table cellpadding="6" style="font-size:13px;border-collapse:collapse;width:100%;">
+         ${itemsArr
+           .map(
+             (it) =>
+               `<tr><td style="border-bottom:1px solid #eef2f7;">${escapeHtml(String(it.name ?? it.slug ?? ''))}</td><td style="border-bottom:1px solid #eef2f7;text-align:right;color:#64748b;white-space:nowrap;">× ${escapeHtml(String(it.qty ?? 1))}</td></tr>`,
+           )
+           .join('')}
+       </table>`
+    : ''
+
   const html = wrapEmail(
     `
     <h2 style="margin:0 0 16px;color:#185FA5;font-size:18px;">Nouvelle demande de devis</h2>
@@ -95,7 +112,8 @@ async function notifyAdminOfNewQuote(quoteId: string) {
       ${q.quantity ? `<tr><td style="color:#64748b;">Quantité</td><td>${escapeHtml(q.quantity)}</td></tr>` : ''}
       ${q.deadline ? `<tr><td style="color:#64748b;">Délai</td><td>${escapeHtml(q.deadline)}</td></tr>` : ''}
     </table>
-    <div style="margin-top:16px;padding:12px;background:#f8fafc;border-left:3px solid #185FA5;white-space:pre-wrap;">${escapeHtml(q.description)}</div>
+    ${itemsHtml}
+    ${q.description ? `<div style="margin-top:16px;padding:12px;background:#f8fafc;border-left:3px solid #185FA5;white-space:pre-wrap;">${escapeHtml(q.description)}</div>` : ''}
     `,
     { title: `Nouveau devis ${q.reference}` },
   )

@@ -286,6 +286,9 @@ model QuoteRequest {
 
   // Optional context
   productId String? // if launched from a product page (no FK to keep history if product deleted)
+  // Multi-product "cart" request: snapshot array [{ slug, name, qty }]. Null/empty
+  // for the classic single-product or free-text request.
+  items     Json?
   locale    String  @default("fr")
 
   // Workflow

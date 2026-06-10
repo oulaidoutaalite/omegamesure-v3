@@ -147,6 +147,18 @@
     "certifications": "Certifications",
     "contact": "Contact"
   },
+  "cart": {
+    "add": "Add to quote",
+    "added": "Added ✓",
+    "title": "My selection",
+    "itemsCount": "{n} item(s)",
+    "empty": "Your selection is empty",
+    "emptyHint": "Add products from the catalog, then send a single grouped quote request.",
+    "requestQuote": "Request a quote",
+    "clear": "Clear selection",
+    "remove": "Remove",
+    "selectedTitle": "Selected products"
+  },
   "search": {
     "placeholder": "Search a product or item number…",
     "button": "Search",

@@ -2,6 +2,7 @@ import { IconArrowRight, IconPhoto } from '@tabler/icons-react'
 import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 
+import { AddToQuoteButton } from '@/components/public/cart/AddToQuoteButton'
 import { defaultLocale, type Locale } from '@/i18n'
 import { cn } from '@/lib/utils'
 
@@ -72,7 +73,7 @@ export async function ProductCard({
         {data.shortDescription && (
           <p className="line-clamp-2 text-xs text-muted-foreground">{data.shortDescription}</p>
         )}
-        <div className="mt-auto flex items-center justify-between pt-3">
+        <div className="mt-auto flex items-center justify-between gap-2 pt-3">
           {data.price !== null ? (
             <span className="text-sm font-semibold text-brand">
               {data.price.toLocaleString(locale === 'ar' ? 'ar-MA' : locale === 'en' ? 'en-US' : 'fr-FR')} {data.currency}
@@ -80,9 +81,15 @@ export async function ProductCard({
           ) : (
             <span className="text-xs text-muted-foreground">{t('onRequest')}</span>
           )}
-          <span className="inline-flex items-center gap-1 text-xs font-medium text-brand">
-            {tCommon('details')} <IconArrowRight size={12} className="transition group-hover:translate-x-0.5 rtl:rotate-180" />
-          </span>
+          <div className="flex items-center gap-2">
+            <AddToQuoteButton
+              variant="card"
+              item={{ slug: data.slug, name: data.name, brand: data.brand, image: data.imageUrl }}
+            />
+            <span className="inline-flex items-center gap-1 text-xs font-medium text-brand">
+              {tCommon('details')} <IconArrowRight size={12} className="transition group-hover:translate-x-0.5 rtl:rotate-180" />
+            </span>
+          </div>
         </div>
       </div>
     </Link>

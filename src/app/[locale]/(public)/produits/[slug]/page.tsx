@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
+import { AddToQuoteButton } from '@/components/public/cart/AddToQuoteButton'
 import { Container } from '@/components/public/Container'
 import { Button } from '@/components/ui/button'
 import { defaultLocale, type Locale } from '@/i18n'
@@ -138,6 +139,10 @@ export default async function ProductPage({
             <Button asChild size="lg">
               <Link href={`${withLocale('/devis', locale)}?productSlug=${product.slug}`}>{tCta('requestQuote')}</Link>
             </Button>
+            <AddToQuoteButton
+              variant="full"
+              item={{ slug: product.slug, name, brand: product.brand, image: main?.url ?? null }}
+            />
             {product.datasheetUrl && (
               <Button asChild size="lg" variant="outline">
                 <a href={product.datasheetUrl} target="_blank" rel="noreferrer">

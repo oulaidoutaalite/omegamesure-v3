@@ -3,6 +3,7 @@
 import { IconMenu2, IconX } from '@tabler/icons-react'
 import { useEffect, useState } from 'react'
 
+import { CartWidget } from '@/components/public/cart/CartWidget'
 import { Container } from '@/components/public/Container'
 import { LocaleSwitcher } from '@/components/public/LocaleSwitcher'
 import { SearchBar } from '@/components/public/SearchBar'
@@ -96,6 +97,7 @@ export function Header({ brand, items }: Props) {
           </div>
 
           <div className="flex shrink-0 items-center gap-2">
+            <CartWidget />
             <LocaleSwitcher />
             {cta && (
               <Button
