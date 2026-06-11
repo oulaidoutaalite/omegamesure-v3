@@ -59,6 +59,7 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
       subCategoryId:    defaultValues?.subCategoryId    ?? null,
       images:           defaultValues?.images           ?? [],
       datasheetUrl:     defaultValues?.datasheetUrl     ?? '',
+      datasheetVisible: defaultValues?.datasheetVisible ?? false,
       isPublished:      defaultValues?.isPublished      ?? false,
       isFeatured:       defaultValues?.isFeatured       ?? false,
       metaTitle:        defaultValues?.metaTitle        ?? '',
@@ -73,6 +74,7 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
   const subCategoryId = watch('subCategoryId')
   const images        = watch('images') ?? []
   const datasheetUrl  = watch('datasheetUrl')
+  const datasheetVisible = watch('datasheetVisible')
   const isPublished   = watch('isPublished')
   const isFeatured    = watch('isFeatured')
   const kind          = watch('kind')
@@ -205,7 +207,7 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
           />
         </section>
 
-        <section className="rounded-xl border border-border bg-card p-6">
+        <section className="space-y-4 rounded-xl border border-border bg-card p-6">
           <MediaPicker
             label={isService ? 'Plaquette / Programme (PDF)' : 'Fiche technique (PDF)'}
             multiple={false}
@@ -214,6 +216,15 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
             value={datasheetPicks}
             onChange={(next) => setValue('datasheetUrl', next[0]?.url ?? '', { shouldDirty: true })}
           />
+          <label className="flex cursor-pointer items-center justify-between gap-3 rounded-lg border border-border bg-muted/30 p-3">
+            <span>
+              <div className="text-sm font-medium">Afficher la fiche technique PDF au public</div>
+              <div className="text-[11px] text-muted-foreground">
+                Décoché : le client ne voit rien. Coché : le client voit et peut télécharger le PDF.
+              </div>
+            </span>
+            <Switch checked={!!datasheetVisible} onCheckedChange={(v) => setValue('datasheetVisible', v, { shouldDirty: true })} />
+          </label>
         </section>
 
         <details className="rounded-xl border border-border bg-card p-6">

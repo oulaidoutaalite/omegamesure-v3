@@ -143,7 +143,7 @@ export default async function ProductPage({
               variant="full"
               item={{ slug: product.slug, name, brand: product.brand, image: main?.url ?? null }}
             />
-            {product.datasheetUrl && (
+            {product.datasheetUrl && product.datasheetVisible && (
               <Button asChild size="lg" variant="outline">
                 <a href={product.datasheetUrl} target="_blank" rel="noreferrer">
                   <IconDownload size={16} /> {t('datasheet')}

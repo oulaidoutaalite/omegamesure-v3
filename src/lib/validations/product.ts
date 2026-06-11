@@ -30,6 +30,8 @@ export const productSchema = z.object({
 
   images:       z.array(productImageSchema).max(20).default([]),
   datasheetUrl: z.string().max(500).optional().or(z.literal('')),
+  /** Admin authorization to show/download the datasheet PDF publicly. */
+  datasheetVisible: z.boolean().default(false),
 
   isPublished: z.boolean().default(false),
   isFeatured:  z.boolean().default(false),

@@ -235,6 +235,9 @@ model Product {
   // datasheetUrl points to a PDF (Media.url or external URL).
   images       Json?
   datasheetUrl String?
+  /// Per-product authorization: the datasheet PDF is shown/downloadable on the
+  /// public site ONLY when this is true (admin toggle). Default off.
+  datasheetVisible Boolean @default(false)
 
   categoryId    String?
   category      Category?    @relation(fields: [categoryId], references: [id], onDelete: SetNull)
