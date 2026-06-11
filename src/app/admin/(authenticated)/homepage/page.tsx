@@ -13,6 +13,7 @@ const HOME_CONTENT: FieldDef[] = [
   { key: 'site.description', label: 'Hero — description', type: 'multilang-textarea', rows: 2, helper: 'Paragraphe sous le slogan. Laisser vide dans les 3 langues pour ne rien afficher.' },
   // — Chiffres-clés (bandeau) —
   { key: 'home.statProducts',        label: 'Chiffre 1 — libellé', type: 'multilang' },
+  { key: 'home.statProductsValue',   label: 'Chiffre 1 — valeur',  type: 'multilang', placeholder: '500+', helper: 'Laisser vide pour afficher automatiquement le nombre de produits publiés.' },
   { key: 'home.statExperience',      label: 'Chiffre 2 — libellé', type: 'multilang' },
   { key: 'home.statExperienceValue', label: 'Chiffre 2 — valeur',  type: 'multilang', placeholder: '15+' },
   { key: 'home.statMetrology',       label: 'Chiffre 3 — libellé', type: 'multilang' },

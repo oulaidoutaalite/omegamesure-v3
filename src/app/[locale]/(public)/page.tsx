@@ -103,7 +103,7 @@ export default async function HomePage({
       {/* ── Stats ──────────────────────────────────────────────── */}
       <section className="border-y border-border bg-card">
         <Container className="grid gap-px overflow-hidden rounded-none border-x border-border bg-border sm:grid-cols-3">
-          <StatCard label={txt('home.statProducts', t('statProducts'))}     value={`${productCount}+`} icon={IconPackage} />
+          <StatCard label={txt('home.statProducts', t('statProducts'))}     value={txt('home.statProductsValue', `${productCount}+`)} icon={IconPackage} />
           <StatCard label={txt('home.statExperience', t('statExperience'))} value={txt('home.statExperienceValue', '15+')} icon={IconCalendarTime} />
           <StatCard label={txt('home.statMetrology', t('statMetrology'))}   value={txt('home.statMetrologyValue', t('statMetrologyValue'))} icon={IconRuler} />
         </Container>
