@@ -76,6 +76,7 @@ export default async function EditProductPage({
           subCategoryId:    product.subCategoryId,
           images:           imgs.map((i) => ({ url: i.url, alt: i.alt ?? '', isPrimary: !!i.isPrimary })),
           datasheetUrl:     product.datasheetUrl ?? '',
+          datasheetVisible: product.datasheetVisible,
           isPublished:      product.isPublished,
           isFeatured:       product.isFeatured,
           metaTitle:        product.metaTitle       ?? '',

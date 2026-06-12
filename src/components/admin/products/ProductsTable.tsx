@@ -140,7 +140,7 @@ export function ProductsTable({ items: initial, total, categories }: Props) {
         </span>
       </div>
 
-      <div className="overflow-hidden rounded-xl border border-border bg-card">
+      <div className="overflow-x-auto rounded-xl border border-border bg-card">
         <table className="w-full text-sm">
           <thead className="bg-muted/40 text-xs uppercase text-muted-foreground">
             <tr>
@@ -210,7 +210,7 @@ function Row({
               <IconPhoto size={16} className="text-muted-foreground" />
             )}
           </div>
-          <div className="min-w-0">
+          <div className="min-w-0 max-w-[360px]">
             <div className="flex items-center gap-2">
               <span className="truncate font-medium">{row.name}</span>
               {row.kind === 'SERVICE' ? (
