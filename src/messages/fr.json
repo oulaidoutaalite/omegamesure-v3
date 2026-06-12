@@ -63,7 +63,8 @@
     "shippingNote": "HT · Livraison & installation sur devis",
     "datasheet": "Fiche technique",
     "categoryLabel": "Catégorie :",
-    "descriptionTitle": "Description détaillée"
+    "descriptionTitle": "Description détaillée",
+    "specsTitle": "Spécifications par modèle"
   },
   "quote": {
     "badge": "Devis",

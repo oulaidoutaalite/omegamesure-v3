@@ -63,7 +63,8 @@
     "shippingNote": "Excl. tax · Shipping & install quoted separately",
     "datasheet": "Datasheet",
     "categoryLabel": "Category:",
-    "descriptionTitle": "Full description"
+    "descriptionTitle": "Full description",
+    "specsTitle": "Specifications by model"
   },
   "quote": {
     "badge": "Quote",

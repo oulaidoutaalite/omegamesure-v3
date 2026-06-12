@@ -238,6 +238,10 @@ model Product {
   /// Per-product authorization: the datasheet PDF is shown/downloadable on the
   /// public site ONLY when this is true (admin toggle). Default off.
   datasheetVisible Boolean @default(false)
+  /// Per-model specification table: { columns: string[], rows: string[][] }.
+  /// Lets one product entry covering several models show each model's own
+  /// specs, so customers can tell the variants apart.
+  specs Json?
 
   categoryId    String?
   category      Category?    @relation(fields: [categoryId], references: [id], onDelete: SetNull)

@@ -63,7 +63,8 @@
     "shippingNote": "بدون ضريبة · الشحن والتركيب بعرض سعر منفصل",
     "datasheet": "ورقة البيانات",
     "categoryLabel": "الفئة:",
-    "descriptionTitle": "الوصف التفصيلي"
+    "descriptionTitle": "الوصف التفصيلي",
+    "specsTitle": "المواصفات حسب الموديل"
   },
   "quote": {
     "badge": "عرض سعر",

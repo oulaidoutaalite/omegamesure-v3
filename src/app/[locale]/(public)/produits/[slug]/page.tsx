@@ -71,6 +71,12 @@ export default async function ProductPage({
   const catName    = product.category    ? pickLocaleField(product.category.name,    product.category.translations    as TranslationsJson, 'name', locale) : null
   const subCatName = product.subCategory ? pickLocaleField(product.subCategory.name, product.subCategory.translations as TranslationsJson, 'name', locale) : null
 
+  type SpecTable = { columns: string[]; rows: string[][] }
+  const specs =
+    product.specs && typeof product.specs === 'object' && Array.isArray((product.specs as { rows?: unknown }).rows)
+      ? (product.specs as unknown as SpecTable)
+      : null
+
   return (
     <Container className="py-10 lg:py-14">
       <nav className="mb-6 text-xs text-muted-foreground">
@@ -163,6 +169,36 @@ export default async function ProductPage({
           )}
         </div>
       </div>
+
+      {specs && specs.rows.length > 0 && (
+        <section className="mt-12 rounded-2xl border border-border bg-card p-8">
+          <h2 className="mb-4 text-base font-semibold">{t('specsTitle')}</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr>
+                  {specs.columns.map((c, j) => (
+                    <th key={j} className="whitespace-nowrap border-b-2 border-brand px-3 py-2 text-left font-semibold text-brand">
+                      {c}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {specs.rows.map((row, i) => (
+                  <tr key={i} className="border-b border-border last:border-0">
+                    {row.map((cell, j) => (
+                      <td key={j} className={`px-3 py-2 align-top ${j === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground'}`}>
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
 
       {description && (
         <section className="mt-12 rounded-2xl border border-border bg-card p-8">
