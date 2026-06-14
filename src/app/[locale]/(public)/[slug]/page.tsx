@@ -1,4 +1,4 @@
-import { IconArrowRight, IconCircleCheck } from '@tabler/icons-react'
+import { IconCircleCheck } from '@tabler/icons-react'
 import { type Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
@@ -41,8 +41,13 @@ export async function generateMetadata({
 
 export default async function CategoryPage({
   params,
-}: { params: Promise<{ locale: Locale; slug: string }> }) {
+  searchParams,
+}: {
+  params: Promise<{ locale: Locale; slug: string }>
+  searchParams: Promise<{ sub?: string }>
+}) {
   const { locale, slug } = await params
+  const { sub: subParam } = await searchParams
   setRequestLocale(locale)
 
   const productSelect = {
@@ -115,7 +120,15 @@ export default async function CategoryPage({
     select: productSelect,
   })
   const ungrouped = ungroupedRows.map(toCard)
-  const totalProducts = groups.reduce((n, g) => n + g.products.length, 0) + ungrouped.length
+
+  type Group = { id: string; slug: string; isAutresSlot: boolean; name: string; products: ProductCardData[] }
+  const allGroups: Group[] = [
+    ...groups,
+    ...(ungrouped.length
+      ? [{ id: 'autres', slug: 'autres', isAutresSlot: true, name: t('autresBadge'), products: ungrouped }]
+      : []),
+  ]
+  const selected = allGroups.find((g) => g.slug === subParam) ?? allGroups[0]
 
   const isMetrologie = category.slug === 'metrologie'
 
@@ -153,53 +166,58 @@ export default async function CategoryPage({
         </Container>
       </section>
 
-      {/* Sub-categories nav */}
-      {groups.length > 1 && (
-        <section className="border-b border-border py-10">
+      {/* Sub-categories — select a type */}
+      {allGroups.length > 1 && (
+        <section className="border-b border-border py-6">
           <Container>
-            <h2 className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
               {t('subCategoriesTitle')}
             </h2>
-            <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-              {groups.map((g) => (
-                <li key={g.id}>
-                  <Link
-                    href={`${withLocale(`/${category.slug}`, locale)}#${g.slug}`}
-                    className="flex items-center justify-between rounded-xl border border-border bg-card px-4 py-3 transition hover:border-brand/40 hover:bg-accent/40"
-                  >
-                    <span className="text-sm font-medium">
+            <ul className="flex flex-wrap gap-2">
+              {allGroups.map((g) => {
+                const active = !!selected && g.slug === selected.slug
+                return (
+                  <li key={g.id}>
+                    <Link
+                      href={`${withLocale(`/${category.slug}`, locale)}?sub=${g.slug}`}
+                      scroll={false}
+                      className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition ${
+                        active
+                          ? 'border-brand bg-brand text-white'
+                          : 'border-border bg-card hover:border-brand/40 hover:bg-accent/40'
+                      }`}
+                    >
                       {g.name}
-                      {g.isAutresSlot && (
-                        <span className="ml-2 inline-flex items-center rounded-full bg-amber-50 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-amber-700">
-                          {t('autresBadge')}
-                        </span>
-                      )}
-                    </span>
-                    <span className="text-xs text-muted-foreground">
-                      {t('productCountLabel', { n: g.products.length })} <IconArrowRight size={12} className="inline rtl:rotate-180" />
-                    </span>
-                  </Link>
-                </li>
-              ))}
+                      <span className={active ? 'text-xs text-white/80' : 'text-xs text-muted-foreground'}>
+                        {g.products.length}
+                      </span>
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </Container>
         </section>
       )}
 
-      {/* Products grouped by sub-category (type) */}
-      <section className="py-16">
+      {/* Products of the selected type only */}
+      <section className="py-12">
         <Container>
           <header className="mb-8 flex items-end justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">{t('selection')}</p>
-              <h2 className="mt-1 text-2xl font-bold tracking-tight">{t('productsHeading')}</h2>
+              <h2 className="mt-1 text-2xl font-bold tracking-tight">{selected ? selected.name : t('productsHeading')}</h2>
             </div>
-            <p className="text-xs text-muted-foreground">
-              {totalProducts > 1 ? t('shown', { n: totalProducts }) : t('shownOne', { n: totalProducts })}
-            </p>
+            {selected && (
+              <p className="text-xs text-muted-foreground">
+                {selected.products.length > 1
+                  ? t('shown', { n: selected.products.length })
+                  : t('shownOne', { n: selected.products.length })}
+              </p>
+            )}
           </header>
 
-          {totalProducts === 0 ? (
+          {!selected || selected.products.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-border bg-muted/30 p-12 text-center">
               <p className="text-sm text-muted-foreground">{t('noProducts')}</p>
               <Button asChild className="mt-4" variant="outline">
@@ -207,38 +225,11 @@ export default async function CategoryPage({
               </Button>
             </div>
           ) : (
-            <div className="space-y-14">
-              {groups.map((g) => (
-                <div key={g.id} id={g.slug} className="scroll-mt-24">
-                  <div className="mb-5 flex items-center gap-3">
-                    <h3 className="text-lg font-bold tracking-tight">{g.name}</h3>
-                    <span className="h-px flex-1 bg-border" />
-                    <span className="shrink-0 text-xs text-muted-foreground">{t('productCountLabel', { n: g.products.length })}</span>
-                  </div>
-                  <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                    {g.products.map((p) => (
-                      <li key={p.slug}><ProductCard data={p} locale={locale} /></li>
-                    ))}
-                  </ul>
-                </div>
+            <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {selected.products.map((p) => (
+                <li key={p.slug}><ProductCard data={p} locale={locale} /></li>
               ))}
-              {ungrouped.length > 0 && (
-                <div className="scroll-mt-24">
-                  {groups.length > 0 && (
-                    <div className="mb-5 flex items-center gap-3">
-                      <h3 className="text-lg font-bold tracking-tight">{t('autresBadge')}</h3>
-                      <span className="h-px flex-1 bg-border" />
-                      <span className="shrink-0 text-xs text-muted-foreground">{t('productCountLabel', { n: ungrouped.length })}</span>
-                    </div>
-                  )}
-                  <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                    {ungrouped.map((p) => (
-                      <li key={p.slug}><ProductCard data={p} locale={locale} /></li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
+            </ul>
           )}
         </Container>
       </section>
