@@ -136,7 +136,7 @@ export default async function CategoryPage({
     <>
       {/* Hero */}
       <section
-        className="border-b border-border py-7 sm:py-9"
+        className="border-b border-border py-5 sm:py-6"
         style={{ background: `linear-gradient(135deg, ${category.color ?? '#185FA5'}10 0%, transparent 100%)` }}
       >
         <Container>
@@ -168,7 +168,7 @@ export default async function CategoryPage({
 
       {/* Sub-categories — select a type */}
       {allGroups.length > 1 && (
-        <section className="border-b border-border py-6">
+        <section className="border-b border-border py-4">
           <Container>
             <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
               {t('subCategoriesTitle')}
@@ -201,9 +201,9 @@ export default async function CategoryPage({
       )}
 
       {/* Products of the selected type only */}
-      <section className="py-12">
+      <section className="py-8">
         <Container>
-          <header className="mb-8 flex items-end justify-between">
+          <header className="mb-5 flex items-end justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">{t('selection')}</p>
               <h2 className="mt-1 text-2xl font-bold tracking-tight">{selected ? selected.name : t('productsHeading')}</h2>
