@@ -136,14 +136,14 @@ export default async function CategoryPage({
     <>
       {/* Hero */}
       <section
-        className="border-b border-border py-12 sm:py-16"
+        className="border-b border-border py-7 sm:py-9"
         style={{ background: `linear-gradient(135deg, ${category.color ?? '#185FA5'}10 0%, transparent 100%)` }}
       >
         <Container>
           <nav className="mb-3 text-xs text-muted-foreground">
             <Link href={withLocale('/', locale)} className="hover:text-foreground">{tCommon('home')}</Link> / {catName}
           </nav>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid items-center gap-6 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{catName}</h1>
               {catDesc && <p className="mt-3 text-base text-muted-foreground">{catDesc}</p>}
@@ -155,10 +155,10 @@ export default async function CategoryPage({
               )}
             </div>
 
-            <aside className="rounded-2xl border border-border bg-card p-6">
+            <aside className="rounded-2xl border border-border bg-card p-5">
               <p className="text-xs uppercase tracking-widest text-muted-foreground">{t('asideTitle')}</p>
               <p className="mt-1 text-sm">{t('asideLead')}</p>
-              <Button asChild className="mt-4 w-full">
+              <Button asChild className="mt-3 w-full">
                 <Link href={withLocale('/devis', locale)}>{tCta('requestQuote')}</Link>
               </Button>
             </aside>
