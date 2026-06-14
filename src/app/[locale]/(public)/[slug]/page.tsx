@@ -136,33 +136,28 @@ export default async function CategoryPage({
     <>
       {/* Hero */}
       <section
-        className="border-b border-border py-5 sm:py-6"
+        className="border-b border-border py-4 sm:py-5"
         style={{ background: `linear-gradient(135deg, ${category.color ?? '#185FA5'}10 0%, transparent 100%)` }}
       >
         <Container>
-          <nav className="mb-3 text-xs text-muted-foreground">
+          <nav className="mb-2 text-xs text-muted-foreground">
             <Link href={withLocale('/', locale)} className="hover:text-foreground">{tCommon('home')}</Link> / {catName}
           </nav>
-          <div className="grid items-center gap-6 lg:grid-cols-3">
-            <div className="lg:col-span-2">
-              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{catName}</h1>
-              {catDesc && <p className="mt-3 text-base text-muted-foreground">{catDesc}</p>}
-              {isMetrologie && (
-                <div className="mt-5 inline-flex items-start gap-2 rounded-lg border border-brand/20 bg-brand/5 p-3 text-sm">
-                  <IconCircleCheck size={16} className="mt-0.5 shrink-0 text-brand" />
-                  <span dangerouslySetInnerHTML={{ __html: t.raw('metrologyNotice') }} />
-                </div>
-              )}
+          <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+            <div className="min-w-0">
+              <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">{catName}</h1>
+              {catDesc && <p className="mt-1.5 max-w-2xl text-sm text-muted-foreground">{catDesc}</p>}
             </div>
-
-            <aside className="rounded-2xl border border-border bg-card p-5">
-              <p className="text-xs uppercase tracking-widest text-muted-foreground">{t('asideTitle')}</p>
-              <p className="mt-1 text-sm">{t('asideLead')}</p>
-              <Button asChild className="mt-3 w-full">
-                <Link href={withLocale('/devis', locale)}>{tCta('requestQuote')}</Link>
-              </Button>
-            </aside>
+            <Button asChild variant="outline" className="shrink-0">
+              <Link href={withLocale('/devis', locale)}>{tCta('requestQuote')}</Link>
+            </Button>
           </div>
+          {isMetrologie && (
+            <div className="mt-4 inline-flex items-start gap-2 rounded-lg border border-brand/20 bg-brand/5 p-3 text-sm">
+              <IconCircleCheck size={16} className="mt-0.5 shrink-0 text-brand" />
+              <span dangerouslySetInnerHTML={{ __html: t.raw('metrologyNotice') }} />
+            </div>
+          )}
         </Container>
       </section>
 
