@@ -51,6 +51,11 @@ export default async function QuotePage({
     closedAt:       quote.closedAt      ? quote.closedAt.toISOString()      : null,
     createdAt:      quote.createdAt.toISOString(),
     updatedAt:      quote.updatedAt.toISOString(),
+    items: Array.isArray(quote.items)
+      ? (quote.items as Array<{ slug?: string; name?: string; qty?: number }>)
+      : null,
+    notifiedAt:  quote.notifiedAt ? quote.notifiedAt.toISOString() : null,
+    notifyError: quote.notifyError,
   }
 
   return (

@@ -117,12 +117,26 @@ async function notifyAdminOfNewQuote(quoteId: string) {
     `,
     { title: `Nouveau devis ${q.reference}` },
   )
-  await sendEmail({
+  const result = await sendEmail({
     to,
     subject: `[Devis ${q.reference}] ${q.fullName}${q.company ? ' — ' + q.company : ''}`,
     html,
     replyTo: q.email,
   })
+  // Persist delivery outcome so a failed notification is visible in the admin (not silent)
+  await db.quoteRequest
+    .update({
+      where: { id: quoteId },
+      data: result.ok
+        ? { notifiedAt: new Date(), notifyError: null }
+        : {
+            notifyError:
+              'skipped' in result && result.skipped
+                ? 'Email non configuré (RESEND_API_KEY / EMAIL_FROM / domaine non vérifié)'
+                : result.error,
+          },
+    })
+    .catch(() => undefined)
 }
 
 async function confirmQuoteToCustomer(quoteId: string) {
@@ -146,6 +160,27 @@ async function confirmQuoteToCustomer(quoteId: string) {
     subject: `Votre demande ${q.reference} — Omega Mesure`,
     html,
   })
+}
+
+// ─── ADMIN: TEST EMAIL (diagnose deliverability in one click) ───────────────
+export async function sendTestEmail(): Promise<ActionResult<{ delivered: boolean; detail: string }>> {
+  await requireRole([...ADMIN_ROLES])
+  const to = process.env.EMAIL_QUOTE_RECIPIENT ?? 'contact@omegamesure.com'
+  const result = await sendEmail({
+    to,
+    subject: '[Test] Configuration email — Omega Mesure',
+    html: wrapEmail(
+      `<h2 style="margin:0 0 12px;color:#185FA5;font-size:18px;">Test d'envoi réussi ✅</h2>
+       <p>Si vous lisez cet email, la configuration fonctionne : les demandes de devis (y compris les listes de matériel) vous parviendront bien à <strong>${escapeHtml(to)}</strong>.</p>`,
+      { title: 'Test email Omega Mesure' },
+    ),
+  })
+  const detail = result.ok
+    ? `Email de test envoyé à ${to} (id ${result.id}). Vérifie ta boîte (et les spams).`
+    : 'skipped' in result && result.skipped
+      ? 'Aucun email envoyé : RESEND_API_KEY ou EMAIL_FROM non configuré / domaine non vérifié sur Resend.'
+      : `Échec d'envoi : ${result.error}`
+  return { ok: true, data: { delivered: result.ok, detail } }
 }
 
 // ─── ADMIN: UPDATE (status / assignment / notes) ────────────────────────────

@@ -2,7 +2,11 @@
 
 import { type QuoteStatus } from '@prisma/client'
 import {
+  IconAlertTriangle,
+  IconCircleCheck,
+  IconListCheck,
   IconMail,
+  IconMailForward,
   IconSend,
   IconTrash,
   IconUserCircle,
@@ -19,7 +23,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
-import { deleteQuote, replyToQuote, updateQuote } from '@/lib/actions/quotes'
+import { deleteQuote, replyToQuote, sendTestEmail, updateQuote } from '@/lib/actions/quotes'
 
 export type QuoteDetail = {
   id: string
@@ -42,6 +46,9 @@ export type QuoteDetail = {
   closedAt: string | null
   createdAt: string
   updatedAt: string
+  items: Array<{ slug?: string; name?: string; qty?: number }> | null
+  notifiedAt: string | null
+  notifyError: string | null
 }
 
 type Props = {
@@ -103,10 +110,35 @@ export function QuoteDetailView({ quote, users }: Props) {
     })
   }
 
+  const [testing, startTest] = useTransition()
+  function onTestEmail() {
+    startTest(async () => {
+      const res = await sendTestEmail()
+      if (!res.ok) { toast.error(res.error); return }
+      if (res.data.delivered) toast.success(res.data.detail)
+      else toast.warning(res.data.detail)
+    })
+  }
+
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       {/* Main column */}
       <div className="space-y-6 lg:col-span-2">
+        {/* Email notification status */}
+        {quote.notifyError ? (
+          <div className="flex items-start gap-2 rounded-xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900">
+            <IconAlertTriangle size={18} className="mt-0.5 shrink-0" />
+            <div>
+              <p className="font-medium">La notification email de cette demande n&apos;a pas été envoyée.</p>
+              <p className="mt-0.5 text-amber-800/80">{quote.notifyError}</p>
+            </div>
+          </div>
+        ) : quote.notifiedAt ? (
+          <div className="flex items-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50/60 p-3 text-xs text-emerald-800">
+            <IconCircleCheck size={14} /> Notifié par email le {new Date(quote.notifiedAt).toLocaleString('fr-FR')}
+          </div>
+        ) : null}
+
         <section className="space-y-4 rounded-xl border border-border bg-card p-6">
           <div className="flex items-start justify-between">
             <div>
@@ -137,6 +169,22 @@ export function QuoteDetailView({ quote, users }: Props) {
             </p>
           </div>
         </section>
+
+        {quote.items && quote.items.length > 0 && (
+          <section className="space-y-3 rounded-xl border border-brand/30 bg-brand/5 p-6">
+            <h2 className="flex items-center gap-2 text-sm font-medium">
+              <IconListCheck size={15} className="text-brand" /> Liste de matériel demandée ({quote.items.length})
+            </h2>
+            <ul className="divide-y divide-border overflow-hidden rounded-lg border border-border bg-card">
+              {quote.items.map((it, i) => (
+                <li key={i} className="flex items-center justify-between gap-3 px-4 py-2.5 text-sm">
+                  <span className="min-w-0 truncate">{it.name ?? it.slug ?? '—'}</span>
+                  <span className="shrink-0 text-muted-foreground">× {it.qty ?? 1}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {quote.emailReplyText && (
           <section className="space-y-2 rounded-xl border border-emerald-200 bg-emerald-50/50 p-5">
@@ -233,6 +281,16 @@ export function QuoteDetailView({ quote, users }: Props) {
             </div>
           </section>
         )}
+
+        <section className="space-y-2 rounded-xl border border-border bg-card p-4">
+          <h2 className="text-xs font-medium text-muted-foreground">Diagnostic email</h2>
+          <Button variant="outline" size="sm" onClick={onTestEmail} disabled={testing} className="w-full">
+            <IconMailForward size={14} /> {testing ? 'Envoi…' : "Tester l'email"}
+          </Button>
+          <p className="text-[11px] leading-snug text-muted-foreground">
+            Envoie un email de test au destinataire des devis pour vérifier la configuration Resend.
+          </p>
+        </section>
 
         <Button variant="ghost" onClick={onDelete} disabled={deleting}
                 className="w-full text-destructive hover:bg-destructive/10">

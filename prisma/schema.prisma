@@ -309,6 +309,10 @@ model QuoteRequest {
   emailReplyText String?   @db.Text
   closedAt       DateTime?
 
+  // Admin notification tracking (so failed devis emails are visible, not silent)
+  notifiedAt  DateTime?
+  notifyError String?   @db.Text
+
   // Metadata
   ipAddress String?
   userAgent String?
