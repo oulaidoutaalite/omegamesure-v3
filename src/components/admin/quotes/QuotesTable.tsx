@@ -1,7 +1,7 @@
 'use client'
 
 import { type QuoteStatus } from '@prisma/client'
-import { IconSearch } from '@tabler/icons-react'
+import { IconListCheck, IconSearch } from '@tabler/icons-react'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 
@@ -22,6 +22,8 @@ export type QuoteRow = {
   status: QuoteStatus
   createdAt: string
   assignedToName: string | null
+  emailStatus: 'sent' | 'failed' | 'unknown'
+  itemCount: number
 }
 
 type Props = {
@@ -60,9 +62,15 @@ export function QuotesTable({ items, total, countsByStatus }: Props) {
           <Input placeholder="Référence, nom, email…" value={search}
                  onChange={(e) => setSearch(e.target.value)} className="pl-9" />
         </div>
-        <span className="ml-auto text-xs text-muted-foreground">
-          {filtered.length} / {total}
-        </span>
+        <div className="ml-auto flex items-center gap-3 text-xs text-muted-foreground">
+          <span className="hidden items-center gap-1 sm:flex">
+            <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" /> notifié
+          </span>
+          <span className="hidden items-center gap-1 sm:flex">
+            <span className="inline-block h-2 w-2 rounded-full bg-amber-500" /> email non envoyé
+          </span>
+          <span>{filtered.length} / {total}</span>
+        </div>
       </div>
 
       <div className="flex flex-wrap gap-1">
@@ -109,7 +117,24 @@ export function QuotesTable({ items, total, countsByStatus }: Props) {
             {filtered.map((r) => (
               <tr key={r.id} className="cursor-pointer hover:bg-accent/30">
                 <td className="px-4 py-3">
-                  <Link href={`/admin/quotes/${r.id}`} className="block">
+                  <Link href={`/admin/quotes/${r.id}`} className="flex items-center gap-2">
+                    <span
+                      title={
+                        r.emailStatus === 'failed'
+                          ? 'Notification email NON envoyée'
+                          : r.emailStatus === 'sent'
+                            ? 'Notifié par email'
+                            : 'Statut email inconnu'
+                      }
+                      className={cn(
+                        'inline-block h-2 w-2 shrink-0 rounded-full',
+                        r.emailStatus === 'failed'
+                          ? 'bg-amber-500'
+                          : r.emailStatus === 'sent'
+                            ? 'bg-emerald-500'
+                            : 'bg-muted-foreground/30',
+                      )}
+                    />
                     <code className="rounded bg-muted px-1.5 py-0.5 text-xs">{r.reference}</code>
                   </Link>
                 </td>
@@ -123,8 +148,13 @@ export function QuotesTable({ items, total, countsByStatus }: Props) {
                   </Link>
                 </td>
                 <td className="px-4 py-3">
-                  <Link href={`/admin/quotes/${r.id}`} className="text-xs">
-                    {r.requestType}
+                  <Link href={`/admin/quotes/${r.id}`} className="flex flex-wrap items-center gap-1.5 text-xs">
+                    <span>{r.requestType}</span>
+                    {r.itemCount > 0 && (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-brand/10 px-2 py-0.5 text-[10px] font-medium text-brand">
+                        <IconListCheck size={11} /> Liste · {r.itemCount}
+                      </span>
+                    )}
                   </Link>
                 </td>
                 <td className="px-4 py-3">

@@ -328,6 +328,7 @@ export async function listQuotes(filters: QuoteFilters = {}) {
       select: {
         id: true, reference: true, fullName: true, company: true, email: true,
         requestType: true, status: true, createdAt: true,
+        notifiedAt: true, notifyError: true, items: true,
         assignedTo: { select: { id: true, name: true } },
       },
     }),

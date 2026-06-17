@@ -26,6 +26,8 @@ export default async function QuotesPage() {
     status: r.status,
     createdAt: r.createdAt.toISOString(),
     assignedToName: r.assignedTo?.name ?? null,
+    emailStatus: r.notifyError ? 'failed' : r.notifiedAt ? 'sent' : 'unknown',
+    itemCount: Array.isArray(r.items) ? r.items.length : 0,
   }))
 
   return (
