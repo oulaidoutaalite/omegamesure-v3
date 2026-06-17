@@ -74,7 +74,7 @@ const groups: NavGroup[] = [
   },
 ]
 
-export function AdminSidebar({ userRole }: { userRole: string }) {
+export function AdminSidebar({ userRole, quoteCount = 0 }: { userRole: string; quoteCount?: number }) {
   const pathname = usePathname()
 
   return (
@@ -118,6 +118,14 @@ export function AdminSidebar({ userRole }: { userRole: string }) {
                       >
                         <Icon size={18} stroke={1.75} />
                         <span className="flex-1">{item.label}</span>
+                        {item.href === '/admin/quotes' && quoteCount > 0 && (
+                          <span
+                            title={`${quoteCount} demande(s) à traiter`}
+                            className="inline-flex h-5 min-w-[20px] items-center justify-center rounded-full bg-brand px-1.5 text-[10px] font-semibold text-white"
+                          >
+                            {quoteCount}
+                          </span>
+                        )}
                         {item.soon && (
                           <span className="rounded bg-muted px-1.5 py-0.5 text-[9px] uppercase text-muted-foreground">
                             soon
