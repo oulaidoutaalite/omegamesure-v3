@@ -19,7 +19,7 @@ export default async function ProductsPage() {
   await requireAuth()
 
   const [{ rows, total }, categories] = await Promise.all([
-    listProducts({ perPage: 100 }),
+    listProducts({ perPage: 2000 }),
     db.category.findMany({ orderBy: { order: 'asc' }, select: { id: true, name: true } }),
   ])
 

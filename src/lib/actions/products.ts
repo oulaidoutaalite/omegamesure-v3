@@ -196,7 +196,7 @@ export type ProductFilters = {
 export async function listProducts(filters: ProductFilters = {}) {
   await requireAuth()
   const page    = Math.max(1, filters.page ?? 1)
-  const perPage = Math.min(100, filters.perPage ?? 20)
+  const perPage = Math.min(2000, filters.perPage ?? 20)
 
   const where: Prisma.ProductWhereInput = {
     ...(filters.status === 'published' ? { isPublished: true }  : {}),
