@@ -19,7 +19,7 @@ export default async function EditCategoryPage({
   await requireRole(['SUPER_ADMIN', 'ADMIN'])
   const { id } = await params
 
-  const [category, navItems, subs, translatableLocales] = await Promise.all([
+  const [category, navItems, subs, translatableLocales, allCats] = await Promise.all([
     db.category.findUnique({ where: { id } }),
     db.navItem.findMany({
       where: { parentId: null },
@@ -35,6 +35,7 @@ export default async function EditCategoryPage({
       },
     }),
     loadTranslatableLocales(),
+    db.category.findMany({ orderBy: { order: 'asc' }, select: { id: true, name: true } }),
   ])
 
   if (!category) notFound()
@@ -92,7 +93,12 @@ export default async function EditCategoryPage({
       </section>
 
       <section>
-        <SubCategoriesSection categoryId={id} items={subRows} translatableLocales={translatableLocales} />
+        <SubCategoriesSection
+          categoryId={id}
+          items={subRows}
+          translatableLocales={translatableLocales}
+          categories={allCats.filter((c) => c.id !== id)}
+        />
       </section>
     </div>
   )

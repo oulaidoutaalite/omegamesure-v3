@@ -222,3 +222,48 @@ export async function reorderSubCategories(categoryId: string, orderedIds: strin
   revalidatePath(`/admin/categories/${categoryId}/edit`)
   return { ok: true, data: undefined }
 }
+
+// Move a sub-category (and ALL its products) to another existing category.
+export async function moveSubCategory(input: { id: string; targetCategoryId: string }): Promise<ActionResult<{ moved: number }>> {
+  const session = await requireRole([...ADMIN_ROLES])
+  const { id, targetCategoryId } = input
+  if (!id || !targetCategoryId) return { ok: false, error: 'Paramètres manquants' }
+
+  const sub = await db.subCategory.findUnique({ where: { id }, select: { categoryId: true, slug: true } })
+  if (!sub) return { ok: false, error: 'Sous-catégorie introuvable' }
+  if (sub.categoryId === targetCategoryId) return { ok: true, data: { moved: 0 } }
+
+  const target = await db.category.findUnique({ where: { id: targetCategoryId }, select: { id: true } })
+  if (!target) return { ok: false, error: 'Catégorie cible introuvable' }
+
+  const clash = await db.subCategory.findFirst({
+    where: { categoryId: targetCategoryId, slug: sub.slug },
+    select: { id: true },
+  })
+  if (clash) return { ok: false, error: `Une sous-catégorie « ${sub.slug} » existe déjà dans la catégorie cible` }
+
+  const last = await db.subCategory.findFirst({
+    where: { categoryId: targetCategoryId },
+    orderBy: { order: 'desc' },
+    select: { order: true },
+  })
+  const nextOrder = (last?.order ?? -1) + 1
+  const fromCategoryId = sub.categoryId
+
+  const [moved] = await db.$transaction([
+    db.product.updateMany({ where: { subCategoryId: id }, data: { categoryId: targetCategoryId } }),
+    db.subCategory.update({ where: { id }, data: { categoryId: targetCategoryId, order: nextOrder } }),
+  ])
+
+  await logActivity({
+    userId: session.user.id,
+    action: 'UPDATE',
+    entityType: 'SubCategory',
+    entityId: id,
+    metadata: { movedFrom: fromCategoryId, movedTo: targetCategoryId, products: moved.count },
+  })
+  revalidatePath(`/admin/categories/${fromCategoryId}/edit`)
+  revalidatePath(`/admin/categories/${targetCategoryId}/edit`)
+  revalidatePath('/admin/categories')
+  return { ok: true, data: { moved: moved.count } }
+}

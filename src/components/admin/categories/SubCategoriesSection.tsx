@@ -38,6 +38,7 @@ import { Textarea } from '@/components/ui/textarea'
 import {
   createSubCategory,
   deleteSubCategory,
+  moveSubCategory,
   reorderSubCategories,
   updateSubCategory,
 } from '@/lib/actions/categories'
@@ -58,9 +59,10 @@ type Props = {
   categoryId: string
   items: SubRow[]
   translatableLocales?: LocaleDef[]
+  categories?: Array<{ id: string; name: string }>
 }
 
-export function SubCategoriesSection({ categoryId, items: initial, translatableLocales = [] }: Props) {
+export function SubCategoriesSection({ categoryId, items: initial, translatableLocales = [], categories = [] }: Props) {
   const [items, setItems] = useState(initial)
   const [creating, setCreating] = useState(false)
   const [editingId, setEditingId] = useState<string | null>(null)
@@ -92,6 +94,9 @@ export function SubCategoriesSection({ categoryId, items: initial, translatableL
   function onDeleted(id: string) {
     setItems((prev) => prev.filter((i) => i.id !== id))
   }
+  function onMoved(id: string) {
+    setItems((prev) => prev.filter((i) => i.id !== id))
+  }
 
   return (
     <div className="space-y-3">
@@ -121,8 +126,10 @@ export function SubCategoriesSection({ categoryId, items: initial, translatableL
                   </li>
                 ) : (
                   <Row key={it.id} item={it} disabled={pending}
+                       categories={categories}
                        onEdit={() => setEditingId(it.id)}
-                       onDeleted={onDeleted} />
+                       onDeleted={onDeleted}
+                       onMoved={onMoved} />
                 ),
               )}
               {creating && (
@@ -150,15 +157,18 @@ export function SubCategoriesSection({ categoryId, items: initial, translatableL
 }
 
 function Row({
-  item, disabled, onEdit, onDeleted,
+  item, disabled, categories, onEdit, onDeleted, onMoved,
 }: {
   item: SubRow
   disabled: boolean
+  categories: Array<{ id: string; name: string }>
   onEdit: () => void
   onDeleted: (id: string) => void
+  onMoved: (id: string) => void
 }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: item.id })
   const [deletePending, startDelete] = useTransition()
+  const [moving, startMove] = useTransition()
   const style = { transform: CSS.Transform.toString(transform), transition, opacity: isDragging ? 0.6 : 1 }
 
   function onDelete() {
@@ -201,6 +211,35 @@ function Row({
           {item.description && <> · {item.description.slice(0, 60)}{item.description.length > 60 && '…'}</>}
         </div>
       </div>
+
+      {categories.length > 0 && (
+        <select
+          aria-label="Déplacer vers une autre catégorie"
+          title="Déplacer cette sous-catégorie (et ses produits) vers une autre catégorie"
+          disabled={moving || disabled}
+          value=""
+          onChange={(e) => {
+            const target = e.target.value
+            if (!target) return
+            const cat = categories.find((c) => c.id === target)
+            if (!confirm(`Déplacer « ${item.name} » et tous ses produits vers « ${cat?.name} » ?`)) return
+            startMove(async () => {
+              const res = await moveSubCategory({ id: item.id, targetCategoryId: target })
+              if (!res.ok) toast.error(res.error)
+              else {
+                toast.success(`Déplacée vers ${cat?.name}${res.data.moved ? ` · ${res.data.moved} produits` : ''}`)
+                onMoved(item.id)
+              }
+            })
+          }}
+          className="h-8 max-w-[150px] shrink-0 rounded-md border border-input bg-background px-2 text-xs text-muted-foreground disabled:opacity-50"
+        >
+          <option value="">Déplacer vers…</option>
+          {categories.map((c) => (
+            <option key={c.id} value={c.id}>{c.name}</option>
+          ))}
+        </select>
+      )}
 
       <button onClick={onEdit} type="button"
         className="grid h-8 w-8 place-items-center rounded-md text-muted-foreground hover:bg-accent hover:text-foreground"
