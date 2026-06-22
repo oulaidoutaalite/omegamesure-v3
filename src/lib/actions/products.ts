@@ -37,6 +37,22 @@ function normalizeImages(input: ProductInput['images']) {
   }))
 }
 
+/** Trim cells, drop fully-empty rows, pad rows to column count. Returns JsonNull when no real data. */
+function normalizeSpecs(input: ProductInput['specs']): Prisma.InputJsonValue | typeof Prisma.JsonNull {
+  if (!input) return Prisma.JsonNull
+  const columns = input.columns.map((c) => c.trim())
+  const rows = input.rows
+    .map((r) => r.map((c) => (c ?? '').trim()))
+    .filter((r) => r.some((c) => c !== ''))
+    .map((r) => {
+      const a = [...r]
+      while (a.length < columns.length) a.push('')
+      return a.slice(0, columns.length)
+    })
+  if (!columns.length || !rows.length) return Prisma.JsonNull
+  return { columns, rows }
+}
+
 // ─── CREATE ─────────────────────────────────────────────────────────────────
 export async function createProduct(input: ProductInput): Promise<ActionResult<{ id: string }>> {
   const session = await requireRole([...EDITOR_ROLES])
@@ -60,6 +76,7 @@ export async function createProduct(input: ProductInput): Promise<ActionResult<{
         categoryId:       d.categoryId    || null,
         subCategoryId:    d.subCategoryId || null,
         images:           images as Prisma.InputJsonValue,
+        specs:            normalizeSpecs(d.specs),
         datasheetUrl:     d.datasheetUrl || null,
         datasheetVisible: d.datasheetVisible,
         isPublished:      d.isPublished,
@@ -117,6 +134,7 @@ export async function updateProduct(input: ProductUpdate): Promise<ActionResult>
         ...(rest.categoryId       !== undefined ? { categoryId:       rest.categoryId    || null }   : {}),
         ...(rest.subCategoryId    !== undefined ? { subCategoryId:    rest.subCategoryId || null }   : {}),
         ...(rest.images           !== undefined ? { images:           normalizeImages(rest.images) as Prisma.InputJsonValue } : {}),
+        ...(rest.specs            !== undefined ? { specs:            normalizeSpecs(rest.specs) }    : {}),
         ...(rest.datasheetUrl     !== undefined ? { datasheetUrl:     rest.datasheetUrl || null }    : {}),
         ...(rest.datasheetVisible !== undefined ? { datasheetVisible: rest.datasheetVisible }        : {}),
         ...(rest.isPublished      !== undefined ? { isPublished:      rest.isPublished }             : {}),

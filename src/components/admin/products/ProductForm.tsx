@@ -9,6 +9,7 @@ import { toast } from 'sonner'
 
 import { TranslationsEditor, type LocaleDef } from '@/components/admin/i18n/TranslationsEditor'
 import { MediaPicker, type PickedItem } from '@/components/admin/media/MediaPicker'
+import { SpecsEditor } from '@/components/admin/products/SpecsEditor'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -16,7 +17,7 @@ import { Switch } from '@/components/ui/switch'
 import { Textarea } from '@/components/ui/textarea'
 import { createProduct, updateProduct } from '@/lib/actions/products'
 import { slugify } from '@/lib/utils'
-import { productSchema, type ProductInput } from '@/lib/validations/product'
+import { productSchema, type ProductInput, type SpecTable } from '@/lib/validations/product'
 
 type Mode = { type: 'create' } | { type: 'edit'; id: string }
 
@@ -58,6 +59,7 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
       categoryId:       defaultValues?.categoryId       ?? null,
       subCategoryId:    defaultValues?.subCategoryId    ?? null,
       images:           defaultValues?.images           ?? [],
+      specs:            (defaultValues?.specs as SpecTable | null) ?? null,
       datasheetUrl:     defaultValues?.datasheetUrl     ?? '',
       datasheetVisible: defaultValues?.datasheetVisible ?? false,
       isPublished:      defaultValues?.isPublished      ?? false,
@@ -73,6 +75,7 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
   const categoryId    = watch('categoryId')
   const subCategoryId = watch('subCategoryId')
   const images        = watch('images') ?? []
+  const specs         = (watch('specs') as SpecTable | null) ?? null
   const datasheetUrl  = watch('datasheetUrl')
   const datasheetVisible = watch('datasheetVisible')
   const isPublished   = watch('isPublished')
@@ -195,6 +198,13 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
             <Textarea id="description" rows={6} {...register('description')} />
           </div>
         </section>
+
+        {!isService && (
+          <SpecsEditor
+            value={specs}
+            onChange={(v) => setValue('specs', v, { shouldDirty: true })}
+          />
+        )}
 
         <section className="rounded-xl border border-border bg-card p-6">
           <MediaPicker
