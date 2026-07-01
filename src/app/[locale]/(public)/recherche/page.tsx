@@ -33,13 +33,17 @@ export default async function SearchPage({
 
   const t = await getTranslations({ locale, namespace: 'search' })
 
-  // Also match model codes buried in the per-model specs table (JSON) — e.g. "WD-220"
-  // inside a grouped product whose `model` field is just "16 modèles (voir tableau)".
+  // Also match:
+  //  - model codes buried in the per-model specs table (e.g. "WD-220" inside a grouped
+  //    product whose `model` field is just "16 modèles (voir tableau)"),
+  //  - names / descriptions in OTHER languages stored in `translations` (EN/AR),
+  //    so an English query like "Automatic Glassware Washer" works on the FR site.
   const specIds = q
     ? (
         await db.$queryRaw<{ id: string }[]>`
           SELECT id FROM "Product"
-          WHERE "isPublished" = true AND "specs"::text ILIKE ${'%' + q + '%'}
+          WHERE "isPublished" = true
+            AND ("specs"::text ILIKE ${'%' + q + '%'} OR "translations"::text ILIKE ${'%' + q + '%'})
           LIMIT 100`
       ).map((r) => r.id)
     : []
