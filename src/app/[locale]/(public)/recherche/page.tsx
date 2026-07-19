@@ -33,43 +33,76 @@ export default async function SearchPage({
 
   const t = await getTranslations({ locale, namespace: 'search' })
 
-  // Also match:
-  //  - model codes buried in the per-model specs table (e.g. "WD-220" inside a grouped
-  //    product whose `model` field is just "16 modèles (voir tableau)"),
-  //  - names / descriptions in OTHER languages stored in `translations` (EN/AR),
-  //    so an English query like "Automatic Glassware Washer" works on the FR site.
-  const specIds = q
-    ? (
-        await db.$queryRaw<{ id: string }[]>`
-          SELECT id FROM "Product"
-          WHERE "isPublished" = true
-            AND ("specs"::text ILIKE ${'%' + q + '%'} OR "translations"::text ILIKE ${'%' + q + '%'})
-          LIMIT 100`
-      ).map((r) => r.id)
-    : []
+  const selectFields = {
+    id: true, name: true, slug: true, shortDescription: true,
+    brand: true, model: true, price: true, currency: true, images: true,
+    translations: true, category: { select: { color: true } },
+  } as const
+  const orderBy = [{ isFeatured: 'desc' }, { updatedAt: 'desc' }] as const
 
-  const rows = q
+  // A generic word like "balance" appears as a substring in many unrelated products
+  // ("imbalance" rotor detection, "balanced LED", "heat balance"…). So we search in two
+  // tiers: STRONG signals first (name / brand / model, and — crucially — a category or
+  // sub-category whose name matches, e.g. "balance" → category "Balances & bascules"),
+  // and only fall back to the broad full-text scan when nothing strong matched.
+  const [matchCats, matchSubs] = q
+    ? await Promise.all([
+        db.category.findMany({
+          where: { name: { contains: q, mode: 'insensitive' } },
+          select: { id: true },
+        }),
+        db.subCategory.findMany({
+          where: { name: { contains: q, mode: 'insensitive' } },
+          select: { id: true },
+        }),
+      ])
+    : [[], []]
+  const catIds = matchCats.map((c) => c.id)
+  const subIds = matchSubs.map((s) => s.id)
+
+  let rows = q
     ? await db.product.findMany({
         where: {
           isPublished: true,
           OR: [
-            { name:  { contains: q, mode: 'insensitive' } },
-            { brand: { contains: q, mode: 'insensitive' } },
-            { model: { contains: q, mode: 'insensitive' } },
-            { shortDescription: { contains: q, mode: 'insensitive' } },
-            { description:      { contains: q, mode: 'insensitive' } },
-            ...(specIds.length ? [{ id: { in: specIds } }] : []),
+            { name:  { contains: q, mode: 'insensitive' as const } },
+            { brand: { contains: q, mode: 'insensitive' as const } },
+            { model: { contains: q, mode: 'insensitive' as const } },
+            ...(catIds.length ? [{ categoryId: { in: catIds } }] : []),
+            ...(subIds.length ? [{ subCategoryId: { in: subIds } }] : []),
           ],
         },
-        orderBy: [{ isFeatured: 'desc' }, { updatedAt: 'desc' }],
+        orderBy: [...orderBy],
         take: 48,
-        select: {
-          id: true, name: true, slug: true, shortDescription: true,
-          brand: true, model: true, price: true, currency: true, images: true,
-          translations: true, category: { select: { color: true } },
-        },
+        select: selectFields,
       })
     : []
+
+  // Fallback for queries that match no name/category (model codes buried in the per-model
+  // specs table, or names/descriptions in OTHER languages stored in `translations`).
+  if (q && rows.length === 0) {
+    const specIds = (
+      await db.$queryRaw<{ id: string }[]>`
+        SELECT id FROM "Product"
+        WHERE "isPublished" = true
+          AND ("specs"::text ILIKE ${'%' + q + '%'} OR "translations"::text ILIKE ${'%' + q + '%'})
+        LIMIT 100`
+    ).map((r) => r.id)
+
+    rows = await db.product.findMany({
+      where: {
+        isPublished: true,
+        OR: [
+          { shortDescription: { contains: q, mode: 'insensitive' as const } },
+          { description:      { contains: q, mode: 'insensitive' as const } },
+          ...(specIds.length ? [{ id: { in: specIds } }] : []),
+        ],
+      },
+      orderBy: [...orderBy],
+      take: 48,
+      select: selectFields,
+    })
+  }
 
   const products: ProductCardData[] = rows.map((p) => {
     const imgs = Array.isArray(p.images) ? (p.images as unknown as ImageJson[]) : []
