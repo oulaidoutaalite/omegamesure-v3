@@ -38,71 +38,57 @@ export default async function SearchPage({
     brand: true, model: true, price: true, currency: true, images: true,
     translations: true, category: { select: { color: true } },
   } as const
-  const orderBy = [{ isFeatured: 'desc' }, { updatedAt: 'desc' }] as const
-
-  // A generic word like "balance" appears as a substring in many unrelated products
-  // ("imbalance" rotor detection, "balanced LED", "heat balance"…). So we search in two
-  // tiers: STRONG signals first (name / brand / model, and — crucially — a category or
-  // sub-category whose name matches, e.g. "balance" → category "Balances & bascules"),
-  // and only fall back to the broad full-text scan when nothing strong matched.
-  const [matchCats, matchSubs] = q
-    ? await Promise.all([
-        db.category.findMany({
-          where: { name: { contains: q, mode: 'insensitive' } },
-          select: { id: true },
-        }),
-        db.subCategory.findMany({
-          where: { name: { contains: q, mode: 'insensitive' } },
-          select: { id: true },
-        }),
-      ])
-    : [[], []]
-  const catIds = matchCats.map((c) => c.id)
-  const subIds = matchSubs.map((s) => s.id)
-
-  let rows = q
-    ? await db.product.findMany({
-        where: {
-          isPublished: true,
-          OR: [
-            { name:  { contains: q, mode: 'insensitive' as const } },
-            { brand: { contains: q, mode: 'insensitive' as const } },
-            { model: { contains: q, mode: 'insensitive' as const } },
-            ...(catIds.length ? [{ categoryId: { in: catIds } }] : []),
-            ...(subIds.length ? [{ subCategoryId: { in: subIds } }] : []),
-          ],
-        },
-        orderBy: [...orderBy],
-        take: 48,
-        select: selectFields,
-      })
-    : []
-
-  // Fallback for queries that match no name/category (model codes buried in the per-model
-  // specs table, or names/descriptions in OTHER languages stored in `translations`).
-  if (q && rows.length === 0) {
-    const specIds = (
+  // Two-tier, accent-insensitive search (Postgres `unaccent`, so "etuve" matches "Étuve").
+  //  1. STRONG signals: name / brand / model, and — crucially — a category or sub-category
+  //     whose name matches (e.g. "balance" → category "Balances & bascules"). This keeps a
+  //     generic word like "balance" from dragging in "imbalance" / "balanced LED" noise.
+  //  2. FALLBACK (only when nothing strong matched): broad scan of description + specs +
+  //     translations, so model codes buried in the specs table ("WD-220") and other-language
+  //     names ("Automatic Glassware Washer") still resolve.
+  const pat = '%' + q + '%'
+  let ids: string[] = []
+  if (q) {
+    ids = (
       await db.$queryRaw<{ id: string }[]>`
-        SELECT id FROM "Product"
-        WHERE "isPublished" = true
-          AND ("specs"::text ILIKE ${'%' + q + '%'} OR "translations"::text ILIKE ${'%' + q + '%'})
-        LIMIT 100`
+        SELECT p.id
+        FROM "Product" p
+        LEFT JOIN "Category" c     ON c.id  = p."categoryId"
+        LEFT JOIN "SubCategory" sc ON sc.id = p."subCategoryId"
+        WHERE p."isPublished" = true AND (
+              public.unaccent(p.name)                ILIKE public.unaccent(${pat})
+          OR  public.unaccent(coalesce(p.brand, '')) ILIKE public.unaccent(${pat})
+          OR  public.unaccent(coalesce(p.model, '')) ILIKE public.unaccent(${pat})
+          OR  public.unaccent(coalesce(c.name, ''))  ILIKE public.unaccent(${pat})
+          OR  public.unaccent(coalesce(sc.name, '')) ILIKE public.unaccent(${pat})
+        )
+        ORDER BY p."isFeatured" DESC, p."updatedAt" DESC
+        LIMIT 48`
     ).map((r) => r.id)
 
-    rows = await db.product.findMany({
-      where: {
-        isPublished: true,
-        OR: [
-          { shortDescription: { contains: q, mode: 'insensitive' as const } },
-          { description:      { contains: q, mode: 'insensitive' as const } },
-          ...(specIds.length ? [{ id: { in: specIds } }] : []),
-        ],
-      },
-      orderBy: [...orderBy],
-      take: 48,
-      select: selectFields,
-    })
+    if (ids.length === 0) {
+      ids = (
+        await db.$queryRaw<{ id: string }[]>`
+          SELECT p.id
+          FROM "Product" p
+          WHERE p."isPublished" = true AND (
+                public.unaccent(coalesce(p."shortDescription", '')) ILIKE public.unaccent(${pat})
+            OR  public.unaccent(coalesce(p.description, ''))         ILIKE public.unaccent(${pat})
+            OR  public.unaccent(p.specs::text)                      ILIKE public.unaccent(${pat})
+            OR  public.unaccent(p.translations::text)               ILIKE public.unaccent(${pat})
+          )
+          ORDER BY p."isFeatured" DESC, p."updatedAt" DESC
+          LIMIT 48`
+      ).map((r) => r.id)
+    }
   }
+
+  const found = ids.length
+    ? await db.product.findMany({ where: { id: { in: ids } }, select: selectFields })
+    : []
+  const byId = new Map(found.map((p) => [p.id, p]))
+  const rows = ids
+    .map((id) => byId.get(id))
+    .filter((p): p is (typeof found)[number] => Boolean(p))
 
   const products: ProductCardData[] = rows.map((p) => {
     const imgs = Array.isArray(p.images) ? (p.images as unknown as ImageJson[]) : []
