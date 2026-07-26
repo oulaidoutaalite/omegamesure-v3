@@ -65,7 +65,7 @@ export default async function CategoryPage({
           orderBy: { order: 'asc' },
           select: {
             id: true, name: true, slug: true, description: true,
-            isAutresSlot: true, translations: true,
+            parentId: true, isAutresSlot: true, translations: true,
             products: {
               where: { isPublished: true },
               orderBy: [{ isFeatured: 'desc' }, { name: 'asc' }],
@@ -105,14 +105,18 @@ export default async function CategoryPage({
     }
   }
 
-  // Group products by sub-category (type), then ungrouped products as a trailing block
-  const groups = category.subCategories
-    .map((s) => ({
-      id: s.id, slug: s.slug, isAutresSlot: s.isAutresSlot,
-      name: pickLocaleField(s.name, s.translations as TranslationsJson, 'name', locale),
-      products: s.products.map(toCard),
-    }))
-    .filter((g) => g.products.length > 0)
+  // ── Build a (possibly 2-level) sub-category tree ──────────────────────────
+  // Leaves hold products; umbrellas (parentId === null with children) group leaves.
+  // Categories without any parent/child links keep the previous flat behaviour.
+  type Leaf = { slug: string; isAutresSlot: boolean; name: string; products: ProductCardData[] }
+  type Top = { slug: string; name: string; count: number; children: Leaf[]; leaf?: Leaf }
+
+  const subs = category.subCategories.map((s) => ({
+    id: s.id, slug: s.slug, parentId: s.parentId, isAutresSlot: s.isAutresSlot,
+    name: pickLocaleField(s.name, s.translations as TranslationsJson, 'name', locale),
+    products: s.products.map(toCard),
+  }))
+  const childrenOf = (pid: string) => subs.filter((x) => x.parentId === pid)
 
   const ungroupedRows = await db.product.findMany({
     where: { categoryId: category.id, isPublished: true, subCategoryId: null },
@@ -121,14 +125,27 @@ export default async function CategoryPage({
   })
   const ungrouped = ungroupedRows.map(toCard)
 
-  type Group = { id: string; slug: string; isAutresSlot: boolean; name: string; products: ProductCardData[] }
-  const allGroups: Group[] = [
-    ...groups,
-    ...(ungrouped.length
-      ? [{ id: 'autres', slug: 'autres', isAutresSlot: true, name: t('autresBadge'), products: ungrouped }]
-      : []),
-  ]
-  const selected = allGroups.find((g) => g.slug === subParam) ?? allGroups[0]
+  const tops: Top[] = []
+  for (const s of subs.filter((x) => !x.parentId)) {
+    const kids = childrenOf(s.id).filter((k) => k.products.length > 0)
+      .map((k) => ({ slug: k.slug, isAutresSlot: k.isAutresSlot, name: k.name, products: k.products }))
+    if (kids.length) {
+      tops.push({ slug: s.slug, name: s.name, count: kids.reduce((n, k) => n + k.products.length, 0), children: kids })
+    } else if (s.products.length) {
+      tops.push({ slug: s.slug, name: s.name, count: s.products.length, children: [], leaf: { slug: s.slug, isAutresSlot: s.isAutresSlot, name: s.name, products: s.products } })
+    }
+  }
+  if (ungrouped.length) {
+    const leaf = { slug: 'autres', isAutresSlot: true, name: t('autresBadge'), products: ungrouped }
+    tops.push({ slug: 'autres', name: leaf.name, count: ungrouped.length, children: [], leaf })
+  }
+
+  const allLeaves: Leaf[] = tops.flatMap((tp) => (tp.children.length ? tp.children : tp.leaf ? [tp.leaf] : []))
+  const selected = allLeaves.find((g) => g.slug === subParam) ?? allLeaves[0]
+  const activeTop =
+    tops.find((tp) => tp.children.some((k) => k.slug === selected?.slug)) ??
+    tops.find((tp) => tp.slug === selected?.slug) ?? tops[0]
+  const row2 = activeTop?.children ?? []
 
   const isMetrologie = category.slug === 'metrologie'
 
@@ -161,20 +178,21 @@ export default async function CategoryPage({
         </Container>
       </section>
 
-      {/* Sub-categories — select a type */}
-      {allGroups.length > 1 && (
+      {/* Sub-categories — level 1 (umbrellas / types) then level 2 (types) */}
+      {tops.length > 1 && (
         <section className="border-b border-border py-4">
           <Container>
             <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
               {t('subCategoriesTitle')}
             </h2>
             <ul className="flex flex-wrap gap-2">
-              {allGroups.map((g) => {
-                const active = !!selected && g.slug === selected.slug
+              {tops.map((tp) => {
+                const active = tp.slug === activeTop?.slug
+                const target = tp.children.length ? tp.children[0].slug : tp.slug
                 return (
-                  <li key={g.id}>
+                  <li key={tp.slug}>
                     <Link
-                      href={`${withLocale(`/${category.slug}`, locale)}?sub=${g.slug}`}
+                      href={`${withLocale(`/${category.slug}`, locale)}?sub=${target}`}
                       scroll={false}
                       className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition ${
                         active
@@ -182,15 +200,38 @@ export default async function CategoryPage({
                           : 'border-border bg-card hover:border-brand/40 hover:bg-accent/40'
                       }`}
                     >
-                      {g.name}
+                      {tp.name}
                       <span className={active ? 'text-xs text-white/80' : 'text-xs text-muted-foreground'}>
-                        {g.products.length}
+                        {tp.count}
                       </span>
                     </Link>
                   </li>
                 )
               })}
             </ul>
+            {row2.length > 0 && (
+              <ul className="mt-3 flex flex-wrap gap-2 border-t border-dashed border-border pt-3">
+                {row2.map((c) => {
+                  const active = !!selected && c.slug === selected.slug
+                  return (
+                    <li key={c.slug}>
+                      <Link
+                        href={`${withLocale(`/${category.slug}`, locale)}?sub=${c.slug}`}
+                        scroll={false}
+                        className={`inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-sm transition ${
+                          active
+                            ? 'border-brand bg-brand/10 font-semibold text-brand'
+                            : 'border-border bg-card text-muted-foreground hover:border-brand/40 hover:text-foreground'
+                        }`}
+                      >
+                        {c.name}
+                        <span className="text-xs opacity-70">{c.products.length}</span>
+                      </Link>
+                    </li>
+                  )
+                })}
+              </ul>
+            )}
           </Container>
         </section>
       )}

@@ -203,6 +203,13 @@ model SubCategory {
   categoryId String
   category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
 
+  // Optional 2nd level of grouping: a sub-category can nest under a parent
+  // sub-category (umbrella). parentId = null → top-level. Leaves hold products;
+  // umbrellas hold children.
+  parentId String?
+  parent   SubCategory?  @relation("SubCategoryTree", fields: [parentId], references: [id], onDelete: SetNull, onUpdate: Cascade)
+  children SubCategory[] @relation("SubCategoryTree")
+
   products Product[]
 
   createdAt DateTime @default(now())
@@ -210,6 +217,7 @@ model SubCategory {
 
   @@unique([categoryId, slug])
   @@index([order])
+  @@index([parentId])
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
