@@ -132,7 +132,9 @@ export default async function CategoryPage({
       .map((k) => ({ slug: k.slug, isAutresSlot: k.isAutresSlot, name: k.name, products: k.products }))
     if (kids.length) {
       tops.push({ slug: s.slug, name: s.name, count: kids.reduce((n, k) => n + k.products.length, 0), children: kids })
-    } else if (s.products.length) {
+    } else if (s.products.length || category.slug === 'consommables') {
+      // Consommables sub-categories are intentionally empty (configurator / quote-only),
+      // so keep them selectable even with zero products.
       tops.push({ slug: s.slug, name: s.name, count: s.products.length, children: [], leaf: { slug: s.slug, isAutresSlot: s.isAutresSlot, name: s.name, products: s.products } })
     }
   }
