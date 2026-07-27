@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
+import { ColumnConfigurator } from '@/components/public/ColumnConfigurator'
 import { Container } from '@/components/public/Container'
 import { ProductCard, type ProductCardData } from '@/components/public/ProductCard'
 import { Button } from '@/components/ui/button'
@@ -146,6 +147,8 @@ export default async function CategoryPage({
     tops.find((tp) => tp.children.some((k) => k.slug === selected?.slug)) ??
     tops.find((tp) => tp.slug === selected?.slug) ?? tops[0]
   const row2 = activeTop?.children ?? []
+  // Colonnes chromatographie = configurateur (le client décrit sa colonne) au lieu d'un catalogue figé.
+  const isColumnConfigurator = category.slug === 'consommables' && selected?.slug === 'colonnes-chromato'
 
   const isMetrologie = category.slug === 'metrologie'
 
@@ -244,7 +247,7 @@ export default async function CategoryPage({
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">{t('selection')}</p>
               <h2 className="mt-1 text-2xl font-bold tracking-tight">{selected ? selected.name : t('productsHeading')}</h2>
             </div>
-            {selected && (
+            {selected && !isColumnConfigurator && (
               <p className="text-xs text-muted-foreground">
                 {selected.products.length > 1
                   ? t('shown', { n: selected.products.length })
@@ -253,7 +256,9 @@ export default async function CategoryPage({
             )}
           </header>
 
-          {!selected || selected.products.length === 0 ? (
+          {isColumnConfigurator ? (
+            <ColumnConfigurator />
+          ) : !selected || selected.products.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-border bg-muted/30 p-12 text-center">
               <p className="text-sm text-muted-foreground">{t('noProducts')}</p>
               <Button asChild className="mt-4" variant="outline">
