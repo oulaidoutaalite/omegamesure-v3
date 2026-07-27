@@ -21,6 +21,9 @@ export default async function NewProductPage() {
         id: true,
         name: true,
         subCategories: {
+          // Only leaf sub-categories are assignable; umbrellas (that have
+          // children) are grouping headers and must not hold products directly.
+          where: { children: { none: {} } },
           orderBy: { order: 'asc' },
           select: { id: true, name: true },
         },

@@ -26,7 +26,8 @@ export default async function EditProductPage({
       orderBy: { order: 'asc' },
       select: {
         id: true, name: true,
-        subCategories: { orderBy: { order: 'asc' }, select: { id: true, name: true } },
+        // Only leaf sub-categories are assignable (exclude umbrellas w/ children).
+        subCategories: { where: { children: { none: {} } }, orderBy: { order: 'asc' }, select: { id: true, name: true } },
       },
     }),
     loadTranslatableLocales(),
