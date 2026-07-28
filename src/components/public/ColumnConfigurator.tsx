@@ -95,7 +95,7 @@ const T: Record<Loc, Record<string, string>> = {
     freeToggle: "Je préfère décrire ma demande librement, sans configurer la colonne.",
     freeLabel: 'Demande libre',
     freeNotes: 'Décrivez la colonne ou le consommable souhaité',
-    freeNotesPh: "Ex. : colonne C18 Waters XBridge 150 × 4,6 mm, 5 µm — ou équivalent. Précisez l'application si besoin.",
+    freeNotesPh: 'Ex. :\n• Colonne HPLC C18, 150 × 4,6 mm, 5 µm — Waters XBridge ou équivalent\n• Colonne GC DB-5, 30 m × 0,25 mm, film 0,25 µm\n• Cartouche SPE C18, 500 mg / 6 mL',
     notes: 'Précisions', notesPh: "Ex. : application, équivalence acceptée, conditions d'analyse…",
     freeHint: 'Décrivez votre besoin en quelques mots, puis ajustez la quantité avec − et +.',
   },
@@ -113,7 +113,7 @@ const T: Record<Loc, Record<string, string>> = {
     freeToggle: 'I would rather describe my request freely, without configuring the column.',
     freeLabel: 'Free-text request',
     freeNotes: 'Describe the column or consumable you need',
-    freeNotesPh: 'e.g. Waters XBridge C18 column, 150 × 4.6 mm, 5 µm — or equivalent. Mention the application if useful.',
+    freeNotesPh: 'e.g.\n• HPLC column C18, 150 × 4.6 mm, 5 µm — Waters XBridge or equivalent\n• GC column DB-5, 30 m × 0.25 mm, 0.25 µm film\n• SPE cartridge C18, 500 mg / 6 mL',
     notes: 'Additional details', notesPh: 'e.g. application, equivalent accepted, analytical conditions…',
     freeHint: 'Describe your need in a few words, then adjust the quantity with − and +.',
   },
@@ -131,7 +131,7 @@ const T: Record<Loc, Record<string, string>> = {
     freeToggle: 'أفضّل وصف طلبي بحرّية دون تهيئة العمود.',
     freeLabel: 'طلب حر',
     freeNotes: 'صف العمود أو المستهلك المطلوب',
-    freeNotesPh: 'مثال: عمود C18 Waters XBridge بمقاس 150 × 4.6 مم، 5 ميكرومتر — أو ما يعادله. اذكر التطبيق إن لزم.',
+    freeNotesPh: 'مثال:\n• عمود HPLC نوع C18، 150 × 4.6 مم، 5 ميكرومتر — Waters XBridge أو ما يعادله\n• عمود GC نوع DB-5، 30 م × 0.25 مم، غشاء 0.25 ميكرومتر\n• خرطوشة SPE نوع C18، 500 مغ / 6 مل',
     notes: 'تفاصيل إضافية', notesPh: 'مثال: التطبيق، قبول البديل المكافئ، ظروف التحليل…',
     freeHint: 'صف حاجتك بكلمات قليلة ثم اضبط الكمية بـ − و +.',
   },
@@ -347,7 +347,7 @@ export function ColumnConfigurator() {
           <Label htmlFor="col-notes">
             {freeMode ? `${t.freeNotes} *` : `${t.notes} ${t.optional}`}
           </Label>
-          <Textarea id="col-notes" rows={freeMode ? 5 : 3} maxLength={1000}
+          <Textarea id="col-notes" rows={freeMode ? 6 : 3} maxLength={1000}
                     placeholder={freeMode ? t.freeNotesPh : t.notesPh}
                     value={notes} onChange={(e) => setNotes(e.target.value)} />
         </div>
