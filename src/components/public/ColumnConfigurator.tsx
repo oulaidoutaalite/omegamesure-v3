@@ -127,14 +127,15 @@ const SELECT_CLS = 'flex h-10 w-full rounded-lg border border-input bg-backgroun
 /** Labelled <select>. Declared at module level so React keeps the same element
  *  across re-renders (a component defined inside the parent would remount on
  *  every state change and lose focus/value). */
-function Picker({ label, unit, optional, value, onChange, options, placeholder }: {
-  label: string; unit?: string; optional?: boolean
+function Picker({ label, unit, optional, optionalText, value, onChange, options, placeholder }: {
+  label: string; unit?: string; optional?: boolean; optionalText?: string
   value: string; onChange: (v: string) => void
   options: string[]; placeholder: string
 }) {
   return (
     <div className="space-y-1.5">
-      <Label>{label}{unit ? ` (${unit})` : ''} {optional ? '' : '*'}</Label>
+      {/* order: label (unit) then "*" or "(optional)" */}
+      <Label>{label}{unit ? ` (${unit})` : ''} {optional ? (optionalText ?? '') : '*'}</Label>
       <select className={SELECT_CLS} value={value} onChange={(e) => onChange(e.target.value)}>
         <option value="">{placeholder}</option>
         {options.map((o) => <option key={o} value={o}>{o}</option>)}
@@ -274,7 +275,7 @@ export function ColumnConfigurator() {
           <>
             <Picker label={t.bedMass} value={bedMass} onChange={setBedMass} options={BED_MASSES} placeholder={t.pick} />
             <Picker label={t.volume}  value={volume}  onChange={setVolume}  options={SPE_VOLUMES} placeholder={t.pick} />
-            <Picker label={`${t.format} ${t.optional}`} value={format} onChange={setFormat} options={SPE_FORMATS_FR} optional placeholder={t.noPref} />
+            <Picker label={t.format} optionalText={t.optional} value={format} onChange={setFormat} options={SPE_FORMATS_FR} optional placeholder={t.noPref} />
           </>
         ) : (
           <>
@@ -283,7 +284,7 @@ export function ColumnConfigurator() {
             {type === 'HPLC' ? (
               <>
                 <Picker label={t.particle} unit="µm" value={particle} onChange={setParticle} options={PARTICLES} placeholder={t.pick} />
-                <Picker label={`${t.pore} ${t.optional}`} unit="Å" value={pore} onChange={setPore} options={PORES} optional placeholder={t.noPref} />
+                <Picker label={t.pore} unit="Å" optionalText={t.optional} value={pore} onChange={setPore} options={PORES} optional placeholder={t.noPref} />
               </>
             ) : (
               <Picker label={t.film} unit="µm" value={film} onChange={setFilm} options={FILMS} placeholder={t.pick} />
@@ -291,7 +292,7 @@ export function ColumnConfigurator() {
           </>
         )}
 
-        <Picker label={`${t.brand} ${t.optional}`} value={brand} onChange={setBrand} options={BRANDS} optional placeholder={t.noPref} />
+        <Picker label={t.brand} optionalText={t.optional} value={brand} onChange={setBrand} options={BRANDS} optional placeholder={t.noPref} />
 
         {/* Manufacturer part number — optional free text (the client may know the exact reference) */}
         <div className={field}>
