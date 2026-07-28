@@ -68,6 +68,27 @@ function slugify(s: string): string {
   return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
 }
 
+const SELECT_CLS = 'flex h-10 w-full rounded-lg border border-input bg-background px-3 text-sm'
+
+/** Labelled <select>. Declared at module level so React keeps the same element
+ *  across re-renders (a component defined inside the parent would remount on
+ *  every state change and lose focus/value). */
+function Picker({ label, unit, optional, value, onChange, options, placeholder }: {
+  label: string; unit?: string; optional?: boolean
+  value: string; onChange: (v: string) => void
+  options: string[]; placeholder: string
+}) {
+  return (
+    <div className="space-y-1.5">
+      <Label>{label}{unit ? ` (${unit})` : ''} {optional ? '' : '*'}</Label>
+      <select className={SELECT_CLS} value={value} onChange={(e) => onChange(e.target.value)}>
+        <option value="">{placeholder}</option>
+        {options.map((o) => <option key={o} value={o}>{o}</option>)}
+      </select>
+    </div>
+  )
+}
+
 export function ColumnConfigurator() {
   const rawLocale = useLocale()
   const locale: Loc = rawLocale === 'en' || rawLocale === 'ar' ? rawLocale : 'fr'
@@ -124,25 +145,7 @@ export function ColumnConfigurator() {
 
   const devisHref = locale === 'fr' ? '/devis' : `/${locale}/devis`
   const field = 'space-y-1.5'
-  const selectCls = 'flex h-10 w-full rounded-lg border border-input bg-background px-3 text-sm'
-
-  /** Reusable labelled <select>. */
-  function Picker({ label, value, onChange, options, unit, optional }: {
-    label: string; value: string; onChange: (v: string) => void
-    options: string[]; unit?: string; optional?: boolean
-  }) {
-    return (
-      <div className={field}>
-        <Label>
-          {label}{unit ? ` (${unit})` : ''} {optional ? t.optional : '*'}
-        </Label>
-        <select className={selectCls} value={value} onChange={(e) => onChange(e.target.value)}>
-          <option value="">{optional ? t.noPref : t.pick}</option>
-          {options.map((o) => <option key={o} value={o}>{o}</option>)}
-        </select>
-      </div>
-    )
-  }
+  const selectCls = SELECT_CLS
 
   return (
     <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
@@ -173,19 +176,19 @@ export function ColumnConfigurator() {
           )}
         </div>
 
-        <Picker label={t.length}   unit={lenUnit} value={length}   onChange={setLength}   options={LENGTHS[type]} />
-        <Picker label={t.innerDia} unit="mm"      value={innerDia} onChange={setInnerDia} options={INNER_DIA[type]} />
+        <Picker label={t.length}   unit={lenUnit} value={length}   onChange={setLength}   options={LENGTHS[type]}   placeholder={t.pick} />
+        <Picker label={t.innerDia} unit="mm"      value={innerDia} onChange={setInnerDia} options={INNER_DIA[type]} placeholder={t.pick} />
 
         {type === 'HPLC' ? (
           <>
-            <Picker label={t.particle} unit="µm" value={particle} onChange={setParticle} options={PARTICLES} />
-            <Picker label={t.pore}     unit="Å"  value={pore}     onChange={setPore}     options={PORES} optional />
+            <Picker label={t.particle} unit="µm" value={particle} onChange={setParticle} options={PARTICLES} placeholder={t.pick} />
+            <Picker label={`${t.pore} ${t.optional}`} unit="Å" value={pore} onChange={setPore} options={PORES} optional placeholder={t.noPref} />
           </>
         ) : (
-          <Picker label={t.film} unit="µm" value={film} onChange={setFilm} options={FILMS} />
+          <Picker label={t.film} unit="µm" value={film} onChange={setFilm} options={FILMS} placeholder={t.pick} />
         )}
 
-        <Picker label={t.brand} value={brand} onChange={setBrand} options={BRANDS} optional />
+        <Picker label={`${t.brand} ${t.optional}`} value={brand} onChange={setBrand} options={BRANDS} optional placeholder={t.noPref} />
 
         {/* Quantity — the only typed field */}
         <div className={field}>
