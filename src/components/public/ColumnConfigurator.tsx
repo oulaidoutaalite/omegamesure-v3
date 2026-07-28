@@ -10,6 +10,7 @@ import { useCart } from '@/components/public/cart/CartProvider'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
 
 type Loc = 'fr' | 'en' | 'ar'
 type ColType = 'HPLC' | 'GC' | 'SPE'
@@ -91,6 +92,12 @@ const T: Record<Loc, Record<string, string>> = {
     dec: 'Diminuer la quantité', inc: 'Augmenter la quantité',
     summary: 'Votre colonne', goQuote: 'Voir ma demande de devis',
     hint: 'Tous les champs se sélectionnent ; ajustez la quantité avec − et +. Si vous connaissez la référence fabricant, indiquez-la.',
+    freeToggle: "Je préfère décrire ma demande librement, sans configurer la colonne.",
+    freeLabel: 'Demande libre',
+    freeNotes: 'Décrivez la colonne ou le consommable souhaité',
+    freeNotesPh: "Ex. : colonne C18 Waters XBridge 150 × 4,6 mm, 5 µm — ou équivalent. Précisez l'application si besoin.",
+    notes: 'Précisions', notesPh: "Ex. : application, équivalence acceptée, conditions d'analyse…",
+    freeHint: 'Décrivez votre besoin en quelques mots, puis ajustez la quantité avec − et +.',
   },
   en: {
     title: 'Configure a column', subtitle: 'Select the characteristics of your HPLC, GC or SPE cartridge, then add it to your quote request.',
@@ -103,6 +110,12 @@ const T: Record<Loc, Record<string, string>> = {
     dec: 'Decrease quantity', inc: 'Increase quantity',
     summary: 'Your column', goQuote: 'View my quote request',
     hint: 'Every field is picked from a list; adjust the quantity with − and +. If you know the manufacturer part number, add it.',
+    freeToggle: 'I would rather describe my request freely, without configuring the column.',
+    freeLabel: 'Free-text request',
+    freeNotes: 'Describe the column or consumable you need',
+    freeNotesPh: 'e.g. Waters XBridge C18 column, 150 × 4.6 mm, 5 µm — or equivalent. Mention the application if useful.',
+    notes: 'Additional details', notesPh: 'e.g. application, equivalent accepted, analytical conditions…',
+    freeHint: 'Describe your need in a few words, then adjust the quantity with − and +.',
   },
   ar: {
     title: 'تهيئة عمود', subtitle: 'اختر خصائص عمود HPLC أو GC أو خرطوشة SPE ثم أضِفه إلى طلب عرض السعر.',
@@ -115,6 +128,12 @@ const T: Record<Loc, Record<string, string>> = {
     dec: 'إنقاص الكمية', inc: 'زيادة الكمية',
     summary: 'عمودك', goQuote: 'عرض طلب السعر',
     hint: 'تُختار جميع الحقول من قوائم؛ اضبط الكمية بـ − و +. إن كنت تعرف رقم القطعة لدى الصانع فأضِفه.',
+    freeToggle: 'أفضّل وصف طلبي بحرّية دون تهيئة العمود.',
+    freeLabel: 'طلب حر',
+    freeNotes: 'صف العمود أو المستهلك المطلوب',
+    freeNotesPh: 'مثال: عمود C18 Waters XBridge بمقاس 150 × 4.6 مم، 5 ميكرومتر — أو ما يعادله. اذكر التطبيق إن لزم.',
+    notes: 'تفاصيل إضافية', notesPh: 'مثال: التطبيق، قبول البديل المكافئ، ظروف التحليل…',
+    freeHint: 'صف حاجتك بكلمات قليلة ثم اضبط الكمية بـ − و +.',
   },
 }
 
@@ -193,16 +212,21 @@ export function ColumnConfigurator() {
   const [brand, setBrand] = useState('')
   const [partNumber, setPartNumber] = useState('')
   const [qty, setQty] = useState(1)
+  /** Free-text mode: the client describes the column instead of configuring it. */
+  const [freeMode, setFreeMode] = useState(false)
+  const [notes, setNotes] = useState('')
   const [justAdded, setJustAdded] = useState(false)
 
   const lenUnit = type === 'HPLC' ? 'mm' : 'm'
 
   const valid = useMemo(() => {
+    // Free-text mode: only the description matters.
+    if (freeMode) return notes.trim().length >= 3
     if (!phase) return false
     if (type === 'SPE') return !!bedMass && !!volume
     if (!length || !innerDia) return false
     return type === 'HPLC' ? !!particle : !!film
-  }, [phase, length, innerDia, particle, film, bedMass, volume, type])
+  }, [freeMode, notes, phase, length, innerDia, particle, film, bedMass, volume, type])
 
   // Each type has its own dimension lists — switching invalidates them all.
   function switchType(v: ColType) {
@@ -214,10 +238,11 @@ export function ColumnConfigurator() {
   function reset() {
     setPhase(''); setLength(''); setInnerDia(''); setParticle(''); setPore(''); setFilm('')
     setBedMass(''); setVolume(''); setFormat('')
-    setBrand(''); setPartNumber(''); setQty(1)
+    setBrand(''); setPartNumber(''); setQty(1); setNotes('')
   }
 
   function buildName(): string {
+    if (freeMode) return `${t.freeLabel} — ${notes.trim()}`
     const dims =
       type === 'SPE'  ? [bedMass, volume, format].filter(Boolean).join(' · ')
       : type === 'HPLC' ? [`${length} × ${innerDia} mm`, `${particle} µm`, pore ? `${pore} Å` : ''].filter(Boolean).join(' · ')
@@ -226,14 +251,16 @@ export function ColumnConfigurator() {
       ? `SPE ${phase}`
       : `${locale === 'fr' ? 'Colonne' : locale === 'ar' ? 'عمود' : 'Column'} ${type} ${phase}`
     const ref = partNumber.trim() ? `${t.refShort} ${partNumber.trim()}` : ''
-    return [head, dims, brand, ref].filter(Boolean).join(' — ')
+    return [head, dims, brand, ref, notes.trim()].filter(Boolean).join(' — ')
   }
 
   function onAdd() {
     if (!valid) return
-    const parts = type === 'SPE'
-      ? ['spe', phase, bedMass, volume, format]
-      : ['col', type, phase, length, innerDia, type === 'HPLC' ? particle : film, pore]
+    const parts = freeMode
+      ? ['libre', notes.trim().slice(0, 60)]
+      : type === 'SPE'
+        ? ['spe', phase, bedMass, volume, format]
+        : ['col', type, phase, length, innerDia, type === 'HPLC' ? particle : film, pore]
     const slug = slugify([...parts, brand, partNumber.trim()].join('-'))
     cart.add({ slug, name: buildName(), brand: brand || 'Chromatographie', image: null, qty })
     toast.success(t.added)
@@ -251,17 +278,29 @@ export function ColumnConfigurator() {
       <h3 className="text-xl font-bold tracking-tight">{t.title}</h3>
       <p className="mt-1 text-sm text-muted-foreground">{t.subtitle}</p>
 
+      {/* Free-text opt-out */}
+      <label htmlFor="col-free" className="mt-5 flex cursor-pointer items-start gap-2.5 rounded-xl border border-border bg-muted/30 p-3 text-sm">
+        <input id="col-free" type="checkbox" checked={freeMode}
+               onChange={(e) => setFreeMode(e.target.checked)}
+               className="mt-0.5 h-4 w-4 shrink-0 accent-[hsl(var(--brand,210_72%_37%))]" />
+        <span className="text-muted-foreground">{t.freeToggle}</span>
+      </label>
+
       {/* Type toggle */}
-      <div className="mt-6 inline-flex rounded-lg border border-border p-1">
-        {(['HPLC', 'GC', 'SPE'] as ColType[]).map((v) => (
-          <button key={v} type="button" onClick={() => switchType(v)}
-            className={`rounded-md px-5 py-1.5 text-sm font-semibold transition ${type === v ? 'bg-brand text-white' : 'text-muted-foreground hover:text-foreground'}`}>
-            {v}
-          </button>
-        ))}
-      </div>
+      {!freeMode && (
+        <div className="mt-5 inline-flex rounded-lg border border-border p-1">
+          {(['HPLC', 'GC', 'SPE'] as ColType[]).map((v) => (
+            <button key={v} type="button" onClick={() => switchType(v)}
+              className={`rounded-md px-5 py-1.5 text-sm font-semibold transition ${type === v ? 'bg-brand text-white' : 'text-muted-foreground hover:text-foreground'}`}>
+              {v}
+            </button>
+          ))}
+        </div>
+      )}
 
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
+        {!freeMode && (
+        <>
         {/* Phase (or sorbent for SPE) — full width */}
         <div className={`${field} sm:col-span-2`}>
           <Label>{type === 'SPE' ? t.sorbent : t.phase} *</Label>
@@ -300,20 +339,32 @@ export function ColumnConfigurator() {
           <Input id="col-pn" value={partNumber} placeholder={t.partNumberPh}
                  onChange={(e) => setPartNumber(e.target.value)} maxLength={60} />
         </div>
+        </>
+        )}
+
+        {/* Free text — required in free mode, extra precisions otherwise */}
+        <div className={`${field} sm:col-span-2`}>
+          <Label htmlFor="col-notes">
+            {freeMode ? `${t.freeNotes} *` : `${t.notes} ${t.optional}`}
+          </Label>
+          <Textarea id="col-notes" rows={freeMode ? 5 : 3} maxLength={1000}
+                    placeholder={freeMode ? t.freeNotesPh : t.notesPh}
+                    value={notes} onChange={(e) => setNotes(e.target.value)} />
+        </div>
 
         {/* Quantity — stepper − / + (the only editable value) */}
         <QtyStepper label={t.qty} value={qty} onChange={setQty} decLabel={t.dec} incLabel={t.inc} />
       </div>
 
       {/* Live summary */}
-      {valid && (
+      {valid && !freeMode && (
         <div className="mt-5 rounded-xl border border-brand/20 bg-brand/5 p-3 text-sm">
           <span className="font-semibold text-brand">{t.summary} : </span>{buildName()}
         </div>
       )}
 
       <div className="mt-5 flex flex-col-reverse items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-[11px] text-muted-foreground">{t.hint}</p>
+        <p className="text-[11px] text-muted-foreground">{freeMode ? t.freeHint : t.hint}</p>
         <div className="flex items-center gap-3">
           {cart.ready && cart.count > 0 && (
             <Link href={devisHref} className="text-sm font-medium text-brand underline-offset-2 hover:underline">{t.goQuote} ({cart.count})</Link>
