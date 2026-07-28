@@ -15,24 +15,51 @@ type Loc = 'fr' | 'en' | 'ar'
 type ColType = 'HPLC' | 'GC'
 
 // Stationary-phase names are used in English worldwide (no translation needed).
+// The lists below must stay exhaustive: there is no free-text fallback, so a
+// missing value means the client cannot request that column.
 const PHASES: Record<ColType, string[]> = {
-  HPLC: ['C18', 'C8', 'C4', 'C30', 'Phenyl', 'Phenyl-Hexyl', 'PFP (pentafluorophényl)', 'HILIC', 'NH2 (amino)', 'CN (cyano)', 'Diol', 'Amide', 'Silica', 'SCX', 'SAX', 'SEC / GPC', 'Chiral'],
-  GC: ['5% Phenyl (DB-5 / HP-5 / Rtx-5)', '100% Diméthylpolysiloxane (DB-1 / HP-1)', '50% Phenyl (DB-17)', '14% Cyanopropylphenyl (DB-1701)', '6% Cyanopropylphenyl (DB-624)', 'PEG / Wax (DB-WAX)', 'FFAP (acides gras)', 'PLOT (gaz)'],
+  HPLC: [
+    'C18', 'C18 AQ (100 % aqueux)', 'C8', 'C6', 'C4', 'C1', 'C30',
+    'Phenyl', 'Phenyl-Hexyl', 'Biphenyl', 'PFP (pentafluorophényl)',
+    'HILIC', 'NH2 (amino)', 'CN (cyano)', 'Diol', 'Amide',
+    'Silica (phase normale)', 'PGC (carbone graphité)',
+    'SCX (échange cationique fort)', 'WCX (échange cationique faible)',
+    'SAX (échange anionique fort)', 'WAX (échange anionique faible)',
+    'Mixed-mode', 'SEC / GPC (exclusion stérique)', 'Échange de ligands / sucres',
+    'Chirale', 'Affinité (Protein A / G)',
+  ],
+  GC: [
+    '100 % Diméthylpolysiloxane (DB-1 / HP-1)',
+    '5 % Phenyl (DB-5 / HP-5 / Rtx-5)',
+    '8 % Phenyl',
+    '14 % Cyanopropylphenyl (DB-1701)',
+    '20 % Phenyl',
+    '35 % Phenyl (DB-35)',
+    '50 % Phenyl (DB-17)',
+    '6 % Cyanopropylphenyl (DB-624 / COV)',
+    'Cyanopropyl (DB-23 / DB-225 — FAME)',
+    'PEG / Wax (DB-WAX)',
+    'FFAP (acides gras)',
+    'PLOT Al₂O₃ (hydrocarbures légers)',
+    'PLOT Molsieve 5A (gaz permanents)',
+    'PLOT Q (divinylbenzène)',
+    'Chirale (cyclodextrine)',
+  ],
 }
 
 // Catalogue-standard dimensions (client selects, never types).
 const LENGTHS: Record<ColType, string[]> = {
-  HPLC: ['30', '50', '75', '100', '125', '150', '200', '250', '300'],
-  GC: ['10', '15', '20', '25', '30', '50', '60', '105'],
+  HPLC: ['10', '15', '20', '25', '30', '33', '50', '75', '100', '125', '150', '175', '200', '250', '300'],
+  GC: ['5', '10', '12', '15', '20', '25', '30', '40', '45', '50', '60', '75', '100', '105', '120'],
 }
 const INNER_DIA: Record<ColType, string[]> = {
-  HPLC: ['1.0', '2.0', '2.1', '3.0', '3.9', '4.0', '4.6', '10', '21.2', '30', '50'],
-  GC: ['0.10', '0.18', '0.20', '0.25', '0.32', '0.53'],
+  HPLC: ['0.3', '0.5', '0.75', '1.0', '1.5', '2.0', '2.1', '2.5', '3.0', '3.2', '3.9', '4.0', '4.6', '6.0', '7.8', '8.0', '9.4', '10', '19', '21.2', '22', '25', '30', '40', '50'],
+  GC: ['0.10', '0.15', '0.18', '0.20', '0.22', '0.25', '0.28', '0.32', '0.45', '0.53', '0.75', '1.00', '2.00', '4.00'],
 }
-const PARTICLES = ['1.7', '1.8', '2.6', '2.7', '3.0', '3.5', '5', '7', '10']
-const PORES = ['60', '80', '100', '120', '130', '150', '200', '300', '1000']
-const FILMS = ['0.10', '0.18', '0.25', '0.32', '0.50', '1.00', '1.50', '3.00', '5.00']
-const BRANDS = ['Agilent', 'Waters', 'Phenomenex', 'Thermo Fisher', 'Restek', 'Merck / Supelco', 'Shimadzu', 'Macherey-Nagel', 'YMC', 'GL Sciences']
+const PARTICLES = ['1.3', '1.5', '1.6', '1.7', '1.8', '1.9', '2.0', '2.2', '2.5', '2.6', '2.7', '3.0', '3.5', '4.0', '5', '7', '10', '15', '20', '30', '50']
+const PORES = ['60', '80', '90', '100', '110', '120', '125', '130', '150', '160', '200', '250', '300', '400', '500', '1000', '2000', '4000']
+const FILMS = ['0.05', '0.10', '0.15', '0.18', '0.20', '0.25', '0.30', '0.33', '0.40', '0.50', '0.75', '1.00', '1.20', '1.40', '1.50', '2.00', '2.65', '3.00', '4.00', '5.00']
+const BRANDS = ['Agilent', 'Waters', 'Phenomenex', 'Thermo Fisher', 'Restek', 'Merck / Supelco', 'Shimadzu', 'Macherey-Nagel', 'YMC', 'GL Sciences', 'Sigma-Aldrich', 'Bio-Rad', 'Tosoh', 'Hamilton', 'Interchim', 'Kromasil']
 
 const T: Record<Loc, Record<string, string>> = {
   fr: {
