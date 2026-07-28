@@ -1,6 +1,6 @@
 'use client'
 
-import { IconCheck, IconShoppingCartPlus } from '@tabler/icons-react'
+import { IconCheck, IconMinus, IconPlus, IconShoppingCartPlus } from '@tabler/icons-react'
 import { useLocale } from 'next-intl'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
@@ -37,30 +37,33 @@ const BRANDS = ['Agilent', 'Waters', 'Phenomenex', 'Thermo Fisher', 'Restek', 'M
 const T: Record<Loc, Record<string, string>> = {
   fr: {
     title: 'Configurer une colonne', subtitle: 'Sélectionnez les caractéristiques de votre colonne HPLC ou GC, puis ajoutez-la à votre demande de devis.',
-    phase: 'Phase stationnaire', other: 'Autre (préciser)', otherPh: 'Précisez la phase souhaitée',
+    phase: 'Phase stationnaire',
     length: 'Longueur', innerDia: 'Diamètre interne', particle: 'Granulométrie', pore: 'Taille de pores', film: 'Épaisseur de film',
     brand: 'Marque', qty: 'Quantité', optional: '(optionnel)', noPref: 'Sans préférence',
     add: 'Ajouter au devis', added: 'Ajouté', pick: '— sélectionner —',
+    dec: 'Diminuer la quantité', inc: 'Augmenter la quantité',
     summary: 'Votre colonne', goQuote: 'Voir ma demande de devis',
-    hint: 'Seule la quantité est à saisir : tous les autres champs se sélectionnent.',
+    hint: 'Tous les champs se sélectionnent ; ajustez la quantité avec − et +.',
   },
   en: {
     title: 'Configure a column', subtitle: 'Select the characteristics of your HPLC or GC column, then add it to your quote request.',
-    phase: 'Stationary phase', other: 'Other (specify)', otherPh: 'Specify the required phase',
+    phase: 'Stationary phase',
     length: 'Length', innerDia: 'Inner diameter', particle: 'Particle size', pore: 'Pore size', film: 'Film thickness',
     brand: 'Brand', qty: 'Quantity', optional: '(optional)', noPref: 'No preference',
     add: 'Add to quote', added: 'Added', pick: '— select —',
+    dec: 'Decrease quantity', inc: 'Increase quantity',
     summary: 'Your column', goQuote: 'View my quote request',
-    hint: 'Only the quantity is typed — every other field is selected from a list.',
+    hint: 'Every field is picked from a list; adjust the quantity with − and +.',
   },
   ar: {
     title: 'تهيئة عمود', subtitle: 'اختر خصائص عمود HPLC أو GC الخاص بك ثم أضِفه إلى طلب عرض السعر.',
-    phase: 'الطور الثابت', other: 'أخرى (حدّد)', otherPh: 'حدّد الطور المطلوب',
+    phase: 'الطور الثابت',
     length: 'الطول', innerDia: 'القطر الداخلي', particle: 'حجم الجُسيمات', pore: 'حجم المسام', film: 'سُمك الغشاء',
     brand: 'العلامة التجارية', qty: 'الكمية', optional: '(اختياري)', noPref: 'بدون تفضيل',
     add: 'أضِف إلى العرض', added: 'تمت الإضافة', pick: '— اختر —',
+    dec: 'إنقاص الكمية', inc: 'زيادة الكمية',
     summary: 'عمودك', goQuote: 'عرض طلب السعر',
-    hint: 'الكمية فقط تُكتب — أما بقية الحقول فتُختار من قوائم.',
+    hint: 'تُختار جميع الحقول من قوائم؛ اضبط الكمية بـ − و +.',
   },
 }
 
@@ -89,6 +92,36 @@ function Picker({ label, unit, optional, value, onChange, options, placeholder }
   )
 }
 
+const QTY_MIN = 1
+const QTY_MAX = 9999
+
+/** Quantity stepper: − / value / + (value stays typable). Module level — see Picker. */
+function QtyStepper({ label, value, onChange, decLabel, incLabel }: {
+  label: string; value: number; onChange: (n: number) => void
+  decLabel: string; incLabel: string
+}) {
+  const clamp = (n: number) => Math.max(QTY_MIN, Math.min(QTY_MAX, n))
+  const btn = 'inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-input bg-background text-foreground transition hover:border-brand hover:bg-brand hover:text-white disabled:pointer-events-none disabled:opacity-40'
+  return (
+    <div className="space-y-1.5">
+      <Label htmlFor="col-qty">{label} *</Label>
+      <div className="flex items-center gap-2">
+        <button type="button" className={btn} onClick={() => onChange(clamp(value - 1))}
+                disabled={value <= QTY_MIN} aria-label={decLabel} title={decLabel}>
+          <IconMinus size={16} />
+        </button>
+        <Input id="col-qty" type="number" inputMode="numeric" min={QTY_MIN} max={QTY_MAX}
+               value={String(value)} onChange={(e) => onChange(clamp(Number(e.target.value) || QTY_MIN))}
+               className="h-10 w-20 text-center" />
+        <button type="button" className={btn} onClick={() => onChange(clamp(value + 1))}
+                disabled={value >= QTY_MAX} aria-label={incLabel} title={incLabel}>
+          <IconPlus size={16} />
+        </button>
+      </div>
+    </div>
+  )
+}
+
 export function ColumnConfigurator() {
   const rawLocale = useLocale()
   const locale: Loc = rawLocale === 'en' || rawLocale === 'ar' ? rawLocale : 'fr'
@@ -96,18 +129,16 @@ export function ColumnConfigurator() {
   const cart = useCart()
 
   const [type, setType] = useState<ColType>('HPLC')
-  const [phaseSel, setPhaseSel] = useState('')
-  const [phaseOther, setPhaseOther] = useState('')
+  const [phase, setPhase] = useState('')
   const [length, setLength] = useState('')
   const [innerDia, setInnerDia] = useState('')
   const [particle, setParticle] = useState('')
   const [pore, setPore] = useState('')
   const [film, setFilm] = useState('')
   const [brand, setBrand] = useState('')
-  const [qty, setQty] = useState('1')
+  const [qty, setQty] = useState(1)
   const [justAdded, setJustAdded] = useState(false)
 
-  const phase = phaseSel === '__other__' ? phaseOther.trim() : phaseSel
   const lenUnit = type === 'HPLC' ? 'mm' : 'm'
 
   const valid = useMemo(() => {
@@ -118,11 +149,11 @@ export function ColumnConfigurator() {
   // Switching HPLC ↔ GC invalidates every dimension list.
   function switchType(v: ColType) {
     setType(v)
-    setPhaseSel(''); setPhaseOther(''); setLength(''); setInnerDia(''); setParticle(''); setPore(''); setFilm('')
+    setPhase(''); setLength(''); setInnerDia(''); setParticle(''); setPore(''); setFilm('')
   }
 
   function reset() {
-    setPhaseSel(''); setPhaseOther(''); setLength(''); setInnerDia(''); setParticle(''); setPore(''); setFilm(''); setBrand(''); setQty('1')
+    setPhase(''); setLength(''); setInnerDia(''); setParticle(''); setPore(''); setFilm(''); setBrand(''); setQty(1)
   }
 
   function buildName(): string {
@@ -136,7 +167,7 @@ export function ColumnConfigurator() {
   function onAdd() {
     if (!valid) return
     const slug = slugify(['col', type, phase, length, innerDia, type === 'HPLC' ? particle : film, pore, brand].join('-'))
-    cart.add({ slug, name: buildName(), brand: brand || 'Chromatographie', image: null, qty: Math.max(1, Math.min(9999, Number(qty) || 1)) })
+    cart.add({ slug, name: buildName(), brand: brand || 'Chromatographie', image: null, qty })
     toast.success(t.added)
     setJustAdded(true)
     window.setTimeout(() => setJustAdded(false), 1600)
@@ -166,14 +197,10 @@ export function ColumnConfigurator() {
         {/* Phase — full width */}
         <div className={`${field} sm:col-span-2`}>
           <Label>{t.phase} *</Label>
-          <select className={selectCls} value={phaseSel} onChange={(e) => setPhaseSel(e.target.value)}>
+          <select className={selectCls} value={phase} onChange={(e) => setPhase(e.target.value)}>
             <option value="">{t.pick}</option>
             {PHASES[type].map((p) => <option key={p} value={p}>{p}</option>)}
-            <option value="__other__">{t.other}</option>
           </select>
-          {phaseSel === '__other__' && (
-            <Input className="mt-2" placeholder={t.otherPh} value={phaseOther} onChange={(e) => setPhaseOther(e.target.value)} />
-          )}
         </div>
 
         <Picker label={t.length}   unit={lenUnit} value={length}   onChange={setLength}   options={LENGTHS[type]}   placeholder={t.pick} />
@@ -190,11 +217,8 @@ export function ColumnConfigurator() {
 
         <Picker label={`${t.brand} ${t.optional}`} value={brand} onChange={setBrand} options={BRANDS} optional placeholder={t.noPref} />
 
-        {/* Quantity — the only typed field */}
-        <div className={field}>
-          <Label htmlFor="col-qty">{t.qty} *</Label>
-          <Input id="col-qty" type="number" min={1} max={9999} value={qty} onChange={(e) => setQty(e.target.value)} />
-        </div>
+        {/* Quantity — stepper − / + (the only editable value) */}
+        <QtyStepper label={t.qty} value={qty} onChange={setQty} decLabel={t.dec} incLabel={t.inc} />
       </div>
 
       {/* Live summary */}
