@@ -40,30 +40,33 @@ const T: Record<Loc, Record<string, string>> = {
     phase: 'Phase stationnaire',
     length: 'Longueur', innerDia: 'Diamètre interne', particle: 'Granulométrie', pore: 'Taille de pores', film: 'Épaisseur de film',
     brand: 'Marque', qty: 'Quantité', optional: '(optionnel)', noPref: 'Sans préférence',
+    partNumber: 'Référence fabricant', partNumberPh: 'Ex. : 186002350', refShort: 'Réf.',
     add: 'Ajouter au devis', added: 'Ajouté', pick: '— sélectionner —',
     dec: 'Diminuer la quantité', inc: 'Augmenter la quantité',
     summary: 'Votre colonne', goQuote: 'Voir ma demande de devis',
-    hint: 'Tous les champs se sélectionnent ; ajustez la quantité avec − et +.',
+    hint: 'Tous les champs se sélectionnent ; ajustez la quantité avec − et +. Si vous connaissez la référence fabricant, indiquez-la.',
   },
   en: {
     title: 'Configure a column', subtitle: 'Select the characteristics of your HPLC or GC column, then add it to your quote request.',
     phase: 'Stationary phase',
     length: 'Length', innerDia: 'Inner diameter', particle: 'Particle size', pore: 'Pore size', film: 'Film thickness',
     brand: 'Brand', qty: 'Quantity', optional: '(optional)', noPref: 'No preference',
+    partNumber: 'Manufacturer part number', partNumberPh: 'e.g. 186002350', refShort: 'P/N',
     add: 'Add to quote', added: 'Added', pick: '— select —',
     dec: 'Decrease quantity', inc: 'Increase quantity',
     summary: 'Your column', goQuote: 'View my quote request',
-    hint: 'Every field is picked from a list; adjust the quantity with − and +.',
+    hint: 'Every field is picked from a list; adjust the quantity with − and +. If you know the manufacturer part number, add it.',
   },
   ar: {
     title: 'تهيئة عمود', subtitle: 'اختر خصائص عمود HPLC أو GC الخاص بك ثم أضِفه إلى طلب عرض السعر.',
     phase: 'الطور الثابت',
     length: 'الطول', innerDia: 'القطر الداخلي', particle: 'حجم الجُسيمات', pore: 'حجم المسام', film: 'سُمك الغشاء',
     brand: 'العلامة التجارية', qty: 'الكمية', optional: '(اختياري)', noPref: 'بدون تفضيل',
+    partNumber: 'رقم القطعة لدى الصانع', partNumberPh: 'مثال: 186002350', refShort: 'رقم',
     add: 'أضِف إلى العرض', added: 'تمت الإضافة', pick: '— اختر —',
     dec: 'إنقاص الكمية', inc: 'زيادة الكمية',
     summary: 'عمودك', goQuote: 'عرض طلب السعر',
-    hint: 'تُختار جميع الحقول من قوائم؛ اضبط الكمية بـ − و +.',
+    hint: 'تُختار جميع الحقول من قوائم؛ اضبط الكمية بـ − و +. إن كنت تعرف رقم القطعة لدى الصانع فأضِفه.',
   },
 }
 
@@ -136,6 +139,7 @@ export function ColumnConfigurator() {
   const [pore, setPore] = useState('')
   const [film, setFilm] = useState('')
   const [brand, setBrand] = useState('')
+  const [partNumber, setPartNumber] = useState('')
   const [qty, setQty] = useState(1)
   const [justAdded, setJustAdded] = useState(false)
 
@@ -153,7 +157,8 @@ export function ColumnConfigurator() {
   }
 
   function reset() {
-    setPhase(''); setLength(''); setInnerDia(''); setParticle(''); setPore(''); setFilm(''); setBrand(''); setQty(1)
+    setPhase(''); setLength(''); setInnerDia(''); setParticle(''); setPore(''); setFilm('')
+    setBrand(''); setPartNumber(''); setQty(1)
   }
 
   function buildName(): string {
@@ -161,12 +166,13 @@ export function ColumnConfigurator() {
       ? [`${length} × ${innerDia} mm`, `${particle} µm`, pore ? `${pore} Å` : ''].filter(Boolean).join(' · ')
       : [`${length} m × ${innerDia} mm`, `film ${film} µm`].filter(Boolean).join(' · ')
     const head = `${locale === 'fr' ? 'Colonne' : locale === 'ar' ? 'عمود' : 'Column'} ${type} ${phase}`
-    return brand ? `${head} — ${dims} — ${brand}` : `${head} — ${dims}`
+    const ref = partNumber.trim() ? `${t.refShort} ${partNumber.trim()}` : ''
+    return [head, dims, brand, ref].filter(Boolean).join(' — ')
   }
 
   function onAdd() {
     if (!valid) return
-    const slug = slugify(['col', type, phase, length, innerDia, type === 'HPLC' ? particle : film, pore, brand].join('-'))
+    const slug = slugify(['col', type, phase, length, innerDia, type === 'HPLC' ? particle : film, pore, brand, partNumber.trim()].join('-'))
     cart.add({ slug, name: buildName(), brand: brand || 'Chromatographie', image: null, qty })
     toast.success(t.added)
     setJustAdded(true)
@@ -216,6 +222,13 @@ export function ColumnConfigurator() {
         )}
 
         <Picker label={`${t.brand} ${t.optional}`} value={brand} onChange={setBrand} options={BRANDS} optional placeholder={t.noPref} />
+
+        {/* Manufacturer part number — optional free text (the client may know the exact reference) */}
+        <div className={field}>
+          <Label htmlFor="col-pn">{t.partNumber} {t.optional}</Label>
+          <Input id="col-pn" value={partNumber} placeholder={t.partNumberPh}
+                 onChange={(e) => setPartNumber(e.target.value)} maxLength={60} />
+        </div>
 
         {/* Quantity — stepper − / + (the only editable value) */}
         <QtyStepper label={t.qty} value={qty} onChange={setQty} decLabel={t.dec} incLabel={t.inc} />
