@@ -209,9 +209,12 @@ export default async function CategoryPage({
                       }`}
                     >
                       {tp.name}
-                      <span className={active ? 'text-xs text-white/80' : 'text-xs text-muted-foreground'}>
-                        {tp.count}
-                      </span>
+                      {/* pas de « 0 » sur les sous-catégories de prestations, vides par nature */}
+                      {tp.count > 0 && (
+                        <span className={active ? 'text-xs text-white/80' : 'text-xs text-muted-foreground'}>
+                          {tp.count}
+                        </span>
+                      )}
                     </Link>
                   </li>
                 )
@@ -233,7 +236,7 @@ export default async function CategoryPage({
                         }`}
                       >
                         {c.name}
-                        <span className="text-xs opacity-70">{c.products.length}</span>
+                        {c.products.length > 0 && <span className="text-xs opacity-70">{c.products.length}</span>}
                       </Link>
                     </li>
                   )
@@ -252,7 +255,7 @@ export default async function CategoryPage({
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">{t('selection')}</p>
               <h2 className="mt-1 text-2xl font-bold tracking-tight">{selected ? selected.name : t('productsHeading')}</h2>
             </div>
-            {selected && !isColumnConfigurator && (
+            {selected && !isColumnConfigurator && selected.products.length > 0 && (
               <p className="text-xs text-muted-foreground">
                 {selected.products.length > 1
                   ? t('shown', { n: selected.products.length })
