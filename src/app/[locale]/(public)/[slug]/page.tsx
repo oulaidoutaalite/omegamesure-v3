@@ -126,15 +126,18 @@ export default async function CategoryPage({
   })
   const ungrouped = ungroupedRows.map(toCard)
 
+  // Ces catégories proposent des PRESTATIONS ou un configurateur, pas un catalogue figé :
+  // leurs sous-catégories sont volontairement sans produit et doivent rester sélectionnables,
+  // sinon la structure de l'offre n'apparaît nulle part sur le site.
+  const quoteOnly = ['consommables', 'metrologie', 'consulting'].includes(category.slug)
+
   const tops: Top[] = []
   for (const s of subs.filter((x) => !x.parentId)) {
     const kids = childrenOf(s.id).filter((k) => k.products.length > 0)
       .map((k) => ({ slug: k.slug, isAutresSlot: k.isAutresSlot, name: k.name, products: k.products }))
     if (kids.length) {
       tops.push({ slug: s.slug, name: s.name, count: kids.reduce((n, k) => n + k.products.length, 0), children: kids })
-    } else if (s.products.length || category.slug === 'consommables') {
-      // Consommables sub-categories are intentionally empty (configurator / quote-only),
-      // so keep them selectable even with zero products.
+    } else if (s.products.length || quoteOnly) {
       tops.push({ slug: s.slug, name: s.name, count: s.products.length, children: [], leaf: { slug: s.slug, isAutresSlot: s.isAutresSlot, name: s.name, products: s.products } })
     }
   }
