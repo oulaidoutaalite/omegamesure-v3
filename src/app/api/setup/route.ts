@@ -43,11 +43,17 @@ const SERVICES_TREE = [
   {
     slug: 'consommables', name: 'Consommables', color: '#F06A5C',
     subs: [
-      { slug: 'colonnes-chromato',   name: 'Colonnes chromatographie (HPLC, GC, SPE)' },
       { slug: 'reactifs-standards',  name: 'Réactifs & standards (USP/EP)' },
       { slug: 'verrerie-filtration', name: 'Verrerie & filtration' },
       { slug: 'epi-hygiene',         name: 'EPI & hygiène labo' },
       { slug: 'autres',              name: 'Autres', isAutres: true },
+    ],
+  },
+  {
+    // catalogue sans produit figé : la page affiche le configurateur de colonne
+    slug: 'colonnes-chromatographie', name: 'Colonnes chromatographie', color: '#C2410C',
+    subs: [
+      { slug: 'colonnes-chromato', name: 'HPLC, GC & SPE' },
     ],
   },
   {
@@ -82,6 +88,7 @@ const NAV_ITEMS = [
   { slug: 'equipements-labo',  label: 'Équipements labo & biomédicales', icon: 'IconFlask' },
   { slug: 'balances-bascules', label: 'Balances & bascules',           icon: 'IconScale' },
   { slug: 'consommables',      label: 'Consommables',                  icon: 'IconBottle' },
+  { slug: 'colonnes-chromatographie', label: 'Colonnes chromatographie', icon: 'IconTestPipe' },
   { slug: 'metrologie',        label: 'Métrologie',                    icon: 'IconRuler' },
   { slug: 'qualification-validation', label: 'Qualification & validation', icon: 'IconClipboardCheck' },
   { slug: 'consulting',        label: 'Consulting',                    icon: 'IconBriefcase' },

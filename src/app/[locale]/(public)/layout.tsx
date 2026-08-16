@@ -34,7 +34,7 @@ async function loadFooterCategories(locale: Locale): Promise<FooterCategory[]> {
     // on les exclut ici pour ne pas les lister deux fois (et libérer des places catalogue).
     where: { isPublished: true, slug: { notIn: ['metrologie', 'qualification-validation', 'consulting'] } },
     orderBy: { order: 'asc' },
-    take: 6,
+    take: 8,                      // 6 catégories catalogue aujourd'hui : marge pour ne rien tronquer
     select: { name: true, slug: true, translations: true },
   })
   return rows.map((r) => ({

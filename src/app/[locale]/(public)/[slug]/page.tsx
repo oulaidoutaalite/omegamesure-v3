@@ -129,7 +129,7 @@ export default async function CategoryPage({
   // Ces catégories proposent des PRESTATIONS ou un configurateur, pas un catalogue figé :
   // leurs sous-catégories sont volontairement sans produit et doivent rester sélectionnables,
   // sinon la structure de l'offre n'apparaît nulle part sur le site.
-  const quoteOnly = ['consommables', 'metrologie', 'qualification-validation', 'consulting'].includes(category.slug)
+  const quoteOnly = ['consommables', 'colonnes-chromatographie', 'metrologie', 'qualification-validation', 'consulting'].includes(category.slug)
 
   const tops: Top[] = []
   for (const s of subs.filter((x) => !x.parentId)) {
@@ -153,7 +153,7 @@ export default async function CategoryPage({
     tops.find((tp) => tp.slug === selected?.slug) ?? tops[0]
   const row2 = activeTop?.children ?? []
   // Colonnes chromatographie = configurateur (le client décrit sa colonne) au lieu d'un catalogue figé.
-  const isColumnConfigurator = category.slug === 'consommables' && selected?.slug === 'colonnes-chromato'
+  const isColumnConfigurator = category.slug === 'colonnes-chromatographie' && selected?.slug === 'colonnes-chromato'
 
   const isMetrologie = category.slug === 'metrologie'
 
