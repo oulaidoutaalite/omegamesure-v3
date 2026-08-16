@@ -98,6 +98,7 @@ export async function Footer({
           {/* Col 3 — Services (the quote CTA lives under "Entreprise" + header). */}
           <FooterCol title={t('services')}>
             <FooterLink href={withLocale('/metrologie', locale)}>{(await getTranslations({ locale, namespace: 'navbar' }))('metrology')}</FooterLink>
+            <FooterLink href={withLocale('/qualification-validation', locale)}>{(await getTranslations({ locale, namespace: 'navbar' }))('qualificationValidation')}</FooterLink>
             <FooterLink href={withLocale('/consulting', locale)}>{(await getTranslations({ locale, namespace: 'navbar' }))('consulting')}</FooterLink>
           </FooterCol>
 

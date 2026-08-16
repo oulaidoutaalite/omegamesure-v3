@@ -51,15 +51,20 @@ const SERVICES_TREE = [
     ],
   },
   {
-    slug: 'metrologie', name: 'Métrologie, qualification & validation', color: '#7C3AED',
+    slug: 'metrologie', name: 'Métrologie', color: '#7C3AED',
     subs: [
-      { slug: 'temperature',   name: 'Étalonnage température' },
-      { slug: 'pression',      name: 'Étalonnage pression' },
-      { slug: 'masse',         name: 'Masse & balances (étalons OIML)' },
-      { slug: 'dimensionnel',  name: 'Dimensionnel' },
+      { slug: 'temperature',  name: 'Étalonnage température' },
+      { slug: 'pression',     name: 'Étalonnage pression' },
+      { slug: 'masse',        name: 'Masse & balances (étalons OIML)' },
+      { slug: 'dimensionnel', name: 'Dimensionnel' },
+      { slug: 'autres',       name: 'Autres', isAutres: true },
+    ],
+  },
+  {
+    slug: 'qualification-validation', name: 'Qualification & validation', color: '#059669',
+    subs: [
       { slug: 'qualification', name: 'Qualification équipements (IQ, OQ, PQ)' },
       { slug: 'validation',    name: 'Validation procédés' },
-      { slug: 'autres',        name: 'Autres', isAutres: true },
     ],
   },
   {
@@ -77,7 +82,8 @@ const NAV_ITEMS = [
   { slug: 'equipements-labo',  label: 'Équipements labo & biomédicales', icon: 'IconFlask' },
   { slug: 'balances-bascules', label: 'Balances & bascules',           icon: 'IconScale' },
   { slug: 'consommables',      label: 'Consommables',                  icon: 'IconBottle' },
-  { slug: 'metrologie',        label: 'Métrologie, qualification & validation', icon: 'IconRuler' },
+  { slug: 'metrologie',        label: 'Métrologie',                    icon: 'IconRuler' },
+  { slug: 'qualification-validation', label: 'Qualification & validation', icon: 'IconClipboardCheck' },
   { slug: 'consulting',        label: 'Consulting',                    icon: 'IconBriefcase' },
   { slug: 'contact',           label: 'Contact us',                    icon: 'IconMail' },
   { slug: 'devis',             label: 'Demander un devis',             icon: 'IconFileInvoice', isCta: true },

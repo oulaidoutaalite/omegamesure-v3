@@ -22,7 +22,8 @@
     "labEquipment": "معدات المختبر والطبية",
     "balances": "الموازين والميزانيات",
     "consumables": "المستهلكات",
-    "metrology": "المترولوجيا والتأهيل والتحقق",
+    "metrology": "المعايرة",
+    "qualificationValidation": "التأهيل والتحقق",
     "consulting": "الاستشارات",
     "contact": "اتصل بنا"
   },

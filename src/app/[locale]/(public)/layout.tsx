@@ -30,9 +30,9 @@ async function loadHeaderItems(locale: Locale): Promise<HeaderNavItem[]> {
 
 async function loadFooterCategories(locale: Locale): Promise<FooterCategory[]> {
   const rows = await db.category.findMany({
-    // Métrologie & Consulting belong under the footer "Services" column, so we
-    // exclude them here to avoid listing them twice (and to free catalogue slots).
-    where: { isPublished: true, slug: { notIn: ['metrologie', 'consulting'] } },
+    // Les catégories de prestations vivent dans la colonne « Services » du pied de page :
+    // on les exclut ici pour ne pas les lister deux fois (et libérer des places catalogue).
+    where: { isPublished: true, slug: { notIn: ['metrologie', 'qualification-validation', 'consulting'] } },
     orderBy: { order: 'asc' },
     take: 6,
     select: { name: true, slug: true, translations: true },

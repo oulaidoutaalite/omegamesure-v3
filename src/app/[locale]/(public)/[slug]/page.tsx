@@ -129,7 +129,7 @@ export default async function CategoryPage({
   // Ces catégories proposent des PRESTATIONS ou un configurateur, pas un catalogue figé :
   // leurs sous-catégories sont volontairement sans produit et doivent rester sélectionnables,
   // sinon la structure de l'offre n'apparaît nulle part sur le site.
-  const quoteOnly = ['consommables', 'metrologie', 'consulting'].includes(category.slug)
+  const quoteOnly = ['consommables', 'metrologie', 'qualification-validation', 'consulting'].includes(category.slug)
 
   const tops: Top[] = []
   for (const s of subs.filter((x) => !x.parentId)) {

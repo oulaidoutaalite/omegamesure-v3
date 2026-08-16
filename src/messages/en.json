@@ -22,7 +22,8 @@
     "labEquipment": "Lab & biomedical equipment",
     "balances": "Scales & balances",
     "consumables": "Consumables",
-    "metrology": "Metrology, qualification & validation",
+    "metrology": "Metrology",
+    "qualificationValidation": "Qualification & validation",
     "consulting": "Consulting",
     "contact": "Contact"
   },
