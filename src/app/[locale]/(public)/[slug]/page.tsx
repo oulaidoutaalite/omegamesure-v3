@@ -147,7 +147,12 @@ export default async function CategoryPage({
   }
 
   const allLeaves: Leaf[] = tops.flatMap((tp) => (tp.children.length ? tp.children : tp.leaf ? [tp.leaf] : []))
-  const selected = allLeaves.find((g) => g.slug === subParam) ?? allLeaves[0]
+  // Sans ?sub=, on ouvre sur la première sous-catégorie QUI A des produits : sinon une catégorie
+  // bien fournie peut s'ouvrir sur une pastille vide et afficher « aucun produit ».
+  const selected =
+    allLeaves.find((g) => g.slug === subParam) ??
+    allLeaves.find((g) => g.products.length > 0) ??
+    allLeaves[0]
   const activeTop =
     tops.find((tp) => tp.children.some((k) => k.slug === selected?.slug)) ??
     tops.find((tp) => tp.slug === selected?.slug) ?? tops[0]
