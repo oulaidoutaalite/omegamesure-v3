@@ -32,11 +32,16 @@ export async function generateMetadata({
   })
   if (!cat) return { title: 'Introuvable' }
   const tr = cat.translations as TranslationsJson
+  // ⚠️ pickLocaleField renvoie sa valeur par défaut quand le champ demandé n'est pas traduit.
+  // Lui passer `metaTitle ?? name` en défaut renverrait donc le nom FRANÇAIS sur /en/ et /ar/
+  // (aucune catégorie n'a de metaTitle) et court-circuiterait le repli sur le nom traduit.
   return {
-    title: pickLocaleField(cat.metaTitle ?? cat.name, tr, 'metaTitle', locale)
+    title: pickLocaleField(cat.metaTitle, tr, 'metaTitle', locale)
         ?? pickLocaleField(cat.name, tr, 'name', locale),
     description:
-      pickLocaleField(cat.metaDescription ?? cat.description, tr, 'metaDescription', locale) ?? undefined,
+      pickLocaleField(cat.metaDescription, tr, 'metaDescription', locale)
+      ?? pickLocaleField(cat.description, tr, 'description', locale)
+      ?? undefined,
   }
 }
 

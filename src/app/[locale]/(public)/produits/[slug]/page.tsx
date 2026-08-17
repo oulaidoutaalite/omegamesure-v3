@@ -34,8 +34,12 @@ export async function generateMetadata({
     title:
       pickLocaleField(p.metaTitle, tr, 'metaTitle', locale) ??
       pickLocaleField(p.name,      tr, 'name',      locale),
+    // même piège que pour les catégories : passer `metaDescription ?? shortDescription` en défaut
+    // renverrait le résumé FRANÇAIS sur /en/ et /ar/, faute de metaDescription traduite.
     description:
-      pickLocaleField(p.metaDescription ?? p.shortDescription, tr, 'metaDescription', locale) ?? undefined,
+      pickLocaleField(p.metaDescription, tr, 'metaDescription', locale)
+      ?? pickLocaleField(p.shortDescription, tr, 'shortDescription', locale)
+      ?? undefined,
   }
 }
 
