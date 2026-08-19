@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button'
 import { defaultLocale, type Locale } from '@/i18n'
 import { db } from '@/lib/db'
 import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
+import { buildAlternates } from '@/lib/seo'
 
 export const dynamic = 'force-dynamic'
 
@@ -42,6 +43,7 @@ export async function generateMetadata({
       pickLocaleField(cat.metaDescription, tr, 'metaDescription', locale)
       ?? pickLocaleField(cat.description, tr, 'description', locale)
       ?? undefined,
+    alternates: await buildAlternates(`/${slug}`, locale),
   }
 }
 
