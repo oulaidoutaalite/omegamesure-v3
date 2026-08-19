@@ -114,8 +114,12 @@ export async function buildSocial(opts: {
   const [base, brand] = await Promise.all([getSiteUrl(), getSeoBrand(opts.locale)])
   const url = base + localePath(opts.path, opts.locale)
   const description = opts.description?.trim() || brand.description || undefined
-  const raw = opts.image ?? brand.ogImage
-  const images = raw ? [raw.startsWith('http') ? raw : base + raw] : undefined
+  // Priorité : visuel de la page (photo produit) > image OG choisie dans l'admin
+  // > bannière générée. Le LOGO n'est plus servi tel quel : carré et recadré,
+  // il fait un mauvais aperçu sur les réseaux.
+  const raw = opts.image ?? (brand.ogImage && brand.ogImage !== brand.logo ? brand.ogImage : null)
+  const fallback = `${base}/og?b=${encodeURIComponent(brand.siteName)}&t=${encodeURIComponent(opts.title)}`
+  const images = [raw ? (raw.startsWith('http') ? raw : base + raw) : fallback]
 
   return {
     openGraph: {
