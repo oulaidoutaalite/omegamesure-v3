@@ -10,14 +10,18 @@ import {
   IconRuler,
   IconScale,
 } from '@tabler/icons-react'
+import { type Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 
 import { Container } from '@/components/public/Container'
+import { JsonLd } from '@/components/public/JsonLd'
 import { Button } from '@/components/ui/button'
 import { defaultLocale, type Locale } from '@/i18n'
 import { db } from '@/lib/db'
 import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
+import { graph, organizationSchema, webSiteSchema } from '@/lib/schema-org'
+import { buildAlternates, buildSocial, getSeoBrand } from '@/lib/seo'
 import { loadAllConfig, pickConfigText } from '@/lib/site-config'
 
 export const dynamic = 'force-dynamic'
@@ -30,6 +34,22 @@ function withLocale(path: string, locale: Locale): string {
   if (locale === defaultLocale) return path
   if (path === '/') return `/${locale}`
   return `/${locale}${path}`
+}
+
+export async function generateMetadata({
+  params,
+}: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params
+  const brand = await getSeoBrand(locale)
+  // « nom — accroche » plutot que le nom seul : l'accroche porte l'activite reelle
+  // (equipements de laboratoire, balances, metrologie) sans bourrage de mots-cles.
+  const title = brand.tagline ? `${brand.siteName} — ${brand.tagline}` : brand.siteName
+  return {
+    title: { absolute: title },
+    description: brand.description || undefined,
+    alternates: await buildAlternates('/', locale),
+    ...(await buildSocial({ path: '/', locale, title, description: brand.description })),
+  }
 }
 
 export default async function HomePage({
@@ -67,8 +87,11 @@ export default async function HomePage({
     ? (config['certifications'] as unknown[]).filter((v): v is string => typeof v === 'string')
     : []
 
+  const ld = graph(await organizationSchema(locale), await webSiteSchema(locale))
+
   return (
     <>
+      <JsonLd data={ld} />
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-50 via-background to-background py-16 sm:py-24">
         <div aria-hidden className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-brand/10 blur-3xl" />

@@ -65,7 +65,8 @@
     "datasheet": "ورقة البيانات",
     "categoryLabel": "الفئة:",
     "descriptionTitle": "الوصف التفصيلي",
-    "specsTitle": "المواصفات حسب الموديل"
+    "specsTitle": "المواصفات حسب الموديل",
+    "relatedTitle": "من نفس الفئة"
   },
   "quote": {
     "badge": "عرض سعر",

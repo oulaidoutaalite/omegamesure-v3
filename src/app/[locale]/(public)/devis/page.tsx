@@ -5,6 +5,7 @@ import { Container } from '@/components/public/Container'
 import { QuoteForm } from '@/components/public/QuoteForm'
 import { type Locale } from '@/i18n'
 import { loadAllConfig } from '@/lib/site-config'
+import { buildAlternates, buildSocial } from '@/lib/seo'
 
 export const dynamic = 'force-dynamic'
 
@@ -12,8 +13,19 @@ export async function generateMetadata({
   params,
 }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'quote' })
-  return { title: t('heading') }
+  const [t, tCta] = await Promise.all([
+    getTranslations({ locale, namespace: 'quote' }),
+    getTranslations({ locale, namespace: 'cta' }),
+  ])
+  // « Demander un devis » décrit l'action ; le heading editorial fait un mauvais <title>.
+  const title = tCta('requestQuote')
+  const description = t('lead')
+  return {
+    title,
+    description,
+    alternates: await buildAlternates('/devis', locale),
+    ...(await buildSocial({ path: '/devis', locale, title, description })),
+  }
 }
 
 export default async function QuotePage({

@@ -6,12 +6,14 @@ import { notFound } from 'next/navigation'
 
 import { ColumnConfigurator } from '@/components/public/ColumnConfigurator'
 import { Container } from '@/components/public/Container'
+import { JsonLd } from '@/components/public/JsonLd'
 import { ProductCard, type ProductCardData } from '@/components/public/ProductCard'
 import { Button } from '@/components/ui/button'
 import { defaultLocale, type Locale } from '@/i18n'
 import { db } from '@/lib/db'
 import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
-import { buildAlternates } from '@/lib/seo'
+import { breadcrumbSchema, graph, itemListSchema } from '@/lib/schema-org'
+import { buildAlternates, buildSocial } from '@/lib/seo'
 
 export const dynamic = 'force-dynamic'
 
@@ -36,14 +38,19 @@ export async function generateMetadata({
   // ⚠️ pickLocaleField renvoie sa valeur par défaut quand le champ demandé n'est pas traduit.
   // Lui passer `metaTitle ?? name` en défaut renverrait donc le nom FRANÇAIS sur /en/ et /ar/
   // (aucune catégorie n'a de metaTitle) et court-circuiterait le repli sur le nom traduit.
+  const title =
+    pickLocaleField(cat.metaTitle, tr, 'metaTitle', locale)
+    ?? pickLocaleField(cat.name, tr, 'name', locale)
+    ?? ''
+  const description =
+    pickLocaleField(cat.metaDescription, tr, 'metaDescription', locale)
+    ?? pickLocaleField(cat.description, tr, 'description', locale)
+    ?? undefined
   return {
-    title: pickLocaleField(cat.metaTitle, tr, 'metaTitle', locale)
-        ?? pickLocaleField(cat.name, tr, 'name', locale),
-    description:
-      pickLocaleField(cat.metaDescription, tr, 'metaDescription', locale)
-      ?? pickLocaleField(cat.description, tr, 'description', locale)
-      ?? undefined,
+    title,
+    description,
     alternates: await buildAlternates(`/${slug}`, locale),
+    ...(await buildSocial({ path: `/${slug}`, locale, title, description })),
   }
 }
 
@@ -169,8 +176,20 @@ export default async function CategoryPage({
 
   const isMetrologie = category.slug === 'metrologie'
 
+  // Donnees structurees : fil d'Ariane + liste des produits reellement affiches.
+  const ld = graph(
+    await breadcrumbSchema(locale, [
+      { name: tCommon('home'), path: '/' },
+      { name: catName, path: `/${category.slug}` },
+    ]),
+    selected && selected.products.length
+      ? await itemListSchema(locale, selected.products.map((x) => ({ name: x.name, slug: x.slug })))
+      : null,
+  )
+
   return (
     <>
+      <JsonLd data={ld} />
       {/* Hero */}
       <section
         className="border-b border-border py-4 sm:py-5"

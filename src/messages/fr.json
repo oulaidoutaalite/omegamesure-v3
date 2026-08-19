@@ -65,7 +65,8 @@
     "datasheet": "Fiche technique",
     "categoryLabel": "Catégorie :",
     "descriptionTitle": "Description détaillée",
-    "specsTitle": "Spécifications par modèle"
+    "specsTitle": "Spécifications par modèle",
+    "relatedTitle": "Dans la même famille"
   },
   "quote": {
     "badge": "Devis",

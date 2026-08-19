@@ -34,6 +34,9 @@ export async function ProductCard({
   const tCommon = await getTranslations({ locale, namespace: 'common' })
 
   return (
+    // <article> : chaque carte est une entité autonome du catalogue.
+    // `display: contents` la rend transparente pour la grille → mise en page inchangée.
+    <article className="contents">
     <Link
       href={withLocale(`/produits/${data.slug}`, locale)}
       className={cn(
@@ -93,5 +96,6 @@ export async function ProductCard({
         </div>
       </div>
     </Link>
+    </article>
   )
 }

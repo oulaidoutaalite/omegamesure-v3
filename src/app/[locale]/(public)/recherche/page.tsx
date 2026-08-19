@@ -7,6 +7,7 @@ import { SearchBar } from '@/components/public/SearchBar'
 import { type Locale } from '@/i18n'
 import { db } from '@/lib/db'
 import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
+import { buildAlternates } from '@/lib/seo'
 
 export const dynamic = 'force-dynamic'
 
@@ -17,7 +18,13 @@ export async function generateMetadata({
 }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'search' })
-  return { title: t('title') }
+  return {
+    title: t('title'),
+    // Page de résultats : contenu mince et dupliqué selon la requete.
+    // On la retire de l'index mais on laisse suivre les liens vers les fiches.
+    robots: { index: false, follow: true },
+    alternates: await buildAlternates('/recherche', locale),
+  }
 }
 
 export default async function SearchPage({

@@ -65,7 +65,8 @@
     "datasheet": "Datasheet",
     "categoryLabel": "Category:",
     "descriptionTitle": "Full description",
-    "specsTitle": "Specifications by model"
+    "specsTitle": "Specifications by model",
+    "relatedTitle": "In the same family"
   },
   "quote": {
     "badge": "Quote",

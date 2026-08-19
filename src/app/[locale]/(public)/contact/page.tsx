@@ -5,6 +5,7 @@ import { ContactForm } from '@/components/public/ContactForm'
 import { Container } from '@/components/public/Container'
 import { type Locale } from '@/i18n'
 import { getContactConfig, loadAllConfig } from '@/lib/site-config'
+import { buildAlternates, buildSocial } from '@/lib/seo'
 
 export const dynamic = 'force-dynamic'
 
@@ -13,7 +14,14 @@ export async function generateMetadata({
 }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'contact' })
-  return { title: t('badge') }
+  const title = t('badge')
+  const description = t('lead')
+  return {
+    title,
+    description,
+    alternates: await buildAlternates('/contact', locale),
+    ...(await buildSocial({ path: '/contact', locale, title, description })),
+  }
 }
 
 export default async function ContactPage({
