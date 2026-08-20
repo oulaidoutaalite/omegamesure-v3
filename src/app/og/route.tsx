@@ -27,7 +27,7 @@ export async function GET(req: Request) {
       <div
         style={{
           width: '100%', height: '100%', display: 'flex', flexDirection: 'column',
-          justifyContent: 'center', padding: '80px 90px',
+          justifyContent: 'center', padding: '0 90px', position: 'relative',
           background: `linear-gradient(135deg, ${BRAND} 0%, #0F3E6E 100%)`,
           color: '#fff', fontFamily: 'sans-serif',
         }}
@@ -37,7 +37,10 @@ export async function GET(req: Request) {
         {title ? (
           <div style={{ display: 'flex', marginTop: 22, fontSize: 40, lineHeight: 1.25, opacity: 0.92 }}>{title}</div>
         ) : null}
-        <div style={{ display: 'flex', marginTop: 'auto', fontSize: 26, opacity: 0.75 }}>omegamesure.com</div>
+        {/* ancrée en bas : `marginTop: auto` remonterait tout le bloc et creuserait le centre */}
+        <div style={{ display: 'flex', position: 'absolute', left: 90, bottom: 68, fontSize: 26, opacity: 0.75 }}>
+          omegamesure.com
+        </div>
       </div>
     ),
     {
