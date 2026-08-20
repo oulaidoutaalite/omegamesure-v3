@@ -40,7 +40,10 @@ export default function middleware(req: NextRequest) {
 
 export const config = {
   // Skip API, Next internals, static files, and uploaded media.
+  // ⚠ Toute route TECHNIQUE sans extension doit figurer ici, sinon le middleware
+  // de langue la prend pour une page et la réécrit vers /fr/… → 404.
+  // C'est ce qui est arrivé à /og (bannière de partage).
   matcher: [
-    '/((?!api|_next|_vercel|uploads|favicon\\.ico|robots\\.txt|sitemap\\.xml|.*\\..*).*)',
+    '/((?!api|_next|_vercel|uploads|og|favicon\\.ico|robots\\.txt|sitemap\\.xml|.*\\..*).*)',
   ],
 }
