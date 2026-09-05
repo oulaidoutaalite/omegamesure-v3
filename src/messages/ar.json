@@ -66,6 +66,10 @@
     "categoryLabel": "الفئة:",
     "descriptionTitle": "الوصف التفصيلي",
     "specsTitle": "المواصفات حسب الموديل",
+    "specCharacteristic": "الخاصية",
+    "specValue": "القيمة",
+    "specValueN": "القيمة {n}",
+    "specColN": "العمود {n}",
     "relatedTitle": "من نفس الفئة"
   },
   "quote": {

@@ -88,6 +88,19 @@ export default async function ProductPage({
 
   // Certaines sources publient plusieurs tableaux (références + compatibilité + codification).
   type SpecTable = { columns: string[]; rows: string[][]; extra?: { columns: string[]; rows: string[][] }[] }
+  // Les en-têtes de colonne generiques sont stockes en francais dans specs.columns
+  // (heritage des imports). On les traduit a l'affichage ; les vrais libelles
+  // fournisseur et les references de modele passent tels quels.
+  const enTeteColonne = (c: string) => {
+    if (c === 'Caractéristique') return t('specCharacteristic')
+    if (c === 'Valeur') return t('specValue')
+    const v = /^Valeur (\d+)$/.exec(c)
+    if (v) return t('specValueN', { n: v[1] })
+    const k = /^Col\. (\d+)$/.exec(c)
+    if (k) return t('specColN', { n: k[1] })
+    return c
+  }
+
   const specs =
     product.specs && typeof product.specs === 'object' && Array.isArray((product.specs as { rows?: unknown }).rows)
       ? (product.specs as unknown as SpecTable)
@@ -245,7 +258,7 @@ export default async function ProductPage({
                   <tr>
                     {tbl.columns.map((c, j) => (
                       <th key={j} className="whitespace-nowrap border-b-2 border-brand px-3 py-2 text-left font-semibold text-brand">
-                        {c}
+                        {enTeteColonne(c)}
                       </th>
                     ))}
                   </tr>

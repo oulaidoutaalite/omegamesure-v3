@@ -66,6 +66,10 @@
     "categoryLabel": "Category:",
     "descriptionTitle": "Full description",
     "specsTitle": "Specifications by model",
+    "specCharacteristic": "Characteristic",
+    "specValue": "Value",
+    "specValueN": "Value {n}",
+    "specColN": "Col. {n}",
     "relatedTitle": "In the same family"
   },
   "quote": {

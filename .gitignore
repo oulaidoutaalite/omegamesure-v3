@@ -50,3 +50,6 @@ yarn-error.log*
 # OS
 *.swp
 *.swo
+
+# outils d'import et de maintenance : fichiers de travail, non versionnes
+/scripts
