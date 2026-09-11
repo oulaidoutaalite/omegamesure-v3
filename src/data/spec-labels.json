@@ -1,0 +1,1862 @@
+{
+ "7p adaptor (7p)": {
+  "fr": "Adaptateur 7P (7P)",
+  "en": "7P adaptor (7P)",
+  "ar": "محوّل 7P (7P)"
+ },
+ "960-14-0b (métrique)": {
+  "fr": "960-14-0B (Métrique)",
+  "en": "960-14-0B (metric)",
+  "ar": "960-14-0B (متري)"
+ },
+ "960-14-1b (pouce)": {
+  "fr": "960-14-1B (Pouce)",
+  "en": "960-14-1B (inch)",
+  "ar": "960-14-1B (بوصة)"
+ },
+ "accessoires": {
+  "fr": "Accessoires",
+  "en": "Accessories",
+  "ar": "الملحقات"
+ },
+ "accuracy": {
+  "fr": "Précision",
+  "en": "Accuracy",
+  "ar": "الدقة"
+ },
+ "adaptateur": {
+  "fr": "Adaptateur",
+  "en": "Adapter",
+  "ar": "المحوّل"
+ },
+ "affichage": {
+  "fr": "Affichage",
+  "en": "Display",
+  "ar": "العرض"
+ },
+ "afficheur": {
+  "fr": "Afficheur",
+  "en": "Display",
+  "ar": "الشاشة"
+ },
+ "aiguille": {
+  "fr": "Aiguille",
+  "en": "Pointer",
+  "ar": "المؤشّر"
+ },
+ "alarme": {
+  "fr": "Alarme",
+  "en": "Alarm",
+  "ar": "الإنذار"
+ },
+ "alarme sonore et visuelle": {
+  "fr": "Alarme sonore et visuelle",
+  "en": "Audible and visual alarm",
+  "ar": "إنذار صوتي وبصري"
+ },
+ "alimentation": {
+  "fr": "Alimentation",
+  "en": "Power supply",
+  "ar": "التغذية الكهربائية"
+ },
+ "ambient temperature": {
+  "fr": "Température ambiante",
+  "en": "Ambient temperature",
+  "ar": "الحرارة المحيطة"
+ },
+ "amplitude": {
+  "fr": "Amplitude",
+  "en": "Amplitude",
+  "ar": "المطال"
+ },
+ "angulaire": {
+  "fr": "Angulaire",
+  "en": "Angular",
+  "ar": "زاوي"
+ },
+ "armure": {
+  "fr": "Armure",
+  "en": "Armour",
+  "ar": "التسليح"
+ },
+ "bague lisse": {
+  "fr": "Bague lisse",
+  "en": "Plain ring gauge",
+  "ar": "حلقة القياس الملساء"
+ },
+ "ballon de récupération": {
+  "fr": "Ballon de récupération",
+  "en": "Receiving flask",
+  "ar": "دورق الاستقبال"
+ },
+ "ballon rotatif": {
+  "fr": "Ballon rotatif",
+  "en": "Rotary flask",
+  "ar": "الدورق الدوّار"
+ },
+ "bande passante": {
+  "fr": "Bande passante",
+  "en": "Bandwidth",
+  "ar": "عرض النطاق"
+ },
+ "bande passante / résolution": {
+  "fr": "Bande passante / résolution",
+  "en": "Bandwidth / resolution",
+  "ar": "عرض النطاق / الاستبانة"
+ },
+ "bande spectrale": {
+  "fr": "Bande spectrale",
+  "en": "Spectral bandwidth",
+  "ar": "النطاق الطيفي"
+ },
+ "bas": {
+  "fr": "Bas",
+  "en": "Bottom",
+  "ar": "الأسفل"
+ },
+ "boîtes": {
+  "fr": "Boîtes",
+  "en": "Boxes",
+  "ar": "العلب"
+ },
+ "boîtier": {
+  "fr": "Boîtier",
+  "en": "Housing",
+  "ar": "العلبة"
+ },
+ "cable entry": {
+  "fr": "Entrée de câble",
+  "en": "Cable entry",
+  "ar": "مدخل الكابل"
+ },
+ "cadence": {
+  "fr": "Cadence",
+  "en": "Rate",
+  "ar": "المعدل"
+ },
+ "cadence d'images": {
+  "fr": "Cadence d'images",
+  "en": "Frame rate",
+  "ar": "معدل الإطارات"
+ },
+ "cadran": {
+  "fr": "Cadran",
+  "en": "Dial",
+  "ar": "القرص المدرّج"
+ },
+ "calibration": {
+  "fr": "Étalonnage",
+  "en": "Calibration",
+  "ar": "المعايرة"
+ },
+ "capacity": {
+  "fr": "Capacité",
+  "en": "Capacity",
+  "ar": "السعة"
+ },
+ "capacité": {
+  "fr": "Capacité",
+  "en": "Capacity",
+  "ar": "السعة"
+ },
+ "capacité (l)": {
+  "fr": "Capacité (L)",
+  "en": "Capacity (L)",
+  "ar": "السعة (ل)"
+ },
+ "capacité (ml)": {
+  "fr": "Capacité (ml)",
+  "en": "Capacity (ml)",
+  "ar": "السعة (مل)"
+ },
+ "capacité d'échantillons": {
+  "fr": "Capacité d'échantillons",
+  "en": "Sample capacity",
+  "ar": "سعة العينات"
+ },
+ "capacité du ballon (ml)": {
+  "fr": "Capacité du ballon (ml)",
+  "en": "Flask capacity (ml)",
+  "ar": "سعة الدورق (مل)"
+ },
+ "capacité du chauffe-ballon (ml)": {
+  "fr": "Capacité du chauffe-ballon (mL)",
+  "en": "Heating mantle capacity (mL)",
+  "ar": "سعة غلاف التسخين (مل)"
+ },
+ "capacité du rotor": {
+  "fr": "Capacité du rotor",
+  "en": "Rotor capacity",
+  "ar": "سعة الدوّار"
+ },
+ "capacité tampon": {
+  "fr": "Capacité tampon",
+  "en": "Buffer capacity",
+  "ar": "سعة الذاكرة المؤقتة"
+ },
+ "capillaire": {
+  "fr": "Capillaire",
+  "en": "Capillary",
+  "ar": "الأنبوب الشعري"
+ },
+ "capteur": {
+  "fr": "Capteur",
+  "en": "Sensor",
+  "ar": "المستشعر"
+ },
+ "caractéristiques": {
+  "fr": "Caractéristiques",
+  "en": "Characteristics",
+  "ar": "الخصائص"
+ },
+ "chambre": {
+  "fr": "Chambre",
+  "en": "Chamber",
+  "ar": "الحجرة"
+ },
+ "chambre (øxh) (mm)": {
+  "fr": "Chambre (Ø×H) (mm)",
+  "en": "Chamber (Ø×H) (mm)",
+  "ar": "الحجرة (قطر×ارتفاع) (مم)"
+ },
+ "champ de vision": {
+  "fr": "Champ de vision",
+  "en": "Field of view",
+  "ar": "مجال الرؤية"
+ },
+ "chauffage": {
+  "fr": "Chauffage",
+  "en": "Heating",
+  "ar": "التسخين"
+ },
+ "classe d'exactitude": {
+  "fr": "Classe d'exactitude",
+  "en": "Accuracy class",
+  "ar": "صنف الدقة"
+ },
+ "classe de protection": {
+  "fr": "Classe de protection",
+  "en": "Protection class",
+  "ar": "صنف الحماية"
+ },
+ "col": {
+  "fr": "Col",
+  "en": "Neck",
+  "ar": "العنق"
+ },
+ "communication": {
+  "fr": "Communication",
+  "en": "Communication",
+  "ar": "الاتصال"
+ },
+ "communication ports": {
+  "fr": "Ports de communication",
+  "en": "Communication ports",
+  "ar": "منافذ الاتصال"
+ },
+ "compresseur (nombre)": {
+  "fr": "Compresseur (nombre)",
+  "en": "Compressor (quantity)",
+  "ar": "الضاغط (العدد)"
+ },
+ "conception": {
+  "fr": "Conception",
+  "en": "Design",
+  "ar": "التصميم"
+ },
+ "condenseur": {
+  "fr": "Condenseur",
+  "en": "Condenser",
+  "ar": "المكثّف"
+ },
+ "conditionnement": {
+  "fr": "Conditionnement",
+  "en": "Packaging",
+  "ar": "التغليف"
+ },
+ "configuration": {
+  "fr": "Configuration",
+  "en": "Configuration",
+  "ar": "التكوين"
+ },
+ "consommation": {
+  "fr": "Consommation",
+  "en": "Power consumption",
+  "ar": "الاستهلاك"
+ },
+ "construction": {
+  "fr": "Construction",
+  "en": "Construction",
+  "ar": "البنية"
+ },
+ "consumption": {
+  "fr": "Consommation",
+  "en": "Power consumption",
+  "ar": "الاستهلاك"
+ },
+ "contact": {
+  "fr": "Contact",
+  "en": "Contact",
+  "ar": "التماس"
+ },
+ "convection": {
+  "fr": "Convection",
+  "en": "Convection",
+  "ar": "الحمل الحراري"
+ },
+ "corps": {
+  "fr": "Corps",
+  "en": "Body",
+  "ar": "الجسم"
+ },
+ "cuve": {
+  "fr": "Cuve",
+  "en": "Tank",
+  "ar": "الحوض"
+ },
+ "cône": {
+  "fr": "Cône",
+  "en": "Cone",
+  "ar": "المخروط"
+ },
+ "data storage": {
+  "fr": "Stockage des données",
+  "en": "Data storage",
+  "ar": "تخزين البيانات"
+ },
+ "density resolution": {
+  "fr": "Résolution de densité",
+  "en": "Density resolution",
+  "ar": "استبانة الكثافة"
+ },
+ "description": {
+  "fr": "Description",
+  "en": "Description",
+  "ar": "الوصف"
+ },
+ "diamètre (mm)": {
+  "fr": "Diamètre (mm)",
+  "en": "Diameter (mm)",
+  "ar": "القطر (مم)"
+ },
+ "diamètre du cadran": {
+  "fr": "Diamètre du cadran",
+  "en": "Dial diameter",
+  "ar": "قطر القرص المدرّج"
+ },
+ "diamètre extérieur": {
+  "fr": "Diamètre extérieur",
+  "en": "Outside diameter",
+  "ar": "القطر الخارجي"
+ },
+ "différentiel": {
+  "fr": "Différentiel",
+  "en": "Differential",
+  "ar": "التفاضلي"
+ },
+ "dim. externes (mm)": {
+  "fr": "Dim. externes (mm)",
+  "en": "External dimensions (mm)",
+  "ar": "الأبعاد الخارجية (مم)"
+ },
+ "dim. internes (mm)": {
+  "fr": "Dim. internes (mm)",
+  "en": "Internal dimensions (mm)",
+  "ar": "الأبعاد الداخلية (مم)"
+ },
+ "dimensions": {
+  "fr": "Dimensions",
+  "en": "Dimensions",
+  "ar": "الأبعاد"
+ },
+ "dimensions (lxpxh)": {
+  "fr": "Dimensions (L×P×H)",
+  "en": "Dimensions (W×D×H)",
+  "ar": "الأبعاد (عرض×عمق×ارتفاع)"
+ },
+ "dimensions (lxpxh) (mm)": {
+  "fr": "Dimensions (L×P×H) (mm)",
+  "en": "Dimensions (W×D×H) (mm)",
+  "ar": "الأبعاد (عرض×عمق×ارتفاع) (مم)"
+ },
+ "dimensions (mm)": {
+  "fr": "Dimensions (mm)",
+  "en": "Dimensions (mm)",
+  "ar": "الأبعاد (مم)"
+ },
+ "dimensions d'expédition (lxpxh)": {
+  "fr": "Dimensions d'expédition (L×P×H)",
+  "en": "Shipping size (W×D×H)",
+  "ar": "أبعاد الشحن (عرض×عمق×ارتفاع)"
+ },
+ "dimensions d'expédition (lxpxh) (mm)": {
+  "fr": "Dimensions d'expédition (l×P×H) (mm)",
+  "en": "Shipping size (W×D×H) (mm)",
+  "ar": "أبعاد الشحن (عرض×عمق×ارتفاع) (مم)"
+ },
+ "dimensions externes (lxpxh)": {
+  "fr": "Dimensions externes (L×P×H)",
+  "en": "External size (W×D×H)",
+  "ar": "الأبعاد الخارجية (عرض×عمق×ارتفاع)"
+ },
+ "dimensions externes (lxpxh) (mm)": {
+  "fr": "Dimensions externes (l×P×H) (mm)",
+  "en": "External size (W×D×H) (mm)",
+  "ar": "الأبعاد الخارجية (عرض×عمق×ارتفاع) (مم)"
+ },
+ "dimensions extérieures (lxpxh)": {
+  "fr": "Dimensions extérieures (L×P×H)",
+  "en": "External dimensions (W×D×H)",
+  "ar": "الأبعاد الخارجية (عرض×عمق×ارتفاع)"
+ },
+ "dimensions internes (lxpxh)": {
+  "fr": "Dimensions internes (L×P×H)",
+  "en": "Internal size (W×D×H)",
+  "ar": "الأبعاد الداخلية (عرض×عمق×ارتفاع)"
+ },
+ "dimensions internes (lxpxh) (mm)": {
+  "fr": "Dimensions internes (l×P×H) (mm)",
+  "en": "Internal size (W×D×H) (mm)",
+  "ar": "الأبعاد الداخلية (عرض×عمق×ارتفاع) (مم)"
+ },
+ "dimensions intérieures (lxpxh)": {
+  "fr": "Dimensions intérieures (L×P×H)",
+  "en": "Internal dimensions (W×D×H)",
+  "ar": "الأبعاد الداخلية (عرض×عمق×ارتفاع)"
+ },
+ "display": {
+  "fr": "Affichage",
+  "en": "Display",
+  "ar": "العرض"
+ },
+ "display accuracy": {
+  "fr": "Précision d'affichage",
+  "en": "Display accuracy",
+  "ar": "دقة العرض"
+ },
+ "display mode": {
+  "fr": "Mode d'affichage",
+  "en": "Display mode",
+  "ar": "نمط العرض"
+ },
+ "distance déportée": {
+  "fr": "Distance déportée",
+  "en": "Remote distance",
+  "ar": "مسافة الإبعاد"
+ },
+ "distance focale": {
+  "fr": "Distance focale",
+  "en": "Focal distance",
+  "ar": "المسافة المحرقية"
+ },
+ "domaine spectral": {
+  "fr": "Domaine spectral",
+  "en": "Spectral range",
+  "ar": "المجال الطيفي"
+ },
+ "douille": {
+  "fr": "Douille",
+  "en": "Socket",
+  "ar": "المقبس"
+ },
+ "débit": {
+  "fr": "Débit",
+  "en": "Flow rate",
+  "ar": "التدفق"
+ },
+ "débit d'eau": {
+  "fr": "Débit d'eau",
+  "en": "Water flow rate",
+  "ar": "تدفق الماء"
+ },
+ "débit volumique": {
+  "fr": "Débit volumique",
+  "en": "Volumetric flow rate",
+  "ar": "التدفق الحجمي"
+ },
+ "dégivrage": {
+  "fr": "Dégivrage",
+  "en": "Defrosting",
+  "ar": "إزالة الصقيع"
+ },
+ "désignation": {
+  "fr": "Désignation",
+  "en": "Designation",
+  "ar": "التسمية"
+ },
+ "détecteur": {
+  "fr": "Détecteur",
+  "en": "Detector",
+  "ar": "الكاشف"
+ },
+ "effet de la température": {
+  "fr": "Effet de la température",
+  "en": "Temperature effect",
+  "ar": "أثر الحرارة"
+ },
+ "error": {
+  "fr": "Erreur",
+  "en": "Error",
+  "ar": "الخطأ"
+ },
+ "external size (wxdxh)": {
+  "fr": "Dimensions extérieures (l×P×H)",
+  "en": "External size (W×D×H)",
+  "ar": "الأبعاد الخارجية (عرض×عمق×ارتفاع)"
+ },
+ "external size (wxdxh) (mm)": {
+  "fr": "Dimensions extérieures (l×P×H) (mm)",
+  "en": "External size (W×D×H) (mm)",
+  "ar": "الأبعاد الخارجية (عرض×عمق×ارتفاع) (مم)"
+ },
+ "exécution": {
+  "fr": "Exécution",
+  "en": "Version",
+  "ar": "الإصدار"
+ },
+ "fcr max": {
+  "fr": "FCR max",
+  "en": "Max. RCF",
+  "ar": "أقصى RCF"
+ },
+ "filetage": {
+  "fr": "Filetage",
+  "en": "Thread",
+  "ar": "السن اللولبي"
+ },
+ "filtration": {
+  "fr": "Filtration",
+  "en": "Filtration",
+  "ar": "الترشيح"
+ },
+ "fluctuation": {
+  "fr": "Fluctuation",
+  "en": "Fluctuation",
+  "ar": "التذبذب"
+ },
+ "fluide de remplissage": {
+  "fr": "Fluide de remplissage",
+  "en": "Filling fluid",
+  "ar": "سائل التعبئة"
+ },
+ "fluide frigorigène": {
+  "fr": "Fluide frigorigène",
+  "en": "Refrigerant",
+  "ar": "سائل التبريد"
+ },
+ "fréquence": {
+  "fr": "Fréquence",
+  "en": "Frequency",
+  "ar": "التردد"
+ },
+ "function setting": {
+  "fr": "Réglage des fonctions",
+  "en": "Function setting",
+  "ar": "ضبط الوظائف"
+ },
+ "g.w.": {
+  "fr": "Poids brut",
+  "en": "G.W.",
+  "ar": "الوزن القائم"
+ },
+ "g.w. (kg)": {
+  "fr": "Poids brut (kg)",
+  "en": "G.W. (kg)",
+  "ar": "الوزن القائم (كغ)"
+ },
+ "gamme": {
+  "fr": "Gamme",
+  "en": "Range",
+  "ar": "المجال"
+ },
+ "gamme de température": {
+  "fr": "Gamme de température",
+  "en": "Temperature range",
+  "ar": "مجال الحرارة"
+ },
+ "gamme ph": {
+  "fr": "Gamme pH",
+  "en": "pH range",
+  "ar": "مجال الأس الهيدروجيني"
+ },
+ "gamme spectrale": {
+  "fr": "Gamme spectrale",
+  "en": "Spectral range",
+  "ar": "المجال الطيفي"
+ },
+ "glycérine": {
+  "fr": "Glycérine",
+  "en": "Glycerine",
+  "ar": "الغليسرين"
+ },
+ "graduation": {
+  "fr": "Graduation",
+  "en": "Graduation",
+  "ar": "التدريج"
+ },
+ "graduation (ml)": {
+  "fr": "Graduation (ml)",
+  "en": "Graduation (ml)",
+  "ar": "التدريج (مل)"
+ },
+ "gross weight": {
+  "fr": "Poids brut",
+  "en": "Gross weight",
+  "ar": "الوزن القائم"
+ },
+ "gross weight (kg)": {
+  "fr": "Poids brut (kg)",
+  "en": "Gross weight (kg)",
+  "ar": "الوزن القائم (كغ)"
+ },
+ "grossissement": {
+  "fr": "Grossissement",
+  "en": "Magnification",
+  "ar": "التكبير"
+ },
+ "généralités": {
+  "fr": "Généralités",
+  "en": "General",
+  "ar": "عام"
+ },
+ "haut": {
+  "fr": "Haut",
+  "en": "Top",
+  "ar": "الأعلى"
+ },
+ "hauteur (approx.)": {
+  "fr": "Hauteur (approx.)",
+  "en": "Height (approx.)",
+  "ar": "الارتفاع (تقريبًا)"
+ },
+ "hauteur (mm)": {
+  "fr": "Hauteur (mm)",
+  "en": "Height (mm)",
+  "ar": "الارتفاع (مم)"
+ },
+ "hauteur du plan de travail": {
+  "fr": "Hauteur du plan de travail",
+  "en": "Worktop height",
+  "ar": "ارتفاع سطح العمل"
+ },
+ "hauteur totale": {
+  "fr": "Hauteur totale",
+  "en": "Overall height",
+  "ar": "الارتفاع الإجمالي"
+ },
+ "heating power": {
+  "fr": "Puissance de chauffe",
+  "en": "Heating power",
+  "ar": "استطاعة التسخين"
+ },
+ "heating rate": {
+  "fr": "Vitesse de montée en température",
+  "en": "Heating rate",
+  "ar": "معدل التسخين"
+ },
+ "heating time": {
+  "fr": "Temps de chauffe",
+  "en": "Heating time",
+  "ar": "زمن التسخين"
+ },
+ "hublot": {
+  "fr": "Hublot",
+  "en": "Window",
+  "ar": "النافذة البصرية"
+ },
+ "huile silicone": {
+  "fr": "Huile silicone",
+  "en": "Silicone oil",
+  "ar": "زيت السيليكون"
+ },
+ "humidity range": {
+  "fr": "Plage d'humidité",
+  "en": "Humidity range",
+  "ar": "مجال الرطوبة"
+ },
+ "humidité de fonctionnement": {
+  "fr": "Humidité de fonctionnement",
+  "en": "Operating humidity",
+  "ar": "رطوبة التشغيل"
+ },
+ "humidité relative": {
+  "fr": "Humidité relative",
+  "en": "Relative humidity",
+  "ar": "الرطوبة النسبية"
+ },
+ "imprimante": {
+  "fr": "Imprimante",
+  "en": "Printer",
+  "ar": "الطابعة"
+ },
+ "indice de protection": {
+  "fr": "Indice de protection",
+  "en": "Ingress protection rating",
+  "ar": "درجة الحماية"
+ },
+ "interface": {
+  "fr": "Interface",
+  "en": "Interface",
+  "ar": "الواجهة"
+ },
+ "isolation": {
+  "fr": "Isolation",
+  "en": "Insulation",
+  "ar": "العزل"
+ },
+ "joint": {
+  "fr": "Joint",
+  "en": "Seal",
+  "ar": "الحشية"
+ },
+ "joints": {
+  "fr": "Joints",
+  "en": "Seals",
+  "ar": "الحشيات"
+ },
+ "joints, disque de sécurité et bouchon de remplissage": {
+  "fr": "Joints, disque de sécurité et bouchon de remplissage",
+  "en": "Seals, safety disc and filling plug",
+  "ar": "الحشيات وقرص الأمان وسدادة التعبئة"
+ },
+ "lens": {
+  "fr": "Objectif",
+  "en": "Lens",
+  "ar": "العدسة"
+ },
+ "light source": {
+  "fr": "Source lumineuse",
+  "en": "Light source",
+  "ar": "مصدر الضوء"
+ },
+ "limites de pression": {
+  "fr": "Limites de pression",
+  "en": "Pressure limits",
+  "ar": "حدود الضغط"
+ },
+ "linéarité": {
+  "fr": "Linéarité",
+  "en": "Linearity",
+  "ar": "الخطية"
+ },
+ "liquide amortisseur": {
+  "fr": "Liquide amortisseur",
+  "en": "Damping fluid",
+  "ar": "سائل التخميد"
+ },
+ "liquide de remplissage": {
+  "fr": "Liquide de remplissage",
+  "en": "Filling liquid",
+  "ar": "سائل التعبئة"
+ },
+ "lisibilité": {
+  "fr": "Lisibilité",
+  "en": "Readability",
+  "ar": "قابلية القراءة"
+ },
+ "longueur (mm)": {
+  "fr": "Longueur (mm)",
+  "en": "Length (mm)",
+  "ar": "الطول (مم)"
+ },
+ "longueur approx. (mm)": {
+  "fr": "Longueur approx. (mm)",
+  "en": "Approx. length (mm)",
+  "ar": "الطول التقريبي (مم)"
+ },
+ "longueur totale": {
+  "fr": "Longueur totale",
+  "en": "Overall length",
+  "ar": "الطول الإجمالي"
+ },
+ "longueur utile (mm)": {
+  "fr": "Longueur utile (mm)",
+  "en": "Effective length (mm)",
+  "ar": "الطول الفعّال (مم)"
+ },
+ "lumière parasite": {
+  "fr": "Lumière parasite",
+  "en": "Stray light",
+  "ar": "الضوء الشارد"
+ },
+ "lunette": {
+  "fr": "Lunette",
+  "en": "Bezel",
+  "ar": "الإطار"
+ },
+ "matériau": {
+  "fr": "Matériau",
+  "en": "Material",
+  "ar": "المادة"
+ },
+ "matériau de la chambre": {
+  "fr": "Matériau de la chambre",
+  "en": "Chamber material",
+  "ar": "مادة الحجرة"
+ },
+ "matériau du boîtier et de la lunette": {
+  "fr": "Matériau du boîtier et de la lunette",
+  "en": "Case and bezel material",
+  "ar": "مادة العلبة والإطار"
+ },
+ "matériau du corps": {
+  "fr": "Matériau du corps",
+  "en": "Body material",
+  "ar": "مادة الجسم"
+ },
+ "matériau extérieur": {
+  "fr": "Matériau extérieur",
+  "en": "Exterior material",
+  "ar": "مادة الخارج"
+ },
+ "matériau intérieur": {
+  "fr": "Matériau intérieur",
+  "en": "Interior material",
+  "ar": "مادة الداخل"
+ },
+ "measurement accuracy": {
+  "fr": "Précision de mesure",
+  "en": "Measurement accuracy",
+  "ar": "دقة القياس"
+ },
+ "measurement range": {
+  "fr": "Plage de mesure",
+  "en": "Measurement range",
+  "ar": "مجال القياس"
+ },
+ "measuring mode": {
+  "fr": "Mode de mesure",
+  "en": "Measuring mode",
+  "ar": "نمط القياس"
+ },
+ "measuring principle": {
+  "fr": "Principe de mesure",
+  "en": "Measuring principle",
+  "ar": "مبدأ القياس"
+ },
+ "measuring range": {
+  "fr": "Plage de mesure",
+  "en": "Measuring range",
+  "ar": "مجال القياس"
+ },
+ "measuring time": {
+  "fr": "Temps de mesure",
+  "en": "Measuring time",
+  "ar": "زمن القياس"
+ },
+ "membrane": {
+  "fr": "Membrane",
+  "en": "Diaphragm",
+  "ar": "الغشاء"
+ },
+ "memory": {
+  "fr": "Mémoire",
+  "en": "Memory",
+  "ar": "الذاكرة"
+ },
+ "minuterie": {
+  "fr": "Minuterie",
+  "en": "Timer",
+  "ar": "المؤقّت"
+ },
+ "mise au point": {
+  "fr": "Mise au point",
+  "en": "Focus",
+  "ar": "التركيز"
+ },
+ "mode d'agitation": {
+  "fr": "Mode d'agitation",
+  "en": "Shaking mode",
+  "ar": "نمط الرج"
+ },
+ "mode de fonctionnement": {
+  "fr": "Mode de fonctionnement",
+  "en": "Operating mode",
+  "ar": "نمط التشغيل"
+ },
+ "mode de refroidissement": {
+  "fr": "Mode de refroidissement",
+  "en": "Cooling mode",
+  "ar": "نمط التبريد"
+ },
+ "model": {
+  "fr": "Modèle",
+  "en": "Model",
+  "ar": "الطراز"
+ },
+ "modèle": {
+  "fr": "Modèle",
+  "en": "Model",
+  "ar": "الطراز"
+ },
+ "modèles": {
+  "fr": "Modèles",
+  "en": "Models",
+  "ar": "الطرازات"
+ },
+ "montage": {
+  "fr": "Montage",
+  "en": "Mounting",
+  "ar": "التثبيت"
+ },
+ "moteur": {
+  "fr": "Moteur",
+  "en": "Motor",
+  "ar": "المحرّك"
+ },
+ "mouvement": {
+  "fr": "Mouvement",
+  "en": "Movement",
+  "ar": "الحركة"
+ },
+ "mécanisme": {
+  "fr": "Mécanisme",
+  "en": "Movement",
+  "ar": "الآلية"
+ },
+ "méthode": {
+  "fr": "Méthode",
+  "en": "Method",
+  "ar": "الطريقة"
+ },
+ "n.w / g.w (kg)": {
+  "fr": "Poids net / brut (kg)",
+  "en": "N.W. / G.W. (kg)",
+  "ar": "الوزن الصافي / القائم (كغ)"
+ },
+ "n.w. / g.w.": {
+  "fr": "Poids net / brut",
+  "en": "N.W. / G.W.",
+  "ar": "الوزن الصافي / القائم"
+ },
+ "n.w. / g.w. (kg)": {
+  "fr": "Poids net / brut (kg)",
+  "en": "N.W. / G.W. (kg)",
+  "ar": "الوزن الصافي / القائم (كغ)"
+ },
+ "net weight": {
+  "fr": "Poids net",
+  "en": "Net weight",
+  "ar": "الوزن الصافي"
+ },
+ "net weight (kg)": {
+  "fr": "Poids net (kg)",
+  "en": "Net weight (kg)",
+  "ar": "الوزن الصافي (كغ)"
+ },
+ "niveau sonore": {
+  "fr": "Niveau sonore",
+  "en": "Noise level",
+  "ar": "مستوى الضجيج"
+ },
+ "noise": {
+  "fr": "Niveau sonore",
+  "en": "Noise",
+  "ar": "مستوى الضجيج"
+ },
+ "nominal constant": {
+  "fr": "Constante nominale",
+  "en": "Nominal constant",
+  "ar": "الثابت الاسمي"
+ },
+ "n° de catalogue": {
+  "fr": "N° de catalogue",
+  "en": "Catalogue No.",
+  "ar": "رقم الكتالوج"
+ },
+ "objectifs": {
+  "fr": "Objectifs",
+  "en": "Objectives",
+  "ar": "العدسات الشيئية"
+ },
+ "oculaire": {
+  "fr": "Oculaire",
+  "en": "Eyepiece",
+  "ar": "العدسة العينية"
+ },
+ "operating temp. and humidity": {
+  "fr": "Température et humidité de fonctionnement",
+  "en": "Operating temp. and humidity",
+  "ar": "حرارة ورطوبة التشغيل"
+ },
+ "optional": {
+  "fr": "En option",
+  "en": "Optional",
+  "ar": "اختياري"
+ },
+ "optional accessories": {
+  "fr": "Accessoires en option",
+  "en": "Optional accessories",
+  "ar": "ملحقات اختيارية"
+ },
+ "options de visée": {
+  "fr": "Options de visée",
+  "en": "Sighting options",
+  "ar": "خيارات التسديد"
+ },
+ "organe moteur": {
+  "fr": "Organe moteur",
+  "en": "Measuring element",
+  "ar": "عنصر القياس"
+ },
+ "orientation": {
+  "fr": "Orientation",
+  "en": "Orientation",
+  "ar": "الاتجاه"
+ },
+ "ouverture du col": {
+  "fr": "Ouverture du col",
+  "en": "Neck opening",
+  "ar": "فتحة العنق"
+ },
+ "package size (wxdxh) (mm)": {
+  "fr": "Dimensions du colis (l×P×H) (mm)",
+  "en": "Package size (W×D×H) (mm)",
+  "ar": "أبعاد العلبة (عرض×عمق×ارتفاع) (مم)"
+ },
+ "paramètres": {
+  "fr": "Paramètres",
+  "en": "Parameters",
+  "ar": "البارامترات"
+ },
+ "paramètres réglables par logiciel": {
+  "fr": "Paramètres réglables par logiciel",
+  "en": "Software-adjustable parameters",
+  "ar": "بارامترات قابلة للضبط بالبرنامج"
+ },
+ "parties en contact": {
+  "fr": "Parties en contact",
+  "en": "Wetted parts",
+  "ar": "الأجزاء الملامسة"
+ },
+ "pas de pixel": {
+  "fr": "Pas de pixel",
+  "en": "Pixel pitch",
+  "ar": "خطوة البكسل"
+ },
+ "pas fin": {
+  "fr": "Pas fin",
+  "en": "Fine pitch",
+  "ar": "الخطوة الدقيقة"
+ },
+ "pas gros": {
+  "fr": "Pas gros",
+  "en": "Coarse pitch",
+  "ar": "الخطوة الخشنة"
+ },
+ "peigne d'échantillons": {
+  "fr": "Peigne d'échantillons",
+  "en": "Sample comb",
+  "ar": "مشط العينات"
+ },
+ "plage d'absorbance": {
+  "fr": "Plage d'absorbance",
+  "en": "Absorbance range",
+  "ar": "مجال الامتصاصية"
+ },
+ "plage d'épaisseur de coupe": {
+  "fr": "Plage d'épaisseur de coupe",
+  "en": "Section thickness range",
+  "ar": "مجال سماكة المقطع"
+ },
+ "plage d'épaisseur de dégrossissage": {
+  "fr": "Plage d'épaisseur de dégrossissage",
+  "en": "Trimming thickness range",
+  "ar": "مجال سماكة التشذيب"
+ },
+ "plage de longueurs d'onde": {
+  "fr": "Plage de longueurs d'onde",
+  "en": "Wavelength range",
+  "ar": "مجال الأطوال الموجية"
+ },
+ "plage de mesure": {
+  "fr": "Plage de mesure",
+  "en": "Measuring range",
+  "ar": "مجال القياس"
+ },
+ "plage de température": {
+  "fr": "Plage de température",
+  "en": "Temperature range",
+  "ar": "مجال الحرارة"
+ },
+ "plage de température (analog sub-range adjustable)": {
+  "fr": "Plage de température (sous-plage analogique réglable)",
+  "en": "Temperature range (analogue sub-range adjustable)",
+  "ar": "مجال الحرارة (نطاق فرعي تناظري قابل للضبط)"
+ },
+ "plage photométrique": {
+  "fr": "Plage photométrique",
+  "en": "Photometric range",
+  "ar": "المجال الفوتومتري"
+ },
+ "plaque d'identification": {
+  "fr": "Plaque d'identification",
+  "en": "Nameplate",
+  "ar": "لوحة التعريف"
+ },
+ "plateau": {
+  "fr": "Plateau",
+  "en": "Platform",
+  "ar": "المنصة"
+ },
+ "platine": {
+  "fr": "Platine",
+  "en": "Stage",
+  "ar": "منصة العينة"
+ },
+ "poids": {
+  "fr": "Poids",
+  "en": "Weight",
+  "ar": "الوزن"
+ },
+ "poids brut": {
+  "fr": "Poids brut",
+  "en": "Gross weight",
+  "ar": "الوزن القائم"
+ },
+ "poids brut (kg)": {
+  "fr": "Poids brut (kg)",
+  "en": "Gross weight (kg)",
+  "ar": "الوزن القائم (كغ)"
+ },
+ "poids net / brut": {
+  "fr": "Poids net / brut",
+  "en": "Net / gross weight",
+  "ar": "الوزن الصافي / القائم"
+ },
+ "poids net / brut (kg)": {
+  "fr": "Poids net / brut (kg)",
+  "en": "Net / gross weight (kg)",
+  "ar": "الوزن الصافي / القائم (كغ)"
+ },
+ "poids à vide": {
+  "fr": "Poids à vide",
+  "en": "Empty weight",
+  "ar": "الوزن الفارغ"
+ },
+ "point de consigne": {
+  "fr": "Point de consigne",
+  "en": "Setpoint",
+  "ar": "نقطة الضبط"
+ },
+ "port d'alarme déportée": {
+  "fr": "Port d'alarme déportée",
+  "en": "Remote alarm port",
+  "ar": "منفذ الإنذار البعيد"
+ },
+ "port usb": {
+  "fr": "Port USB",
+  "en": "USB port",
+  "ar": "منفذ USB"
+ },
+ "porte": {
+  "fr": "Porte",
+  "en": "Door",
+  "ar": "الباب"
+ },
+ "portoirs": {
+  "fr": "Portoirs",
+  "en": "Racks",
+  "ar": "الحوامل"
+ },
+ "portée": {
+  "fr": "Portée",
+  "en": "Capacity",
+  "ar": "الحمولة"
+ },
+ "power": {
+  "fr": "Puissance",
+  "en": "Power",
+  "ar": "الاستطاعة"
+ },
+ "power supply": {
+  "fr": "Alimentation",
+  "en": "Power supply",
+  "ar": "التغذية الكهربائية"
+ },
+ "pression": {
+  "fr": "Pression",
+  "en": "Pressure",
+  "ar": "الضغط"
+ },
+ "pression / température de conception": {
+  "fr": "Pression / température de conception",
+  "en": "Design pressure / temperature",
+  "ar": "ضغط / حرارة التصميم"
+ },
+ "pression de service": {
+  "fr": "Pression de service",
+  "en": "Working pressure",
+  "ar": "ضغط التشغيل"
+ },
+ "programmes": {
+  "fr": "Programmes",
+  "en": "Programmes",
+  "ar": "البرامج"
+ },
+ "programmes standard": {
+  "fr": "Programmes standard",
+  "en": "Standard programmes",
+  "ar": "البرامج القياسية"
+ },
+ "précision": {
+  "fr": "Précision",
+  "en": "Accuracy",
+  "ar": "الدقة"
+ },
+ "précision de régulation de température": {
+  "fr": "Précision de régulation de température",
+  "en": "Temperature control accuracy",
+  "ar": "دقة ضبط الحرارة"
+ },
+ "précision de température": {
+  "fr": "Précision de température",
+  "en": "Temperature accuracy",
+  "ar": "دقة الحرارة"
+ },
+ "précision de vitesse": {
+  "fr": "Précision de vitesse",
+  "en": "Speed accuracy",
+  "ar": "دقة السرعة"
+ },
+ "précision en longueur d'onde": {
+  "fr": "Précision en longueur d'onde",
+  "en": "Wavelength accuracy",
+  "ar": "دقة الطول الموجي"
+ },
+ "précision photométrique": {
+  "fr": "Précision photométrique",
+  "en": "Photometric accuracy",
+  "ar": "الدقة الفوتومترية"
+ },
+ "préfiltre (µm)": {
+  "fr": "Préfiltre (µm)",
+  "en": "Prefilter (µm)",
+  "ar": "المرشّح الأولي (ميكرومتر)"
+ },
+ "puissance": {
+  "fr": "Puissance",
+  "en": "Power",
+  "ar": "الاستطاعة"
+ },
+ "puissance (kw)": {
+  "fr": "Puissance (kW)",
+  "en": "Power (kW)",
+  "ar": "الاستطاعة (كيلوواط)"
+ },
+ "puissance (w)": {
+  "fr": "Puissance (W)",
+  "en": "Power (W)",
+  "ar": "الاستطاعة (واط)"
+ },
+ "puissance du laser": {
+  "fr": "Puissance du laser",
+  "en": "Laser power",
+  "ar": "استطاعة الليزر"
+ },
+ "raccord": {
+  "fr": "Raccord",
+  "en": "Connection",
+  "ar": "الوصلة"
+ },
+ "raccord process": {
+  "fr": "Raccord process",
+  "en": "Process connection",
+  "ar": "وصلة العملية"
+ },
+ "raccordement": {
+  "fr": "Raccordement",
+  "en": "Connection",
+  "ar": "التوصيل"
+ },
+ "rapport distance / diamètre de visée": {
+  "fr": "Rapport distance / diamètre de visée",
+  "en": "Distance-to-spot ratio",
+  "ar": "نسبة المسافة إلى قطر البقعة"
+ },
+ "rated power": {
+  "fr": "Puissance nominale",
+  "en": "Rated power",
+  "ar": "الاستطاعة الاسمية"
+ },
+ "rcf max": {
+  "fr": "RCF max",
+  "en": "Max. RCF",
+  "ar": "أقصى RCF"
+ },
+ "rcf max.": {
+  "fr": "RCF max.",
+  "en": "Max. RCF",
+  "ar": "أقصى RCF"
+ },
+ "relative humidity": {
+  "fr": "Humidité relative",
+  "en": "Relative humidity",
+  "ar": "الرطوبة النسبية"
+ },
+ "repeatability": {
+  "fr": "Répétabilité",
+  "en": "Repeatability",
+  "ar": "قابلية التكرار"
+ },
+ "resolution": {
+  "fr": "Résolution",
+  "en": "Resolution",
+  "ar": "الاستبانة"
+ },
+ "result display": {
+  "fr": "Affichage des résultats",
+  "en": "Result display",
+  "ar": "عرض النتائج"
+ },
+ "revolver": {
+  "fr": "Revolver",
+  "en": "Nosepiece",
+  "ar": "حامل العدسات الدوّار"
+ },
+ "rotor": {
+  "fr": "Rotor",
+  "en": "Rotor",
+  "ar": "الدوّار"
+ },
+ "rotor oscillant": {
+  "fr": "Rotor oscillant",
+  "en": "Swing-out rotor",
+  "ar": "الدوّار المتأرجح"
+ },
+ "roulettes": {
+  "fr": "Roulettes",
+  "en": "Castors",
+  "ar": "العجلات"
+ },
+ "réf.": {
+  "fr": "Réf.",
+  "en": "Ref.",
+  "ar": "المرجع"
+ },
+ "réfrigérant": {
+  "fr": "Réfrigérant",
+  "en": "Refrigerant",
+  "ar": "سائل التبريد"
+ },
+ "référence": {
+  "fr": "Référence",
+  "en": "Reference",
+  "ar": "المرجع"
+ },
+ "réglage de l'épaisseur de coupe": {
+  "fr": "Réglage de l'épaisseur de coupe",
+  "en": "Section thickness setting",
+  "ar": "ضبط سماكة المقطع"
+ },
+ "réglage de la longueur d'onde": {
+  "fr": "Réglage de la longueur d'onde",
+  "en": "Wavelength setting",
+  "ar": "ضبط الطول الموجي"
+ },
+ "réglage du dégrossissage": {
+  "fr": "Réglage du dégrossissage",
+  "en": "Trimming setting",
+  "ar": "ضبط التشذيب"
+ },
+ "régulateur": {
+  "fr": "Régulateur",
+  "en": "Controller",
+  "ar": "المنظّم"
+ },
+ "régulation": {
+  "fr": "Régulation",
+  "en": "Control",
+  "ar": "التنظيم"
+ },
+ "répétabilité": {
+  "fr": "Répétabilité",
+  "en": "Repeatability",
+  "ar": "قابلية التكرار"
+ },
+ "répétabilité en longueur d'onde": {
+  "fr": "Répétabilité en longueur d'onde",
+  "en": "Wavelength repeatability",
+  "ar": "قابلية تكرار الطول الموجي"
+ },
+ "répétabilité photométrique": {
+  "fr": "Répétabilité photométrique",
+  "en": "Photometric repeatability",
+  "ar": "قابلية التكرار الفوتومترية"
+ },
+ "réseau": {
+  "fr": "Réseau",
+  "en": "Network",
+  "ar": "الشبكة"
+ },
+ "résolution": {
+  "fr": "Résolution",
+  "en": "Resolution",
+  "ar": "الاستبانة"
+ },
+ "résolution d'affichage": {
+  "fr": "Résolution d'affichage",
+  "en": "Display resolution",
+  "ar": "استبانة العرض"
+ },
+ "résolution de température": {
+  "fr": "Résolution de température",
+  "en": "Temperature resolution",
+  "ar": "استبانة الحرارة"
+ },
+ "sensor": {
+  "fr": "Capteur",
+  "en": "Sensor",
+  "ar": "المستشعر"
+ },
+ "serrure": {
+  "fr": "Serrure",
+  "en": "Lock",
+  "ar": "القفل"
+ },
+ "seuil de filtration (µm)": {
+  "fr": "Seuil de filtration (µm)",
+  "en": "Filtration threshold (µm)",
+  "ar": "حد الترشيح (ميكرومتر)"
+ },
+ "shipping size (wxdxh)": {
+  "fr": "Dimensions d'expédition (l×P×H)",
+  "en": "Shipping size (W×D×H)",
+  "ar": "أبعاد الشحن (عرض×عمق×ارتفاع)"
+ },
+ "shipping size (wxdxh) (mm)": {
+  "fr": "Dimensions d'expédition (l×P×H) (mm)",
+  "en": "Shipping size (W×D×H) (mm)",
+  "ar": "أبعاد الشحن (عرض×عمق×ارتفاع) (مم)"
+ },
+ "size (lxwxh) (mm)": {
+  "fr": "Dimensions (L×l×H) (mm)",
+  "en": "Size (L×W×H) (mm)",
+  "ar": "الأبعاد (طول×عرض×ارتفاع) (مم)"
+ },
+ "size (wxdxh)": {
+  "fr": "Dimensions (l×P×H)",
+  "en": "Size (W×D×H)",
+  "ar": "الأبعاد (عرض×عمق×ارتفاع)"
+ },
+ "size (wxdxh) (mm)": {
+  "fr": "Dimensions (l×P×H) (mm)",
+  "en": "Size (W×D×H) (mm)",
+  "ar": "الأبعاد (عرض×عمق×ارتفاع) (مم)"
+ },
+ "sonde": {
+  "fr": "Sonde",
+  "en": "Probe",
+  "ar": "المجس"
+ },
+ "sortie": {
+  "fr": "Sortie",
+  "en": "Output",
+  "ar": "المخرج"
+ },
+ "sortie analogique": {
+  "fr": "Sortie analogique",
+  "en": "Analogue output",
+  "ar": "مخرج تناظري"
+ },
+ "sortie numérique": {
+  "fr": "Sortie numérique",
+  "en": "Digital output",
+  "ar": "مخرج رقمي"
+ },
+ "sortie relais": {
+  "fr": "Sortie relais",
+  "en": "Relay output",
+  "ar": "مخرج المرحّل"
+ },
+ "soudures": {
+  "fr": "Soudures",
+  "en": "Welds",
+  "ar": "اللحامات"
+ },
+ "source lumineuse": {
+  "fr": "Source lumineuse",
+  "en": "Light source",
+  "ar": "مصدر الضوء"
+ },
+ "sources lumineuses": {
+  "fr": "Sources lumineuses",
+  "en": "Light sources",
+  "ar": "مصادر الضوء"
+ },
+ "speed range": {
+  "fr": "Plage de vitesse",
+  "en": "Speed range",
+  "ar": "مجال السرعة"
+ },
+ "stabilité": {
+  "fr": "Stabilité",
+  "en": "Stability",
+  "ar": "الاستقرار"
+ },
+ "standard accessories": {
+  "fr": "Accessoires standard",
+  "en": "Standard accessories",
+  "ar": "ملحقات قياسية"
+ },
+ "standard configuration": {
+  "fr": "Configuration standard",
+  "en": "Standard configuration",
+  "ar": "التكوين القياسي"
+ },
+ "stockage": {
+  "fr": "Stockage",
+  "en": "Storage",
+  "ar": "التخزين"
+ },
+ "storage capacity": {
+  "fr": "Capacité de stockage",
+  "en": "Storage capacity",
+  "ar": "سعة التخزين"
+ },
+ "structure": {
+  "fr": "Structure",
+  "en": "Structure",
+  "ar": "البنية"
+ },
+ "surface filtrante (cm²)": {
+  "fr": "Surface filtrante (cm²)",
+  "en": "Filtration area (cm²)",
+  "ar": "مساحة الترشيح (سم²)"
+ },
+ "switch rating": {
+  "fr": "Pouvoir de coupure",
+  "en": "Switch rating",
+  "ar": "تصنيف القاطع"
+ },
+ "système de contrôle": {
+  "fr": "Système de contrôle",
+  "en": "Control system",
+  "ar": "نظام التحكم"
+ },
+ "système optique": {
+  "fr": "Système optique",
+  "en": "Optical system",
+  "ar": "النظام البصري"
+ },
+ "sécurité": {
+  "fr": "Sécurité",
+  "en": "Safety",
+  "ar": "السلامة"
+ },
+ "tampon lisse (h7)": {
+  "fr": "Tampon lisse (H7)",
+  "en": "Plain plug gauge (H7)",
+  "ar": "سدادة القياس الملساء (H7)"
+ },
+ "taux d'évaporation statique": {
+  "fr": "Taux d'évaporation statique",
+  "en": "Static evaporation rate",
+  "ar": "معدل التبخر الساكن"
+ },
+ "temp. accuracy": {
+  "fr": "Précision de température",
+  "en": "Temp. accuracy",
+  "ar": "دقة الحرارة"
+ },
+ "temp. control range": {
+  "fr": "Plage de régulation de température",
+  "en": "Temp. control range",
+  "ar": "مجال ضبط الحرارة"
+ },
+ "temperature": {
+  "fr": "Température",
+  "en": "Temperature",
+  "ar": "الحرارة"
+ },
+ "temperature accuracy": {
+  "fr": "Précision de température",
+  "en": "Temperature accuracy",
+  "ar": "دقة الحرارة"
+ },
+ "temperature control accuracy": {
+  "fr": "Précision de régulation de température",
+  "en": "Temperature control accuracy",
+  "ar": "دقة ضبط الحرارة"
+ },
+ "temperature control range": {
+  "fr": "Plage de régulation de température",
+  "en": "Temperature control range",
+  "ar": "مجال ضبط الحرارة"
+ },
+ "temperature display": {
+  "fr": "Affichage de température",
+  "en": "Temperature display",
+  "ar": "عرض الحرارة"
+ },
+ "temperature range": {
+  "fr": "Plage de température",
+  "en": "Temperature range",
+  "ar": "مجال الحرارة"
+ },
+ "temps de réponse": {
+  "fr": "Temps de réponse",
+  "en": "Response time",
+  "ar": "زمن الاستجابة"
+ },
+ "température": {
+  "fr": "Température",
+  "en": "Temperature",
+  "ar": "الحرارة"
+ },
+ "température ambiante": {
+  "fr": "Température ambiante",
+  "en": "Ambient temperature",
+  "ar": "الحرارة المحيطة"
+ },
+ "température d'utilisation": {
+  "fr": "Température d'utilisation",
+  "en": "Operating temperature",
+  "ar": "حرارة الاستخدام"
+ },
+ "température de fonctionnement": {
+  "fr": "Température de fonctionnement",
+  "en": "Operating temperature",
+  "ar": "حرارة التشغيل"
+ },
+ "température de service": {
+  "fr": "Température de service",
+  "en": "Operating temperature",
+  "ar": "حرارة التشغيل"
+ },
+ "température de stockage": {
+  "fr": "Température de stockage",
+  "en": "Storage temperature",
+  "ar": "حرارة التخزين"
+ },
+ "température fluide": {
+  "fr": "Température fluide",
+  "en": "Fluid temperature",
+  "ar": "حرارة المائع"
+ },
+ "température max.": {
+  "fr": "Température max.",
+  "en": "Max. temperature",
+  "ar": "الحرارة القصوى"
+ },
+ "température process maximale": {
+  "fr": "Température process maximale",
+  "en": "Maximum process temperature",
+  "ar": "الحرارة القصوى للعملية"
+ },
+ "tension": {
+  "fr": "Tension",
+  "en": "Voltage",
+  "ar": "الجهد"
+ },
+ "test range": {
+  "fr": "Plage d'essai",
+  "en": "Test range",
+  "ar": "مجال الاختبار"
+ },
+ "time range": {
+  "fr": "Plage de temps",
+  "en": "Time range",
+  "ar": "مجال الزمن"
+ },
+ "timing range": {
+  "fr": "Plage de minuterie",
+  "en": "Timing range",
+  "ar": "مجال التوقيت"
+ },
+ "tolérance": {
+  "fr": "Tolérance",
+  "en": "Tolerance",
+  "ar": "التفاوت المسموح"
+ },
+ "tolérance (ml)": {
+  "fr": "Tolérance (ml)",
+  "en": "Tolerance (ml)",
+  "ar": "التفاوت المسموح (مل)"
+ },
+ "tolérance (±ml)": {
+  "fr": "Tolérance (±ml)",
+  "en": "Tolerance (±ml)",
+  "ar": "التفاوت المسموح (±مل)"
+ },
+ "tube de bourdon et embase": {
+  "fr": "Tube de Bourdon et embase",
+  "en": "Bourdon tube and socket",
+  "ar": "أنبوب بوردون والقاعدة"
+ },
+ "type": {
+  "fr": "Type",
+  "en": "Type",
+  "ar": "النوع"
+ },
+ "type de photodétecteur": {
+  "fr": "Type de photodétecteur",
+  "en": "Photodetector type",
+  "ar": "نوع الكاشف الضوئي"
+ },
+ "type de portée de bride": {
+  "fr": "Type de portée de bride",
+  "en": "Flange facing type",
+  "ar": "نوع وجه الشفة"
+ },
+ "type de raccordement": {
+  "fr": "Type de raccordement",
+  "en": "Connection type",
+  "ar": "نوع التوصيل"
+ },
+ "type de séparateur": {
+  "fr": "Type de séparateur",
+  "en": "Separator type",
+  "ar": "نوع الفاصل"
+ },
+ "tête": {
+  "fr": "Tête",
+  "en": "Head",
+  "ar": "الرأس"
+ },
+ "tête d'observation": {
+  "fr": "Tête d'observation",
+  "en": "Observation head",
+  "ar": "رأس المراقبة"
+ },
+ "uniformité": {
+  "fr": "Uniformité",
+  "en": "Uniformity",
+  "ar": "التجانس"
+ },
+ "uniformité de température": {
+  "fr": "Uniformité de température",
+  "en": "Temperature uniformity",
+  "ar": "تجانس الحرارة"
+ },
+ "version standard": {
+  "fr": "Version standard",
+  "en": "Standard version",
+  "ar": "الإصدار القياسي"
+ },
+ "versions remplies": {
+  "fr": "Versions remplies",
+  "en": "Filled versions",
+  "ar": "الإصدارات المملوءة"
+ },
+ "vitesse": {
+  "fr": "Vitesse",
+  "en": "Speed",
+  "ar": "السرعة"
+ },
+ "vitesse d'air": {
+  "fr": "Vitesse d'air",
+  "en": "Air velocity",
+  "ar": "سرعة الهواء"
+ },
+ "vitesse de balayage": {
+  "fr": "Vitesse de balayage",
+  "en": "Scan speed",
+  "ar": "سرعة المسح"
+ },
+ "vitesse de rotation": {
+  "fr": "Vitesse de rotation",
+  "en": "Rotation speed",
+  "ar": "سرعة الدوران"
+ },
+ "vitesse max": {
+  "fr": "Vitesse max",
+  "en": "Max. speed",
+  "ar": "السرعة القصوى"
+ },
+ "vitre": {
+  "fr": "Vitre",
+  "en": "Window",
+  "ar": "الزجاج"
+ },
+ "volume": {
+  "fr": "Volume",
+  "en": "Volume",
+  "ar": "الحجم"
+ },
+ "volume max.": {
+  "fr": "Volume max.",
+  "en": "Max. volume",
+  "ar": "الحجم الأقصى"
+ },
+ "working temperature": {
+  "fr": "Température de service",
+  "en": "Working temperature",
+  "ar": "حرارة التشغيل"
+ },
+ "zone de travail": {
+  "fr": "Zone de travail",
+  "en": "Working area",
+  "ar": "منطقة العمل"
+ },
+ "éclairage": {
+  "fr": "Éclairage",
+  "en": "Illumination",
+  "ar": "الإضاءة"
+ },
+ "écran": {
+  "fr": "Écran",
+  "en": "Screen",
+  "ar": "الشاشة"
+ },
+ "élément sensible": {
+  "fr": "Élément sensible",
+  "en": "Sensing element",
+  "ar": "العنصر الحسّاس"
+ },
+ "émissivité": {
+  "fr": "Émissivité",
+  "en": "Emissivity",
+  "ar": "الانبعاثية"
+ },
+ "épaisseur de gel": {
+  "fr": "Épaisseur de gel",
+  "en": "Gel thickness",
+  "ar": "سماكة الهلام"
+ },
+ "étagères / tiroirs": {
+  "fr": "Étagères / tiroirs",
+  "en": "Shelves / drawers",
+  "ar": "الرفوف / الأدراج"
+ },
+ "étendue": {
+  "fr": "Étendue",
+  "en": "Span",
+  "ar": "المدى"
+ },
+ "étendue de densité": {
+  "fr": "Étendue de densité",
+  "en": "Density range",
+  "ar": "مجال الكثافة"
+ },
+ "étendue de mesure": {
+  "fr": "Étendue de mesure",
+  "en": "Measuring span",
+  "ar": "مدى القياس"
+ },
+ "étendue de viscosité [astm d 446]": {
+  "fr": "Étendue de viscosité [ASTM D 446]",
+  "en": "Viscosity range [ASTM D 446]",
+  "ar": "مجال اللزوجة [ASTM D 446]"
+ },
+ "ø du disque (mm)": {
+  "fr": "Ø du disque (mm)",
+  "en": "Disc Ø (mm)",
+  "ar": "قطر القرص (مم)"
+ },
+ "ø extérieur (mm) (approx.)": {
+  "fr": "Ø extérieur (mm) (approx.)",
+  "en": "O.D. (mm) (approx.)",
+  "ar": "القطر الخارجي (مم) (تقريبًا)"
+ },
+ "ø extérieur approx. (mm)": {
+  "fr": "Ø extérieur approx. (mm)",
+  "en": "Approx. O.D. (mm)",
+  "ar": "القطر الخارجي التقريبي (مم)"
+ },
+ "ø extérieur x longueur (mm)": {
+  "fr": "Ø extérieur × longueur (mm)",
+  "en": "O.D. × length (mm)",
+  "ar": "القطر الخارجي × الطول (مم)"
+ }
+}

@@ -11,6 +11,7 @@ import { ProductCard, type ProductCardData } from '@/components/public/ProductCa
 import { Button } from '@/components/ui/button'
 import { defaultLocale, type Locale } from '@/i18n'
 import { db } from '@/lib/db'
+import { translateSpecLabel } from '@/lib/spec-labels'
 import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
 import { breadcrumbSchema, graph, productSchema } from '@/lib/schema-org'
 import { buildAlternates, buildSocial } from '@/lib/seo'
@@ -98,7 +99,10 @@ export default async function ProductPage({
     if (v) return t('specValueN', { n: v[1] })
     const k = /^Col\. (\d+)$/.exec(c)
     if (k) return t('specColN', { n: k[1] })
-    return c
+    // Orientation « une ligne par modèle » : ce sont les en-têtes qui portent
+    // les caractéristiques. Le glossaire les traduit ; une référence de modèle
+    // en en-tête n'y figure pas et ressort inchangée.
+    return translateSpecLabel(c, locale)
   }
 
   const specs =
@@ -268,7 +272,7 @@ export default async function ProductPage({
                     <tr key={i} className="border-b border-border last:border-0">
                       {row.map((cell, j) => (
                         <td key={j} className={`px-3 py-2 align-top ${j === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground'}`}>
-                          {cell}
+                          {j === 0 ? translateSpecLabel(cell, locale) : cell}
                         </td>
                       ))}
                     </tr>
