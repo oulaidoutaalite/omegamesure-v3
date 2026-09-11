@@ -10834,6 +10834,11 @@
   "en": "Part No.",
   "ar": "رقم القطعة"
  },
+ "parties au contact de la vapeur": {
+  "fr": "Parties au contact de la vapeur",
+  "en": "Steam-wetted parts",
+  "ar": "الأجزاء الملامسة للبخار"
+ },
  "parties en contact": {
   "fr": "Parties en contact",
   "en": "Wetted parts",
@@ -10859,15 +10864,50 @@
   "en": "Coarse pitch",
   "ar": "الخطوة الخشنة"
  },
+ "password protection": {
+  "fr": "Protection par mot de passe",
+  "en": "Password protection",
+  "ar": "الحماية بكلمة مرور"
+ },
  "patient leak current": {
   "fr": "Courant de fuite patient",
   "en": "Patient leak current",
   "ar": "تيار التسرب للمريض"
  },
+ "pause function": {
+  "fr": "Fonction pause",
+  "en": "Pause function",
+  "ar": "وظيفة الإيقاف المؤقت"
+ },
+ "pc interface": {
+  "fr": "Interface PC",
+  "en": "PC interface",
+  "ar": "واجهة الحاسوب"
+ },
+ "pco₂": {
+  "fr": "pCO₂",
+  "en": "pCO₂",
+  "ar": "الضغط الجزئي لثاني أكسيد الكربون"
+ },
  "peigne d'échantillons": {
   "fr": "Peigne d'échantillons",
   "en": "Sample comb",
   "ar": "مشط العينات"
+ },
+ "percentage": {
+  "fr": "Pourcentage",
+  "en": "Percentage",
+  "ar": "النسبة المئوية"
+ },
+ "performance": {
+  "fr": "Performance",
+  "en": "Performance",
+  "ar": "الأداء"
+ },
+ "performance data": {
+  "fr": "Données de performance",
+  "en": "Performance data",
+  "ar": "بيانات الأداء"
  },
  "permissible ambient temperature & humidity": {
   "fr": "Température et humidité ambiantes admissibles",
@@ -10878,6 +10918,16 @@
   "fr": "Porte-boîtes de Petri",
   "en": "Petri dish holder",
   "ar": "حامل أطباق بتري"
+ },
+ "petri dish range (dia.)": {
+  "fr": "Boîtes de Petri acceptées (Ø)",
+  "en": "Petri dish range (Ø)",
+  "ar": "أطباق بتري المقبولة (القطر)"
+ },
+ "pg": {
+  "fr": "PG",
+  "en": "PG",
+  "ar": "PG"
  },
  "ph": {
   "fr": "pH",
@@ -10894,25 +10944,120 @@
   "en": "pH control",
   "ar": "ضبط الأس الهيدروجيني"
  },
+ "ph measuring": {
+  "fr": "Mesure du pH",
+  "en": "pH measurement",
+  "ar": "قياس الأس الهيدروجيني"
+ },
+ "ph measuring range": {
+  "fr": "Plage de mesure du pH",
+  "en": "pH measuring range",
+  "ar": "مجال قياس الأس الهيدروجيني"
+ },
+ "ph range": {
+  "fr": "Plage de pH",
+  "en": "pH range",
+  "ar": "مجال الأس الهيدروجيني"
+ },
+ "ph technical parameter": {
+  "fr": "Caractéristiques techniques pH",
+  "en": "pH technical parameters",
+  "ar": "الخصائص التقنية للأس الهيدروجيني"
+ },
+ "pharmacopoeia parameter calling": {
+  "fr": "Rappel des paramètres de la pharmacopée",
+  "en": "Pharmacopoeia parameter recall",
+  "ar": "استدعاء بارامترات دستور الأدوية"
+ },
+ "photodétecteurs silicium": {
+  "fr": "Photodétecteurs silicium",
+  "en": "Silicon photodetectors",
+  "ar": "الكواشف الضوئية السيليكونية"
+ },
+ "photometric reading mode": {
+  "fr": "Mode de lecture photométrique",
+  "en": "Photometric reading mode",
+  "ar": "نمط القراءة الفوتومترية"
+ },
+ "photometric wavelength range": {
+  "fr": "Plage de longueurs d'onde photométriques",
+  "en": "Photometric wavelength range",
+  "ar": "مجال الأطوال الموجية الفوتومترية"
+ },
+ "photométrie": {
+  "fr": "Photométrie",
+  "en": "Photometry",
+  "ar": "الفوتومترية"
+ },
+ "photosynthetically active radiation (par)": {
+  "fr": "Rayonnement photosynthétiquement actif (PAR)",
+  "en": "Photosynthetically active radiation (PAR)",
+  "ar": "الإشعاع الفعّال ضوئيًا (PAR)"
+ },
+ "pieds": {
+  "fr": "Pieds",
+  "en": "Feet",
+  "ar": "الأقدام"
+ },
  "pieds à coulisse digitaux abs / micromètres digitaux / pieds à coulisse digitaux renforcés": {
   "fr": "Pieds à coulisse digitaux ABS / Micromètres digitaux / Pieds à coulisse digitaux renforcés",
   "en": "ABS digital callipers / digital micrometers / heavy-duty digital callipers",
   "ar": "أقدام قياس رقمية ABS / ميكرومترات رقمية / أقدام قياس رقمية معزّزة"
+ },
+ "pinhole lens": {
+  "fr": "Objectif sténopé",
+  "en": "Pinhole lens",
+  "ar": "عدسة الثقب"
+ },
+ "pipe material": {
+  "fr": "Matériau de la tuyauterie",
+  "en": "Pipe material",
+  "ar": "مادة الأنبوب"
+ },
+ "pipette type": {
+  "fr": "Type de pipette",
+  "en": "Pipette type",
+  "ar": "نوع الماصة"
  },
  "piste d'audit": {
   "fr": "Piste d'audit",
   "en": "Audit trail",
   "ar": "مسار التدقيق"
  },
+ "pixel": {
+  "fr": "Pixel",
+  "en": "Pixel",
+  "ar": "البكسل"
+ },
  "pixels": {
   "fr": "Pixels",
   "en": "Pixels",
   "ar": "البكسلات"
  },
+ "plage": {
+  "fr": "Plage",
+  "en": "Range",
+  "ar": "المجال"
+ },
+ "plage (humide)": {
+  "fr": "Plage (humide)",
+  "en": "Range (wet)",
+  "ar": "المجال (رطب)"
+ },
+ "plage (sèche)": {
+  "fr": "Plage (sèche)",
+  "en": "Range (dry)",
+  "ar": "المجال (جاف)"
+ },
  "plage d'absorbance": {
   "fr": "Plage d'absorbance",
   "en": "Absorbance range",
   "ar": "مجال الامتصاصية"
+ },
+ "plage d'humidité": {
+  "fr": "Plage d'humidité",
+  "en": "Humidity range",
+  "ar": "مجال الرطوبة"
  },
  "plage d'épaisseur de coupe": {
   "fr": "Plage d'épaisseur de coupe",
@@ -10929,15 +11074,35 @@
   "en": "Heating range",
   "ar": "مجال التسخين"
  },
+ "plage de concentration": {
+  "fr": "Plage de concentration",
+  "en": "Concentration range",
+  "ar": "مجال التركيز"
+ },
  "plage de consigne": {
   "fr": "Plage de consigne",
   "en": "Setpoint range",
   "ar": "مجال نقطة الضبط"
  },
+ "plage de consigne / mesure du vide": {
+  "fr": "Plage de consigne / mesure du vide",
+  "en": "Vacuum setpoint / measuring range",
+  "ar": "مجال ضبط / قياس الخلاء"
+ },
+ "plage de contrôle du co₂": {
+  "fr": "Plage de contrôle du CO₂",
+  "en": "CO₂ control range",
+  "ar": "مجال ضبط ثاني أكسيد الكربون"
+ },
  "plage de co₂": {
   "fr": "Plage de CO₂",
   "en": "CO₂ range",
   "ar": "مجال ثاني أكسيد الكربون"
+ },
+ "plage de débit": {
+  "fr": "Plage de débit",
+  "en": "Flow range",
+  "ar": "مجال التدفق"
  },
  "plage de détection": {
   "fr": "Plage de détection",
@@ -10974,15 +11139,55 @@
   "en": "Measuring range",
   "ar": "مجال القياس"
  },
+ "plage de mesure (lovibond)": {
+  "fr": "Plage de mesure (Lovibond)",
+  "en": "Measuring range (Lovibond)",
+  "ar": "مجال القياس (لوفيبوند)"
+ },
+ "plage de mesure co": {
+  "fr": "Plage de mesure CO",
+  "en": "CO measuring range",
+  "ar": "مجال قياس أول أكسيد الكربون"
+ },
+ "plage de mesure de pression": {
+  "fr": "Plage de mesure de pression",
+  "en": "Pressure measuring range",
+  "ar": "مجال قياس الضغط"
+ },
+ "plage de mesure du débit d'air": {
+  "fr": "Plage de mesure du débit d'air",
+  "en": "Air flow measuring range",
+  "ar": "مجال قياس تدفق الهواء"
+ },
+ "plage de mesure hc": {
+  "fr": "Plage de mesure HC",
+  "en": "HC measuring range",
+  "ar": "مجال قياس الهيدروكربونات"
+ },
  "plage de minuterie": {
   "fr": "Plage de minuterie",
   "en": "Timer range",
   "ar": "مجال المؤقّت"
  },
+ "plage de pression de service": {
+  "fr": "Plage de pression de service",
+  "en": "Working pressure range",
+  "ar": "مجال ضغط التشغيل"
+ },
+ "plage de rcf": {
+  "fr": "Plage de RCF",
+  "en": "RCF range",
+  "ar": "مجال RCF"
+ },
  "plage de réflectance": {
   "fr": "Plage de réflectance",
   "en": "Reflectance range",
   "ar": "مجال الانعكاسية"
+ },
+ "plage de réglage du gradient": {
+  "fr": "Plage de réglage du gradient",
+  "en": "Gradient setting range",
+  "ar": "مجال ضبط التدرّج"
  },
  "plage de régulation": {
   "fr": "Plage de régulation",
@@ -11009,6 +11214,11 @@
   "en": "Time range",
   "ar": "مجال الزمن"
  },
+ "plage de temps du four": {
+  "fr": "Plage de temps du four",
+  "en": "Furnace time range",
+  "ar": "مجال زمن الفرن"
+ },
  "plage de température": {
   "fr": "Plage de température",
   "en": "Temperature range",
@@ -11034,10 +11244,30 @@
   "en": "Operating temperature range",
   "ar": "مجال حرارة التشغيل"
  },
+ "plage de température du bloc": {
+  "fr": "Plage de température du bloc",
+  "en": "Block temperature range",
+  "ar": "مجال حرارة الكتلة"
+ },
+ "plage de température du condenseur": {
+  "fr": "Plage de température du condenseur",
+  "en": "Condenser temperature range",
+  "ar": "مجال حرارة المكثّف"
+ },
+ "plage de température du four": {
+  "fr": "Plage de température du four",
+  "en": "Furnace temperature range",
+  "ar": "مجال حرارة الفرن"
+ },
  "plage de vitesse": {
   "fr": "Plage de vitesse",
   "en": "Speed range",
   "ar": "مجال السرعة"
+ },
+ "plage de vitesse (tr / min)": {
+  "fr": "Plage de vitesse (tr/min)",
+  "en": "Speed range (rpm)",
+  "ar": "مجال السرعة (دورة/د)"
  },
  "plage de volume": {
   "fr": "Plage de volume",
@@ -11054,6 +11284,21 @@
   "en": "Photometric range",
   "ar": "المجال الفوتومتري"
  },
+ "plages de mesure": {
+  "fr": "Plages de mesure",
+  "en": "Measuring ranges",
+  "ar": "مجالات القياس"
+ },
+ "plages de pression": {
+  "fr": "Plages de pression",
+  "en": "Pressure ranges",
+  "ar": "مجالات الضغط"
+ },
+ "plane size": {
+  "fr": "Dimensions du plan",
+  "en": "Plane size",
+  "ar": "أبعاد المستوي"
+ },
  "planéité de la ligne de base": {
   "fr": "Planéité de la ligne de base",
   "en": "Baseline flatness",
@@ -11069,6 +11314,11 @@
   "en": "Plates",
   "ar": "الصفائح"
  },
+ "plaques puits profonds": {
+  "fr": "Plaques puits profonds",
+  "en": "Deep-well plates",
+  "ar": "الصفائح ذات الآبار العميقة"
+ },
  "plateau": {
   "fr": "Plateau",
   "en": "Platform",
@@ -11079,10 +11329,25 @@
   "en": "Gel tray (L×W) (mm)",
   "ar": "صينية الهلام (طول×عرض) (مم)"
  },
+ "plateau à flacons de solvant": {
+  "fr": "Plateau à flacons de solvant",
+  "en": "Solvent bottle tray",
+  "ar": "صينية قوارير المذيبات"
+ },
  "platine": {
   "fr": "Platine",
   "en": "Stage",
   "ar": "منصة العينة"
+ },
+ "platine tournante": {
+  "fr": "Platine tournante",
+  "en": "Rotating stage",
+  "ar": "المنصة الدوّارة"
+ },
+ "platinum": {
+  "fr": "Platine",
+  "en": "Platinum",
+  "ar": "البلاتين"
  },
  "playback frame": {
   "fr": "Image de relecture",
@@ -11119,6 +11384,11 @@
   "en": "Net weight (g)",
   "ar": "الوزن الصافي (غ)"
  },
+ "poids net (kg)": {
+  "fr": "Poids net (kg)",
+  "en": "Net weight (kg)",
+  "ar": "الوزن الصافي (كغ)"
+ },
  "poids net / brut": {
   "fr": "Poids net / brut",
   "en": "Net / gross weight",
@@ -11134,20 +11404,90 @@
   "en": "Empty weight",
   "ar": "الوزن الفارغ"
  },
+ "point de congélation": {
+  "fr": "Point de congélation",
+  "en": "Freezing point",
+  "ar": "نقطة التجمد"
+ },
  "point de consigne": {
   "fr": "Point de consigne",
   "en": "Setpoint",
   "ar": "نقطة الضبط"
+ },
+ "pointer gaskets & filling plug": {
+  "fr": "Aiguille, joints et bouchon de remplissage",
+  "en": "Pointer, gaskets & filling plug",
+  "ar": "المؤشّر والحشيات وسدادة التعبئة"
+ },
+ "polariseur": {
+  "fr": "Polariseur",
+  "en": "Polariser",
+  "ar": "المستقطِب"
  },
  "polarization current accuracy": {
   "fr": "Précision du courant de polarisation",
   "en": "Polarisation current accuracy",
   "ar": "دقة تيار الاستقطاب"
  },
+ "polarizing voltage": {
+  "fr": "Tension de polarisation",
+  "en": "Polarising voltage",
+  "ar": "جهد الاستقطاب"
+ },
+ "polycarbonate": {
+  "fr": "Polycarbonate",
+  "en": "Polycarbonate",
+  "ar": "البولي كربونات"
+ },
+ "pompe (pression / aspiration / débit max.)": {
+  "fr": "Pompe (pression / aspiration / débit max.)",
+  "en": "Pump (pressure / suction / max. flow)",
+  "ar": "المضخة (الضغط / الشفط / أقصى تدفق)"
+ },
+ "pompe (pression / débit)": {
+  "fr": "Pompe (pression / débit)",
+  "en": "Pump (pressure / flow)",
+  "ar": "المضخة (الضغط / التدفق)"
+ },
  "pompe à eau": {
   "fr": "Pompe à eau",
   "en": "Water pump",
   "ar": "مضخة الماء"
+ },
+ "pompe à eau — consommation": {
+  "fr": "Pompe à eau — consommation",
+  "en": "Water pump — consumption",
+  "ar": "مضخة الماء — الاستهلاك"
+ },
+ "pompe à eau — débit": {
+  "fr": "Pompe à eau — débit",
+  "en": "Water pump — flow rate",
+  "ar": "مضخة الماء — التدفق"
+ },
+ "pompe à lotion": {
+  "fr": "Pompe à lotion",
+  "en": "Lotion pump",
+  "ar": "مضخة المستحضر"
+ },
+ "pompe à vide": {
+  "fr": "Pompe à vide",
+  "en": "Vacuum pump",
+  "ar": "مضخة الخلاء"
+ },
+ "pompe à vide compatible": {
+  "fr": "Pompe à vide compatible",
+  "en": "Compatible vacuum pump",
+  "ar": "مضخة الخلاء المتوافقة"
+ },
+ "pompes péristaltiques": {
+  "fr": "Pompes péristaltiques",
+  "en": "Peristaltic pumps",
+  "ar": "المضخات التمعجية"
+ },
+ "porcelain crucible size": {
+  "fr": "Dimensions du creuset en porcelaine",
+  "en": "Porcelain crucible size",
+  "ar": "أبعاد البوتقة الخزفية"
  },
  "porosité": {
   "fr": "Porosité",
@@ -11164,6 +11504,11 @@
   "en": "Remote alarm port",
   "ar": "منفذ الإنذار البعيد"
  },
+ "port d'imprimante": {
+  "fr": "Port d'imprimante",
+  "en": "Printer port",
+  "ar": "منفذ الطابعة"
+ },
  "port size": {
   "fr": "Dimension du raccord",
   "en": "Port size",
@@ -11179,6 +11524,16 @@
   "en": "Door",
   "ar": "الباب"
  },
+ "porte intérieure": {
+  "fr": "Porte intérieure",
+  "en": "Inner door",
+  "ar": "الباب الداخلي"
+ },
+ "porte-échantillon": {
+  "fr": "Porte-échantillon",
+  "en": "Sample holder",
+  "ar": "حامل العينة"
+ },
  "portes": {
   "fr": "Portes",
   "en": "Doors",
@@ -11193,6 +11548,16 @@
   "fr": "Portée",
   "en": "Capacity",
   "ar": "الحمولة"
+ },
+ "position accuracy": {
+  "fr": "Précision de positionnement",
+  "en": "Position accuracy",
+  "ar": "دقة الموضع"
+ },
+ "position de la virgule": {
+  "fr": "Position de la virgule",
+  "en": "Decimal point position",
+  "ar": "موضع الفاصلة العشرية"
  },
  "position de lavage": {
   "fr": "Position de lavage",
@@ -11214,6 +11579,11 @@
   "en": "Positioning mode",
   "ar": "نمط تحديد الموضع"
  },
+ "positionnement": {
+  "fr": "Positionnement",
+  "en": "Positioning",
+  "ar": "تحديد الموضع"
+ },
  "positionnement des cuves": {
   "fr": "Positionnement des cuves",
   "en": "Cuvette positioning",
@@ -11229,10 +11599,20 @@
   "en": "Sample positions",
   "ar": "مواضع العينات"
  },
+ "post-processing": {
+  "fr": "Post-traitement",
+  "en": "Post-processing",
+  "ar": "المعالجة اللاحقة"
+ },
  "postes de chauffe": {
   "fr": "Postes de chauffe",
   "en": "Heating positions",
   "ar": "مواضع التسخين"
+ },
+ "potentiel zêta": {
+  "fr": "Potentiel zêta",
+  "en": "Zeta potential",
+  "ar": "جهد زيتا"
  },
  "pouce": {
   "fr": "Pouce",
@@ -11244,20 +11624,55 @@
   "en": "Power",
   "ar": "الاستطاعة"
  },
+ "power (kw)": {
+  "fr": "Puissance (kW)",
+  "en": "Power (kW)",
+  "ar": "الاستطاعة (كيلوواط)"
+ },
+ "power (v) / power (kw)": {
+  "fr": "Tension (V) / puissance (kW)",
+  "en": "Voltage (V) / power (kW)",
+  "ar": "الجهد (فولط) / الاستطاعة (كيلوواط)"
+ },
  "power (w)": {
   "fr": "Puissance (W)",
   "en": "Power (W)",
   "ar": "الاستطاعة (واط)"
+ },
+ "power / power": {
+  "fr": "Alimentation / puissance",
+  "en": "Power supply / power",
+  "ar": "التغذية / الاستطاعة"
  },
  "power consumption": {
   "fr": "Consommation",
   "en": "Power consumption",
   "ar": "الاستهلاك"
  },
+ "power consumption (typical- maximum)": {
+  "fr": "Consommation (typique – maximale)",
+  "en": "Power consumption (typical – maximum)",
+  "ar": "الاستهلاك (النموذجي – الأقصى)"
+ },
+ "power failure": {
+  "fr": "Coupure de courant",
+  "en": "Power failure",
+  "ar": "انقطاع التيار"
+ },
+ "power input": {
+  "fr": "Alimentation d'entrée",
+  "en": "Power input",
+  "ar": "دخل التغذية"
+ },
  "power interface": {
   "fr": "Interface d'alimentation",
   "en": "Power interface",
   "ar": "واجهة التغذية"
+ },
+ "power management": {
+  "fr": "Gestion de l'alimentation",
+  "en": "Power management",
+  "ar": "إدارة الطاقة"
  },
  "power management interfaces": {
   "fr": "Interfaces de gestion de l'alimentation",
@@ -11279,15 +11694,75 @@
   "en": "Power supply",
   "ar": "التغذية الكهربائية"
  },
+ "power supply (power adapter)": {
+  "fr": "Alimentation (adaptateur secteur)",
+  "en": "Power supply (power adapter)",
+  "ar": "التغذية (محوّل التيار)"
+ },
+ "poêle en inox": {
+  "fr": "Poêle en inox",
+  "en": "Stainless steel pan",
+  "ar": "مقلاة من الفولاذ المقاوم للصدأ"
+ },
+ "poêle en inox.": {
+  "fr": "Poêle en inox",
+  "en": "Stainless steel pan",
+  "ar": "مقلاة من الفولاذ المقاوم للصدأ"
+ },
+ "po₂": {
+  "fr": "pO₂",
+  "en": "pO₂",
+  "ar": "الضغط الجزئي للأكسجين"
+ },
  "pre stored digestion program": {
   "fr": "Programmes de minéralisation préenregistrés",
   "en": "Pre-stored digestion programs",
   "ar": "برامج الهضم المخزنة مسبقًا"
  },
+ "pre-cooling time": {
+  "fr": "Temps de prérefroidissement",
+  "en": "Pre-cooling time",
+  "ar": "زمن التبريد المسبق"
+ },
+ "pre-heating time": {
+  "fr": "Temps de préchauffage",
+  "en": "Pre-heating time",
+  "ar": "زمن التسخين المسبق"
+ },
+ "pre-stored measurement mode": {
+  "fr": "Modes de mesure préenregistrés",
+  "en": "Pre-stored measurement modes",
+  "ar": "أنماط القياس المخزنة مسبقًا"
+ },
+ "pre-stored method": {
+  "fr": "Méthodes préenregistrées",
+  "en": "Pre-stored methods",
+  "ar": "الطرق المخزنة مسبقًا"
+ },
+ "precision": {
+  "fr": "Fidélité",
+  "en": "Precision",
+  "ar": "الإتقان"
+ },
  "preheating time": {
   "fr": "Temps de préchauffage",
   "en": "Preheating time",
   "ar": "زمن التسخين المسبق"
+ },
+ "preset": {
+  "fr": "Préréglage",
+  "en": "Preset",
+  "ar": "الإعداد المسبق"
+ },
+ "preset speed": {
+  "fr": "Vitesse préréglée",
+  "en": "Preset speed",
+  "ar": "السرعة المضبوطة مسبقًا"
+ },
+ "preset timing nine points": {
+  "fr": "Neuf points de minuterie préréglés",
+  "en": "Nine preset timing points",
+  "ar": "تسع نقاط توقيت مضبوطة مسبقًا"
  },
  "pression": {
   "fr": "Pression",
@@ -11309,10 +11784,20 @@
   "en": "Water pressure",
   "ar": "ضغط الماء"
  },
+ "pression d'eau de refroidissement": {
+  "fr": "Pression d'eau de refroidissement",
+  "en": "Cooling water pressure",
+  "ar": "ضغط ماء التبريد"
+ },
  "pression de conception": {
   "fr": "Pression de conception",
   "en": "Design pressure",
   "ar": "ضغط التصميم"
+ },
+ "pression de conception (chambre)": {
+  "fr": "Pression de conception (chambre)",
+  "en": "Design pressure (chamber)",
+  "ar": "ضغط التصميم (الحجرة)"
  },
  "pression de conception (enveloppe)": {
   "fr": "Pression de conception (enveloppe)",
@@ -11324,15 +11809,65 @@
   "en": "Design pressure (interior)",
   "ar": "ضغط التصميم (الداخل)"
  },
+ "pression de la source d'eau": {
+  "fr": "Pression de la source d'eau",
+  "en": "Water supply pressure",
+  "ar": "ضغط مصدر الماء"
+ },
  "pression de service": {
   "fr": "Pression de service",
   "en": "Working pressure",
   "ar": "ضغط التشغيل"
  },
+ "pression de service max.": {
+  "fr": "Pression de service max.",
+  "en": "Max. working pressure",
+  "ar": "أقصى ضغط تشغيل"
+ },
+ "pression de service maximale": {
+  "fr": "Pression de service maximale",
+  "en": "Maximum working pressure",
+  "ar": "أقصى ضغط تشغيل"
+ },
+ "pression de service nominale": {
+  "fr": "Pression de service nominale",
+  "en": "Rated working pressure",
+  "ar": "ضغط التشغيل الاسمي"
+ },
+ "pression de stérilisation": {
+  "fr": "Pression de stérilisation",
+  "en": "Sterilisation pressure",
+  "ar": "ضغط التعقيم"
+ },
+ "pression de surcharge du capteur": {
+  "fr": "Pression de surcharge du capteur",
+  "en": "Sensor overload pressure",
+  "ar": "ضغط التحميل الزائد للمستشعر"
+ },
+ "pression de tarage de la soupape": {
+  "fr": "Pression de tarage de la soupape",
+  "en": "Safety valve set pressure",
+  "ar": "ضغط ضبط صمام الأمان"
+ },
+ "pression de travail": {
+  "fr": "Pression de travail",
+  "en": "Working pressure",
+  "ar": "ضغط العمل"
+ },
+ "pression de vapeur": {
+  "fr": "Pression de vapeur",
+  "en": "Steam pressure",
+  "ar": "ضغط البخار"
+ },
  "pression de vide": {
   "fr": "Pression de vide",
   "en": "Vacuum pressure",
   "ar": "ضغط الخلاء"
+ },
+ "pression maximale": {
+  "fr": "Pression maximale",
+  "en": "Maximum pressure",
+  "ar": "أقصى ضغط"
  },
  "pression statique": {
   "fr": "Pression statique",
@@ -11349,6 +11884,31 @@
   "en": "Pressure",
   "ar": "الضغط"
  },
+ "pressure acquisition speed": {
+  "fr": "Vitesse d'acquisition de pression",
+  "en": "Pressure acquisition speed",
+  "ar": "سرعة اكتساب الضغط"
+ },
+ "pressure adjustment structure": {
+  "fr": "Dispositif de réglage de la pression",
+  "en": "Pressure adjustment mechanism",
+  "ar": "آلية ضبط الضغط"
+ },
+ "pressure compensation speed": {
+  "fr": "Vitesse de compensation de pression",
+  "en": "Pressure compensation speed",
+  "ar": "سرعة تعويض الضغط"
+ },
+ "pressure control range": {
+  "fr": "Plage de régulation de pression",
+  "en": "Pressure control range",
+  "ar": "مجال ضبط الضغط"
+ },
+ "pressure control system": {
+  "fr": "Système de régulation de pression",
+  "en": "Pressure control system",
+  "ar": "نظام ضبط الضغط"
+ },
  "pressure endurance of oxygen bomb": {
   "fr": "Tenue en pression de la bombe à oxygène",
   "en": "Pressure endurance of oxygen bomb",
@@ -11359,30 +11919,75 @@
   "en": "Pressure gauge indication range (MPa)",
   "ar": "مجال إشارة مقياس الضغط (ميغاباسكال)"
  },
+ "pressure head diameter": {
+  "fr": "Diamètre du poinçon",
+  "en": "Pressure head diameter",
+  "ar": "قطر رأس الضغط"
+ },
  "pressure monitoring": {
   "fr": "Surveillance de la pression",
   "en": "Pressure monitoring",
   "ar": "مراقبة الضغط"
+ },
+ "pressure protection": {
+  "fr": "Protection en pression",
+  "en": "Pressure protection",
+  "ar": "الحماية من الضغط"
  },
  "pressure range": {
   "fr": "Plage de pression",
   "en": "Pressure range",
   "ar": "مجال الضغط"
  },
+ "pressure ranges": {
+  "fr": "Plages de pression",
+  "en": "Pressure ranges",
+  "ar": "مجالات الضغط"
+ },
  "pressure resolution": {
   "fr": "Résolution de pression",
   "en": "Pressure resolution",
   "ar": "استبانة الضغط"
+ },
+ "pressure units": {
+  "fr": "Unités de pression",
+  "en": "Pressure units",
+  "ar": "وحدات الضغط"
+ },
+ "primary safety valve opening pressure (mpa)": {
+  "fr": "Pression d'ouverture de la soupape de sécurité primaire (MPa)",
+  "en": "Primary safety valve opening pressure (MPa)",
+  "ar": "ضغط فتح صمام الأمان الأساسي (ميغاباسكال)"
  },
  "principe": {
   "fr": "Principe",
   "en": "Principle",
   "ar": "المبدأ"
  },
+ "principe de détection": {
+  "fr": "Principe de détection",
+  "en": "Detection principle",
+  "ar": "مبدأ الكشف"
+ },
  "principe de mesure": {
   "fr": "Principe de mesure",
   "en": "Measuring principle",
   "ar": "مبدأ القياس"
+ },
+ "principe de test": {
+  "fr": "Principe de test",
+  "en": "Test principle",
+  "ar": "مبدأ الاختبار"
+ },
+ "principle": {
+  "fr": "Principe",
+  "en": "Principle",
+  "ar": "المبدأ"
+ },
+ "print content": {
+  "fr": "Contenu imprimé",
+  "en": "Print content",
+  "ar": "محتوى الطباعة"
  },
  "print function": {
   "fr": "Fonction d'impression",
@@ -11394,35 +11999,135 @@
   "en": "Printer",
   "ar": "الطابعة"
  },
+ "printer (thermal)": {
+  "fr": "Imprimante (thermique)",
+  "en": "Printer (thermal)",
+  "ar": "الطابعة (حرارية)"
+ },
+ "printing": {
+  "fr": "Impression",
+  "en": "Printing",
+  "ar": "الطباعة"
+ },
+ "printing interface": {
+  "fr": "Interface d'impression",
+  "en": "Printing interface",
+  "ar": "واجهة الطباعة"
+ },
+ "prism": {
+  "fr": "Prisme",
+  "en": "Prism",
+  "ar": "الموشور"
+ },
+ "probe details": {
+  "fr": "Détail des sondes",
+  "en": "Probe details",
+  "ar": "تفاصيل المجسات"
+ },
+ "probe length": {
+  "fr": "Longueur de sonde",
+  "en": "Probe length",
+  "ar": "طول المجس"
+ },
  "probe port": {
   "fr": "Port de sonde",
   "en": "Probe port",
   "ar": "منفذ المجس"
+ },
+ "processing room cold bath function": {
+  "fr": "Fonction bain froid de la salle de traitement",
+  "en": "Processing room cold bath function",
+  "ar": "وظيفة الحمام البارد لغرفة المعالجة"
+ },
+ "processing room gross weight (kg)": {
+  "fr": "Poids brut de la salle de traitement (kg)",
+  "en": "Processing room gross weight (kg)",
+  "ar": "الوزن القائم لغرفة المعالجة (كغ)"
+ },
+ "processing room packaging size (lxwxh) (mm)": {
+  "fr": "Dimensions d'emballage de la salle de traitement (L×l×H) (mm)",
+  "en": "Processing room packaging size (L×W×H) (mm)",
+  "ar": "أبعاد تغليف غرفة المعالجة (طول×عرض×ارتفاع) (مم)"
  },
  "product size (mm)": {
   "fr": "Dimensions du produit (mm)",
   "en": "Product size (mm)",
   "ar": "أبعاد المنتج (مم)"
  },
+ "production capacity": {
+  "fr": "Capacité de production",
+  "en": "Production capacity",
+  "ar": "الطاقة الإنتاجية"
+ },
+ "profondeur intérieure (mm)": {
+  "fr": "Profondeur intérieure (mm)",
+  "en": "Internal depth (mm)",
+  "ar": "العمق الداخلي (مم)"
+ },
+ "profondeur sonde": {
+  "fr": "Profondeur sonde",
+  "en": "Probe depth",
+  "ar": "عمق المجس"
+ },
+ "program control": {
+  "fr": "Commande par programme",
+  "en": "Program control",
+  "ar": "التحكم بالبرنامج"
+ },
+ "programmation de température": {
+  "fr": "Programmation de température",
+  "en": "Temperature programming",
+  "ar": "برمجة الحرارة"
+ },
+ "programmation du four": {
+  "fr": "Programmation du four",
+  "en": "Furnace programming",
+  "ar": "برمجة الفرن"
+ },
  "programmes": {
   "fr": "Programmes",
   "en": "Programmes",
   "ar": "البرامج"
+ },
+ "programmes mémorisés": {
+  "fr": "Programmes mémorisés",
+  "en": "Stored programmes",
+  "ar": "البرامج المحفوظة"
  },
  "programmes personnalisés": {
   "fr": "Programmes personnalisés",
   "en": "Custom programmes",
   "ar": "البرامج المخصصة"
  },
+ "programmes préréglés": {
+  "fr": "Programmes préréglés",
+  "en": "Preset programmes",
+  "ar": "البرامج المضبوطة مسبقًا"
+ },
  "programmes standard": {
   "fr": "Programmes standard",
   "en": "Standard programmes",
   "ar": "البرامج القياسية"
  },
+ "projection color": {
+  "fr": "Couleur de projection",
+  "en": "Projection colour",
+  "ar": "لون الإسقاط"
+ },
+ "protecon class": {
+  "fr": "Classe de protection",
+  "en": "Protection class",
+  "ar": "صنف الحماية"
+ },
  "protection": {
   "fr": "Protection",
   "en": "Protection",
   "ar": "الحماية"
+ },
+ "protection class": {
+  "fr": "Classe de protection",
+  "en": "Protection class",
+  "ar": "صنف الحماية"
  },
  "protection class as per en 837-1": {
   "fr": "Classe de protection selon EN 837-1",
@@ -11434,25 +12139,125 @@
   "en": "Cut-off protection",
   "ar": "حماية القطع"
  },
+ "protection électrique": {
+  "fr": "Protection électrique",
+  "en": "Electrical protection",
+  "ar": "الحماية الكهربائية"
+ },
+ "protections électriques": {
+  "fr": "Protections électriques",
+  "en": "Electrical protections",
+  "ar": "الحمايات الكهربائية"
+ },
  "protocol": {
   "fr": "Protocole",
   "en": "Protocol",
   "ar": "البروتوكول"
+ },
+ "protocoles intégrés": {
+  "fr": "Protocoles intégrés",
+  "en": "Built-in protocols",
+  "ar": "البروتوكولات المدمجة"
+ },
+ "protéines": {
+  "fr": "Protéines",
+  "en": "Proteins",
+  "ar": "البروتينات"
+ },
+ "pré-vide": {
+  "fr": "Pré-vide",
+  "en": "Pre-vacuum",
+  "ar": "الخلاء المسبق"
+ },
+ "préchauffage réactifs": {
+  "fr": "Préchauffage réactifs",
+  "en": "Reagent preheating",
+  "ar": "التسخين المسبق للكواشف"
+ },
+ "préchauffage échantillons": {
+  "fr": "Préchauffage échantillons",
+  "en": "Sample preheating",
+  "ar": "التسخين المسبق للعينات"
  },
  "précision": {
   "fr": "Précision",
   "en": "Accuracy",
   "ar": "الدقة"
  },
+ "précision (203)": {
+  "fr": "Précision (203)",
+  "en": "Accuracy (203)",
+  "ar": "الدقة (203)"
+ },
+ "précision (207)": {
+  "fr": "Précision (207)",
+  "en": "Accuracy (207)",
+  "ar": "الدقة (207)"
+ },
+ "précision (20–45 °c)": {
+  "fr": "Précision (20–45 °C)",
+  "en": "Accuracy (20–45 °C)",
+  "ar": "الدقة (20–45 °م)"
+ },
+ "précision (d50)": {
+  "fr": "Précision (D50)",
+  "en": "Accuracy (D50)",
+  "ar": "الدقة (D50)"
+ },
  "précision (pouce)": {
   "fr": "Précision (pouce)",
   "en": "Accuracy (inch)",
   "ar": "الدقة (بوصة)"
  },
+ "précision / répétabilité": {
+  "fr": "Précision / répétabilité",
+  "en": "Accuracy / repeatability",
+  "ar": "الدقة / قابلية التكرار"
+ },
+ "précision / uniformité": {
+  "fr": "Précision / uniformité",
+  "en": "Accuracy / uniformity",
+  "ar": "الدقة / التجانس"
+ },
+ "précision / uniformité (37 °c)": {
+  "fr": "Précision / uniformité (37 °C)",
+  "en": "Accuracy / uniformity (37 °C)",
+  "ar": "الدقة / التجانس (37 °م)"
+ },
+ "précision affichée": {
+  "fr": "Précision affichée",
+  "en": "Displayed accuracy",
+  "ar": "الدقة المعروضة"
+ },
+ "précision d'affichage": {
+  "fr": "Précision d'affichage",
+  "en": "Display accuracy",
+  "ar": "دقة العرض"
+ },
  "précision d'affichage de la température": {
   "fr": "Précision d'affichage de la température",
   "en": "Temperature display accuracy",
   "ar": "دقة عرض الحرارة"
+ },
+ "précision d'humidité": {
+  "fr": "Précision d'humidité",
+  "en": "Humidity accuracy",
+  "ar": "دقة الرطوبة"
+ },
+ "précision de consigne": {
+  "fr": "Précision de consigne",
+  "en": "Setpoint accuracy",
+  "ar": "دقة نقطة الضبط"
+ },
+ "précision de co₂": {
+  "fr": "Précision de CO₂",
+  "en": "CO₂ accuracy",
+  "ar": "دقة ثاني أكسيد الكربون"
+ },
+ "précision de détection": {
+  "fr": "Précision de détection",
+  "en": "Detection accuracy",
+  "ar": "دقة الكشف"
  },
  "précision de fréquence": {
   "fr": "Précision de fréquence",
@@ -11463,6 +12268,16 @@
   "fr": "Précision de longueur d'onde",
   "en": "Wavelength accuracy",
   "ar": "دقة الطول الموجي"
+ },
+ "précision de mesure": {
+  "fr": "Précision de mesure",
+  "en": "Measuring accuracy",
+  "ar": "دقة القياس"
+ },
+ "précision de mesure du débit d'air": {
+  "fr": "Précision de mesure du débit d'air",
+  "en": "Air flow measuring accuracy",
+  "ar": "دقة قياس تدفق الهواء"
  },
  "précision de réglage de température": {
   "fr": "Précision de réglage de température",
@@ -11484,6 +12299,21 @@
   "en": "Temperature accuracy",
   "ar": "دقة الحرارة"
  },
+ "précision de température (37 °c)": {
+  "fr": "Précision de température (37 °C)",
+  "en": "Temperature accuracy (37 °C)",
+  "ar": "دقة الحرارة (37 °م)"
+ },
+ "précision de température du four": {
+  "fr": "Précision de température du four",
+  "en": "Furnace temperature accuracy",
+  "ar": "دقة حرارة الفرن"
+ },
+ "précision de transmittance spectrale": {
+  "fr": "Précision de transmittance spectrale",
+  "en": "Spectral transmittance accuracy",
+  "ar": "دقة النفاذية الطيفية"
+ },
  "précision de vitesse": {
   "fr": "Précision de vitesse",
   "en": "Speed accuracy",
@@ -11499,6 +12329,11 @@
   "en": "Wavelength accuracy",
   "ar": "دقة الطول الموجي"
  },
+ "précision en nombre d'onde": {
+  "fr": "Précision en nombre d'onde",
+  "en": "Wavenumber accuracy",
+  "ar": "دقة العدد الموجي"
+ },
  "précision en transmittance": {
   "fr": "Précision en transmittance",
   "en": "Transmittance accuracy",
@@ -11509,6 +12344,16 @@
   "en": "Photometric accuracy",
   "ar": "الدقة الفوتومترية"
  },
+ "précision λ et absorbance": {
+  "fr": "Précision λ et absorbance",
+  "en": "λ and absorbance accuracy",
+  "ar": "دقة λ والامتصاصية"
+ },
+ "préfiltre": {
+  "fr": "Préfiltre",
+  "en": "Prefilter",
+  "ar": "المرشّح الأولي"
+ },
  "préfiltre (µm)": {
   "fr": "Préfiltre (µm)",
   "en": "Prefilter (µm)",
@@ -11518,6 +12363,26 @@
   "fr": "Fausses couleurs",
   "en": "Pseudo colour",
   "ar": "الألوان الزائفة"
+ },
+ "pt1000 temperature electrode interface": {
+  "fr": "Connecteur de sonde de température PT1000",
+  "en": "PT1000 temperature electrode interface",
+  "ar": "واجهة قطب الحرارة PT1000"
+ },
+ "ptfe coating / ptfe film on diaphragm": {
+  "fr": "Revêtement / film PTFE sur la membrane",
+  "en": "PTFE coating / film on diaphragm",
+  "ar": "طلاء / غشاء PTFE على الغشاء"
+ },
+ "ptfe coating on diaphragm": {
+  "fr": "Revêtement PTFE sur la membrane",
+  "en": "PTFE coating on diaphragm",
+  "ar": "طلاء PTFE على الغشاء"
+ },
+ "ptfe coating on diaphragm material": {
+  "fr": "Matériau du revêtement PTFE de la membrane",
+  "en": "PTFE coating on diaphragm — material",
+  "ar": "مادة طلاء PTFE على الغشاء"
  },
  "pu bag (protective jacket)": {
   "fr": "Housse PU (protection)",
@@ -11539,6 +12404,11 @@
   "en": "Power (W)",
   "ar": "الاستطاعة (واط)"
  },
+ "puissance absorbée": {
+  "fr": "Puissance absorbée",
+  "en": "Power input",
+  "ar": "الاستطاعة الممتصة"
+ },
  "puissance d'agitation": {
   "fr": "Puissance d'agitation",
   "en": "Stirring power",
@@ -11549,15 +12419,45 @@
   "en": "Heating power",
   "ar": "استطاعة التسخين"
  },
+ "puissance de chauffage de l'eau": {
+  "fr": "Puissance de chauffage de l'eau",
+  "en": "Water heating power",
+  "ar": "استطاعة تسخين الماء"
+ },
  "puissance de chauffe": {
   "fr": "Puissance de chauffe",
   "en": "Heating power",
   "ar": "استطاعة التسخين"
  },
+ "puissance de chauffe (w)": {
+  "fr": "Puissance de chauffe (W)",
+  "en": "Heating power (W)",
+  "ar": "استطاعة التسخين (واط)"
+ },
+ "puissance de lavage (eau)": {
+  "fr": "Puissance de lavage (eau)",
+  "en": "Washing power (water)",
+  "ar": "استطاعة الغسل (الماء)"
+ },
+ "puissance de séchage": {
+  "fr": "Puissance de séchage",
+  "en": "Drying power",
+  "ar": "استطاعة التجفيف"
+ },
+ "puissance du générateur de vapeur": {
+  "fr": "Puissance du générateur de vapeur",
+  "en": "Steam generator power",
+  "ar": "استطاعة مولّد البخار"
+ },
  "puissance du laser": {
   "fr": "Puissance du laser",
   "en": "Laser power",
   "ar": "استطاعة الليزر"
+ },
+ "puissance du moteur": {
+  "fr": "Puissance du moteur",
+  "en": "Motor power",
+  "ar": "استطاعة المحرك"
  },
  "puissance du moteur d'agitation": {
   "fr": "Puissance du moteur d'agitation",
@@ -11569,15 +12469,115 @@
   "en": "Cooling capacity",
   "ar": "الاستطاعة التبريدية"
  },
+ "puissance frigorifique (w)": {
+  "fr": "Puissance frigorifique (W)",
+  "en": "Cooling capacity (W)",
+  "ar": "الاستطاعة التبريدية (واط)"
+ },
  "puissance magnétique": {
   "fr": "Puissance magnétique",
   "en": "Magnetic force",
   "ar": "القوة المغناطيسية"
  },
+ "puissance max": {
+  "fr": "Puissance max",
+  "en": "Max. power",
+  "ar": "أقصى استطاعة"
+ },
+ "puissance max.": {
+  "fr": "Puissance max.",
+  "en": "Max. power",
+  "ar": "أقصى استطاعة"
+ },
+ "puissance moteur": {
+  "fr": "Puissance moteur",
+  "en": "Motor power",
+  "ar": "استطاعة المحرك"
+ },
+ "puissance nominale": {
+  "fr": "Puissance nominale",
+  "en": "Rated power",
+  "ar": "الاستطاعة الاسمية"
+ },
+ "puissance nominale (w)": {
+  "fr": "Puissance nominale (W)",
+  "en": "Rated power (W)",
+  "ar": "الاستطاعة الاسمية (واط)"
+ },
+ "puissance réglable": {
+  "fr": "Puissance réglable",
+  "en": "Adjustable power",
+  "ar": "الاستطاعة القابلة للضبط"
+ },
+ "puissance ultrasonique": {
+  "fr": "Puissance ultrasonique",
+  "en": "Ultrasonic power",
+  "ar": "الاستطاعة فوق الصوتية"
+ },
+ "puissance ultrasonique max.": {
+  "fr": "Puissance ultrasonique max.",
+  "en": "Max. ultrasonic power",
+  "ar": "أقصى استطاعة فوق صوتية"
+ },
  "puits": {
   "fr": "Puits",
   "en": "Wells",
   "ar": "الآبار"
+ },
+ "pump": {
+  "fr": "Pompe",
+  "en": "Pump",
+  "ar": "المضخة"
+ },
+ "pump flow (l / min)": {
+  "fr": "Débit de la pompe (L/min)",
+  "en": "Pump flow (L/min)",
+  "ar": "تدفق المضخة (ل/د)"
+ },
+ "pumping flow (l / min)": {
+  "fr": "Débit de pompage (L/min)",
+  "en": "Pumping flow (L/min)",
+  "ar": "تدفق الضخ (ل/د)"
+ },
+ "pumping speed": {
+  "fr": "Vitesse de pompage",
+  "en": "Pumping speed",
+  "ar": "سرعة الضخ"
+ },
+ "puncture function": {
+  "fr": "Fonction ponction",
+  "en": "Puncture function",
+  "ar": "وظيفة البزل"
+ },
+ "purge rate": {
+  "fr": "Débit de purge",
+  "en": "Purge rate",
+  "ar": "معدل التنفيس"
+ },
+ "purification d'air": {
+  "fr": "Purification d'air",
+  "en": "Air purification",
+  "ar": "تنقية الهواء"
+ },
+ "pédale pour dispositifs sans fil": {
+  "fr": "Pédale pour dispositifs sans fil",
+  "en": "Foot pedal for wireless devices",
+  "ar": "دواسة للأجهزة اللاسلكية"
+ },
+ "période d'échantillonnage": {
+  "fr": "Période d'échantillonnage",
+  "en": "Sampling period",
+  "ar": "فترة أخذ العينات"
+ },
+ "pôle secondaire d2": {
+  "fr": "Pôle secondaire D2",
+  "en": "Secondary pole D2",
+  "ar": "القطب الثانوي D2"
+ },
+ "qté": {
+  "fr": "Qté",
+  "en": "Qty",
+  "ar": "الكمية"
  },
  "quality": {
   "fr": "Qualité",
@@ -11589,10 +12589,65 @@
   "en": "Water quality",
   "ar": "جودة الماء"
  },
+ "qualité d'eau désionisée": {
+  "fr": "Qualité d'eau désionisée",
+  "en": "Deionised water quality",
+  "ar": "جودة الماء منزوع الأيونات"
+ },
+ "qualité d'eau pure (conductivité)": {
+  "fr": "Qualité d'eau pure (conductivité)",
+  "en": "Pure water quality (conductivity)",
+  "ar": "جودة الماء النقي (الناقلية)"
+ },
+ "quantity of 100 compartment freezing boxes": {
+  "fr": "Nombre de boîtes de congélation 100 cases",
+  "en": "Number of 100-compartment freezing boxes",
+  "ar": "عدد علب التجميد ذات 100 خانة"
+ },
+ "quantity of 2.0 ml cryovials": {
+  "fr": "Nombre de cryotubes 2,0 ml",
+  "en": "Number of 2.0 ml cryovials",
+  "ar": "عدد قوارير التجميد 2.0 مل"
+ },
+ "quantity of 25 compartment freezer box": {
+  "fr": "Nombre de boîtes de congélation 25 cases",
+  "en": "Number of 25-compartment freezer boxes",
+  "ar": "عدد علب التجميد ذات 25 خانة"
+ },
+ "quantity of 250ml blood bags": {
+  "fr": "Nombre de poches de sang 250 ml",
+  "en": "Number of 250 ml blood bags",
+  "ar": "عدد أكياس الدم 250 مل"
+ },
+ "quantity of 2ml cryovials": {
+  "fr": "Nombre de cryotubes 2 ml",
+  "en": "Number of 2 ml cryovials",
+  "ar": "عدد قوارير التجميد 2 مل"
+ },
+ "quantity of 50ml blood bags": {
+  "fr": "Nombre de poches de sang 50 ml",
+  "en": "Number of 50 ml blood bags",
+  "ar": "عدد أكياس الدم 50 مل"
+ },
+ "quantity of rectangular handle bucket": {
+  "fr": "Nombre de godets rectangulaires à poignée",
+  "en": "Number of rectangular handle buckets",
+  "ar": "عدد الدلاء المستطيلة بمقبض"
+ },
  "quantité minimale par lot": {
   "fr": "Quantité minimale par lot",
   "en": "Minimum batch quantity",
   "ar": "أدنى كمية للدفعة"
+ },
+ "quick release design": {
+  "fr": "Conception à démontage rapide",
+  "en": "Quick-release design",
+  "ar": "تصميم بفك سريع"
+ },
+ "r1 spindle is for option measured range (mpa·s)": {
+  "fr": "Le mobile R1 correspond à la plage de mesure en option (mPa·s)",
+  "en": "The R1 spindle is for the optional measuring range (mPa·s)",
+  "ar": "المغزل R1 مخصص لمجال القياس الاختياري (mPa·s)"
  },
  "raccord": {
   "fr": "Raccord",
@@ -11624,6 +12679,11 @@
   "en": "Process connection",
   "ar": "وصلة العملية"
  },
+ "raccord utilisation": {
+  "fr": "Raccord utilisation",
+  "en": "Service connection",
+  "ar": "وصلة الاستخدام"
+ },
  "raccordement": {
   "fr": "Raccordement",
   "en": "Connection",
@@ -11649,10 +12709,70 @@
   "en": "Radiometric infrared video stream",
   "ar": "بث فيديو تحت أحمر إشعاعي"
  },
+ "rain water pressure (kpa)": {
+  "fr": "Pression d'eau de pluie (kPa)",
+  "en": "Rain water pressure (kPa)",
+  "ar": "ضغط ماء المطر (كيلوباسكال)"
+ },
+ "rainfall": {
+  "fr": "Pluviométrie",
+  "en": "Rainfall",
+  "ar": "التساقط المطري"
+ },
+ "rainfall (mm)": {
+  "fr": "Pluviométrie (mm)",
+  "en": "Rainfall (mm)",
+  "ar": "التساقط المطري (مم)"
+ },
+ "rampes": {
+  "fr": "Rampes",
+  "en": "Ramps",
+  "ar": "المنحدرات"
+ },
  "range": {
   "fr": "Plage",
   "en": "Range",
   "ar": "المجال"
+ },
+ "range (ca 2+)": {
+  "fr": "Plage (Ca²⁺)",
+  "en": "Range (Ca²⁺)",
+  "ar": "المجال (Ca²⁺)"
+ },
+ "range (caco 3)": {
+  "fr": "Plage (CaCO₃)",
+  "en": "Range (CaCO₃)",
+  "ar": "المجال (CaCO₃)"
+ },
+ "range (cao)": {
+  "fr": "Plage (CaO)",
+  "en": "Range (CaO)",
+  "ar": "المجال (CaO)"
+ },
+ "range (concentration)": {
+  "fr": "Plage (concentration)",
+  "en": "Range (concentration)",
+  "ar": "المجال (التركيز)"
+ },
+ "range (english degree)": {
+  "fr": "Plage (degré anglais)",
+  "en": "Range (English degree)",
+  "ar": "المجال (الدرجة الإنجليزية)"
+ },
+ "range (french degree)": {
+  "fr": "Plage (degré français)",
+  "en": "Range (French degree)",
+  "ar": "المجال (الدرجة الفرنسية)"
+ },
+ "range (german degree)": {
+  "fr": "Plage (degré allemand)",
+  "en": "Range (German degree)",
+  "ar": "المجال (الدرجة الألمانية)"
+ },
+ "range (grains per gallon)": {
+  "fr": "Plage (grains par gallon)",
+  "en": "Range (grains per gallon)",
+  "ar": "المجال (حبّات لكل غالون)"
  },
  "range (mpa.s)": {
   "fr": "Plage (mPa·s)",
@@ -11664,6 +12784,16 @@
   "en": "Ranges",
   "ar": "المجالات"
  },
+ "rapport de consommation d'eau": {
+  "fr": "Rapport de consommation d'eau",
+  "en": "Water consumption ratio",
+  "ar": "نسبة استهلاك الماء"
+ },
+ "rapport de zoom": {
+  "fr": "Rapport de zoom",
+  "en": "Zoom ratio",
+  "ar": "نسبة التقريب"
+ },
  "rapport distance / diamètre de visée": {
   "fr": "Rapport distance / diamètre de visée",
   "en": "Distance-to-spot ratio",
@@ -11674,10 +12804,25 @@
   "en": "Signal-to-noise ratio",
   "ar": "نسبة الإشارة إلى الضجيج"
  },
+ "rate": {
+  "fr": "Débit",
+  "en": "Rate",
+  "ar": "المعدل"
+ },
  "rate of recovery": {
   "fr": "Taux de récupération",
   "en": "Rate of recovery",
   "ar": "معدل الاسترجاع"
+ },
+ "rated consumption": {
+  "fr": "Consommation nominale",
+  "en": "Rated consumption",
+  "ar": "الاستهلاك الاسمي"
+ },
+ "rated current (a)": {
+  "fr": "Courant nominal (A)",
+  "en": "Rated current (A)",
+  "ar": "التيار الاسمي (أمبير)"
  },
  "rated input current (a)": {
   "fr": "Courant d'entrée nominal (A)",
@@ -11709,20 +12854,65 @@
   "en": "Re-add alkali during distillation",
   "ar": "إضافة القلوي أثناء التقطير"
  },
+ "reaction volume": {
+  "fr": "Volume réactionnel",
+  "en": "Reaction volume",
+  "ar": "حجم التفاعل"
+ },
  "readability": {
   "fr": "Lisibilité",
   "en": "Readability",
   "ar": "قابلية القراءة"
+ },
+ "reading accuracy": {
+  "fr": "Précision de lecture",
+  "en": "Reading accuracy",
+  "ar": "دقة القراءة"
+ },
+ "reading range": {
+  "fr": "Plage de lecture",
+  "en": "Reading range",
+  "ar": "مجال القراءة"
+ },
+ "receiver cap (ml)": {
+  "fr": "Allonge de réception (ml)",
+  "en": "Receiver cap (ml)",
+  "ar": "غطاء الاستقبال (مل)"
  },
  "receiver cap without stopcock (ml)": {
   "fr": "Allonge de réception sans robinet (ml)",
   "en": "Receiver cap without stopcock (ml)",
   "ar": "غطاء الاستقبال بدون صنبور (مل)"
  },
+ "receiving bottle (triangle fluid bottle)": {
+  "fr": "Flacon récepteur (fiole triangulaire)",
+  "en": "Receiving bottle (conical flask)",
+  "ar": "قارورة الاستقبال (دورق مخروطي)"
+ },
+ "receiving flask": {
+  "fr": "Ballon récepteur",
+  "en": "Receiving flask",
+  "ar": "دورق الاستقبال"
+ },
+ "rechargeable li-ion battery": {
+  "fr": "Batterie Li-ion rechargeable",
+  "en": "Rechargeable Li-ion battery",
+  "ar": "بطارية ليثيوم أيون قابلة للشحن"
+ },
  "recipe management": {
   "fr": "Gestion des recettes",
   "en": "Recipe management",
   "ar": "إدارة الوصفات"
+ },
+ "reciprocation frequency": {
+  "fr": "Fréquence de va-et-vient",
+  "en": "Reciprocation frequency",
+  "ar": "تردد الحركة الترددية"
+ },
+ "reciprocation stroke": {
+  "fr": "Course de va-et-vient",
+  "en": "Reciprocation stroke",
+  "ar": "شوط الحركة الترددية"
  },
  "recommended equipment (excluding)": {
   "fr": "Équipement recommandé (non fourni)",
@@ -11754,25 +12944,100 @@
   "en": "Recovery rate",
   "ar": "معدل الاسترجاع"
  },
+ "reference standard": {
+  "fr": "Étalon de référence",
+  "en": "Reference standard",
+  "ar": "المعيار المرجعي"
+ },
+ "refractive index measuring range (nd)": {
+  "fr": "Plage de mesure de l'indice de réfraction (nD)",
+  "en": "Refractive index measuring range (nD)",
+  "ar": "مجال قياس قرينة الانكسار (nD)"
+ },
+ "refractive index nd": {
+  "fr": "Indice de réfraction nD",
+  "en": "Refractive index nD",
+  "ar": "قرينة الانكسار nD"
+ },
+ "refrigerant": {
+  "fr": "Fluide frigorigène",
+  "en": "Refrigerant",
+  "ar": "سائل التبريد"
+ },
+ "refrigerating system": {
+  "fr": "Système frigorifique",
+  "en": "Refrigerating system",
+  "ar": "نظام التبريد"
+ },
+ "refrigerating time": {
+  "fr": "Temps de réfrigération",
+  "en": "Refrigerating time",
+  "ar": "زمن التبريد"
+ },
+ "refrigeration": {
+  "fr": "Réfrigération",
+  "en": "Refrigeration",
+  "ar": "التبريد"
+ },
+ "refrigeration consumption": {
+  "fr": "Consommation de réfrigération",
+  "en": "Refrigeration consumption",
+  "ar": "استهلاك التبريد"
+ },
  "refrigeration method": {
   "fr": "Mode de réfrigération",
   "en": "Refrigeration method",
   "ar": "طريقة التبريد"
+ },
+ "refrigeration system": {
+  "fr": "Système frigorifique",
+  "en": "Refrigeration system",
+  "ar": "نظام التبريد"
  },
  "refroidissement": {
   "fr": "Refroidissement",
   "en": "Cooling",
   "ar": "التبريد"
  },
+ "related": {
+  "fr": "Éléments liés",
+  "en": "Related",
+  "ar": "العناصر المرتبطة"
+ },
  "relative humidity": {
   "fr": "Humidité relative",
   "en": "Relative humidity",
   "ar": "الرطوبة النسبية"
  },
+ "relative standard deviation (rsd)": {
+  "fr": "Écart type relatif (RSD)",
+  "en": "Relative standard deviation (RSD)",
+  "ar": "الانحراف المعياري النسبي (RSD)"
+ },
+ "relative temperature (rh)": {
+  "fr": "Humidité relative (HR)",
+  "en": "Relative humidity (RH)",
+  "ar": "الرطوبة النسبية (RH)"
+ },
+ "relay": {
+  "fr": "Relais",
+  "en": "Relay",
+  "ar": "المرحّل"
+ },
  "remark": {
   "fr": "Remarque",
   "en": "Remark",
   "ar": "ملاحظة"
+ },
+ "remarque": {
+  "fr": "Remarque",
+  "en": "Note",
+  "ar": "ملاحظة"
+ },
+ "remote alarm": {
+  "fr": "Alarme déportée",
+  "en": "Remote alarm",
+  "ar": "الإنذار البعيد"
  },
  "remplissage": {
   "fr": "Remplissage",
@@ -11789,10 +13054,25 @@
   "en": "Repeatability (F.S.)",
   "ar": "قابلية التكرار (من المجال الكامل)"
  },
+ "repeatability (preset accuracy)": {
+  "fr": "Répétabilité (précision de consigne)",
+  "en": "Repeatability (preset accuracy)",
+  "ar": "قابلية التكرار (دقة الضبط المسبق)"
+ },
+ "repeatability (standard deviation)": {
+  "fr": "Répétabilité (écart type)",
+  "en": "Repeatability (standard deviation)",
+  "ar": "قابلية التكرار (الانحراف المعياري)"
+ },
  "repeatability error": {
   "fr": "Erreur de répétabilité",
   "en": "Repeatability error",
   "ar": "خطأ قابلية التكرار"
+ },
+ "repeatability error (fs)": {
+  "fr": "Erreur de répétabilité (P.E.)",
+  "en": "Repeatability error (F.S.)",
+  "ar": "خطأ قابلية التكرار (من المجال الكامل)"
  },
  "repeated measurement error": {
   "fr": "Erreur de mesures répétées",
@@ -11803,6 +13083,11 @@
   "fr": "Report (contamination)",
   "en": "Carryover",
   "ar": "الانتقال المتبقي"
+ },
+ "reporting function": {
+  "fr": "Fonction de compte rendu",
+  "en": "Reporting function",
+  "ar": "وظيفة إعداد التقارير"
  },
  "reproducibility": {
   "fr": "Reproductibilité",
@@ -11819,20 +13104,60 @@
   "en": "Reproducibility (at 25 °C)",
   "ar": "قابلية إعادة الإنتاج (عند 25 °م)"
  },
+ "reproductibilité / stabilité": {
+  "fr": "Reproductibilité / stabilité",
+  "en": "Reproducibility / stability",
+  "ar": "قابلية إعادة الإنتاج / الاستقرار"
+ },
+ "reproductibilité en longueur d'onde": {
+  "fr": "Reproductibilité en longueur d'onde",
+  "en": "Wavelength reproducibility",
+  "ar": "قابلية إعادة إنتاج الطول الموجي"
+ },
+ "reproductibilité photométrique": {
+  "fr": "Reproductibilité photométrique",
+  "en": "Photometric reproducibility",
+  "ar": "قابلية إعادة الإنتاج الفوتومترية"
+ },
+ "resclution": {
+  "fr": "Résolution",
+  "en": "Resolution",
+  "ar": "الاستبانة"
+ },
+ "reservoir cap (ml)": {
+  "fr": "Allonge de réservoir (ml)",
+  "en": "Reservoir cap (ml)",
+  "ar": "غطاء الخزان (مل)"
+ },
  "resolution": {
   "fr": "Résolution",
   "en": "Resolution",
   "ar": "الاستبانة"
+ },
+ "resolution of speed": {
+  "fr": "Résolution de vitesse",
+  "en": "Speed resolution",
+  "ar": "استبانة السرعة"
  },
  "resolutions": {
   "fr": "Résolutions",
   "en": "Resolutions",
   "ar": "الاستبانات"
  },
+ "respond time": {
+  "fr": "Temps de réponse",
+  "en": "Response time",
+  "ar": "زمن الاستجابة"
+ },
  "response frequency": {
   "fr": "Fréquence de réponse",
   "en": "Response frequency",
   "ar": "تردد الاستجابة"
+ },
+ "response speed": {
+  "fr": "Vitesse de réponse",
+  "en": "Response speed",
+  "ar": "سرعة الاستجابة"
  },
  "response time": {
   "fr": "Temps de réponse",
@@ -11844,15 +13169,50 @@
   "en": "Result display",
   "ar": "عرض النتائج"
  },
+ "result program window": {
+  "fr": "Fenêtre des résultats de programme",
+  "en": "Result program window",
+  "ar": "نافذة نتائج البرنامج"
+ },
+ "retraction system": {
+  "fr": "Système de rétraction",
+  "en": "Retraction system",
+  "ar": "نظام السحب"
+ },
  "revolver": {
   "fr": "Revolver",
   "en": "Nosepiece",
   "ar": "حامل العدسات الدوّار"
  },
+ "rf frequency": {
+  "fr": "Fréquence RF",
+  "en": "RF frequency",
+  "ar": "التردد الراديوي"
+ },
+ "rice broken rate": {
+  "fr": "Taux de brisures de riz",
+  "en": "Broken rice rate",
+  "ar": "نسبة كسر الأرز"
+ },
+ "ring / window": {
+  "fr": "Bague / hublot",
+  "en": "Ring / window",
+  "ar": "الحلقة / النافذة"
+ },
  "ring material": {
   "fr": "Matériau de la bague",
   "en": "Ring material",
   "ar": "مادة الحلقة"
+ },
+ "rmx-rd-pro": {
+  "fr": "RMX-RD-Pro",
+  "en": "RMX-RD-Pro",
+  "ar": "RMX-RD-Pro"
+ },
+ "rmx-rl-pro": {
+  "fr": "RMX-RL-Pro",
+  "en": "RMX-RL-Pro",
+  "ar": "RMX-RL-Pro"
  },
  "rodage": {
   "fr": "Rodage",
@@ -11879,15 +13239,80 @@
   "en": "Roller base",
   "ar": "قاعدة بعجلات"
  },
+ "roller diameter": {
+  "fr": "Diamètre des rouleaux",
+  "en": "Roller diameter",
+  "ar": "قطر البكرة"
+ },
+ "roller rotation speed": {
+  "fr": "Vitesse de rotation des rouleaux",
+  "en": "Roller rotation speed",
+  "ar": "سرعة دوران البكرة"
+ },
  "rotate speed": {
   "fr": "Vitesse de rotation",
   "en": "Rotation speed",
+  "ar": "سرعة الدوران"
+ },
+ "rotate speed (rpm)": {
+  "fr": "Vitesse de rotation (tr/min)",
+  "en": "Rotation speed (rpm)",
+  "ar": "سرعة الدوران (دورة/د)"
+ },
+ "rotating accuracy": {
+  "fr": "Précision de rotation",
+  "en": "Rotation accuracy",
+  "ar": "دقة الدوران"
+ },
+ "rotating speed": {
+  "fr": "Vitesse de rotation",
+  "en": "Rotating speed",
   "ar": "سرعة الدوران"
  },
  "rotating speed (rpm)": {
   "fr": "Vitesse de rotation (tr/min)",
   "en": "Rotating speed (rpm)",
   "ar": "سرعة الدوران (دورة/د)"
+ },
+ "rotating speed resolution": {
+  "fr": "Résolution de vitesse de rotation",
+  "en": "Rotating speed resolution",
+  "ar": "استبانة سرعة الدوران"
+ },
+ "rotation angle": {
+  "fr": "Angle de rotation",
+  "en": "Rotation angle",
+  "ar": "زاوية الدوران"
+ },
+ "rotation du porte-échantillon": {
+  "fr": "Rotation du porte-échantillon",
+  "en": "Sample holder rotation",
+  "ar": "دوران حامل العينة"
+ },
+ "rotation range (pan & tilt)": {
+  "fr": "Plage de rotation (panoramique et inclinaison)",
+  "en": "Rotation range (pan & tilt)",
+  "ar": "مجال الدوران (أفقي وعمودي)"
+ },
+ "rotation speed": {
+  "fr": "Vitesse de rotation",
+  "en": "Rotation speed",
+  "ar": "سرعة الدوران"
+ },
+ "rotation speed (pan & tilt)": {
+  "fr": "Vitesse de rotation (panoramique et inclinaison)",
+  "en": "Rotation speed (pan & tilt)",
+  "ar": "سرعة الدوران (أفقي وعمودي)"
+ },
+ "rotationa speed control accuracy": {
+  "fr": "Précision de régulation de la vitesse de rotation",
+  "en": "Rotation speed control accuracy",
+  "ar": "دقة ضبط سرعة الدوران"
+ },
+ "rotational speed": {
+  "fr": "Vitesse de rotation",
+  "en": "Rotational speed",
+  "ar": "سرعة الدوران"
  },
  "rotor": {
   "fr": "Rotor",
@@ -11899,20 +13324,120 @@
   "en": "Rotor (ref.)",
   "ar": "الدوّار (المرجع)"
  },
+ "rotor angulaire": {
+  "fr": "Rotor angulaire",
+  "en": "Angle rotor",
+  "ar": "الدوّار الزاوي"
+ },
+ "rotor angulaire n°16": {
+  "fr": "Rotor angulaire n°16",
+  "en": "Angle rotor no. 16",
+  "ar": "الدوّار الزاوي رقم 16"
+ },
+ "rotor angulaire n°17": {
+  "fr": "Rotor angulaire n°17",
+  "en": "Angle rotor no. 17",
+  "ar": "الدوّار الزاوي رقم 17"
+ },
+ "rotor angulaire n°26": {
+  "fr": "Rotor angulaire n°26",
+  "en": "Angle rotor no. 26",
+  "ar": "الدوّار الزاوي رقم 26"
+ },
+ "rotor angulaire n°38": {
+  "fr": "Rotor angulaire n°38",
+  "en": "Angle rotor no. 38",
+  "ar": "الدوّار الزاوي رقم 38"
+ },
  "rotor oscillant": {
   "fr": "Rotor oscillant",
   "en": "Swing-out rotor",
   "ar": "الدوّار المتأرجح"
+ },
+ "rotor oscillant (no 05619)": {
+  "fr": "Rotor oscillant (n° 05619)",
+  "en": "Swing-out rotor (no. 05619)",
+  "ar": "الدوّار المتأرجح (رقم 05619)"
+ },
+ "rotor oscillant (no 05620)": {
+  "fr": "Rotor oscillant (n° 05620)",
+  "en": "Swing-out rotor (no. 05620)",
+  "ar": "الدوّار المتأرجح (رقم 05620)"
+ },
+ "rotor oscillant n°70": {
+  "fr": "Rotor oscillant n°70",
+  "en": "Swing-out rotor no. 70",
+  "ar": "الدوّار المتأرجح رقم 70"
+ },
+ "rotor specifications": {
+  "fr": "Caractéristiques du rotor",
+  "en": "Rotor specifications",
+  "ar": "مواصفات الدوّار"
+ },
+ "rotor speed": {
+  "fr": "Vitesse du rotor",
+  "en": "Rotor speed",
+  "ar": "سرعة الدوّار"
+ },
+ "rotor speed (rpm)": {
+  "fr": "Vitesse du rotor (tr/min)",
+  "en": "Rotor speed (rpm)",
+  "ar": "سرعة الدوّار (دورة/د)"
+ },
+ "rotor à angle": {
+  "fr": "Rotor à angle",
+  "en": "Angle rotor",
+  "ar": "الدوّار الزاوي"
  },
  "rotors à angle disponibles": {
   "fr": "Rotors à angle disponibles",
   "en": "Available angle rotors",
   "ar": "الدوّارات الزاوية المتاحة"
  },
+ "roue à filtres": {
+  "fr": "Roue à filtres",
+  "en": "Filter wheel",
+  "ar": "عجلة المرشّحات"
+ },
  "roulettes": {
   "fr": "Roulettes",
   "en": "Castors",
   "ar": "العجلات"
+ },
+ "rs232 interface": {
+  "fr": "Interface RS232",
+  "en": "RS232 interface",
+  "ar": "واجهة RS232"
+ },
+ "rsd (relative standard deviation)": {
+  "fr": "RSD (écart type relatif)",
+  "en": "RSD (relative standard deviation)",
+  "ar": "RSD (الانحراف المعياري النسبي)"
+ },
+ "rtd cable resistance effect": {
+  "fr": "Effet de la résistance du câble RTD",
+  "en": "RTD cable resistance effect",
+  "ar": "أثر مقاومة كابل RTD"
+ },
+ "rtd current": {
+  "fr": "Courant RTD",
+  "en": "RTD current",
+  "ar": "تيار RTD"
+ },
+ "rtd type": {
+  "fr": "Type de RTD",
+  "en": "RTD type",
+  "ar": "نوع RTD"
+ },
+ "rubbing machine rotating speed": {
+  "fr": "Vitesse de rotation de la machine à friction",
+  "en": "Rubbing machine rotation speed",
+  "ar": "سرعة دوران آلة الاحتكاك"
+ },
+ "rugosité": {
+  "fr": "Rugosité",
+  "en": "Roughness",
+  "ar": "الخشونة"
  },
  "rugosité membrane": {
   "fr": "Rugosité membrane",
@@ -11923,6 +13448,16 @@
   "fr": "Fonctionnement continu dans les conditions suivantes, une demi-heure après la mise sous tension :",
   "en": "Runs continuously in the following environments half an hour after power-on:",
   "ar": "التشغيل المستمر في الظروف التالية بعد نصف ساعة من التشغيل:"
+ },
+ "run the control system": {
+  "fr": "Exécution du système de commande",
+  "en": "Run the control system",
+  "ar": "تشغيل نظام التحكم"
+ },
+ "run time environment": {
+  "fr": "Environnement d'exécution",
+  "en": "Runtime environment",
+  "ar": "بيئة التشغيل"
  },
  "ré-étalonnage": {
   "fr": "Ré-étalonnage",
@@ -11939,6 +13474,11 @@
   "en": "Recovery",
   "ar": "الاسترجاع"
  },
+ "récupération du solvant": {
+  "fr": "Récupération du solvant",
+  "en": "Solvent recovery",
+  "ar": "استرجاع المذيب"
+ },
  "réf.": {
   "fr": "Réf.",
   "en": "Ref.",
@@ -11954,20 +13494,180 @@
   "en": "Ref. (without thumbwheel)",
   "ar": "المرجع (بدون عجلة إبهامية)"
  },
+ "réf. 503": {
+  "fr": "Réf. 503",
+  "en": "Ref. 503",
+  "ar": "المرجع 503"
+ },
+ "réf. 504": {
+  "fr": "Réf. 504",
+  "en": "Ref. 504",
+  "ar": "المرجع 504"
+ },
+ "réf. avec becs sup.": {
+  "fr": "Réf. avec becs sup.",
+  "en": "Ref. with upper jaws",
+  "ar": "المرجع بفكوك علوية"
+ },
+ "réf. bluetooth (molette)": {
+  "fr": "Réf. Bluetooth (molette)",
+  "en": "Bluetooth ref. (with thumbwheel)",
+  "ar": "المرجع بلوتوث (بعجلة إبهامية)"
+ },
+ "réf. bluetooth (sans molette)": {
+  "fr": "Réf. Bluetooth (sans molette)",
+  "en": "Bluetooth ref. (without thumbwheel)",
+  "ar": "المرجع بلوتوث (بدون عجلة إبهامية)"
+ },
+ "réf. cliquet": {
+  "fr": "Réf. cliquet",
+  "en": "Ratchet ref.",
+  "ar": "مرجع السقّاطة"
+ },
  "réf. coffret": {
   "fr": "Réf. coffret",
   "en": "Set ref.",
   "ar": "مرجع العلبة"
+ },
+ "réf. digital (115)": {
+  "fr": "Réf. digital (115)",
+  "en": "Digital ref. (115)",
+  "ar": "المرجع الرقمي (115)"
+ },
+ "réf. digital (147) touche j": {
+  "fr": "Réf. digital (147) touche J",
+  "en": "Digital ref. (147) J button",
+  "ar": "المرجع الرقمي (147) المفتاح J"
+ },
+ "réf. digital (147) touche k": {
+  "fr": "Réf. digital (147) touche K",
+  "en": "Digital ref. (147) K button",
+  "ar": "المرجع الرقمي (147) المفتاح K"
+ },
+ "réf. digital (207)": {
+  "fr": "Réf. digital (207)",
+  "en": "Digital ref. (207)",
+  "ar": "المرجع الرقمي (207)"
+ },
+ "réf. digital (208)": {
+  "fr": "Réf. digital (208)",
+  "en": "Digital ref. (208)",
+  "ar": "المرجع الرقمي (208)"
+ },
+ "réf. double cliquet": {
+  "fr": "Réf. double cliquet",
+  "en": "Double ratchet ref.",
+  "ar": "مرجع السقّاطة المزدوجة"
+ },
+ "réf. grad. 0,001 mm": {
+  "fr": "Réf. grad. 0,001 mm",
+  "en": "Ref. graduation 0.001 mm",
+  "ar": "المرجع بتدريج 0.001 مم"
+ },
+ "réf. grad. 0,01 mm": {
+  "fr": "Réf. grad. 0,01 mm",
+  "en": "Ref. graduation 0.01 mm",
+  "ar": "المرجع بتدريج 0.01 مم"
+ },
+ "réf. individuelle": {
+  "fr": "Réf. individuelle",
+  "en": "Individual ref.",
+  "ar": "المرجع الفردي"
+ },
+ "réf. ip54": {
+  "fr": "Réf. IP54",
+  "en": "IP54 ref.",
+  "ar": "المرجع IP54"
+ },
+ "réf. mécanique (111)": {
+  "fr": "Réf. mécanique (111)",
+  "en": "Mechanical ref. (111)",
+  "ar": "المرجع الميكانيكي (111)"
+ },
+ "réf. mécanique (143)": {
+  "fr": "Réf. mécanique (143)",
+  "en": "Mechanical ref. (143)",
+  "ar": "المرجع الميكانيكي (143)"
+ },
+ "réf. mécanique (203)": {
+  "fr": "Réf. mécanique (203)",
+  "en": "Mechanical ref. (203)",
+  "ar": "المرجع الميكانيكي (203)"
+ },
+ "réf. mécanique (209)": {
+  "fr": "Réf. mécanique (209)",
+  "en": "Mechanical ref. (209)",
+  "ar": "المرجع الميكانيكي (209)"
+ },
+ "réf. métrique": {
+  "fr": "Réf. métrique",
+  "en": "Metric ref.",
+  "ar": "المرجع المتري"
+ },
+ "réf. pouce": {
+  "fr": "Réf. pouce",
+  "en": "Inch ref.",
+  "ar": "المرجع بالبوصة"
+ },
+ "réf. sans becs sup.": {
+  "fr": "Réf. sans becs sup.",
+  "en": "Ref. without upper jaws",
+  "ar": "المرجع بدون فكوك علوية"
+ },
+ "réf. sans fil": {
+  "fr": "Réf. sans fil",
+  "en": "Wireless ref.",
+  "ar": "المرجع اللاسلكي"
+ },
+ "réf. sortie câble": {
+  "fr": "Réf. sortie câble",
+  "en": "Cable output ref.",
+  "ar": "مرجع خرج الكابل"
+ },
+ "réf. standard": {
+  "fr": "Réf. standard",
+  "en": "Standard ref.",
+  "ar": "المرجع القياسي"
+ },
+ "réf. sylvac": {
+  "fr": "Réf. Sylvac",
+  "en": "Sylvac ref.",
+  "ar": "المرجع Sylvac"
+ },
+ "réflectance diffuse de la plaque blanche": {
+  "fr": "Réflectance diffuse de la plaque blanche",
+  "en": "White tile diffuse reflectance",
+  "ar": "الانعكاسية المنتشرة للوح الأبيض"
  },
  "réfrigérant": {
   "fr": "Réfrigérant",
   "en": "Refrigerant",
   "ar": "سائل التبريد"
  },
+ "réfrigérant / dégivrage": {
+  "fr": "Réfrigérant / dégivrage",
+  "en": "Refrigerant / defrosting",
+  "ar": "سائل التبريد / إزالة الصقيع"
+ },
+ "réfrigération": {
+  "fr": "Réfrigération",
+  "en": "Refrigeration",
+  "ar": "التبريد"
+ },
  "référence": {
   "fr": "Référence",
   "en": "Reference",
   "ar": "المرجع"
+ },
+ "réglage": {
+  "fr": "Réglage",
+  "en": "Adjustment",
+  "ar": "الضبط"
+ },
+ "réglage / afficheur": {
+  "fr": "Réglage / afficheur",
+  "en": "Adjustment / display",
+  "ar": "الضبط / الشاشة"
  },
  "réglage consigne": {
   "fr": "Réglage consigne",
@@ -11989,6 +13689,11 @@
   "en": "Wavelength setting",
   "ar": "ضبط الطول الموجي"
  },
+ "réglage de température": {
+  "fr": "Réglage de température",
+  "en": "Temperature setting",
+  "ar": "ضبط الحرارة"
+ },
  "réglage du dégrossissage": {
   "fr": "Réglage du dégrossissage",
   "en": "Trimming setting",
@@ -12003,6 +13708,11 @@
   "fr": "Réglage du temps",
   "en": "Time setting",
   "ar": "ضبط الزمن"
+ },
+ "réglage fin": {
+  "fr": "Réglage fin",
+  "en": "Fine adjustment",
+  "ar": "الضبط الدقيق"
  },
  "régulateur": {
   "fr": "Régulateur",
@@ -12024,6 +13734,11 @@
   "en": "Control / sensor",
   "ar": "الضبط / المستشعر"
  },
+ "régulation co₂": {
+  "fr": "Régulation CO₂",
+  "en": "CO₂ control",
+  "ar": "ضبط ثاني أكسيد الكربون"
+ },
  "régulation de vitesse": {
   "fr": "Régulation de vitesse",
   "en": "Speed control",
@@ -12033,6 +13748,11 @@
   "fr": "Répétabilité",
   "en": "Repeatability",
   "ar": "قابلية التكرار"
+ },
+ "répétabilité (cv)": {
+  "fr": "Répétabilité (CV)",
+  "en": "Repeatability (CV)",
+  "ar": "قابلية التكرار (معامل التغير)"
  },
  "répétabilité de détection": {
   "fr": "Répétabilité de détection",
@@ -12049,6 +13769,11 @@
   "en": "Wavelength repeatability",
   "ar": "قابلية تكرار الطول الموجي"
  },
+ "répétabilité en transmittance": {
+  "fr": "Répétabilité en transmittance",
+  "en": "Transmittance repeatability",
+  "ar": "قابلية تكرار النفاذية"
+ },
  "répétabilité photométrique": {
   "fr": "Répétabilité photométrique",
   "en": "Photometric repeatability",
@@ -12063,6 +13788,26 @@
   "fr": "Réservoir",
   "en": "Reservoir",
   "ar": "الخزان"
+ },
+ "réservoir d'eau": {
+  "fr": "Réservoir d'eau",
+  "en": "Water tank",
+  "ar": "خزان الماء"
+ },
+ "réservoirs": {
+  "fr": "Réservoirs",
+  "en": "Tanks",
+  "ar": "الخزانات"
+ },
+ "résidu d'évaporation (105 °c)": {
+  "fr": "Résidu d'évaporation (105 °C)",
+  "en": "Evaporation residue (105 °C)",
+  "ar": "بقايا التبخر (105 °م)"
+ },
+ "résistance de charge": {
+  "fr": "Résistance de charge",
+  "en": "Load resistance",
+  "ar": "مقاومة الحمل"
  },
  "résolution": {
   "fr": "Résolution",
@@ -12079,15 +13824,60 @@
   "en": "Resolution (°C)",
   "ar": "الاستبانة (°م)"
  },
+ "résolution / fluctuation": {
+  "fr": "Résolution / fluctuation",
+  "en": "Resolution / fluctuation",
+  "ar": "الاستبانة / التذبذب"
+ },
+ "résolution cadran": {
+  "fr": "Résolution cadran",
+  "en": "Dial resolution",
+  "ar": "استبانة القرص"
+ },
  "résolution d'affichage": {
   "fr": "Résolution d'affichage",
   "en": "Display resolution",
   "ar": "استبانة العرض"
  },
+ "résolution d'affichage de température": {
+  "fr": "Résolution d'affichage de température",
+  "en": "Temperature display resolution",
+  "ar": "استبانة عرض الحرارة"
+ },
+ "résolution de co₂": {
+  "fr": "Résolution de CO₂",
+  "en": "CO₂ resolution",
+  "ar": "استبانة ثاني أكسيد الكربون"
+ },
+ "résolution de fréquence": {
+  "fr": "Résolution de fréquence",
+  "en": "Frequency resolution",
+  "ar": "استبانة التردد"
+ },
+ "résolution de la burette": {
+  "fr": "Résolution de la burette",
+  "en": "Burette resolution",
+  "ar": "استبانة السحاحة"
+ },
  "résolution de température": {
   "fr": "Résolution de température",
   "en": "Temperature resolution",
   "ar": "استبانة الحرارة"
+ },
+ "résolution de température du four": {
+  "fr": "Résolution de température du four",
+  "en": "Furnace temperature resolution",
+  "ar": "استبانة حرارة الفرن"
+ },
+ "résolution du débit d'air": {
+  "fr": "Résolution du débit d'air",
+  "en": "Air flow resolution",
+  "ar": "استبانة تدفق الهواء"
+ },
+ "résolution en longueur d'onde": {
+  "fr": "Résolution en longueur d'onde",
+  "en": "Wavelength resolution",
+  "ar": "استبانة الطول الموجي"
  },
  "résolution spectrale (bande passante)": {
   "fr": "Résolution spectrale (bande passante)",
@@ -12099,6 +13889,11 @@
   "en": "Recalibration",
   "ar": "إعادة المعايرة"
  },
+ "s / n ratio": {
+  "fr": "Rapport signal/bruit",
+  "en": "S/N ratio",
+  "ar": "نسبة الإشارة إلى الضجيج"
+ },
  "s.no.": {
   "fr": "N°",
   "en": "S. No.",
@@ -12109,20 +13904,65 @@
   "en": "Safe alkali adding mode",
   "ar": "نمط الإضافة الآمنة للقلوي"
  },
+ "safety": {
+  "fr": "Sécurité",
+  "en": "Safety",
+  "ar": "السلامة"
+ },
+ "safety alarm function": {
+  "fr": "Fonction d'alarme de sécurité",
+  "en": "Safety alarm function",
+  "ar": "وظيفة إنذار السلامة"
+ },
+ "safety device": {
+  "fr": "Dispositif de sécurité",
+  "en": "Safety device",
+  "ar": "جهاز السلامة"
+ },
  "safety gate switch": {
   "fr": "Interrupteur de sécurité de porte",
   "en": "Safety gate switch",
   "ar": "مفتاح أمان البوابة"
+ },
+ "safety protection": {
+  "fr": "Protections de sécurité",
+  "en": "Safety protection",
+  "ar": "حماية السلامة"
+ },
+ "safety setting": {
+  "fr": "Réglage de sécurité",
+  "en": "Safety setting",
+  "ar": "ضبط السلامة"
  },
  "safety standard": {
   "fr": "Norme de sécurité",
   "en": "Safety standard",
   "ar": "معيار السلامة"
  },
+ "salinity": {
+  "fr": "Salinité",
+  "en": "Salinity",
+  "ar": "الملوحة"
+ },
  "salinité maximale": {
   "fr": "Salinité maximale",
   "en": "Maximum salinity",
   "ar": "أقصى ملوحة"
+ },
+ "salt spray deposition": {
+  "fr": "Dépôt de brouillard salin",
+  "en": "Salt spray deposition",
+  "ar": "ترسّب الرذاذ الملحي"
+ },
+ "salt water tank capacity (l)": {
+  "fr": "Capacité du réservoir d'eau salée (L)",
+  "en": "Salt water tank capacity (L)",
+  "ar": "سعة خزان الماء المالح (ل)"
+ },
+ "sample": {
+  "fr": "Échantillon",
+  "en": "Sample",
+  "ar": "العينة"
  },
  "sample analysis time": {
   "fr": "Temps d'analyse de l'échantillon",
@@ -12134,10 +13974,55 @@
   "en": "Sample capacity",
   "ar": "سعة العينات"
  },
+ "sample capacity (m l)": {
+  "fr": "Capacité d'échantillon (mL)",
+  "en": "Sample capacity (mL)",
+  "ar": "سعة العينة (مل)"
+ },
+ "sample capacity (ml)": {
+  "fr": "Capacité d'échantillon (mL)",
+  "en": "Sample capacity (mL)",
+  "ar": "سعة العينة (مل)"
+ },
+ "sample cell": {
+  "fr": "Cuve à échantillon",
+  "en": "Sample cell",
+  "ar": "خلية العينة"
+ },
  "sample chamber pre-cooling function": {
   "fr": "Prérefroidissement de la chambre d'échantillons",
   "en": "Sample chamber pre-cooling function",
   "ar": "وظيفة التبريد المسبق لحجرة العينات"
+ },
+ "sample chamber temperature range": {
+  "fr": "Plage de température de la chambre d'échantillons",
+  "en": "Sample chamber temperature range",
+  "ar": "مجال حرارة حجرة العينات"
+ },
+ "sample consumption": {
+  "fr": "Consommation d'échantillon",
+  "en": "Sample consumption",
+  "ar": "استهلاك العينة"
+ },
+ "sample container": {
+  "fr": "Récipient à échantillon",
+  "en": "Sample container",
+  "ar": "وعاء العينة"
+ },
+ "sample frame speed": {
+  "fr": "Vitesse du porte-échantillon",
+  "en": "Sample frame speed",
+  "ar": "سرعة إطار العينة"
+ },
+ "sample holes": {
+  "fr": "Puits d'échantillons",
+  "en": "Sample holes",
+  "ar": "فتحات العينات"
+ },
+ "sample level graduation line": {
+  "fr": "Trait de jauge du niveau d'échantillon",
+  "en": "Sample level graduation line",
+  "ar": "خط تدريج مستوى العينة"
  },
  "sample quantity": {
   "fr": "Quantité d'échantillon",
@@ -12154,10 +14039,30 @@
   "en": "Sample size",
   "ar": "قياس العينة"
  },
+ "sample specification": {
+  "fr": "Spécification de l'échantillon",
+  "en": "Sample specification",
+  "ar": "مواصفة العينة"
+ },
+ "sample temperature": {
+  "fr": "Température de l'échantillon",
+  "en": "Sample temperature",
+  "ar": "حرارة العينة"
+ },
+ "sample temperature range": {
+  "fr": "Plage de température de l'échantillon",
+  "en": "Sample temperature range",
+  "ar": "مجال حرارة العينة"
+ },
  "sample thickness": {
   "fr": "Épaisseur d'échantillon",
   "en": "Sample thickness",
   "ar": "سماكة العينة"
+ },
+ "sample throughput": {
+  "fr": "Cadence d'échantillons",
+  "en": "Sample throughput",
+  "ar": "معدل معالجة العينات"
  },
  "sample vial": {
   "fr": "Flacon d'échantillon",
@@ -12184,15 +14089,110 @@
   "en": "Sample window size",
   "ar": "أبعاد نافذة العينة"
  },
+ "samples position": {
+  "fr": "Positions d'échantillons",
+  "en": "Sample positions",
+  "ar": "مواضع العينات"
+ },
+ "sampling accuracy": {
+  "fr": "Précision d'échantillonnage",
+  "en": "Sampling accuracy",
+  "ar": "دقة أخذ العينات"
+ },
+ "sampling channels": {
+  "fr": "Canaux d'échantillonnage",
+  "en": "Sampling channels",
+  "ar": "قنوات أخذ العينات"
+ },
+ "sampling depth": {
+  "fr": "Profondeur d'échantillonnage",
+  "en": "Sampling depth",
+  "ar": "عمق أخذ العينات"
+ },
+ "sampling filtration cycle": {
+  "fr": "Cycle de filtration d'échantillonnage",
+  "en": "Sampling filtration cycle",
+  "ar": "دورة ترشيح العينات"
+ },
+ "sampling port airflow velocity": {
+  "fr": "Vitesse d'air à l'orifice de prélèvement",
+  "en": "Sampling port airflow velocity",
+  "ar": "سرعة الهواء عند منفذ أخذ العينات"
+ },
+ "sampling rate": {
+  "fr": "Fréquence d'échantillonnage",
+  "en": "Sampling rate",
+  "ar": "معدل أخذ العينات"
+ },
+ "sampling resolution": {
+  "fr": "Résolution d'échantillonnage",
+  "en": "Sampling resolution",
+  "ar": "استبانة أخذ العينات"
+ },
+ "sampling speed": {
+  "fr": "Vitesse d'échantillonnage",
+  "en": "Sampling speed",
+  "ar": "سرعة أخذ العينات"
+ },
+ "sampling time": {
+  "fr": "Temps d'échantillonnage",
+  "en": "Sampling time",
+  "ar": "زمن أخذ العينات"
+ },
+ "sampling volume (refilling volume)": {
+  "fr": "Volume de prélèvement (volume de remplissage)",
+  "en": "Sampling volume (refilling volume)",
+  "ar": "حجم أخذ العينة (حجم إعادة التعبئة)"
+ },
+ "scale": {
+  "fr": "Échelle",
+  "en": "Scale",
+  "ar": "المقياس"
+ },
+ "scale division value": {
+  "fr": "Valeur de l'échelon",
+  "en": "Scale division value",
+  "ar": "قيمة التدريج"
+ },
+ "scan depth": {
+  "fr": "Profondeur de balayage",
+  "en": "Scan depth",
+  "ar": "عمق المسح"
+ },
+ "scan speed in m mode": {
+  "fr": "Vitesse de balayage en mode M",
+  "en": "Scan speed in M mode",
+  "ar": "سرعة المسح في النمط M"
+ },
+ "scanbody library": {
+  "fr": "Bibliothèque de scanbodies",
+  "en": "Scanbody library",
+  "ar": "مكتبة أجسام المسح"
+ },
  "scanning angle": {
   "fr": "Angle de balayage",
   "en": "Scanning angle",
   "ar": "زاوية المسح"
  },
+ "scanning frequency (h)": {
+  "fr": "Fréquence de balayage (H)",
+  "en": "Scanning frequency (H)",
+  "ar": "تردد المسح (أفقي)"
+ },
+ "scanning frequency (v)": {
+  "fr": "Fréquence de balayage (V)",
+  "en": "Scanning frequency (V)",
+  "ar": "تردد المسح (عمودي)"
+ },
  "scanning mode": {
   "fr": "Mode de balayage",
   "en": "Scanning mode",
   "ar": "نمط المسح"
+ },
+ "scanning range": {
+  "fr": "Plage de balayage",
+  "en": "Scanning range",
+  "ar": "مجال المسح"
  },
  "scanning speed": {
   "fr": "Vitesse de balayage",
@@ -12208,6 +14208,16 @@
   "fr": "Système de balayage",
   "en": "Scanning system",
   "ar": "نظام المسح"
+ },
+ "scope of sugar solution mass fraction (brix)": {
+  "fr": "Étendue de la fraction massique de sucre (Brix)",
+  "en": "Sugar solution mass fraction range (Brix)",
+  "ar": "مجال الكسر الكتلي لمحلول السكر (بريكس)"
+ },
+ "scope of temperature measuring": {
+  "fr": "Étendue de mesure de température",
+  "en": "Temperature measuring range",
+  "ar": "مجال قياس الحرارة"
  },
  "screen": {
   "fr": "Écran",
@@ -12229,15 +14239,50 @@
   "en": "Seal filling fluid",
   "ar": "سائل تعبئة الفاصل"
  },
+ "seal pattern width (mm)": {
+  "fr": "Largeur du motif de scellage (mm)",
+  "en": "Seal pattern width (mm)",
+  "ar": "عرض نقشة اللحام (مم)"
+ },
  "seal plate height": {
   "fr": "Hauteur de la plaque de scellage",
   "en": "Seal plate height",
   "ar": "ارتفاع صفيحة اللحام"
  },
+ "seal width (mm)": {
+  "fr": "Largeur de scellage (mm)",
+  "en": "Seal width (mm)",
+  "ar": "عرض اللحام (مم)"
+ },
+ "sealing area": {
+  "fr": "Surface de scellage",
+  "en": "Sealing area",
+  "ar": "مساحة اللحام"
+ },
+ "sealing interval": {
+  "fr": "Intervalle de scellage",
+  "en": "Sealing interval",
+  "ar": "فاصل اللحام"
+ },
  "sealing margin": {
   "fr": "Marge de scellage",
   "en": "Sealing margin",
   "ar": "هامش اللحام"
+ },
+ "sealing margin (mm)": {
+  "fr": "Marge de scellage (mm)",
+  "en": "Sealing margin (mm)",
+  "ar": "هامش اللحام (مم)"
+ },
+ "sealing pattern width": {
+  "fr": "Largeur du motif de scellage",
+  "en": "Sealing pattern width",
+  "ar": "عرض نقشة اللحام"
+ },
+ "sealing pattern width (mm)": {
+  "fr": "Largeur du motif de scellage (mm)",
+  "en": "Sealing pattern width (mm)",
+  "ar": "عرض نقشة اللحام (مم)"
  },
  "sealing pressure": {
   "fr": "Pression de scellage",
@@ -12259,6 +14304,16 @@
   "en": "Sealing time",
   "ar": "زمن اللحام"
  },
+ "sealing width": {
+  "fr": "Largeur de scellage",
+  "en": "Sealing width",
+  "ar": "عرض اللحام"
+ },
+ "second harmonic": {
+  "fr": "Deuxième harmonique",
+  "en": "Second harmonic",
+  "ar": "التوافقية الثانية"
+ },
  "secondary analysis": {
   "fr": "Analyse secondaire",
   "en": "Secondary analysis",
@@ -12268,6 +14323,11 @@
   "fr": "Écran secondaire",
   "en": "Secondary display screen",
   "ar": "الشاشة الثانوية"
+ },
+ "secondary safety valve opening pressure (mpa)": {
+  "fr": "Pression d'ouverture de la soupape de sécurité secondaire (MPa)",
+  "en": "Secondary safety valve opening pressure (MPa)",
+  "ar": "ضغط فتح صمام الأمان الثانوي (ميغاباسكال)"
  },
  "secours en cas de coupure de courant": {
   "fr": "Secours en cas de coupure de courant",
@@ -12279,6 +14339,26 @@
   "en": "Section",
   "ar": "المقطع"
  },
+ "security": {
+  "fr": "Sécurité",
+  "en": "Security",
+  "ar": "الأمان"
+ },
+ "security alarm": {
+  "fr": "Alarme de sécurité",
+  "en": "Security alarm",
+  "ar": "إنذار الأمان"
+ },
+ "selectable types of filter heads": {
+  "fr": "Types de têtes de filtration disponibles",
+  "en": "Selectable filter head types",
+  "ar": "أنواع رؤوس الترشيح المتاحة"
+ },
+ "self-check function": {
+  "fr": "Fonction d'autotest",
+  "en": "Self-check function",
+  "ar": "وظيفة الفحص الذاتي"
+ },
  "sens de rotation": {
   "fr": "Sens de rotation",
   "en": "Direction of rotation",
@@ -12289,25 +14369,60 @@
   "en": "Sensitivity",
   "ar": "الحساسية"
  },
+ "sensibilité nominale": {
+  "fr": "Sensibilité nominale",
+  "en": "Rated sensitivity",
+  "ar": "الحساسية الاسمية"
+ },
  "sensing elements": {
   "fr": "Éléments sensibles",
   "en": "Sensing elements",
   "ar": "العناصر الحسّاسة"
+ },
+ "sensing fiber": {
+  "fr": "Fibre de mesure",
+  "en": "Sensing fibre",
+  "ar": "ليف الاستشعار"
+ },
+ "sensing range": {
+  "fr": "Plage de détection",
+  "en": "Sensing range",
+  "ar": "مجال الاستشعار"
  },
  "sensitivity": {
   "fr": "Sensibilité",
   "en": "Sensitivity",
   "ar": "الحساسية"
  },
+ "sensitivity / ne0td": {
+  "fr": "Sensibilité / NETD",
+  "en": "Sensitivity / NETD",
+  "ar": "الحساسية / NETD"
+ },
  "sensitivity / netd": {
   "fr": "Sensibilité / NETD",
   "en": "Sensitivity / NETD",
   "ar": "الحساسية / NETD"
  },
+ "sensitivity of receiving": {
+  "fr": "Sensibilité de réception",
+  "en": "Receiving sensitivity",
+  "ar": "حساسية الاستقبال"
+ },
  "sensor": {
   "fr": "Capteur",
   "en": "Sensor",
   "ar": "المستشعر"
+ },
+ "sensor cable length": {
+  "fr": "Longueur du câble de capteur",
+  "en": "Sensor cable length",
+  "ar": "طول كابل المستشعر"
+ },
+ "sensor output": {
+  "fr": "Sortie du capteur",
+  "en": "Sensor output",
+  "ar": "خرج المستشعر"
  },
  "sensor overall dimensions": {
   "fr": "Dimensions hors tout du capteur",
@@ -12318,6 +14433,11 @@
   "fr": "Taille du capteur",
   "en": "Sensor size",
   "ar": "قياس المستشعر"
+ },
+ "sensor technical parameters": {
+  "fr": "Caractéristiques techniques du capteur",
+  "en": "Sensor technical parameters",
+  "ar": "الخصائص التقنية للمستشعر"
  },
  "sensor weight": {
   "fr": "Poids du capteur",
@@ -12334,6 +14454,11 @@
   "en": "Series",
   "ar": "السلسلة"
  },
+ "serpentin": {
+  "fr": "Serpentin",
+  "en": "Coil",
+  "ar": "الملف الحلزوني"
+ },
  "serrure": {
   "fr": "Serrure",
   "en": "Lock",
@@ -12344,30 +14469,90 @@
   "en": "Setting",
   "ar": "الضبط"
  },
+ "setting function": {
+  "fr": "Fonction de réglage",
+  "en": "Setting function",
+  "ar": "وظيفة الضبط"
+ },
+ "setting pressure of the first safety valve (mpa)": {
+  "fr": "Pression de tarage de la 1re soupape de sécurité (MPa)",
+  "en": "Set pressure of the first safety valve (MPa)",
+  "ar": "ضغط ضبط صمام الأمان الأول (ميغاباسكال)"
+ },
+ "setting pressure of the second safety valve (mpa)": {
+  "fr": "Pression de tarage de la 2e soupape de sécurité (MPa)",
+  "en": "Set pressure of the second safety valve (MPa)",
+  "ar": "ضغط ضبط صمام الأمان الثاني (ميغاباسكال)"
+ },
  "seuil de filtration (µm)": {
   "fr": "Seuil de filtration (µm)",
   "en": "Filtration threshold (µm)",
   "ar": "حد الترشيح (ميكرومتر)"
+ },
+ "seuil du préfiltre en fibre de verre (µm)": {
+  "fr": "Seuil du préfiltre en fibre de verre (µm)",
+  "en": "Glass fibre prefilter rating (µm)",
+  "ar": "حد المرشّح الأولي من الألياف الزجاجية (ميكرومتر)"
+ },
+ "sevie plate pore size": {
+  "fr": "Diamètre des pores de la plaque perforée",
+  "en": "Sieve plate pore size",
+  "ar": "قياس مسام صفيحة المنخل"
+ },
+ "shades measurement": {
+  "fr": "Mesure des teintes",
+  "en": "Shade measurement",
+  "ar": "قياس الدرجات اللونية"
+ },
+ "shaft": {
+  "fr": "Arbre",
+  "en": "Shaft",
+  "ar": "العمود"
  },
  "shape": {
   "fr": "Forme",
   "en": "Shape",
   "ar": "الشكل"
  },
+ "sheath color": {
+  "fr": "Couleur de gaine",
+  "en": "Sheath colour",
+  "ar": "لون الغلاف"
+ },
+ "sheath diameter (mm)": {
+  "fr": "Diamètre de gaine (mm)",
+  "en": "Sheath diameter (mm)",
+  "ar": "قطر الغلاف (مم)"
+ },
  "sheath length": {
   "fr": "Longueur de gaine",
   "en": "Sheath length",
   "ar": "طول الغلاف"
+ },
+ "sheath length (mm)": {
+  "fr": "Longueur de gaine (mm)",
+  "en": "Sheath length (mm)",
+  "ar": "طول الغلاف (مم)"
  },
  "sheath materials": {
   "fr": "Matériaux de gaine",
   "en": "Sheath materials",
   "ar": "مواد الغلاف"
  },
+ "sheath od": {
+  "fr": "Ø extérieur de gaine",
+  "en": "Sheath O.D.",
+  "ar": "القطر الخارجي للغلاف"
+ },
  "shelves": {
   "fr": "Étagères",
   "en": "Shelves",
   "ar": "الرفوف"
+ },
+ "shelves (standard) visible light+uva": {
+  "fr": "Étagères (standard) — lumière visible + UVA",
+  "en": "Shelves (standard) — visible light + UVA",
+  "ar": "الرفوف (قياسي) — الضوء المرئي + UVA"
  },
  "shipping size": {
   "fr": "Dimensions d'expédition",
@@ -12399,6 +14584,11 @@
   "en": "Shipping size (W×D×H) (mm) — machine",
   "ar": "أبعاد الشحن (عرض×عمق×ارتفاع) (مم) — الآلة"
  },
+ "shock &vibration": {
+  "fr": "Chocs et vibrations",
+  "en": "Shock & vibration",
+  "ar": "الصدمات والاهتزاز"
+ },
  "shock resilience": {
   "fr": "Tenue aux chocs",
   "en": "Shock resilience",
@@ -12419,15 +14609,65 @@
   "en": "Sieve plate pore size",
   "ar": "قياس مسام صفيحة المنخل"
  },
+ "silk area": {
+  "fr": "Surface sérigraphiée",
+  "en": "Silk-screen area",
+  "ar": "منطقة الطباعة الحريرية"
+ },
  "simulation temperature box (pcs)": {
   "fr": "Boîtes de simulation de température (nombre)",
   "en": "Simulation temperature boxes (pcs)",
   "ar": "علب محاكاة الحرارة (قطعة)"
  },
+ "simultaneous working burette": {
+  "fr": "Burettes fonctionnant simultanément",
+  "en": "Simultaneously working burettes",
+  "ar": "السحاحات العاملة في آن واحد"
+ },
+ "single interval time": {
+  "fr": "Durée d'un intervalle",
+  "en": "Single interval time",
+  "ar": "مدة الفاصل الواحد"
+ },
+ "single layer outer size (wxdxh) (mm)": {
+  "fr": "Dimensions extérieures simple couche (l×P×H) (mm)",
+  "en": "Single-layer outer size (W×D×H) (mm)",
+  "ar": "الأبعاد الخارجية أحادية الطبقة (عرض×عمق×ارتفاع) (مم)"
+ },
+ "single measurement automatic": {
+  "fr": "Mesure unique automatique",
+  "en": "Automatic single measurement",
+  "ar": "القياس المفرد التلقائي"
+ },
+ "single sample processing capacity": {
+  "fr": "Capacité de traitement par échantillon",
+  "en": "Single sample processing capacity",
+  "ar": "سعة معالجة العينة الواحدة"
+ },
+ "single ultrasound time": {
+  "fr": "Durée d'un cycle ultrasonique",
+  "en": "Single ultrasound cycle time",
+  "ar": "مدة دورة الموجات فوق الصوتية الواحدة"
+ },
+ "single vibration times": {
+  "fr": "Nombre de vibrations par cycle",
+  "en": "Vibrations per cycle",
+  "ar": "عدد الاهتزازات لكل دورة"
+ },
  "size": {
   "fr": "Dimensions",
   "en": "Size",
   "ar": "الأبعاد"
+ },
+ "size (dxw)": {
+  "fr": "Dimensions (P×l)",
+  "en": "Size (D×W)",
+  "ar": "الأبعاد (عمق×عرض)"
+ },
+ "size (lxdxh) (mm)": {
+  "fr": "Dimensions (L×P×H) (mm)",
+  "en": "Size (L×D×H) (mm)",
+  "ar": "الأبعاد (طول×عمق×ارتفاع) (مم)"
  },
  "size (lxwxh) (mm)": {
   "fr": "Dimensions (L×l×H) (mm)",
@@ -12438,6 +14678,11 @@
   "fr": "Dimensions (mm)",
   "en": "Size (mm)",
   "ar": "الأبعاد (مم)"
+ },
+ "size (w d h) (mm) — corpse tray": {
+  "fr": "Dimensions (l×P×H) (mm) — plateau porte-corps",
+  "en": "Size (W×D×H) (mm) — body tray",
+  "ar": "الأبعاد (عرض×عمق×ارتفاع) (مم) — صينية الجثمان"
  },
  "size (wxdxh)": {
   "fr": "Dimensions (l×P×H)",
@@ -12454,6 +14699,21 @@
   "en": "Size (W×D×H) (mm) (without the heating block)",
   "ar": "الأبعاد (عرض×عمق×ارتفاع) (مم) (بدون كتلة التسخين)"
  },
+ "size (wxdxh) (mm) machine": {
+  "fr": "Dimensions (l×P×H) (mm) — machine",
+  "en": "Size (W×D×H) (mm) — machine",
+  "ar": "الأبعاد (عرض×عمق×ارتفاع) (مم) — الآلة"
+ },
+ "size of leaf chamber": {
+  "fr": "Dimensions de la chambre foliaire",
+  "en": "Leaf chamber size",
+  "ar": "أبعاد حجرة الورقة"
+ },
+ "size of transparent sleeve": {
+  "fr": "Dimensions du manchon transparent",
+  "en": "Transparent sleeve size",
+  "ar": "أبعاد الكم الشفاف"
+ },
  "sizes (wxdxh)": {
   "fr": "Dimensions (l×P×H)",
   "en": "Sizes (W×D×H)",
@@ -12464,20 +14724,80 @@
   "en": "Sizes (W×D×H) (mm)",
   "ar": "الأبعاد (عرض×عمق×ارتفاع) (مم)"
  },
+ "slap spacing": {
+  "fr": "Écartement de frappe",
+  "en": "Slap spacing",
+  "ar": "تباعد الطَّرق"
+ },
+ "slap speed": {
+  "fr": "Vitesse de frappe",
+  "en": "Slap speed",
+  "ar": "سرعة الطَّرق"
+ },
+ "slap time": {
+  "fr": "Durée de frappe",
+  "en": "Slap time",
+  "ar": "زمن الطَّرق"
+ },
  "sliding height": {
   "fr": "Hauteur de coulissement",
   "en": "Sliding height",
   "ar": "ارتفاع الانزلاق"
+ },
+ "slip ring material": {
+  "fr": "Matériau de la bague collectrice",
+  "en": "Slip ring material",
+  "ar": "مادة حلقة الانزلاق"
  },
  "slot depth (mm)": {
   "fr": "Profondeur de la fente (mm)",
   "en": "Slot depth (mm)",
   "ar": "عمق الشق (مم)"
  },
+ "smart cleaning function": {
+  "fr": "Fonction de nettoyage intelligent",
+  "en": "Smart cleaning function",
+  "ar": "وظيفة التنظيف الذكي"
+ },
+ "smart patrol": {
+  "fr": "Ronde intelligente",
+  "en": "Smart patrol",
+  "ar": "الدورية الذكية"
+ },
+ "smartcap": {
+  "fr": "SmartCap",
+  "en": "SmartCap",
+  "ar": "SmartCap"
+ },
+ "snubber type": {
+  "fr": "Type d'amortisseur",
+  "en": "Snubber type",
+  "ar": "نوع المخمّد"
+ },
+ "software": {
+  "fr": "Logiciel",
+  "en": "Software",
+  "ar": "البرنامج"
+ },
+ "soil compaction": {
+  "fr": "Compaction du sol",
+  "en": "Soil compaction",
+  "ar": "اندماج التربة"
+ },
  "soil moisture": {
   "fr": "Humidité du sol",
   "en": "Soil moisture",
   "ar": "رطوبة التربة"
+ },
+ "soil moisture technical parameter (snt-7i)": {
+  "fr": "Caractéristiques techniques d'humidité du sol (SNT-7I)",
+  "en": "Soil moisture technical parameters (SNT-7I)",
+  "ar": "الخصائص التقنية لرطوبة التربة (SNT-7I)"
+ },
+ "soil nutrient technical parameter": {
+  "fr": "Caractéristiques techniques des nutriments du sol",
+  "en": "Soil nutrient technical parameters",
+  "ar": "الخصائص التقنية لمغذيات التربة"
  },
  "soil ph": {
   "fr": "pH du sol",
@@ -12494,6 +14814,16 @@
   "en": "Soil temperature",
   "ar": "حرارة التربة"
  },
+ "solar panel n.w. / g.w. (kg)": {
+  "fr": "Panneau solaire — poids net / brut (kg)",
+  "en": "Solar panel N.W. / G.W. (kg)",
+  "ar": "اللوح الشمسي — الوزن الصافي / القائم (كغ)"
+ },
+ "solar panel shipping size (wxdxh) (mm)": {
+  "fr": "Panneau solaire — dimensions d'expédition (l×P×H) (mm)",
+  "en": "Solar panel shipping size (W×D×H) (mm)",
+  "ar": "اللوح الشمسي — أبعاد الشحن (عرض×عمق×ارتفاع) (مم)"
+ },
  "solid mode": {
   "fr": "Mode solide",
   "en": "Solid mode",
@@ -12504,10 +14834,30 @@
   "en": "Solid type",
   "ar": "نوع الصلب"
  },
+ "solides non gras (snf)": {
+  "fr": "Solides non gras (SNF)",
+  "en": "Solids-not-fat (SNF)",
+  "ar": "المواد الصلبة غير الدهنية (SNF)"
+ },
+ "solvent cup capacity": {
+  "fr": "Capacité du godet à solvant",
+  "en": "Solvent cup capacity",
+  "ar": "سعة كأس المذيب"
+ },
+ "solvent cup volume": {
+  "fr": "Volume du godet à solvant",
+  "en": "Solvent cup volume",
+  "ar": "حجم كأس المذيب"
+ },
  "solvent recovery": {
   "fr": "Récupération de solvant",
   "en": "Solvent recovery",
   "ar": "استرجاع المذيب"
+ },
+ "solvent reflux control": {
+  "fr": "Contrôle du reflux de solvant",
+  "en": "Solvent reflux control",
+  "ar": "ضبط ارتجاع المذيب"
  },
  "sonde": {
   "fr": "Sonde",
@@ -12519,6 +14869,11 @@
   "en": "Plain probe",
   "ar": "المجس الأملس"
  },
+ "sonde standard": {
+  "fr": "Sonde standard",
+  "en": "Standard probe",
+  "ar": "المجس القياسي"
+ },
  "sortie": {
   "fr": "Sortie",
   "en": "Output",
@@ -12529,8 +14884,18 @@
   "en": "Analogue output",
   "ar": "مخرج تناظري"
  },
+ "sortie de communication": {
+  "fr": "Sortie de communication",
+  "en": "Communication output",
+  "ar": "خرج الاتصال"
+ },
  "sortie de données": {
   "fr": "Sortie de données",
+  "en": "Data output",
+  "ar": "خرج البيانات"
+ },
+ "sortie données": {
+  "fr": "Sortie données",
   "en": "Data output",
   "ar": "خرج البيانات"
  },
@@ -12569,15 +14934,35 @@
   "en": "Excitation source",
   "ar": "مصدر الإثارة"
  },
+ "source ir": {
+  "fr": "Source IR",
+  "en": "IR source",
+  "ar": "مصدر الأشعة تحت الحمراء"
+ },
+ "source led": {
+  "fr": "Source LED",
+  "en": "LED source",
+  "ar": "مصدر LED"
+ },
  "source lumineuse": {
   "fr": "Source lumineuse",
   "en": "Light source",
   "ar": "مصدر الضوء"
  },
+ "source lumineuse (led)": {
+  "fr": "Source lumineuse (LED)",
+  "en": "Light source (LED)",
+  "ar": "مصدر الضوء (LED)"
+ },
  "sources lumineuses": {
   "fr": "Sources lumineuses",
   "en": "Light sources",
   "ar": "مصادر الضوء"
+ },
+ "spatial resolution": {
+  "fr": "Résolution spatiale",
+  "en": "Spatial resolution",
+  "ar": "الاستبانة المكانية"
  },
  "spatial resolution / ifov": {
   "fr": "Résolution spatiale / IFOV",
@@ -12604,10 +14989,25 @@
   "en": "Specification",
   "ar": "المواصفة"
  },
+ "specimen stirring motor": {
+  "fr": "Moteur d'agitation de l'éprouvette",
+  "en": "Specimen stirring motor",
+  "ar": "محرك تحريك العينة"
+ },
+ "speckle suppression": {
+  "fr": "Réduction du speckle",
+  "en": "Speckle suppression",
+  "ar": "قمع البقعية"
+ },
  "spectral band": {
   "fr": "Bande spectrale",
   "en": "Spectral band",
   "ar": "النطاق الطيفي"
+ },
+ "spectrum": {
+  "fr": "Spectre",
+  "en": "Spectrum",
+  "ar": "الطيف"
  },
  "speed (r / min)": {
   "fr": "Vitesse (tr/min)",
@@ -12624,20 +15024,70 @@
   "en": "Speed adjustment range",
   "ar": "مجال ضبط السرعة"
  },
+ "speed of electric chunk": {
+  "fr": "Vitesse du mandrin électrique",
+  "en": "Electric chuck speed",
+  "ar": "سرعة الظرف الكهربائي"
+ },
+ "speed of testing head": {
+  "fr": "Vitesse de la tête d'essai",
+  "en": "Testing head speed",
+  "ar": "سرعة رأس الاختبار"
+ },
  "speed range": {
   "fr": "Plage de vitesse",
   "en": "Speed range",
   "ar": "مجال السرعة"
+ },
+ "spin court": {
+  "fr": "Spin court",
+  "en": "Short spin",
+  "ar": "الدوران القصير"
  },
  "spindles": {
   "fr": "Mobiles",
   "en": "Spindles",
   "ar": "المغازل"
  },
+ "spot suppression": {
+  "fr": "Suppression des taches",
+  "en": "Spot suppression",
+  "ar": "قمع البقع"
+ },
+ "spray et spacing (mm)": {
+  "fr": "Écartement des buses de pulvérisation (mm)",
+  "en": "Spray nozzle spacing (mm)",
+  "ar": "تباعد فوهات الرش (مم)"
+ },
+ "spray method": {
+  "fr": "Mode de pulvérisation",
+  "en": "Spray method",
+  "ar": "طريقة الرش"
+ },
+ "spray system": {
+  "fr": "Système de pulvérisation",
+  "en": "Spray system",
+  "ar": "نظام الرش"
+ },
+ "spray tower": {
+  "fr": "Tour de pulvérisation",
+  "en": "Spray tower",
+  "ar": "برج الرش"
+ },
  "spring": {
   "fr": "Ressort",
   "en": "Spring",
   "ar": "الزنبرك"
+ },
+ "spécification": {
+  "fr": "Spécification",
+  "en": "Specification",
+  "ar": "المواصفة"
+ },
+ "stabilisation": {
+  "fr": "Stabilisation",
+  "en": "Stabilisation",
+  "ar": "التثبيت"
  },
  "stability": {
   "fr": "Stabilité",
@@ -12654,6 +15104,16 @@
   "en": "Stability",
   "ar": "الاستقرار"
  },
+ "stabilité (37 °c)": {
+  "fr": "Stabilité (37 °C)",
+  "en": "Stability (37 °C)",
+  "ar": "الاستقرار (37 °م)"
+ },
+ "stabilité de l'instrument": {
+  "fr": "Stabilité de l'instrument",
+  "en": "Instrument stability",
+  "ar": "استقرار الجهاز"
+ },
  "stabilité de la ligne de base": {
   "fr": "Stabilité de la ligne de base",
   "en": "Baseline stability",
@@ -12663,6 +15123,36 @@
   "fr": "Stabilité de température",
   "en": "Temperature stability",
   "ar": "استقرار الحرارة"
+ },
+ "stabilité du débit": {
+  "fr": "Stabilité du débit",
+  "en": "Flow stability",
+  "ar": "استقرار التدفق"
+ },
+ "stabilité à long terme": {
+  "fr": "Stabilité à long terme",
+  "en": "Long-term stability",
+  "ar": "الاستقرار على المدى الطويل"
+ },
+ "stage": {
+  "fr": "Platine",
+  "en": "Stage",
+  "ar": "المنصة"
+ },
+ "stainless steel basket (mm)": {
+  "fr": "Panier inox (mm)",
+  "en": "Stainless steel basket (mm)",
+  "ar": "سلة من الفولاذ المقاوم للصدأ (مم)"
+ },
+ "stainless steel net rack": {
+  "fr": "Grille inox",
+  "en": "Stainless steel wire rack",
+  "ar": "رف شبكي من الفولاذ المقاوم للصدأ"
+ },
+ "stainless steel shelve": {
+  "fr": "Étagère inox",
+  "en": "Stainless steel shelf",
+  "ar": "رف من الفولاذ المقاوم للصدأ"
  },
  "standard": {
   "fr": "Norme",
@@ -12679,30 +15169,150 @@
   "en": "Standard accessory",
   "ar": "الملحق القياسي"
  },
+ "standard amplitude-change pole 0 (mm)": {
+  "fr": "Sonotrode amplificatrice standard Ø (mm)",
+  "en": "Standard amplitude-change horn Ø (mm)",
+  "ar": "قضيب تغيير المطال القياسي Ø (مم)"
+ },
  "standard configuration": {
   "fr": "Configuration standard",
   "en": "Standard configuration",
   "ar": "التكوين القياسي"
+ },
+ "standard configurations": {
+  "fr": "Configurations standard",
+  "en": "Standard configurations",
+  "ar": "التكوينات القياسية"
+ },
+ "standard gel strength bottle": {
+  "fr": "Flacon étalon de force de gel",
+  "en": "Standard gel strength bottle",
+  "ar": "قارورة معيار قوة الهلام"
+ },
+ "standard needle": {
+  "fr": "Aiguille standard",
+  "en": "Standard needle",
+  "ar": "الإبرة القياسية"
+ },
+ "standard pipe size": {
+  "fr": "Dimension de tube standard",
+  "en": "Standard pipe size",
+  "ar": "قياس الأنبوب القياسي"
  },
  "standard rotor": {
   "fr": "Rotor standard",
   "en": "Standard rotor",
   "ar": "الدوّار القياسي"
  },
+ "standard test piece size": {
+  "fr": "Dimensions de l'éprouvette normalisée",
+  "en": "Standard test piece size",
+  "ar": "أبعاد العينة القياسية"
+ },
+ "standard tip": {
+  "fr": "Embout standard",
+  "en": "Standard tip",
+  "ar": "الطرف القياسي"
+ },
+ "standard version : cable float level switch": {
+  "fr": "Version standard : interrupteur de niveau à flotteur câblé",
+  "en": "Standard version: cable float level switch",
+  "ar": "الإصدار القياسي: مفتاح مستوى بعوّامة كابلية"
+ },
+ "standard version : miniature level switch": {
+  "fr": "Version standard : interrupteur de niveau miniature",
+  "en": "Standard version: miniature level switch",
+  "ar": "الإصدار القياسي: مفتاح مستوى مصغّر"
+ },
  "standard version : top mounted": {
   "fr": "Version standard : montage en partie haute",
   "en": "Standard version: top mounted",
   "ar": "الإصدار القياسي: التركيب العلوي"
+ },
+ "standard version: top mounted": {
+  "fr": "Version standard : montage en partie haute",
+  "en": "Standard version: top mounted",
+  "ar": "الإصدار القياسي: التركيب العلوي"
+ },
+ "standard weight": {
+  "fr": "Masse étalon",
+  "en": "Standard weight",
+  "ar": "الكتلة المعيارية"
+ },
+ "standard work pressure (mpa)": {
+  "fr": "Pression de service standard (MPa)",
+  "en": "Standard working pressure (MPa)",
+  "ar": "ضغط التشغيل القياسي (ميغاباسكال)"
+ },
+ "standard working pressure (mpa)": {
+  "fr": "Pression de service standard (MPa)",
+  "en": "Standard working pressure (MPa)",
+  "ar": "ضغط التشغيل القياسي (ميغاباسكال)"
  },
  "standby current": {
   "fr": "Courant de veille",
   "en": "Standby current",
   "ar": "تيار الاستعداد"
  },
+ "standby time": {
+  "fr": "Autonomie en veille",
+  "en": "Standby time",
+  "ar": "مدة الاستعداد"
+ },
+ "startup mode": {
+  "fr": "Mode de démarrage",
+  "en": "Startup mode",
+  "ar": "نمط بدء التشغيل"
+ },
+ "static daily evaporation rate of liquid nitrogen (% / d)": {
+  "fr": "Taux d'évaporation statique journalier de l'azote liquide (%/j)",
+  "en": "Static daily liquid nitrogen evaporation rate (%/day)",
+  "ar": "معدل التبخر اليومي الساكن للنتروجين السائل (٪/يوم)"
+ },
+ "static liquid nitrogen storage days": {
+  "fr": "Autonomie de stockage statique d'azote liquide (jours)",
+  "en": "Static liquid nitrogen storage days",
+  "ar": "أيام التخزين الساكن للنتروجين السائل"
+ },
+ "static liquid nitrogen storage period (d)": {
+  "fr": "Durée de stockage statique d'azote liquide (j)",
+  "en": "Static liquid nitrogen storage period (d)",
+  "ar": "مدة التخزين الساكن للنتروجين السائل (ي)"
+ },
+ "static liquid nitrogen storage period / d": {
+  "fr": "Durée de stockage statique d'azote liquide (j)",
+  "en": "Static liquid nitrogen storage period (d)",
+  "ar": "مدة التخزين الساكن للنتروجين السائل (ي)"
+ },
  "static pressure limits": {
   "fr": "Limites de pression statique",
   "en": "Static pressure limits",
   "ar": "حدود الضغط الساكن"
+ },
+ "stations de réactif": {
+  "fr": "Stations de réactif",
+  "en": "Reagent stations",
+  "ar": "محطات الكواشف"
+ },
+ "stator diameter (mm)": {
+  "fr": "Diamètre du stator (mm)",
+  "en": "Stator diameter (mm)",
+  "ar": "قطر العضو الثابت (مم)"
+ },
+ "status light indicator": {
+  "fr": "Voyant d'état",
+  "en": "Status light indicator",
+  "ar": "مصباح مؤشر الحالة"
+ },
+ "steam boiler over temperature alarm system": {
+  "fr": "Système d'alarme de surchauffe du générateur de vapeur",
+  "en": "Steam boiler over-temperature alarm system",
+  "ar": "نظام إنذار ارتفاع حرارة مولّد البخار"
+ },
+ "steam boiler over-temperature alarm system": {
+  "fr": "Système d'alarme de surchauffe du générateur de vapeur",
+  "en": "Steam boiler over-temperature alarm system",
+  "ar": "نظام إنذار ارتفاع حرارة مولّد البخار"
  },
  "steam boiler with dry burning-resistant protection": {
   "fr": "Générateur de vapeur avec protection contre la marche à sec",
@@ -12718,6 +15328,16 @@
   "fr": "Surveillance et alarme de pression vapeur",
   "en": "Steam pressure monitoring and alarm",
   "ar": "مراقبة وإنذار ضغط البخار"
+ },
+ "steel bar grinding motor": {
+  "fr": "Moteur de broyage à barres d'acier",
+  "en": "Steel bar grinding motor",
+  "ar": "محرك الطحن بقضبان فولاذية"
+ },
+ "stem & needle": {
+  "fr": "Tige et aiguille",
+  "en": "Stem & needle",
+  "ar": "الساق والإبرة"
  },
  "stem material": {
   "fr": "Matériau de la tige",
@@ -12744,6 +15364,16 @@
   "en": "Stem type",
   "ar": "نوع الساق"
  },
+ "sterilization method": {
+  "fr": "Méthode de stérilisation",
+  "en": "Sterilisation method",
+  "ar": "طريقة التعقيم"
+ },
+ "stick-type mercury thermometers": {
+  "fr": "Thermomètres à mercure type bâton",
+  "en": "Stick-type mercury thermometers",
+  "ar": "موازين حرارة زئبقية من نوع العصا"
+ },
  "stir mode": {
   "fr": "Mode d'agitation",
   "en": "Stir mode",
@@ -12753,6 +15383,11 @@
   "fr": "Agitation",
   "en": "Stirring",
   "ar": "التحريك"
+ },
+ "stirring drive mode": {
+  "fr": "Mode d'entraînement de l'agitation",
+  "en": "Stirring drive mode",
+  "ar": "نمط إدارة التحريك"
  },
  "stirring method": {
   "fr": "Méthode d'agitation",
@@ -12768,6 +15403,11 @@
   "fr": "Vitesse d'agitation",
   "en": "Stirring speed",
   "ar": "سرعة التحريك"
+ },
+ "stirring speed range": {
+  "fr": "Plage de vitesse d'agitation",
+  "en": "Stirring speed range",
+  "ar": "مجال سرعة التحريك"
  },
  "stockage": {
   "fr": "Stockage",
@@ -12789,10 +15429,25 @@
   "en": "Storage capacity",
   "ar": "القدرة على التخزين"
  },
+ "storage area and number of layers": {
+  "fr": "Surface de stockage et nombre de niveaux",
+  "en": "Storage area and number of layers",
+  "ar": "مساحة التخزين وعدد الطبقات"
+ },
  "storage capacity": {
   "fr": "Capacité de stockage",
   "en": "Storage capacity",
   "ar": "سعة التخزين"
+ },
+ "storage capacity (2 inches boxe)": {
+  "fr": "Capacité de stockage (boîtes 2 pouces)",
+  "en": "Storage capacity (2-inch boxes)",
+  "ar": "سعة التخزين (علب 2 بوصة)"
+ },
+ "storage environment": {
+  "fr": "Environnement de stockage",
+  "en": "Storage environment",
+  "ar": "بيئة التخزين"
  },
  "storage interval": {
   "fr": "Intervalle d'enregistrement",
@@ -12833,6 +15488,16 @@
   "fr": "Structure",
   "en": "Structure",
   "ar": "البنية"
+ },
+ "stérilisant": {
+  "fr": "Stérilisant",
+  "en": "Sterilant",
+  "ar": "المعقّم"
+ },
+ "stérilité": {
+  "fr": "Stérilité",
+  "en": "Sterility",
+  "ar": "العقامة"
  },
  "super resolution": {
   "fr": "Super-résolution",
@@ -12964,6 +15629,11 @@
   "en": "Drying — time",
   "ar": "التجفيف — المدة"
  },
+ "séchage — méthode": {
+  "fr": "Séchage — méthode",
+  "en": "Drying — method",
+  "ar": "التجفيف — الطريقة"
+ },
  "séchage — système": {
   "fr": "Séchage — système",
   "en": "Drying — system",
@@ -12978,6 +15648,11 @@
   "fr": "Sécurité",
   "en": "Safety",
   "ar": "السلامة"
+ },
+ "sélection d'énergie": {
+  "fr": "Sélection d'énergie",
+  "en": "Energy selection",
+  "ar": "اختيار الطاقة"
  },
  "séparateur de faisceau": {
   "fr": "Séparateur de faisceau",
@@ -12998,6 +15673,21 @@
   "fr": "Série G",
   "en": "G series",
   "ar": "السلسلة G"
+ },
+ "série hk20-400 (15 jours)": {
+  "fr": "Série HK20-400 (15 jours)",
+  "en": "HK20-400 series (15 days)",
+  "ar": "السلسلة HK20-400 (15 يومًا)"
+ },
+ "série hk6-400 (30 jours)": {
+  "fr": "Série HK6-400 (30 jours)",
+  "en": "HK6-400 series (30 days)",
+  "ar": "السلسلة HK6-400 (30 يومًا)"
+ },
+ "série wms-h": {
+  "fr": "Série WMS-H",
+  "en": "WMS-H series",
+  "ar": "السلسلة WMS-H"
  },
  "tablet measurement diameter": {
   "fr": "Diamètre de comprimé mesurable",
@@ -14823,6 +17513,11 @@
   "fr": "Dimensions du conditionnement",
   "en": "Packaging size",
   "ar": "أبعاد التغليف"
+ },
+ "‌shipping size (lxwxh)": {
+  "fr": "Dimensions d'expédition (L×l×H)",
+  "en": "Shipping size (L×W×H)",
+  "ar": "أبعاد الشحن (طول×عرض×ارتفاع)"
  },
  "“ t ” - bar handle": {
   "fr": "Poignée en T",
