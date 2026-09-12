@@ -1,4 +1,24 @@
 {
+ "+ colonne uf d'élimination des pyrogènes": {
+  "fr": "+ Colonne UF d'élimination des pyrogènes",
+  "en": "+ UF column for pyrogen removal",
+  "ar": "+ عمود UF لإزالة المولّدات الحرارية"
+ },
+ "+ lampe uv germicide": {
+  "fr": "+ Lampe UV germicide",
+  "en": "+ Germicidal UV lamp",
+  "ar": "+ مصباح UV مبيد للجراثيم"
+ },
+ "+ lampe uv stérilisatrice et colonne anti-pyrogènes": {
+  "fr": "+ Lampe UV stérilisatrice et colonne anti-pyrogènes",
+  "en": "+ Sterilising UV lamp and anti-pyrogen column",
+  "ar": "+ مصباح UV معقّم وعمود مضاد للمولّدات الحرارية"
+ },
+ "aaluminium laqué blanc, chiffres et traits noirs": {
+  "fr": "Aluminium laqué blanc, chiffres et traits noirs",
+  "en": "White lacquered aluminium, black figures and lines",
+  "ar": "ألمنيوم مطلي بالأبيض، أرقام وخطوط سوداء"
+ },
  "abbe à diaphragme iris et filtre": {
   "fr": "Abbe à diaphragme iris et filtre",
   "en": "Abbe with iris diaphragm and filter",
@@ -14,6 +34,16 @@
   "en": "Absorbance",
   "ar": "الامتصاصية"
  },
+ "ac à conversion de fréquence": {
+  "fr": "AC à conversion de fréquence",
+  "en": "AC with frequency conversion",
+  "ar": "تيار متناوب بتحويل التردد"
+ },
+ "ac, régulation électronique continue": {
+  "fr": "AC, régulation électronique continue",
+  "en": "AC, continuous electronic control",
+  "ar": "تيار متناوب، ضبط إلكتروني مستمر"
+ },
  "according to eu directives about electromagnetic immunity": {
   "fr": "Conforme aux directives UE sur l'immunité électromagnétique",
   "en": "According to EU directives on electromagnetic immunity",
@@ -23,6 +53,11 @@
   "fr": "Précision",
   "en": "Accuracy",
   "ar": "الدقة"
+ },
+ "acier": {
+  "fr": "Acier",
+  "en": "Steel",
+  "ar": "الفولاذ"
  },
  "acier au carbone thermolaqué": {
   "fr": "Acier au carbone thermolaqué",
@@ -54,15 +89,30 @@
   "en": "Acrylic",
   "ar": "الأكريليك"
  },
+ "adjustable": {
+  "fr": "Réglable",
+  "en": "Adjustable",
+  "ar": "قابل للضبط"
+ },
  "adjustable connection": {
   "fr": "Raccord orientable",
   "en": "Adjustable connection",
   "ar": "وصلة قابلة للضبط"
  },
+ "adjustable, external": {
+  "fr": "Réglable, externe",
+  "en": "Adjustable, external",
+  "ar": "قابل للضبط، خارجي"
+ },
  "adulte, enfant": {
   "fr": "Adulte, enfant",
   "en": "Adult, child",
   "ar": "بالغ، طفل"
+ },
+ "air": {
+  "fr": "Air",
+  "en": "Air",
+  "ar": "الهواء"
  },
  "air forcé": {
   "fr": "Air forcé",
@@ -78,6 +128,11 @@
   "fr": "Alcool",
   "en": "Alcohol",
   "ar": "الكحول"
+ },
+ "alliage d'aluminium haute dureté": {
+  "fr": "Alliage d'aluminium haute dureté",
+  "en": "High-hardness aluminium alloy",
+  "ar": "سبيكة ألمنيوم عالية الصلادة"
  },
  "aluminium laqué blanc, chiffres et traits noirs": {
   "fr": "Aluminium laqué blanc, chiffres et traits noirs",
@@ -134,6 +189,21 @@
   "en": "Angle",
   "ar": "زاوي"
  },
+ "anti corrosion pump head": {
+  "fr": "Tête de pompe anticorrosion",
+  "en": "Anti-corrosion pump head",
+  "ar": "رأس مضخة مقاوم للتآكل"
+ },
+ "anticorrosion": {
+  "fr": "Anticorrosion",
+  "en": "Anti-corrosion",
+  "ar": "مقاوم للتآكل"
+ },
+ "aptt, pt, fib, tt": {
+  "fr": "TCA, TP, FIB, TT",
+  "en": "APTT, PT, FIB, TT",
+  "ar": "APTT, PT, FIB, TT"
+ },
  "archimedes principle": {
   "fr": "Principe d'Archimède",
   "en": "Archimedes principle",
@@ -148,6 +218,16 @@
   "fr": "Méthode d'essai des solides selon le principe d'Archimède",
   "en": "Archimedes principle general solid test method",
   "ar": "طريقة اختبار المواد الصلبة وفق مبدأ أرخميدس"
+ },
+ "argon": {
+  "fr": "Argon",
+  "en": "Argon",
+  "ar": "الأرغون"
+ },
+ "arrière du boîtier": {
+  "fr": "Arrière du boîtier",
+  "en": "Rear of housing",
+  "ar": "خلف العلبة"
  },
  "articulated drawtube": {
   "fr": "Tube articulé",
@@ -179,6 +259,11 @@
   "en": "As per the selection table",
   "ar": "وفق جدول الاختيار"
  },
+ "atomiseur en verre": {
+  "fr": "Atomiseur en verre",
+  "en": "Glass atomiser",
+  "ar": "مرذاذ زجاجي"
+ },
  "auto": {
   "fr": "Auto",
   "en": "Auto",
@@ -204,10 +289,35 @@
   "en": "Automatic",
   "ar": "تلقائي"
  },
+ "automatic cleaning": {
+  "fr": "Nettoyage automatique",
+  "en": "Automatic cleaning",
+  "ar": "تنظيف تلقائي"
+ },
+ "automatic deduction": {
+  "fr": "Déduction automatique",
+  "en": "Automatic deduction",
+  "ar": "خصم تلقائي"
+ },
+ "automatic defrost or intermittent defrost": {
+  "fr": "Dégivrage automatique ou intermittent",
+  "en": "Automatic or intermittent defrost",
+  "ar": "إزالة صقيع تلقائية أو متقطعة"
+ },
  "automatic defrosting": {
   "fr": "Dégivrage automatique",
   "en": "Automatic defrosting",
   "ar": "إزالة الصقيع التلقائية"
+ },
+ "automatic voltage regulation": {
+  "fr": "Régulation automatique de tension",
+  "en": "Automatic voltage regulation",
+  "ar": "تنظيم تلقائي للجهد"
+ },
+ "automatic, manual, accurate": {
+  "fr": "Automatique, manuel, précis",
+  "en": "Automatic, manual, accurate",
+  "ar": "تلقائي، يدوي، دقيق"
  },
  "automatique": {
   "fr": "Automatique",
@@ -234,15 +344,40 @@
   "en": "Back wire condenser",
   "ar": "مكثّف سلكي خلفي"
  },
+ "balayage temps réel résolu en temps": {
+  "fr": "Balayage temps réel résolu en temps",
+  "en": "Time-resolved real-time scanning",
+  "ar": "مسح آني محلول زمنيًا"
+ },
  "barrette de photodiodes silicium": {
   "fr": "Barrette de photodiodes silicium",
   "en": "Silicon photodiode array",
   "ar": "مصفوفة ثنائيات ضوئية سيليكونية"
  },
+ "base": {
+  "fr": "Base",
+  "en": "Base",
+  "ar": "الأساس"
+ },
+ "basique": {
+  "fr": "Basique",
+  "en": "Basic",
+  "ar": "أساسي"
+ },
+ "basique ; statistique ; continu ; qc": {
+  "fr": "Basique ; statistique ; continu ; CQ",
+  "en": "Basic; statistical; continuous; QC",
+  "ar": "أساسي؛ إحصائي؛ مستمر؛ ضبط الجودة"
+ },
  "beaker": {
   "fr": "Bécher",
   "en": "Beaker",
   "ar": "كأس"
+ },
+ "big": {
+  "fr": "Grand",
+  "en": "Big",
+  "ar": "كبير"
  },
  "big size": {
   "fr": "Grand format",
@@ -264,6 +399,16 @@
   "en": "Magnetic beads",
   "ar": "حبيبات مغناطيسية"
  },
+ "binocular": {
+  "fr": "Binoculaire",
+  "en": "Binocular",
+  "ar": "ثنائي العينية"
+ },
+ "biologie, médecine, industrie, électronique": {
+  "fr": "Biologie, médecine, industrie, électronique",
+  "en": "Biology, medicine, industry, electronics",
+  "ar": "الأحياء، الطب، الصناعة، الإلكترونيات"
+ },
  "biphasique": {
   "fr": "Biphasique",
   "en": "Biphasic",
@@ -273,6 +418,11 @@
   "fr": "Biphasique exponentielle tronquée",
   "en": "Truncated exponential biphasic",
   "ar": "ثنائي الطور أسّي مبتور"
+ },
+ "black": {
+  "fr": "Noir",
+  "en": "Black",
+  "ar": "أسود"
  },
  "bleu, vert, jaune": {
   "fr": "Bleu, vert, jaune",
@@ -304,15 +454,55 @@
   "en": "Boss head",
   "ar": "رأس التثبيت"
  },
+ "bottle brush": {
+  "fr": "Goupillon",
+  "en": "Bottle brush",
+  "ar": "فرشاة القوارير"
+ },
+ "bottom led light module": {
+  "fr": "Module d'éclairage LED inférieur",
+  "en": "Bottom LED light module",
+  "ar": "وحدة إضاءة LED سفلية"
+ },
  "bras articulé à base magnétique, type ii": {
   "fr": "Bras articulé à base magnétique, type II",
   "en": "Articulated arm with magnetic base, type II",
   "ar": "ذراع مفصلي بقاعدة مغناطيسية، النوع II"
  },
+ "bread hardness": {
+  "fr": "Fermeté du pain",
+  "en": "Bread hardness",
+  "ar": "صلابة الخبز"
+ },
+ "bromine": {
+  "fr": "Brome",
+  "en": "Bromine",
+  "ar": "البروم"
+ },
+ "brushless (sans balais)": {
+  "fr": "Brushless (sans balais)",
+  "en": "Brushless",
+  "ar": "بلا فرش"
+ },
+ "brûleur titane tout métal": {
+  "fr": "Brûleur titane tout métal",
+  "en": "All-metal titanium burner",
+  "ar": "موقد تيتانيوم معدني بالكامل"
+ },
+ "build in pump": {
+  "fr": "Pompe intégrée",
+  "en": "Built-in pump",
+  "ar": "مضخة مدمجة"
+ },
  "built-in air pump": {
   "fr": "Pompe à air intégrée",
   "en": "Built-in air pump",
   "ar": "مضخة هواء مدمجة"
+ },
+ "built-in micro thermal printer": {
+  "fr": "Micro-imprimante thermique intégrée",
+  "en": "Built-in micro thermal printer",
+  "ar": "طابعة حرارية صغيرة مدمجة"
  },
  "c-t à réseau holographique blazé": {
   "fr": "C-T à réseau holographique blazé",
@@ -323,6 +513,16 @@
   "fr": "Cadran digital (Bluetooth)",
   "en": "Digital dial (Bluetooth)",
   "ar": "قرص رقمي (بلوتوث)"
+ },
+ "calcination, incinération, grillage": {
+  "fr": "Calcination, incinération, grillage",
+  "en": "Calcination, incineration, roasting",
+  "ar": "التكليس، الترميد، التحميص"
+ },
+ "camera": {
+  "fr": "Caméra",
+  "en": "Camera",
+  "ar": "الكاميرا"
  },
  "caoutchouc silicone": {
   "fr": "Caoutchouc silicone",
@@ -339,15 +539,65 @@
   "en": "Capacity",
   "ar": "السعة"
  },
+ "capillary or hot table": {
+  "fr": "Capillaire ou platine chauffante",
+  "en": "Capillary or hot stage",
+  "ar": "أنبوب شعري أو منصة ساخنة"
+ },
+ "capsule": {
+  "fr": "Capsule",
+  "en": "Capsule",
+  "ar": "كبسولة"
+ },
+ "carbon": {
+  "fr": "Carbone",
+  "en": "Carbon",
+  "ar": "الكربون"
+ },
  "carbon steel or stainless steel": {
   "fr": "Acier au carbone ou acier inoxydable",
   "en": "Carbon steel or stainless steel",
   "ar": "فولاذ كربوني أو فولاذ مقاوم للصدأ"
  },
+ "carbon steel, plastic powder coating": {
+  "fr": "Acier au carbone, revêtement poudre plastique",
+  "en": "Carbon steel, plastic powder coating",
+  "ar": "فولاذ كربوني، طلاء مسحوقي بلاستيكي"
+ },
  "cc sans balais": {
   "fr": "CC sans balais",
   "en": "Brushless DC",
   "ar": "تيار مستمر بلا فرش"
+ },
+ "ce, rina , lloyds register, atex, ur": {
+  "fr": "CE, RINA, Lloyd's Register, ATEX, UR",
+  "en": "CE, RINA, Lloyd's Register, ATEX, UR",
+  "ar": "CE, RINA, Lloyd's Register, ATEX, UR"
+ },
+ "cellule à réflexion diffuse": {
+  "fr": "Cellule à réflexion diffuse",
+  "en": "Diffuse reflectance cell",
+  "ar": "خلية الانعكاس المنتشر"
+ },
+ "celsius, fahrenheit, kelvin": {
+  "fr": "Celsius, Fahrenheit, Kelvin",
+  "en": "Celsius, Fahrenheit, Kelvin",
+  "ar": "سلسيوس، فهرنهايت، كلفن"
+ },
+ "ceramic coated aluminum": {
+  "fr": "Aluminium à revêtement céramique",
+  "en": "Ceramic-coated aluminium",
+  "ar": "ألمنيوم مطلي بالسيراميك"
+ },
+ "ceramic coated ss": {
+  "fr": "Inox à revêtement céramique",
+  "en": "Ceramic-coated stainless steel",
+  "ar": "فولاذ مقاوم للصدأ مطلي بالسيراميك"
+ },
+ "ceramic fibre insulated compensating cable": {
+  "fr": "Câble de compensation isolé fibre céramique",
+  "en": "Ceramic fibre insulated compensating cable",
+  "ar": "كابل تعويض معزول بالألياف الخزفية"
  },
  "ceramic magnet": {
   "fr": "Aimant céramique",
@@ -374,10 +624,50 @@
   "en": "Heating",
   "ar": "التسخين"
  },
+ "chauffage et refroidissement": {
+  "fr": "Chauffage et refroidissement",
+  "en": "Heating and cooling",
+  "ar": "التسخين والتبريد"
+ },
+ "chauffage, agitation": {
+  "fr": "Chauffage, agitation",
+  "en": "Heating, stirring",
+  "ar": "التسخين والتحريك"
+ },
+ "chauffage, refroidissement, agitation": {
+  "fr": "Chauffage, refroidissement, agitation",
+  "en": "Heating, cooling, stirring",
+  "ar": "التسخين والتبريد والتحريك"
+ },
  "chinois et anglais": {
   "fr": "Chinois et anglais",
   "en": "Chinese and English",
   "ar": "الصينية والإنجليزية"
+ },
+ "cie lab": {
+  "fr": "CIE Lab",
+  "en": "CIE Lab",
+  "ar": "CIE Lab"
+ },
+ "cie lab, xyz, lch, cie rgb, cie luv": {
+  "fr": "CIE LAB, XYZ, LCh, CIE RGB, CIE LUV",
+  "en": "CIE LAB, XYZ, LCh, CIE RGB, CIE LUV",
+  "ar": "CIE LAB, XYZ, LCh, CIE RGB, CIE LUV"
+ },
+ "cie lab, xyz, yxy, lch, cie luv": {
+  "fr": "CIE LAB, XYZ, Yxy, LCh, CIE LUV",
+  "en": "CIE LAB, XYZ, Yxy, LCh, CIE LUV",
+  "ar": "CIE LAB, XYZ, Yxy, LCh, CIE LUV"
+ },
+ "cie lab, xyz, yxy, lch, cie luv, lab & wi & yi": {
+  "fr": "CIE LAB, XYZ, Yxy, LCh, CIE LUV, LAB & WI & YI",
+  "en": "CIE LAB, XYZ, Yxy, LCh, CIE LUV, LAB & WI & YI",
+  "ar": "CIE LAB, XYZ, Yxy, LCh, CIE LUV, LAB & WI & YI"
+ },
+ "cie lxaxbxcxhx, cie lxaxbx": {
+  "fr": "CIE L*a*b*C*h*, CIE L*a*b*",
+  "en": "CIE L*a*b*C*h*, CIE L*a*b*",
+  "ar": "CIE L*a*b*C*h*, CIE L*a*b*"
  },
  "cie lxaxbxcxhx, cie lxaxbx, cie xyz": {
   "fr": "CIE L*a*b*C*h*, CIE L*a*b*, CIE XYZ",
@@ -388,6 +678,21 @@
   "fr": "Cinétique, end-point, deux points, absorbance",
   "en": "Kinetic, end-point, two-point, absorbance",
   "ar": "حركي، نقطة نهائية، نقطتان، امتصاصية"
+ },
+ "circle, square, polygon": {
+  "fr": "Cercle, carré, polygone",
+  "en": "Circle, square, polygon",
+  "ar": "دائرة، مربع، مضلع"
+ },
+ "circuit fermé": {
+  "fr": "Circuit fermé",
+  "en": "Closed circuit",
+  "ar": "دارة مغلقة"
+ },
+ "circulation interne, adsorption des gaz nocifs": {
+  "fr": "Circulation interne, adsorption des gaz nocifs",
+  "en": "Internal circulation, harmful gas adsorption",
+  "ar": "دوران داخلي، امتزاز الغازات الضارة"
  },
  "cn membrane, grid": {
   "fr": "Membrane nitrocellulose, quadrillée",
@@ -409,6 +714,11 @@
   "en": "CN membrane, plain with absorbent pad",
   "ar": "غشاء نيتروسليلوز، أملس مع وسادة ماصة"
  },
+ "coagulation (magnetic beads) , immu": {
+  "fr": "Coagulation (billes magnétiques), immunologie",
+  "en": "Coagulation (magnetic beads), immunoassay",
+  "ar": "التخثر (حبيبات مغناطيسية)، المقايسة المناعية"
+ },
  "code": {
   "fr": "Code",
   "en": "Code",
@@ -419,10 +729,35 @@
   "en": "Coiled bimetal strip",
   "ar": "شريط ثنائي المعدن ملفوف"
  },
+ "cold plate (temperature control mo": {
+  "fr": "Plaque froide (module de régulation de température)",
+  "en": "Cold plate (temperature control module)",
+  "ar": "صفيحة باردة (وحدة ضبط الحرارة)"
+ },
+ "cold rolled steel electrostatic spraying exterior": {
+  "fr": "Extérieur en acier laminé à froid, peinture électrostatique",
+  "en": "Cold-rolled steel exterior with electrostatic spray coating",
+  "ar": "هيكل خارجي من الفولاذ المدرفل على البارد بطلاء كهروستاتيكي"
+ },
  "cold-rolled steel plate": {
   "fr": "Tôle d'acier laminée à froid",
   "en": "Cold-rolled steel plate",
   "ar": "صفيحة فولاذ مدرفلة على البارد"
+ },
+ "color touch screen": {
+  "fr": "Écran tactile couleur",
+  "en": "Colour touch screen",
+  "ar": "شاشة لمس ملونة"
+ },
+ "communication cable, professional software": {
+  "fr": "Câble de communication, logiciel professionnel",
+  "en": "Communication cable, professional software",
+  "ar": "كابل اتصال، برنامج احترافي"
+ },
+ "commutation en un clic entre mesure automatique et manuelle": {
+  "fr": "Commutation en un clic entre mesure automatique et manuelle",
+  "en": "One-click switching between automatic and manual measurement",
+  "ar": "التبديل بنقرة واحدة بين القياس التلقائي واليدوي"
  },
  "comparateur digital": {
   "fr": "Comparateur digital",
@@ -439,10 +774,25 @@
   "en": "Compensation-free binocular",
   "ar": "ثنائي العينية بدون تعويض"
  },
+ "compressed full radiation video recording (.irv) supported": {
+  "fr": "Enregistrement vidéo radiométrique intégral compressé (.irv) pris en charge",
+  "en": "Compressed full-radiometric video recording (.irv) supported",
+  "ar": "يدعم تسجيل فيديو إشعاعي كامل مضغوط (.irv)"
+ },
  "compressive strength": {
   "fr": "Résistance à la compression",
   "en": "Compressive strength",
   "ar": "مقاومة الانضغاط"
+ },
+ "computer control": {
+  "fr": "Pilotage par ordinateur",
+  "en": "Computer control",
+  "ar": "تحكم بالحاسوب"
+ },
+ "conductivity method, temperature compensation": {
+  "fr": "Méthode conductimétrique, compensation de température",
+  "en": "Conductivity method, temperature compensation",
+  "ar": "طريقة الناقلية، تعويض الحرارة"
  },
  "conical": {
   "fr": "Conique",
@@ -453,6 +803,16 @@
   "fr": "Pointe métallique conique",
   "en": "Conical metal tip",
   "ar": "طرف معدني مخروطي"
+ },
+ "continuous compression mode": {
+  "fr": "Mode compression continue",
+  "en": "Continuous compression mode",
+  "ar": "نمط الضغط المستمر"
+ },
+ "continuous or intermittent spray optional": {
+  "fr": "Pulvérisation continue ou intermittente, au choix",
+  "en": "Continuous or intermittent spray, selectable",
+  "ar": "رش مستمر أو متقطع، حسب الاختيار"
  },
  "control method": {
   "fr": "Mode de régulation",
@@ -479,6 +839,16 @@
   "en": "Finite and infinity corrected",
   "ar": "مصحّح للمسافة المحدودة واللانهاية"
  },
+ "corrélation de photons (dls) , diffusion électrophorétique": {
+  "fr": "Corrélation de photons (DLS), diffusion électrophorétique",
+  "en": "Photon correlation (DLS), electrophoretic light scattering",
+  "ar": "ترابط الفوتونات (DLS)، التشتت الكهرفوري"
+ },
+ "coulter principle": {
+  "fr": "Principe de Coulter",
+  "en": "Coulter principle",
+  "ar": "مبدأ كولتر"
+ },
  "coupure auto (surtempérature, ouverture porte)": {
   "fr": "Coupure auto (surtempérature, ouverture porte)",
   "en": "Auto cut-off (over-temperature, door opening)",
@@ -489,15 +859,40 @@
   "en": "Power failure, door opening, sleeve detection",
   "ar": "انقطاع التيار، فتح الباب، كشف الكم"
  },
+ "cuivre chromé": {
+  "fr": "Cuivre chromé",
+  "en": "Chrome-plated copper",
+  "ar": "نحاس مطلي بالكروم"
+ },
+ "customizable operation permissions": {
+  "fr": "Droits d'exploitation personnalisables",
+  "en": "Customisable operation permissions",
+  "ar": "صلاحيات تشغيل قابلة للتخصيص"
+ },
  "customizable replacement": {
   "fr": "Remplacement personnalisable",
   "en": "Customisable replacement",
   "ar": "استبدال قابل للتخصيص"
  },
+ "cut tobacco filling": {
+  "fr": "Pouvoir de remplissage du tabac coupé",
+  "en": "Cut tobacco filling power",
+  "ar": "قدرة ملء التبغ المقطّع"
+ },
+ "czerny-turner": {
+  "fr": "Czerny-Turner",
+  "en": "Czerny-Turner",
+  "ar": "تشيرني-تيرنر"
+ },
  "data logger;": {
   "fr": "Enregistreur de données",
   "en": "Data logger",
   "ar": "مسجّل بيانات"
+ },
+ "date time, date format, time format, etc": {
+  "fr": "Date et heure, format de date, format d'heure, etc.",
+  "en": "Date and time, date format, time format, etc.",
+  "ar": "التاريخ والوقت، صيغة التاريخ، صيغة الوقت، إلخ"
  },
  "de paillasse": {
   "fr": "De paillasse",
@@ -509,10 +904,20 @@
   "en": "Standard",
   "ar": "قياسي"
  },
+ "default horizontal gluing": {
+  "fr": "Collage horizontal par défaut",
+  "en": "Default horizontal gluing",
+  "ar": "لصق أفقي افتراضي"
+ },
  "density": {
   "fr": "Densité",
   "en": "Density",
   "ar": "الكثافة"
+ },
+ "density value": {
+  "fr": "Valeur de densité",
+  "en": "Density value",
+  "ar": "قيمة الكثافة"
  },
  "density value, percentage of main material": {
   "fr": "Valeur de densité, pourcentage du matériau principal",
@@ -523,6 +928,11 @@
   "fr": "Description",
   "en": "Description",
   "ar": "وصف"
+ },
+ "deuterium": {
+  "fr": "Deutérium",
+  "en": "Deuterium",
+  "ar": "الديوتيريوم"
  },
  "diaphragm": {
   "fr": "Membrane",
@@ -549,6 +959,21 @@
   "en": "Dielectric oil [optional]",
   "ar": "زيت عازل [اختياري]"
  },
+ "diffraction laser": {
+  "fr": "Diffraction laser",
+  "en": "Laser diffraction",
+  "ar": "الحيود الليزري"
+ },
+ "diffusion laser triangulaire (cytométrie en flux)": {
+  "fr": "Diffusion laser triangulaire (cytométrie en flux)",
+  "en": "Triangular laser scattering (flow cytometry)",
+  "ar": "تشتت ليزري مثلثي (قياس التدفق الخلوي)"
+ },
+ "diffusion mie et fraunhofer": {
+  "fr": "Diffusion Mie et Fraunhofer",
+  "en": "Mie and Fraunhofer scattering",
+  "ar": "تشتت مي وفراونهوفر"
+ },
  "digital": {
   "fr": "Numérique",
   "en": "Digital",
@@ -558,6 +983,11 @@
   "fr": "Affichage numérique",
   "en": "Digital display",
   "ar": "عرض رقمي"
+ },
+ "digital led": {
+  "fr": "LED numérique",
+  "en": "Digital LED",
+  "ar": "LED رقمي"
  },
  "digital temperature display": {
   "fr": "Affichage numérique de température",
@@ -574,6 +1004,11 @@
   "en": "Digital tube",
   "ar": "أنبوب رقمي"
  },
+ "din, iec": {
+  "fr": "DIN, CEI",
+  "en": "DIN, IEC",
+  "ar": "DIN, IEC"
+ },
  "direct bottom": {
   "fr": "Raccord direct en partie basse",
   "en": "Direct bottom",
@@ -584,10 +1019,25 @@
   "en": "Direct bottom connection",
   "ar": "وصلة سفلية مباشرة"
  },
+ "direct charging, desktop charging": {
+  "fr": "Charge directe, charge sur socle",
+  "en": "Direct charging, desktop charging",
+  "ar": "شحن مباشر، شحن على قاعدة"
+ },
+ "direct reading": {
+  "fr": "Lecture directe",
+  "en": "Direct reading",
+  "ar": "قراءة مباشرة"
+ },
  "direct, bottom connection": {
   "fr": "Direct, raccord en partie basse",
   "en": "Direct, bottom connection",
   "ar": "مباشر، وصلة سفلية"
+ },
+ "display temperature": {
+  "fr": "Température affichée",
+  "en": "Displayed temperature",
+  "ar": "الحرارة المعروضة"
  },
  "distilled testing": {
   "fr": "Essai sur eau distillée",
@@ -644,6 +1094,11 @@
   "en": "Double PTFE and fluorocarbon rubber",
   "ar": "PTFE مزدوج ومطاط فلوري"
  },
+ "double sides matrices": {
+  "fr": "Matrices double face",
+  "en": "Double-sided matrices",
+  "ar": "قوالب مزدوجة الوجه"
+ },
  "double stage": {
   "fr": "Double étage",
   "en": "Double stage",
@@ -653,6 +1108,11 @@
   "fr": "Double verrou, survitesse, surtempérature, auto-diagnostic",
   "en": "Double lock, overspeed, over-temperature, self-diagnosis",
   "ar": "قفل مزدوج، فرط السرعة، فرط الحرارة، تشخيص ذاتي"
+ },
+ "dough extensibility": {
+  "fr": "Extensibilité de la pâte",
+  "en": "Dough extensibility",
+  "ar": "قابلية استطالة العجينة"
  },
  "dry": {
   "fr": "Sec",
@@ -668,6 +1128,16 @@
   "fr": "Air propre, exempt de poussière, d'huile et d'humidité",
   "en": "Dust, oil & moisture free clean air",
   "ar": "هواء نظيف خالٍ من الغبار والزيت والرطوبة"
+ },
+ "dynamic and static (optional)": {
+  "fr": "Dynamique et statique (en option)",
+  "en": "Dynamic and static (optional)",
+  "ar": "ديناميكي وساكن (اختياري)"
+ },
+ "défibrillation externe manuelle asynchrone": {
+  "fr": "Défibrillation externe manuelle asynchrone",
+  "en": "Asynchronous manual external defibrillation",
+  "ar": "إزالة رجفان خارجية يدوية غير متزامنة"
  },
  "détection infrarouge (ir)": {
   "fr": "Détection infrarouge (IR)",
@@ -709,10 +1179,20 @@
   "en": "Electro-galvanised steel with antimicrobial powder coating",
   "ar": "فولاذ مغلفن كهربائيًا بطلاء مسحوقي مضاد للميكروبات"
  },
+ "electromagnetic type": {
+  "fr": "Type électromagnétique",
+  "en": "Electromagnetic type",
+  "ar": "النوع الكهرومغناطيسي"
+ },
  "electronic": {
   "fr": "Électronique",
   "en": "Electronic",
   "ar": "إلكتروني"
+ },
+ "electronic automatic c": {
+  "fr": "Commande électronique automatique",
+  "en": "Electronic automatic control",
+  "ar": "تحكم إلكتروني تلقائي"
  },
  "electronic ignition": {
   "fr": "Allumage électronique",
@@ -734,6 +1214,16 @@
   "en": "Fully automatic, real time",
   "ar": "تلقائي بالكامل، آني"
  },
+ "entraînement mécanique": {
+  "fr": "Entraînement mécanique",
+  "en": "Mechanical drive",
+  "ar": "إدارة ميكانيكية"
+ },
+ "entraînement par treuil et avance à roue à cliquet": {
+  "fr": "Entraînement par treuil et avance à roue à cliquet",
+  "en": "Winch drive with ratchet wheel feed",
+  "ar": "إدارة برافعة وتغذية بعجلة سقّاطة"
+ },
  "enveloppe d'air": {
   "fr": "Enveloppe d'air",
   "en": "Air jacket",
@@ -743,6 +1233,11 @@
   "fr": "Équipé",
   "en": "Equipped",
   "ar": "مجهّز"
+ },
+ "es series": {
+  "fr": "Série ES",
+  "en": "ES series",
+  "ar": "السلسلة ES"
  },
  "escamotable dans le trajet optique": {
   "fr": "Escamotable dans le trajet optique",
@@ -764,6 +1259,11 @@
   "en": "Ethernet, USB, Wi-Fi",
   "ar": "إيثرنت، USB، Wi-Fi"
  },
+ "extended ingaas": {
+  "fr": "InGaAs étendu",
+  "en": "Extended InGaAs",
+  "ar": "InGaAs ممتد"
+ },
  "extended mid-infrared rang": {
   "fr": "Domaine infrarouge moyen étendu",
   "en": "Extended mid-infrared range",
@@ -773,6 +1273,11 @@
   "fr": "Externe (réglable sur site)",
   "en": "External (field adjustable)",
   "ar": "خارجي (قابل للضبط ميدانيًا)"
+ },
+ "external, field adjustable": {
+  "fr": "Externe, réglable sur site",
+  "en": "External, field adjustable",
+  "ar": "خارجي، قابل للضبط ميدانيًا"
  },
  "externe": {
   "fr": "Externe",
@@ -788,6 +1293,21 @@
   "fr": "Format hors norme",
   "en": "Extra super large",
   "ar": "كبير استثنائي"
+ },
+ "fc, dérivation, alarme, énergie délivrée": {
+  "fr": "FC, dérivation, alarme, énergie délivrée",
+  "en": "HR, lead, alarm, delivered energy",
+  "ar": "معدل النبض، الاشتقاق، الإنذار، الطاقة الموصّلة"
+ },
+ "fc, pni, spo₂, température, énergie délivrée": {
+  "fr": "FC, PNI, SpO₂, température, énergie délivrée",
+  "en": "HR, NIBP, SpO₂, temperature, delivered energy",
+  "ar": "معدل النبض، الضغط غير الباضع، SpO₂، الحرارة، الطاقة الموصّلة"
+ },
+ "fermé (système clos)": {
+  "fr": "Fermé (système clos)",
+  "en": "Closed (sealed system)",
+  "ar": "مغلق (نظام محكم)"
  },
  "fermé, avec porte vitrée motorisée": {
   "fr": "Fermé, avec porte vitrée motorisée",
@@ -813,6 +1333,11 @@
   "fr": "Filtre HEPA et lampe UV",
   "en": "HEPA filter and UV lamp",
   "ar": "مرشّح HEPA ومصباح UV"
+ },
+ "filtres optiques interférentiels": {
+  "fr": "Filtres optiques interférentiels",
+  "en": "Interference optical filters",
+  "ar": "مرشّحات بصرية تداخلية"
  },
  "fini": {
   "fr": "Fini",
@@ -844,6 +1369,16 @@
   "en": "Fixed, aluminium, black powder coated",
   "ar": "ثابت، ألمنيوم، طلاء مسحوقي أسود"
  },
+ "flacon de recyclage + charbon actif": {
+  "fr": "Flacon de recyclage + charbon actif",
+  "en": "Recycling bottle + activated carbon",
+  "ar": "قارورة إعادة التدوير + فحم منشّط"
+ },
+ "flame proof head": {
+  "fr": "Tête antidéflagrante",
+  "en": "Flameproof head",
+  "ar": "رأس مضاد للهب"
+ },
  "flamme et four": {
   "fr": "Flamme et four",
   "en": "Flame and furnace",
@@ -868,6 +1403,16 @@
   "fr": "Flottant ; circuit de protection contre les effets du défibrillateur",
   "en": "Floating; protection circuit against defibrillator effect",
   "ar": "عائم؛ دارة حماية من أثر مزيل الرجفان"
+ },
+ "fluorescent lamp": {
+  "fr": "Lampe fluorescente",
+  "en": "Fluorescent lamp",
+  "ar": "مصباح فلوري"
+ },
+ "focus free": {
+  "fr": "Sans mise au point",
+  "en": "Focus free",
+  "ar": "بدون تركيز"
  },
  "fonctionnement continu": {
   "fr": "Fonctionnement continu",
@@ -924,6 +1469,11 @@
   "en": "Fully automatic",
   "ar": "تلقائي بالكامل"
  },
+ "fully enclosed tube digestion": {
+  "fr": "Minéralisation en tube entièrement clos",
+  "en": "Fully enclosed tube digestion",
+  "ar": "هضم في أنبوب مغلق بالكامل"
+ },
  "function": {
   "fr": "Fonction",
   "en": "Function",
@@ -934,10 +1484,25 @@
   "en": "Function introduction",
   "ar": "تعريف بالوظائف"
  },
+ "g ¼\" mâle": {
+  "fr": "G ¼\" mâle",
+  "en": "G ¼\" male",
+  "ar": "G ¼ بوصة ذكر"
+ },
+ "g ¼\" ou g ½\" selon ø": {
+  "fr": "G ¼\" ou G ½\" selon Ø",
+  "en": "G ¼\" or G ½\" depending on Ø",
+  "ar": "G ¼ أو G ½ بوصة حسب القطر"
+ },
  "g ⅛\", g ¼\" ou g ½\", selon ø": {
   "fr": "G ⅛\", G ¼\" ou G ½\", selon Ø",
   "en": "G ⅛\", G ¼\" or G ½\", depending on Ø",
   "ar": "G ⅛ أو G ¼ أو G ½ بوصة، حسب القطر"
+ },
+ "gas source": {
+  "fr": "Source de gaz",
+  "en": "Gas source",
+  "ar": "مصدر الغاز"
  },
  "general": {
   "fr": "Général",
@@ -948,6 +1513,11 @@
   "fr": "Verre",
   "en": "Glass",
   "ar": "الزجاج"
+ },
+ "glass ceramic": {
+  "fr": "Vitrocéramique",
+  "en": "Glass ceramic",
+  "ar": "سيراميك زجاجي"
  },
  "glass ceramic top plate": {
   "fr": "Plateau supérieur en vitrocéramique",
@@ -964,6 +1534,11 @@
   "en": "Glycerine",
   "ar": "الغليسرين"
  },
+ "glycol propanediol battery fluid clearance": {
+  "fr": "Glycol, propanediol, liquide de batterie, liquide de rinçage",
+  "en": "Glycol, propanediol, battery fluid, clearance fluid",
+  "ar": "غليكول، بروبانديول، سائل البطارية، سائل الشطف"
+ },
  "glycérine": {
   "fr": "Glycérine",
   "en": "Glycerine",
@@ -979,6 +1554,11 @@
   "en": "Large screen",
   "ar": "شاشة كبيرة"
  },
+ "grande face stable et petite face concave-convexe": {
+  "fr": "Grande face stable et petite face concave-convexe",
+  "en": "Large stable face and small concave-convex face",
+  "ar": "وجه كبير ثابت ووجه صغير مقعّر-محدّب"
+ },
  "gray": {
   "fr": "Gris",
   "en": "Grey",
@@ -988,6 +1568,11 @@
   "fr": "Vert",
   "en": "Green",
   "ar": "أخضر"
+ },
+ "grey": {
+  "fr": "Gris",
+  "en": "Grey",
+  "ar": "رمادي"
  },
  "ground joint": {
   "fr": "Rodage",
@@ -999,15 +1584,45 @@
   "en": "Grounded, ungrounded",
   "ar": "مؤرّض، غير مؤرّض"
  },
+ "hair combing": {
+  "fr": "Peignage des cheveux",
+  "en": "Hair combing",
+  "ar": "تمشيط الشعر"
+ },
+ "hamilton sterilizable gel-filled ph electrode": {
+  "fr": "Électrode pH Hamilton stérilisable à gel",
+  "en": "Hamilton sterilisable gel-filled pH electrode",
+  "ar": "قطب pH من Hamilton قابل للتعقيم ومملوء بالهلام"
+ },
+ "hamilton sterilizable polarographic do electrode": {
+  "fr": "Électrode O₂ dissous Hamilton polarographique stérilisable",
+  "en": "Hamilton sterilisable polarographic DO electrode",
+  "ar": "قطب الأكسجين المذاب من Hamilton بولاروغرافي قابل للتعقيم"
+ },
  "hard seated stem": {
   "fr": "Tige à siège dur",
   "en": "Hard seated stem",
   "ar": "ساق بمقعد صلب"
  },
+ "haute intensité, longue durée de vie, refroidie par air": {
+  "fr": "Haute intensité, longue durée de vie, refroidie par air",
+  "en": "High intensity, long life, air cooled",
+  "ar": "شدة عالية، عمر طويل، مبرّد بالهواء"
+ },
+ "haute performance, réfrigérant sans cfc": {
+  "fr": "Haute performance, réfrigérant sans CFC",
+  "en": "High performance, CFC-free refrigerant",
+  "ar": "أداء عالٍ، سائل تبريد خالٍ من CFC"
+ },
  "hc (cfc free)": {
   "fr": "HC (sans CFC)",
   "en": "HC (CFC free)",
   "ar": "هيدروكربون (خالٍ من CFC)"
+ },
+ "helium": {
+  "fr": "Hélium",
+  "en": "Helium",
+  "ar": "الهيليوم"
  },
  "helium (he)": {
   "fr": "Hélium (He)",
@@ -1019,10 +1634,35 @@
   "en": "High-performance polyurethane foam",
   "ar": "رغوة بولي يوريثان عالية الأداء"
  },
+ "high precision hour, minute, second time controller": {
+  "fr": "Temporisateur haute précision heures, minutes, secondes",
+  "en": "High-precision hour, minute, second timer",
+  "ar": "مؤقّت عالي الدقة بالساعات والدقائق والثواني"
+ },
  "high sensitivity photoelectric det": {
   "fr": "Détecteur photoélectrique haute sensibilité",
   "en": "High-sensitivity photoelectric detector",
   "ar": "كاشف كهرضوئي عالي الحساسية"
+ },
+ "high temperature combustion": {
+  "fr": "Combustion à haute température",
+  "en": "High-temperature combustion",
+  "ar": "احتراق بحرارة مرتفعة"
+ },
+ "high temperture catalytic combustion": {
+  "fr": "Combustion catalytique à haute température",
+  "en": "High-temperature catalytic combustion",
+  "ar": "احتراق حفزي بحرارة مرتفعة"
+ },
+ "high-efficiency electric heating plate": {
+  "fr": "Plaque chauffante électrique haut rendement",
+  "en": "High-efficiency electric heating plate",
+  "ar": "صفيحة تسخين كهربائية عالية الكفاءة"
+ },
+ "high-precision analog pressure gauge": {
+  "fr": "Manomètre analogique de haute précision",
+  "en": "High-precision analogue pressure gauge",
+  "ar": "مقياس ضغط تناظري عالي الدقة"
  },
  "hips": {
   "fr": "HIPS",
@@ -1039,6 +1679,31 @@
   "en": "Horizontal",
   "ar": "أفقي"
  },
+ "horizontal, vide pulsé": {
+  "fr": "Horizontal, vide pulsé",
+  "en": "Horizontal, pulsed vacuum",
+  "ar": "أفقي، خلاء نبضي"
+ },
+ "horizontal, vide pulsé, porte coulissante": {
+  "fr": "Horizontal, vide pulsé, porte coulissante",
+  "en": "Horizontal, pulsed vacuum, sliding door",
+  "ar": "أفقي، خلاء نبضي، باب منزلق"
+ },
+ "horizontal, vide pulsé, porte motorisée": {
+  "fr": "Horizontal, vide pulsé, porte motorisée",
+  "en": "Horizontal, pulsed vacuum, motorised door",
+  "ar": "أفقي، خلاء نبضي، باب آلي"
+ },
+ "housing material": {
+  "fr": "Matériau du boîtier",
+  "en": "Housing material",
+  "ar": "مادة العلبة"
+ },
+ "huayi": {
+  "fr": "Huayi",
+  "en": "Huayi",
+  "ar": "Huayi"
+ },
  "huile agréée fda": {
   "fr": "Huile agréée FDA",
   "en": "FDA-approved oil",
@@ -1054,10 +1719,40 @@
   "en": "Wet and dry",
   "ar": "رطب وجاف"
  },
+ "hydrogen": {
+  "fr": "Hydrogène",
+  "en": "Hydrogen",
+  "ar": "الهيدروجين"
+ },
+ "image alarm": {
+  "fr": "Alarme sur image",
+  "en": "Image alarm",
+  "ar": "إنذار على الصورة"
+ },
  "imported": {
   "fr": "Importé",
   "en": "Imported",
   "ar": "مستورد"
+ },
+ "importé haute performance, réfrigérant sans fluor": {
+  "fr": "Importé haute performance, réfrigérant sans fluor",
+  "en": "Imported high performance, fluorine-free refrigerant",
+  "ar": "مستورد عالي الأداء، سائل تبريد خالٍ من الفلور"
+ },
+ "inbuilt burette": {
+  "fr": "Burette intégrée",
+  "en": "Built-in burette",
+  "ar": "سحاحة مدمجة"
+ },
+ "inclus": {
+  "fr": "Inclus",
+  "en": "Included",
+  "ar": "مشمول"
+ },
+ "induction pressure counting system": {
+  "fr": "Système de comptage par détection de pression",
+  "en": "Pressure-sensing counting system",
+  "ar": "نظام عد بكشف الضغط"
  },
  "indépendant": {
   "fr": "Indépendant",
@@ -1068,6 +1763,11 @@
   "fr": "Bulbe de sonde rempli de gaz inerte",
   "en": "Inert gas filled sensor bulb",
   "ar": "بصيلة المستشعر مملوءة بغاز خامل"
+ },
+ "inert peek material pump head": {
+  "fr": "Tête de pompe en PEEK inerte",
+  "en": "Inert PEEK pump head",
+  "ar": "رأس مضخة من PEEK الخامل"
  },
  "infini": {
   "fr": "Infini",
@@ -1084,6 +1784,16 @@
   "en": "InGaAs",
   "ar": "InGaAs"
  },
+ "ingaas extended": {
+  "fr": "InGaAs étendu",
+  "en": "Extended InGaAs",
+  "ar": "InGaAs ممتد"
+ },
+ "ingaas refroidi (hamamatsu, japon)": {
+  "fr": "InGaAs refroidi (Hamamatsu, Japon)",
+  "en": "Cooled InGaAs (Hamamatsu, Japan)",
+  "ar": "InGaAs مبرّد (هاماماتسو، اليابان)"
+ },
  "injection d'air chaud par gicleur": {
   "fr": "Injection d'air chaud par gicleur",
   "en": "Hot air injection through nozzle",
@@ -1094,15 +1804,50 @@
   "en": "Inner tube suited to outer tube",
   "ar": "الأنبوب الداخلي ملائم للأنبوب الخارجي"
  },
+ "inox": {
+  "fr": "Inox",
+  "en": "Stainless steel",
+  "ar": "الفولاذ المقاوم للصدأ"
+ },
+ "instrument, measuring head, micro-printer": {
+  "fr": "Appareil, tête de mesure, micro-imprimante",
+  "en": "Instrument, measuring head, micro printer",
+  "ar": "الجهاز، رأس القياس، طابعة صغيرة"
+ },
+ "instrument, micro printer": {
+  "fr": "Appareil, micro-imprimante",
+  "en": "Instrument, micro printer",
+  "ar": "الجهاز، طابعة صغيرة"
+ },
  "integrated laser pilot light": {
   "fr": "Visée laser intégrée",
   "en": "Integrated laser pilot light",
   "ar": "ضوء ليزر إرشادي مدمج"
  },
+ "intelligent pid control": {
+  "fr": "Régulation PID intelligente",
+  "en": "Intelligent PID control",
+  "ar": "ضبط PID ذكي"
+ },
  "internal": {
   "fr": "Interne",
   "en": "Internal",
   "ar": "داخلي"
+ },
+ "internal electric humidification tray": {
+  "fr": "Bac d'humidification électrique interne",
+  "en": "Internal electric humidification tray",
+  "ar": "صينية ترطيب كهربائية داخلية"
+ },
+ "kbr revêtu germanium multicouche": {
+  "fr": "KBr revêtu germanium multicouche",
+  "en": "KBr with multilayer germanium coating",
+  "ar": "KBr مطلي بالجرمانيوم متعدد الطبقات"
+ },
+ "kripton": {
+  "fr": "Krypton",
+  "en": "Krypton",
+  "ar": "الكريبتون"
  },
  "laiton": {
   "fr": "Laiton",
@@ -1124,6 +1869,11 @@
   "en": "Deuterium and tungsten lamps (imported)",
   "ar": "مصباح ديوتيريوم ومصباح تنغستن (مستوردان)"
  },
+ "lampe deutérium hamamatsu ; lampe halogène-tungstène osram": {
+  "fr": "Lampe deutérium Hamamatsu ; lampe halogène-tungstène Osram",
+  "en": "Hamamatsu deuterium lamp; Osram tungsten-halogen lamp",
+  "ar": "مصباح ديوتيريوم هاماماتسو؛ مصباح هالوجين-تنغستن أوسرام"
+ },
  "lampe deutérium hamamatsu ; lampe tungstène osram": {
   "fr": "Lampe deutérium Hamamatsu ; lampe tungstène Osram",
   "en": "Hamamatsu deuterium lamp; Osram tungsten lamp",
@@ -1134,20 +1884,50 @@
   "en": "Hamamatsu deuterium lamp, Osram tungsten lamp",
   "ar": "مصباح ديوتيريوم هاماماتسو، مصباح تنغستن أوسرام"
  },
+ "lampe quartz-halogène": {
+  "fr": "Lampe quartz-halogène",
+  "en": "Quartz halogen lamp",
+  "ar": "مصباح هالوجين كوارتزي"
+ },
+ "lampe tungstène et lampe deutérium": {
+  "fr": "Lampe tungstène et lampe deutérium",
+  "en": "Tungsten and deuterium lamps",
+  "ar": "مصباح تنغستن ومصباح ديوتيريوم"
+ },
  "lampe uv": {
   "fr": "Lampe UV",
   "en": "UV lamp",
   "ar": "مصباح UV"
+ },
+ "lampe xénon pulsée et led": {
+  "fr": "Lampe xénon pulsée et LED",
+  "en": "Pulsed xenon lamp and LED",
+  "ar": "مصباح زينون نبضي وLED"
  },
  "large": {
   "fr": "Grand",
   "en": "Large",
   "ar": "كبير"
  },
+ "laser diffraction principle": {
+  "fr": "Principe de diffraction laser",
+  "en": "Laser diffraction principle",
+  "ar": "مبدأ الحيود الليزري"
+ },
  "laser pilot light (pl)": {
   "fr": "Visée laser (PL)",
   "en": "Laser pilot light (PL)",
   "ar": "ضوء ليزر إرشادي (PL)"
+ },
+ "laser range finding supported": {
+  "fr": "Télémétrie laser prise en charge",
+  "en": "Laser rangefinding supported",
+  "ar": "يدعم قياس المسافة بالليزر"
+ },
+ "laser welding for diaphragm": {
+  "fr": "Membrane soudée au laser",
+  "en": "Laser welding for diaphragm",
+  "ar": "لحام الغشاء بالليزر"
  },
  "latex rubber": {
   "fr": "Caoutchouc latex",
@@ -1164,6 +1944,11 @@
   "en": "LBS positioning",
   "ar": "تحديد الموقع LBS"
  },
+ "lcd (vitesse, température, temps)": {
+  "fr": "LCD (vitesse, température, temps)",
+  "en": "LCD (speed, temperature, time)",
+  "ar": "LCD (السرعة، الحرارة، الزمن)"
+ },
  "lcd display": {
   "fr": "Afficheur LCD",
   "en": "LCD display",
@@ -1179,6 +1964,21 @@
   "en": "LED digital display",
   "ar": "عرض رقمي LED"
  },
+ "led dot matrix screen": {
+  "fr": "Écran LED matriciel",
+  "en": "LED dot matrix screen",
+  "ar": "شاشة LED نقطية"
+ },
+ "led fill-in light": {
+  "fr": "Éclairage d'appoint LED",
+  "en": "LED fill light",
+  "ar": "إضاءة LED مكمّلة"
+ },
+ "led matriciel": {
+  "fr": "LED matriciel",
+  "en": "LED dot matrix",
+  "ar": "LED نقطي"
+ },
  "led unique": {
   "fr": "LED unique",
   "en": "Single LED",
@@ -1189,20 +1989,50 @@
   "en": "LED, adjustable brightness",
   "ar": "LED، سطوع قابل للضبط"
  },
+ "les versions trinoculaires acceptent caméra et écran": {
+  "fr": "Les versions trinoculaires acceptent caméra et écran",
+  "en": "Trinocular versions accept a camera and a screen",
+  "ar": "الإصدارات ثلاثية العينية تقبل كاميرا وشاشة"
+ },
+ "light source": {
+  "fr": "Source lumineuse",
+  "en": "Light source",
+  "ar": "مصدر الضوء"
+ },
  "liquid in small vials": {
   "fr": "Liquide en petits flacons",
   "en": "Liquid in small vials",
   "ar": "سائل في قوارير صغيرة"
+ },
+ "liquid sample": {
+  "fr": "Échantillon liquide",
+  "en": "Liquid sample",
+  "ar": "عينة سائلة"
+ },
+ "liquid sample is optional.": {
+  "fr": "Échantillon liquide en option",
+  "en": "Liquid sample optional",
+  "ar": "العينة السائلة اختيارية"
  },
  "lockable lid": {
   "fr": "Couvercle verrouillable",
   "en": "Lockable lid",
   "ar": "غطاء قابل للقفل"
  },
+ "magnetic stirring, mechanical stirring (optional)": {
+  "fr": "Agitation magnétique, agitation mécanique (en option)",
+  "en": "Magnetic stirring, mechanical stirring (optional)",
+  "ar": "تحريك مغناطيسي، تحريك ميكانيكي (اختياري)"
+ },
  "magnétique par le fond": {
   "fr": "Magnétique par le fond",
   "en": "Bottom magnetic drive",
   "ar": "مغناطيسي من القاع"
+ },
+ "maintenance-free, low noise servo motor": {
+  "fr": "Servomoteur sans entretien, silencieux",
+  "en": "Maintenance-free, low-noise servo motor",
+  "ar": "محرك مؤازر بلا صيانة ومنخفض الضجيج"
  },
  "manual": {
   "fr": "Manuel",
@@ -1224,8 +2054,33 @@
   "en": "Manual focus",
   "ar": "تركيز يدوي"
  },
+ "manual focusing": {
+  "fr": "Mise au point manuelle",
+  "en": "Manual focusing",
+  "ar": "تركيز يدوي"
+ },
+ "manual input": {
+  "fr": "Saisie manuelle",
+  "en": "Manual input",
+  "ar": "إدخال يدوي"
+ },
+ "manual or auto-endpoint": {
+  "fr": "Point final manuel ou automatique",
+  "en": "Manual or auto endpoint",
+  "ar": "نقطة نهاية يدوية أو تلقائية"
+ },
+ "manual processing": {
+  "fr": "Traitement manuel",
+  "en": "Manual processing",
+  "ar": "معالجة يدوية"
+ },
  "manuel": {
   "fr": "Manuel",
+  "en": "Manual",
+  "ar": "يدوي"
+ },
+ "manuelle": {
+  "fr": "Manuelle",
   "en": "Manual",
   "ar": "يدوي"
  },
@@ -1238,6 +2093,11 @@
   "fr": "Max. et min.",
   "en": "Max. & min.",
   "ar": "الأقصى والأدنى"
+ },
+ "measuring": {
+  "fr": "Mesure",
+  "en": "Measuring",
+  "ar": "القياس"
  },
  "measuring range": {
   "fr": "Plage de mesure",
@@ -1259,15 +2119,60 @@
   "en": "Memory stored in one step",
   "ar": "التخزين بإجراء واحد"
  },
+ "mercury": {
+  "fr": "Mercure",
+  "en": "Mercury",
+  "ar": "الزئبق"
+ },
  "mercury free": {
   "fr": "Sans mercure",
   "en": "Mercury free",
   "ar": "خالٍ من الزئبق"
  },
+ "metal": {
+  "fr": "Métal",
+  "en": "Metal",
+  "ar": "معدن"
+ },
+ "methyl silicone oil": {
+  "fr": "Huile silicone méthylée",
+  "en": "Methyl silicone oil",
+  "ar": "زيت سيليكون ميثيلي"
+ },
+ "mhe-iii: scale representation;": {
+  "fr": "MHE-III : représentation d'échelle",
+  "en": "MHE-III: scale representation",
+  "ar": "MHE-III: تمثيل المقياس"
+ },
  "michelson": {
   "fr": "Michelson",
   "en": "Michelson",
   "ar": "مايكلسون"
+ },
+ "michelson à coin de cube": {
+  "fr": "Michelson à coin de cube",
+  "en": "Cube-corner Michelson",
+  "ar": "مايكلسون بزاوية مكعبية"
+ },
+ "micro impact": {
+  "fr": "Micro-impact",
+  "en": "Micro impact",
+  "ar": "صدم دقيق"
+ },
+ "micro printer, standard gauge block": {
+  "fr": "Micro-imprimante, cale étalon",
+  "en": "Micro printer, standard gauge block",
+  "ar": "طابعة صغيرة، كتلة قياس معيارية"
+ },
+ "micro-adjuastable, aluminum, black powder coated": {
+  "fr": "Micro-réglable, aluminium, revêtement poudre noir",
+  "en": "Micro-adjustable, aluminium, black powder coated",
+  "ar": "قابل للضبط الدقيق، ألمنيوم، طلاء مسحوقي أسود"
+ },
+ "micro-printer, vacuum chamber": {
+  "fr": "Micro-imprimante, chambre à vide",
+  "en": "Micro printer, vacuum chamber",
+  "ar": "طابعة صغيرة، حجرة خلاء"
  },
  "micro-processor": {
   "fr": "Microprocesseur",
@@ -1299,6 +2204,11 @@
   "en": "Microprocessor",
   "ar": "معالج دقيق"
  },
+ "mie scattering theory": {
+  "fr": "Théorie de diffusion de Mie",
+  "en": "Mie scattering theory",
+  "ar": "نظرية تشتت مي"
+ },
  "mild steel": {
   "fr": "Acier doux",
   "en": "Mild steel",
@@ -1324,10 +2234,35 @@
   "en": "Monitor displays both values",
   "ar": "الشاشة تعرض كلتا القيمتين"
  },
+ "monochromateur à réseau de diffraction (type c-t)": {
+  "fr": "Monochromateur à réseau de diffraction (type C-T)",
+  "en": "Diffraction grating monochromator (C-T type)",
+  "ar": "مفرّق بمحزوز حيودي (نوع C-T)"
+ },
+ "monoculaire head": {
+  "fr": "Tête monoculaire",
+  "en": "Monocular head",
+  "ar": "رأس أحادي العينية"
+ },
  "monoculaire vertical tub": {
   "fr": "Tube monoculaire vertical",
   "en": "Vertical monocular tube",
   "ar": "أنبوب أحادي العينية عمودي"
+ },
+ "monoculaire viewing head": {
+  "fr": "Tête d'observation monoculaire",
+  "en": "Monocular viewing head",
+  "ar": "رأس مشاهدة أحادي العينية"
+ },
+ "monocular": {
+  "fr": "Monoculaire",
+  "en": "Monocular",
+  "ar": "أحادي العينية"
+ },
+ "monocular microscope": {
+  "fr": "Microscope monoculaire",
+  "en": "Monocular microscope",
+  "ar": "مجهر أحادي العينية"
  },
  "moteur dc": {
   "fr": "Moteur DC",
@@ -1344,10 +2279,25 @@
   "en": "Brushless DC motor, microcomputer control",
   "ar": "محرك تيار مستمر بلا فرش، تحكم بالحاسوب الدقيق"
  },
+ "motor": {
+  "fr": "Moteur",
+  "en": "Motor",
+  "ar": "المحرك"
+ },
+ "mounting bracket with screwes": {
+  "fr": "Étrier de montage avec vis",
+  "en": "Mounting bracket with screws",
+  "ar": "حامل تثبيت مع براغٍ"
+ },
  "multidimensionnel": {
   "fr": "Multidimensionnel",
   "en": "Multidimensional",
   "ar": "متعدد الأبعاد"
+ },
+ "métallique": {
+  "fr": "Métallique",
+  "en": "Metal",
+  "ar": "معدني"
  },
  "natural rubber": {
   "fr": "Caoutchouc naturel",
@@ -1359,15 +2309,35 @@
   "en": "Natural",
   "ar": "طبيعي"
  },
+ "needle penetrability device": {
+  "fr": "Dispositif de pénétrabilité à l'aiguille",
+  "en": "Needle penetrability device",
+  "ar": "جهاز قابلية الاختراق بالإبرة"
+ },
+ "neon": {
+  "fr": "Néon",
+  "en": "Neon",
+  "ar": "النيون"
+ },
  "neoprene": {
   "fr": "Néoprène",
   "en": "Neoprene",
   "ar": "النيوبرين"
  },
+ "newton (n) kilogram (kg)": {
+  "fr": "Newton (N), kilogramme (kg)",
+  "en": "Newton (N), kilogram (kg)",
+  "ar": "نيوتن (N)، كيلوغرام (كغ)"
+ },
  "nil": {
   "fr": "Néant",
   "en": "None",
   "ar": "لا شيء"
+ },
+ "nitrogen": {
+  "fr": "Azote",
+  "en": "Nitrogen",
+  "ar": "النتروجين"
  },
  "non": {
   "fr": "Non",
@@ -1389,6 +2359,11 @@
   "en": "Not applicable",
   "ar": "لا ينطبق"
  },
+ "npt ½\"": {
+  "fr": "NPT ½\"",
+  "en": "NPT ½\"",
+  "ar": "NPT ½ بوصة"
+ },
  "numérique": {
   "fr": "Numérique",
   "en": "Digital",
@@ -1404,15 +2379,35 @@
   "en": "Nylon membrane, plain",
   "ar": "غشاء نايلون، أملس"
  },
+ "offline sterilization": {
+  "fr": "Stérilisation hors ligne",
+  "en": "Offline sterilisation",
+  "ar": "تعقيم خارج الخط"
+ },
+ "optical": {
+  "fr": "Optique",
+  "en": "Optical",
+  "ar": "بصري"
+ },
  "optional": {
   "fr": "En option",
   "en": "Optional",
   "ar": "اختياري"
  },
+ "optional (fda)": {
+  "fr": "En option (FDA)",
+  "en": "Optional (FDA)",
+  "ar": "اختياري (FDA)"
+ },
  "optional (lcd)": {
   "fr": "En option (LCD)",
   "en": "Optional (LCD)",
   "ar": "اختياري (LCD)"
+ },
+ "optique": {
+  "fr": "Optique",
+  "en": "Optics",
+  "ar": "البصريات"
  },
  "optique à l'infini": {
   "fr": "Optique à l'infini",
@@ -1439,6 +2434,11 @@
   "en": "Yes",
   "ar": "نعم"
  },
+ "outlet water hardness: ≦": {
+  "fr": "Dureté de l'eau en sortie : ≦",
+  "en": "Outlet water hardness: ≦",
+  "ar": "عسر الماء عند المخرج: ≦"
+ },
  "ouvert, sans porte vitrée frontale": {
   "fr": "Ouvert, sans porte vitrée frontale",
   "en": "Open, without front glass door",
@@ -1448,6 +2448,21 @@
   "fr": "Ovale",
   "en": "Oval",
   "ar": "بيضوي"
+ },
+ "oxyde d'éthylène pur": {
+  "fr": "Oxyde d'éthylène pur",
+  "en": "Pure ethylene oxide",
+  "ar": "أكسيد الإيثيلين النقي"
+ },
+ "oxygen": {
+  "fr": "Oxygène",
+  "en": "Oxygen",
+  "ar": "الأكسجين"
+ },
+ "par aimants": {
+  "fr": "Par aimants",
+  "en": "By magnets",
+  "ar": "بالمغانط"
  },
  "par vis": {
   "fr": "Par vis",
@@ -1464,6 +2479,11 @@
   "en": "By screw at the probe tip",
   "ar": "ببرغي في طرف المجس"
  },
+ "par vis située sur le cadran": {
+  "fr": "Par vis située sur le cadran",
+  "en": "By screw on the dial",
+  "ar": "ببرغي على القرص"
+ },
  "par vis sur corps (réglage usine sur demande)": {
   "fr": "Par vis sur corps (réglage usine sur demande)",
   "en": "By screw on body (factory setting on request)",
@@ -1473,6 +2493,21 @@
   "fr": "Paraffine",
   "en": "Paraffin",
   "ar": "البارافين"
+ },
+ "pc software control": {
+  "fr": "Pilotage par logiciel PC",
+  "en": "PC software control",
+  "ar": "تحكم ببرنامج الحاسوب"
+ },
+ "pc software controlled": {
+  "fr": "Piloté par logiciel PC",
+  "en": "PC software controlled",
+  "ar": "متحكم به ببرنامج الحاسوب"
+ },
+ "pcr isotherme en temps réel (rt)": {
+  "fr": "PCR isotherme en temps réel (RT)",
+  "en": "Real-time isothermal PCR (RT)",
+  "ar": "PCR متساوي الحرارة آني (RT)"
  },
  "peltier": {
   "fr": "Peltier",
@@ -1493,6 +2528,21 @@
   "fr": "Peroxyde d'hydrogène atomisé",
   "en": "Atomised hydrogen peroxide",
   "ar": "بيروكسيد الهيدروجين المرذاذ"
+ },
+ "peroxyde d'hydrogène vaporisé (flash)": {
+  "fr": "Peroxyde d'hydrogène vaporisé (flash)",
+  "en": "Flash vaporised hydrogen peroxide",
+  "ar": "بيروكسيد الهيدروجين المتبخر (وميضي)"
+ },
+ "phonetic count": {
+  "fr": "Comptage vocal",
+  "en": "Voice count",
+  "ar": "العد الصوتي"
+ },
+ "phosphor bronze bellow": {
+  "fr": "Soufflet en bronze phosphoreux",
+  "en": "Phosphor bronze bellows",
+  "ar": "منفاخ من البرونز الفسفوري"
  },
  "photodiode photoélectrique silicium": {
   "fr": "Photodiode photoélectrique silicium",
@@ -1519,6 +2569,21 @@
   "en": "Imported silicon photodiodes",
   "ar": "ثنائيات ضوئية سيليكونية مستوردة"
  },
+ "photodétecteur": {
+  "fr": "Photodétecteur",
+  "en": "Photodetector",
+  "ar": "كاشف ضوئي"
+ },
+ "photométrie d'absorbance, immunoturbidimétrie": {
+  "fr": "Photométrie d'absorbance, immunoturbidimétrie",
+  "en": "Absorbance photometry, immunoturbidimetry",
+  "ar": "قياس الامتصاصية، قياس العكارة المناعي"
+ },
+ "photopile silicium": {
+  "fr": "Photopile silicium",
+  "en": "Silicon photocell",
+  "ar": "خلية ضوئية سيليكونية"
+ },
  "pid micro-informatique": {
   "fr": "PID micro-informatique",
   "en": "Microcomputer PID",
@@ -1533,6 +2598,11 @@
   "fr": "Régulation de température PID de précision",
   "en": "Precise PID temperature control",
   "ar": "ضبط دقيق للحرارة بـ PID"
+ },
+ "pid à microprocesseur": {
+  "fr": "PID à microprocesseur",
+  "en": "Microprocessor PID",
+  "ar": "PID بمعالج دقيق"
  },
  "pied à coulisse digital abs": {
   "fr": "Pied à coulisse digital ABS",
@@ -1554,15 +2624,35 @@
   "en": "Quick-drain piston",
   "ar": "مكبس التفريغ السريع"
  },
+ "pizza tensile": {
+  "fr": "Traction sur pâte à pizza",
+  "en": "Pizza tensile test",
+  "ar": "شد عجينة البيتزا"
+ },
  "plain": {
   "fr": "Lisse",
   "en": "Plain",
   "ar": "أملس"
  },
+ "plane infinite distance object": {
+  "fr": "Objectif plan corrigé à l'infini",
+  "en": "Infinity-corrected plan objective",
+  "ar": "عدسة شيئية مستوية مصححة للانهاية"
+ },
+ "plasma, serum, whole blood, urine": {
+  "fr": "Plasma, sérum, sang total, urine",
+  "en": "Plasma, serum, whole blood, urine",
+  "ar": "بلازما، مصل، دم كامل، بول"
+ },
  "plasma, sérum, sang total, urine": {
   "fr": "Plasma, sérum, sang total, urine",
   "en": "Plasma, serum, whole blood, urine",
   "ar": "بلازما، مصل، دم كامل، بول"
+ },
+ "plated ss": {
+  "fr": "Inox plaqué",
+  "en": "Plated stainless steel",
+  "ar": "فولاذ مقاوم للصدأ مطلي"
  },
  "plc": {
   "fr": "PLC",
@@ -1584,10 +2674,55 @@
   "en": "Pneumatic air cylinder",
   "ar": "أسطوانة هوائية"
  },
+ "point unique ; programmé": {
+  "fr": "Point unique ; programmé",
+  "en": "Single point; programmed",
+  "ar": "نقطة واحدة؛ مبرمج"
+ },
  "poly carbonate dome": {
   "fr": "Dôme en polycarbonate",
   "en": "Polycarbonate dome",
   "ar": "قبة من البولي كربونات"
+ },
+ "polycarbonate": {
+  "fr": "Polycarbonate",
+  "en": "Polycarbonate",
+  "ar": "البولي كربونات"
+ },
+ "polyurethane": {
+  "fr": "Polyuréthane",
+  "en": "Polyurethane",
+  "ar": "البولي يوريثان"
+ },
+ "polyurethane integral foaming": {
+  "fr": "Moussage intégral polyuréthane",
+  "en": "Integral polyurethane foaming",
+  "ar": "رغوة بولي يوريثان متكاملة"
+ },
+ "port parallèle": {
+  "fr": "Port parallèle",
+  "en": "Parallel port",
+  "ar": "منفذ متوازٍ"
+ },
+ "positionnement automatique des cuves": {
+  "fr": "Positionnement automatique des cuves",
+  "en": "Automatic cuvette positioning",
+  "ar": "تموضع تلقائي للأوعية"
+ },
+ "potentiometric": {
+  "fr": "Potentiométrique",
+  "en": "Potentiometric",
+  "ar": "جهدي"
+ },
+ "potentiometric, dead-stop": {
+  "fr": "Potentiométrique, dead-stop",
+  "en": "Potentiometric, dead-stop",
+  "ar": "جهدي، توقف تام"
+ },
+ "powder coated carbon steel channel": {
+  "fr": "Profilé en acier au carbone revêtu poudre",
+  "en": "Powder-coated carbon steel channel",
+  "ar": "قناة من الفولاذ الكربوني مطلية بالمسحوق"
  },
  "powder-coated cold-rolled steel plate": {
   "fr": "Tôle d'acier laminée à froid revêtue poudre",
@@ -1614,6 +2749,21 @@
   "en": "Pre-coated steel plate",
   "ar": "صفيحة فولاذ مطلية مسبقًا"
  },
+ "pressure sensitive": {
+  "fr": "Sensible à la pression",
+  "en": "Pressure sensitive",
+  "ar": "حساس للضغط"
+ },
+ "principe de coulter ; hémoglobine par colorimétrie": {
+  "fr": "Principe de Coulter ; hémoglobine par colorimétrie",
+  "en": "Coulter principle; haemoglobin by colorimetry",
+  "ar": "مبدأ كولتر؛ الهيموغلوبين بقياس اللون"
+ },
+ "printer": {
+  "fr": "Imprimante",
+  "en": "Printer",
+  "ar": "الطابعة"
+ },
  "printer, anti-corrosive liquid measuring assembly": {
   "fr": "Imprimante, ensemble de mesure pour liquides corrosifs",
   "en": "Printer, anti-corrosive liquid measuring assembly",
@@ -1629,15 +2779,35 @@
   "en": "Professional software, communication cable",
   "ar": "برنامج احترافي، كابل اتصال"
  },
+ "professional software, computer": {
+  "fr": "Logiciel professionnel, ordinateur",
+  "en": "Professional software, computer",
+  "ar": "برنامج احترافي، حاسوب"
+ },
  "programmes, enregistrements et surveillance de lavage": {
   "fr": "Programmes, enregistrements et surveillance de lavage",
   "en": "Wash programmes, records and monitoring",
   "ar": "برامج الغسل وسجلاته ومراقبته"
  },
+ "protection électrique et anti-obstacle": {
+  "fr": "Protection électrique et anti-obstacle",
+  "en": "Electrical and obstacle protection",
+  "ar": "حماية كهربائية ومن العوائق"
+ },
+ "pt chart": {
+  "fr": "Abaque pression-température",
+  "en": "P-T chart",
+  "ar": "مخطط الضغط والحرارة"
+ },
  "ptfe [spray coated & oven baked]": {
   "fr": "PTFE [appliqué par pulvérisation et cuit au four]",
   "en": "PTFE [spray coated & oven baked]",
   "ar": "PTFE [مطلي بالرش ومخبوز في الفرن]"
+ },
+ "ptfe, pp, silicone, céramique": {
+  "fr": "PTFE, PP, silicone, céramique",
+  "en": "PTFE, PP, silicone, ceramic",
+  "ar": "PTFE، PP، سيليكون، سيراميك"
  },
  "pvc sleeve": {
   "fr": "Manchon PVC",
@@ -1659,6 +2829,16 @@
   "en": "PVDF membrane, with absorbent pad",
   "ar": "غشاء PVDF، مع وسادة ماصة"
  },
+ "pyrex glass": {
+  "fr": "Verre Pyrex",
+  "en": "Pyrex glass",
+  "ar": "زجاج بايركس"
+ },
+ "pyrex glass precision nozzle": {
+  "fr": "Buse de précision en verre PYREX",
+  "en": "PYREX glass precision nozzle",
+  "ar": "فوهة دقيقة من زجاج بايركس"
+ },
  "qpcr en temps réel": {
   "fr": "qPCR en temps réel",
   "en": "Real-time qPCR",
@@ -1668,6 +2848,16 @@
   "fr": "Quadruple",
   "en": "Quadruple",
   "ar": "رباعي"
+ },
+ "quadruple (quintuple en option)": {
+  "fr": "Quadruple (quintuple en option)",
+  "en": "Quadruple (quintuple optional)",
+  "ar": "رباعي (خماسي اختياري)"
+ },
+ "quadruple arrière": {
+  "fr": "Quadruple arrière",
+  "en": "Reversed quadruple",
+  "ar": "رباعي خلفي"
  },
  "quadruple arrière (quintuple en option)": {
   "fr": "Quadruple arrière (quintuple en option)",
@@ -1683,6 +2873,11 @@
   "fr": "Quartz",
   "en": "Quartz",
   "ar": "الكوارتز"
+ },
+ "quartz boat": {
+  "fr": "Nacelle en quartz",
+  "en": "Quartz boat",
+  "ar": "قارب من الكوارتز"
  },
  "quartz boiler": {
   "fr": "Bouilleur en quartz",
@@ -1704,6 +2899,16 @@
   "en": "Four swivel castors",
   "ar": "أربع عجلات دوّارة"
  },
+ "quintuple inversé": {
+  "fr": "Quintuple inversé",
+  "en": "Reversed quintuple",
+  "ar": "خماسي معكوس"
+ },
+ "quotidien, hebdomadaire, mensuel": {
+  "fr": "Quotidien, hebdomadaire, mensuel",
+  "en": "Daily, weekly, monthly",
+  "ar": "يومي، أسبوعي، شهري"
+ },
  "random access, open reagent locked": {
   "fr": "Accès aléatoire, réactifs ouverts verrouillés",
   "en": "Random access, open reagent locked",
@@ -1713,6 +2918,21 @@
   "fr": "Étendue",
   "en": "Range",
   "ar": "المدى"
+ },
+ "raw dough extensibility": {
+  "fr": "Extensibilité de la pâte crue",
+  "en": "Raw dough extensibility",
+  "ar": "قابلية استطالة العجينة النيئة"
+ },
+ "raw dough stickiness": {
+  "fr": "Collant de la pâte crue",
+  "en": "Raw dough stickiness",
+  "ar": "لزوجة العجينة النيئة"
+ },
+ "recry. alumina outer tube :- od x id to be specified.": {
+  "fr": "Tube extérieur en alumine recristallisée : Ø ext. × Ø int. à préciser",
+  "en": "Recrystallised alumina outer tube: O.D. × I.D. to be specified",
+  "ar": "أنبوب خارجي من ألومينا معاد تبلوره: القطر الخارجي × الداخلي يُحدَّد"
  },
  "recry. alumina tube :- od x id to be specified.": {
   "fr": "Tube en alumine recristallisée : Ø ext. × Ø int. à préciser",
@@ -1749,6 +2969,16 @@
   "en": "Right angle",
   "ar": "بزاوية قائمة"
  },
+ "ring sparger": {
+  "fr": "Diffuseur annulaire",
+  "en": "Ring sparger",
+  "ar": "ناشر حلقي"
+ },
+ "robust pid algorithm": {
+  "fr": "Algorithme PID robuste",
+  "en": "Robust PID algorithm",
+  "ar": "خوارزمية PID متينة"
+ },
  "rotor": {
   "fr": "Rotor",
   "en": "Rotor",
@@ -1758,6 +2988,11 @@
   "fr": "Rond",
   "en": "Round",
   "ar": "مستدير"
+ },
+ "round cutter": {
+  "fr": "Emporte-pièce circulaire",
+  "en": "Round cutter",
+  "ar": "قاطع دائري"
  },
  "round top": {
   "fr": "Tête ronde",
@@ -1774,10 +3009,25 @@
   "en": "Adjustable (optional software)",
   "ar": "قابل للضبط (برنامج اختياري)"
  },
+ "régulation automatique": {
+  "fr": "Régulation automatique",
+  "en": "Automatic regulation",
+  "ar": "تنظيم تلقائي"
+ },
+ "réseau concave": {
+  "fr": "Réseau concave",
+  "en": "Concave grating",
+  "ar": "محزوز مقعّر"
+ },
  "réseau plan": {
   "fr": "Réseau plan",
   "en": "Plane grating",
   "ar": "محزوز مستوٍ"
+ },
+ "s-led réglable": {
+  "fr": "S-LED réglable",
+  "en": "Adjustable S-LED",
+  "ar": "S-LED قابل للضبط"
  },
  "s-led, luminosité réglable": {
   "fr": "S-LED, luminosité réglable",
@@ -1794,10 +3044,20 @@
   "en": "Anticoagulated whole blood, serum, plasma",
   "ar": "دم كامل مضاد للتخثر، مصل، بلازما"
  },
+ "sans (d) ou led (dl)": {
+  "fr": "Sans (D) ou LED (DL)",
+  "en": "Without (D) or LED (DL)",
+  "ar": "بدون (D) أو LED (DL)"
+ },
  "scale": {
   "fr": "Échelle",
   "en": "Scale",
   "ar": "المقياس"
+ },
+ "sci (réflexion spéculaire incluse)": {
+  "fr": "SCI (réflexion spéculaire incluse)",
+  "en": "SCI (specular component included)",
+  "ar": "SCI (مع المركّبة المرآوية)"
  },
  "screw thread": {
   "fr": "Filetage",
@@ -1814,6 +3074,11 @@
   "en": "Siedentopf binocular H",
   "ar": "سيدنتوبف ثنائي العينية H"
  },
+ "seidentopf trinoculaire": {
+  "fr": "Siedentopf trinoculaire",
+  "en": "Siedentopf trinocular",
+  "ar": "سيدنتوبف ثلاثي العينية"
+ },
  "self-evaporation design": {
   "fr": "Conception à auto-évaporation",
   "en": "Self-evaporation design",
@@ -1824,20 +3089,45 @@
   "en": "Model-dependent (see references section)",
   "ar": "حسب الطراز (انظر فقرة المراجع)"
  },
+ "semi-automatic": {
+  "fr": "Semi-automatique",
+  "en": "Semi-automatic",
+  "ar": "شبه تلقائي"
+ },
  "shatterproof safety glass": {
   "fr": "Verre de sécurité incassable",
   "en": "Shatterproof safety glass",
   "ar": "زجاج أمان غير قابل للتحطم"
+ },
+ "shear fixture": {
+  "fr": "Dispositif de cisaillement",
+  "en": "Shear fixture",
+  "ar": "أداة القص"
  },
  "sheet glass": {
   "fr": "Verre plat",
   "en": "Sheet glass",
   "ar": "زجاج مسطح"
  },
+ "shifting and doubling objectiv": {
+  "fr": "Objectif à décalage et doublement",
+  "en": "Shifting and doubling objective",
+  "ar": "عدسة شيئية بالإزاحة والمضاعفة"
+ },
  "siedentopf binoculaire h": {
   "fr": "Siedentopf binoculaire H",
   "en": "Siedentopf binocular H",
   "ar": "سيدنتوبف ثنائي العينية H"
+ },
+ "siedentopf binoculaire v": {
+  "fr": "Siedentopf binoculaire V",
+  "en": "Siedentopf binocular V",
+  "ar": "سيدنتوبف ثنائي العينية V"
+ },
+ "siedentopf free trinocul": {
+  "fr": "Siedentopf trinoculaire sans compensation",
+  "en": "Compensation-free Siedentopf trinocular",
+  "ar": "سيدنتوبف ثلاثي العينية بدون تعويض"
  },
  "siedentopf trinoculaire": {
   "fr": "Siedentopf trinoculaire",
@@ -1849,20 +3139,40 @@
   "en": "Siemens PLC",
   "ar": "متحكم Siemens"
  },
+ "siemens s series plc, mcgs hmi": {
+  "fr": "Automate Siemens série S, IHM MCGS",
+  "en": "Siemens S-series PLC, MCGS HMI",
+  "ar": "متحكم Siemens سلسلة S، واجهة MCGS"
+ },
  "silicon": {
   "fr": "Silicium",
   "en": "Silicon",
   "ar": "السيليكون"
+ },
+ "silicon carbide (sic)": {
+  "fr": "Carbure de silicium (SiC)",
+  "en": "Silicon carbide (SiC)",
+  "ar": "كربيد السيليكون (SiC)"
  },
  "silicon oil": {
   "fr": "Huile silicone",
   "en": "Silicone oil",
   "ar": "زيت السيليكون"
  },
+ "silicon photodiode": {
+  "fr": "Photodiode silicium",
+  "en": "Silicon photodiode",
+  "ar": "ثنائي ضوئي سيليكوني"
+ },
  "silicon rubber": {
   "fr": "Caoutchouc silicone",
   "en": "Silicone rubber",
   "ar": "مطاط السيليكون"
+ },
+ "silicone": {
+  "fr": "Silicone",
+  "en": "Silicone",
+  "ar": "السيليكون"
  },
  "silicone sleeve": {
   "fr": "Manchon silicone",
@@ -1889,6 +3199,11 @@
   "en": "Simplex, duplex (ungrounded)",
   "ar": "أحادي، مزدوج (غير مؤرّض)"
  },
+ "single & continuous": {
+  "fr": "Simple et continu",
+  "en": "Single & continuous",
+  "ar": "مفرد ومستمر"
+ },
  "single distillation with thermal sensor auto cut off": {
   "fr": "Distillation simple avec coupure auto par sonde thermique",
   "en": "Single distillation with thermal sensor auto cut-off",
@@ -1898,6 +3213,11 @@
   "fr": "Distillation simple sans coupure",
   "en": "Single distillation without cut-off",
   "ar": "تقطير مفرد بدون قطع"
+ },
+ "single laser pointer": {
+  "fr": "Pointeur laser simple",
+  "en": "Single laser pointer",
+  "ar": "مؤشر ليزر مفرد"
  },
  "single stage": {
   "fr": "Simple étage",
@@ -1914,6 +3234,16 @@
   "en": "Single-point",
   "ar": "أحادي النقطة"
  },
+ "sliding binoculaire head": {
+  "fr": "Tête binoculaire coulissante",
+  "en": "Sliding binocular head",
+  "ar": "رأس ثنائي العينية منزلق"
+ },
+ "sliding trinoculaire hea": {
+  "fr": "Tête trinoculaire coulissante",
+  "en": "Sliding trinocular head",
+  "ar": "رأس ثلاثي العينية منزلق"
+ },
  "small": {
   "fr": "Petit",
   "en": "Small",
@@ -1924,10 +3254,20 @@
   "en": "Small size",
   "ar": "قياس صغير"
  },
+ "solid or suspension liquid sample": {
+  "fr": "Échantillon solide ou liquide en suspension",
+  "en": "Solid or suspension liquid sample",
+  "ar": "عينة صلبة أو سائلة معلّقة"
+ },
  "soluble powder in vials": {
   "fr": "Poudre soluble en flacons",
   "en": "Soluble powder in vials",
   "ar": "مسحوق قابل للذوبان في قوارير"
+ },
+ "sonde de mélange indépendante": {
+  "fr": "Sonde de mélange indépendante",
+  "en": "Independent mixing probe",
+  "ar": "مجس خلط مستقل"
  },
  "sonore et lumineuse": {
   "fr": "Sonore et lumineuse",
@@ -1939,10 +3279,20 @@
   "en": "Dual-duct cyclone airflow",
   "ar": "نفخ إعصاري بقناتين"
  },
+ "soufflage homogène par conduit arrière": {
+  "fr": "Soufflage homogène par conduit arrière",
+  "en": "Uniform airflow through rear duct",
+  "ar": "نفخ متجانس عبر قناة خلفية"
+ },
  "sound and light alarm": {
   "fr": "Alarme sonore et lumineuse",
   "en": "Sound and light alarm",
   "ar": "إنذار صوتي وضوئي"
+ },
+ "source de lumière froide ultra-brillante, réflectométrie": {
+  "fr": "Source de lumière froide ultra-brillante, réflectométrie",
+  "en": "Ultra-bright cold light source, reflectometry",
+  "ar": "مصدر ضوء بارد فائق السطوع، قياس الانعكاس"
  },
  "source led plein spectre combinée": {
   "fr": "Source LED plein spectre combinée",
@@ -1968,6 +3318,11 @@
   "fr": "Acier SPCC peint par pulvérisation",
   "en": "SPCC sprayed steel",
   "ar": "فولاذ SPCC مطلي بالرش"
+ },
+ "spectrophotomètre uv-vis microvolume + fluoromètre intégré": {
+  "fr": "Spectrophotomètre UV-Vis microvolume + fluoromètre intégré",
+  "en": "Microvolume UV-Vis spectrophotometer + integrated fluorometer",
+  "ar": "مطياف UV-Vis للحجوم الدقيقة + مقياس تألق مدمج"
  },
  "spectrophotométrie après digestion rapide": {
   "fr": "Spectrophotométrie après digestion rapide",
@@ -2014,6 +3369,11 @@
   "en": "Stainless steel ceramic coating",
   "ar": "طلاء خزفي على الفولاذ المقاوم للصدأ"
  },
+ "ss chain": {
+  "fr": "Chaîne inox",
+  "en": "Stainless steel chain",
+  "ar": "سلسلة من الفولاذ المقاوم للصدأ"
+ },
  "ss chain.": {
   "fr": "Chaîne inox",
   "en": "Stainless steel chain",
@@ -2029,10 +3389,20 @@
   "en": "Stainless steel specific gravity measuring frame",
   "ar": "إطار قياس الكثافة النسبية من الفولاذ المقاوم للصدأ"
  },
+ "stainless steel tube": {
+  "fr": "Tube en acier inoxydable",
+  "en": "Stainless steel tube",
+  "ar": "أنبوب من الفولاذ المقاوم للصدأ"
+ },
  "standard": {
   "fr": "De série",
   "en": "Standard",
   "ar": "قياسي"
+ },
+ "standard calibration solution": {
+  "fr": "Solution d'étalonnage de référence",
+  "en": "Standard calibration solution",
+  "ar": "محلول المعايرة المرجعي"
  },
  "standard version": {
   "fr": "Version standard",
@@ -2049,15 +3419,45 @@
   "en": "Sterile",
   "ar": "معقّم"
  },
+ "storage capacity": {
+  "fr": "Capacité de stockage",
+  "en": "Storage capacity",
+  "ar": "سعة التخزين"
+ },
  "straight": {
   "fr": "Droit",
   "en": "Straight",
   "ar": "مستقيم"
  },
+ "strain free achromatic objecti": {
+  "fr": "Objectif achromatique sans contrainte",
+  "en": "Strain-free achromatic objective",
+  "ar": "عدسة شيئية لالونية بلا إجهاد"
+ },
+ "stérilisation au peroxyde d'hydrogène vaporisé": {
+  "fr": "Stérilisation au peroxyde d'hydrogène vaporisé",
+  "en": "Vaporised hydrogen peroxide sterilisation",
+  "ar": "تعقيم ببيروكسيد الهيدروجين المتبخر"
+ },
+ "sulfur": {
+  "fr": "Soufre",
+  "en": "Sulphur",
+  "ar": "الكبريت"
+ },
  "super large": {
   "fr": "Très grand format",
   "en": "Super large",
   "ar": "كبير للغاية"
+ },
+ "support": {
+  "fr": "Pris en charge",
+  "en": "Supported",
+  "ar": "مدعوم"
+ },
+ "support in upper and lower case in english": {
+  "fr": "Prise en charge des majuscules et minuscules en anglais",
+  "en": "Supports upper and lower case in English",
+  "ar": "يدعم الأحرف الكبيرة والصغيرة بالإنجليزية"
  },
  "supported": {
   "fr": "Pris en charge",
@@ -2079,10 +3479,30 @@
   "en": "Supports data uploading to the Cold Cloud",
   "ar": "يدعم رفع البيانات إلى Cold Cloud"
  },
+ "sur mesure": {
+  "fr": "Sur mesure",
+  "en": "Made to order",
+  "ar": "حسب الطلب"
+ },
+ "système à l'infini ∞": {
+  "fr": "Système à l'infini ∞",
+  "en": "Infinity system ∞",
+  "ar": "نظام اللانهاية ∞"
+ },
+ "take bioom gas the unit": {
+  "fr": "Prélèvement du gaz sur l'appareil",
+  "en": "Gas taken from the unit",
+  "ar": "أخذ الغاز من الجهاز"
+ },
  "taking pictures and video": {
   "fr": "Prise de photos et de vidéos",
   "en": "Photo and video capture",
   "ar": "التقاط الصور والفيديو"
+ },
+ "tc, tic, toc (tc-ic)": {
+  "fr": "TC, TIC, TOC (TC-IC)",
+  "en": "TC, TIC, TOC (TC-IC)",
+  "ar": "TC, TIC, TOC (TC-IC)"
  },
  "tc, tic, toc, npoc": {
   "fr": "TC, TIC, TOC, NPOC",
@@ -2093,6 +3513,11 @@
   "fr": "Technologie d'isolation par conduit d'air",
   "en": "Air-duct insulation technology",
   "ar": "تقنية العزل بقناة الهواء"
+ },
+ "teflon insulated and ss braided": {
+  "fr": "Isolé Téflon et tressé inox",
+  "en": "PTFE insulated and stainless steel braided",
+  "ar": "معزول بالتفلون ومجدول بالفولاذ المقاوم للصدأ"
  },
  "temperature compensation": {
   "fr": "Compensation de température",
@@ -2119,10 +3544,35 @@
   "en": "Temperature and speed (digital)",
   "ar": "الحرارة والسرعة (رقمي)"
  },
+ "tensile fixture": {
+  "fr": "Dispositif de traction",
+  "en": "Tensile fixture",
+  "ar": "أداة الشد"
+ },
+ "tester": {
+  "fr": "Appareil d'essai",
+  "en": "Tester",
+  "ar": "جهاز الاختبار"
+ },
+ "thermal imaging, pip, thermal fusion, visible light": {
+  "fr": "Imagerie thermique, PIP, fusion thermique, lumière visible",
+  "en": "Thermal imaging, PIP, thermal fusion, visible light",
+  "ar": "التصوير الحراري، PIP، الدمج الحراري، الضوء المرئي"
+ },
+ "thermal printer": {
+  "fr": "Imprimante thermique",
+  "en": "Thermal printer",
+  "ar": "طابعة حرارية"
+ },
  "thermal printing system": {
   "fr": "Système d'impression thermique",
   "en": "Thermal printing system",
   "ar": "نظام طباعة حرارية"
+ },
+ "thermal, dual-spectrum fusion, visible light, pip": {
+  "fr": "Thermique, fusion bispectrale, lumière visible, PIP",
+  "en": "Thermal, dual-spectrum fusion, visible light, PIP",
+  "ar": "حراري، دمج ثنائي الطيف، ضوء مرئي، PIP"
  },
  "thermique": {
   "fr": "Thermique",
@@ -2149,6 +3599,36 @@
   "en": "Thermopile",
   "ar": "مكدّس حراري"
  },
+ "thermosoudage automatique": {
+  "fr": "Thermosoudage automatique",
+  "en": "Automatic heat sealing",
+  "ar": "لحام حراري تلقائي"
+ },
+ "three (standard)": {
+  "fr": "Trois (de série)",
+  "en": "Three (standard)",
+  "ar": "ثلاثة (قياسي)"
+ },
+ "three levels, seven users": {
+  "fr": "Trois niveaux, sept utilisateurs",
+  "en": "Three levels, seven users",
+  "ar": "ثلاثة مستويات، سبعة مستخدمين"
+ },
+ "three-point bending": {
+  "fr": "Flexion trois points",
+  "en": "Three-point bending",
+  "ar": "الانحناء بثلاث نقاط"
+ },
+ "through the lens (tl)": {
+  "fr": "Visée à travers l'objectif (TL)",
+  "en": "Through the lens (TL)",
+  "ar": "عبر العدسة (TL)"
+ },
+ "throughput": {
+  "fr": "Cadence",
+  "en": "Throughput",
+  "ar": "معدل الإنجاز"
+ },
  "théorie de mie": {
   "fr": "Théorie de Mie",
   "en": "Mie theory",
@@ -2164,15 +3644,45 @@
   "en": "Time-resolved real-time scanning",
   "ar": "مسح آني محلول زمنيًا"
  },
+ "timing display": {
+  "fr": "Affichage de la minuterie",
+  "en": "Timer display",
+  "ar": "عرض المؤقّت"
+ },
+ "top mounting": {
+  "fr": "Montage en partie haute",
+  "en": "Top mounting",
+  "ar": "تركيب علوي"
+ },
+ "top+bottom": {
+  "fr": "Haut et bas",
+  "en": "Top + bottom",
+  "ar": "أعلى وأسفل"
+ },
+ "toughness and adhesiveness": {
+  "fr": "Ténacité et adhésivité",
+  "en": "Toughness and adhesiveness",
+  "ar": "المتانة والالتصاق"
+ },
  "tournante électrique": {
   "fr": "Tournante électrique",
   "en": "Electric rotating",
   "ar": "دوّار كهربائي"
  },
+ "transmission": {
+  "fr": "Transmission",
+  "en": "Transmission",
+  "ar": "النفاذ"
+ },
  "triangle top": {
   "fr": "Tête triangulaire",
   "en": "Triangle top",
   "ar": "رأس مثلث"
+ },
+ "trinoculaire head inclin": {
+  "fr": "Tête trinoculaire inclinée",
+  "en": "Inclined trinocular head",
+  "ar": "رأس ثلاثي العينية مائل"
  },
  "triple": {
   "fr": "Triple",
@@ -2209,20 +3719,55 @@
   "en": "Articulated tube",
   "ar": "أنبوب مفصلي"
  },
+ "tube diameter": {
+  "fr": "Diamètre du tube",
+  "en": "Tube diameter",
+  "ar": "قطر الأنبوب"
+ },
  "tube monoculaire vertical": {
   "fr": "Tube monoculaire vertical",
   "en": "Vertical monocular tube",
   "ar": "أنبوب أحادي العينية عمودي"
+ },
+ "two (dual temperature control)": {
+  "fr": "Deux (double régulation de température)",
+  "en": "Two (dual temperature control)",
+  "ar": "اثنان (ضبط حراري مزدوج)"
  },
  "two procedures": {
   "fr": "Deux procédures",
   "en": "Two procedures",
   "ar": "إجراءان"
  },
+ "type k": {
+  "fr": "Type K",
+  "en": "Type K",
+  "ar": "النوع K"
+ },
  "téléversement des données vers le cold cloud": {
   "fr": "Téléversement des données vers le Cold Cloud",
   "en": "Data uploading to the Cold Cloud",
   "ar": "رفع البيانات إلى Cold Cloud"
+ },
+ "tête binoculaire seidentopf": {
+  "fr": "Tête binoculaire Siedentopf",
+  "en": "Siedentopf binocular head",
+  "ar": "رأس سيدنتوبف ثنائي العينية"
+ },
+ "tête monoculaire": {
+  "fr": "Tête monoculaire",
+  "en": "Monocular head",
+  "ar": "رأس أحادي العينية"
+ },
+ "tôle laminée à froid, revêtement par pulvérisation": {
+  "fr": "Tôle laminée à froid, revêtement par pulvérisation",
+  "en": "Cold-rolled sheet with spray coating",
+  "ar": "صفيحة مدرفلة على البارد بطلاء بالرش"
+ },
+ "unc ¼”": {
+  "fr": "UNC ¼\"",
+  "en": "UNC ¼\"",
+  "ar": "UNC ¼ بوصة"
  },
  "uncooled fpa detector": {
   "fr": "Détecteur FPA non refroidi",
@@ -2243,6 +3788,16 @@
   "fr": "Unique",
   "en": "Single",
   "ar": "مفرد"
+ },
+ "unit": {
+  "fr": "Unité",
+  "en": "Unit",
+  "ar": "الوحدة"
+ },
+ "universal flask stand": {
+  "fr": "Support universel pour fioles",
+  "en": "Universal flask stand",
+  "ar": "حامل دوارق عام"
  },
  "ups intégré": {
   "fr": "UPS intégré",
@@ -2274,6 +3829,31 @@
   "en": "USB port",
   "ar": "منفذ USB"
  },
+ "usb type-c": {
+  "fr": "USB Type-C",
+  "en": "USB Type-C",
+  "ar": "USB Type-C"
+ },
+ "usb, u disk": {
+  "fr": "USB, clé USB",
+  "en": "USB, USB drive",
+  "ar": "USB، ذاكرة USB"
+ },
+ "usb, wifi": {
+  "fr": "USB, WiFi",
+  "en": "USB, WiFi",
+  "ar": "USB، WiFi"
+ },
+ "user name + password, fingerprint": {
+  "fr": "Identifiant + mot de passe, empreinte digitale",
+  "en": "User name + password, fingerprint",
+  "ar": "اسم المستخدم + كلمة المرور، بصمة الإصبع"
+ },
+ "vacuum generator": {
+  "fr": "Générateur de vide",
+  "en": "Vacuum generator",
+  "ar": "مولّد الخلاء"
+ },
  "vanne d'alimentation continue": {
   "fr": "Vanne d'alimentation continue",
   "en": "Continuous feed valve",
@@ -2283,6 +3863,11 @@
   "fr": "Vapeur d'eau",
   "en": "Steam",
   "ar": "بخار الماء"
+ },
+ "vapeur saturée": {
+  "fr": "Vapeur saturée",
+  "en": "Saturated steam",
+  "ar": "بخار مشبع"
  },
  "verre": {
   "fr": "Verre",
@@ -2303,6 +3888,11 @@
   "fr": "Verrou électronique double point (double porte verre trempé)",
   "en": "Two-point electronic lock (double tempered-glass door)",
   "ar": "قفل إلكتروني بنقطتين (باب مزدوج من الزجاج المقسّى)"
+ },
+ "verrouillage du couvercle": {
+  "fr": "Verrouillage du couvercle",
+  "en": "Lid interlock",
+  "ar": "قفل الغطاء"
  },
  "vertical": {
   "fr": "Vertical",
@@ -2339,6 +3929,21 @@
   "en": "Video & camera",
   "ar": "الفيديو والكاميرا"
  },
+ "vis électrique": {
+  "fr": "Vis électrique",
+  "en": "Electric screw",
+  "ar": "برغي كهربائي"
+ },
+ "visual": {
+  "fr": "Visuel",
+  "en": "Visual",
+  "ar": "بصري"
+ },
+ "visual (lcd blinking facility)": {
+  "fr": "Visuel (clignotement de l'afficheur LCD)",
+  "en": "Visual (LCD blinking)",
+  "ar": "بصري (وميض شاشة LCD)"
+ },
  "viton diaphragm": {
   "fr": "Membrane Viton",
   "en": "Viton diaphragm",
@@ -2354,7 +3959,52 @@
   "en": "Intelligent voice + LED",
   "ar": "صوتي ذكي + LED"
  },
+ "vocales et visuelles": {
+  "fr": "Vocales et visuelles",
+  "en": "Voice and visual",
+  "ar": "صوتية وبصرية"
+ },
+ "vocales étendues + visuelles": {
+  "fr": "Vocales étendues + visuelles",
+  "en": "Extended voice + visual",
+  "ar": "صوتية موسّعة + بصرية"
+ },
+ "vétérinaire": {
+  "fr": "Vétérinaire",
+  "en": "Veterinary",
+  "ar": "بيطري"
+ },
+ "water temperature setting, density setting of medium": {
+  "fr": "Réglage de la température de l'eau, réglage de la densité du milieu",
+  "en": "Water temperature setting, medium density setting",
+  "ar": "ضبط حرارة الماء، ضبط كثافة الوسط"
+ },
+ "water vapor": {
+  "fr": "Vapeur d'eau",
+  "en": "Water vapour",
+  "ar": "بخار الماء"
+ },
+ "wbc, lyih, mon#, neu#, eos#, bas#,": {
+  "fr": "GB, LYM#, MON#, NEU#, EOS#, BAS#",
+  "en": "WBC, LYM#, MON#, NEU#, EOS#, BAS#",
+  "ar": "WBC, LYM#, MON#, NEU#, EOS#, BAS#"
+ },
+ "wbc, lym#, mon#, neu#, eos#, bas#,": {
+  "fr": "GB, LYM#, MON#, NEU#, EOS#, BAS#",
+  "en": "WBC, LYM#, MON#, NEU#, EOS#, BAS#",
+  "ar": "WBC, LYM#, MON#, NEU#, EOS#, BAS#"
+ },
+ "wbc, rbc, plt": {
+  "fr": "GB, GR, PLQ",
+  "en": "WBC, RBC, PLT",
+  "ar": "WBC, RBC, PLT"
+ },
  "welded diaphragm": {
+  "fr": "Membrane soudée",
+  "en": "Welded diaphragm",
+  "ar": "غشاء ملحوم"
+ },
+ "welded for diaphragm": {
   "fr": "Membrane soudée",
   "en": "Welded diaphragm",
   "ar": "غشاء ملحوم"
@@ -2363,6 +4013,16 @@
   "fr": "Humide et sec",
   "en": "Wet & dry",
   "ar": "رطب وجاف"
+ },
+ "wet chemical oxidation by uv": {
+  "fr": "Oxydation chimique par voie humide sous UV",
+  "en": "Wet chemical oxidation by UV",
+  "ar": "أكسدة كيميائية رطبة بالأشعة فوق البنفسجية"
+ },
+ "wet method": {
+  "fr": "Méthode par voie humide",
+  "en": "Wet method",
+  "ar": "الطريقة الرطبة"
  },
  "wetted parts protection": {
   "fr": "Protection des parties en contact",
@@ -2374,10 +4034,20 @@
   "en": "White",
   "ar": "أبيض"
  },
+ "white led array": {
+  "fr": "Barrette de LED blanches",
+  "en": "White LED array",
+  "ar": "مصفوفة LED بيضاء"
+ },
  "whole blood, serum, plasma, dialys": {
   "fr": "Sang total, sérum, plasma, dialysat",
   "en": "Whole blood, serum, plasma, dialysate",
   "ar": "دم كامل، مصل، بلازما، سائل غسيل"
+ },
+ "wi-fi, bluetooth, type-c": {
+  "fr": "Wi-Fi, Bluetooth, Type-C",
+  "en": "Wi-Fi, Bluetooth, Type-C",
+  "ar": "Wi-Fi، بلوتوث، Type-C"
  },
  "wifi wireless network": {
   "fr": "Réseau sans fil WiFi",
@@ -2389,6 +4059,11 @@
   "en": "With lid",
   "ar": "مع غطاء"
  },
+ "with two oil reservoirs": {
+  "fr": "Avec deux réservoirs d'huile",
+  "en": "With two oil reservoirs",
+  "ar": "مع خزاني زيت"
+ },
  "without lid": {
   "fr": "Sans couvercle",
   "en": "Without lid",
@@ -2398,6 +4073,16 @@
   "fr": "Sans bride de fixation",
   "en": "Without mounting flange",
   "ar": "بدون شفة تثبيت"
+ },
+ "working independently": {
+  "fr": "Fonctionnement indépendant",
+  "en": "Works independently",
+  "ar": "يعمل بشكل مستقل"
+ },
+ "xenon": {
+  "fr": "Xénon",
+  "en": "Xenon",
+  "ar": "الزينون"
  },
  "yellow": {
   "fr": "Jaune",
@@ -2409,6 +4094,16 @@
   "en": "Yes",
   "ar": "نعم"
  },
+ "yes : high & low temperature": {
+  "fr": "Oui : haute et basse température",
+  "en": "Yes: high & low temperature",
+  "ar": "نعم: حرارة مرتفعة ومنخفضة"
+ },
+ "yes, at the bottom of the handle": {
+  "fr": "Oui, en bas de la poignée",
+  "en": "Yes, at the bottom of the handle",
+  "ar": "نعم، أسفل المقبض"
+ },
  "zinc-iron alloy spray coating": {
   "fr": "Revêtement pulvérisé en alliage zinc-fer",
   "en": "Zinc-iron alloy spray coating",
@@ -2418,6 +4113,11 @@
   "fr": "Alliage zinc-fer à revêtement pulvérisé",
   "en": "Zinc-iron alloy with spray coating",
   "ar": "سبيكة زنك-حديد بطلاء بالرش"
+ },
+ "¼\" bsp (f)": {
+  "fr": "¼\" BSP (F)",
+  "en": "¼\" BSP (F)",
+  "ar": "¼ بوصة BSP (أنثى)"
  },
  "½\" npt (f) , plugged": {
   "fr": "½\" NPT (F), obturé",
@@ -2433,6 +4133,11 @@
   "fr": "À distance finie",
   "en": "Finite conjugate",
   "ar": "مسافة محدودة"
+ },
+ "à vide": {
+  "fr": "À vide",
+  "en": "Under vacuum",
+  "ar": "تحت الخلاء"
  },
  "échange thermique": {
   "fr": "Échange thermique",
@@ -2454,10 +4159,25 @@
   "en": "LCD screen",
   "ar": "شاشة LCD"
  },
+ "écran lcd grand format": {
+  "fr": "Écran LCD grand format",
+  "en": "Large-format LCD screen",
+  "ar": "شاشة LCD كبيرة"
+ },
  "écran tactile": {
   "fr": "Écran tactile",
   "en": "Touch screen",
   "ar": "شاشة لمس"
+ },
+ "écran tactile (saisie directe des valeurs)": {
+  "fr": "Écran tactile (saisie directe des valeurs)",
+  "en": "Touch screen (direct value entry)",
+  "ar": "شاشة لمس (إدخال مباشر للقيم)"
+ },
+ "écran tactile intégral": {
+  "fr": "Écran tactile intégral",
+  "en": "Full touch screen",
+  "ar": "شاشة لمس كاملة"
  },
  "écran tactile lcd": {
   "fr": "Écran tactile LCD",
@@ -2498,5 +4218,20 @@
   "fr": "Électromagnétique",
   "en": "Electromagnetic",
   "ar": "كهرومغناطيسي"
+ },
+ "état solide (longue durée de vie)": {
+  "fr": "État solide (longue durée de vie)",
+  "en": "Solid state (long life)",
+  "ar": "حالة صلبة (عمر طويل)"
+ },
+ "‌huayi": {
+  "fr": "Huayi",
+  "en": "Huayi",
+  "ar": "Huayi"
+ },
+ "∅ suivant modèle": {
+  "fr": "∅ suivant modèle",
+  "en": "Ø depending on model",
+  "ar": "القطر حسب الطراز"
  }
 }
