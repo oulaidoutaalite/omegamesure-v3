@@ -1,0 +1,797 @@
+{
+ "absolue (abs)": {
+  "fr": "Absolue (ABS)",
+  "en": "Absolute (ABS)",
+  "ar": "مطلق (ABS)"
+ },
+ "adjustable connection": {
+  "fr": "Raccord orientable",
+  "en": "Adjustable connection",
+  "ar": "وصلة قابلة للضبط"
+ },
+ "air forcé": {
+  "fr": "Air forcé",
+  "en": "Forced air",
+  "ar": "هواء قسري"
+ },
+ "aluminium laqué blanc, chiffres et traits noirs": {
+  "fr": "Aluminium laqué blanc, chiffres et traits noirs",
+  "en": "White lacquered aluminium, black figures and lines",
+  "ar": "ألمنيوم مطلي بالأبيض، أرقام وخطوط سوداء"
+ },
+ "aluminium noir": {
+  "fr": "Aluminium noir",
+  "en": "Black aluminium",
+  "ar": "ألمنيوم أسود"
+ },
+ "aluminum": {
+  "fr": "Aluminium",
+  "en": "Aluminium",
+  "ar": "الألمنيوم"
+ },
+ "aluminum alloy": {
+  "fr": "Alliage d'aluminium",
+  "en": "Aluminium alloy",
+  "ar": "سبيكة ألمنيوم"
+ },
+ "aluminum, black graduation on white background": {
+  "fr": "Aluminium, graduation noire sur fond blanc",
+  "en": "Aluminium, black graduation on white background",
+  "ar": "ألمنيوم، تدريج أسود على خلفية بيضاء"
+ },
+ "ancre inox à ruban hélicoïdal racleur": {
+  "fr": "Ancre inox à ruban hélicoïdal racleur",
+  "en": "Stainless steel anchor with helical scraping ribbon",
+  "ar": "مرساة من الفولاذ المقاوم للصدأ بشريط حلزوني كاشط"
+ },
+ "angulaire": {
+  "fr": "Angulaire",
+  "en": "Angle",
+  "ar": "زاوي"
+ },
+ "archimedes principle displacement method": {
+  "fr": "Méthode par déplacement, principe d'Archimède",
+  "en": "Archimedes principle displacement method",
+  "ar": "طريقة الإزاحة وفق مبدأ أرخميدس"
+ },
+ "as per customer requirement": {
+  "fr": "Selon le cahier des charges client",
+  "en": "As per customer requirement",
+  "ar": "وفق متطلبات الزبون"
+ },
+ "as per the selection table": {
+  "fr": "Selon le tableau de sélection",
+  "en": "As per the selection table",
+  "ar": "وفق جدول الاختيار"
+ },
+ "auto": {
+  "fr": "Auto",
+  "en": "Auto",
+  "ar": "تلقائي"
+ },
+ "auto defrost": {
+  "fr": "Dégivrage automatique",
+  "en": "Auto defrost",
+  "ar": "إزالة الصقيع التلقائية"
+ },
+ "automatic": {
+  "fr": "Automatique",
+  "en": "Automatic",
+  "ar": "تلقائي"
+ },
+ "automatique": {
+  "fr": "Automatique",
+  "en": "Automatic",
+  "ar": "تلقائي"
+ },
+ "bilame hélicoïdal": {
+  "fr": "Bilame hélicoïdal",
+  "en": "Helical bimetal",
+  "ar": "ثنائي المعدن حلزوني"
+ },
+ "boss head": {
+  "fr": "Noix de serrage",
+  "en": "Boss head",
+  "ar": "رأس التثبيت"
+ },
+ "capacity": {
+  "fr": "Capacité",
+  "en": "Capacity",
+  "ar": "السعة"
+ },
+ "cc sans balais": {
+  "fr": "CC sans balais",
+  "en": "Brushless DC",
+  "ar": "تيار مستمر بلا فرش"
+ },
+ "code": {
+  "fr": "Code",
+  "en": "Code",
+  "ar": "رمز"
+ },
+ "control method": {
+  "fr": "Mode de régulation",
+  "en": "Control method",
+  "ar": "طريقة الضبط"
+ },
+ "convection forcée": {
+  "fr": "Convection forcée",
+  "en": "Forced convection",
+  "ar": "حمل قسري"
+ },
+ "copper alloy": {
+  "fr": "Alliage de cuivre",
+  "en": "Copper alloy",
+  "ar": "سبيكة نحاس"
+ },
+ "coupure auto (surtempérature, ouverture porte)": {
+  "fr": "Coupure auto (surtempérature, ouverture porte)",
+  "en": "Auto cut-off (over-temperature, door opening)",
+  "ar": "قطع تلقائي (ارتفاع الحرارة، فتح الباب)"
+ },
+ "de série": {
+  "fr": "De série",
+  "en": "Standard",
+  "ar": "قياسي"
+ },
+ "description": {
+  "fr": "Description",
+  "en": "Description",
+  "ar": "وصف"
+ },
+ "diaphragm": {
+  "fr": "Membrane",
+  "en": "Diaphragm",
+  "ar": "غشاء"
+ },
+ "die-cast aluminum": {
+  "fr": "Aluminium moulé sous pression",
+  "en": "Die-cast aluminium",
+  "ar": "ألمنيوم مصبوب بالقالب"
+ },
+ "digital display": {
+  "fr": "Affichage numérique",
+  "en": "Digital display",
+  "ar": "عرض رقمي"
+ },
+ "digital tube": {
+  "fr": "Afficheur à segments",
+  "en": "Digital tube",
+  "ar": "أنبوب رقمي"
+ },
+ "direct bottom": {
+  "fr": "Raccord direct en partie basse",
+  "en": "Direct bottom",
+  "ar": "وصلة سفلية مباشرة"
+ },
+ "direct bottom connection": {
+  "fr": "Raccord direct en partie basse",
+  "en": "Direct bottom connection",
+  "ar": "وصلة سفلية مباشرة"
+ },
+ "direct, bottom connection": {
+  "fr": "Direct, raccord en partie basse",
+  "en": "Direct, bottom connection",
+  "ar": "مباشر، وصلة سفلية"
+ },
+ "distilled testing": {
+  "fr": "Essai sur eau distillée",
+  "en": "Distilled water testing",
+  "ar": "اختبار بالماء المقطر"
+ },
+ "door ajar": {
+  "fr": "Porte entrouverte",
+  "en": "Door ajar",
+  "ar": "الباب موارب"
+ },
+ "double faisceau": {
+  "fr": "Double faisceau",
+  "en": "Double beam",
+  "ar": "حزمة مزدوجة"
+ },
+ "double ptfe et caoutchouc fluoré": {
+  "fr": "Double PTFE et caoutchouc fluoré",
+  "en": "Double PTFE and fluorocarbon rubber",
+  "ar": "PTFE مزدوج ومطاط فلوري"
+ },
+ "dry": {
+  "fr": "Sec",
+  "en": "Dry",
+  "ar": "جاف"
+ },
+ "détection à faisceau divisé": {
+  "fr": "Détection à faisceau divisé",
+  "en": "Split-beam detection",
+  "ar": "كشف بحزمة مقسّمة"
+ },
+ "electric contact version": {
+  "fr": "Version à contact électrique",
+  "en": "Electric contact version",
+  "ar": "إصدار بتماس كهربائي"
+ },
+ "electro-galvanized steel with antimicrobial powder coating": {
+  "fr": "Acier électrozingué à revêtement poudre antimicrobien",
+  "en": "Electro-galvanised steel with antimicrobial powder coating",
+  "ar": "فولاذ مغلفن كهربائيًا بطلاء مسحوقي مضاد للميكروبات"
+ },
+ "electro-galvanized steel withantimicrobial powder coating": {
+  "fr": "Acier électrozingué à revêtement poudre antimicrobien",
+  "en": "Electro-galvanised steel with antimicrobial powder coating",
+  "ar": "فولاذ مغلفن كهربائيًا بطلاء مسحوقي مضاد للميكروبات"
+ },
+ "electronic": {
+  "fr": "Électronique",
+  "en": "Electronic",
+  "ar": "إلكتروني"
+ },
+ "electronic thermostat": {
+  "fr": "Thermostat électronique",
+  "en": "Electronic thermostat",
+  "ar": "ثرموستات إلكتروني"
+ },
+ "en option": {
+  "fr": "En option",
+  "en": "Optional",
+  "ar": "اختياري"
+ },
+ "equipped": {
+  "fr": "Équipé",
+  "en": "Equipped",
+  "ar": "مجهّز"
+ },
+ "external (field adjustable)": {
+  "fr": "Externe (réglable sur site)",
+  "en": "External (field adjustable)",
+  "ar": "خارجي (قابل للضبط ميدانيًا)"
+ },
+ "fibre céramique + adhésif inorganique": {
+  "fr": "Fibre céramique + adhésif inorganique",
+  "en": "Ceramic fibre + inorganic adhesive",
+  "ar": "ألياف خزفية + لاصق لاعضوي"
+ },
+ "filled versions": {
+  "fr": "Versions remplies",
+  "en": "Filled versions",
+  "ar": "الإصدارات المملوءة"
+ },
+ "fixed, aluminum, black powder coated": {
+  "fr": "Fixe, aluminium, revêtement poudre noir",
+  "en": "Fixed, aluminium, black powder coated",
+  "ar": "ثابت، ألمنيوم، طلاء مسحوقي أسود"
+ },
+ "flat head": {
+  "fr": "Tête plate",
+  "en": "Flat head",
+  "ar": "رأس مسطح"
+ },
+ "forceps holder": {
+  "fr": "Porte-pince",
+  "en": "Forceps holder",
+  "ar": "حامل الملقط"
+ },
+ "forcée": {
+  "fr": "Forcée",
+  "en": "Forced",
+  "ar": "قسري"
+ },
+ "format point": {
+  "fr": "Format point",
+  "en": "Dot format",
+  "ar": "صيغة نقطية"
+ },
+ "general": {
+  "fr": "Général",
+  "en": "General",
+  "ar": "عام"
+ },
+ "glass": {
+  "fr": "Verre",
+  "en": "Glass",
+  "ar": "الزجاج"
+ },
+ "glycerin": {
+  "fr": "Glycérine",
+  "en": "Glycerine",
+  "ar": "الغليسرين"
+ },
+ "glycérine": {
+  "fr": "Glycérine",
+  "en": "Glycerine",
+  "ar": "الغليسرين"
+ },
+ "gpl": {
+  "fr": "GPL",
+  "en": "LPG",
+  "ar": "غاز البترول المسال"
+ },
+ "gray": {
+  "fr": "Gris",
+  "en": "Grey",
+  "ar": "رمادي"
+ },
+ "hc (cfc free)": {
+  "fr": "HC (sans CFC)",
+  "en": "HC (CFC free)",
+  "ar": "هيدروكربون (خالٍ من CFC)"
+ },
+ "horaire et antihoraire": {
+  "fr": "Horaire et antihoraire",
+  "en": "Clockwise and anticlockwise",
+  "ar": "باتجاه عقارب الساعة وعكسها"
+ },
+ "horizontal": {
+  "fr": "Horizontal",
+  "en": "Horizontal",
+  "ar": "أفقي"
+ },
+ "huile agréée fda": {
+  "fr": "Huile agréée FDA",
+  "en": "FDA-approved oil",
+  "ar": "زيت معتمد من FDA"
+ },
+ "infini": {
+  "fr": "Infini",
+  "en": "Infinite",
+  "ar": "لانهائي"
+ },
+ "infinite plan achromatic objec": {
+  "fr": "Objectif plan achromatique corrigé à l'infini",
+  "en": "Infinity-corrected plan achromatic objective",
+  "ar": "عدسة شيئية مستوية لالونية مصححة للانهاية"
+ },
+ "ingaas": {
+  "fr": "InGaAs",
+  "en": "InGaAs",
+  "ar": "InGaAs"
+ },
+ "inner tube suitable to outer tube.": {
+  "fr": "Tube intérieur adapté au tube extérieur",
+  "en": "Inner tube suited to outer tube",
+  "ar": "الأنبوب الداخلي ملائم للأنبوب الخارجي"
+ },
+ "laiton": {
+  "fr": "Laiton",
+  "en": "Brass",
+  "ar": "النحاس الأصفر"
+ },
+ "lampe deutérium et lampe tungstène (importées)": {
+  "fr": "Lampe deutérium et lampe tungstène (importées)",
+  "en": "Deuterium and tungsten lamps (imported)",
+  "ar": "مصباح ديوتيريوم ومصباح تنغستن (مستوردان)"
+ },
+ "laser pilot light (pl)": {
+  "fr": "Visée laser (PL)",
+  "en": "Laser pilot light (PL)",
+  "ar": "ضوء ليزر إرشادي (PL)"
+ },
+ "lbs positioning": {
+  "fr": "Localisation LBS",
+  "en": "LBS positioning",
+  "ar": "تحديد الموقع LBS"
+ },
+ "led digital display": {
+  "fr": "Affichage numérique LED",
+  "en": "LED digital display",
+  "ar": "عرض رقمي LED"
+ },
+ "led, luminosité réglable": {
+  "fr": "LED, luminosité réglable",
+  "en": "LED, adjustable brightness",
+  "ar": "LED، سطوع قابل للضبط"
+ },
+ "manual": {
+  "fr": "Manuel",
+  "en": "Manual",
+  "ar": "يدوي"
+ },
+ "manual adjustable": {
+  "fr": "Réglable manuellement",
+  "en": "Manually adjustable",
+  "ar": "قابل للضبط يدويًا"
+ },
+ "manuel": {
+  "fr": "Manuel",
+  "en": "Manual",
+  "ar": "يدوي"
+ },
+ "material of construction": {
+  "fr": "Matériau de construction",
+  "en": "Material of construction",
+  "ar": "مادة الصنع"
+ },
+ "measuring range": {
+  "fr": "Plage de mesure",
+  "en": "Measuring range",
+  "ar": "مجال القياس"
+ },
+ "memory in shorter time by one procedure": {
+  "fr": "Mémorisation en un seul geste",
+  "en": "Memory stored in one step",
+  "ar": "التخزين بإجراء واحد"
+ },
+ "micro-processor": {
+  "fr": "Microprocesseur",
+  "en": "Microprocessor",
+  "ar": "معالج دقيق"
+ },
+ "micro-zero adjustable, aluminum, black powder coated": {
+  "fr": "Micro-réglage du zéro, aluminium, revêtement poudre noir",
+  "en": "Micro-zero adjustable, aluminium, black powder coated",
+  "ar": "ضبط دقيق للصفر، ألمنيوم، طلاء مسحوقي أسود"
+ },
+ "microprocesseur": {
+  "fr": "Microprocesseur",
+  "en": "Microprocessor",
+  "ar": "معالج دقيق"
+ },
+ "mixed with cfc free": {
+  "fr": "Mélange sans CFC",
+  "en": "CFC-free mixture",
+  "ar": "خليط خالٍ من CFC"
+ },
+ "molette manuelle": {
+  "fr": "Molette manuelle",
+  "en": "Manual thumbwheel",
+  "ar": "عجلة إبهامية يدوية"
+ },
+ "natural rubber": {
+  "fr": "Caoutchouc naturel",
+  "en": "Natural rubber",
+  "ar": "المطاط الطبيعي"
+ },
+ "naturelle": {
+  "fr": "Naturelle",
+  "en": "Natural",
+  "ar": "طبيعي"
+ },
+ "neoprene": {
+  "fr": "Néoprène",
+  "en": "Neoprene",
+  "ar": "النيوبرين"
+ },
+ "not applicable": {
+  "fr": "Sans objet",
+  "en": "Not applicable",
+  "ar": "لا ينطبق"
+ },
+ "numérique": {
+  "fr": "Numérique",
+  "en": "Digital",
+  "ar": "رقمي"
+ },
+ "nylon": {
+  "fr": "Nylon",
+  "en": "Nylon",
+  "ar": "النايلون"
+ },
+ "optional": {
+  "fr": "En option",
+  "en": "Optional",
+  "ar": "اختياري"
+ },
+ "optional (lcd)": {
+  "fr": "En option (LCD)",
+  "en": "Optional (LCD)",
+  "ar": "اختياري (LCD)"
+ },
+ "orbital": {
+  "fr": "Orbital",
+  "en": "Orbital",
+  "ar": "مداري"
+ },
+ "oui": {
+  "fr": "Oui",
+  "en": "Yes",
+  "ar": "نعم"
+ },
+ "peltier": {
+  "fr": "Peltier",
+  "en": "Peltier",
+  "ar": "بلتييه"
+ },
+ "penny head": {
+  "fr": "Tête plate",
+  "en": "Penny head",
+  "ar": "رأس مسطح"
+ },
+ "photodiode silicium": {
+  "fr": "Photodiode silicium",
+  "en": "Silicon photodiode",
+  "ar": "ثنائي ضوئي سيليكوني"
+ },
+ "plc": {
+  "fr": "PLC",
+  "en": "PLC",
+  "ar": "PLC"
+ },
+ "plexi glass": {
+  "fr": "Plexiglas",
+  "en": "Plexiglass",
+  "ar": "البليكسي غلاس"
+ },
+ "powder-coated cold-rolled steel plate": {
+  "fr": "Tôle d'acier laminée à froid revêtue poudre",
+  "en": "Powder-coated cold-rolled steel plate",
+  "ar": "صفيحة فولاذ مدرفلة على البارد مطلية بالمسحوق"
+ },
+ "powder-coated flat aluminum plate": {
+  "fr": "Plaque d'aluminium plane revêtue poudre",
+  "en": "Powder-coated flat aluminium plate",
+  "ar": "صفيحة ألمنيوم مسطحة مطلية بالمسحوق"
+ },
+ "ptfe [spray coated & oven baked]": {
+  "fr": "PTFE [appliqué par pulvérisation et cuit au four]",
+  "en": "PTFE [spray coated & oven baked]",
+  "ar": "PTFE [مطلي بالرش ومخبوز في الفرن]"
+ },
+ "quadruple": {
+  "fr": "Quadruple",
+  "en": "Quadruple",
+  "ar": "رباعي"
+ },
+ "quartz": {
+  "fr": "Quartz",
+  "en": "Quartz",
+  "ar": "الكوارتز"
+ },
+ "range": {
+  "fr": "Étendue",
+  "en": "Range",
+  "ar": "المدى"
+ },
+ "refroidissement direct": {
+  "fr": "Refroidissement direct",
+  "en": "Direct cooling",
+  "ar": "تبريد مباشر"
+ },
+ "refroidissement par air": {
+  "fr": "Refroidissement par air",
+  "en": "Air cooling",
+  "ar": "تبريد بالهواء"
+ },
+ "refroidissement par air pulsé": {
+  "fr": "Refroidissement par air pulsé",
+  "en": "Forced-air cooling",
+  "ar": "تبريد بالهواء المدفوع"
+ },
+ "right angle": {
+  "fr": "Coudé à 90°",
+  "en": "Right angle",
+  "ar": "بزاوية قائمة"
+ },
+ "round": {
+  "fr": "Rond",
+  "en": "Round",
+  "ar": "مستدير"
+ },
+ "round top": {
+  "fr": "Tête ronde",
+  "en": "Round top",
+  "ar": "رأس مستدير"
+ },
+ "screw thread": {
+  "fr": "Filetage",
+  "en": "Screw thread",
+  "ar": "سن لولبي"
+ },
+ "secop": {
+  "fr": "Secop",
+  "en": "Secop",
+  "ar": "Secop"
+ },
+ "selon modèle (voir § références)": {
+  "fr": "Selon modèle (voir § références)",
+  "en": "Model-dependent (see references section)",
+  "ar": "حسب الطراز (انظر فقرة المراجع)"
+ },
+ "shatterproof safety glass": {
+  "fr": "Verre de sécurité incassable",
+  "en": "Shatterproof safety glass",
+  "ar": "زجاج أمان غير قابل للتحطم"
+ },
+ "sheet glass": {
+  "fr": "Verre plat",
+  "en": "Sheet glass",
+  "ar": "زجاج مسطح"
+ },
+ "silicon oil": {
+  "fr": "Huile silicone",
+  "en": "Silicone oil",
+  "ar": "زيت السيليكون"
+ },
+ "silicon rubber": {
+  "fr": "Caoutchouc silicone",
+  "en": "Silicone rubber",
+  "ar": "مطاط السيليكون"
+ },
+ "simple faisceau": {
+  "fr": "Simple faisceau",
+  "en": "Single beam",
+  "ar": "حزمة مفردة"
+ },
+ "simple porte": {
+  "fr": "Simple porte",
+  "en": "Single door",
+  "ar": "باب مفرد"
+ },
+ "simplex": {
+  "fr": "Simplex",
+  "en": "Simplex",
+  "ar": "أحادي"
+ },
+ "sonore et lumineuse": {
+  "fr": "Sonore et lumineuse",
+  "en": "Audible and visual",
+  "ar": "صوتي وضوئي"
+ },
+ "sound and light alarm": {
+  "fr": "Alarme sonore et lumineuse",
+  "en": "Sound and light alarm",
+  "ar": "إنذار صوتي وضوئي"
+ },
+ "source water conductivit": {
+  "fr": "Conductivité de l'eau source",
+  "en": "Source water conductivity",
+  "ar": "ناقلية ماء المصدر"
+ },
+ "spherical probe": {
+  "fr": "Sonde sphérique",
+  "en": "Spherical probe",
+  "ar": "مجس كروي"
+ },
+ "spray coated": {
+  "fr": "Peint par pulvérisation",
+  "en": "Spray coated",
+  "ar": "مطلي بالرش"
+ },
+ "spray coated cold-rolled steel plate": {
+  "fr": "Tôle d'acier laminée à froid, peinte par pulvérisation",
+  "en": "Spray-coated cold-rolled steel plate",
+  "ar": "صفيحة فولاذ مدرفلة على البارد مطلية بالرش"
+ },
+ "squat form": {
+  "fr": "Forme basse",
+  "en": "Squat form",
+  "ar": "شكل منخفض"
+ },
+ "ss chain.": {
+  "fr": "Chaîne inox",
+  "en": "Stainless steel chain",
+  "ar": "سلسلة من الفولاذ المقاوم للصدأ"
+ },
+ "stainless steel": {
+  "fr": "Acier inoxydable",
+  "en": "Stainless steel",
+  "ar": "الفولاذ المقاوم للصدأ"
+ },
+ "standard": {
+  "fr": "De série",
+  "en": "Standard",
+  "ar": "قياسي"
+ },
+ "standard version": {
+  "fr": "Version standard",
+  "en": "Standard version",
+  "ar": "الإصدار القياسي"
+ },
+ "straight": {
+  "fr": "Droit",
+  "en": "Straight",
+  "ar": "مستقيم"
+ },
+ "supported": {
+  "fr": "Pris en charge",
+  "en": "Supported",
+  "ar": "مدعوم"
+ },
+ "temperature compensation": {
+  "fr": "Compensation de température",
+  "en": "Temperature compensation",
+  "ar": "تعويض الحرارة"
+ },
+ "température et vitesse (numérique)": {
+  "fr": "Température et vitesse (numérique)",
+  "en": "Temperature and speed (digital)",
+  "ar": "الحرارة والسرعة (رقمي)"
+ },
+ "thermal printing system": {
+  "fr": "Système d'impression thermique",
+  "en": "Thermal printing system",
+  "ar": "نظام طباعة حرارية"
+ },
+ "thermometer": {
+  "fr": "Thermomètre",
+  "en": "Thermometer",
+  "ar": "مقياس حرارة"
+ },
+ "thermopile": {
+  "fr": "Thermopile",
+  "en": "Thermopile",
+  "ar": "مكدّس حراري"
+ },
+ "tig argon arc welding": {
+  "fr": "Soudage TIG à l'arc sous argon",
+  "en": "TIG argon arc welding",
+  "ar": "لحام TIG بقوس الأرغون"
+ },
+ "triangle top": {
+  "fr": "Tête triangulaire",
+  "en": "Triangle top",
+  "ar": "رأس مثلث"
+ },
+ "trois niveaux": {
+  "fr": "Trois niveaux",
+  "en": "Three levels",
+  "ar": "ثلاثة مستويات"
+ },
+ "ttl": {
+  "fr": "TTL",
+  "en": "TTL",
+  "ar": "TTL"
+ },
+ "usb communication interface": {
+  "fr": "Interface de communication USB",
+  "en": "USB communication interface",
+  "ar": "واجهة اتصال USB"
+ },
+ "verre": {
+  "fr": "Verre",
+  "en": "Glass",
+  "ar": "الزجاج"
+ },
+ "vertical principal + auxiliaire, serpentin double couche": {
+  "fr": "Vertical principal + auxiliaire, serpentin double couche",
+  "en": "Main + auxiliary vertical, double-layer coil",
+  "ar": "عمودي رئيسي + مساعد، ملف حلزوني مزدوج الطبقة"
+ },
+ "vertical à porte manuelle": {
+  "fr": "Vertical à porte manuelle",
+  "en": "Vertical with manual door",
+  "ar": "عمودي بباب يدوي"
+ },
+ "vide pulsé": {
+  "fr": "Vide pulsé",
+  "en": "Pulsed vacuum",
+  "ar": "خلاء نبضي"
+ },
+ "wetted parts protection": {
+  "fr": "Protection des parties en contact",
+  "en": "Wetted parts protection",
+  "ar": "حماية الأجزاء الملامسة"
+ },
+ "yes": {
+  "fr": "Oui",
+  "en": "Yes",
+  "ar": "نعم"
+ },
+ "½\" npt (f) , plugged": {
+  "fr": "½\" NPT (F), obturé",
+  "en": "½\" NPT (F), plugged",
+  "ar": "½ بوصة NPT (أنثى)، مسدود"
+ },
+ "½\" npt (m) cable gland.": {
+  "fr": "Presse-étoupe ½\" NPT (M)",
+  "en": "½\" NPT (M) cable gland",
+  "ar": "حشوة كابل ½ بوصة NPT (ذكر)"
+ },
+ "écran lcd": {
+  "fr": "Écran LCD",
+  "en": "LCD screen",
+  "ar": "شاشة LCD"
+ },
+ "écran tactile lcd": {
+  "fr": "Écran tactile LCD",
+  "en": "LCD touch screen",
+  "ar": "شاشة لمس LCD"
+ },
+ "électrique": {
+  "fr": "Électrique",
+  "en": "Electric",
+  "ar": "كهربائي"
+ },
+ "électrode ionique sélective": {
+  "fr": "Électrode ionique sélective",
+  "en": "Ion-selective electrode",
+  "ar": "قطب انتقائي للأيونات"
+ }
+}

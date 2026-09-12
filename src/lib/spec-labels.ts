@@ -15,9 +15,11 @@
 // et la PONCTUATION, jamais le contenu : "Poids (kg)" et "Poids (g)" restent
 // deux entrees distinctes.
 import glossaire from '@/data/spec-labels.json'
+import glossaireValeurs from '@/data/spec-values.json'
 
 type Entree = { fr?: string; en?: string; ar?: string }
 const table = glossaire as Record<string, Entree>
+const tableValeurs = glossaireValeurs as Record<string, Entree>
 
 export function normalizeSpecLabel(s: string): string {
   return String(s)
@@ -50,4 +52,28 @@ export function translateSpecLabel(label: string, locale: string): string {
   return v && v.trim() ? v : brut
 }
 
+/**
+ * Rend la VALEUR d'une cellule dans la langue demandee.
+ *
+ * ⚠️ Glossaire SEPARE de celui des libelles, et ce n'est pas un detail :
+ * 80 chaines apparaissent aux deux endroits avec des sens differents.
+ * « Standard » comme libelle veut dire « Norme », comme valeur « de serie » ;
+ * « Range » comme libelle est « Plage », comme valeur c'est un intitule de section.
+ * Partager une seule table introduirait des contresens sur ~470 cellules.
+ *
+ * N'y figurent que des valeurs purement verbales. Tout ce qui porte un chiffre,
+ * une unite ou un symbole (« 0 – 300 mm », « amb. to 500 °C », « PT100 ») est une
+ * donnee technique : absente du glossaire, elle ressort inchangee.
+ */
+export function translateSpecValue(value: string, locale: string): string {
+  const brut = String(value ?? '')
+  if (!brut.trim()) return brut
+  const e = tableValeurs[normalizeSpecLabel(brut)]
+  if (!e) return brut
+  const lg = locale === 'ar' ? 'ar' : locale === 'en' ? 'en' : 'fr'
+  const v = e[lg]
+  return v && v.trim() ? v : brut
+}
+
 export const specGlossarySize = Object.keys(table).length
+export const specValueGlossarySize = Object.keys(tableValeurs).length

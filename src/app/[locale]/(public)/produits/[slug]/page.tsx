@@ -11,7 +11,7 @@ import { ProductCard, type ProductCardData } from '@/components/public/ProductCa
 import { Button } from '@/components/ui/button'
 import { defaultLocale, type Locale } from '@/i18n'
 import { db } from '@/lib/db'
-import { translateSpecLabel } from '@/lib/spec-labels'
+import { translateSpecLabel, translateSpecValue } from '@/lib/spec-labels'
 import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
 import { breadcrumbSchema, graph, productSchema } from '@/lib/schema-org'
 import { buildAlternates, buildSocial } from '@/lib/seo'
@@ -272,7 +272,7 @@ export default async function ProductPage({
                     <tr key={i} className="border-b border-border last:border-0">
                       {row.map((cell, j) => (
                         <td key={j} className={`px-3 py-2 align-top ${j === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground'}`}>
-                          {j === 0 ? translateSpecLabel(cell, locale) : cell}
+                          {j === 0 ? translateSpecLabel(cell, locale) : translateSpecValue(cell, locale)}
                         </td>
                       ))}
                     </tr>
