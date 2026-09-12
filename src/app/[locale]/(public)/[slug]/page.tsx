@@ -176,6 +176,14 @@ export default async function CategoryPage({
 
   const isMetrologie = category.slug === 'metrologie'
 
+  // Métrologie, Qualification & validation, Consulting sont des familles de SERVICES :
+  // elles n'auront jamais de produit. Leur afficher « aucun produit publié pour le
+  // moment » les fait passer pour des rubriques inachevées alors que la page porte
+  // déjà sa description et ses sous-catégories. On garde l'appel au devis, qui est
+  // justement le chemin de conversion d'une prestation, et on retire le message.
+  const totalProduits = allLeaves.reduce((n, g) => n + g.products.length, 0)
+  const isServiceCategory = totalProduits === 0 && !isColumnConfigurator
+
   // Donnees structurees : fil d'Ariane + liste des produits reellement affiches.
   const ld = graph(
     await breadcrumbSchema(locale, [
@@ -299,7 +307,7 @@ export default async function CategoryPage({
             <ColumnConfigurator />
           ) : !selected || selected.products.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-border bg-muted/30 p-12 text-center">
-              <p className="text-sm text-muted-foreground">{t('noProducts')}</p>
+              <p className="text-sm text-muted-foreground">{isServiceCategory ? t('serviceOnQuote') : t('noProducts')}</p>
               <Button asChild className="mt-4" variant="outline">
                 <Link href={withLocale('/devis', locale)}>{t('noProductsCta')}</Link>
               </Button>
