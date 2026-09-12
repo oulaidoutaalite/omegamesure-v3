@@ -1,3 +1,4 @@
+import { Prisma } from '@prisma/client'
 import { IconSearch } from '@tabler/icons-react'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 
@@ -7,6 +8,7 @@ import { SearchBar } from '@/components/public/SearchBar'
 import { type Locale } from '@/i18n'
 import { db } from '@/lib/db'
 import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
+import { expandSpecQuery } from '@/lib/spec-search'
 import { buildAlternates } from '@/lib/seo'
 
 export const dynamic = 'force-dynamic'
@@ -73,8 +75,22 @@ export default async function SearchPage({
     ).map((r) => r.id)
 
     if (ids.length === 0) {
+      // Les libellés et valeurs de specs sont stockés dans UNE seule langue et traduits
+      // à l'affichage : sans cela, chercher « Alimentation » ne trouverait pas une fiche
+      // dont la base contient « Power Supply », alors que le visiteur vient de lire
+      // « Alimentation » sur cette fiche. On élargit donc aux formes des autres langues.
+      // `ILIKE ANY (ARRAY[...])` et non `EXISTS (... VALUES ...)` : mesuré, la forme
+      // EXISTS recalcule `unaccent(p.specs::text)` pour chaque motif ET chaque ligne
+      // et coûtait 2× plus cher, à résultats strictement identiques.
+      const formes = expandSpecQuery(q)
+      const viaGlossaire = formes.length
+        ? Prisma.sql`OR public.unaccent(p.specs::text) ILIKE ANY (ARRAY[${Prisma.join(
+            formes.map((f) => Prisma.sql`public.unaccent(${'%' + f + '%'})`),
+          )}])`
+        : Prisma.empty
+
       ids = (
-        await db.$queryRaw<{ id: string }[]>`
+        await db.$queryRaw<{ id: string }[]>(Prisma.sql`
           SELECT p.id
           FROM "Product" p
           WHERE p."isPublished" = true AND (
@@ -82,9 +98,10 @@ export default async function SearchPage({
             OR  public.unaccent(coalesce(p.description, ''))         ILIKE public.unaccent(${pat})
             OR  public.unaccent(p.specs::text)                      ILIKE public.unaccent(${pat})
             OR  public.unaccent(p.translations::text)               ILIKE public.unaccent(${pat})
+            ${viaGlossaire}
           )
           ORDER BY p."isFeatured" DESC, p."updatedAt" DESC
-          LIMIT 48`
+          LIMIT 48`)
       ).map((r) => r.id)
     }
   }
