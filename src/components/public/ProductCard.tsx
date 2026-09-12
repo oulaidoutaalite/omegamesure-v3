@@ -1,5 +1,6 @@
 import { IconArrowRight, IconPhoto } from '@tabler/icons-react'
 import { getTranslations } from 'next-intl/server'
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { AddToQuoteButton } from '@/components/public/cart/AddToQuoteButton'
@@ -46,12 +47,16 @@ export async function ProductCard({
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-muted">
         {data.imageUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          // `fill` plutôt que h-full/w-full : le parent porte déjà `relative aspect-[4/3]`,
+          // le rendu est identique mais Next redimensionne et sert en AVIF/WebP au lieu
+          // du PNG d'origine. `sizes` suit la grille (1 / 2 / 3 colonnes) — sans lui,
+          // Next servirait la largeur d'écran entière et l'optimisation ne servirait à rien.
+          <Image
             src={data.imageUrl}
             alt={data.name}
-            loading="lazy"
-            className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+            fill
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            className="object-cover transition duration-300 group-hover:scale-105"
           />
         ) : (
           <div className="grid h-full w-full place-items-center text-muted-foreground">

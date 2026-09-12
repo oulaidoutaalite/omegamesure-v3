@@ -1,6 +1,7 @@
 'use client'
 
 import { IconMenu2, IconX } from '@tabler/icons-react'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 import { CartWidget } from '@/components/public/cart/CartWidget'
@@ -69,10 +70,15 @@ export function Header({ brand, items }: Props) {
         <div className="flex min-h-16 items-center justify-between gap-4 py-2">
           <Link href="/" className="flex shrink-0 items-center gap-2">
             {brand.logoUrl ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
+              // 397x320 px et 191 ko a la source, affiche a 96 px de haut : sans
+              // optimisation on telechargeait le logo pleine taille sur CHAQUE page.
+              // `priority` car il est au-dessus de la ligne de flottaison.
+              <Image
                 src={brand.logoUrl}
                 alt={brand.siteName}
+                width={397}
+                height={320}
+                priority
                 className="h-24 w-auto object-contain sm:h-28"
               />
             ) : (

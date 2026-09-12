@@ -1,6 +1,7 @@
 import { IconDownload, IconPhoto } from '@tabler/icons-react'
 import { type Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -181,10 +182,19 @@ export default async function ProductPage({
       <div className="grid gap-10 lg:grid-cols-2">
         {/* Gallery */}
         <div className="space-y-3">
-          <div className="aspect-square overflow-hidden rounded-2xl border border-border bg-muted">
+          {/* `relative` est requis par `fill` ; il ne change rien au rendu. */}
+          <div className="relative aspect-square overflow-hidden rounded-2xl border border-border bg-muted">
             {main ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={main.url} alt={main.alt ?? name} className="h-full w-full object-cover" />
+              // Image principale : candidate LCP de la fiche, donc `priority`.
+              // Source en 1110–1450 px pour un affichage de ~600 px au plus.
+              <Image
+                src={main.url}
+                alt={main.alt ?? name}
+                fill
+                priority
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
             ) : (
               <div className="grid h-full w-full place-items-center text-muted-foreground">
                 <IconPhoto size={64} />
@@ -194,9 +204,9 @@ export default async function ProductPage({
           {sorted.length > 1 && (
             <ul className="grid grid-cols-4 gap-2">
               {sorted.slice(0, 8).map((img, i) => (
-                <li key={i} className="aspect-square overflow-hidden rounded-lg border border-border bg-muted">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={img.url} alt={img.alt ?? name} className="h-full w-full object-cover" />
+                <li key={i} className="relative aspect-square overflow-hidden rounded-lg border border-border bg-muted">
+                  {/* Vignettes : 4 colonnes, donc très petites — d'où le `sizes` serré. */}
+                  <Image src={img.url} alt={img.alt ?? name} fill sizes="120px" className="object-cover" />
                 </li>
               ))}
             </ul>
