@@ -14,7 +14,7 @@ import { db } from '@/lib/db'
 import { translateSpecLabel, translateSpecValue } from '@/lib/spec-labels'
 import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
 import { breadcrumbSchema, graph, productSchema } from '@/lib/schema-org'
-import { buildAlternates, buildSocial } from '@/lib/seo'
+import { buildAlternates, buildSocial, metaDescriptionFrom } from '@/lib/seo'
 
 export const dynamic = 'force-dynamic'
 
@@ -31,7 +31,8 @@ export async function generateMetadata({
   const { locale, slug } = await params
   const p = await db.product.findUnique({
     where: { slug },
-    select: { name: true, shortDescription: true, metaTitle: true, metaDescription: true, images: true, translations: true },
+    // `description` sert de repli quand le résumé est trop mince pour un extrait de résultat
+    select: { name: true, shortDescription: true, description: true, metaTitle: true, metaDescription: true, images: true, translations: true },
   })
   if (!p) return { title: 'Produit introuvable' }
   const tr = p.translations as TranslationsJson
@@ -41,10 +42,13 @@ export async function generateMetadata({
     ?? ''
   // même piège que pour les catégories : passer `metaDescription ?? shortDescription` en défaut
   // renverrait le résumé FRANÇAIS sur /en/ et /ar/, faute de metaDescription traduite.
-  const description =
-    pickLocaleField(p.metaDescription, tr, 'metaDescription', locale)
-    ?? pickLocaleField(p.shortDescription, tr, 'shortDescription', locale)
-    ?? undefined
+  // Le repli sur la description longue rattrape les résumés trop minces pour faire
+  // un extrait de résultat — artefacts d'import (« 1 modèle ») ou résumé absent.
+  const description = metaDescriptionFrom(
+    pickLocaleField(p.metaDescription, tr, 'metaDescription', locale),
+    pickLocaleField(p.shortDescription, tr, 'shortDescription', locale),
+    pickLocaleField(p.description, tr, 'description', locale),
+  )
   const imgs = Array.isArray(p.images) ? (p.images as unknown as ImageJson[]) : []
   const cover = (imgs.find((i) => i.isPrimary) ?? imgs[0])?.url ?? null
   return {

@@ -140,3 +140,47 @@ export async function buildSocial(opts: {
     },
   }
 }
+
+/**
+ * Meta description d'une fiche produit, avec repli sur la description longue.
+ *
+ * Le problème : la description venait de `metaDescription ?? shortDescription`.
+ * Or beaucoup de résumés sont des artefacts d'import (« 1 modèle », « 2 modèles »)
+ * ou manquent tout à fait — mesuré sur le catalogue : 1 142 fiches publiées sur
+ * 2 666 annonçaient à Google une description inutilisable ou aucune.
+ *
+ * La réponse : quand le résumé est trop mince pour faire un extrait de résultat,
+ * on se rabat sur la description longue, tronquée proprement. Rien n'est réécrit
+ * en base ; une fiche sans aucune matière reste simplement sans description.
+ *
+ * ⚠️ `metaDescription` est respecté tel quel quelle que soit sa longueur : il est
+ * saisi à la main, donc délibéré.
+ */
+const SEUIL_RESUME = 50
+
+export function metaDescriptionFrom(
+  meta: string | null | undefined,
+  court: string | null | undefined,
+  long: string | null | undefined,
+  max = 155,
+): string | undefined {
+  const net = (s: string | null | undefined) => String(s ?? '').replace(/\s+/g, ' ').trim()
+  const m = net(meta)
+  if (m) return m
+
+  const c = net(court)
+  if (c.length >= SEUIL_RESUME) return c
+
+  const l = net(long)
+  if (l) {
+    if (l.length <= max) return l
+    // couper sur un mot, pas au milieu — et jamais trop court si l'espace tombe mal
+    const tranche = l.slice(0, max + 1)
+    const esp = tranche.lastIndexOf(' ')
+    const base = esp > 60 ? tranche.slice(0, esp) : l.slice(0, max)
+    return base.replace(/[\s,;:.…-]+$/, '') + '…'
+  }
+
+  // mieux vaut un résumé maigre que rien du tout
+  return c || undefined
+}
