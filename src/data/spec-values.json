@@ -819,6 +819,11 @@
   "en": "Bromine",
   "ar": "البروم"
  },
+ "brown": {
+  "fr": "Marron",
+  "en": "Brown",
+  "ar": "بني"
+ },
  "brushless (sans balais)": {
   "fr": "Brushless (sans balais)",
   "en": "Brushless",
@@ -2238,6 +2243,11 @@
   "fr": "Fiole pour porte-filtre",
   "en": "Flask for filter holder",
   "ar": "دورق لحامل المرشّح"
+ },
+ "flat": {
+  "fr": "Plat",
+  "en": "Flat",
+  "ar": "مسطح"
  },
  "flat head": {
   "fr": "Tête plate",
@@ -4214,6 +4224,11 @@
   "en": "Dial calliper",
   "ar": "قدم قياس بقرص"
  },
+ "pink": {
+  "fr": "Rose",
+  "en": "Pink",
+  "ar": "وردي"
+ },
  "piston": {
   "fr": "Piston",
   "en": "Piston",
@@ -5314,6 +5329,21 @@
   "en": "Soft tube extrusion fixture",
   "ar": "أداة بثق الأنبوب اللين"
  },
+ "solid": {
+  "fr": "Massif",
+  "en": "Solid",
+  "ar": "مصمت"
+ },
+ "solid (class 1)": {
+  "fr": "Massif (classe 1)",
+  "en": "Solid (class 1)",
+  "ar": "مصمت (الفئة 1)"
+ },
+ "solid / stranded": {
+  "fr": "Massif / câblé",
+  "en": "Solid / stranded",
+  "ar": "مصمت / مجدول"
+ },
  "solid or suspension liquid sample": {
   "fr": "Échantillon solide ou liquide en suspension",
   "en": "Solid or suspension liquid sample",
@@ -5588,6 +5618,16 @@
   "fr": "Câblé (multibrin)",
   "en": "Stranded",
   "ar": "مجدول"
+ },
+ "stranded (class 2)": {
+  "fr": "Câblé (classe 2)",
+  "en": "Stranded (class 2)",
+  "ar": "مجدول (الفئة 2)"
+ },
+ "stranded (class2)": {
+  "fr": "Câblé (classe 2)",
+  "en": "Stranded (class 2)",
+  "ar": "مجدول (الفئة 2)"
  },
  "stsainless steel": {
   "fr": "Acier inoxydable",
@@ -6214,6 +6254,16 @@
   "en": "Tungsten halogen lamp",
   "ar": "مصباح هالوجين تنغستن"
  },
+ "twisted": {
+  "fr": "Torsadé",
+  "en": "Twisted",
+  "ar": "مجدول"
+ },
+ "twisted / flat": {
+  "fr": "Torsadé / plat",
+  "en": "Twisted / flat",
+  "ar": "مجدول / مسطح"
+ },
  "twisted style": {
   "fr": "Torsadé",
   "en": "Twisted",
@@ -6498,6 +6548,11 @@
   "fr": "Vidéo et appareil photo",
   "en": "Video & camera",
   "ar": "الفيديو والكاميرا"
+ },
+ "violet": {
+  "fr": "Violet",
+  "en": "Violet",
+  "ar": "بنفسجي"
  },
  "vis électrique": {
   "fr": "Vis électrique",

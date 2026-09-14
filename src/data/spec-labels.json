@@ -1,4 +1,14 @@
 {
+ "(+) contact": {
+  "fr": "Contact (+)",
+  "en": "(+) contact",
+  "ar": "التماس (+)"
+ },
+ "(-) contact": {
+  "fr": "Contact (−)",
+  "en": "(−) contact",
+  "ar": "التماس (−)"
+ },
  "-1 to 2 bar / -1 to 10 bar / -1 to 20 bar / -1 to 40 bar / 0 to 70 bar 0 to 200 bar / 0 to 400 bar / 0 to 700 bar / 0 to 1000 bar": {
   "fr": "-1 à 2 bar / -1 à 10 bar / -1 à 20 bar / -1 à 40 bar / 0 à 70 bar / 0 à 200 bar / 0 à 400 bar / 0 à 700 bar / 0 à 1000 bar",
   "en": "-1 to 2 bar / -1 to 10 bar / -1 to 20 bar / -1 to 40 bar / 0 to 70 bar / 0 to 200 bar / 0 to 400 bar / 0 to 700 bar / 0 to 1000 bar",
@@ -959,6 +969,11 @@
   "en": "Average power consumption",
   "ar": "متوسط الاستهلاك"
  },
+ "awg / swg no": {
+  "fr": "Calibre AWG / SWG",
+  "en": "AWG / SWG no.",
+  "ar": "المقاس AWG / SWG"
+ },
  "azote": {
   "fr": "Azote",
   "en": "Nitrogen",
@@ -1534,6 +1549,16 @@
   "en": "Reagent beaker",
   "ar": "كأس الكاشف"
  },
+ "cable diameter mm (flat)": {
+  "fr": "Diamètre du câble, mm (plat)",
+  "en": "Cable diameter, mm (flat)",
+  "ar": "قطر الكابل، مم (مسطح)"
+ },
+ "cable diameter mm (twisted)": {
+  "fr": "Diamètre du câble, mm (torsadé)",
+  "en": "Cable diameter, mm (twisted)",
+  "ar": "قطر الكابل، مم (مجدول)"
+ },
  "cable entry": {
   "fr": "Entrée de câble",
   "en": "Cable entry",
@@ -1554,10 +1579,25 @@
   "en": "Cable material",
   "ar": "مادة الكابل"
  },
+ "cable odering code": {
+  "fr": "Code de commande du câble",
+  "en": "Cable ordering code",
+  "ar": "رمز طلب الكابل"
+ },
+ "cable ordering code": {
+  "fr": "Code de commande du câble",
+  "en": "Cable ordering code",
+  "ar": "رمز طلب الكابل"
+ },
  "cable type": {
   "fr": "Type de câble",
   "en": "Cable type",
   "ar": "نوع الكابل"
+ },
+ "cable wgt (approx.) kg / km": {
+  "fr": "Masse du câble (approx.), kg/km",
+  "en": "Cable weight (approx.), kg/km",
+  "ar": "وزن الكابل (تقريبي)، كغ/كم"
  },
  "cadence": {
   "fr": "Cadence",
@@ -2029,6 +2069,11 @@
   "en": "Water capture (kg/batch)",
   "ar": "التقاط الماء (كغ/دفعة)"
  },
+ "caractéristique": {
+  "fr": "Caractéristique",
+  "en": "Specification",
+  "ar": "الخاصية"
+ },
  "caractéristiques": {
   "fr": "Caractéristiques",
   "en": "Characteristics",
@@ -2498,6 +2543,16 @@
   "fr": "Couleur",
   "en": "Colour",
   "ar": "اللون"
+ },
+ "color code (ansi)": {
+  "fr": "Code couleur (ANSI)",
+  "en": "Colour code (ANSI)",
+  "ar": "رمز الألوان (ANSI)"
+ },
+ "color code (iec)": {
+  "fr": "Code couleur (CEI)",
+  "en": "Colour code (IEC)",
+  "ar": "رمز الألوان (IEC)"
  },
  "color rendering index (cri)": {
   "fr": "Indice de rendu des couleurs (IRC)",
@@ -3294,6 +3349,11 @@
   "en": "QC and calibration",
   "ar": "ضبط الجودة والمعايرة"
  },
+ "cross section area (mm²)": {
+  "fr": "Section (mm²)",
+  "en": "Cross-section area (mm²)",
+  "ar": "المقطع العرضي (مم²)"
+ },
  "crucible lid size": {
   "fr": "Dimensions du couvercle de creuset",
   "en": "Crucible lid size",
@@ -3439,10 +3499,30 @@
   "en": "Extractor cone",
   "ar": "مخروط المستخلص"
  },
+ "d": {
+  "fr": "D",
+  "en": "D",
+  "ar": "D"
+ },
+ "d1": {
+  "fr": "d1",
+  "en": "d1",
+  "ar": "d1"
+ },
  "d1 x d2 x hauteur (mm)": {
   "fr": "D1 × D2 × hauteur (mm)",
   "en": "D1 × D2 × height (mm)",
   "ar": "د1 × د2 × الارتفاع (مم)"
+ },
+ "d2": {
+  "fr": "d2",
+  "en": "d2",
+  "ar": "d2"
+ },
+ "d3": {
+  "fr": "d3",
+  "en": "d3",
+  "ar": "d3"
  },
  "daily evaporation rate of static liquid nitrogen (%)": {
   "fr": "Taux d'évaporation journalier de l'azote liquide statique (%)",
@@ -5899,6 +5979,16 @@
   "en": "Fuse",
   "ar": "المنصهر"
  },
+ "g.i. armoured wire / flat strip size (mm) (feuillard)": {
+  "fr": "Armure en fil galvanisé — feuillard plat (mm)",
+  "en": "G.I. armour — flat strip (mm)",
+  "ar": "التسليح بسلك مجلفن — شريط مسطح (مم)"
+ },
+ "g.i. armoured wire / flat strip size (mm) (rond)": {
+  "fr": "Armure en fil galvanisé — fil rond (mm)",
+  "en": "G.I. armour — round wire (mm)",
+  "ar": "التسليح بسلك مجلفن — سلك مدور (مم)"
+ },
  "g.w": {
   "fr": "Poids brut",
   "en": "G.W.",
@@ -7084,6 +7174,11 @@
   "en": "Cylinder inner diameter",
   "ar": "القطر الداخلي للأسطوانة"
  },
+ "inner sheath thickness (min)": {
+  "fr": "Épaisseur de la gaine intérieure (min.)",
+  "en": "Inner sheath thickness (min.)",
+  "ar": "سماكة الغلاف الداخلي (دنيا)"
+ },
  "inner tank material": {
   "fr": "Matériau de la cuve intérieure",
   "en": "Inner tank material",
@@ -7223,6 +7318,16 @@
   "fr": "Résistance d'isolement",
   "en": "Insulation resistance",
   "ar": "مقاومة العزل"
+ },
+ "insulation thickness (min)": {
+  "fr": "Épaisseur d'isolation (min.)",
+  "en": "Insulation thickness (min.)",
+  "ar": "سماكة العزل (دنيا)"
+ },
+ "insulation thickness (nom)": {
+  "fr": "Épaisseur d'isolation (nom.)",
+  "en": "Insulation thickness (nom.)",
+  "ar": "سماكة العزل (اسمية)"
  },
  "insulation type": {
   "fr": "Type d'isolation",
@@ -7433,6 +7538,21 @@
   "fr": "Le mobile L0 correspond à la plage de mesure en option (mPa·s)",
   "en": "The L0 spindle is for the optional measuring range (mPa·s)",
   "ar": "المغزل L0 مخصص لمجال القياس الاختياري (mPa·s)"
+ },
+ "l1": {
+  "fr": "L1",
+  "en": "L1",
+  "ar": "L1"
+ },
+ "l2": {
+  "fr": "L2",
+  "en": "L2",
+  "ar": "L2"
+ },
+ "l3": {
+  "fr": "L3",
+  "en": "L3",
+  "ar": "L3"
  },
  "laboratory temperature": {
   "fr": "Température du laboratoire",
@@ -8293,6 +8413,31 @@
   "fr": "Max. (psig)",
   "en": "Max. (psig)",
   "ar": "الأقصى (psig)"
+ },
+ "max cable diameter mm": {
+  "fr": "Diamètre maximal du câble (mm)",
+  "en": "Max. cable diameter (mm)",
+  "ar": "أقصى قطر للكابل (مم)"
+ },
+ "max conductor resistance @ 20 deg c": {
+  "fr": "Résistance maximale du conducteur à 20 °C",
+  "en": "Max. conductor resistance @ 20 °C",
+  "ar": "أقصى مقاومة للموصل عند 20 °م"
+ },
+ "max conductor resistance @ 20 deg c (cu)": {
+  "fr": "Résistance maximale du conducteur à 20 °C (Cu)",
+  "en": "Max. conductor resistance @ 20 °C (Cu)",
+  "ar": "أقصى مقاومة للموصل عند 20 °م (نحاس)"
+ },
+ "max conductor resistance @ 20°c (copper wire, ohm / km)": {
+  "fr": "Résistance maximale du conducteur à 20 °C — cuivre nu (ohm/km)",
+  "en": "Max. conductor resistance @ 20 °C — copper wire (ohm/km)",
+  "ar": "أقصى مقاومة للموصل عند 20 °م — نحاس عارٍ (أوم/كم)"
+ },
+ "max conductor resistance @ 20°c (tinned cu, ohm / km)": {
+  "fr": "Résistance maximale du conducteur à 20 °C — cuivre étamé (ohm/km)",
+  "en": "Max. conductor resistance @ 20 °C — tinned copper (ohm/km)",
+  "ar": "أقصى مقاومة للموصل عند 20 °م — نحاس مقصدر (أوم/كم)"
  },
  "max consumption": {
   "fr": "Consommation maximale",
@@ -9589,6 +9734,11 @@
   "en": "No.",
   "ar": "الرقم"
  },
+ "no of strands": {
+  "fr": "Nombre de brins",
+  "en": "Number of strands",
+  "ar": "عدد الخيوط"
+ },
  "no. of core": {
   "fr": "Nombre de conducteurs",
   "en": "No. of cores",
@@ -9613,6 +9763,11 @@
   "fr": "Niveau sonore",
   "en": "Noise level",
   "ar": "مستوى الضجيج"
+ },
+ "nom cable diameter mm": {
+  "fr": "Diamètre nominal du câble (mm)",
+  "en": "Nominal cable diameter (mm)",
+  "ar": "القطر الاسمي للكابل (مم)"
  },
  "nombre d'échantillons": {
   "fr": "Nombre d'échantillons",
@@ -9699,10 +9854,50 @@
   "en": "Max. number of cycles",
   "ar": "أقصى عدد للدورات"
  },
+ "nominal bunched conductor": {
+  "fr": "Conducteur toronné nominal",
+  "en": "Nominal bunched conductor",
+  "ar": "الموصل المجدول الاسمي"
+ },
+ "nominal bunched conductor dia (mm)": {
+  "fr": "Diamètre nominal du conducteur toronné (mm)",
+  "en": "Nominal bunched conductor dia. (mm)",
+  "ar": "القطر الاسمي للموصل المجدول (مم)"
+ },
+ "nominal cable diameter": {
+  "fr": "Diamètre nominal du câble",
+  "en": "Nominal cable diameter",
+  "ar": "القطر الاسمي للكابل"
+ },
+ "nominal cable diameter mm": {
+  "fr": "Diamètre nominal du câble (mm)",
+  "en": "Nominal cable diameter (mm)",
+  "ar": "القطر الاسمي للكابل (مم)"
+ },
+ "nominal cable diameter mm (flat)": {
+  "fr": "Diamètre nominal du câble, mm (plat)",
+  "en": "Nominal cable diameter, mm (flat)",
+  "ar": "القطر الاسمي للكابل، مم (مسطح)"
+ },
+ "nominal cable diameter mm (twisted)": {
+  "fr": "Diamètre nominal du câble, mm (torsadé)",
+  "en": "Nominal cable diameter, mm (twisted)",
+  "ar": "القطر الاسمي للكابل، مم (مجدول)"
+ },
  "nominal constant": {
   "fr": "Constante nominale",
   "en": "Nominal constant",
   "ar": "الثابت الاسمي"
+ },
+ "nominal diameter mm (flat)": {
+  "fr": "Diamètre nominal, mm (plat)",
+  "en": "Nominal diameter, mm (flat)",
+  "ar": "القطر الاسمي، مم (مسطح)"
+ },
+ "nominal diameter mm (twisted)": {
+  "fr": "Diamètre nominal, mm (torsadé)",
+  "en": "Nominal diameter, mm (twisted)",
+  "ar": "القطر الاسمي، مم (مجدول)"
  },
  "non-radiation infrared or visible light video": {
   "fr": "Vidéo infrarouge non radiométrique ou en lumière visible",
@@ -14544,6 +14739,11 @@
   "en": "Sheath O.D.",
   "ar": "القطر الخارجي للغلاف"
  },
+ "sheath thickness (min)": {
+  "fr": "Épaisseur de gaine (min.)",
+  "en": "Sheath thickness (min.)",
+  "ar": "سماكة الغلاف (دنيا)"
+ },
  "shelves": {
   "fr": "Étagères",
   "en": "Shelves",
@@ -15468,6 +15668,16 @@
   "fr": "Stockage",
   "en": "Store",
   "ar": "التخزين"
+ },
+ "strain dia (mm)": {
+  "fr": "Diamètre de brin (mm)",
+  "en": "Strand dia. (mm)",
+  "ar": "قطر الخيط (مم)"
+ },
+ "strand dia (mm)": {
+  "fr": "Diamètre de brin (mm)",
+  "en": "Strand dia. (mm)",
+  "ar": "قطر الخيط (مم)"
  },
  "straw capacity 0.25ml": {
   "fr": "Capacité en paillettes 0,25 ml",
@@ -17089,6 +17299,11 @@
   "en": "Thermocouple",
   "ar": "المزدوجة الحرارية"
  },
+ "thermocouple type": {
+  "fr": "Type de thermocouple",
+  "en": "Thermocouple type",
+  "ar": "نوع المزدوجة الحرارية"
+ },
  "thermometer": {
   "fr": "Thermomètre",
   "en": "Thermometer",
@@ -17954,6 +18169,11 @@
   "en": "Vacuum resolution",
   "ar": "استبانة الخلاء"
  },
+ "valeur": {
+  "fr": "Valeur",
+  "en": "Value",
+  "ar": "القيمة"
+ },
  "valeur d'échelle": {
   "fr": "Valeur d'échelle",
   "en": "Scale value",
@@ -18788,6 +19008,11 @@
   "fr": "Diamètre du fil",
   "en": "Wire diameter",
   "ar": "قطر السلك"
+ },
+ "wire type": {
+  "fr": "Type de conducteur",
+  "en": "Wire type",
+  "ar": "نوع السلك"
  },
  "wiring configuration": {
   "fr": "Configuration de câblage",
