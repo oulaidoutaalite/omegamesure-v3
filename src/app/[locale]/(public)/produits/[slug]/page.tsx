@@ -1,13 +1,13 @@
 import { IconDownload, IconPhoto } from '@tabler/icons-react'
 import { type Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
-import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { AddToQuoteButton } from '@/components/public/cart/AddToQuoteButton'
 import { Container } from '@/components/public/Container'
 import { JsonLd } from '@/components/public/JsonLd'
+import { ProductImage } from '@/components/public/ProductImage'
 import { ProductCard, type ProductCardData } from '@/components/public/ProductCard'
 import { Button } from '@/components/ui/button'
 import { defaultLocale, type Locale } from '@/i18n'
@@ -187,7 +187,7 @@ export default async function ProductPage({
             {main ? (
               // Image principale : candidate LCP de la fiche, donc `priority`.
               // Source en 1110–1450 px pour un affichage de ~600 px au plus.
-              <Image
+              <ProductImage
                 src={main.url}
                 alt={main.alt ?? name}
                 fill
@@ -206,7 +206,7 @@ export default async function ProductPage({
               {sorted.slice(0, 8).map((img, i) => (
                 <li key={i} className="relative aspect-square overflow-hidden rounded-lg border border-border bg-muted">
                   {/* Vignettes : 4 colonnes, donc très petites — d'où le `sizes` serré. */}
-                  <Image src={img.url} alt={img.alt ?? name} fill sizes="120px" className="object-cover" />
+                  <ProductImage src={img.url} taillePicto={20} alt={img.alt ?? name} fill sizes="120px" className="object-cover" />
                 </li>
               ))}
             </ul>

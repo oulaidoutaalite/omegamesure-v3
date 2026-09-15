@@ -54,6 +54,9 @@ export function Header({ brand, items }: Props) {
 
   const cta   = items.find((i) => i.isCta)
   const links = items.filter((i) => !i.isCta)
+  // Le logo est heberge hors du site : s'il ne charge pas, on retombe sur la
+  // pastille Ω plutot que d'afficher l'icone d'image cassee du navigateur.
+  const [logoCasse, setLogoCasse] = useState(false)
 
   return (
     <header
@@ -69,7 +72,7 @@ export function Header({ brand, items }: Props) {
       <Container>
         <div className="flex min-h-16 items-center justify-between gap-4 py-2">
           <Link href="/" className="flex shrink-0 items-center gap-2">
-            {brand.logoUrl ? (
+            {brand.logoUrl && !logoCasse ? (
               // 397x320 px et 191 ko a la source, affiche a 96 px de haut : sans
               // optimisation on telechargeait le logo pleine taille sur CHAQUE page.
               // `priority` car il est au-dessus de la ligne de flottaison.
@@ -79,6 +82,7 @@ export function Header({ brand, items }: Props) {
                 width={397}
                 height={320}
                 priority
+                onError={() => setLogoCasse(true)}
                 className="h-24 w-auto object-contain sm:h-28"
               />
             ) : (

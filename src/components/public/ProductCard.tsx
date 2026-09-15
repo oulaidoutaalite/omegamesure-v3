@@ -1,9 +1,9 @@
 import { IconArrowRight, IconPhoto } from '@tabler/icons-react'
 import { getTranslations } from 'next-intl/server'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { AddToQuoteButton } from '@/components/public/cart/AddToQuoteButton'
+import { ProductImage } from '@/components/public/ProductImage'
 import { defaultLocale, type Locale } from '@/i18n'
 import { cn } from '@/lib/utils'
 
@@ -51,7 +51,7 @@ export async function ProductCard({
           // le rendu est identique mais Next redimensionne et sert en AVIF/WebP au lieu
           // du PNG d'origine. `sizes` suit la grille (1 / 2 / 3 colonnes) — sans lui,
           // Next servirait la largeur d'écran entière et l'optimisation ne servirait à rien.
-          <Image
+          <ProductImage
             src={data.imageUrl}
             alt={data.name}
             fill
