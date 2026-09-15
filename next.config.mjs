@@ -7,23 +7,35 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
 
-  // These tolerate TypeScript narrowing false-positives in the admin forms
-  // (discriminated-union action results) and lint style warnings. The runtime
-  // logic is correct and covered by the local production build + DB tests.
-  // Tighten later by refactoring the create/update branches in the *Form
-  // components, then flip these back to false.
-  typescript: { ignoreBuildErrors: true },
+  // Les branches create/update des formulaires admin ont ete reecrites : le
+  // projet compile a zero erreur, on remet donc le garde-fou. `eslint` reste
+  // tolere (avertissements de style uniquement).
+  typescript: { ignoreBuildErrors: false },
   eslint: { ignoreDuringBuilds: true },
 
-  // Allow images from local uploads + future Cloudinary integration
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'res.cloudinary.com' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
-      // Supabase Storage (product photos, datasheets, branding…)
+      // Supabase Storage (photos produit, fiches techniques, identite…)
       { protocol: 'https', hostname: '*.supabase.co' },
     ],
     formats: ['image/avif', 'image/webp'],
+
+    // ⚠️ ECONOMIE DE BANDE PASSANTE A LA SOURCE.
+    // Chaque variante generee declenche UN telechargement de l'original chez
+    // l'hebergeur des medias. Par defaut Next propose jusqu'a 3840 px : sur des
+    // originaux de 1450 px affiches a ~400 px, ces grandes variantes ne servent
+    // a rien et multiplient le trafic. On plafonne a 1200 px, largement suffisant
+    // meme sur ecran haute densite.
+    deviceSizes: [640, 750, 828, 1080, 1200],
+    imageSizes: [64, 96, 128, 256, 384],
+
+    // Duree MINIMALE de conservation de l'image optimisee. Sans elle, Next
+    // retombe sur le `Cache-Control` de l'origine — parfois quelques minutes —
+    // et rappelle l'original en boucle. Un an : l'original n'est retelecharge
+    // qu'une fois, ce qui divise le trafic sortant d'autant.
+    minimumCacheTTL: 60 * 60 * 24 * 365,
   },
 
   experimental: {
