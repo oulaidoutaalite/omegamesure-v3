@@ -1,3 +1,4 @@
+import { Prisma } from '@prisma/client'
 import { headers } from 'next/headers'
 
 import { db } from './db'
@@ -29,7 +30,11 @@ export async function logActivity(input: LogActivityInput): Promise<void> {
         action:     input.action,
         entityType: input.entityType,
         entityId:   input.entityId ?? null,
-        metadata:   input.metadata ?? undefined,
+        // `Record<string, unknown>` n'est pas assignable au type JSON de Prisma :
+        // `unknown` n'est pas garanti sérialisable. Les appelants ne passent que
+        // des objets plats (noms, slugs, compteurs), d'où cette conversion au
+        // point d'entrée plutôt qu'un type JSON imposé à tous les appelants.
+        metadata:   (input.metadata ?? undefined) as Prisma.InputJsonValue | undefined,
         ipAddress,
         userAgent,
       },

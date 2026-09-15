@@ -91,18 +91,21 @@ export function ProductForm({ mode, defaultValues, categories, translatableLocal
 
   function onSubmit(data: ProductInput) {
     startTransition(async () => {
-      const res =
-        mode.type === 'create'
-          ? await createProduct(data)
-          : await updateProduct({ id: mode.id, ...data })
-
-      if (!res.ok) { toast.error(res.error); return }
-      toast.success(mode.type === 'create' ? 'Produit créé' : 'Produit mis à jour')
-      if (mode.type === 'create' && res.ok) {
+      // ⚠️ On branche AVANT d'appeler : seule la création renvoie un id.
+      // Un ternaire produirait l'union des deux retours et `res.data.id`
+      // n'existerait plus pour TypeScript.
+      if (mode.type === 'create') {
+        const res = await createProduct(data)
+        if (!res.ok) { toast.error(res.error); return }
+        toast.success('Produit créé')
         router.push(`/admin/products/${res.data.id}/edit`)
-      } else {
-        router.refresh()
+        return
       }
+
+      const res = await updateProduct({ id: mode.id, ...data })
+      if (!res.ok) { toast.error(res.error); return }
+      toast.success('Produit mis à jour')
+      router.refresh()
     })
   }
 

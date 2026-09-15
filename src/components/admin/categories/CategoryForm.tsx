@@ -56,18 +56,21 @@ export function CategoryForm({ mode, defaultValues, navItemOptions, translatable
 
   function onSubmit(data: CategoryInput) {
     startTransition(async () => {
-      const res =
-        mode.type === 'create'
-          ? await createCategory(data)
-          : await updateCategory({ id: mode.id, ...data })
-
-      if (!res.ok) { toast.error(res.error); return }
-      toast.success(mode.type === 'create' ? 'Catégorie créée' : 'Catégorie mise à jour')
-      if (mode.type === 'create' && res.ok) {
+      // ⚠️ On branche AVANT d'appeler : seule la création renvoie un id.
+      // Un ternaire produirait l'union des deux retours et `res.data.id`
+      // n'existerait plus pour TypeScript.
+      if (mode.type === 'create') {
+        const res = await createCategory(data)
+        if (!res.ok) { toast.error(res.error); return }
+        toast.success('Catégorie créée')
         router.push(`/admin/categories/${res.data.id}/edit`)
-      } else {
-        router.refresh()
+        return
       }
+
+      const res = await updateCategory({ id: mode.id, ...data })
+      if (!res.ok) { toast.error(res.error); return }
+      toast.success('Catégorie mise à jour')
+      router.refresh()
     })
   }
 

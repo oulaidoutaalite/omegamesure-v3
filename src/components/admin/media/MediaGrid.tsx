@@ -84,7 +84,7 @@ export function MediaGrid({
   return (
     <div className="space-y-4">
       {!readOnly && (
-        <MediaUploader onUploaded={(uploaded) => appendUploaded(uploaded as MediaRow[])} />
+        <MediaUploader onUploaded={appendUploaded} />
       )}
 
       <div className="flex flex-wrap items-center gap-2">

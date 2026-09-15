@@ -24,7 +24,9 @@ const ADMIN_ROLES = ['SUPER_ADMIN', 'ADMIN', 'EDITOR'] as const
 export type UploadedMedia = {
   id: string
   url: string
-  type: string
+  // Meme union que `MediaRow` cote client : `string` obligeait la grille a un
+  // transtypage non sur, alors que Prisma rend deja l'enum exact.
+  type: 'IMAGE' | 'DOCUMENT' | 'VIDEO' | 'OTHER'
   filename: string
   originalName: string
   mimeType: string
@@ -33,6 +35,7 @@ export type UploadedMedia = {
   height: number | null
   folder: string | null
   alt: string | null
+  createdAt: Date
 }
 
 /**
@@ -82,6 +85,7 @@ export async function uploadMedia(
         height: record.height,
         folder: record.folder,
         alt: record.alt,
+        createdAt: record.createdAt,
       })
     } catch (err) {
       const msg = err instanceof Error ? err.message : 'Erreur inconnue'
