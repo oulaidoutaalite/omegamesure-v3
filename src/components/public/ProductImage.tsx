@@ -23,6 +23,12 @@ export function ProductImage({
 }: ImageProps & { taillePicto?: number }) {
   const [casse, setCasse] = useState(false)
 
+  // Les photos servies par le site (`/produits/*.webp`) sont DEJA encodees en
+  // WebP a la taille d'affichage. Les faire repasser par l'optimiseur ne
+  // gagnerait rien et consommerait le quota de transformations de l'hebergeur :
+  // on les sert telles quelles.
+  const local = typeof props.src === 'string' && props.src.startsWith('/produits/')
+
   if (casse) {
     return (
       <div
@@ -35,5 +41,12 @@ export function ProductImage({
     )
   }
 
-  return <Image {...props} className={cn(className)} onError={() => setCasse(true)} />
+  return (
+    <Image
+      {...props}
+      unoptimized={local || props.unoptimized}
+      className={cn(className)}
+      onError={() => setCasse(true)}
+    />
+  )
 }
