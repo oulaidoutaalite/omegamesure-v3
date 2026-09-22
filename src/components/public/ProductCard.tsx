@@ -51,12 +51,18 @@ export async function ProductCard({
           // le rendu est identique mais Next redimensionne et sert en AVIF/WebP au lieu
           // du PNG d'origine. `sizes` suit la grille (1 / 2 / 3 colonnes) — sans lui,
           // Next servirait la largeur d'écran entière et l'optimisation ne servirait à rien.
+          // ⚠️ `object-contain` et non `object-cover` : les photos viennent de
+          // fournisseurs differents et 28 % ne sont pas carrees — certaines sont
+          // tres allongees (citec-3230 fait 80 × 498). En `cover`, la carte n'en
+          // montrait qu'une tranche prise au milieu, et le produit paraissait
+          // decentre ou coupe. En `contain` il tient entier, centre, sur le fond
+          // de la carte.
           <ProductImage
             src={data.imageUrl}
             alt={data.name}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover transition duration-300 group-hover:scale-105"
+            className="object-contain transition duration-300 group-hover:scale-105"
           />
         ) : (
           <div className="grid h-full w-full place-items-center text-muted-foreground">

@@ -193,7 +193,9 @@ export default async function ProductPage({
                 fill
                 priority
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover"
+                // ⚠️ `contain` : voir ProductCard. Une sonde de 80 × 498 recadree
+                // en carre ne montrerait qu'un fragment de sa longueur.
+                className="object-contain"
               />
             ) : (
               <div className="grid h-full w-full place-items-center text-muted-foreground">
@@ -206,7 +208,7 @@ export default async function ProductPage({
               {sorted.slice(0, 8).map((img, i) => (
                 <li key={i} className="relative aspect-square overflow-hidden rounded-lg border border-border bg-muted">
                   {/* Vignettes : 4 colonnes, donc très petites — d'où le `sizes` serré. */}
-                  <ProductImage src={img.url} taillePicto={20} alt={img.alt ?? name} fill sizes="120px" className="object-cover" />
+                  <ProductImage src={img.url} taillePicto={20} alt={img.alt ?? name} fill sizes="120px" className="object-contain" />
                 </li>
               ))}
             </ul>

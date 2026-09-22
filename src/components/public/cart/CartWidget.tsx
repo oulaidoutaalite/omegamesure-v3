@@ -88,7 +88,7 @@ export function CartWidget() {
                       <div className="h-14 w-14 shrink-0 overflow-hidden rounded-md bg-muted">
                         {it.image ? (
                           // eslint-disable-next-line @next/next/no-img-element
-                          <img src={it.image} alt={it.name} className="h-full w-full object-cover" />
+                          <img src={it.image} alt={it.name} className="h-full w-full object-contain" />
                         ) : (
                           <div className="grid h-full w-full place-items-center text-muted-foreground">
                             <IconPhoto size={18} />
