@@ -19668,5 +19668,1330 @@
   "fr": "∅ manomètre",
   "en": "Gauge ∅",
   "ar": "قطر مقياس الضغط"
+ },
+ "température - ctn": {
+  "fr": "Température - CTN",
+  "en": "Temperature - NTC",
+  "ar": "الحرارة - NTC"
+ },
+ "humidité – capacitive": {
+  "fr": "Humidité – capacitive",
+  "en": "Humidity – capacitive",
+  "ar": "الرطوبة – سعوي"
+ },
+ "données techniques générales": {
+  "fr": "Données techniques générales",
+  "en": "General technical data",
+  "ar": "البيانات التقنية العامة"
+ },
+ "matériau du produit / du boîtier": {
+  "fr": "Matériau du produit / du boîtier",
+  "en": "Product / housing material",
+  "ar": "مادة المنتج / الهيكل"
+ },
+ "couleur du produit": {
+  "fr": "Couleur du produit",
+  "en": "Product colour",
+  "ar": "لون المنتج"
+ },
+ "cadence de mesure": {
+  "fr": "Cadence de mesure",
+  "en": "Measuring rate",
+  "ar": "وتيرة القياس"
+ },
+ "autonomie": {
+  "fr": "Autonomie",
+  "en": "Battery life",
+  "ar": "عمر البطارية"
+ },
+ "type de pile": {
+  "fr": "Type de pile",
+  "en": "Battery type",
+  "ar": "نوع البطارية"
+ },
+ "sondes raccordables": {
+  "fr": "Sondes raccordables",
+  "en": "Connectable probes",
+  "ar": "المجسّات القابلة للتوصيل"
+ },
+ "interfaces": {
+  "fr": "Interfaces",
+  "en": "Interfaces",
+  "ar": "الواجهات"
+ },
+ "pression différentielle - piézorésistif": {
+  "fr": "Pression différentielle - piézorésistif",
+  "en": "Differential pressure - piezoresistive",
+  "ar": "الضغط التفاضلي - مقاومة ضغطية"
+ },
+ "pression absolue": {
+  "fr": "Pression absolue",
+  "en": "Absolute pressure",
+  "ar": "الضغط المطلق"
+ },
+ "o₂ dans gaz de fumée": {
+  "fr": "O₂ dans gaz de fumée",
+  "en": "Flue gas O₂",
+  "ar": "O₂ في غازات الاحتراق"
+ },
+ "temps de réponse t₉₀": {
+  "fr": "Temps de réponse t₉₀",
+  "en": "Response time t₉₀",
+  "ar": "زمن الاستجابة t₉₀"
+ },
+ "co dans gaz de fumée (avec compensation h₂)": {
+  "fr": "CO dans gaz de fumée (avec compensation H₂)",
+  "en": "Flue gas CO (H₂-compensated)",
+  "ar": "CO في غازات الاحتراق (مع تعويض H₂)"
+ },
+ "colow dans gaz de fumée": {
+  "fr": "COlow dans gaz de fumée",
+  "en": "Flue gas COlow",
+  "ar": "COlow في غازات الاحتراق"
+ },
+ "no dans gaz de fumée": {
+  "fr": "NO dans gaz de fumée",
+  "en": "Flue gas NO",
+  "ar": "NO في غازات الاحتراق"
+ },
+ "nolow dans gaz de fumée": {
+  "fr": "NOlow dans gaz de fumée",
+  "en": "Flue gas NOlow",
+  "ar": "NOlow في غازات الاحتراق"
+ },
+ "no₂ dans gaz de fumée": {
+  "fr": "NO₂ dans gaz de fumée",
+  "en": "Flue gas NO₂",
+  "ar": "NO₂ في غازات الاحتراق"
+ },
+ "so₂ dans gaz de fumée": {
+  "fr": "SO₂ dans gaz de fumée",
+  "en": "Flue gas SO₂",
+  "ar": "SO₂ في غازات الاحتراق"
+ },
+ "pression différentielle - mesure du tirage dans gaz de fumée": {
+  "fr": "Pression différentielle - mesure du tirage dans gaz de fumée",
+  "en": "Differential pressure - flue gas draught measurement",
+  "ar": "الضغط التفاضلي - قياس السحب في غازات الاحتراق"
+ },
+ "détermination de l'efficacité, eta (calculé)": {
+  "fr": "Détermination de l’efficacité, Eta (calculé)",
+  "en": "Efficiency, Eta (calculated)",
+  "ar": "تحديد المردود، Eta (محسوب)"
+ },
+ "pertes par les fumées (calculée)": {
+  "fr": "Pertes par les fumées (calculée)",
+  "en": "Flue gas loss (calculated)",
+  "ar": "فواقد الأدخنة (محسوبة)"
+ },
+ "point de rosée des gaz de combustion (calculé)": {
+  "fr": "Point de rosée des gaz de combustion (calculé)",
+  "en": "Flue gas dew point (calculated)",
+  "ar": "نقطة ندى غازات الاحتراق (محسوبة)"
+ },
+ "détermination du co₂ (calculé de l'o₂)": {
+  "fr": "Détermination du CO₂ (calculé de l’O₂)",
+  "en": "CO₂ determination (calculated from O₂)",
+  "ar": "تحديد CO₂ (محسوب من O₂)"
+ },
+ "fonctions d'affichage": {
+  "fr": "Fonctions d’affichage",
+  "en": "Display functions",
+  "ar": "وظائف العرض"
+ },
+ "taille de l'écran": {
+  "fr": "Taille de l’écran",
+  "en": "Display size",
+  "ar": "حجم الشاشة"
+ },
+ "type d'écran": {
+  "fr": "Type d’écran",
+  "en": "Display type",
+  "ar": "نوع الشاشة"
+ },
+ "alimentation en courant": {
+  "fr": "Alimentation en courant",
+  "en": "Power supply",
+  "ar": "التغذية الكهربائية"
+ },
+ "longueur de tuyau": {
+  "fr": "Longueur de tuyau",
+  "en": "Hose length",
+  "ar": "طول الخرطوم"
+ },
+ "dépression max. gaz de combustion": {
+  "fr": "Dépression max. gaz de combustion",
+  "en": "Max. flue gas negative pressure",
+  "ar": "أقصى ضغط سالب لغازات الاحتراق"
+ },
+ "surpression max. gaz de combustion": {
+  "fr": "Surpression max. gaz de combustion",
+  "en": "Max. flue gas positive pressure",
+  "ar": "أقصى ضغط زائد لغازات الاحتراق"
+ },
+ "débit de pompage": {
+  "fr": "Débit de pompage",
+  "en": "Pump flow rate",
+  "ar": "معدّل ضخ المضخة"
+ },
+ "combustibles pouvant être définis par l'utilisateur": {
+  "fr": "Combustibles pouvant être définis par l'utilisateur",
+  "en": "User-definable fuels",
+  "ar": "أنواع وقود يحدّدها المستخدم"
+ },
+ "mémoire maximum": {
+  "fr": "Mémoire maximum",
+  "en": "Maximum memory",
+  "ar": "الذاكرة القصوى"
+ },
+ "mémoire par dossier": {
+  "fr": "Mémoire par dossier",
+  "en": "Memory per folder",
+  "ar": "الذاكرة لكل ملف"
+ },
+ "mémoire par lieu de mesure": {
+  "fr": "Mémoire par lieu de mesure",
+  "en": "Memory per measuring location",
+  "ar": "الذاكرة لكل موقع قياس"
+ },
+ "autres": {
+  "fr": "Autres",
+  "en": "Miscellaneous",
+  "ar": "أخرى"
+ },
+ "raccord de capteur": {
+  "fr": "Raccord de capteur",
+  "en": "Sensor connection",
+  "ar": "وصلة المستشعر"
+ },
+ "mesure de pression": {
+  "fr": "Mesure de pression",
+  "en": "Pressure measurement",
+  "ar": "قياس الضغط"
+ },
+ "surcharge rel. (basse pression)": {
+  "fr": "Surcharge rel. (basse pression)",
+  "en": "Overload rel. (low pressure)",
+  "ar": "الحمل الزائد النسبي (ضغط منخفض)"
+ },
+ "surcharge rel. (haute pression)": {
+  "fr": "Surcharge rel. (haute pression)",
+  "en": "Overload rel. (high pressure)",
+  "ar": "الحمل الزائد النسبي (ضغط عالٍ)"
+ },
+ "auto-off appareil": {
+  "fr": "Auto-Off appareil",
+  "en": "Instrument auto-off",
+  "ar": "الإطفاء التلقائي للجهاز"
+ },
+ "portée radio": {
+  "fr": "Portée radio",
+  "en": "Radio range",
+  "ar": "المدى اللاسلكي"
+ },
+ "température - tc de type k (nicr-ni)": {
+  "fr": "Température - TC de type K (NiCr-Ni)",
+  "en": "Temperature - TC type K (NiCr-Ni)",
+  "ar": "الحرارة - TC من النوع K ‏(NiCr-Ni)"
+ },
+ "co dans gaz de fumée (sans compensation h₂)": {
+  "fr": "CO dans gaz de fumée (sans compensation H₂)",
+  "en": "Flue gas CO (without H₂ compensation)",
+  "ar": "CO في غازات الاحتراق (دون تعويض H₂)"
+ },
+ "co dans l'air ambiant": {
+  "fr": "CO dans l'air ambiant",
+  "en": "Ambient CO",
+  "ar": "CO في الهواء المحيط"
+ },
+ "configurations requises": {
+  "fr": "Configurations requises",
+  "en": "System requirements",
+  "ar": "متطلبات التشغيل"
+ },
+ "transfert de données": {
+  "fr": "Transfert de données",
+  "en": "Data transfer",
+  "ar": "نقل البيانات"
+ },
+ "fluide frigorigène dans l'appareil": {
+  "fr": "Fluide frigorigène dans l'appareil",
+  "en": "Refrigerants in instrument",
+  "ar": "غازات التبريد في الجهاز"
+ },
+ "mise à jour des fluides frigorigènes via l'app": {
+  "fr": "Mise à jour des fluides frigorigènes via l’App",
+  "en": "Refrigerant update via app",
+  "ar": "تحديث غازات التبريد عبر التطبيق"
+ },
+ "fluides frigorigènes": {
+  "fr": "Fluides frigorigènes",
+  "en": "Refrigerants",
+  "ar": "غازات التبريد"
+ },
+ "écoulement – fil chaud": {
+  "fr": "Écoulement – fil chaud",
+  "en": "Velocity – hot wire",
+  "ar": "سرعة التدفّق – سلك ساخن"
+ },
+ "diamètre du tube de sonde": {
+  "fr": "Diamètre du tube de sonde",
+  "en": "Probe shaft diameter",
+  "ar": "قطر أنبوب المجسّ"
+ },
+ "diamètre de la pointe du tube de sonde": {
+  "fr": "Diamètre de la pointe du tube de sonde",
+  "en": "Probe shaft tip diameter",
+  "ar": "قطر طرف أنبوب المجسّ"
+ },
+ "longueur du tube de sonde": {
+  "fr": "Longueur du tube de sonde",
+  "en": "Probe shaft length",
+  "ar": "طول أنبوب المجسّ"
+ },
+ "certificat": {
+  "fr": "Certificat",
+  "en": "Certificate",
+  "ar": "الشهادة"
+ },
+ "homologations": {
+  "fr": "Homologations",
+  "en": "Approvals",
+  "ar": "الاعتمادات"
+ },
+ "signal d'alarme": {
+  "fr": "Signal d'alarme",
+  "en": "Alarm signal",
+  "ar": "إشارة الإنذار"
+ },
+ "température - infrarouge": {
+  "fr": "Température - infrarouge",
+  "en": "Temperature - infrared",
+  "ar": "الحرارة - الأشعة تحت الحمراء"
+ },
+ "résolution infrarouge": {
+  "fr": "Résolution infrarouge",
+  "en": "Infrared resolution",
+  "ar": "دقة الأشعة تحت الحمراء"
+ },
+ "distance de mesure par rapport au spot de mesure": {
+  "fr": "Distance de mesure par rapport au spot de mesure",
+  "en": "Distance to measurement spot",
+  "ar": "المسافة إلى بقعة القياس"
+ },
+ "eclairage de l'écran": {
+  "fr": "Eclairage de l'écran",
+  "en": "Display illumination",
+  "ar": "إضاءة الشاشة"
+ },
+ "écoulement – thermo-anémomètre": {
+  "fr": "Écoulement – thermo-anémomètre",
+  "en": "Velocity – thermal anemometer",
+  "ar": "سرعة التدفّق – مقياس حراري"
+ },
+ "longueur de la sonde": {
+  "fr": "Longueur de la sonde",
+  "en": "Probe length",
+  "ar": "طول المجسّ"
+ },
+ "contact de porte": {
+  "fr": "Contact de porte",
+  "en": "Door contact",
+  "ar": "تلامس الباب"
+ },
+ "cadence de communication": {
+  "fr": "Cadence de communication",
+  "en": "Communication rate",
+  "ar": "وتيرة الاتصال"
+ },
+ "raccord externe": {
+  "fr": "Raccord externe",
+  "en": "External connection",
+  "ar": "وصلة خارجية"
+ },
+ "longueur de la pointe du tube de sonde": {
+  "fr": "Longueur de la pointe du tube de sonde",
+  "en": "Probe shaft tip length",
+  "ar": "طول طرف أنبوب المجسّ"
+ },
+ "point laser": {
+  "fr": "Point laser",
+  "en": "Laser spot",
+  "ar": "نقطة الليزر"
+ },
+ "dimensions (sonde dépliée)": {
+  "fr": "Dimensions (sonde dépliée)",
+  "en": "Dimensions (probe unfolded)",
+  "ar": "الأبعاد (المجسّ مفتوح)"
+ },
+ "dimensions (sonde repliée)": {
+  "fr": "Dimensions (sonde repliée)",
+  "en": "Dimensions (probe folded)",
+  "ar": "الأبعاد (المجسّ مطوي)"
+ },
+ "valeur de mesure": {
+  "fr": "Valeur de mesure",
+  "en": "Measured value",
+  "ar": "قيمة القياس"
+ },
+ "mobile app": {
+  "fr": "Application mobile",
+  "en": "Mobile app",
+  "ar": "تطبيق الهاتف"
+ },
+ "spectral range": {
+  "fr": "Plage spectrale",
+  "en": "Spectral range",
+  "ar": "النطاق الطيفي"
+ },
+ "laser (classification laser : 635 nm, cl. 2)": {
+  "fr": "Laser (classification laser : 635 nm, cl. 2)",
+  "en": "Laser (laser classification: 635 nm, cl. 2)",
+  "ar": "ليزر (تصنيف الليزر: 635 nm، الفئة 2)"
+ },
+ "conditions ambiantes": {
+  "fr": "Conditions ambiantes",
+  "en": "Ambient conditions",
+  "ar": "الظروف المحيطة"
+ },
+ "humidité de l'air": {
+  "fr": "Humidité de l'air",
+  "en": "Air humidity",
+  "ar": "رطوبة الهواء"
+ },
+ "vibration": {
+  "fr": "Vibration",
+  "en": "Vibration",
+  "ar": "الاهتزاز"
+ },
+ "test de résistance aux chutes": {
+  "fr": "Test de résistance aux chutes",
+  "en": "Drop test",
+  "ar": "اختبار مقاومة السقوط"
+ },
+ "débit d'images visuel": {
+  "fr": "Débit d'images visuel",
+  "en": "Visual image output",
+  "ar": "إخراج الصورة المرئية"
+ },
+ "distance de mise au point minimale": {
+  "fr": "Distance de mise au point minimale",
+  "en": "Minimum focus distance",
+  "ar": "أدنى مسافة تركيز"
+ },
+ "taille de l'image": {
+  "fr": "Taille de l'image",
+  "en": "Image size",
+  "ar": "حجم الصورة"
+ },
+ "représentation de l'image": {
+  "fr": "Représentation de l'image",
+  "en": "Image presentation",
+  "ar": "عرض الصورة"
+ },
+ "couleurs": {
+  "fr": "Couleurs",
+  "en": "Colours",
+  "ar": "الألوان"
+ },
+ "zoom numérique": {
+  "fr": "Zoom numérique",
+  "en": "Digital zoom",
+  "ar": "التكبير الرقمي"
+ },
+ "possibilités d'affichage": {
+  "fr": "Possibilités d'affichage",
+  "en": "Display options",
+  "ar": "خيارات العرض"
+ },
+ "equipements de la caméra": {
+  "fr": "Equipements de la caméra",
+  "en": "Camera equipment",
+  "ar": "تجهيزات الكاميرا"
+ },
+ "mode plein écran": {
+  "fr": "Mode plein écran",
+  "en": "Full-screen mode",
+  "ar": "وضع ملء الشاشة"
+ },
+ "wlan connectivity": {
+  "fr": "Connectivité WLAN",
+  "en": "WLAN connectivity",
+  "ar": "الاتصال عبر WLAN"
+ },
+ "commande à distance": {
+  "fr": "Commande à distance",
+  "en": "Remote control",
+  "ar": "التحكم عن بُعد"
+ },
+ "stockage d'images": {
+  "fr": "Stockage d'images",
+  "en": "Image storage",
+  "ar": "تخزين الصور"
+ },
+ "format de fichier des images individuelles": {
+  "fr": "Format de fichier des images individuelles",
+  "en": "Single image file format",
+  "ar": "صيغة ملف الصور المفردة"
+ },
+ "mémoire de rechange": {
+  "fr": "Mémoire de rechange",
+  "en": "Spare memory",
+  "ar": "الذاكرة الاحتياطية"
+ },
+ "débit d'images infrarouges": {
+  "fr": "Débit d'images infrarouges",
+  "en": "Infrared image output",
+  "ar": "إخراج صورة الأشعة تحت الحمراء"
+ },
+ "champ visuel": {
+  "fr": "Champ visuel",
+  "en": "Field of view",
+  "ar": "مجال الرؤية"
+ },
+ "fréquence de rafraîchissement": {
+  "fr": "Fréquence de rafraîchissement",
+  "en": "Refresh rate",
+  "ar": "معدّل التحديث"
+ },
+ "sensibilité thermique": {
+  "fr": "Sensibilité thermique",
+  "en": "Thermal sensitivity",
+  "ar": "الحساسية الحرارية"
+ },
+ "mesure": {
+  "fr": "Mesure",
+  "en": "Measurement",
+  "ar": "القياس"
+ },
+ "température réfléchie": {
+  "fr": "Température réfléchie",
+  "en": "Reflected temperature",
+  "ar": "درجة الحرارة المنعكسة"
+ },
+ "fonctions de mesure": {
+  "fr": "Fonctions de mesure",
+  "en": "Measurement functions",
+  "ar": "وظائف القياس"
+ },
+ "fonction d'analyse": {
+  "fr": "Fonction d'analyse",
+  "en": "Analysis function",
+  "ar": "وظيفة التحليل"
+ },
+ "mode « électricité » manuel": {
+  "fr": "Mode « Électricité » manuel",
+  "en": "Manual \"electrical\" mode",
+  "ar": "وضع «الكهرباء» اليدوي"
+ },
+ "mode « humidité » manuel": {
+  "fr": "Mode « Humidité » manuel",
+  "en": "Manual \"humidity\" mode",
+  "ar": "وضع «الرطوبة» اليدوي"
+ },
+ "mesure de l'humidité au moyen d'un hygromètre": {
+  "fr": "Mesure de l'humidité au moyen d'un hygromètre",
+  "en": "Humidity measurement with hygrometer",
+  "ar": "قياس الرطوبة بواسطة مقياس رطوبة"
+ },
+ "mesure électrique au moyen de la pince ampèremétrique": {
+  "fr": "Mesure électrique au moyen de la pince ampèremétrique",
+  "en": "Electrical measurement with clamp meter",
+  "ar": "القياس الكهربائي بواسطة الكلّابة"
+ },
+ "fonctions de mesure spécifiques aux applications": {
+  "fr": "Fonctions de mesure spécifiques aux applications",
+  "en": "Application-specific measurement functions",
+  "ar": "وظائف قياس خاصة بالتطبيقات"
+ },
+ "logiciel pc": {
+  "fr": "Logiciel PC",
+  "en": "PC software",
+  "ar": "برنامج الحاسوب"
+ },
+ "caractéristiques physiques": {
+  "fr": "Caractéristiques physiques",
+  "en": "Physical characteristics",
+  "ar": "الخصائص الفيزيائية"
+ },
+ "montage sur trépied": {
+  "fr": "Montage sur trépied",
+  "en": "Tripod mounting",
+  "ar": "التركيب على حامل ثلاثي القوائم"
+ },
+ "fixation au terminal mobile": {
+  "fr": "Fixation au terminal mobile",
+  "en": "Attachment to mobile device",
+  "ar": "التثبيت على الجهاز المحمول"
+ },
+ "options de chargement": {
+  "fr": "Options de chargement",
+  "en": "Charging options",
+  "ar": "خيارات الشحن"
+ },
+ "indice de protection du boîtier (cei 60529)": {
+  "fr": "Indice de protection du boîtier (CEI 60529)",
+  "en": "Housing protection class (IEC 60529)",
+  "ar": "درجة حماية الهيكل (IEC 60529)"
+ },
+ "chocs de l'appareil": {
+  "fr": "Chocs de l'appareil",
+  "en": "Instrument shock",
+  "ar": "صدمات الجهاز"
+ },
+ "résolution visuelle": {
+  "fr": "Résolution visuelle",
+  "en": "Visual resolution",
+  "ar": "الدقة المرئية"
+ },
+ "sortie vidéo": {
+  "fr": "Sortie Vidéo",
+  "en": "Video output",
+  "ar": "مخرج الفيديو"
+ },
+ "zoom maximum": {
+  "fr": "Zoom maximum",
+  "en": "Maximum zoom",
+  "ar": "التكبير الأقصى"
+ },
+ "capacité de mémoire pour images": {
+  "fr": "Capacité de mémoire pour images",
+  "en": "Image memory capacity",
+  "ar": "سعة ذاكرة الصور"
+ },
+ "résolution géométrique (ifov)": {
+  "fr": "Résolution géométrique (IFOV)",
+  "en": "Geometric resolution (IFOV)",
+  "ar": "الدقة الهندسية (IFOV)"
+ },
+ "mode électrique – manuel": {
+  "fr": "Mode électrique – manuel",
+  "en": "Electrical mode – manual",
+  "ar": "الوضع الكهربائي – يدوي"
+ },
+ "ecoulement - anémomètre à hélice": {
+  "fr": "Ecoulement - anémomètre à hélice",
+  "en": "Velocity - vane anemometer",
+  "ar": "سرعة التدفّق - مقياس بالمروحة"
+ },
+ "diamètre de l'hélice": {
+  "fr": "Diamètre de l'hélice",
+  "en": "Vane diameter",
+  "ar": "قطر المروحة"
+ },
+ "température - pt1000": {
+  "fr": "Température - Pt1000",
+  "en": "Temperature - Pt1000",
+  "ar": "الحرارة - Pt1000"
+ },
+ "lumière": {
+  "fr": "Lumière",
+  "en": "Light",
+  "ar": "الضوء"
+ },
+ "uv": {
+  "fr": "UV",
+  "en": "UV",
+  "ar": "الأشعة فوق البنفسجية"
+ },
+ "tableau des émissivités": {
+  "fr": "Tableau des émissivités",
+  "en": "Emissivity table",
+  "ar": "جدول معاملات الانبعاث"
+ },
+ "auto-off éclairage": {
+  "fr": "Auto-Off éclairage",
+  "en": "Backlight auto-off",
+  "ar": "الإطفاء التلقائي للإضاءة"
+ },
+ "température - tc de type t (cu-cuni)": {
+  "fr": "Température - TC de type T (Cu-CuNi)",
+  "en": "Temperature - TC type T (Cu-CuNi)",
+  "ar": "الحرارة - TC من النوع T ‏(Cu-CuNi)"
+ },
+ "measuring rate": {
+  "fr": "Cadence de mesure",
+  "en": "Measuring rate",
+  "ar": "وتيرة القياس"
+ },
+ "choc": {
+  "fr": "Choc",
+  "en": "Shock",
+  "ar": "الصدمة"
+ },
+ "mise à jour de l'affichage": {
+  "fr": "Mise à jour de l'affichage",
+  "en": "Display update",
+  "ar": "تحديث العرض"
+ },
+ "température - tc de type j (fe-cuni)": {
+  "fr": "Température - TC de type J (Fe-CuNi)",
+  "en": "Temperature - TC type J (Fe-CuNi)",
+  "ar": "الحرارة - TC من النوع J ‏(Fe-CuNi)"
+ },
+ "streaming vidéo (via usb)": {
+  "fr": "Streaming vidéo (via USB)",
+  "en": "Video streaming (via USB)",
+  "ar": "بثّ الفيديو (عبر USB)"
+ },
+ "objectif standard": {
+  "fr": "Objectif standard",
+  "en": "Standard lens",
+  "ar": "العدسة القياسية"
+ },
+ "enregistrer jpeg": {
+  "fr": "Enregistrer JPEG",
+  "en": "Save JPEG",
+  "ar": "الحفظ بصيغة JPEG"
+ },
+ "ifov superresolution": {
+  "fr": "IFOV SuperResolution",
+  "en": "SuperResolution IFOV",
+  "ar": "IFOV مع SuperResolution"
+ },
+ "résolution superresolution": {
+  "fr": "Résolution SuperResolution",
+  "en": "SuperResolution resolution",
+  "ar": "الدقة مع SuperResolution"
+ },
+ "ifov warner": {
+  "fr": "IFOV warner",
+  "en": "IFOV warner",
+  "ar": "IFOV warner"
+ },
+ "testo scaleassist": {
+  "fr": "testo ScaleAssist",
+  "en": "testo ScaleAssist",
+  "ar": "testo ScaleAssist"
+ },
+ "fonctionnement sur secteur": {
+  "fr": "Fonctionnement sur secteur",
+  "en": "Mains operation",
+  "ar": "التشغيل بالتيار الكهربائي"
+ },
+ "directives ue / ce": {
+  "fr": "Directives UE/CE",
+  "en": "EU/EC directives",
+  "ar": "توجيهات الاتحاد الأوروبي"
+ },
+ "appareil photo numérique": {
+  "fr": "Appareil photo numérique",
+  "en": "Digital camera",
+  "ar": "الكاميرا الرقمية"
+ },
+ "testo ε-assist": {
+  "fr": "testo ε-Assist",
+  "en": "testo ε-Assist",
+  "ar": "testo ε-Assist"
+ },
+ "température - pt100": {
+  "fr": "Température - Pt100",
+  "en": "Temperature - Pt100",
+  "ar": "الحرارة - Pt100"
+ },
+ "débit volumétrique": {
+  "fr": "Débit volumétrique",
+  "en": "Volume flow",
+  "ar": "التدفّق الحجمي"
+ },
+ "mode « solaire » manuel": {
+  "fr": "Mode « Solaire » manuel",
+  "en": "Manual \"solar\" mode",
+  "ar": "وضع «الطاقة الشمسية» اليدوي"
+ },
+ "pression différentielle (capteur intégré) - piézorésistif": {
+  "fr": "Pression différentielle (capteur intégré) - piézorésistif",
+  "en": "Differential pressure (internal sensor) - piezoresistive",
+  "ar": "الضغط التفاضلي (مستشعر داخلي) - مقاومة ضغطية"
+ },
+ "enregistreur vocal": {
+  "fr": "Enregistreur vocal",
+  "en": "Voice recorder",
+  "ar": "مسجّل الصوت"
+ },
+ "siterecognition (identification du lieu de mesure avec gestion des images)": {
+  "fr": "SiteRecognition (identification du lieu de mesure avec gestion des images)",
+  "en": "SiteRecognition (measuring site identification with image management)",
+  "ar": "SiteRecognition (تحديد موقع القياس مع إدارة الصور)"
+ },
+ "pression absolue (capteur intégré et sonde externe)": {
+  "fr": "Pression absolue (capteur intégré et sonde externe)",
+  "en": "Absolute pressure (internal sensor and external probe)",
+  "ar": "الضغط المطلق (مستشعر داخلي ومجسّ خارجي)"
+ },
+ "caméra taille de l'image": {
+  "fr": "Caméra taille de l'image",
+  "en": "Camera image size",
+  "ar": "حجم صورة الكاميرا"
+ },
+ "unités disponibles": {
+  "fr": "Unités disponibles",
+  "en": "Available units",
+  "ar": "الوحدات المتاحة"
+ },
+ "pression statique maximale": {
+  "fr": "Pression statique maximale",
+  "en": "Maximum static pressure",
+  "ar": "أقصى ضغط ساكن"
+ },
+ "point de rosée (calculé)": {
+  "fr": "Point de rosée (calculé)",
+  "en": "Dew point (calculated)",
+  "ar": "نقطة الندى (محسوبة)"
+ },
+ "durée de vie du capteur": {
+  "fr": "Durée de vie du capteur",
+  "en": "Sensor service life",
+  "ar": "عمر المستشعر"
+ },
+ "connexion enfichable de la sonde": {
+  "fr": "Connexion enfichable de la sonde",
+  "en": "Plug-in probe connection",
+  "ar": "وصلة المجسّ القابلة للتوصيل"
+ },
+ "tpm - capacitif": {
+  "fr": "TPM - capacitif",
+  "en": "TPM - capacitive",
+  "ar": "TPM - سعوي"
+ },
+ "caractéristiques des alarmes": {
+  "fr": "Caractéristiques des alarmes",
+  "en": "Alarm features",
+  "ar": "خصائص الإنذار"
+ },
+ "surcharge": {
+  "fr": "Surcharge",
+  "en": "Overload",
+  "ar": "الحمل الزائد"
+ },
+ "co₂ dans l'air intérieur": {
+  "fr": "CO₂ dans l’air intérieur",
+  "en": "Indoor CO₂",
+  "ar": "CO₂ في الهواء الداخلي"
+ },
+ "tension continue dc": {
+  "fr": "Tension continue DC",
+  "en": "DC voltage",
+  "ar": "الجهد المستمر DC"
+ },
+ "tension alternative ac": {
+  "fr": "Tension alternative AC",
+  "en": "AC voltage",
+  "ar": "الجهد المتناوب AC"
+ },
+ "courant continu dc": {
+  "fr": "Courant continu DC",
+  "en": "DC current",
+  "ar": "التيار المستمر DC"
+ },
+ "courant alternatif ac": {
+  "fr": "Courant alternatif AC",
+  "en": "AC current",
+  "ar": "التيار المتناوب AC"
+ },
+ "résistance": {
+  "fr": "Résistance",
+  "en": "Resistance",
+  "ar": "المقاومة"
+ },
+ "puissance active": {
+  "fr": "Puissance active",
+  "en": "Active power",
+  "ar": "القدرة الفعّالة"
+ },
+ "puissance réactive": {
+  "fr": "Puissance réactive",
+  "en": "Reactive power",
+  "ar": "القدرة غير الفعّالة"
+ },
+ "puissance apparente": {
+  "fr": "Puissance apparente",
+  "en": "Apparent power",
+  "ar": "القدرة الظاهرية"
+ },
+ "puissance pour le courant continu / la tension continue": {
+  "fr": "Puissance pour le courant continu / la tension continue",
+  "en": "DC power (direct current / DC voltage)",
+  "ar": "القدرة للتيار المستمر / الجهد المستمر"
+ },
+ "facteur de puissance": {
+  "fr": "Facteur de puissance",
+  "en": "Power factor",
+  "ar": "معامل القدرة"
+ },
+ "catégorie de surtension": {
+  "fr": "Catégorie de surtension",
+  "en": "Overvoltage category",
+  "ar": "فئة الجهد الزائد"
+ },
+ "résistance interne": {
+  "fr": "Résistance interne",
+  "en": "Internal resistance",
+  "ar": "المقاومة الداخلية"
+ },
+ "fonctions de l'appareil et de mesure": {
+  "fr": "Fonctions de l’appareil et de mesure",
+  "en": "Instrument and measurement functions",
+  "ar": "وظائف الجهاز والقياس"
+ },
+ "test des diodes": {
+  "fr": "Test des diodes",
+  "en": "Diode test",
+  "ar": "اختبار الصمام الثنائي"
+ },
+ "test de continuité": {
+  "fr": "Test de continuité",
+  "en": "Continuity test",
+  "ar": "اختبار الاستمرارية"
+ },
+ "hold": {
+  "fr": "Hold",
+  "en": "Hold",
+  "ar": "Hold"
+ },
+ "minmax": {
+  "fr": "MinMax",
+  "en": "MinMax",
+  "ar": "MinMax"
+ },
+ "mesure de la puissance": {
+  "fr": "Mesure de la puissance",
+  "en": "Power measurement",
+  "ar": "قياس القدرة"
+ },
+ "mesure de la température avec adaptateur": {
+  "fr": "Mesure de la température avec adaptateur",
+  "en": "Temperature measurement with adapter",
+  "ar": "قياس الحرارة بمحوّل"
+ },
+ "true rms": {
+  "fr": "true RMS",
+  "en": "True RMS",
+  "ar": "True RMS"
+ },
+ "courant de démarrage": {
+  "fr": "Courant de démarrage",
+  "en": "Inrush current",
+  "ar": "تيار البدء"
+ },
+ "affichage (counts)": {
+  "fr": "Affichage (Counts)",
+  "en": "Display (counts)",
+  "ar": "العرض (counts)"
+ },
+ "détection auto. des grandeurs de mesure": {
+  "fr": "Détection auto. des grandeurs de mesure",
+  "en": "Automatic measurement parameter detection",
+  "ar": "التعرّف التلقائي على مقادير القياس"
+ },
+ "étendue de mesure du courant jusqu'au µa": {
+  "fr": "Étendue de mesure du courant jusqu'au µA",
+  "en": "µA current measuring range",
+  "ar": "نطاق قياس التيار حتى µA"
+ },
+ "fluides de pression": {
+  "fr": "Fluides de pression",
+  "en": "Pressure media",
+  "ar": "أوساط الضغط"
+ },
+ "méthane (ch₄)": {
+  "fr": "Méthane (CH₄)",
+  "en": "Methane (CH₄)",
+  "ar": "الميثان (CH₄)"
+ },
+ "propane (c₃h₈)": {
+  "fr": "Propane (C₃H₈)",
+  "en": "Propane (C₃H₈)",
+  "ar": "البروبان (C₃H₈)"
+ },
+ "butane (c₄h₁₀)": {
+  "fr": "Butane (C₄H₁₀)",
+  "en": "Butane (C₄H₁₀)",
+  "ar": "البوتان (C₄H₁₀)"
+ },
+ "détection des fuites h₂": {
+  "fr": "Détection des fuites H₂",
+  "en": "H₂ leak detection",
+  "ar": "كشف تسرّب H₂"
+ },
+ "paramètres de détection": {
+  "fr": "Paramètres de détection",
+  "en": "Detection parameters",
+  "ar": "مقادير الكشف"
+ },
+ "alarme en cas de fuite": {
+  "fr": "Alarme en cas de fuite",
+  "en": "Leak alarm",
+  "ar": "إنذار التسرّب"
+ },
+ "détectables": {
+  "fr": "Détectables",
+  "en": "Detectable",
+  "ar": "قابل للكشف"
+ },
+ "protection ex": {
+  "fr": "Protection EX",
+  "en": "Ex protection",
+  "ar": "الحماية من الانفجار (Ex)"
+ },
+ "autres fonctions": {
+  "fr": "Autres fonctions",
+  "en": "Further features",
+  "ar": "وظائف أخرى"
+ },
+ "température - tc de type s (pt10rh-pt)": {
+  "fr": "Température - TC de type S (Pt10Rh-Pt)",
+  "en": "Temperature - TC type S (Pt10Rh-Pt)",
+  "ar": "الحرارة - TC من النوع S ‏(Pt10Rh-Pt)"
+ },
+ "so₂ low dans gaz de fumée": {
+  "fr": "SO₂ low dans gaz de fumée",
+  "en": "Flue gas SO₂ low",
+  "ar": "SO₂ low في غازات الاحتراق"
+ },
+ "h₂s dans gaz de fumée": {
+  "fr": "H₂S dans gaz de fumée",
+  "en": "Flue gas H₂S",
+  "ar": "H₂S في غازات الاحتراق"
+ },
+ "co₂ dans gaz de fumée - ndir": {
+  "fr": "CO₂ dans gaz de fumée - NDIR",
+  "en": "Flue gas CO₂ - NDIR",
+  "ar": "CO₂ في غازات الاحتراق - NDIR"
+ },
+ "ecoulement / débit volumétrique": {
+  "fr": "Ecoulement / débit volumétrique",
+  "en": "Velocity / volume flow",
+  "ar": "سرعة التدفّق / التدفّق الحجمي"
+ },
+ "teneur min. en o₂ dans les gaz de fumées": {
+  "fr": "Teneur min. en O₂ dans les gaz de fumées",
+  "en": "Min. O₂ content in flue gas",
+  "ar": "أدنى محتوى O₂ في غازات الاحتراق"
+ },
+ "facteur de réponse": {
+  "fr": "Facteur de réponse",
+  "en": "Response factor",
+  "ar": "معامل الاستجابة"
+ },
+ "flue gas so₂ low": {
+  "fr": "SO₂ low dans gaz de fumée",
+  "en": "Flue gas SO₂ low",
+  "ar": "SO₂ low في غازات الاحتراق"
+ },
+ "reaction time t₉₀": {
+  "fr": "Temps de réponse t₉₀",
+  "en": "Response time t₉₀",
+  "ar": "زمن الاستجابة t₉₀"
+ },
+ "entrée de tension dc": {
+  "fr": "Entrée de tension DC",
+  "en": "DC voltage input",
+  "ar": "مدخل الجهد DC"
+ },
+ "calcul du point de rosée": {
+  "fr": "Calcul du point de rosée",
+  "en": "Dew point calculation",
+  "ar": "حساب نقطة الندى"
+ },
+ "charge en poussière max.": {
+  "fr": "Charge en poussière max.",
+  "en": "Max. dust load",
+  "ar": "أقصى حمل للغبار"
+ },
+ "humidité max. admissible": {
+  "fr": "Humidité max. admissible",
+  "en": "Max. permissible humidity",
+  "ar": "أقصى رطوبة مسموح بها"
+ },
+ "entrée de déclenchement": {
+  "fr": "Entrée de déclenchement",
+  "en": "Trigger input",
+  "ar": "مدخل التشغيل"
+ },
+ "co₂ dans l'air ambiant": {
+  "fr": "CO₂ dans l'air ambiant",
+  "en": "Ambient CO₂",
+  "ar": "CO₂ في الهواء المحيط"
+ },
+ "humidité du bois / des matériaux": {
+  "fr": "Humidité du bois / des matériaux",
+  "en": "Wood / building material moisture",
+  "ar": "رطوبة الخشب / المواد"
+ },
+ "tr / min - optique": {
+  "fr": "tr/min - optique",
+  "en": "rpm - optical",
+  "ar": "دورة/دقيقة - بصري"
+ },
+ "tr / min - mécanique": {
+  "fr": "tr/min - mécanique",
+  "en": "rpm - mechanical",
+  "ar": "دورة/دقيقة - ميكانيكي"
+ },
+ "alcance radio": {
+  "fr": "Portée radio",
+  "en": "Radio range",
+  "ar": "المدى اللاسلكي"
+ },
+ "marche / arrêt": {
+  "fr": "Marche / Arrêt",
+  "en": "On / off",
+  "ar": "تشغيل / إيقاف"
+ },
+ "mesure avec pince ampèremétrique et adaptateur": {
+  "fr": "Mesure avec pince ampèremétrique et adaptateur",
+  "en": "Measurement with clamp and adapter",
+  "ar": "القياس بالكلّابة ومحوّل"
+ },
+ "filtre passe-bas": {
+  "fr": "Filtre passe-bas",
+  "en": "Low-pass filter",
+  "ar": "مرشّح تمرير منخفض"
+ },
+ "durée d'activation mesure": {
+  "fr": "Durée d’activation mesure",
+  "en": "Duty cycle measurement",
+  "ar": "قياس دورة التشغيل"
+ },
+ "seuils d'alarme": {
+  "fr": "Seuils d'alarme",
+  "en": "Alarm thresholds",
+  "ar": "عتبات الإنذار"
+ },
+ "éclairage des points de mesure": {
+  "fr": "Éclairage des points de mesure",
+  "en": "Measuring point illumination",
+  "ar": "إضاءة نقاط القياس"
+ },
+ "evaluation de la fréquence": {
+  "fr": "Evaluation de la fréquence",
+  "en": "Frequency weighting",
+  "ar": "ترجيح التردّد"
+ },
+ "plages de mesure partielles": {
+  "fr": "Plages de mesure partielles",
+  "en": "Partial measuring ranges",
+  "ar": "نطاقات القياس الجزئية"
+ },
+ "evaluation en fonction de la durée": {
+  "fr": "Evaluation en fonction de la durée",
+  "en": "Time weighting",
+  "ar": "الترجيح الزمني"
+ },
+ "influence de la pression": {
+  "fr": "Influence de la pression",
+  "en": "Pressure influence",
+  "ar": "تأثير الضغط"
+ },
+ "pression sonore": {
+  "fr": "Pression sonore",
+  "en": "Sound pressure",
+  "ar": "الضغط الصوتي"
+ },
+ "etendue de fréquence": {
+  "fr": "Etendue de fréquence",
+  "en": "Frequency range",
+  "ar": "نطاق التردّد"
+ },
+ "électrode ph": {
+  "fr": "Électrode pH",
+  "en": "pH electrode",
+  "ar": "قطب pH"
+ },
+ "compensation de la température": {
+  "fr": "Compensation de la température",
+  "en": "Temperature compensation",
+  "ar": "تعويض درجة الحرارة"
+ },
+ "profondeur de mesure": {
+  "fr": "Profondeur de mesure",
+  "en": "Measuring depth",
+  "ar": "عمق القياس"
+ },
+ "portée dynamique": {
+  "fr": "Portée dynamique",
+  "en": "Dynamic range",
+  "ar": "المدى الديناميكي"
+ },
+ "dépression finale": {
+  "fr": "Dépression finale",
+  "en": "Ultimate vacuum",
+  "ar": "التفريغ النهائي"
+ },
+ "type de pompe": {
+  "fr": "Type de pompe",
+  "en": "Pump type",
+  "ar": "نوع المضخة"
+ },
+ "fonction de déclenchement rdc / différentiel": {
+  "fr": "Fonction de déclenchement RDC / différentiel",
+  "en": "RCD / residual current trigger function",
+  "ar": "وظيفة الفصل التفاضلي RCD"
+ },
+ "contrôles du champ magnétique rotatif": {
+  "fr": "Contrôles du champ magnétique rotatif",
+  "en": "Rotating field test",
+  "ar": "فحص المجال الدوّار"
+ },
+ "contrôles de phase unipolaires": {
+  "fr": "Contrôles de phase unipolaires",
+  "en": "Single-pole phase test",
+  "ar": "فحص الطور أحادي القطب"
+ },
+ "tr / min - led": {
+  "fr": "tr/min - LED",
+  "en": "rpm - LED",
+  "ar": "دورة/دقيقة - LED"
+ },
+ "couleur des flashs": {
+  "fr": "Couleur des flashs",
+  "en": "Flash colour",
+  "ar": "لون الومضة"
+ },
+ "durée des flashs": {
+  "fr": "Durée des flashs",
+  "en": "Flash duration",
+  "ar": "مدة الومضة"
+ },
+ "puissance du flash": {
+  "fr": "Puissance du flash",
+  "en": "Flash power",
+  "ar": "قدرة الومضة"
+ },
+ "protection contre les inversions de polarité": {
+  "fr": "Protection contre les inversions de polarité",
+  "en": "Reverse polarity protection",
+  "ar": "الحماية من عكس القطبية"
+ },
+ "niveau inférieur": {
+  "fr": "Niveau inférieur",
+  "en": "Lower level",
+  "ar": "المستوى الأدنى"
+ },
+ "courant maximal": {
+  "fr": "Courant maximal",
+  "en": "Maximum current",
+  "ar": "التيار الأقصى"
+ },
+ "résolution de l'écran": {
+  "fr": "Résolution de l’écran",
+  "en": "Display resolution",
+  "ar": "دقة الشاشة"
+ },
+ "conditions de garantie": {
+  "fr": "Conditions de garantie",
+  "en": "Warranty conditions",
+  "ar": "شروط الضمان"
+ },
+ "longueur du col de cygne": {
+  "fr": "Longueur du col de cygne",
+  "en": "Gooseneck length",
+  "ar": "طول عنق الإوزّة"
+ },
+ "mesure du débit de fuite": {
+  "fr": "Mesure du débit de fuite",
+  "en": "Leak flow measurement",
+  "ar": "قياس تدفّق التسرّب"
+ },
+ "prises supplémentaires pour capteurs": {
+  "fr": "Prises supplémentaires pour capteurs",
+  "en": "Additional sensor sockets",
+  "ar": "مقابس إضافية للمستشعرات"
+ },
+ "raccords de gaz": {
+  "fr": "Raccords de gaz",
+  "en": "Gas connections",
+  "ar": "وصلات الغاز"
+ },
+ "homologation dvgw selon 5925": {
+  "fr": "Homologation DVGW selon 5925",
+  "en": "DVGW approval according to 5925",
+  "ar": "اعتماد DVGW وفق 5925"
+ },
+ "calcul du volume des conduites": {
+  "fr": "Calcul du volume des conduites",
+  "en": "Pipe volume calculation",
+  "ar": "حساب حجم الأنابيب"
+ },
+ "type d'accumulateur": {
+  "fr": "Type d'accumulateur",
+  "en": "Rechargeable battery type",
+  "ar": "نوع البطارية القابلة للشحن"
+ },
+ "chargement de l'accumulateur": {
+  "fr": "Chargement de l'accumulateur",
+  "en": "Battery charging",
+  "ar": "شحن البطارية"
+ },
+ "module d'humidité enfichable - capacitif": {
+  "fr": "Module d’humidité enfichable - capacitif",
+  "en": "Plug-in humidity module - capacitive",
+  "ar": "وحدة رطوبة قابلة للتوصيل - سعوي"
+ },
+ "tr / min - xénon": {
+  "fr": "tr/min - xénon",
+  "en": "rpm - xenon",
+  "ar": "دورة/دقيقة - زينون"
+ },
+ "intensité lumineuse": {
+  "fr": "Intensité lumineuse",
+  "en": "Light intensity",
+  "ar": "شدة الإضاءة"
+ },
+ "durée de vie de la lampe-éclair": {
+  "fr": "Durée de vie de la lampe-éclair",
+  "en": "Flash lamp service life",
+  "ar": "عمر مصباح الومض"
+ },
+ "raccord de déclenchement interne": {
+  "fr": "Raccord de déclenchement interne",
+  "en": "Internal trigger connection",
+  "ar": "وصلة التشغيل الداخلية"
+ },
+ "durée de chargement de l'accumulateur": {
+  "fr": "Durée de chargement de l'accumulateur",
+  "en": "Battery charging time",
+  "ar": "مدة شحن البطارية"
+ },
+ "protection contre les déchargements complets": {
+  "fr": "Protection contre les déchargements complets",
+  "en": "Deep discharge protection",
+  "ar": "الحماية من التفريغ الكامل"
+ },
+ "protection contre les surcharges": {
+  "fr": "Protection contre les surcharges",
+  "en": "Overcharge protection",
+  "ar": "الحماية من الشحن الزائد"
+ },
+ "charge de maintien": {
+  "fr": "Charge de maintien",
+  "en": "Trickle charge",
+  "ar": "شحن الصيانة"
+ },
+ "charge accus": {
+  "fr": "Charge accus",
+  "en": "Battery charge",
+  "ar": "شحن البطاريات"
+ },
+ "milieu de mesure": {
+  "fr": "Milieu de mesure",
+  "en": "Measuring medium",
+  "ar": "وسط القياس"
+ },
+ "etendue de mesure": {
+  "fr": "Etendue de mesure",
+  "en": "Measuring range",
+  "ar": "نطاق القياس"
+ },
+ "puissance consommée": {
+  "fr": "Puissance consommée",
+  "en": "Power consumption",
+  "ar": "استهلاك الطاقة"
+ },
+ "mesure de pression (sonde externe)": {
+  "fr": "Mesure de pression (sonde externe)",
+  "en": "Pressure measurement (external probe)",
+  "ar": "قياس الضغط (مجسّ خارجي)"
  }
 }

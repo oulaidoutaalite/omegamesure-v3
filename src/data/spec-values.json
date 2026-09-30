@@ -7038,5 +7038,4730 @@
   "fr": "∅ suivant modèle",
   "en": "Ø depending on model",
   "ar": "القطر حسب الطراز"
+ },
+ "x not for condensing atmospheres.": {
+  "fr": "* Ne convient pas aux atmosphères avec condensation.",
+  "en": "* Not for condensing atmospheres.",
+  "ar": "* لا يصلح للأجواء التي يحدث فيها تكثّف."
+ },
+ "plastique": {
+  "fr": "Plastique",
+  "en": "Plastic",
+  "ar": "بلاستيك"
+ },
+ "blanc": {
+  "fr": "blanc",
+  "en": "white",
+  "ar": "أبيض"
+ },
+ "haccp international": {
+  "fr": "HACCP International",
+  "en": "HACCP International",
+  "ar": "HACCP International"
+ },
+ "en fonction de la sonde choisie": {
+  "fr": "En fonction de la sonde choisie",
+  "en": "Depends on the selected probe",
+  "ar": "حسب المجسّ المختار"
+ },
+ "x ne convient pas pour les atmosphères sans rosée": {
+  "fr": "* Ne convient pas pour les atmosphères sans rosée",
+  "en": "* Not for condensing atmospheres",
+  "ar": "* لا يصلح للأجواء التي يحدث فيها تكثّف"
+ },
+ "boîtier métallique": {
+  "fr": "Boîtier métallique",
+  "en": "Metal housing",
+  "ar": "هيكل معدني"
+ },
+ "argent": {
+  "fr": "argent",
+  "en": "silver",
+  "ar": "فضّي"
+ },
+ "mini usb, fente pour carte sd": {
+  "fr": "mini usb, fente pour carte SD",
+  "en": "mini USB, SD card slot",
+  "ar": "mini USB، فتحة بطاقة SD"
+ },
+ "tpe pc": {
+  "fr": "TPE PC",
+  "en": "TPE PC",
+  "ar": "TPE PC"
+ },
+ "noir": {
+  "fr": "Noir",
+  "en": "Black",
+  "ar": "أسود"
+ },
+ "ecran graphique de": {
+  "fr": "Écran graphique",
+  "en": "Graphic display",
+  "ar": "شاشة رسومية"
+ },
+ "affichage graphique": {
+  "fr": "Affichage graphique",
+  "en": "Graphic display",
+  "ar": "عرض رسومي"
+ },
+ "le nombre max. de procès-verbaux est déterminé par le nombre de dossiers ou de points de mesure.": {
+  "fr": "Le nombre max. de procès-verbaux est déterminé par le nombre de dossiers ou de points de mesure.",
+  "en": "The max. number of reports is determined by the number of folders or measuring sites.",
+  "ar": "يتحدّد العدد الأقصى للمحاضر بعدد الملفات أو نقاط القياس."
+ },
+ "bluetooth®; usb; interface ir / irda; sortie de gaz; raccord réseau; entrée de sonde / entrées de sonde; pression différentielle": {
+  "fr": "BLUETOOTH®; USB; Interface IR/IRDA; Sortie de gaz; Raccord réseau; Entrée de sonde/ Entrées de sonde; Pression différentielle",
+  "en": "Bluetooth®; USB; IR/IRDA interface; gas outlet; mains connection; probe input(s); differential pressure",
+  "ar": "BLUETOOTH®؛ USB؛ واجهة IR/IRDA؛ مخرج الغاز؛ وصلة الشبكة؛ مدخل/مداخل المجسّ؛ الضغط التفاضلي"
+ },
+ "bleu": {
+  "fr": "bleu",
+  "en": "blue",
+  "ar": "أزرق"
+ },
+ "écran tactile capacitif": {
+  "fr": "Écran tactile capacitif",
+  "en": "Capacitive touchscreen",
+  "ar": "شاشة لمس سعوية"
+ },
+ "température (combustion, température ambiante)": {
+  "fr": "Température (combustion, température ambiante)",
+  "en": "Temperature (flue gas, ambient temperature)",
+  "ar": "درجة الحرارة (الاحتراق، حرارة المحيط)"
+ },
+ "bluetooth®": {
+  "fr": "BLUETOOTH®",
+  "en": "Bluetooth®",
+  "ar": "BLUETOOTH®"
+ },
+ "x when not connected via bluetooth": {
+  "fr": "* hors connexion Bluetooth",
+  "en": "* when not connected via Bluetooth",
+  "ar": "* عند عدم الاتصال عبر Bluetooth"
+ },
+ "noir / orange": {
+  "fr": "noir/orange",
+  "en": "black/orange",
+  "ar": "أسود/برتقالي"
+ },
+ "abs": {
+  "fr": "ABS",
+  "en": "ABS",
+  "ar": "ABS"
+ },
+ "adobe® acrobat reader": {
+  "fr": "Adobe® Acrobat Reader",
+  "en": "Adobe® Acrobat Reader",
+  "ar": "Adobe® Acrobat Reader"
+ },
+ "certifié par haccp-international": {
+  "fr": "Certifié par HACCP-International",
+  "en": "Certified by HACCP International",
+  "ar": "معتمد من HACCP International"
+ },
+ "avec led": {
+  "fr": "avec LED",
+  "en": "via LED",
+  "ar": "بواسطة LED"
+ },
+ "pile lithium, non remplaçable": {
+  "fr": "Pile Lithium, non remplaçable",
+  "en": "Lithium battery, non-replaceable",
+  "ar": "بطارية ليثيوم غير قابلة للاستبدال"
+ },
+ "usb; nfc": {
+  "fr": "USB; NFC",
+  "en": "USB; NFC",
+  "ar": "USB؛ NFC"
+ },
+ "avec led et écran": {
+  "fr": "avec LED et écran",
+  "en": "via LED and display",
+  "ar": "بواسطة LED والشاشة"
+ },
+ "une ligne tc de type k": {
+  "fr": "une ligne TC de type K",
+  "en": "single-line, type K TC",
+  "ar": "سطر واحد، TC من النوع K"
+ },
+ "lcd": {
+  "fr": "LCD",
+  "en": "LCD",
+  "ar": "LCD"
+ },
+ "abs + pc / tpe": {
+  "fr": "ABS + PC / TPE",
+  "en": "ABS + PC / TPE",
+  "ar": "ABS + PC / TPE"
+ },
+ "rétro-éclairé": {
+  "fr": "rétro-éclairé",
+  "en": "backlit",
+  "ar": "بإضاءة خلفية"
+ },
+ "sondes d'humidité / de température externes": {
+  "fr": "Sondes d'humidité / de température externes",
+  "en": "External humidity / temperature probes",
+  "ar": "مجسّات رطوبة / حرارة خارجية"
+ },
+ "batterie (non remplaçable)": {
+  "fr": "Batterie (non remplaçable)",
+  "en": "Battery (non-replaceable)",
+  "ar": "بطارية (غير قابلة للاستبدال)"
+ },
+ "abs / tpe / pc et zinc moulé sous pression / acier inoxydable": {
+  "fr": "ABS / TPE / PC et zinc moulé sous pression/acier inoxydable",
+  "en": "ABS / TPE / PC and die-cast zinc / stainless steel",
+  "ar": "ABS / TPE / PC وزنك مصبوب بالضغط / فولاذ مقاوم للصدأ"
+ },
+ "marche / arrêt": {
+  "fr": "Marche / Arrêt",
+  "en": "On / off",
+  "ar": "تشغيل / إيقاف"
+ },
+ "hold ou auto hold (sonde d'immersion)": {
+  "fr": "Hold ou Auto Hold (sonde d'immersion)",
+  "en": "Hold or Auto Hold (immersion probe)",
+  "ar": "Hold أو Auto Hold (مجسّ الغمر)"
+ },
+ "température : °c, °f, °r": {
+  "fr": "Température : °C, °F, °R",
+  "en": "Temperature: °C, °F, °R",
+  "ar": "درجة الحرارة: °C و°F و°R"
+ },
+ "avec ligne de statut (°c, °f, °r, piles, hold / auto hold, min., max., mesure laser, émissivité)": {
+  "fr": "avec ligne de statut (°C, °F, °R, piles, Hold / Auto Hold, Min., Max., mesure laser, émissivité)",
+  "en": "with status line (°C, °F, °R, batteries, Hold / Auto Hold, Min., Max., laser measurement, emissivity)",
+  "ar": "مع سطر حالة (°C، °F، °R، البطاريات، Hold / Auto Hold، الحدّ الأدنى، الحدّ الأقصى، القياس بالليزر، معامل الانبعاث)"
+ },
+ "éclairé": {
+  "fr": "éclairé",
+  "en": "illuminated",
+  "ar": "مضاء"
+ },
+ "utilisable avec ou sans l'app testo smart": {
+  "fr": "utilisable avec ou sans l’App testo Smart",
+  "en": "Can be used with or without the testo Smart App",
+  "ar": "قابل للاستخدام مع تطبيق testo Smart أو دونه"
+ },
+ "pile (non remplaçable": {
+  "fr": "Pile (non remplaçable)",
+  "en": "Battery (non-replaceable)",
+  "ar": "بطارية (غير قابلة للاستبدال)"
+ },
+ "fer, arc-en-ciel, arc-en-ciel hc, froid-chaud, bleu-rouge, gris, gris inversé,sépia, testo, fer ht, palette hygrométrique": {
+  "fr": "Fer, arc-en-ciel, arc-en-ciel HC, froid-chaud, bleu-rouge, gris, gris inversé,sépia, Testo, fer HT, palette hygrométrique",
+  "en": "Iron, rainbow, rainbow HC, cold-hot, blue-red, grey, inverted grey, sepia, Testo, iron HT, hygrometric palette",
+  "ar": "حديدي، قوس قزح، قوس قزح HC، بارد-ساخن، أزرق-أحمر، رمادي، رمادي معكوس، بنّي داكن، Testo، حديدي HT، لوحة رطوبية"
+ },
+ "image ir / image réelle": {
+  "fr": "Image IR / image réelle",
+  "en": "IR image / real image",
+  "ar": "صورة بالأشعة تحت الحمراء / صورة حقيقية"
+ },
+ "(dans l'app testo smart)": {
+  "fr": "(dans l’App testo Smart)",
+  "en": "(in the testo Smart App)",
+  "ar": "(في تطبيق testo Smart)"
+ },
+ "peer to peer advertising pour l'établissement rapide de la connexionx": {
+  "fr": "Peer to Peer Advertising pour l’établissement rapide de la connexion*",
+  "en": "Peer-to-peer advertising for fast connection set-up*",
+  "ar": "إعلان نظير إلى نظير (Peer to Peer) لإنشاء اتصال سريع*"
+ },
+ ".bmt; .jpg; .csv": {
+  "fr": ".bmt; .jpg; .csv",
+  "en": ".bmt; .jpg; .csv",
+  "ar": ".bmt؛ .jpg؛ .csv"
+ },
+ "sur l'appareil mobile": {
+  "fr": "Sur l’appareil mobile",
+  "en": "On the mobile device",
+  "ar": "على الجهاز المحمول"
+ },
+ "mise au point fixe": {
+  "fr": "Mise au point fixe",
+  "en": "Fixed focus",
+  "ar": "تركيز ثابت"
+ },
+ "manuel; (via testo smart app)": {
+  "fr": "manuel; (via testo Smart App)",
+  "en": "manual; (via testo Smart App)",
+  "ar": "يدوي؛ (عبر تطبيق testo Smart)"
+ },
+ "alimentation en courant, tension, puissance": {
+  "fr": "Alimentation en courant, tension, puissance",
+  "en": "Current, voltage, power",
+  "ar": "التيار والجهد والقدرة"
+ },
+ "deltaheat; deltacool; mode humidité": {
+  "fr": "DeltaHeat; DeltaCool; mode humidité",
+  "en": "DeltaHeat; DeltaCool; humidity mode",
+  "ar": "DeltaHeat؛ DeltaCool؛ وضع الرطوبة"
+ },
+ "(testo irsoft)": {
+  "fr": "(testo IRSoft)",
+  "en": "(testo IRSoft)",
+  "ar": "(testo IRSoft)"
+ },
+ "batterie lithium-ion intégrée": {
+  "fr": "Batterie lithium-ion intégrée",
+  "en": "Integrated lithium-ion battery",
+  "ar": "بطارية ليثيوم أيون مدمجة"
+ },
+ "usb-c": {
+  "fr": "USB-C",
+  "en": "USB-C",
+  "ar": "USB-C"
+ },
+ "fer, arc-en-ciel, arc-en-ciel hc, froid-chaud,bleu-rouge, gris, gris inversé,sépia, testo,fer ht, palette hygrométrique": {
+  "fr": "Fer, arc-en-ciel, arc-en-ciel HC, froid-chaud,bleu-rouge, gris, gris inversé,sépia, Testo,fer HT, palette hygrométrique",
+  "en": "Iron, rainbow, rainbow HC, cold-hot, blue-red, grey, inverted grey, sepia, Testo, iron HT, hygrometric palette",
+  "ar": "حديدي، قوس قزح، قوس قزح HC، بارد-ساخن، أزرق-أحمر، رمادي، رمادي معكوس، بنّي داكن، Testo، حديدي HT، لوحة رطوبية"
+ },
+ "ir / visible / fusion / image dans l'image / mode humidité": {
+  "fr": "IR / visible / fusion / image dans l'image / mode humidité",
+  "en": "IR / visible / fusion / picture-in-picture / humidity mode",
+  "ar": "أشعة تحت حمراء / مرئي / دمج / صورة داخل صورة / وضع الرطوبة"
+ },
+ "enregistrement vidéo non radiométrique dans l'appareil (avi)": {
+  "fr": "Enregistrement vidéo non radiométrique dans l’appareil (AVI)",
+  "en": "Non-radiometric video recording in the instrument (AVI)",
+  "ar": "تسجيل فيديو غير إشعاعي في الجهاز (AVI)"
+ },
+ "peer-to-peer pour une configuration rapide de la connexion": {
+  "fr": "peer-to-peer pour une configuration rapide de la connexion",
+  "en": "peer-to-peer for fast connection set-up",
+  "ar": "نظير إلى نظير لإعداد سريع للاتصال"
+ },
+ ".bmt; .jpg": {
+  "fr": ".bmt; .jpg",
+  "en": ".bmt; .jpg",
+  "ar": ".bmt؛ .jpg"
+ },
+ "deltaheat; mode humidité": {
+  "fr": "DeltaHeat; mode humidité",
+  "en": "DeltaHeat; humidity mode",
+  "ar": "DeltaHeat؛ وضع الرطوبة"
+ },
+ "sondes de température externes": {
+  "fr": "Sondes de température externes",
+  "en": "External temperature probes",
+  "ar": "مجسّات حرارة خارجية"
+ },
+ "cf. sonde externe": {
+  "fr": "cf. sonde externe",
+  "en": "See external probe",
+  "ar": "انظر المجسّ الخارجي"
+ },
+ "abs + pc": {
+  "fr": "ABS + PC",
+  "en": "ABS + PC",
+  "ar": "ABS + PC"
+ },
+ "acoustique; optique": {
+  "fr": "acoustique; Optique",
+  "en": "audible; optical",
+  "ar": "صوتي؛ مرئي"
+ },
+ "matrice à points": {
+  "fr": "Matrice à points",
+  "en": "Dot matrix",
+  "ar": "مصفوفة نقطية"
+ },
+ "xdésactivé en cas de mesure en continu ou quand il n'est plus connecté au port usb": {
+  "fr": "*désactivé en cas de mesure en continu ou quand il n’est plus connecté au port USB",
+  "en": "*disabled during continuous measurement or when no longer connected to the USB port",
+  "ar": "*معطّل أثناء القياس المستمر أو عند عدم الاتصال بمنفذ USB"
+ },
+ "veuillez tenir compte des indications supplémentaires concernant la précision de l'humidité dans le mode d'emploi.": {
+  "fr": "Veuillez tenir compte des indications supplémentaires concernant la précision de l’humidité dans le mode d’emploi.",
+  "en": "Please note the additional humidity accuracy information in the instruction manual.",
+  "ar": "يرجى مراعاة المعلومات الإضافية حول دقة الرطوبة في دليل الاستخدام."
+ },
+ "ce": {
+  "fr": "CE",
+  "en": "CE",
+  "ar": "CE"
+ },
+ "image ir uniquement": {
+  "fr": "Image IR uniquement",
+  "en": "IR image only",
+  "ar": "صورة الأشعة تحت الحمراء فقط"
+ },
+ "via usb": {
+  "fr": "via USB",
+  "en": "via USB",
+  "ar": "عبر USB"
+ },
+ "inclus dans la livraison": {
+  "fr": "Inclus dans la livraison",
+  "en": "Included in delivery",
+  "ar": "مرفق عند التسليم"
+ },
+ ".bmt; .jpg; exportation possible au format .bmp; .jpg; .png; .xls; .csv": {
+  "fr": ".bmt; .jpg; Exportation possible au format .bmp; .jpg; .png; .xls; .csv",
+  "en": ".bmt; .jpg; export possible as .bmp; .jpg; .png; .xls; .csv",
+  "ar": ".bmt؛ .jpg؛ التصدير ممكن بصيغ .bmp؛ .jpg؛ .png؛ .xls؛ .csv"
+ },
+ "mesure de points moyens, reconnaissance du point chaud / froid, delta t": {
+  "fr": "Mesure de points moyens, reconnaissance du point chaud / froid, Delta T",
+  "en": "Mean point measurement, hot / cold spot detection, Delta T",
+  "ar": "قياس النقاط المتوسطة، وكشف النقطة الساخنة / الباردة، وDelta T"
+ },
+ "pc - abs": {
+  "fr": "PC - ABS",
+  "en": "PC - ABS",
+  "ar": "PC - ABS"
+ },
+ "accu lithium-ion à charge rapide, remplaçable sur site": {
+  "fr": "Accu Lithium-Ion à charge rapide, remplaçable sur site",
+  "en": "Fast-charging lithium-ion battery, replaceable on site",
+  "ar": "بطارية ليثيوم أيون سريعة الشحن، قابلة للاستبدال في الموقع"
+ },
+ "brillant / normal / sombre": {
+  "fr": "clair / normal / sombre",
+  "en": "bright / normal / dark",
+  "ar": "ساطع / عادي / داكن"
+ },
+ "via wifi avec l'application mobile testo thermography": {
+  "fr": "via Wifi avec l'application mobile testo Thermography",
+  "en": "via Wi-Fi with the testo Thermography mobile app",
+  "ar": "عبر Wi-Fi مع تطبيق الهاتف testo Thermography"
+ },
+ "communication avec l'application mobile testo thermography avec le module sans fil wifi (ue, aele, usa, aus, cdn, tr)": {
+  "fr": "Communication avec l’application mobile testo Thermography avec le module sans fil Wifi (UE, AELE, USA, AUS, CDN, TR)",
+  "en": "Communication with the testo Thermography mobile app via Wi-Fi radio module (EU, EFTA, USA, AUS, CDN, TR)",
+  "ar": "الاتصال بتطبيق الهاتف testo Thermography عبر وحدة Wi-Fi اللاسلكية (الاتحاد الأوروبي، EFTA، الولايات المتحدة، أستراليا، كندا، تركيا)"
+ },
+ ".bmt; exportation possible au format .bmp; .png; .csv; .xls; .jpg": {
+  "fr": ".bmt; Exportation possible au format .bmp; .png; .csv; .xls; .jpg",
+  "en": ".bmt; export possible as .bmp; .png; .csv; .xls; .jpg",
+  "ar": ".bmt؛ التصدير ممكن بصيغ .bmp؛ .png؛ .csv؛ .xls؛ .jpg"
+ },
+ "communication avec l'application mobile testo thermography avec le module sans fil bt / wifi (ue, aele, usa, aus, cdn, tr)": {
+  "fr": "Communication avec l’application mobile testo Thermography avec le module sans fil BT / Wifi (UE, AELE, USA, AUS, CDN, TR)",
+  "en": "Communication with the testo Thermography mobile app via BT / Wi-Fi radio module (EU, EFTA, USA, AUS, CDN, TR)",
+  "ar": "الاتصال بتطبيق الهاتف testo Thermography عبر وحدة BT / Wi-Fi اللاسلكية (الاتحاد الأوروبي، EFTA، الولايات المتحدة، أستراليا، كندا، تركيا)"
+ },
+ ".bmt; .jpg; exportation possible au format .bmp; .jpg; .png; .csv; .xls": {
+  "fr": ".bmt; .jpg; Exportation possible au format .bmp; .jpg; .png; .csv; .xls",
+  "en": ".bmt; .jpg; export possible as .bmp; .jpg; .png; .csv; .xls",
+  "ar": ".bmt؛ .jpg؛ التصدير ممكن بصيغ .bmp؛ .jpg؛ .png؛ .csv؛ .xls"
+ },
+ "entrer de la valeur du rayonnement solaire": {
+  "fr": "Saisie de la valeur du rayonnement solaire",
+  "en": "Entry of the solar radiation value",
+  "ar": "إدخال قيمة الإشعاع الشمسي"
+ },
+ ".bmt; .jpg; exportation possible au format .bmp; .png; .xls": {
+  "fr": ".bmt; .jpg; Exportation possible au format .bmp; .png; .xls",
+  "en": ".bmt; .jpg; export possible as .bmp; .png; .xls",
+  "ar": ".bmt؛ .jpg؛ التصدير ممكن بصيغ .bmp؛ .png؛ .xls"
+ },
+ "bright / normal / dark": {
+  "fr": "clair / normal / sombre",
+  "en": "bright / normal / dark",
+  "ar": "ساطع / عادي / داكن"
+ },
+ "bluetooth®; usb": {
+  "fr": "BLUETOOTH®; USB",
+  "en": "Bluetooth®; USB",
+  "ar": "BLUETOOTH®؛ USB"
+ },
+ "marqueur laser": {
+  "fr": "Marqueur laser",
+  "en": "Laser marker",
+  "ar": "مؤشّر ليزري"
+ },
+ "mesure de points moyens, reconnaissance du point chaud / froid, delta t, mesure de la zone (min-max sur la zone)": {
+  "fr": "Mesure de points moyens, reconnaissance du point chaud / froid, Delta T, mesure de la zone (min-max sur la zone)",
+  "en": "Mean point measurement, hot / cold spot detection, Delta T, area measurement (min-max over the area)",
+  "ar": "قياس النقاط المتوسطة، وكشف النقطة الساخنة / الباردة، وDelta T، وقياس المنطقة (الأدنى-الأقصى على المنطقة)"
+ },
+ "dans l'appareil / sur la station de chargement (option)": {
+  "fr": "dans l'appareil / sur la station de chargement (option)",
+  "en": "in the instrument / on the charging station (optional)",
+  "ar": "في الجهاز / على محطة الشحن (اختياري)"
+ },
+ ".bmt; .jpg; .xls; .png": {
+  "fr": ".bmt; .jpg; .xls; .png",
+  "en": ".bmt; .jpg; .xls; .png",
+  "ar": ".bmt؛ .jpg؛ .xls؛ .png"
+ },
+ "via wifi avec l'application mobile testo thermography; via usb": {
+  "fr": "via Wifi avec l'application mobile testo Thermography; via USB",
+  "en": "via Wi-Fi with the testo Thermography mobile app; via USB",
+  "ar": "عبر Wi-Fi مع تطبيق الهاتف testo Thermography؛ عبر USB"
+ },
+ "communication avec la testo thermography app module radio bt / wifix": {
+  "fr": "Communication avec la testo Thermography App Module radio BT/WiFi*",
+  "en": "Communication with the testo Thermography App, BT/Wi-Fi radio module*",
+  "ar": "الاتصال بتطبيق testo Thermography، وحدة لاسلكية BT/WiFi*"
+ },
+ "x vous trouvez une vue d'ensemble des homologations radio dans les différents pays dans la zone de téléchargement de la page du produit concerné (www.testo.com) .": {
+  "fr": "* Vous trouvez une vue d’ensemble des homologations radio dans les différents pays dans la zone de téléchargement de la page du produit concerné (www.testo.com).",
+  "en": "* An overview of radio approvals in the various countries is available in the download area of the relevant product page (www.testo.com).",
+  "ar": "* تجد نظرة عامة على الاعتمادات اللاسلكية في مختلف البلدان في قسم التنزيلات بصفحة المنتج المعني (www.testo.com)."
+ },
+ "acier inoxydable, plastique peek": {
+  "fr": "Acier inoxydable, plastique PEEK",
+  "en": "Stainless steel, PEEK plastic",
+  "ar": "فولاذ مقاوم للصدأ، بلاستيك PEEK"
+ },
+ "hpa, mbar, pa, mmh?o, inh?o, inhg, mmhg, psi, m / s, fpm": {
+  "fr": "hPa, mbar, Pa, mmH₂O, inH₂O, inHg, mmHg, psi, m/s, fpm",
+  "en": "hPa, mbar, Pa, mmH₂O, inH₂O, inHg, mmHg, psi, m/s, fpm",
+  "ar": "hPa، mbar، Pa، mmH₂O، inH₂O، inHg، mmHg، psi، m/s، fpm"
+ },
+ "deux lignes": {
+  "fr": "deux lignes",
+  "en": "two lines",
+  "ar": "سطران"
+ },
+ "bluetooth®; connexion automatique à l'app testo smart et aux appareils de mesure de testo": {
+  "fr": "BLUETOOTH®; Connexion automatique à l’App testo Smart et aux appareils de mesure de Testo",
+  "en": "Bluetooth®; automatic connection to the testo Smart App and Testo measuring instruments",
+  "ar": "BLUETOOTH®؛ اتصال تلقائي بتطبيق testo Smart وبأجهزة قياس Testo"
+ },
+ "haccp international; nsf": {
+  "fr": "HACCP International; NSF",
+  "en": "HACCP International; NSF",
+  "ar": "HACCP International؛ NSF"
+ },
+ "vert / orange / rougex": {
+  "fr": "vert/orange/rouge*",
+  "en": "green/orange/red*",
+  "ar": "أخضر/برتقالي/أحمر*"
+ },
+ "x la fonction supplémentaire n'est disponible qu'après l'enregistrement dans l'app": {
+  "fr": "* La fonction supplémentaire n’est disponible qu’après l’enregistrement dans l’App",
+  "en": "* The additional function is only available after registration in the app",
+  "ar": "* الوظيفة الإضافية لا تتوفر إلا بعد التسجيل في التطبيق"
+ },
+ "mbar; micron; mmhg; torr; inhg; inh₂o; hpa; pa": {
+  "fr": "mbar; micron; mmHg; Torr; inHg; inH₂O; hPa; Pa",
+  "en": "mbar; micron; mmHg; Torr; inHg; inH₂O; hPa; Pa",
+  "ar": "mbar؛ micron؛ mmHg؛ Torr؛ inHg؛ inH₂O؛ hPa؛ Pa"
+ },
+ "csa; ce": {
+  "fr": "CSA; CE",
+  "en": "CSA; CE",
+  "ar": "CSA؛ CE"
+ },
+ "hpa, mbar, pa, mmh₂o, inh₂o, inhg, mmhg, psi": {
+  "fr": "hPa, mbar, Pa, mmH₂O, inH₂O, inHg, mmHg, psi",
+  "en": "hPa, mbar, Pa, mmH₂O, inH₂O, inHg, mmHg, psi",
+  "ar": "hPa، mbar، Pa، mmH₂O، inH₂O، inHg، mmHg، psi"
+ },
+ "cfc, hfc, hcfc, n, h₂o, co₂": {
+  "fr": "CFC, HFC, HCFC, N, H₂O, CO₂",
+  "en": "CFC, HFC, HCFC, N, H₂O, CO₂",
+  "ar": "CFC، HFC، HCFC، N، H₂O، CO₂"
+ },
+ "ppm; %vol; %lie": {
+  "fr": "ppm; %vol; %LIE",
+  "en": "ppm; vol.%; %LEL",
+  "ar": "ppm؛ %vol؛ %LIE"
+ },
+ "méthane; propane; butane; hydrogène (gaz de formage)": {
+  "fr": "méthane; propane; butane; hydrogène (gaz de formage)",
+  "en": "methane; propane; butane; hydrogen (forming gas)",
+  "ar": "الميثان؛ البروبان؛ البوتان؛ الهيدروجين (غاز التشكيل)"
+ },
+ "optical_audible_alarm": {
+  "fr": "Alarme optique et acoustique",
+  "en": "Optical and audible alarm",
+  "ar": "إنذار مرئي وصوتي"
+ },
+ "ppm": {
+  "fr": "ppm",
+  "en": "ppm",
+  "ar": "ppm"
+ },
+ "optical_audible_alarm; vibrante": {
+  "fr": "Alarme optique et acoustique ; vibrante",
+  "en": "Optical and audible alarm; vibration",
+  "ar": "إنذار مرئي وصوتي؛ اهتزازي"
+ },
+ "auto hold, hold, min. / max.": {
+  "fr": "Auto Hold, Hold, Min./Max.",
+  "en": "Auto Hold, Hold, Min./Max.",
+  "ar": "Auto Hold، Hold، Min./Max."
+ },
+ "sonde de température ambiante": {
+  "fr": "Sonde de température ambiante",
+  "en": "Ambient temperature probe",
+  "ar": "مجسّ حرارة المحيط"
+ },
+ "indication du h₂ à titre indicatif uniquement": {
+  "fr": "Indication du H₂ à titre indicatif uniquement",
+  "en": "H₂ indication for guidance only",
+  "ar": "إشارة H₂ للاسترشاد فقط"
+ },
+ "la limite inférieure d'explosivité (lie) doit être respectée. le capteur hc est étalonné en usine pour le méthane. il peut être étalonné pour un autre gaz (propane ou butane) par l'utilisateur.": {
+  "fr": "La limite inférieure d’explosivité (LIE) doit être respectée. Le capteur HC est étalonné en usine pour le méthane. Il peut être étalonné pour un autre gaz (propane ou butane) par l’utilisateur.",
+  "en": "The lower explosive limit (LEL) must be observed. The HC sensor is factory-calibrated for methane. It can be calibrated by the user for another gas (propane or butane).",
+  "ar": "يجب احترام الحدّ الأدنى للانفجار (LIE). مستشعر HC معايَر في المصنع للميثان، ويمكن للمستخدم معايرته لغاز آخر (البروبان أو البوتان)."
+ },
+ "pile lithium": {
+  "fr": "Pile Lithium",
+  "en": "Lithium battery",
+  "ar": "بطارية ليثيوم"
+ },
+ "bus de données; bluetooth®; usb; interface ir / irda; raccord réseau; entrée trigger; pression différentielle; entrée de sonde / entrées de sonde; entrée de tension continue; entrée d'air de dilution pour l'extension de l'étendue de mesure": {
+  "fr": "bus de données; BLUETOOTH®; USB; Interface IR/IRDA; Raccord réseau; Entrée trigger; Pression différentielle; Entrée de sonde/ Entrées de sonde; Entrée de tension continue; Entrée d’air de dilution pour l’extension de l’étendue de mesure",
+  "en": "data bus; Bluetooth®; USB; IR/IRDA interface; mains connection; trigger input; differential pressure; probe input(s); DC voltage input; dilution air inlet for measuring range extension",
+  "ar": "ناقل البيانات؛ BLUETOOTH®؛ USB؛ واجهة IR/IRDA؛ وصلة الشبكة؛ مدخل التشغيل؛ الضغط التفاضلي؛ مدخل/مداخل المجسّ؛ مدخل الجهد المستمر؛ مدخل هواء التخفيف لتوسيع نطاق القياس"
+ },
+ "abs / tpe": {
+  "fr": "ABS / TPE",
+  "en": "ABS / TPE",
+  "ar": "ABS / TPE"
+ },
+ "avec ligne de statut": {
+  "fr": "avec ligne de statut",
+  "en": "with status line",
+  "ar": "مع سطر حالة"
+ },
+ "en fonction de la précision de la sonde": {
+  "fr": "en fonction de la précision de la sonde",
+  "en": "depending on probe accuracy",
+  "ar": "حسب دقة المجسّ"
+ },
+ "usb": {
+  "fr": "USB",
+  "en": "USB",
+  "ar": "USB"
+ },
+ "c.f. caractéristiques": {
+  "fr": "c.f. caractéristiques",
+  "en": "See specifications",
+  "ar": "انظر الخصائص"
+ },
+ "abs / tpe / métal": {
+  "fr": "ABS / TPE / Métal",
+  "en": "ABS / TPE / metal",
+  "ar": "ABS / TPE / معدن"
+ },
+ "piles mignon alcalines au manganèse, type aa": {
+  "fr": "Piles Mignon alcalines au manganèse, type AA",
+  "en": "Alkaline manganese AA (Mignon) batteries",
+  "ar": "بطاريات قلوية منغنيز من النوع AA"
+ },
+ "sans éclairage": {
+  "fr": "sans éclairage",
+  "en": "non-illuminated",
+  "ar": "دون إضاءة"
+ },
+ "csa · csa; ce": {
+  "fr": "CSA · CSA; CE",
+  "en": "CSA · CSA; CE",
+  "ar": "CSA · CSA؛ CE"
+ },
+ "ecran rétro-éclairé": {
+  "fr": "Ecran rétro-éclairé",
+  "en": "Backlit display",
+  "ar": "شاشة بإضاءة خلفية"
+ },
+ "affichage lcd une ligne": {
+  "fr": "Affichage LCD une ligne",
+  "en": "Single-line LCD display",
+  "ar": "شاشة LCD بسطر واحد"
+ },
+ "avec led; acoustique": {
+  "fr": "avec LED; acoustique",
+  "en": "via LED; audible",
+  "ar": "بواسطة LED؛ صوتي"
+ },
+ "a / c": {
+  "fr": "A/C",
+  "en": "A/C",
+  "ar": "A/C"
+ },
+ "ce; csa": {
+  "fr": "CE; CSA",
+  "en": "CE; CSA",
+  "ar": "CE؛ CSA"
+ },
+ "contenu d'eau en % de poids basé sur la masse sèche": {
+  "fr": "Contenu d'eau en % de poids basé sur la masse sèche",
+  "en": "Water content in % by weight based on dry mass",
+  "ar": "المحتوى المائي بنسبة مئوية من الوزن على أساس الكتلة الجافة"
+ },
+ "rpm, rps": {
+  "fr": "rpm, rps",
+  "en": "rpm, rps",
+  "ar": "rpm، rps"
+ },
+ "conforme dguv, remplaçable via un mécanisme à clic": {
+  "fr": "Conforme DGUV, remplaçable via un mécanisme à clic",
+  "en": "DGUV-compliant, replaceable via a click mechanism",
+  "ar": "مطابق لـ DGUV، قابل للاستبدال بآلية نقر"
+ },
+ "pompe à vide à palettes, pompe à deux étages": {
+  "fr": "Pompe à vide à palettes, pompe à deux étages",
+  "en": "Rotary vane vacuum pump, two-stage",
+  "ar": "مضخة تفريغ ذات ريش دوّارة، مضخة ثنائية المرحلة"
+ },
+ "tüv; csa; ce": {
+  "fr": "TÜV; CSA; CE",
+  "en": "TÜV; CSA; CE",
+  "ar": "TÜV؛ CSA؛ CE"
+ },
+ "réglable": {
+  "fr": "Réglable",
+  "en": "Adjustable",
+  "ar": "قابل للضبط"
+ },
+ "multilignes avec petite tête de mesure pour surfaces planes étanche tc de type k": {
+  "fr": "multilignes avec petite tête de mesure pour surfaces planes étanche TC de type K",
+  "en": "multi-line, with small measuring head for flat surfaces, waterproof, type K TC",
+  "ar": "متعدد الأسطر، برأس قياس صغير للأسطح المستوية، محكم، TC من النوع K"
+ },
+ "fonctions auto-hold, hold, min. / max": {
+  "fr": "Fonctions Auto-Hold, Hold, Min./Max",
+  "en": "Auto-Hold, Hold, Min./Max. functions",
+  "ar": "وظائف Auto-Hold وHold وMin./Max"
+ },
+ "-": {
+  "fr": "-",
+  "en": "-",
+  "ar": "-"
+ },
+ "www.testo.com / warranty": {
+  "fr": "www.testo.com/warranty",
+  "en": "www.testo.com/warranty",
+  "ar": "www.testo.com/warranty"
+ },
+ "fcc; ce; rohs; ukca": {
+  "fr": "fcc; CE; rohs; ukca",
+  "en": "FCC; CE; RoHS; UKCA",
+  "ar": "FCC؛ CE؛ RoHS؛ UKCA"
+ },
+ "irda / bluetooth en option": {
+  "fr": "IRDA / Bluetooth en option",
+  "en": "IRDA / Bluetooth optional",
+  "ar": "IRDA / Bluetooth اختياري"
+ },
+ "pack accu lithium polymère": {
+  "fr": "Pack accu lithium polymère",
+  "en": "Lithium polymer battery pack",
+  "ar": "حزمة بطارية ليثيوم بوليمر"
+ },
+ "dans l'appareil, via le bloc d'alimentation": {
+  "fr": "Dans l’appareil, via le bloc d’alimentation",
+  "en": "In the instrument, via the power supply unit",
+  "ar": "في الجهاز، عبر المحوّل الكهربائي"
+ },
+ "nimh accus": {
+  "fr": "NiMH accus",
+  "en": "NiMH rechargeable batteries",
+  "ar": "بطاريات NiMH قابلة للشحن"
+ },
+ "d'ambiance": {
+  "fr": "D’ambiance",
+  "en": "Ambient",
+  "ar": "المحيط"
+ },
+ "interface ir / irda": {
+  "fr": "Interface IR/IRDA",
+  "en": "IR/IRDA interface",
+  "ar": "واجهة IR/IRDA"
+ },
+ "indiquant la phase de préchauffage et la disponibilité": {
+  "fr": "indiquant la phase de préchauffage et la disponibilité",
+  "en": "indicating warm-up phase and readiness",
+  "ar": "تُشير إلى مرحلة التسخين والجاهزية"
+ },
+ "gl_certificate_nippon_certificate_marpol_annex_vi": {
+  "fr": "Certificat Germanischer Lloyd (DNV GL), certificat Nippon Kaiji Kyokai (classe NK) selon MARPOL annexe VI et code technique NOx 2008",
+  "en": "Germanischer Lloyd (DNV GL) certificate, Nippon Kaiji Kyokai (Class NK) certificate according to MARPOL Annex VI and NOx Technical Code 2008",
+  "ar": "شهادة Germanischer Lloyd ‏(DNV GL)، وشهادة Nippon Kaiji Kyokai (الفئة NK) وفق MARPOL الملحق السادس والمدوّنة التقنية لأكاسيد النيتروجين 2008"
+ },
+ "interface ir / irda; bluetooth®; usb; bus de données; entrée trigger; pression différentielle; entrée de sonde / entrées de sonde; entrée de tension continue; raccord réseau; entrée d'air de dilution pour l'extension de l'étendue de mesure": {
+  "fr": "Interface IR/IRDA; BLUETOOTH®; USB; bus de données; Entrée trigger; Pression différentielle; Entrée de sonde/ Entrées de sonde; Entrée de tension continue; Raccord réseau; Entrée d’air de dilution pour l’extension de l’étendue de mesure",
+  "en": "IR/IRDA interface; Bluetooth®; USB; data bus; trigger input; differential pressure; probe input(s); DC voltage input; mains connection; dilution air inlet for measuring range extension",
+  "ar": "واجهة IR/IRDA؛ BLUETOOTH®؛ USB؛ ناقل البيانات؛ مدخل التشغيل؛ الضغط التفاضلي؛ مدخل/مداخل المجسّ؛ مدخل الجهد المستمر؛ وصلة الشبكة؛ مدخل هواء التخفيف لتوسيع نطاق القياس"
+ },
+ "selon convention marpol, annexe vi, ou code technique sur les nox": {
+  "fr": "Selon convention MARPOL, annexe VI, ou code technique sur les NOx",
+  "en": "According to MARPOL Annex VI or NOx Technical Code",
+  "ar": "وفق اتفاقية MARPOL الملحق السادس أو المدوّنة التقنية لأكاسيد النيتروجين"
+ },
+ "usb, irda, bluetooth® (en option)": {
+  "fr": "USB, IRDA, Bluetooth® (en option)",
+  "en": "USB, IRDA, Bluetooth® (optional)",
+  "ar": "USB، IRDA، Bluetooth® (اختياري)"
+ },
+ "interface bnc": {
+  "fr": "Interface BNC",
+  "en": "BNC interface",
+  "ar": "واجهة BNC"
+ },
+ "automatically or manually (dependant on external probe)": {
+  "fr": "Automatique ou manuelle (selon la sonde externe)",
+  "en": "Automatic or manual (depending on external probe)",
+  "ar": "تلقائي أو يدوي (حسب المجسّ الخارجي)"
+ },
+ "matrice à point": {
+  "fr": "Matrice à point",
+  "en": "Dot matrix",
+  "ar": "مصفوفة نقطية"
+ },
+ "avec éclairage": {
+  "fr": "avec éclairage",
+  "en": "with illumination",
+  "ar": "مع إضاءة"
+ },
+ "micro-usb": {
+  "fr": "Micro-USB",
+  "en": "Micro-USB",
+  "ar": "Micro-USB"
+ },
+ "xcable length per probe": {
+  "fr": "*Longueur de câble par sonde",
+  "en": "*Cable length per probe",
+  "ar": "*طول الكابل لكل مجسّ"
+ },
+ "-20 à +70 °c": {
+  "fr": "-20 à +70 °C",
+  "en": "-20 to +70 °C",
+  "ar": "-20 to +70 °C"
+ },
+ "±0,5 °c (-20 à +70 °c)": {
+  "fr": "±0,5 °C (-20 à +70 °C)",
+  "en": "±0.5 °C (-20 to +70 °C)",
+  "ar": "±0.5 °C (-20 to +70 °C)"
+ },
+ "0,1 °c": {
+  "fr": "0,1 °C",
+  "en": "0.1 °C",
+  "ar": "0.1 °C"
+ },
+ "0 à 100 %hrx": {
+  "fr": "0 à 100 %HR*",
+  "en": "0 to 100 %RH*",
+  "ar": "0 to 100 %RH*"
+ },
+ "±3 %hr (2 à 98 %hr) · ±0,03 %hr / k": {
+  "fr": "±3 %HR (2 à 98 %HR) · ±0,03 %HR/K",
+  "en": "±3 %RH (2 to 98 %RH) · ±0.03 %RH/K",
+  "ar": "±3 %RH (2 to 98 %RH) · ±0.03 %RH/K"
+ },
+ "0,1 %hr": {
+  "fr": "0,1 %HR",
+  "en": "0.1 %RH",
+  "ar": "0.1 %RH"
+ },
+ "60 x 38 x 18,5 mm": {
+  "fr": "60 x 38 x 18,5 mm",
+  "en": "60 x 38 x 18.5 mm",
+  "ar": "60 x 38 x 18.5 mm"
+ },
+ "2 interne": {
+  "fr": "2 interne",
+  "en": "2 internal",
+  "ar": "2 internal"
+ },
+ "1 an (cadence de mesure de 15 min. / à +25 °c)": {
+  "fr": "1 an (cadence de mesure de 15 min. / à +25 °C)",
+  "en": "1 year (15 min measuring cycle, +25 °C)",
+  "ar": "1 year (15 min measuring cycle, +25 °C)"
+ },
+ "2 piles lithium (cr 2032) détection des points chaud / froid isothermes mesure de plages (min. / max. sur zone)": {
+  "fr": "2 piles Lithium (CR 2032) détection des points chaud / froid isothermes mesure de plages (min./max. sur zone)",
+  "en": "2 lithium batteries (CR2032)",
+  "ar": "2 lithium batteries (CR2032)"
+ },
+ "-40 à +70 °c": {
+  "fr": "-40 à +70 °C",
+  "en": "-40 to +70 °C",
+  "ar": "-40 to +70 °C"
+ },
+ "±0,2 °c (-20 à +70 °c) ±1 digit · ±0,4 °c (etendue de mesure restante) ±1 digit": {
+  "fr": "±0,2 °C (-20 à +70 °C) ±1 Digit · ±0,4 °C (Etendue de mesure restante) ±1 Digit",
+  "en": "±0.4 °C (Remaining Range) ±1 Digit · ±0.2 °C (-20 to +70 °C) ±1 Digit",
+  "ar": "±0.4 °C (Remaining Range) ±1 Digit · ±0.2 °C (-20 to +70 °C) ±1 Digit"
+ },
+ "0 à +100 %hrx": {
+  "fr": "0 à +100 %HR*",
+  "en": "0 to +100 %RH*",
+  "ar": "0 to +100 %RH*"
+ },
+ "4 externe": {
+  "fr": "4 externe",
+  "en": "4 external",
+  "ar": "4 external"
+ },
+ "2 x sonde d'humidité": {
+  "fr": "2 x sonde d’humidité",
+  "en": "2 x humidity probe",
+  "ar": "2 x humidity probe"
+ },
+ "directive ue 2014 / 30 / ce; 2011 / 65 / eu": {
+  "fr": "Directive UE 2014/30/CE; 2011/65/EU",
+  "en": "EU-guideline 2014/30/EU; 2011/65/EU",
+  "ar": "EU-guideline 2014/30/EU; 2011/65/EU"
+ },
+ "1 s – 24 h; 2 s - 24 h (mesure en ligne)": {
+  "fr": "1 s – 24 h; 2 s - 24 h (mesure en ligne)",
+  "en": "1 s to 24 h; 2 s to 24 h (online measurement)",
+  "ar": "1 s to 24 h; 2 s to 24 h (online measurement)"
+ },
+ "-40 à +85 °c": {
+  "fr": "-40 à +85 °C",
+  "en": "-40 to +85 °C",
+  "ar": "-40 to +85 °C"
+ },
+ "-200 à 200 hpa": {
+  "fr": "-200 à 200 hPa",
+  "en": "-200 to 200 hPa",
+  "ar": "-200 to 200 hPa"
+ },
+ "±0,5 hpa (-49,9 à 49,9 hpa) · ±1,5 % v.m. (etendue de mesure restante)": {
+  "fr": "±0,5 hPa (-49,9 à 49,9 hPa) · ±1,5 % v.m. (Etendue de mesure restante)",
+  "en": "±1.5 % of mv (Remaining Range) · ±0.5 hPa (-49.9 to 49.9 hPa)",
+  "ar": "±1.5 % of mv (Remaining Range) · ±0.5 hPa (-49.9 to 49.9 hPa)"
+ },
+ "0,1 hpa": {
+  "fr": "0,1 hPa",
+  "en": "0.1 hPa",
+  "ar": "0.1 hPa"
+ },
+ "+600 à +1150 hpa": {
+  "fr": "+600 à +1150 hPa",
+  "en": "+600 to +1150 hPa",
+  "ar": "+600 to +1150 hPa"
+ },
+ "0 à 25 %vol": {
+  "fr": "0 à 25 %vol",
+  "en": "0 to 25 %vol",
+  "ar": "0 to 25 %vol"
+ },
+ "±0,2 %vol": {
+  "fr": "±0,2 %vol",
+  "en": "±0.2 Vol.%",
+  "ar": "±0.2 Vol.%"
+ },
+ "0,01 %vol": {
+  "fr": "0,01 %vol",
+  "en": "0.01 Vol.%",
+  "ar": "0.01 Vol.%"
+ },
+ "0 à 10000 ppm": {
+  "fr": "0 à 10000 ppm",
+  "en": "0 to 10000 ppm",
+  "ar": "0 to 10000 ppm"
+ },
+ "±20 ppm ou ±5 % v.m. (201 à 2000 ppm) · ±10 % v.m. (2001 à 10000 ppm) · ±10 ppm ou ±10 % v.m. (0 à 200 ppm)": {
+  "fr": "±20 ppm ou ±5 % v.m. (201 à 2000 ppm) · ±10 % v.m. (2001 à 10000 ppm) · ±10 ppm ou ±10 % v.m. (0 à 200 ppm)",
+  "en": "±10 % of mv (2001 to 10000 ppm) · ±10 ppm or ±10 % of mv (0 to 200 ppm) · ±20 ppm or ±5 % of mv (201 to 2000 ppm)",
+  "ar": "±10 % of mv (2001 to 10000 ppm) · ±10 ppm or ±10 % of mv (0 to 200 ppm) · ±20 ppm or ±5 % of mv (201 to 2000 ppm)"
+ },
+ "0 à 500 ppm": {
+  "fr": "0 à 500 ppm",
+  "en": "0 to 500 ppm",
+  "ar": "0 to 500 ppm"
+ },
+ "±2 ppm (0 à 39,9 ppm) · ±5 % v.m. (etendue de mesure restante) les indications correspondantes à une température ambiante de 20 °c. coefficient de température compl. de 0.25 % v.m. / k.": {
+  "fr": "±2 ppm (0 à 39,9 ppm) · ±5 % v.m. (Etendue de mesure restante) Les indications correspondantes à une température ambiante de 20 °C. Coefficient de température compl. de 0.25 % v.m./K.",
+  "en": "±5 % of mv (Remaining Range) data corresponds to 20°C ambient temperature. Additional temperature coefficient 0.25% of reading/K. · ±2 ppm (0 to 39.9 ppm)",
+  "ar": "±5 % of mv (Remaining Range) data corresponds to 20°C ambient temperature. Additional temperature coefficient 0.25% of reading/K. · ±2 ppm (0 to 39.9 ppm)"
+ },
+ "0,1 ppm": {
+  "fr": "0,1 ppm",
+  "en": "0.1 ppm",
+  "ar": "0.1 ppm"
+ },
+ "0 à 4000 ppm": {
+  "fr": "0 à 4000 ppm",
+  "en": "0 to 4000 ppm",
+  "ar": "0 to 4000 ppm"
+ },
+ "±5 ppm (0 à 99 ppm) · ±10 % v.m. (2000 à 4000 ppm) · ±5 % v.m. (100 à 1999 ppm)": {
+  "fr": "±5 ppm (0 à 99 ppm) · ±10 % v.m. (2000 à 4000 ppm) · ±5 % v.m. (100 à 1999 ppm)",
+  "en": "±10 % of mv (2000 to 4000 ppm) · ±5 ppm (0 to 99 ppm) · ±5 % of mv (100 to 1999 ppm)",
+  "ar": "±10 % of mv (2000 to 4000 ppm) · ±5 ppm (0 to 99 ppm) · ±5 % of mv (100 to 1999 ppm)"
+ },
+ "0 à 300 ppm": {
+  "fr": "0 à 300 ppm",
+  "en": "0 to 300 ppm",
+  "ar": "0 to 300 ppm"
+ },
+ "±2 ppm (0 à 39,9 ppm) · ±5 % v.m. (etendue de mesure restante)": {
+  "fr": "±2 ppm (0 à 39,9 ppm) · ±5 % v.m. (Etendue de mesure restante)",
+  "en": "±2 ppm (0 to 39.9 ppm) · ±5 % of mv (Remaining Range)",
+  "ar": "±2 ppm (0 to 39.9 ppm) · ±5 % of mv (Remaining Range)"
+ },
+ "±10 ppm (0 à 199 ppm) · ±5 % v.m. (etendue de mesure restante)": {
+  "fr": "±10 ppm (0 à 199 ppm) · ±5 % v.m. (Etendue de mesure restante)",
+  "en": "±10 ppm (0 to 199 ppm) · ±5 % of mv (Remaining Range)",
+  "ar": "±10 ppm (0 to 199 ppm) · ±5 % of mv (Remaining Range)"
+ },
+ "afin d'éviter toute absorption, une durée de mesure de maximum 2 heures ne doit pas être dépassée.": {
+  "fr": "Afin d'éviter toute absorption, une durée de mesure de maximum 2 heures ne doit pas être dépassée.",
+  "en": "To avoid absorption, a maximum measurement duration of 2 hours should not be exceeded.",
+  "ar": "To avoid absorption, a maximum measurement duration of 2 hours should not be exceeded."
+ },
+ "0 à 5000 ppm": {
+  "fr": "0 à 5000 ppm",
+  "en": "0 to 5000 ppm",
+  "ar": "0 to 5000 ppm"
+ },
+ "±10 % v.m. (etendue de mesure restante) · ±10 ppm (0 à 99 ppm)": {
+  "fr": "±10 % v.m. (Etendue de mesure restante) · ±10 ppm (0 à 99 ppm)",
+  "en": "±10 ppm (0 to 99 ppm) · ±10 % of mv (Remaining Range)",
+  "ar": "±10 ppm (0 to 99 ppm) · ±10 % of mv (Remaining Range)"
+ },
+ "-40 à +40 hpa": {
+  "fr": "-40 à +40 hPa",
+  "en": "-40 to +40 hPa",
+  "ar": "-40 to +40 hPa"
+ },
+ "±0,03 hpa (-2,99 à +2,99 hpa) · ±1,5 % v.m. (etendue de mesure restante)": {
+  "fr": "±0,03 hPa (-2,99 à +2,99 hPa) · ±1,5 % v.m. (Etendue de mesure restante)",
+  "en": "±1.5 % of mv (Remaining Range) · ±0.03 hPa (-2.99 to +2.99 hPa)",
+  "ar": "±1.5 % of mv (Remaining Range) · ±0.03 hPa (-2.99 to +2.99 hPa)"
+ },
+ "0,01 hpa": {
+  "fr": "0,01 hPa",
+  "en": "0.01 hPa",
+  "ar": "0.01 hPa"
+ },
+ "-40 à +1200 °c": {
+  "fr": "-40 à +1200 °C",
+  "en": "-40 to +1200 °C",
+  "ar": "-40 to +1200 °C"
+ },
+ "±0,5 % v.m. (etendue de mesure restante) · ±0,5 °c (0 à +99 °c)": {
+  "fr": "±0,5 % v.m. (Etendue de mesure restante) · ±0,5 °C (0 à +99 °C)",
+  "en": "±0.5 °C (0 to +99 °C) · ±0.5 % of mv (Remaining Range)",
+  "ar": "±0.5 °C (0 to +99 °C) · ±0.5 % of mv (Remaining Range)"
+ },
+ "0 à 120 %": {
+  "fr": "0 à 120 %",
+  "en": "0 to 120 %",
+  "ar": "0 to 120 %"
+ },
+ "0,1 %": {
+  "fr": "0,1 %",
+  "en": "0.1 %",
+  "ar": "0.1 %"
+ },
+ "0 à 99,9 %": {
+  "fr": "0 à 99,9 %",
+  "en": "0 to 99.9 %",
+  "ar": "0 to 99.9 %"
+ },
+ "0 à 99,9 °ctd": {
+  "fr": "0 à 99,9 °Ctd",
+  "en": "0 to 99.9 °Ctd",
+  "ar": "0 to 99.9 °Ctd"
+ },
+ "0,1 °ctd": {
+  "fr": "0,1 °Ctd",
+  "en": "0.1 °Ctd",
+  "ar": "0.1 °Ctd"
+ },
+ "0,1 %vol": {
+  "fr": "0,1 %vol",
+  "en": "0.1 Vol.%",
+  "ar": "0.1 Vol.%"
+ },
+ "-5 à +50 °c": {
+  "fr": "-5 à +50 °C",
+  "en": "-5 to +50 °C",
+  "ar": "-5 to +50 °C"
+ },
+ "1 x sonde de combustion; 1 x sonde de température; 1 x pression différentielle": {
+  "fr": "1 x sonde de combustion; 1 x sonde de température; 1 x pression différentielle",
+  "en": "1 x flue gas probe; 1 x temperature probe; 1 x differential pressure",
+  "ar": "1 x flue gas probe; 1 x temperature probe; 1 x differential pressure"
+ },
+ "accumulateur 3.7 v / 2.4 ah, bloc d'alimentation 6.3 v / 2 a": {
+  "fr": "Accumulateur 3.7 V / 2.4 Ah, Bloc d'alimentation 6.3 V / 2 A",
+  "en": "Battery block 3.7 V / 2.4 Ah, Mains unit 6.3 V / 2 A",
+  "ar": "Battery block 3.7 V / 2.4 Ah, Mains unit 6.3 V / 2 A"
+ },
+ "max. 7.8m (correspond á deux rallonges pour tuyau de sonde)": {
+  "fr": "max. 7.8m (correspond á deux rallonges pour tuyau de sonde)",
+  "en": "max. 7.8 m (corresponds to two probe hose extensions)",
+  "ar": "max. 7.8 m (corresponds to two probe hose extensions)"
+ },
+ "0.6l / min (régulé)": {
+  "fr": "0.6l/min (régulé)",
+  "en": "0.6 l/min (regulated)",
+  "ar": "0.6 l/min (regulated)"
+ },
+ "10 combustibles pouvant être librement définis, gaz étalon compris": {
+  "fr": "10 combustibles pouvant être librement définis, gaz étalon compris",
+  "en": "10 user-defined fuels incl. test gas as fuel",
+  "ar": "10 user-defined fuels incl. test gas as fuel"
+ },
+ "100 dosiers": {
+  "fr": "100 dosiers",
+  "en": "100 folders",
+  "ar": "100 folders"
+ },
+ "max. 10 lieux de mesure": {
+  "fr": "max. 10 lieux de mesure",
+  "en": "Max. 10 sites",
+  "ar": "Max. 10 sites"
+ },
+ "max. 200 protocoles": {
+  "fr": "Max. 200 protocoles",
+  "en": "Max. 200 logs",
+  "ar": "Max. 200 logs"
+ },
+ "-20 à +50 °c": {
+  "fr": "-20 à +50 °C",
+  "en": "-20 to +50 °C",
+  "ar": "-20 to +50 °C"
+ },
+ "±1,5 °c": {
+  "fr": "±1,5 °C",
+  "en": "±1.5 °C",
+  "ar": "±1.5 °C"
+ },
+ "1) stockage en réfrigérateur recommandé.": {
+  "fr": "1) Stockage en réfrigérateur recommandé.",
+  "en": "1) Storage in refrigerator is recommended.",
+  "ar": "1) Storage in refrigerator is recommended."
+ },
+ "-50 à +150 °c": {
+  "fr": "-50 à +150 °C",
+  "en": "-50 to +150 °C",
+  "ar": "-50 to +150 °C"
+ },
+ "±0,5 °c": {
+  "fr": "±0,5 °C",
+  "en": "±0.5 °C",
+  "ar": "±0.5 °C"
+ },
+ "±0,25 % val.fin.": {
+  "fr": "±0,25 % val.fin.",
+  "en": "±0.25 % fs",
+  "ar": "±0.25 % fs"
+ },
+ "0,01 bar": {
+  "fr": "0,01 bar",
+  "en": "0.01 bar",
+  "ar": "0.01 bar"
+ },
+ "1,3 kg": {
+  "fr": "1,3 kg",
+  "en": "1.3 kg",
+  "ar": "1.3 kg"
+ },
+ "229 x 112,5 x 71 mm": {
+  "fr": "229 x 112,5 x 71 mm",
+  "en": "229 x 112.5 x 71 mm",
+  "ar": "229 x 112.5 x 71 mm"
+ },
+ "≤ 70 h avec éclairage et bluetooth®": {
+  "fr": "≤ 70 h avec éclairage et Bluetooth®",
+  "en": "≤ 70 h with backlighting and Bluetooth®",
+  "ar": "≤ 70 h with backlighting and Bluetooth®"
+ },
+ "batterie fixe : batterie li 18650 piles; 3x aa; amovibles : 3 piles alcalines aa": {
+  "fr": "Batterie fixe : batterie LI 18650 Piles; 3x AA; amovibles : 3 piles alcalines AA",
+  "en": "Built-in rechargeable battery: LI batttery 18650; 3x AA; Replaceable battery: 3 alkaline batteries AA",
+  "ar": "Built-in rechargeable battery: LI batttery 18650; 3x AA; Replaceable battery: 3 alkaline batteries AA"
+ },
+ "-20 à +60 °c": {
+  "fr": "-20 à +60 °C",
+  "en": "-20 to +60 °C",
+  "ar": "-20 to +60 °C"
+ },
+ "-20 à +400 °c": {
+  "fr": "-20 à +400 °C",
+  "en": "-20 to +400 °C",
+  "ar": "-20 to +400 °C"
+ },
+ "±1,5 % v.m. (> 100 °c) · ±1 °c (-20 à +100 °c)": {
+  "fr": "±1,5 % v.m. (> 100 °C) · ±1 °C (-20 à +100 °C)",
+  "en": "±1 °C (-20 to +100 °C) · ±1.5 % of mv (> 100 °C)",
+  "ar": "±1 °C (-20 to +100 °C) · ±1.5 % of mv (> 100 °C)"
+ },
+ "0 à 21 %vol": {
+  "fr": "0 à 21 %vol",
+  "en": "0 to 21 %vol",
+  "ar": "0 to 21 %vol"
+ },
+ "-20 à +20 hpa": {
+  "fr": "-20 à +20 hPa",
+  "en": "-20 to +20 hPa",
+  "ar": "-20 to +20 hPa"
+ },
+ "±0,03 hpa (-3,00 à +3,00 hpa) · ±1,5 % v.m. (etendue de mesure restante)": {
+  "fr": "±0,03 hPa (-3,00 à +3,00 hPa) · ±1,5 % v.m. (Etendue de mesure restante)",
+  "en": "±1.5 % of mv (Remaining Range) · ±0.03 hPa (-3.00 to +3.00 hPa)",
+  "ar": "±1.5 % of mv (Remaining Range) · ±0.03 hPa (-3.00 to +3.00 hPa)"
+ },
+ "±0,5 hpa": {
+  "fr": "±0,5 hPa",
+  "en": "±0.5 hPa",
+  "ar": "±0.5 hPa"
+ },
+ "±20 ppm (0 à 400 ppm) · ±10 % v.m. (2001 à 4000 ppm) · ±5 % v.m. (401 à 2000 ppm)": {
+  "fr": "±20 ppm (0 à 400 ppm) · ±10 % v.m. (2001 à 4000 ppm) · ±5 % v.m. (401 à 2000 ppm)",
+  "en": "±10 % of mv (2001 to 4000 ppm) · ±20 ppm (0 to 400 ppm) · ±5 % of mv (401 to 2000 ppm)",
+  "ar": "±10 % of mv (2001 to 4000 ppm) · ±20 ppm (0 to 400 ppm) · ±5 % of mv (401 to 2000 ppm)"
+ },
+ "env. 660 g": {
+  "fr": "Env. 660 g",
+  "en": "Approx. 660 g",
+  "ar": "Approx. 660 g"
+ },
+ "-5 à +45 °c": {
+  "fr": "-5 à +45 °C",
+  "en": "-5 to +45 °C",
+  "ar": "-5 to +45 °C"
+ },
+ "accu: 1500 mah, bloc secteur 5v / 1a": {
+  "fr": "Accu: 1500 mAh, Bloc secteur 5V/1A",
+  "en": "Battery: 1500 mAh, mains unit 5V/1A",
+  "ar": "Battery: 1500 mAh, mains unit 5V/1A"
+ },
+ "-1 à 60 bar": {
+  "fr": "-1 à 60 bar",
+  "en": "-1 to 60 bar",
+  "ar": "-1 to 60 bar"
+ },
+ "±0,5 % val.fin.": {
+  "fr": "±0,5 % val.fin.",
+  "en": "±0.5 % fs",
+  "ar": "±0.5 % fs"
+ },
+ "3 x (7 / 16\" – unf / ¼” sae)": {
+  "fr": "3 × ( 7/16\" – UNF / ¼” SAE)",
+  "en": "3 x 7/16\" – UNF",
+  "ar": "3 x 7/16\" – UNF"
+ },
+ "requiert ios 11.0 ou plus récent; requiert android 6.0 ou plus récent; requiert un terminal mobile doté d'un système bluetooth 4.0": {
+  "fr": "requiert iOS 11.0 ou plus récent; requiert Android 6.0 ou plus récent; requiert un terminal mobile doté d'un système Bluetooth 4.0",
+  "en": "requires iOS 11.0 or newer; requires Android 6.0 or newer; requires mobile end device with Bluetooth 4.0",
+  "ar": "requires iOS 11.0 or newer; requires Android 6.0 or newer; requires mobile end device with Bluetooth 4.0"
+ },
+ "3 piles micro aaa": {
+  "fr": "3 piles Micro AAA",
+  "en": "3 AAA micro batteries",
+  "ar": "3 AAA micro batteries"
+ },
+ "compatible a2l / a3": {
+  "fr": "Compatible A2L / A3",
+  "en": "A2L / A3 compatibel",
+  "ar": "A2L / A3 compatibel"
+ },
+ "0 à 30 m / s": {
+  "fr": "0 à 30 m/s",
+  "en": "0 to 30 m/s",
+  "ar": "0 to 30 m/s"
+ },
+ "± (0,3 m / s + 5 % v.m.) (2 à 15 m / s) · ± (0,1 m / s + 5 % v.m.) (0 à 2 m / s)": {
+  "fr": "±(0,3 m/s + 5 % v.m.) (2 à 15 m/s) · ±(0,1 m/s + 5 % v.m.) (0 à 2 m/s)",
+  "en": "±(0.1 m/s + 5 % of mv) (0 to 2 m/s) · ±(0.3 m/s + 5 % of mv) (2 to 15 m/s)",
+  "ar": "±(0.1 m/s + 5 % of mv) (0 to 2 m/s) · ±(0.3 m/s + 5 % of mv) (2 to 15 m/s)"
+ },
+ "0,01 m / s": {
+  "fr": "0,01 m/s",
+  "en": "0.01 m/s",
+  "ar": "0.01 m/s"
+ },
+ "119,6 g": {
+  "fr": "119,6 g",
+  "en": "119.6 g",
+  "ar": "119.6 g"
+ },
+ "requiert ios 13.0 ou plus récent; requiert android 8.0 ou plus récent; bluetooth_4.2_requirement": {
+  "fr": "requiert iOS 13.0 ou plus récent; requiert Android 8.0 ou plus récent; bluetooth_4.2_requirement",
+  "en": "requires iOS 13.0 or newer; requires Android 8.0 or newer; requires mobile end device with Bluetooth 4.2",
+  "ar": "requires iOS 13.0 or newer; requires Android 8.0 or newer; requires mobile end device with Bluetooth 4.2"
+ },
+ "15 heures": {
+  "fr": "15 heures",
+  "en": "15 h",
+  "ar": "15 h"
+ },
+ "+71 à +110 °c": {
+  "fr": "+71 à +110 °C",
+  "en": "+71 to +110 °C",
+  "ar": "+71 to +110 °C"
+ },
+ "-35 à +70 °c": {
+  "fr": "-35 à +70 °C",
+  "en": "-35 to +70 °C",
+  "ar": "-35 to +70 °C"
+ },
+ "1 min à 24 h": {
+  "fr": "1 min à 24 h",
+  "en": "1 min to 24 h",
+  "ar": "1 min to 24 h"
+ },
+ "1 interne": {
+  "fr": "1 interne",
+  "en": "1 internal",
+  "ar": "1 internal"
+ },
+ "durée maximale de stockage: 1 an après livraison": {
+  "fr": "Durée maximale de stockage: 1 an après livraison",
+  "en": "Maximum storage duration: 1 year after delivery",
+  "ar": "Maximum storage duration: 1 year after delivery"
+ },
+ "0 à +50 °c": {
+  "fr": "0 à +50 °C",
+  "en": "0 to +50 °C",
+  "ar": "0 to +50 °C"
+ },
+ "1 x lithium type : cr 2032": {
+  "fr": "1 x Lithium type : CR 2032",
+  "en": "1 x lithium type: CR 2032",
+  "ar": "1 x lithium type: CR 2032"
+ },
+ "40 h (typique)": {
+  "fr": "40 h (typique)",
+  "en": "40 h (typical)",
+  "ar": "40 h (typical)"
+ },
+ "-20 à +65 °c": {
+  "fr": "-20 à +65 °C",
+  "en": "-20 to +65 °C",
+  "ar": "-20 to +65 °C"
+ },
+ "-25 à +250 °c": {
+  "fr": "-25 à +250 °C",
+  "en": "-25 to +250 °C",
+  "ar": "-25 to +250 °C"
+ },
+ "±2 % v.m. (+150,1 à +250 °c) · ±2 °c (-20 à -2,1 °c) · ±1 °c (-2 à +40 °c) · ±1,5 °c (+40,1 à +150 °c) · ±3 °c (-25 à -21 °c)": {
+  "fr": "±2 % v.m. (+150,1 à +250 °C) · ±2 °C (-20 à -2,1 °C) · ±1 °C (-2 à +40 °C) · ±1,5 °C (+40,1 à +150 °C) · ±3 °C (-25 à -21 °C)",
+  "en": "±1.5 °C (+40.1 to +150 °C) · ±2 °C (-20 to -2.1 °C) · ±2 % of mv (+150.1 to +250 °C) · ±1 °C (-2 to +40 °C) · ±3 °C (-25 to -21 °C)",
+  "ar": "±1.5 °C (+40.1 to +150 °C) · ±2 °C (-20 to -2.1 °C) · ±2 % of mv (+150.1 to +250 °C) · ±1 °C (-2 to +40 °C) · ±3 °C (-25 to -21 °C)"
+ },
+ "1 °c (etendue de mesure restante) · 0,1 °c (-9,9 à +199,9 °c)": {
+  "fr": "1 °C (Etendue de mesure restante) · 0,1 °C (-9,9 à +199,9 °C)",
+  "en": "1 °C (Remaining Range) · 0.1 °C (-9.9 to +199.9 °C)",
+  "ar": "1 °C (Remaining Range) · 0.1 °C (-9.9 to +199.9 °C)"
+ },
+ "40 x 12,5 x 96,5 mm": {
+  "fr": "40 x 12,5 x 96,5 mm",
+  "en": "40 x 12.5 x 96.5 mm",
+  "ar": "40 x 12.5 x 96.5 mm"
+ },
+ "en 12830; din en 50581:2013; ce 2014 / 30 / eu; din en 61326-1:2013; 21 cfr part 11": {
+  "fr": "EN 12830; DIN EN 50581:2013; CE 2014/30/EU; DIN EN 61326-1:2013; 21 CFR Part 11",
+  "en": "EN 12830; DIN EN 50581:2013; CE 2014/30/EU; DIN EN 61326-1:2013; CFR 21 Part 11 (in use with testo ComSoft CFR-Software)",
+  "ar": "EN 12830; DIN EN 50581:2013; CE 2014/30/EU; DIN EN 61326-1:2013; CFR 21 Part 11 (in use with testo ComSoft CFR-Software)"
+ },
+ "-30 à +70 °c": {
+  "fr": "-30 à +70 °C",
+  "en": "-30 to +70 °C",
+  "ar": "-30 to +70 °C"
+ },
+ "±0,5 °c (-30 à +70 °c)": {
+  "fr": "±0,5 °C (-30 à +70 °C)",
+  "en": "±0.5 °C (-30 to +70 °C)",
+  "ar": "±0.5 °C (-30 to +70 °C)"
+ },
+ "-30 à 70 °c": {
+  "fr": "-30 à 70 °C",
+  "en": "-30 to 70 °C",
+  "ar": "-30 to 70 °C"
+ },
+ "500 jours (cadence de mesure de 15 min. / à +25 °c)": {
+  "fr": "500 jours (cadence de mesure de 15 min. / à +25 °C)",
+  "en": "500 days (15 min measuring cycle, +25 °C)",
+  "ar": "500 days (15 min measuring cycle, +25 °C)"
+ },
+ "0,01 à 30 m / s": {
+  "fr": "0,01 à 30 m/s",
+  "en": "0.01 to 30 m/s",
+  "ar": "0.01 to 30 m/s"
+ },
+ "± (0,03 m / s + 4,0 % v.m.) (0,01 à +20 m / s) · ± (0,5 m / s + 5,0 % v.m.) (20,01 à +30 m / s)": {
+  "fr": "±(0,03 m/s + 4,0 % v.m.) (0,01 à +20 m/s) · ±(0,5 m/s + 5,0 % v.m.) (20,01 à +30 m/s)",
+  "en": "±(0.5 m/s + 5.0 % of mv) (20.01 to +30 m/s) · ±(0.03 m/s + 4.0 % of mv) (0.01 to +20 m/s)",
+  "ar": "±(0.5 m/s + 5.0 % of mv) (20.01 to +30 m/s) · ±(0.03 m/s + 4.0 % of mv) (0.01 to +20 m/s)"
+ },
+ "sonde: -20 à +70 °c · -20 à +50 °c": {
+  "fr": "Sonde: -20 à +70 °C · -20 à +50 °C",
+  "en": "Probe: -20 to +70 °C · -20 to +50 °C",
+  "ar": "Probe: -20 to +70 °C · -20 to +50 °C"
+ },
+ "1,5 m": {
+  "fr": "1,5 m",
+  "en": "1.5 m",
+  "ar": "1.5 m"
+ },
+ "7,5 mm": {
+  "fr": "7,5 mm",
+  "en": "7.5 mm",
+  "ar": "7.5 mm"
+ },
+ "-30 à +400 °c": {
+  "fr": "-30 à +400 °C",
+  "en": "-30 to +400 °C",
+  "ar": "-30 to +400 °C"
+ },
+ "±2 °c ou ±2 % v.m. (-30 à 0 °c) (la plus grande valeur s'applique.) · ±1,5 °c ou ±1,5 % v.m. (+0,1 à +400 °c)": {
+  "fr": "±2 °C ou ±2 % v.m. (-30 à 0 °C) (La plus grande valeur s’applique.) · ±1,5 °C ou ±1,5 % v.m. (+0,1 à +400 °C)",
+  "en": "±1.5 °C or ±1.5 % of mv (+0.1 to +400 °C) · ±2 °C or ±2 % of mv (-30 to 0 °C) (the higher value applies)",
+  "ar": "±1.5 °C or ±1.5 % of mv (+0.1 to +400 °C) · ±2 °C or ±2 % of mv (-30 to 0 °C) (the higher value applies)"
+ },
+ "0,5 s": {
+  "fr": "0,5 s",
+  "en": "0.5 s",
+  "ar": "0.5 s"
+ },
+ "90 g (avec pile et capot de protection)": {
+  "fr": "90 g (avec pile et capot de protection)",
+  "en": "90 g (incl. battery and protective cap)",
+  "ar": "90 g (incl. battery and protective cap)"
+ },
+ "119 x 46 x 25 mm (avec capot de protection)": {
+  "fr": "119 x 46 x 25 mm (avec capot de protection)",
+  "en": "119 x 46 x 25 mm (incl. protective cap)",
+  "ar": "119 x 46 x 25 mm (incl. protective cap)"
+ },
+ "-10 à +50 °c": {
+  "fr": "-10 à +50 °C",
+  "en": "-10 to +50 °C",
+  "ar": "-10 to +50 °C"
+ },
+ "2 piles micro aaa": {
+  "fr": "2 piles Micro AAA",
+  "en": "2 AAA micro batteries",
+  "ar": "2 AAA micro batteries"
+ },
+ "50 h (typique, sans éclairage de l'écran)": {
+  "fr": "50 h (typique, sans éclairage de l’écran)",
+  "en": "50 h (average, without display illumination)",
+  "ar": "50 h (average, without display illumination)"
+ },
+ "-30 à +300 °c": {
+  "fr": "-30 à +300 °C",
+  "en": "-30 to +300 °C",
+  "ar": "-30 to +300 °C"
+ },
+ "±2,0 °c (-30 à +100 °c) · ±2 % v.m. etendue de mesure restante": {
+  "fr": "±2,0 °C (-30 à +100 °C) · ±2 % v.m. Etendue de mesure restante",
+  "en": "±2.0 °C (-30 to +100 °C) · ±2 % of mv Remaining Range",
+  "ar": "±2.0 °C (-30 to +100 °C) · ±2 % of mv Remaining Range"
+ },
+ "-50 à +500 °c": {
+  "fr": "-50 à +500 °C",
+  "en": "-50 to +500 °C",
+  "ar": "-50 to +500 °C"
+ },
+ "±0,5 °c + 0,5 % v.m.": {
+  "fr": "±0,5 °C + 0,5 % v.m.",
+  "en": "±0.5 °C + 0.5 % of mv",
+  "ar": "±0.5 °C + 0.5 % of mv"
+ },
+ "1,75 s": {
+  "fr": "1,75 s",
+  "en": "1.75 s",
+  "ar": "1.75 s"
+ },
+ "-50 à +300 °c": {
+  "fr": "-50 à +300 °C",
+  "en": "-50 to +300 °C",
+  "ar": "-50 to +300 °C"
+ },
+ "±2 °c ou 2 % v.m. (etendue de mesure restante) · ±1,5 °c (-20 à +100 °c)": {
+  "fr": "±2 °C ou 2 % v.m. (Etendue de mesure restante) · ±1,5 °C (-20 à +100 °C)",
+  "en": "±1.5 °C (-20 to +100 °C) · ±2 °C or 2 % of mv (Remaining Range)",
+  "ar": "±1.5 °C (-20 to +100 °C) · ±2 °C or 2 % of mv (Remaining Range)"
+ },
+ "148 x 34,4 x 19 mm": {
+  "fr": "148 x 34,4 x 19 mm",
+  "en": "148 x 34.4 x 19 mm",
+  "ar": "148 x 34.4 x 19 mm"
+ },
+ "env. 20 h": {
+  "fr": "Env. 20 h",
+  "en": "Approx. 20 h",
+  "ar": "Approx. 20 h"
+ },
+ "-30 à +210 °c": {
+  "fr": "-30 à +210 °C",
+  "en": "-30 to +210 °C",
+  "ar": "-30 to +210 °C"
+ },
+ "±1,5 °c ou ±1,5 % v.m. (-20 à +210 °c) · ±2 °c ou ±2 % v.m. (etendue de mesure restante)": {
+  "fr": "±1,5 °C ou ±1,5 % v.m. (-20 à +210 °C) · ±2 °C ou ±2 % v.m. (Etendue de mesure restante)",
+  "en": "±2 °C or ±2 % of mv (Remaining Range) · ±1.5 °C or ±1.5 % of mv (-20 to +210 °C)",
+  "ar": "±2 °C or ±2 % of mv (Remaining Range) · ±1.5 °C or ±1.5 % of mv (-20 to +210 °C)"
+ },
+ "0,5 sec.": {
+  "fr": "0,5 sec.",
+  "en": "0.5 sec.",
+  "ar": "0.5 sec."
+ },
+ "pile 9 v, 6f22": {
+  "fr": "Pile 9 V, 6F22",
+  "en": "9V block battery, 6F22",
+  "ar": "9V block battery, 6F22"
+ },
+ "62,6 x 38 x 17,5 mm": {
+  "fr": "62,6 x 38 x 17,5 mm",
+  "en": "62.6 x 38 x 17.5 mm",
+  "ar": "62.6 x 38 x 17.5 mm"
+ },
+ "-30 à +85 °c": {
+  "fr": "-30 à +85 °C",
+  "en": "-30 to +85 °C",
+  "ar": "-30 to +85 °C"
+ },
+ "-35 à +55 °c": {
+  "fr": "-35 à +55 °C",
+  "en": "-35 to +55 °C",
+  "ar": "-35 to +55 °C"
+ },
+ "±0,4 °c (-35 à +55 °c) ±1 digit": {
+  "fr": "±0,4 °C (-35 à +55 °C) ±1 Digit",
+  "en": "±0.4 °C (-35 to +55 °C) ±1 Digit",
+  "ar": "±0.4 °C (-35 to +55 °C) ±1 Digit"
+ },
+ "directive ue 2014 / 30 / ce; din en 12830; 2011 / 65 / eu": {
+  "fr": "Directive UE 2014/30/CE; DIN EN 12830; 2011/65/EU",
+  "en": "EU-guideline 2014/30/EU; DIN EN 12830; 2011/65/EU",
+  "ar": "EU-guideline 2014/30/EU; DIN EN 12830; 2011/65/EU"
+ },
+ "10 sec. - 24 h": {
+  "fr": "10 sec. - 24 h",
+  "en": "10 s - 24 h",
+  "ar": "10 s - 24 h"
+ },
+ "3 x almn de type aaa ou energizer": {
+  "fr": "3 x AlMn de type AAA ou Energizer",
+  "en": "3 x AIMn type AAA or Energizer",
+  "ar": "3 x AIMn type AAA or Energizer"
+ },
+ "-50 à +250 °c": {
+  "fr": "-50 à +250 °C",
+  "en": "-50 to +250 °C",
+  "ar": "-50 to +250 °C"
+ },
+ "±0,5 °c (-30,0 à +99,9 °c) · ±1 °c (-50,0 à -30,1 °c) · ±1 % v.m. (etendue de mesure restante)": {
+  "fr": "±0,5 °C (-30,0 à +99,9 °C) · ±1 °C (-50,0 à -30,1 °C) · ±1 % v.m. (Etendue de mesure restante)",
+  "en": "±1 °C (-50.0 to -30.1 °C) · ±1 % of mv (Remaining Range) · ±0.5 °C (-30.0 to +99.9 °C)",
+  "ar": "±1 °C (-50.0 to -30.1 °C) · ±1 % of mv (Remaining Range) · ±0.5 °C (-30.0 to +99.9 °C)"
+ },
+ "-30 à +250 °c": {
+  "fr": "-30 à +250 °C",
+  "en": "-30 to +250 °C",
+  "ar": "-30 to +250 °C"
+ },
+ "±1,5 °c ou ±1,5 % v.m. (etendue de mesure restante) · ±2,0 °c (-20 à -0,1 °c) · ±2,5 °c (-30 à -20,1 °c)": {
+  "fr": "±1,5 °C ou ±1,5 % v.m. (Etendue de mesure restante) · ±2,0 °C (-20 à -0,1 °C) · ±2,5 °C (-30 à -20,1 °C)",
+  "en": "±1.5 °C or ±1.5 % of mv (Remaining Range) · ±2.0 °C (-20 to -0.1 °C) · ±2.5 °C (-30 to -20.1 °C)",
+  "ar": "±1.5 °C or ±1.5 % of mv (Remaining Range) · ±2.0 °C (-20 to -0.1 °C) · ±2.5 °C (-30 to -20.1 °C)"
+ },
+ "198 g (y compris la batterie)": {
+  "fr": "198 g (y compris la batterie)",
+  "en": "198 g (incl. batteries)",
+  "ar": "198 g (incl. batteries)"
+ },
+ "281 x 48 x 23 mm (sonde sortie)": {
+  "fr": "281 x 48 x 23 mm (sonde sortie)",
+  "en": "281 x 48 x 23 mm (Probe folded out)",
+  "ar": "281 x 48 x 23 mm (Probe folded out)"
+ },
+ "2,5 mm": {
+  "fr": "2,5 mm",
+  "en": "2.5 mm",
+  "ar": "2.5 mm"
+ },
+ "10 h à 25°c": {
+  "fr": "10 h à 25°C",
+  "en": "10 h at 25°C typical",
+  "ar": "10 h at 25°C typical"
+ },
+ "±1,0 °c (-50 à -30,1 °c) · ±1 % v.m. (+100 à +250 °c)": {
+  "fr": "±1,0 °C (-50 à -30,1 °C) · ±1 % v.m. (+100 à +250 °C)",
+  "en": "±1.0 °C (-50 to -30.1 °C) · ±1 % of mv (+100 to +250 °C)",
+  "ar": "±1.0 °C (-50 to -30.1 °C) · ±1 % of mv (+100 to +250 °C)"
+ },
+ "±2,0 °c (-20,0 à -0,1 °c) · ±1,5 °c ou ±1,5 % de la valeur de mesure (+0,0 à +250,0 °c) · ±2,5 (-30,0 à 20,1)": {
+  "fr": "±2,0 °C (-20,0 à -0,1 °C) · ±1,5 °C ou ±1,5 % de la valeur de mesure (+0,0 à +250,0 °C) · ±2,5 (-30,0 à 20,1 )",
+  "en": "±2.5 (-30.0 to 20.1 ) · ±2.0 °C (-20.0 to -0.1 °C) · ±1.5 °C or ±1.5 % of the measurement value (+0.0 to +250.0 °C)",
+  "ar": "±2.5 (-30.0 to 20.1 ) · ±2.0 °C (-20.0 to -0.1 °C) · ±1.5 °C or ±1.5 % of the measurement value (+0.0 to +250.0 °C)"
+ },
+ "classe 2 / din en 60825-1:2007": {
+  "fr": "Classe 2 / DIN EN 60825-1:2007",
+  "en": "Class 2 / DIN EN 60825-1:2007",
+  "ar": "Class 2 / DIN EN 60825-1:2007"
+ },
+ "207 g (piles incl.)": {
+  "fr": "207 g (piles incl.)",
+  "en": "207 g (incl. batteries)",
+  "ar": "207 g (incl. batteries)"
+ },
+ "laser à 2 point": {
+  "fr": "Laser à 2 point",
+  "en": "2 point laser",
+  "ar": "2 point laser"
+ },
+ "10:1 + diamètre d'ouverture du capteur (12 mm)": {
+  "fr": "10:1 + Diamètre d’ouverture du capteur (12 mm)",
+  "en": "10:1 + opening diameter of the sensor (12 mm)",
+  "ar": "10:1 + opening diameter of the sensor (12 mm)"
+ },
+ "-30 à +50 °c (sans piles jusqu'à +70 °c)": {
+  "fr": "-30 à +50 °C (sans piles jusqu’à +70 °C)",
+  "en": "-30 to +50 °C (without batteries up to +70 °C)",
+  "ar": "-30 to +50 °C (without batteries up to +70 °C)"
+ },
+ "±0,5 °c ±1 digit": {
+  "fr": "±0,5 °C ±1 Digit",
+  "en": "±0.5 °C ±1 Digit",
+  "ar": "±0.5 °C ±1 Digit"
+ },
+ "300 valeurs de mesure": {
+  "fr": "300 Valeurs de mesure",
+  "en": "300 measuring values",
+  "ar": "300 measuring values"
+ },
+ "0 à 99990 m³ / h · 0 à 5 m / s (-20 à 0 °c) · 0 à 10 m / s (0 à +50 °c)": {
+  "fr": "0 à 99990 m³/h · 0 à 5 m/s (-20 à 0 °C) · 0 à 10 m/s (0 à +50 °C)",
+  "en": "0 to 99990 m³/h · 0 to 5 m/s (-20 to 0 °C) · 0 to 10 m/s (0 to +50 °C)",
+  "ar": "0 to 99990 m³/h · 0 to 5 m/s (-20 to 0 °C) · 0 to 10 m/s (0 to +50 °C)"
+ },
+ "± (0,3 m / s + 5 % v.m.) (etendue de mesure restante) · ± (0,1 m / s + 5 % v.m.) (0 à 2 m / s)": {
+  "fr": "±(0,3 m/s + 5 % v.m.) (Etendue de mesure restante) · ±(0,1 m/s + 5 % v.m.) (0 à 2 m/s)",
+  "en": "±(0.3 m/s + 5 % of mv) (Remaining Range) · ±(0.1 m/s + 5 % of mv) (0 to 2 m/s)",
+  "ar": "±(0.3 m/s + 5 % of mv) (Remaining Range) · ±(0.1 m/s + 5 % of mv) (0 to 2 m/s)"
+ },
+ "115 g (avec piles, sans emballage)": {
+  "fr": "115 g (avec piles, sans emballage)",
+  "en": "115 g (with batteries, without packaging)",
+  "ar": "115 g (with batteries, without packaging)"
+ },
+ "0,4 m": {
+  "fr": "0,4 m",
+  "en": "0.4 m",
+  "ar": "0.4 m"
+ },
+ "8 à 14 µm": {
+  "fr": "8 à 14 µm",
+  "en": "8 to 14 µm",
+  "ar": "8 to 14 µm"
+ },
+ "0,3 m": {
+  "fr": "0,3 m",
+  "en": "0.3 m",
+  "ar": "0.3 m"
+ },
+ "0,01 ... 1": {
+  "fr": "0,01 ... 1",
+  "en": "0.01 ... 1",
+  "ar": "0.01 ... 1"
+ },
+ "0,2 m": {
+  "fr": "0,2 m",
+  "en": "0.2 m",
+  "ar": "0.2 m"
+ },
+ "0,25 m": {
+  "fr": "0,25 m",
+  "en": "0.25 m",
+  "ar": "0.25 m"
+ },
+ "3 h à +25 °c": {
+  "fr": "3 h à +25 °C",
+  "en": "3 h to +25 °C",
+  "ar": "3 h to +25 °C"
+ },
+ "-30 à +50 °c": {
+  "fr": "-30 à +50 °C",
+  "en": "-30 to +50 °C",
+  "ar": "-30 to +50 °C"
+ },
+ "1,5 ans": {
+  "fr": "1,5 ans",
+  "en": "1.5 years",
+  "ar": "1.5 years"
+ },
+ "4 piles aaa alcalines manganèse 1,5 v (alimentation électrique permanente possible avec le bloc d'alimentation disponible comme accessoire)": {
+  "fr": "4 piles AAA alcalines manganèse 1,5 V (alimentation électrique permanente possible avec le bloc d’alimentation disponible comme Accessoire)",
+  "en": "4 x AAA alkaline manganese batteries 1.5 V (permanent power supply possible with mains unit accessory)",
+  "ar": "4 x AAA alkaline manganese batteries 1.5 V (permanent power supply possible with mains unit accessory)"
+ },
+ "-30 à +60 °c": {
+  "fr": "-30 à +60 °C",
+  "en": "-30 to +60 °C",
+  "ar": "-30 to +60 °C"
+ },
+ "0,4 à 30 m / s": {
+  "fr": "0,4 à 30 m/s",
+  "en": "0.4 to 30 m/s",
+  "ar": "0.4 to 30 m/s"
+ },
+ "± (0,2 m / s + 2 % v.m.) (0,4 à 20 m / s)": {
+  "fr": "±(0,2 m/s + 2 % v.m.) (0,4 à 20 m/s)",
+  "en": "±(0.2 m/s + 2 % of mv) (0.4 to 20 m/s)",
+  "ar": "±(0.2 m/s + 2 % of mv) (0.4 to 20 m/s)"
+ },
+ "0,1 m / s": {
+  "fr": "0,1 m/s",
+  "en": "0.1 m/s",
+  "ar": "0.1 m/s"
+ },
+ "117,8 g": {
+  "fr": "117,8 g",
+  "en": "117.8 g",
+  "ar": "117.8 g"
+ },
+ "130 heures": {
+  "fr": "130 heures",
+  "en": "130 h",
+  "ar": "130 h"
+ },
+ "-35 à +55 °c interne · -40 à +120 °c externe": {
+  "fr": "-35 à +55 °C interne · -40 à +120 °C externe",
+  "en": "-35 to +55 °C interne · -40 to +120 °C externe",
+  "ar": "-35 to +55 °C interne · -40 to +120 °C externe"
+ },
+ "interne: ±0,5 °c (-35 à +55 °c) ±1 digit · externe: ±0,3 °c (-40 à +120 °c) ±1 digit": {
+  "fr": "interne: ±0,5 °C (-35 à +55 °C) ±1 Digit · externe: ±0,3 °C (-40 à +120 °C) ±1 Digit",
+  "en": "internal: ±0.5 °C (-35 to +55 °C) ±1 Digit · external: ±0.3 °C (-40 to +120 °C) ±1 Digit",
+  "ar": "internal: ±0.5 °C (-35 to +55 °C) ±1 Digit · external: ±0.3 °C (-40 to +120 °C) ±1 Digit"
+ },
+ "1 interne; 1 externe": {
+  "fr": "1 interne; 1 externe",
+  "en": "1 internal; 1 external",
+  "ar": "1 internal; 1 external"
+ },
+ "directive ue 2014 / 30 / ce; 2011 / 65 / eu; din en 12830": {
+  "fr": "Directive UE 2014/30/CE; 2011/65/EU; DIN EN 12830",
+  "en": "EU-guideline 2014/30/EU; 2011/65/EU; DIN EN 12830",
+  "ar": "EU-guideline 2014/30/EU; 2011/65/EU; DIN EN 12830"
+ },
+ "3 ans (cadence de mesure de 15 min. / à +25 °c) °c)": {
+  "fr": "3 ans (cadence de mesure de 15 min. / à +25 °C) °C)",
+  "en": "3 years (15 min. meas. rate, +25 °C)",
+  "ar": "3 years (15 min. meas. rate, +25 °C)"
+ },
+ "±1,5 °c (-20 à 0 °c) · ±2 °c (-30 à -20,1 °c) · ±1 °c ou ±1 % v.m. (etendue de mesure restante)": {
+  "fr": "±1,5 °C (-20 à 0 °C) · ±2 °C (-30 à -20,1 °C) · ±1 °C ou ±1 % v.m. (Etendue de mesure restante)",
+  "en": "±1 °C or ±1 % of mv (Remaining Range) · ±2 °C (-30 to -20.1 °C) · ±1.5 °C (-20 to 0 °C)",
+  "ar": "±1 °C or ±1 % of mv (Remaining Range) · ±2 °C (-30 to -20.1 °C) · ±1.5 °C (-20 to 0 °C)"
+ },
+ "<= ±5 %hr (90 à < 100 %hr) · <= ±3 %hr (10 à < 35 %hr) · <= ±5 %hr (0 à < 10 %hr) · <= ±0,06 %hr / k (0 à 60 °c) · <= ±1 %rh hystérèse · <= ±3 %hr (65 à < 90 %hr) · <= ±1 %rh / année dérive · <= ±2 %hr (35 à < 65 %hr)": {
+  "fr": "<= ±5 %HR (90 à < 100 %HR) · <= ±3 %HR (10 à < 35 %HR) · <= ±5 %HR (0 à < 10 %HR) · <= ±0,06 %HR/K (0 à 60 °C) · <= ±1 %RH hystérèse · <= ±3 %HR (65 à < 90 %HR) · <= ±1 %RH/année dérive · <= ±2 %HR (35 à < 65 %HR)",
+  "en": "<= ±5 %RH (90 to < 100 %RH) · <= ±1 %rF Hysterese · <= ±3 %RH (10 to < 35 %RH) · <= ±0.06 %RH/K (0 to 60 °C) · <= ±3 %RH (65 to < 90 %RH) · <= ±5 %RH (0 to < 10 %RH) · <= ±2 %RH (35 to < 65 %RH) · <= ±1 %rF/year Drift",
+  "ar": "<= ±5 %RH (90 to < 100 %RH) · <= ±1 %rF Hysterese · <= ±3 %RH (10 to < 35 %RH) · <= ±0.06 %RH/K (0 to 60 °C) · <= ±3 %RH (65 to < 90 %RH) · <= ±5 %RH (0 to < 10 %RH) · <= ±2 %RH (35 to < 65 %RH) · <= ±1 %rF/year Drift"
+ },
+ "±0,1 °c": {
+  "fr": "±0,1 °C",
+  "en": "±0.1 °C",
+  "ar": "±0.1 °C"
+ },
+ "8 ans": {
+  "fr": "8 ans",
+  "en": "8 years",
+  "ar": "8 years"
+ },
+ "0,6 à 40 m / s": {
+  "fr": "0,6 à 40 m/s",
+  "en": "0.6 to 40 m/s",
+  "ar": "0.6 to 40 m/s"
+ },
+ "± (0,2 m / s + 1,0 % v.m.)": {
+  "fr": "±(0,2 m/s + 1,0 % v.m.)",
+  "en": "±(0.2 m/s + 1.0 % of mv)",
+  "ar": "±(0.2 m/s + 1.0 % of mv)"
+ },
+ "-10 à +50 °c · sonde: -10 à +70 °c": {
+  "fr": "-10 à +50 °C · Sonde: -10 à +70 °C",
+  "en": "Probe: -10 to +70 °C · -10 to +50 °C",
+  "ar": "Probe: -10 to +70 °C · -10 to +50 °C"
+ },
+ "-80 à +70 °c": {
+  "fr": "-80 à +70 °C",
+  "en": "-80 to +70 °C",
+  "ar": "-80 to +70 °C"
+ },
+ "±0,5 °c (-35 à +70 °c) · ±0,8 °c (-80 à -35,1 °c)": {
+  "fr": "±0,5 °C (-35 à +70 °C) · ±0,8 °C (-80 à -35,1 °C)",
+  "en": "±0.8 °C (-80 to -35.1 °C) · ±0.5 °C (-35 to +70 °C)",
+  "ar": "±0.8 °C (-80 to -35.1 °C) · ±0.5 °C (-35 to +70 °C)"
+ },
+ "-50 à +230 °c": {
+  "fr": "-50 à +230 °C",
+  "en": "-50 to +230 °C",
+  "ar": "-50 to +230 °C"
+ },
+ "±1 °c ou 1 % v.m. (etendue de mesure restante) · ±0,5 °c (-20 à +99,9 °c)": {
+  "fr": "±1 °C ou 1 % v.m. (Etendue de mesure restante) · ±0,5 °C (-20 à +99,9 °C)",
+  "en": "±1 °C or 1 % of mv (Remaining Range) · ±0.5 °C (-20 to +99.9 °C)",
+  "ar": "±1 °C or 1 % of mv (Remaining Range) · ±0.5 °C (-20 to +99.9 °C)"
+ },
+ "1,25 s": {
+  "fr": "1,25 s",
+  "en": "1.25 s",
+  "ar": "1.25 s"
+ },
+ "95 x 75 x 30,5 mm": {
+  "fr": "95 x 75 x 30,5 mm",
+  "en": "95 x 75 x 30.5 mm",
+  "ar": "95 x 75 x 30.5 mm"
+ },
+ "12 mois": {
+  "fr": "12 mois",
+  "en": "12 months",
+  "ar": "12 months"
+ },
+ "0,4 à 20 m / s": {
+  "fr": "0,4 à 20 m/s",
+  "en": "0.4 to 20 m/s",
+  "ar": "0.4 to 20 m/s"
+ },
+ "± (0,2 m / s + 2 % v.m.)": {
+  "fr": "±(0,2 m/s + 2 % v.m.)",
+  "en": "±(0.2 m/s + 2 % of mv)",
+  "ar": "±(0.2 m/s + 2 % of mv)"
+ },
+ "110 g (incl. capot de protection et pile)": {
+  "fr": "110 g (incl. capot de protection et pile)",
+  "en": "110 g (with protective cap and batteries)",
+  "ar": "110 g (with protective cap and batteries)"
+ },
+ "133 x 46 x 25 mm (incl. capot protection)": {
+  "fr": "133 x 46 x 25 mm (incl. capot protection)",
+  "en": "133 x 46 x 25 mm (incl. protective cap)",
+  "ar": "133 x 46 x 25 mm (incl. protective cap)"
+ },
+ "100 h (moyenne sans rétro-éclairage)": {
+  "fr": "100 h (moyenne sans rétro-éclairage)",
+  "en": "100 h (average, without display illumination)",
+  "ar": "100 h (average, without display illumination)"
+ },
+ "-50 à +600 °c": {
+  "fr": "-50 à +600 °C",
+  "en": "-50 to +600 °C",
+  "ar": "-50 to +600 °C"
+ },
+ "± (0,5 °c + 0,5 % v.m.)": {
+  "fr": "±(0,5 °C + 0,5 % v.m.)",
+  "en": "±(0.5 °C + 0.5 % of mv)",
+  "ar": "±(0.5 °C + 0.5 % of mv)"
+ },
+ "-30 à +600 °c": {
+  "fr": "-30 à +600 °C",
+  "en": "-30 to +600 °C",
+  "ar": "-30 to +600 °C"
+ },
+ "±2,5 °c (-30,0 à -20,1 °c) · ±1,5 °c (-20,0 à -0,1 °c) · ±1 % v.m. (etendue de mesure restante) · ±1,0 °c (0,0 à +99,9 °c)": {
+  "fr": "±2,5 °C (-30,0 à -20,1 °C) · ±1,5 °C (-20,0 à -0,1 °C) · ±1 % v.m. (Etendue de mesure restante) · ±1,0 °C (0,0 à +99,9 °C)",
+  "en": "±2.5 °C (-30.0 to -20.1 °C) · ±1.0 °C (0.0 to +99.9 °C) · ±1 % of mv (Remaining Range) · ±1.5 °C (-20.0 to -0.1 °C)",
+  "ar": "±2.5 °C (-30.0 to -20.1 °C) · ±1.0 °C (0.0 to +99.9 °C) · ±1 % of mv (Remaining Range) · ±1.5 °C (-20.0 to -0.1 °C)"
+ },
+ "20 valeurs de mesure mémorisables": {
+  "fr": "20 valeurs de mesure mémorisables",
+  "en": "20 values",
+  "ar": "20 values"
+ },
+ "3 piles mignon aa (ou fonctionnement sur le port usb d'un pc avec le logiciel)": {
+  "fr": "3 piles Mignon AA (ou fonctionnement sur le port USB d'un PC avec le logiciel)",
+  "en": "3 batteries type AA (or USB operating with PC-Software)",
+  "ar": "3 batteries type AA (or USB operating with PC-Software)"
+ },
+ "25 h (mesure type à 25°c sans laser et éclaraige) 10 h (mesure type à 25°c sans éclaraige)": {
+  "fr": "25 h (mesure type à 25°C sans laser et éclaraige) 10 h (mesure type à 25°C sans éclaraige)",
+  "en": "25 h (typical 25°C without laser and backlight) 10 h (typical 25°C without backlight)",
+  "ar": "25 h (typical 25°C without laser and backlight) 10 h (typical 25°C without backlight)"
+ },
+ "200 valeurs de mesure": {
+  "fr": "200 Valeurs de mesure",
+  "en": "200 measuring values",
+  "ar": "200 measuring values"
+ },
+ "0 à 100 %hr": {
+  "fr": "0 à 100 %HR",
+  "en": "0 to 100 %RH",
+  "ar": "0 to 100 %RH"
+ },
+ "±2,5 %hr (5 à 95 %hr)": {
+  "fr": "±2,5 %HR (5 à 95 %HR)",
+  "en": "±2.5 %RH (5 to 95 %RH)",
+  "ar": "±2.5 %RH (5 to 95 %RH)"
+ },
+ "60 h (moyenne sans rétro-éclairage)": {
+  "fr": "60 h (moyenne sans rétro-éclairage)",
+  "en": "60 h (average, without display illumination)",
+  "ar": "60 h (average, without display illumination)"
+ },
+ "-50 à +1000 °c": {
+  "fr": "-50 à +1000 °C",
+  "en": "-50 to +1000 °C",
+  "ar": "-50 to +1000 °C"
+ },
+ "±0,7 % v.m. (+70,1 à +1000 °c) ±1 digit · ±0,5 °c (-50 à +70 °c) ±1 digit": {
+  "fr": "±0,7 % v.m. (+70,1 à +1000 °C) ±1 Digit · ±0,5 °C (-50 à +70 °C) ±1 Digit",
+  "en": "±0.7 % of mv (+70.1 to +1000 °C) ±1 Digit · ±0.5 °C (-50 to +70 °C) ±1 Digit",
+  "ar": "±0.7 % of mv (+70.1 to +1000 °C) ±1 Digit · ±0.5 °C (-50 to +70 °C) ±1 Digit"
+ },
+ "-50 à +400 °c": {
+  "fr": "-50 à +400 °C",
+  "en": "-50 to +400 °C",
+  "ar": "-50 to +400 °C"
+ },
+ "±0,7 % v.m. (70,1 à +400 °c) ±1 digit · ±0,5 °c (-50 à +70 °c) ±1 digit": {
+  "fr": "±0,7 % v.m. (70,1 à +400 °C) ±1 Digit · ±0,5 °C (-50 à +70 °C) ±1 Digit",
+  "en": "±0.5 °C (-50 to +70 °C) ±1 Digit · ±0.7 % of mv (70.1 to +400 °C) ±1 Digit",
+  "ar": "±0.5 °C (-50 to +70 °C) ±1 Digit · ±0.7 % of mv (70.1 to +400 °C) ±1 Digit"
+ },
+ "-20 à +55 °c": {
+  "fr": "-20 à +55 °C",
+  "en": "-20 to +55 °C",
+  "ar": "-20 to +55 °C"
+ },
+ "2 externe": {
+  "fr": "2 externe",
+  "en": "2 external",
+  "ar": "2 external"
+ },
+ "3 ans (cadence de mesure de 15 min. / à +25 °c)": {
+  "fr": "3 ans (cadence de mesure de 15 min. / à +25 °C)",
+  "en": "3 years at 15 min. meas. rate, +25 °C",
+  "ar": "3 years at 15 min. meas. rate, +25 °C"
+ },
+ "±0,5 °c (0 à +70 °c) · ±0,8 °c (-20 à +0 °c)": {
+  "fr": "±0,5 °C (0 à +70 °C) · ±0,8 °C (-20 à +0 °C)",
+  "en": "±0.5 °C (0 to +70 °C) · ±0.8 °C (-20 to +0 °C)",
+  "ar": "±0.5 °C (0 to +70 °C) · ±0.8 °C (-20 to +0 °C)"
+ },
+ "±1 %rh hystérèse · ±1,8 %hr, +3 % v.m. (à 25 °c, 5 % à 80 %hr) · ±0,03 %hr / k (at 0 à 60 °c) · ±1 %rh / année dérive": {
+  "fr": "±1 %RH hystérèse · ±1,8 %HR, +3 % v.m. (à 25 °C, 5 % à 80 %HR) · ±0,03 %HR/K (AT 0 à 60 °C) · ±1 %RH/année dérive",
+  "en": "±1.8 %RH, +3 % of mv (at 25 °C, 5 % to 80 %RH) · ±1 %rF/year Drift · ±1 %rF Hysterese · ±0.03 %RH/K (at 0 to 60 °C)",
+  "ar": "±1.8 %RH, +3 % of mv (at 25 °C, 5 % to 80 %RH) · ±1 %rF/year Drift · ±1 %rF Hysterese · ±0.03 %RH/K (at 0 to 60 °C)"
+ },
+ "0 à 265 m / s² · 0 à 27 g": {
+  "fr": "0 à 265 m/s² · 0 à 27 g",
+  "en": "0 to 265 m/s² · 0 to 27 g",
+  "ar": "0 to 265 m/s² · 0 to 27 g"
+ },
+ "± (0,1 g + 5 % v.m.) · ±1 / 1 / 1 m / s²": {
+  "fr": "±(0,1 g + 5 % v.m.) · ±1 / 1 / 1 m/s²",
+  "en": "±(0.1 g + 5 % of mv) · ±1 / 1 / 1 m/s²",
+  "ar": "±(0.1 g + 5 % of mv) · ±1 / 1 / 1 m/s²"
+ },
+ "1 m / s² · 0,1 g": {
+  "fr": "1 m/s² · 0,1 g",
+  "en": "0.1 g · 1 m/s²",
+  "ar": "0.1 g · 1 m/s²"
+ },
+ "ce 2014 / 30 / eu; din en 61326-1:2013; din en 50581:2013; 21 cfr part 11; haccp international": {
+  "fr": "CE 2014/30/EU; DIN EN 61326-1:2013; DIN EN 50581:2013; 21 CFR Part 11; HACCP International",
+  "en": "CE 2014/30/EU; DIN EN 61326-1:2013; DIN EN 50581:2013; CFR 21 Part 11 (in use with testo ComSoft CFR-Software); HACCP International",
+  "ar": "CE 2014/30/EU; DIN EN 61326-1:2013; DIN EN 50581:2013; CFR 21 Part 11 (in use with testo ComSoft CFR-Software); HACCP International"
+ },
+ "5 interne": {
+  "fr": "5 interne",
+  "en": "5 internal",
+  "ar": "5 internal"
+ },
+ "-55 à +70 °c": {
+  "fr": "-55 à +70 °C",
+  "en": "-55 to +70 °C",
+  "ar": "-55 to +70 °C"
+ },
+ "±0,5 °c · ±2 %hr": {
+  "fr": "±0,5 °C · ±2 %HR",
+  "en": "±2 %RH · ±0.5 °C",
+  "ar": "±2 %RH · ±0.5 °C"
+ },
+ "0,1 °ctd · 0,1 °c · 0,1 %hr": {
+  "fr": "0,1 °Ctd · 0,1 °C · 0,1 %HR",
+  "en": "0.1 %RH · 0.1 °C · 0.1 °Ctd",
+  "ar": "0.1 %RH · 0.1 °C · 0.1 °Ctd"
+ },
+ "±2,0 %hr à + 25 °c et 20 à 80 %hr · ±1,0 %hr de dérive par an · ±3,0 %hr à + 25 °c et 80 %hr · ±1,0 %hr hystérésis": {
+  "fr": "±2,0 %HR à + 25 °C et 20 à 80 %HR · ±1,0 %HR de dérive par an · ±3,0 %HR à + 25 °C et 80 %HR · ±1,0 %HR hystérésis",
+  "en": "±3.0 %RH at + 25 °C and 80 %RH · ±1.0 %RH / year drift · ±2.0 %RH at + 25 °C and 20 to 80 %RH · ±1.0 %RH hysteresis",
+  "ar": "±3.0 %RH at + 25 °C and 80 %RH · ±1.0 %RH / year drift · ±2.0 %RH at + 25 °C and 20 to 80 %RH · ±1.0 %RH hysteresis"
+ },
+ "-195 à +1350 °c": {
+  "fr": "-195 à +1350 °C",
+  "en": "-195 to +1350 °C",
+  "ar": "-195 to +1350 °C"
+ },
+ "± (0,5 + 0,5 % v.m.) °c": {
+  "fr": "±(0,5 + 0,5 % v.m.) °C",
+  "en": "±(0.5 + 0.5 % of mv) °C",
+  "ar": "±(0.5 + 0.5 % of mv) °C"
+ },
+ "-200 à +400 °c": {
+  "fr": "-200 à +400 °C",
+  "en": "-200 to +400 °C",
+  "ar": "-200 to +400 °C"
+ },
+ "-100 à +750 °c": {
+  "fr": "-100 à +750 °C",
+  "en": "-100 to +750 °C",
+  "ar": "-100 to +750 °C"
+ },
+ "-10 à +1500 °c": {
+  "fr": "-10 à +1500 °C",
+  "en": "-10 to +1500 °C",
+  "ar": "-10 to +1500 °C"
+ },
+ "±2,0 °c ou ±1 % v.m.": {
+  "fr": "±2,0 °C ou ±1 % v.m.",
+  "en": "±2.0 °C or ±1 % of mv",
+  "ar": "±2.0 °C or ±1 % of mv"
+ },
+ "0,1 °c (-10,0 à +999,9 °c) · 1 °c (+1000,0 à +1500,0 °c)": {
+  "fr": "0,1 °C (-10,0 à +999,9 °C) · 1 °C (+1000,0 à +1500,0 °C)",
+  "en": "1 °C (+1000.0 to +1500.0 °C) · 0.1 °C (-10.0 to +999.9 °C)",
+  "ar": "1 °C (+1000.0 to +1500.0 °C) · 0.1 °C (-10.0 to +999.9 °C)"
+ },
+ "-15 à +50 °c": {
+  "fr": "-15 à +50 °C",
+  "en": "-15 to +50 °C",
+  "ar": "-15 to +50 °C"
+ },
+ "8,9 cm (3,5\") tft, qvga (320 x 240 pixels)": {
+  "fr": "8,9 cm (3,5\") TFT, QVGA (320 x 240 pixels)",
+  "en": "8.9 cm (3.5\") TFT, QVGA (320 x 240 pixels)",
+  "ar": "8.9 cm (3.5\") TFT, QVGA (320 x 240 pixels)"
+ },
+ "7,5 à 14 µm": {
+  "fr": "7,5 à 14 µm",
+  "en": "7.5 to 14 µm",
+  "ar": "7.5 to 14 µm"
+ },
+ "<0,5 m": {
+  "fr": "<0,5 m",
+  "en": "<0.5 m",
+  "ar": "<0.5 m"
+ },
+ "3,4 mrad": {
+  "fr": "3,4 mrad",
+  "en": "3.4 mrad",
+  "ar": "3.4 mrad"
+ },
+ "2,1 mrad": {
+  "fr": "2,1 mrad",
+  "en": "2.1 mrad",
+  "ar": "2.1 mrad"
+ },
+ "±3 %hr (65 à < 90 %hr) · ±2 %hr (20 à 80 %hr at 25 °c) · ±3 %hr (at 25 °c et 80 %hr) · ±1 %rh hystérèse · ±2,0 %hr (35 à < 65 %hr) · ±0,06 %hr / k (0 à 60 °c) · ±5 %hr (90 à 100 %hr) · ±1 %rh / année dérive": {
+  "fr": "±3 %HR (65 à < 90 %HR) · ±2 %HR (20 à 80 %HR AT 25 °C) · ±3 %HR (AT 25 °C et 80 %HR) · ±1 %RH hystérèse · ±2,0 %HR (35 à < 65 %HR) · ±0,06 %HR/K (0 à 60 °C) · ±5 %HR (90 à 100 %HR) · ±1 %RH/année dérive",
+  "en": "±3 %RH (at 25 °C and 80 %RH) · ±5 %RH (90 to 100 %RH) · ±1 %rF/year Drift · ±3 %RH (65 to < 90 %RH) · ±0.06 %RH/K (0 to 60 °C) · ±1 %rF Hysterese · ±2 %RH (20 to 80 %RH at 25 °C) · ±2.0 %RH (35 to < 65 %RH)",
+  "ar": "±3 %RH (at 25 °C and 80 %RH) · ±5 %RH (90 to 100 %RH) · ±1 %rF/year Drift · ±3 %RH (65 to < 90 %RH) · ±0.06 %RH/K (0 to 60 °C) · ±1 %rF Hysterese · ±2 %RH (20 to 80 %RH at 25 °C) · ±2.0 %RH (35 to < 65 %RH)"
+ },
+ "-100 à +400 °c": {
+  "fr": "-100 à +400 °C",
+  "en": "-100 to +400 °C",
+  "ar": "-100 to +400 °C"
+ },
+ "±0,3 °c (+200,1 à +400 °c) ±1 digit · ±0,2 °c (-100 à +200 °c) ±1 digit": {
+  "fr": "±0,3 °C (+200,1 à +400 °C) ±1 Digit · ±0,2 °C (-100 à +200 °C) ±1 Digit",
+  "en": "±0.2 °C (-100 to +200 °C) ±1 Digit · ±0.3 °C (+200.1 to +400 °C) ±1 Digit",
+  "ar": "±0.2 °C (-100 to +200 °C) ±1 Digit · ±0.3 °C (+200.1 to +400 °C) ±1 Digit"
+ },
+ "0,01 °c": {
+  "fr": "0,01 °C",
+  "en": "0.01 °C",
+  "ar": "0.01 °C"
+ },
+ "2 x sonde de température pt100": {
+  "fr": "2 x sonde de température Pt100",
+  "en": "2 x Pt100 temperature probe",
+  "ar": "2 x Pt100 temperature probe"
+ },
+ "8 ans (cadence de mesure de 15 min. / à +25 °c)": {
+  "fr": "8 ans (cadence de mesure de 15 min. / à +25 °C)",
+  "en": "8 years (15 min. meas. rate, +25 °C)",
+  "ar": "8 years (15 min. meas. rate, +25 °C)"
+ },
+ "0,3 à 20 m / s": {
+  "fr": "0,3 à 20 m/s",
+  "en": "0.3 to 20 m/s",
+  "ar": "0.3 to 20 m/s"
+ },
+ "± (0,1 m / s + 1,5 % v.m.)": {
+  "fr": "±(0,1 m/s + 1,5 % v.m.)",
+  "en": "±(0.1 m/s + 1.5 % of mv)",
+  "ar": "±(0.1 m/s + 1.5 % of mv)"
+ },
+ "1 m³ / h (etendue de mesure restante) · 0,1 m³ / h (0 à +100)": {
+  "fr": "1 m³/h (Etendue de mesure restante) · 0,1 m³/h (0 à +100 )",
+  "en": "0.1 m³/h (0 to +100 ) · 1 m³/h (Remaining Range)",
+  "ar": "0.1 m³/h (0 to +100 ) · 1 m³/h (Remaining Range)"
+ },
+ "2,6 mrad": {
+  "fr": "2,6 mrad",
+  "en": "2.6 mrad",
+  "ar": "2.6 mrad"
+ },
+ "1,6 mrad": {
+  "fr": "1,6 mrad",
+  "en": "1.6 mrad",
+  "ar": "1.6 mrad"
+ },
+ "-200 à +1000 °c": {
+  "fr": "-200 à +1000 °C",
+  "en": "-200 to +1000 °C",
+  "ar": "-200 to +1000 °C"
+ },
+ "±0,3 °c (-100 à +70 °c) ±1 digit · ±0,5 % v.m. (+70,1 à +1000 °c) ±1 digit · ±1 % v.m. (-200 à -100,1 °c) ±1 digit": {
+  "fr": "±0,3 °C (-100 à +70 °C) ±1 Digit · ±0,5 % v.m. (+70,1 à +1000 °C) ±1 Digit · ±1 % v.m. (-200 à -100,1 °C) ±1 Digit",
+  "en": "±0.5 % of mv (+70.1 to +1000 °C) ±1 Digit · ±0.3 °C (-100 to +70 °C) ±1 Digit · ±1 % of mv (-200 to -100.1 °C) ±1 Digit",
+  "ar": "±0.5 % of mv (+70.1 to +1000 °C) ±1 Digit · ±0.3 °C (-100 to +70 °C) ±1 Digit · ±1 % of mv (-200 to -100.1 °C) ±1 Digit"
+ },
+ "±0,3 °c (-100 à +70 °c) ±1 digit · ±1 % v.m. (-200 à -100,1 °c) ±1 digit · ±0,5 % v.m. (+70,1 à +400 °c) ±1 digit": {
+  "fr": "±0,3 °C (-100 à +70 °C) ±1 Digit · ±1 % v.m. (-200 à -100,1 °C) ±1 Digit · ±0,5 % v.m. (+70,1 à +400 °C) ±1 Digit",
+  "en": "±0.3 °C (-100 to +70 °C) ±1 Digit · ±1 % of mv (-200 to -100.1 °C) ±1 Digit · ±0.5 % of mv (+70.1 to +400 °C) ±1 Digit",
+  "ar": "±0.3 °C (-100 to +70 °C) ±1 Digit · ±1 % of mv (-200 to -100.1 °C) ±1 Digit · ±0.5 % of mv (+70.1 to +400 °C) ±1 Digit"
+ },
+ "±0,3 °c (-100 à +70 °c) ±1 digit · ±0,5 % v.m. (+70,1 à +750 °c) ±1 digit": {
+  "fr": "±0,3 °C (-100 à +70 °C) ±1 Digit · ±0,5 % v.m. (+70,1 à +750 °C) ±1 Digit",
+  "en": "±0.5 % of mv (+70.1 to +750 °C) ±1 Digit · ±0.3 °C (-100 to +70 °C) ±1 Digit",
+  "ar": "±0.5 % of mv (+70.1 to +750 °C) ±1 Digit · ±0.3 °C (-100 to +70 °C) ±1 Digit"
+ },
+ "4 x thermocouples (types t, k et j)": {
+  "fr": "4 x thermocouples (types T, K et J)",
+  "en": "4 x thermocouple (type T, K and J)",
+  "ar": "4 x thermocouple (type T, K and J)"
+ },
+ "-15 à +50": {
+  "fr": "-15 à +50",
+  "en": "-15 to +50",
+  "ar": "-15 to +50"
+ },
+ "-40 à +150 °c": {
+  "fr": "-40 à +150 °C",
+  "en": "-40 to +150 °C",
+  "ar": "-40 to +150 °C"
+ },
+ "±0,3 °c (-25 à +74,9 °c) · ±0,4 °c (+75 à +99,9 °c) · ±0,4 °c (-40 à -25,1 °c) · ±0,5 % v.m. (etendue de mesure restante)": {
+  "fr": "±0,3 °C (-25 à +74,9 °C) · ±0,4 °C (+75 à +99,9 °C) · ±0,4 °C (-40 à -25,1 °C) · ±0,5 % v.m. (Etendue de mesure restante)",
+  "en": "±0.4 °C (-40 to -25.1 °C) · ±0.4 °C (+75 to +99.9 °C) · ±0.5 % of mv (Remaining Range) · ±0.3 °C (-25 to +74.9 °C)",
+  "ar": "±0.4 °C (-40 to -25.1 °C) · ±0.4 °C (+75 to +99.9 °C) · ±0.5 % of mv (Remaining Range) · ±0.3 °C (-25 to +74.9 °C)"
+ },
+ "-200 à +1370 °c": {
+  "fr": "-200 à +1370 °C",
+  "en": "-200 to +1370 °C",
+  "ar": "-200 to +1370 °C"
+ },
+ "± (0,3 °c + 0,3 % v.m.)": {
+  "fr": "±(0,3 °C + 0,3 % v.m.)",
+  "en": "±(0.3 °C + 0.3 % of mv)",
+  "ar": "±(0.3 °C + 0.3 % of mv)"
+ },
+ "1 x sonde numérique avec câble ou 1 x température ctn tuc, 1 x sonde numérique bluetooth ou testo smart probe, 1 x température tc de type k": {
+  "fr": "1 x sonde numérique avec câble ou 1 x température CTN TUC, 1 x sonde numérique Bluetooth ou testo Smart Probe, 1 x température TC de Type K",
+  "en": "1 x digital probe with cable or 1 x Temperature NTC TUC, 1 x digital Bluetooth probe or testo Smart Probe, 1 x Temperature TC Type K",
+  "ar": "1 x digital probe with cable or 1 x Temperature NTC TUC, 1 x digital Bluetooth probe or testo Smart Probe, 1 x Temperature TC Type K"
+ },
+ "3 aa mignon 1,5 v": {
+  "fr": "3 AA Mignon 1,5 V",
+  "en": "3 AA mignon 1.5 V",
+  "ar": "3 AA mignon 1.5 V"
+ },
+ "12 h (mes. types avec sonde à hélice)": {
+  "fr": "12 h (mes. types avec sonde à hélice)",
+  "en": "12 h (typically vane measurement)",
+  "ar": "12 h (typically vane measurement)"
+ },
+ "+161 à +204 °c": {
+  "fr": "+161 à +204 °C",
+  "en": "+161 to +204 °C",
+  "ar": "+161 to +204 °C"
+ },
+ "± (1 % v.m. + 1 °c)": {
+  "fr": "±(1 % v.m. + 1 °C)",
+  "en": "±(1 % of mv + 1 °C)",
+  "ar": "±(1 % of mv + 1 °C)"
+ },
+ "±0,5 °c (-35 à +55 °c)": {
+  "fr": "±0,5 °C (-35 à +55 °C)",
+  "en": "±0.5 °C (-35 to +55 °C)",
+  "ar": "±0.5 °C (-35 to +55 °C)"
+ },
+ "-150 à +150 hpa": {
+  "fr": "-150 à +150 hPa",
+  "en": "-150 to +150 hPa",
+  "ar": "-150 to +150 hPa"
+ },
+ "(1,01 à +150 hpa) · ±0,2 hpa + 1,5 % v.m. · ±0,05 hpa (0 à 1,00 hpa)": {
+  "fr": "(1,01 à +150 hPa) · ±0,2 hPa + 1,5 % v.m. · ±0,05 hPa (0 à 1,00 hPa)",
+  "en": "±0.05 hPa (0 to 1.00 hPa) · (1.01 to +150 hPa) · ±0.2 hPa + 1.5 % of mv",
+  "ar": "±0.05 hPa (0 to 1.00 hPa) · (1.01 to +150 hPa) · ±0.2 hPa + 1.5 % of mv"
+ },
+ "1 x sonde numérique avec câble ou 1 x température ctn tuc, 1 x sonde numérique bluetooth ou testo smart probe, 1 x pression différentielle (intégrée) , 1 x température tc de type k": {
+  "fr": "1 x sonde numérique avec câble ou 1 x température CTN TUC, 1 x sonde numérique Bluetooth ou testo Smart Probe, 1 x pression différentielle (intégrée), 1 x température TC de Type K",
+  "en": "1 x digital probe with cable or 1 x Temperature NTC TUC, 1 x digital Bluetooth probe or testo Smart Probe, 1 x differential pressure (internal), 1 x Temperature TC Type K",
+  "ar": "1 x digital probe with cable or 1 x Temperature NTC TUC, 1 x digital Bluetooth probe or testo Smart Probe, 1 x differential pressure (internal), 1 x Temperature TC Type K"
+ },
+ "2,3 mrad": {
+  "fr": "2,3 mrad",
+  "en": "2.3 mrad",
+  "ar": "2.3 mrad"
+ },
+ "1,3 mrad": {
+  "fr": "1,3 mrad",
+  "en": "1.3 mrad",
+  "ar": "1.3 mrad"
+ },
+ "±0,5 % v.m. (+70,1 à +1000 °c) ±1 digit · ±0,3 °c (-100 à +70 °c) ±1 digit · ±1 % v.m. (-200 à -100,1 °c) ±1 digit": {
+  "fr": "±0,5 % v.m. (+70,1 à +1000 °C) ±1 Digit · ±0,3 °C (-100 à +70 °C) ±1 Digit · ±1 % v.m. (-200 à -100,1 °C) ±1 Digit",
+  "en": "±0.3 °C (-100 to +70 °C) ±1 Digit · ±1 % of mv (-200 to -100.1 °C) ±1 Digit · ±0.5 % of mv (+70.1 to +1000 °C) ±1 Digit",
+  "ar": "±0.3 °C (-100 to +70 °C) ±1 Digit · ±1 % of mv (-200 to -100.1 °C) ±1 Digit · ±0.5 % of mv (+70.1 to +1000 °C) ±1 Digit"
+ },
+ "8 ans avec une cadence de mesure de 15 min., +25 °c": {
+  "fr": "8 ans avec une cadence de mesure de 15 min., +25 °C",
+  "en": "8 years at 15 min. meas. rate, +25 °C",
+  "ar": "8 years at 15 min. meas. rate, +25 °C"
+ },
+ "-30 à +60": {
+  "fr": "-30 à +60",
+  "en": "-30 to +60",
+  "ar": "-30 to +60"
+ },
+ "7,5 à 14": {
+  "fr": "7,5 à 14",
+  "en": "7.5 to 14",
+  "ar": "7.5 to 14"
+ },
+ "20 x 59 mm (ø x hauteur)": {
+  "fr": "20 x 59 mm (ø x Hauteur)",
+  "en": "20 x 59 mm (ø x height)",
+  "ar": "20 x 59 mm (ø x height)"
+ },
+ "-50 à +140 °c": {
+  "fr": "-50 à +140 °C",
+  "en": "-50 to +140 °C",
+  "ar": "-50 to +140 °C"
+ },
+ "1 s – 24 h": {
+  "fr": "1 s – 24 h",
+  "en": "1 s to 24 h",
+  "ar": "1 s to 24 h"
+ },
+ "750 heures en fonction de l'utilisation (cadence de mesure 10 sec à +121 °c)": {
+  "fr": "750 heures en fonction de l’utilisation (cadence de mesure 10 sec à +121 °C)",
+  "en": "750 operating hours (measuring cycle 10 sec at +121 °C)",
+  "ar": "750 operating hours (measuring cycle 10 sec at +121 °C)"
+ },
+ "±0,2 °c (-50 à -40 °c) · ±0,1 °c (-40 à 140 °c)": {
+  "fr": "±0,2 °C (-50 à -40 °C) · ±0,1 °C (-40 à 140 °C)",
+  "en": "±0.2 °C (-50 to -40 °C) · ±0.1 °C (-40 to 140 °C)",
+  "ar": "±0.2 °C (-50 to -40 °C) · ±0.1 °C (-40 to 140 °C)"
+ },
+ "20 x 59 (diameter x height)": {
+  "fr": "20 x 59 (diameter x height)",
+  "en": "20 x 59 (ø x height)",
+  "ar": "20 x 59 (ø x height)"
+ },
+ "20 x 63 (diameter x height)": {
+  "fr": "20 x 63 (diameter x height)",
+  "en": "20 x 63 (ø x height)",
+  "ar": "20 x 63 (ø x height)"
+ },
+ "1,5 mm": {
+  "fr": "1,5 mm",
+  "en": "1.5 mm",
+  "ar": "1.5 mm"
+ },
+ "±0,2 °c (-50 à -40 °c) · ±0,1 °c (-40 à -140 °c)": {
+  "fr": "±0,2 °C (-50 à -40 °C) · ±0,1 °C (-40 à -140 °C)",
+  "en": "±0.2 °C (-50 to -40 °C) · ±0.1 °C (-40 to -140 °C)",
+  "ar": "±0.2 °C (-50 to -40 °C) · ±0.1 °C (-40 to -140 °C)"
+ },
+ "20 x 72 (diameter x height)": {
+  "fr": "20 x 72 (diameter x height)",
+  "en": "20 x 72 (ø x height)",
+  "ar": "20 x 72 (ø x height)"
+ },
+ "±0,2 °c (-50 à -40 °c) · ±0,1 · ±0,1 °c (-40 à 140 °c)": {
+  "fr": "±0,2 °C (-50 à -40 °C) · ±0,1 · ±0,1 °C (-40 à 140 °C)",
+  "en": "±0.2 °C (-50 to -40 °C) · ±0.1 · ±0.1 °C (-40 to 140 °C)",
+  "ar": "±0.2 °C (-50 to -40 °C) · ±0.1 · ±0.1 °C (-40 to 140 °C)"
+ },
+ "±0,2 °c (-50 à -40 °c) · ±0,1 °c (-40 à +140 °c)": {
+  "fr": "±0,2 °C (-50 à -40 °C) · ±0,1 °C (-40 à +140 °C)",
+  "en": "±0.2 °C (-50 to -40 °C) · ±0.1 °C (-40 to +140 °C)",
+  "ar": "±0.2 °C (-50 to -40 °C) · ±0.1 °C (-40 to +140 °C)"
+ },
+ "± (0,3 °c + 0,1 % v.m.) ±1 digit": {
+  "fr": "±(0,3 °C + 0,1 % v.m.) ±1 Digit",
+  "en": "±(0.3 °C + 0.1 % of m.v.) ±1 Digit",
+  "ar": "±(0.3 °C + 0.1 % of m.v.) ±1 Digit"
+ },
+ "0 à +200 hpa": {
+  "fr": "0 à +200 hPa",
+  "en": "0 to +200 hPa",
+  "ar": "0 to +200 hPa"
+ },
+ "± (0,3 pa + 1 % v.m.) ±1 digit (0 à 25 hpa) · ± (0,1 hpa + 1,5 % v.m.) ±1 digit (25,001 à 200 hpa)": {
+  "fr": "±(0,3 Pa + 1 % v.m.) ±1 Digit (0 à 25 hPa) · ±(0,1 hPa + 1,5 % v.m.) ±1 Digit (25,001 à 200 hPa)",
+  "en": "±(0.3 Pa + 1 % of m.v.) ±1 Digit (0 to 25 hPa) · ±(0.1 hPa + 1.5 % of m.v.) ±1 Digit (25.001 to 200 hPa)",
+  "ar": "±(0.3 Pa + 1 % of m.v.) ±1 Digit (0 to 25 hPa) · ±(0.1 hPa + 1.5 % of m.v.) ±1 Digit (25.001 to 200 hPa)"
+ },
+ "0,001 hpa": {
+  "fr": "0,001 hPa",
+  "en": "0.001 hPa",
+  "ar": "0.001 hPa"
+ },
+ "700 à 1100 hpa": {
+  "fr": "700 à 1100 hPa",
+  "en": "700 to 1100 hPa",
+  "ar": "700 to 1100 hPa"
+ },
+ "appareil photo principal : 8,0 mp; appareil photo frontal : 5,0 mp": {
+  "fr": "Appareil photo principal : 8,0 MP; Appareil photo frontal : 5,0 MP",
+  "en": "Appareil photo principal : 8.0 MP; Appareil photo frontal : 5.0 MP",
+  "ar": "Appareil photo principal : 8.0 MP; Appareil photo frontal : 5.0 MP"
+ },
+ "20 x 63 mm (ø x hauteur)": {
+  "fr": "20 x 63 mm (ø x Hauteur)",
+  "en": "20 x 63 mm (ø x height)",
+  "ar": "20 x 63 mm (ø x height)"
+ },
+ "20 x 72 mm (ø x hauteur)": {
+  "fr": "20 x 72 mm (ø x Hauteur)",
+  "en": "20 x 72 mm (ø x height)",
+  "ar": "20 x 72 mm (ø x height)"
+ },
+ "+116 à +154 °c": {
+  "fr": "+116 à +154 °C",
+  "en": "+116 to +154 °C",
+  "ar": "+116 to +154 °C"
+ },
+ "+171 à +193 °c": {
+  "fr": "+171 à +193 °C",
+  "en": "+171 to +193 °C",
+  "ar": "+171 to +193 °C"
+ },
+ "± (1 °c + 1 % v.m.)": {
+  "fr": "±(1 °C + 1 % v.m.)",
+  "en": "±(1 °C + 1 % of mv)",
+  "ar": "±(1 °C + 1 % of mv)"
+ },
+ "±0,2 °c (-35 à +70 °c) ±1 digit": {
+  "fr": "±0,2 °C (-35 à +70 °C) ±1 Digit",
+  "en": "±0.2 °C (-35 to +70 °C) ±1 Digit",
+  "ar": "±0.2 °C (-35 to +70 °C) ±1 Digit"
+ },
+ "directive ue 2014 / 30 / ce; 2011 / 65 / eu; en 12830": {
+  "fr": "Directive UE 2014/30/CE; 2011/65/EU; EN 12830",
+  "en": "EU-guideline 2014/30/EU; 2011/65/EU; EN 12830",
+  "ar": "EU-guideline 2014/30/EU; 2011/65/EU; EN 12830"
+ },
+ "90 g (avec piles et capuchon de protection)": {
+  "fr": "90 g (avec piles et capuchon de protection)",
+  "en": "90 g (with batteries and protective cap)",
+  "ar": "90 g (with batteries and protective cap)"
+ },
+ "0 à 100 hpa": {
+  "fr": "0 à 100 hPa",
+  "en": "0 to 100 hPa",
+  "ar": "0 to 100 hPa"
+ },
+ "± (0,1 hpa + 1,5 % v.m.) (1,01 à 100 hpa) · ±0,05 hpa (0,31 à 1,00 hpa) · ±0,03 hpa (0 à 0,30 hpa)": {
+  "fr": "±(0,1 hPa + 1,5 % v.m.) (1,01 à 100 hPa) · ±0,05 hPa (0,31 à 1,00 hPa) · ±0,03 hPa (0 à 0,30 hPa)",
+  "en": "±0.03 hPa (0 to 0.30 hPa) · ±(0.1 hPa + 1.5 % of mv) (1.01 to 100 hPa) · ±0.05 hPa (0.31 to 1.00 hPa)",
+  "ar": "±0.03 hPa (0 to 0.30 hPa) · ±(0.1 hPa + 1.5 % of mv) (1.01 to 100 hPa) · ±0.05 hPa (0.31 to 1.00 hPa)"
+ },
+ "-20 à +50 °ctd · 0 à +50 °c": {
+  "fr": "-20 à +50 °Ctd · 0 à +50 °C",
+  "en": "-20 to +50 °Ctd · 0 to +50 °C",
+  "ar": "-20 to +50 °Ctd · 0 to +50 °C"
+ },
+ "±0,5 °c (à +25 °c)": {
+  "fr": "±0,5 °C (à +25 °C)",
+  "en": "±0.5 °C (at +25 °C)",
+  "ar": "±0.5 °C (at +25 °C)"
+ },
+ "10 à 95 %hr": {
+  "fr": "10 à 95 %HR",
+  "en": "10 to 95 %RH",
+  "ar": "10 to 95 %RH"
+ },
+ "stabilité à long terme: ±1 %hr / an · ±3 %hr (10 à 95 %hr) · ±0,06 %hr / k (k=1)": {
+  "fr": "stabilité à long terme: ±1 %HR / an · ±3 %HR (10 à 95 %HR) · ±0,06 %HR/K (k=1)",
+  "en": "long-term stability: ±1 %RH / year · ±3 %RH (10 to 95 %RH) · ±0.06 %RH/K (k=1)",
+  "ar": "long-term stability: ±1 %RH / year · ±3 %RH (10 to 95 %RH) · ±0.06 %RH/K (k=1)"
+ },
+ "env. 1 an": {
+  "fr": "env. 1 an",
+  "en": "approx. 1 year",
+  "ar": "approx. 1 year"
+ },
+ "±0,4 °c (-20 à +55 °c) ±1 digit": {
+  "fr": "±0,4 °C (-20 à +55 °C) ±1 Digit",
+  "en": "±0.4 °C (-20 to +55 °C) ±1 Digit",
+  "ar": "±0.4 °C (-20 to +55 °C) ±1 Digit"
+ },
+ "< ±1 %hr de dérive par an at +25 °c · ±2 %hr (2 à 98 %hr) at +25 °c · ±0,03 %hr / k ±1 digit": {
+  "fr": "< ±1 %HR de dérive par an AT +25 °C · ±2 %HR (2 à 98 %HR) at +25 °C · ±0,03 %HR/K ±1 Digit",
+  "en": "< ±1 %RH / year drift at +25 °C · ±2 %RH (2 to 98 %RH) at +25 °C · ±0.03 %RH/K ±1 Digit",
+  "ar": "< ±1 %RH / year drift at +25 °C · ±2 %RH (2 to 98 %RH) at +25 °C · ±0.03 %RH/K ±1 Digit"
+ },
+ "-40 à +50 °ctd": {
+  "fr": "-40 à +50 °Ctd",
+  "en": "-40 to +50 °Ctd",
+  "ar": "-40 to +50 °Ctd"
+ },
+ "+0,03 %hr / k ±1 digit": {
+  "fr": "+0,03 %HR/K ±1 Digit",
+  "en": "+0.03 %RH/K ±1 Digit",
+  "ar": "+0.03 %RH/K ±1 Digit"
+ },
+ "3 ans avec une cadence de mesure de 15 min., +25 °c": {
+  "fr": "3 ans avec une cadence de mesure de 15 min., +25 °C",
+  "en": "3 years at 15 min. meas. rate, +25 °C",
+  "ar": "3 years at 15 min. meas. rate, +25 °C"
+ },
+ "± (0,5 + 0,3 % v.m.) (-50 à +1000 °c) ¹⁾": {
+  "fr": "±(0,5 + 0,3 % v.m.) (-50 à +1000 °C) ¹⁾",
+  "en": "±(0.5 + 0.3 % of mv) (-50 to +1000 °C) ¹⁾",
+  "ar": "±(0.5 + 0.3 % of mv) (-50 to +1000 °C) ¹⁾"
+ },
+ "1 °c (etendue de mesure restante) · 0,1 °c (-50 à +499,9 °c)": {
+  "fr": "1 °C (Etendue de mesure restante) · 0,1 °C (-50 à +499,9 °C)",
+  "en": "1 °C (Remaining Range) · 0.1 °C (-50 to +499.9 °C)",
+  "ar": "1 °C (Remaining Range) · 0.1 °C (-50 to +499.9 °C)"
+ },
+ "1) précision d' instrument sans precision de la sonde": {
+  "fr": "1) Précision d’ instrument sans precision de la sonde",
+  "en": "1) Accuracy of instrument without accuracy of probe",
+  "ar": "1) Accuracy of instrument without accuracy of probe"
+ },
+ "sonde de contact: ± (1,0 °c + 1 % v.m.) · sonde d'ambiance, sonde d'immersion / de pénétration: ±1 % v.m. (etendue de mesure restante) · sonde d'ambiance, sonde d'immersion / de pénétration: ±1,0 °c (-50 à +100 °c)": {
+  "fr": "Sonde de contact: ±(1,0 °C + 1 % v.m.) · Sonde d’ambiance, sonde d’immersion/de pénétration: ±1 % v.m. (Etendue de mesure restante) · Sonde d’ambiance, sonde d’immersion/de pénétration: ±1,0 °C (-50 à +100 °C)",
+  "en": "air probe, immersion/penetration probe: ±1.0 °C (-50 to +100 °C) · surface probe: ±(1.0 °C + 1 % of mv) · air probe, immersion/penetration probe: ±1 % of mv (Remaining Range)",
+  "ar": "air probe, immersion/penetration probe: ±1.0 °C (-50 to +100 °C) · surface probe: ±(1.0 °C + 1 % of mv) · air probe, immersion/penetration probe: ±1 % of mv (Remaining Range)"
+ },
+ "étui de transport testo smart case (température) : 250 g · poignée bluetooth®: 88 g · sonde de contact: 22 g · sonde d'ambiance, sonde d'immersion / de pénétration: 11 g": {
+  "fr": "Étui de transport testo Smart Case (température): 250 g · Poignée Bluetooth®: 88 g · Sonde de contact: 22 g · Sonde d’ambiance, sonde d’immersion/de pénétration: 11 g",
+  "en": "testo Smart Case (temperature): 250 g · air probe, immersion/penetration probe: 11 g · Bluetooth® handle: 88 g · surface probe: 22 g",
+  "ar": "testo Smart Case (temperature): 250 g · air probe, immersion/penetration probe: 11 g · Bluetooth® handle: 88 g · surface probe: 22 g"
+ },
+ "diamètre du tube de sonde : 4 mm (sonde d'ambiance) , 5 mm (sonde d'immersion / de pénétration) , 5 mm (sonde de contact) · poignée bluetooth®: 129 x 31 x 31 mm (l x i x h) · étui de transport testo smart case (température) : 250 x 180 x 70 · diamètre de la pointe de sonde : 3 mm (sonde d'immersion / de pénétration) , 12 mm (sonde de contact)": {
+  "fr": "Diamètre du tube de sonde : 4 mm (sonde d’ambiance) , 5 mm (sonde d’immersion / de pénétration) , 5 mm (sonde de contact) · Poignée Bluetooth®: 129 x 31 x 31 mm (L x I x H) · Étui de transport testo Smart Case (température) : 250 x 180 x 70 · Diamètre de la pointe de sonde : 3 mm (sonde d’immersion / de pénétration) , 12 mm (sonde de contact)",
+  "en": "Bluetooth® handle: 129 x 31 x 31 mm (LxWxH) · diameter probe tip: 3 mm (immersion/penetration probe), 12 mm (surface probe) · diameter probe shaft: 4 mm (air probe), 5 mm (immersion/penetration probe), 5 mm (surface probe) · testo Smart Case (temperature): 250 x 180 x 70",
+  "ar": "Bluetooth® handle: 129 x 31 x 31 mm (LxWxH) · diameter probe tip: 3 mm (immersion/penetration probe), 12 mm (surface probe) · diameter probe shaft: 4 mm (air probe), 5 mm (immersion/penetration probe), 5 mm (surface probe) · testo Smart Case (temperature): 250 x 180 x 70"
+ },
+ "requiere ios 12.0 o superior; requiert android 6.0 ou plus récent; requiert un terminal mobile doté d'un système bluetooth 4.0": {
+  "fr": "requiere iOS 12.0 o superior; requiert Android 6.0 ou plus récent; requiert un terminal mobile doté d'un système Bluetooth 4.0",
+  "en": "requires iOS 12.0 or newer; requires Android 6.0 or newer; requires mobile end device with Bluetooth 4.0",
+  "ar": "requires iOS 12.0 or newer; requires Android 6.0 or newer; requires mobile end device with Bluetooth 4.0"
+ },
+ "connexion verrouillable avec 4 sondes standard testo 915i; connexion enfichable standard avec les sondes tc courantes": {
+  "fr": "Connexion verrouillable avec 4 sondes standard testo 915i; Connexion enfichable standard avec les sondes TC courantes",
+  "en": "Lockable connection to 4 standard probes testo 915i; Standard plug-in connection to other common TC probes",
+  "ar": "Lockable connection to 4 standard probes testo 915i; Standard plug-in connection to other common TC probes"
+ },
+ "+40 à +200 °c": {
+  "fr": "+40 à +200 °C",
+  "en": "+40 to +200 °C",
+  "ar": "+40 to +200 °C"
+ },
+ "±1,5": {
+  "fr": "±1,5",
+  "en": "±1.5",
+  "ar": "±1.5"
+ },
+ "0,0 à 40,0 % tpm": {
+  "fr": "0,0 à 40,0 % TPM",
+  "en": "0.0 to 40.0 % TPM",
+  "ar": "0.0 to 40.0 % TPM"
+ },
+ "0,1 % tpm": {
+  "fr": "0,1 % TPM",
+  "en": "0.1 % TPM",
+  "ar": "0.1 % TPM"
+ },
+ "170 x 50 x 300 mm ( (l x i x h) )": {
+  "fr": "170 x 50 x 300 mm ((L x I x H))",
+  "en": "170 x 50 x 300 mm ((LxWxH))",
+  "ar": "170 x 50 x 300 mm ((LxWxH))"
+ },
+ "fibre de verre abs / abs-pc 10 %": {
+  "fr": "Fibre de verre ABS / ABS-PC 10 %",
+  "en": "TPE/PC + ABS/PC + ABS + 10% GF",
+  "ar": "TPE/PC + ABS/PC + ABS + 10% GF"
+ },
+ "limites tpm inférieure et supérieure pouvant être définies librement (y compris les limites se référant au bac de mesure) x, alarme visuelle au moyen du rétro-éclairage de l'écran en 3 couleurs (vert, orange, rouge) , clignotement des valeurs jusqu'à la fin de la mesure et éclairage de l'écran (autohold)": {
+  "fr": "Limites TPM inférieure et supérieure pouvant être définies librement (y compris les limites se référant au bac de mesure)*, alarme visuelle au moyen du rétro-éclairage de l’écran en 3 couleurs (vert, orange, rouge), clignotement des valeurs jusqu’à la fin de la mesure et éclairage de l’écran (AutoHold)",
+  "en": "Upper and lower TPM limit value freely adjustable (incl. measuring basin-related limit values)*, visual alarm via 3-colour display backlighting (green, orange/red), values and illumination flash in the display until the measurement is ended (Auto Hold)",
+  "ar": "Upper and lower TPM limit value freely adjustable (incl. measuring basin-related limit values)*, visual alarm via 3-colour display backlighting (green, orange/red), values and illumination flash in the display until the measurement is ended (Auto Hold)"
+ },
+ "bluetooth désactivé : env. 25 h en fonctionnement continu (correspond à env. 500 mesures; bluetooth activé : env. 20 h en fonctionnement continu (correspond à env. 400 mesures)": {
+  "fr": "Bluetooth désactivé : env. 25 h en fonctionnement continu (correspond à env. 500 mesures; Bluetooth activé : env. 20 h en fonctionnement continu (correspond à env. 400 mesures)",
+  "en": "Bluetooth deactivated: approx. 25 h continuous operation (corresponds to approx. 500 measurements); Bluetooth activated: approx. 20 h continuous operation (corresponds to approx. 400 measurements)",
+  "ar": "Bluetooth deactivated: approx. 25 h continuous operation (corresponds to approx. 500 measurements); Bluetooth activated: approx. 20 h continuous operation (corresponds to approx. 400 measurements)"
+ },
+ "0 à 20000 micron · 0 à 26,66 mbar /": {
+  "fr": "0 à 20000 micron · 0 à 26,66 mbar /",
+  "en": "0 to 20000 micron · 0 to 26.66 mbar /",
+  "ar": "0 to 20000 micron · 0 to 26.66 mbar /"
+ },
+ "±10 micron + 10 % v.m. (100 à 1000 micron)": {
+  "fr": "±10 micron + 10 % v.m. (100 à 1000 micron)",
+  "en": "±10 micron + 10 % of mv (100 to 1000 micron)",
+  "ar": "±10 micron + 10 % of mv (100 to 1000 micron)"
+ },
+ "1 micron (0 à 1000 micron) / · 100 micron (2000 à 5000 micron) / · 10 micron (1000 à 2000 micron) /": {
+  "fr": "1 micron (0 à 1000 micron) / · 100 micron (2000 à 5000 micron) / · 10 micron (1000 à 2000 micron) /",
+  "en": "100 micron (2000 to 5000 micron) / · 1 micron (0 to 1000 micron) / · 10 micron (1000 to 2000 micron) /",
+  "ar": "100 micron (2000 to 5000 micron) / · 1 micron (0 to 1000 micron) / · 10 micron (1000 to 2000 micron) /"
+ },
+ "absolue: 6,0 bar / 87 psi · (relative: 5,0 bar / 72 psi)": {
+  "fr": "absolue: 6,0 bar / 87 psi · (relative: 5,0 bar / 72 psi)",
+  "en": "absolute: 6.0 bar / 87 psi · (relative: 5.0 bar / 72 psi)",
+  "ar": "absolute: 6.0 bar / 87 psi · (relative: 5.0 bar / 72 psi)"
+ },
+ "150 x 32 x 31 mm (l x i x h)": {
+  "fr": "150 x 32 x 31 mm (L x I x H)",
+  "en": "150 x 32 x 31 mm (LxWxH)",
+  "ar": "150 x 32 x 31 mm (LxWxH)"
+ },
+ "± (10 micron + 10 % v.m.) (100 à 1000 micron)": {
+  "fr": "±(10 micron + 10 % v.m.) (100 à 1000 micron)",
+  "en": "±(10 micron + 10 % of mv) (100 to 1000 micron)",
+  "ar": "±(10 micron + 10 % of mv) (100 to 1000 micron)"
+ },
+ "50 h (sans bluetooth / rétro-éclairage)": {
+  "fr": "50 h (sans Bluetooth / rétro-éclairage)",
+  "en": "50 hrs (without Bluetooth/backlighting)",
+  "ar": "50 hrs (without Bluetooth/backlighting)"
+ },
+ "2 x (7 / 16\" – unf / ¼” sae)": {
+  "fr": "2 × ( 7/16\" – UNF / ¼” SAE)",
+  "en": "2 x 7/16“ UNF",
+  "ar": "2 x 7/16“ UNF"
+ },
+ "technologie radio bluetooth® 4.0": {
+  "fr": "Technologie radio Bluetooth® 4.0",
+  "en": "Bluetooth® 4.0 wireless technology",
+  "ar": "Bluetooth® 4.0 wireless technology"
+ },
+ "-50 à +275 °c": {
+  "fr": "-50 à +275 °C",
+  "en": "-50 to +275 °C",
+  "ar": "-50 to +275 °C"
+ },
+ "±1 % v.m. (+100 à +275 °c) · ±1,0 °c (-50 à -30,10 °c) · ±0,5 °c (-30 à +99,9 °c)": {
+  "fr": "±1 % v.m. (+100 à +275 °C) · ±1,0 °C (-50 à -30,10 °C) · ±0,5 °C (-30 à +99,9 °C)",
+  "en": "±1 % of mv (+100 to +275 °C) · ±1.0 °C (-50 to -30.10 °C) · ±0.5 °C (-30 to +99.9 °C)",
+  "ar": "±1 % of mv (+100 to +275 °C) · ±1.0 °C (-50 to -30.10 °C) · ±0.5 °C (-30 to +99.9 °C)"
+ },
+ "2,3 mm": {
+  "fr": "2,3 mm",
+  "en": "2.3 mm",
+  "ar": "2.3 mm"
+ },
+ "pile bouton 3 v (cr 2032)": {
+  "fr": "Pile bouton 3 V (CR 2032)",
+  "en": "3V button cell (CR 2032)",
+  "ar": "3V button cell (CR 2032)"
+ },
+ "2,5 %hr (5 à 95 %hr)": {
+  "fr": "2,5 %HR (5 à 95 %HR)",
+  "en": "2.5 %RH (5 to 95 %RH)",
+  "ar": "2.5 %RH (5 to 95 %RH)"
+ },
+ "208 x 60 x 28 mm · sonde: 12 x 15 mm": {
+  "fr": "208 x 60 x 28 mm · Sonde: 12 x 15 mm",
+  "en": "208 x 60 x 28 mm · Probe: 12 x 15 mm",
+  "ar": "208 x 60 x 28 mm · Probe: 12 x 15 mm"
+ },
+ "± (100 ppm + 5 % v.m.)": {
+  "fr": "±(100 ppm + 5 % v.m.)",
+  "en": "±(100 ppm + 5 % of mv)",
+  "ar": "±(100 ppm + 5 % of mv)"
+ },
+ "-20 à +500 °c": {
+  "fr": "-20 à +500 °C",
+  "en": "-20 to +500 °C",
+  "ar": "-20 to +500 °C"
+ },
+ "±1 °c (0 à +100 °c)": {
+  "fr": "±1 °C (0 à +100 °C)",
+  "en": "±1 °C (0 to +100 °C)",
+  "ar": "±1 °C (0 to +100 °C)"
+ },
+ "0,2 °c": {
+  "fr": "0,2 °C",
+  "en": "0.2 °C",
+  "ar": "0.2 °C"
+ },
+ "1,0 à 1000,0 v": {
+  "fr": "1,0 à 1000,0 V",
+  "en": "1.0 to 1000.0 V",
+  "ar": "1.0 to 1000.0 V"
+ },
+ "± (0,8 % v.m. + 3 digit)": {
+  "fr": "± (0,8 % v.m. + 3 Digit)",
+  "en": "± (0.8 % of mv + 3 Digit)",
+  "ar": "± (0.8 % of mv + 3 Digit)"
+ },
+ "1,0 mv à 1000,0 v": {
+  "fr": "1,0 mV à 1000,0 V",
+  "en": "1.0 mV to 1000.0 V",
+  "ar": "1.0 mV to 1000.0 V"
+ },
+ "± (1 % v.m. + 3 digit)": {
+  "fr": "± (1 % v.m. + 3 Digit)",
+  "en": "± (1 % of mv + 3 Digit)",
+  "ar": "± (1 % of mv + 3 Digit)"
+ },
+ "0,1 (câbles de mesure) · 0,1 (pince)": {
+  "fr": "0,1 (Câbles de mesure) · 0,1 (Pince)",
+  "en": "0.1 (clamp) · 0.1 (measuring cables)",
+  "ar": "0.1 (clamp) · 0.1 (measuring cables)"
+ },
+ "± (2 % v.m. + 5 digit) (pince) · ± (2 % v.m. + 5 digit) (câbles de mesure)": {
+  "fr": "± (2 % v.m. + 5 Digit) (Pince) · ± (2 % v.m. + 5 Digit) (Câbles de mesure)",
+  "en": "± (2 % of mv + 5 Digit) (measuring cables) · ± (2 % of mv + 5 Digit) (clamp)",
+  "ar": "± (2 % of mv + 5 Digit) (measuring cables) · ± (2 % of mv + 5 Digit) (clamp)"
+ },
+ "0,1 μa (câbles de mesure) · 0,01 a (pince)": {
+  "fr": "0,1 μA (Câbles de mesure) · 0,01 A (Pince)",
+  "en": "0.01 A (clamp) · 0.1 μA (measuring cables)",
+  "ar": "0.01 A (clamp) · 0.1 μA (measuring cables)"
+ },
+ "± (1,5 % v.m. + 5 digit) (câbles de mesure) · ± (2 % v.m. + 5 digit) (pince)": {
+  "fr": "± (1,5 % v.m. + 5 Digit) (Câbles de mesure) · ± (2 % v.m. + 5 Digit) (Pince)",
+  "en": "± (2 % of mv + 5 Digit) (clamp) · ± (1.5 % of mv + 5 Digit) (measuring cables)",
+  "ar": "± (2 % of mv + 5 Digit) (clamp) · ± (1.5 % of mv + 5 Digit) (measuring cables)"
+ },
+ "max. 0,01 ohm": {
+  "fr": "max. 0,01 Ohm",
+  "en": "max. 0.01 Ohm",
+  "ar": "max. 0.01 Ohm"
+ },
+ "0,10 à 60,0 mohm": {
+  "fr": "0,10 à 60,0 MOhm",
+  "en": "0.10 to 60.0 MOhm",
+  "ar": "0.10 to 60.0 MOhm"
+ },
+ "± (1,5 % v.m. + 3 digit)": {
+  "fr": "± (1,5 % v.m. + 3 Digit)",
+  "en": "± (1.5 % of mv + 3 Digit)",
+  "ar": "± (1.5 % of mv + 3 Digit)"
+ },
+ "max. 0,01 nf": {
+  "fr": "max. 0,01 nF",
+  "en": "max. 0.01 nF",
+  "ar": "max. 0.01 nF"
+ },
+ "0,001 μf à 60000,00 μf": {
+  "fr": "0,001 μF à 60000,00 μF",
+  "en": "0.001 μF to 60000.00 μF",
+  "ar": "0.001 μF to 60000.00 μF"
+ },
+ "± (1,5 % v.m. + 5 digit)": {
+  "fr": "± (1,5 % v.m. + 5 Digit)",
+  "en": "± (1.5 % of mv + 5 Digit)",
+  "ar": "± (1.5 % of mv + 5 Digit)"
+ },
+ "max. 0,1 hz": {
+  "fr": "max. 0,1 Hz",
+  "en": "max. 0.1 Hz",
+  "ar": "max. 0.1 Hz"
+ },
+ "0,00 hz à -10 khz": {
+  "fr": "0,00 Hz à -10 kHz",
+  "en": "0.00 Hz to -10 kHz",
+  "ar": "0.00 Hz to -10 kHz"
+ },
+ "± (1 % v.m. + 1 digit)": {
+  "fr": "± (1 % v.m. + 1 Digit)",
+  "en": "± (1 % of mv + 1 Digit)",
+  "ar": "± (1 % of mv + 1 Digit)"
+ },
+ "0,1 w à 600 kw": {
+  "fr": "0,1 W à 600 kW",
+  "en": "0.1 W to 600 kW",
+  "ar": "0.1 W to 600 kW"
+ },
+ "± (5 % v.m. + 5 digit)": {
+  "fr": "± (5 % v.m. + 5 Digit)",
+  "en": "± (5 % of mv + 5 Digit)",
+  "ar": "± (5 % of mv + 5 Digit)"
+ },
+ "0,1 w": {
+  "fr": "0,1 W",
+  "en": "0.1 W",
+  "ar": "0.1 W"
+ },
+ "0,1 à 600,0 kvar": {
+  "fr": "0,1 à 600,0 kvar",
+  "en": "0.1 to 600.0 kvar",
+  "ar": "0.1 to 600.0 kvar"
+ },
+ "± (10 % v.m. + 5 digit)": {
+  "fr": "± (10 % v.m. + 5 Digit)",
+  "en": "± (10 % of mv + 5 Digit)",
+  "ar": "± (10 % of mv + 5 Digit)"
+ },
+ "0,1 var": {
+  "fr": "0,1 var",
+  "en": "0.1 var",
+  "ar": "0.1 var"
+ },
+ "0,1 va à 600,0 kva": {
+  "fr": "0,1 VA à 600,0 kVA",
+  "en": "0.1 VA to 600.0 kVA",
+  "ar": "0.1 VA to 600.0 kVA"
+ },
+ "0,1 va": {
+  "fr": "0,1 VA",
+  "en": "0.1 VA",
+  "ar": "0.1 VA"
+ },
+ "0,1 w à 600,0 kw": {
+  "fr": "0,1 W à 600,0 kW",
+  "en": "0.1 W to 600.0 kW",
+  "ar": "0.1 W to 600.0 kW"
+ },
+ "max. 0,1 w": {
+  "fr": "max. 0,1 W",
+  "en": "max. 0.1 W",
+  "ar": "max. 0.1 W"
+ },
+ "-1,00 à +1,00": {
+  "fr": "-1,00 à +1,00",
+  "en": "-1.00 to +1.00",
+  "ar": "-1.00 to +1.00"
+ },
+ "0,01": {
+  "fr": "0,01",
+  "en": "0.01",
+  "ar": "0.01"
+ },
+ "0 à 80,0 %hr": {
+  "fr": "0 à 80,0 %HR",
+  "en": "0 to 80.0 %rH",
+  "ar": "0 to 80.0 %rH"
+ },
+ "1x_temperature_probe_adapter_thermocouple_type_k": {
+  "fr": "1x_temperature_probe_adapter_thermocouple_type_k",
+  "en": "1 x temperature probe (adapter required for type K thermocouples)",
+  "ar": "1 x temperature probe (adapter required for type K thermocouples)"
+ },
+ "2 bornes de mesure": {
+  "fr": "2 bornes de mesure",
+  "en": "2 measuring jacks",
+  "ar": "2 measuring jacks"
+ },
+ "-15 à +60 °c": {
+  "fr": "-15 à +60 °C",
+  "en": "-15 to +60 °C",
+  "ar": "-15 to +60 °C"
+ },
+ "cat iv 600 v; cat iii 1000 v": {
+  "fr": "CAT IV 600 V; CAT III 1000 V",
+  "en": "CAT IV 600V; CAT III 1000V",
+  "ar": "CAT IV 600V; CAT III 1000V"
+ },
+ "0 à 100000 lux": {
+  "fr": "0 à 100000 Lux",
+  "en": "0 to 100000 Lux",
+  "ar": "0 to 100000 Lux"
+ },
+ "f1 = 6% = adaptation v (lambda) · classe c ¹⁾ · f2 = 5% = évaluation conforme cos · ±3% v.m.±1digit · total ≤ 15%": {
+  "fr": "F1 = 6% = adaptation V (Lambda) · Classe C ¹⁾ · F2 = 5% = évaluation conforme cos · ±3% v.m.±1Digit · total ≤ 15%",
+  "en": "±3% of mv±1Digit · F2 = 5% = cos-true evaluation · F1 = 6% = V(Lambda) adjustment · Total ≤ 15% · Class C ¹⁾",
+  "ar": "±3% of mv±1Digit · F2 = 5% = cos-true evaluation · F1 = 6% = V(Lambda) adjustment · Total ≤ 15% · Class C ¹⁾"
+ },
+ "0,1 lux (< 10000 lux) · 1 lux (≥ 10000 lux)": {
+  "fr": "0,1 Lux (< 10000 Lux) · 1 Lux (≥ 10000 Lux)",
+  "en": "0.1 Lux (< 10000 Lux) · 1 Lux (≥ 10000 Lux)",
+  "ar": "0.1 Lux (< 10000 Lux) · 1 Lux (≥ 10000 Lux)"
+ },
+ "1) selon din 5032-7 / en 13032-1, annexe b": {
+  "fr": "1) selon DIN 5032-7 /EN 13032-1, annexe B",
+  "en": "1) corresponding to DIN 5032-7 / EN 13032-1, Appendix B",
+  "ar": "1) corresponding to DIN 5032-7 / EN 13032-1, Appendix B"
+ },
+ "149 x 60 x 28 mm · sonde: 134 x 54 x 23 mm": {
+  "fr": "149 x 60 x 28 mm · Sonde: 134 x 54 x 23 mm",
+  "en": "Probe: 134 x 54 x 23 mm · 149 x 60 x 28 mm",
+  "ar": "Probe: 134 x 54 x 23 mm · 149 x 60 x 28 mm"
+ },
+ "sonde: 0 à +50 °c · -10 à +50 °c": {
+  "fr": "Sonde: 0 à +50 °C · -10 à +50 °C",
+  "en": "Probe: 0 to +50 °C · -10 to +50 °C",
+  "ar": "Probe: 0 to +50 °C · -10 to +50 °C"
+ },
+ "1,4 m": {
+  "fr": "1,4 m",
+  "en": "1.4 m",
+  "ar": "1.4 m"
+ },
+ "0 à 99999 lux · 0 à 9300 ftc": {
+  "fr": "0 à 99999 Lux · 0 à 9300 ftc",
+  "en": "0 to 99999 Lux · 0 to 9300 ftc",
+  "ar": "0 to 99999 Lux · 0 to 9300 ftc"
+ },
+ "±3 lux ou ±3 % (par comparaison à un appareil de référence avec un angle d'incidence de lumière de 90°)": {
+  "fr": "±3 Lux ou ±3 % (par comparaison à un appareil de référence avec un angle d’incidence de lumière de 90°)",
+  "en": "±3 Lux or ±3 % (compared to reference instrument at 90° light irradiation)",
+  "ar": "±3 Lux or ±3 % (compared to reference instrument at 90° light irradiation)"
+ },
+ "1 lux (0 à 19999 lux) · 10 lux (etendue de mesure restante)": {
+  "fr": "1 Lux (0 à 19999 Lux) · 10 Lux (Etendue de mesure restante)",
+  "en": "1 Lux (0 to 19999 Lux) · 10 Lux (Remaining Range)",
+  "ar": "1 Lux (0 to 19999 Lux) · 10 Lux (Remaining Range)"
+ },
+ "95 g (avec piles et capuchon de protection)": {
+  "fr": "95 g (avec piles et capuchon de protection)",
+  "en": "95 g (incl. batteries and protective cap)",
+  "ar": "95 g (incl. batteries and protective cap)"
+ },
+ "200 h (typique, sans éclairage de l'écran)": {
+  "fr": "200 h (typique, sans éclairage de l’écran)",
+  "en": "200 h (average, without display illumination)",
+  "ar": "200 h (average, without display illumination)"
+ },
+ "119 x 46 x 25 mm (avec capuchon de protection)": {
+  "fr": "119 x 46 x 25 mm (avec capuchon de protection)",
+  "en": "119 x 46 x 25 mm (incl. protective cap)",
+  "ar": "119 x 46 x 25 mm (incl. protective cap)"
+ },
+ "300 à 1200 hpa": {
+  "fr": "300 à 1200 hPa",
+  "en": "300 to 1200 hPa",
+  "ar": "300 to 1200 hPa"
+ },
+ "-1 à +60 bar": {
+  "fr": "-1 à +60 bar",
+  "en": "-1 to +60 bar",
+  "ar": "-1 to +60 bar"
+ },
+ "156,6 g": {
+  "fr": "156,6 g",
+  "en": "156.6 g",
+  "ar": "156.6 g"
+ },
+ "1 ppm à 1,0 %vol ch₄": {
+  "fr": "1 ppm à 1,0 %vol CH₄",
+  "en": "1 ppm to 1.0 %vol CH₄",
+  "ar": "1 ppm to 1.0 %vol CH₄"
+ },
+ "1 ppm / 0,1 %vol (> 999 ppm)": {
+  "fr": "1 ppm / 0,1 %vol (> 999 ppm)",
+  "en": "1 ppm / 0.1 Vol.% (> 999 ppm)",
+  "ar": "1 ppm / 0.1 Vol.% (> 999 ppm)"
+ },
+ "1 ppm à 1,0 %vol c₃h₈": {
+  "fr": "1 ppm à 1,0 %vol C₃H₈",
+  "en": "1 ppm to 1.0 %vol C₃H₈",
+  "ar": "1 ppm to 1.0 %vol C₃H₈"
+ },
+ "1 ppm à 1,0 %vol c₄h₁₀": {
+  "fr": "1 ppm à 1,0 %vol C₄H₁₀",
+  "en": "1 ppm to 1.0 %vol C₄H₁₀",
+  "ar": "1 ppm to 1.0 %vol C₄H₁₀"
+ },
+ "1 ppm à 1,0 %vol h₂": {
+  "fr": "1 ppm à 1,0 %vol H₂",
+  "en": "1 ppm to 1.0 %vol H₂",
+  "ar": "1 ppm to 1.0 %vol H₂"
+ },
+ "0 à 80 %hr": {
+  "fr": "0 à 80 %HR",
+  "en": "0 to 80 %RH",
+  "ar": "0 to 80 %RH"
+ },
+ "135 x 60 x 28 mm (l x i x h)": {
+  "fr": "135 x 60 x 28 mm (L x I x H)",
+  "en": "135 x 60 x 28 mm (LxWxH)",
+  "ar": "135 x 60 x 28 mm (LxWxH)"
+ },
+ "<2 s": {
+  "fr": "<2 s",
+  "en": "<2 sec",
+  "ar": "<2 sec"
+ },
+ "2 ans dans des conditions d'utilisation normales": {
+  "fr": "2 ans dans des conditions d’utilisation normales",
+  "en": "2 years under normal usage",
+  "ar": "2 years under normal usage"
+ },
+ "14 g / a – low; 3 g / a – high": {
+  "fr": "14 g/a – low; 3 g/a – high",
+  "en": "14 g/a – Low; 3 g/a – High",
+  "ar": "14 g/a – Low; 3 g/a – High"
+ },
+ "10 à 80 %hr": {
+  "fr": "10 à 80 %HR",
+  "en": "10 to 80 %RH",
+  "ar": "10 to 80 %RH"
+ },
+ "hcfc, hfc, hfo, hcfo, hc (r290) , et leurs mélanges": {
+  "fr": "HCFC, HFC, HFO, HCFO, HC (R290), et leurs mélanges",
+  "en": "HCFC, HFC, HFO,HCFO, HC (R290), and blends",
+  "ar": "HCFC, HFC, HFO,HCFO, HC (R290), and blends"
+ },
+ "3 g / a – high; 14 g / a – low": {
+  "fr": "3 g/a – high; 14 g/a – low",
+  "en": "14 g/a – Low; 3 g/a – High",
+  "ar": "14 g/a – Low; 3 g/a – High"
+ },
+ "amovibles : 3 piles alcalines aa": {
+  "fr": "amovibles : 3 piles alcalines AA",
+  "en": "Replaceable battery: 3 alkaline batteries AA",
+  "ar": "Replaceable battery: 3 alkaline batteries AA"
+ },
+ "132 x 60 x 37 mm (l x i x h)": {
+  "fr": "132 x 60 x 37 mm (L x I x H)",
+  "en": "132 x 60 x 37 mm (LxWxH)",
+  "ar": "132 x 60 x 37 mm (LxWxH)"
+ },
+ "batterie lithium-ion rechargeable de 3400 mah": {
+  "fr": "batterie lithium-ion rechargeable de 3400 mAh",
+  "en": "3400 mAh rechargeable Lithium-ion battery",
+  "ar": "3400 mAh rechargeable Lithium-ion battery"
+ },
+ "atex / ul csa 60079-0, ul / csa 60079-11, zone 2": {
+  "fr": "ATEX/UL CSA 60079-0, UL/CSA 60079-11, zone 2",
+  "en": "ATEX/UL/CSA 60079-0, UL/SA 60079-11, Zone 2",
+  "ar": "ATEX/UL/CSA 60079-0, UL/SA 60079-11, Zone 2"
+ },
+ "14 g / a – low; 3 g / a – high; 1 g / a – high+": {
+  "fr": "14 g/a – low; 3 g/a – high; 1 g/a – high+",
+  "en": "3 g/a – High; 14 g/a – Low; 1 g/a – High+",
+  "ar": "3 g/a – High; 14 g/a – Low; 1 g/a – High+"
+ },
+ "1 g / a – high+; 3 g / a – alta; 14 g / a – bassa": {
+  "fr": "1 g/a – high+; 3 g/a – alta; 14 g/a – bassa",
+  "en": "1 g/a – High+; 14 g/a – Low; 3 g/a – High",
+  "ar": "1 g/a – High+; 14 g/a – Low; 3 g/a – High"
+ },
+ "±1,0 °c (-50 à -30,1 °c) · ±0,5 °c (-30 à +99,9 °c) · ±1 % v.m. (+100 à +250 °c)": {
+  "fr": "±1,0 °C (-50 à -30,1 °C) · ±0,5 °C (-30 à +99,9 °C) · ±1 % v.m. (+100 à +250 °C)",
+  "en": "±1.0 °C (-50 to -30.1 °C) · ±1 % of mv (+100 to +250 °C) · ±0.5 °C (-30 to +99.9 °C)",
+  "ar": "±1.0 °C (-50 to -30.1 °C) · ±1 % of mv (+100 to +250 °C) · ±0.5 °C (-30 to +99.9 °C)"
+ },
+ "165 g (y compris la batterie)": {
+  "fr": "165 g (y compris la batterie)",
+  "en": "165 g (incl. batteries)",
+  "ar": "165 g (incl. batteries)"
+ },
+ "163 x 47 x 20 mm (sonde repliée) · 265 x 47 x 20 mm (sonde sortie)": {
+  "fr": "163 x 47 x 20 mm (sonde repliée) · 265 x 47 x 20 mm (sonde sortie)",
+  "en": "163 x 47 x 20 mm (probe folded away) · 265 x 47 x 20 mm (Probe folded out)",
+  "ar": "163 x 47 x 20 mm (probe folded away) · 265 x 47 x 20 mm (Probe folded out)"
+ },
+ "2004 / 108 / ce": {
+  "fr": "2004/108/CE",
+  "en": "2004/108/EG",
+  "ar": "2004/108/EG"
+ },
+ "100 h (à +25 °c, sans éclairage de l'écran)": {
+  "fr": "100 h (à +25 °C, sans éclairage de l'écran)",
+  "en": "100 h (at +25 °C without display illumination)",
+  "ar": "100 h (at +25 °C without display illumination)"
+ },
+ "-40 à +70 °ctd · -10 à +70 °c": {
+  "fr": "-40 à +70 °Ctd · -10 à +70 °C",
+  "en": "-40 to +70 °Ctd · -10 to +70 °C",
+  "ar": "-40 to +70 °Ctd · -10 to +70 °C"
+ },
+ "2 à 98 %hr": {
+  "fr": "2 à 98 %HR",
+  "en": "2 to 98 %RH",
+  "ar": "2 to 98 %RH"
+ },
+ "±2 %hr (2 à 98 %hr) · stabilité à long terme: ±1 %hr / an · ±0,06 %hr / k (k=1)": {
+  "fr": "±2 %HR (2 à 98 %HR) · stabilité à long terme: ±1 %HR / an · ±0,06 %HR/K (k=1)",
+  "en": "long-term stability: ±1 %RH / year · ±0.06 %RH/K (k=1) · ±2 %RH (2 to 98 %RH)",
+  "ar": "long-term stability: ±1 %RH / year · ±0.06 %RH/K (k=1) · ±2 %RH (2 to 98 %RH)"
+ },
+ "-10 à +70 °c": {
+  "fr": "-10 à +70 °C",
+  "en": "-10 to +70 °C",
+  "ar": "-10 to +70 °C"
+ },
+ "600 à 1100 mbar": {
+  "fr": "600 à 1100 mbar",
+  "en": "600 to 1100 mbar",
+  "ar": "600 to 1100 mbar"
+ },
+ "±3 mbar (0 à +50 °c) ±1 digit": {
+  "fr": "±3 mbar (0 à +50 °C) ±1 Digit",
+  "en": "±3 mbar (0 to +50 °C) ±1 Digit",
+  "ar": "±3 mbar (0 to +50 °C) ±1 Digit"
+ },
+ "0,1 mbar": {
+  "fr": "0,1 mbar",
+  "en": "0.1 mbar",
+  "ar": "0.1 mbar"
+ },
+ "4 externe; 1 interne": {
+  "fr": "4 externe; 1 interne",
+  "en": "4 external; 1 internal",
+  "ar": "4 external; 1 internal"
+ },
+ "2 x sonde de température ntc ou 2 x sonde d'humidité": {
+  "fr": "2 x sonde de température NTC ou 2 x sonde d’humidité",
+  "en": "2 x NTC temperature probe or 2 x humidity probe",
+  "ar": "2 x NTC temperature probe or 2 x humidity probe"
+ },
+ "±0,2 °c (-10 à +50 °c)": {
+  "fr": "±0,2 °C (-10 à +50 °C)",
+  "en": "±0.2 °C (-10 to +50 °C)",
+  "ar": "±0.2 °C (-10 to +50 °C)"
+ },
+ "0,1 °c (-20 à +50 °c)": {
+  "fr": "0,1 °C (-20 à +50 °C)",
+  "en": "0.1 °C (-20 to +50 °C)",
+  "ar": "0.1 °C (-20 to +50 °C)"
+ },
+ "±1 °c (200,1 à +1370 °c) · ±1 °c (-200 à -100,1 °c) · ±0,4 °c (-100 à +200 °c)": {
+  "fr": "±1 °C (200,1 à +1370 °C) · ±1 °C (-200 à -100,1 °C) · ±0,4 °C (-100 à +200 °C)",
+  "en": "±1 °C (-200 to -100.1 °C) · ±1 °C (200.1 to +1370 °C) · ±0.4 °C (-100 to +200 °C)",
+  "ar": "±1 °C (-200 to -100.1 °C) · ±1 °C (200.1 to +1370 °C) · ±0.4 °C (-100 to +200 °C)"
+ },
+ "0,1 °c (-200 à +1370 °c)": {
+  "fr": "0,1 °C (-200 à +1370 °C)",
+  "en": "0.1 °C (-200 to +1370 °C)",
+  "ar": "0.1 °C (-200 to +1370 °C)"
+ },
+ "0 à +1760 °c": {
+  "fr": "0 à +1760 °C",
+  "en": "0 to +1760 °C",
+  "ar": "0 to +1760 °C"
+ },
+ "±1 °c (0 à +1760 °c)": {
+  "fr": "±1 °C (0 à +1760 °C)",
+  "en": "±1 °C (0 to +1760 °C)",
+  "ar": "±1 °C (0 to +1760 °C)"
+ },
+ "0,1 °c (0 à +1760 °c)": {
+  "fr": "0,1 °C (0 à +1760 °C)",
+  "en": "0.1 °C (0 to +1760 °C)",
+  "ar": "0.1 °C (0 to +1760 °C)"
+ },
+ "-40 à +40 hpa · -200 à +200 hpa": {
+  "fr": "-40 à +40 hPa · -200 à +200 hPa",
+  "en": "-40 to +40 hPa · -200 to +200 hPa",
+  "ar": "-40 to +40 hPa · -200 to +200 hPa"
+ },
+ "±1,5 % v.m. (+50 à +200 hpa) · ±0,5 hpa (-49,9 à +49,9 hpa) · ±1,5 % v.m. (+3 à +40 hpa) · ±1,5 % v.m. (-200 à -50 hpa) · ±1,5 % v.m. (-40 à -3 hpa) · ±0,03 hpa (-2,99 à +2,99 hpa)": {
+  "fr": "±1,5 % v.m. (+50 à +200 hPa) · ±0,5 hPa (-49,9 à +49,9 hPa) · ±1,5 % v.m. (+3 à +40 hPa) · ±1,5 % v.m. (-200 à -50 hPa) · ±1,5 % v.m. (-40 à -3 hPa) · ±0,03 hPa (-2,99 à +2,99 hPa)",
+  "en": "±1.5 % of mv (+3 to +40 hPa) · ±0.5 hPa (-49.9 to +49.9 hPa) · ±1.5 % of mv (-200 to -50 hPa) · ±0.03 hPa (-2.99 to +2.99 hPa) · ±1.5 % of mv (-40 to -3 hPa) · ±1.5 % of mv (+50 to +200 hPa)",
+  "ar": "±1.5 % of mv (+3 to +40 hPa) · ±0.5 hPa (-49.9 to +49.9 hPa) · ±1.5 % of mv (-200 to -50 hPa) · ±0.03 hPa (-2.99 to +2.99 hPa) · ±1.5 % of mv (-40 to -3 hPa) · ±1.5 % of mv (+50 to +200 hPa)"
+ },
+ "0,01 hpa (-40 à +40 hpa) · 0,1 hpa (-200 à +200 hpa)": {
+  "fr": "0,01 hPa (-40 à +40 hPa) · 0,1 hPa (-200 à +200 hPa)",
+  "en": "0.01 hPa (-40 to +40 hPa) · 0.1 hPa (-200 to +200 hPa)",
+  "ar": "0.01 hPa (-40 to +40 hPa) · 0.1 hPa (-200 to +200 hPa)"
+ },
+ "600 à +1150 hpa": {
+  "fr": "600 à +1150 hPa",
+  "en": "600 to +1150 hPa",
+  "ar": "600 to +1150 hPa"
+ },
+ "0 à +25 %vol": {
+  "fr": "0 à +25 %vol",
+  "en": "0 to +25 %vol",
+  "ar": "0 to +25 %vol"
+ },
+ "±0,8% val.fin. (0 à +25 %vol)": {
+  "fr": "±0,8% val.fin. (0 à +25 %vol)",
+  "en": "±0.8% of fsv (0 to +25 Vol.%)",
+  "ar": "±0.8% of fsv (0 to +25 Vol.%)"
+ },
+ "0,01 %vol (0 à +25 %vol)": {
+  "fr": "0,01 %vol (0 à +25 %vol)",
+  "en": "0.01 Vol.% (0 to +25 Vol.%)",
+  "ar": "0.01 Vol.% (0 to +25 Vol.%)"
+ },
+ "0 à +10000 ppm": {
+  "fr": "0 à +10000 ppm",
+  "en": "0 to +10000 ppm",
+  "ar": "0 to +10000 ppm"
+ },
+ "±5 % v.m. (+200 à +2000 ppm) · ±10 ppm (0 à +199 ppm) · ±10 % v.m. (+2001 à +10000 ppm)": {
+  "fr": "±5 % v.m. (+200 à +2000 ppm) · ±10 ppm (0 à +199 ppm) · ±10 % v.m. (+2001 à +10000 ppm)",
+  "en": "±10 ppm (0 to +199 ppm) · ±5 % of mv (+200 to +2000 ppm) · ±10 % of mv (+2001 to +10000 ppm)",
+  "ar": "±10 ppm (0 to +199 ppm) · ±5 % of mv (+200 to +2000 ppm) · ±10 % of mv (+2001 to +10000 ppm)"
+ },
+ "1 ppm (0 à +10000 ppm)": {
+  "fr": "1 ppm (0 à +10000 ppm)",
+  "en": "1 ppm (0 to +10000 ppm)",
+  "ar": "1 ppm (0 to +10000 ppm)"
+ },
+ "±5 % v.m. (+40 à +500 ppm) · ±2 ppm (0 à +39,9 ppm)": {
+  "fr": "±5 % v.m. (+40 à +500 ppm) · ±2 ppm (0 à +39,9 ppm)",
+  "en": "±5 % of mv (+40 to +500 ppm) · ±2 ppm (0 to +39.9 ppm)",
+  "ar": "±5 % of mv (+40 to +500 ppm) · ±2 ppm (0 to +39.9 ppm)"
+ },
+ "0,1 ppm (0 à +500 ppm)": {
+  "fr": "0,1 ppm (0 à +500 ppm)",
+  "en": "0.1 ppm (0 to +500 ppm)",
+  "ar": "0.1 ppm (0 to +500 ppm)"
+ },
+ "0 à +4000 ppm": {
+  "fr": "0 à +4000 ppm",
+  "en": "0 to +4000 ppm",
+  "ar": "0 to +4000 ppm"
+ },
+ "±5 % v.m. (+100 à +1999 ppm) · ±5 ppm (0 à +99 ppm) · ±10 % v.m. (+2000 à +4000 ppm)": {
+  "fr": "±5 % v.m. (+100 à +1999 ppm) · ±5 ppm (0 à +99 ppm) · ±10 % v.m. (+2000 à +4000 ppm)",
+  "en": "±5 % of mv (+100 to +1999 ppm) · ±10 % of mv (+2000 to +4000 ppm) · ±5 ppm (0 to +99 ppm)",
+  "ar": "±5 % of mv (+100 to +1999 ppm) · ±10 % of mv (+2000 to +4000 ppm) · ±5 ppm (0 to +99 ppm)"
+ },
+ "1 ppm (0 à +4000 ppm)": {
+  "fr": "1 ppm (0 à +4000 ppm)",
+  "en": "1 ppm (0 to +4000 ppm)",
+  "ar": "1 ppm (0 to +4000 ppm)"
+ },
+ "0 à +300 ppm": {
+  "fr": "0 à +300 ppm",
+  "en": "0 to +300 ppm",
+  "ar": "0 to +300 ppm"
+ },
+ "±5 % v.m. (+40 à +300 ppm) · ±2 ppm (0 à +39,9 ppm)": {
+  "fr": "±5 % v.m. (+40 à +300 ppm) · ±2 ppm (0 à +39,9 ppm)",
+  "en": "±5 % of mv (+40 to +300 ppm) · ±2 ppm (0 to +39.9 ppm)",
+  "ar": "±5 % of mv (+40 to +300 ppm) · ±2 ppm (0 to +39.9 ppm)"
+ },
+ "±0,1 ppm (0 à +300 ppm)": {
+  "fr": "±0,1 ppm (0 à +300 ppm)",
+  "en": "±0.1 ppm (0 to +300 ppm)",
+  "ar": "±0.1 ppm (0 to +300 ppm)"
+ },
+ "0 à +500 ppm": {
+  "fr": "0 à +500 ppm",
+  "en": "0 to +500 ppm",
+  "ar": "0 to +500 ppm"
+ },
+ "±5 % v.m. (+100 à +500 ppm) · ±5 ppm (0 à +99,9 ppm)": {
+  "fr": "±5 % v.m. (+100 à +500 ppm) · ±5 ppm (0 à +99,9 ppm)",
+  "en": "±5 % of mv (+100 to +500 ppm) · ±5 ppm (0 to +99.9 ppm)",
+  "ar": "±5 % of mv (+100 to +500 ppm) · ±5 ppm (0 to +99.9 ppm)"
+ },
+ "0 à +5000 ppm": {
+  "fr": "0 à +5000 ppm",
+  "en": "0 to +5000 ppm",
+  "ar": "0 to +5000 ppm"
+ },
+ "±5 % v.m. (+100 à +2000 ppm) · ±5 ppm (0 à +99 ppm) · ±10 % v.m. (+2001 à +5000 ppm)": {
+  "fr": "±5 % v.m. (+100 à +2000 ppm) · ±5 ppm (0 à +99 ppm) · ±10 % v.m. (+2001 à +5000 ppm)",
+  "en": "±10 % of mv (+2001 to +5000 ppm) · ±5 % of mv (+100 to +2000 ppm) · ±5 ppm (0 to +99 ppm)",
+  "ar": "±10 % of mv (+2001 to +5000 ppm) · ±5 % of mv (+100 to +2000 ppm) · ±5 ppm (0 to +99 ppm)"
+ },
+ "1 ppm (0 à +5000 ppm)": {
+  "fr": "1 ppm (0 à +5000 ppm)",
+  "en": "1 ppm (0 to +5000 ppm)",
+  "ar": "1 ppm (0 to +5000 ppm)"
+ },
+ "0 à +120 %": {
+  "fr": "0 à +120 %",
+  "en": "0 to +120 %",
+  "ar": "0 to +120 %"
+ },
+ "0,1 % (0 à +120 %)": {
+  "fr": "0,1 % (0 à +120 %)",
+  "en": "0.1 % (0 to +120 %)",
+  "ar": "0.1 % (0 to +120 %)"
+ },
+ "0 à +99,9 %": {
+  "fr": "0 à +99,9 %",
+  "en": "0 to +99.9 %",
+  "ar": "0 to +99.9 %"
+ },
+ "0,1 % (0 à +99,9 %)": {
+  "fr": "0,1 % (0 à +99,9 %)",
+  "en": "0.1 % (0 to +99.9 %)",
+  "ar": "0.1 % (0 to +99.9 %)"
+ },
+ "0 à +99,9 °ctd": {
+  "fr": "0 à +99,9 °Ctd",
+  "en": "0 to +99.9 °Ctd",
+  "ar": "0 to +99.9 °Ctd"
+ },
+ "0,1 °ctd (0 à +99,9 °ctd)": {
+  "fr": "0,1 °Ctd (0 à +99,9 °Ctd)",
+  "en": "0.1 °Ctd (0 to +99.9 °Ctd)",
+  "ar": "0.1 °Ctd (0 to +99.9 °Ctd)"
+ },
+ "calcul en standard sur l'o₂ ±0,2 %vol": {
+  "fr": "Calcul en standard sur l’O₂ ±0,2 %vol",
+  "en": "calculated from O₂ ±0.2 Vol.%",
+  "ar": "calculated from O₂ ±0.2 Vol.%"
+ },
+ "0,1 ppm (0 à +300 ppm)": {
+  "fr": "0,1 ppm (0 à +300 ppm)",
+  "en": "0.1 ppm (0 to +300 ppm)",
+  "ar": "0.1 ppm (0 to +300 ppm)"
+ },
+ "0 à +50 %vol": {
+  "fr": "0 à +50 %vol",
+  "en": "0 to +50 %vol",
+  "ar": "0 to +50 %vol"
+ },
+ "±0,5 %vol + 1,5 % v.m. (>25 à 50 %vol) · ±0,3 %vol + 1 % v.m. (0 à 25 %vol)": {
+  "fr": "±0,5 %vol + 1,5 % v.m. (>25 à 50 %vol) · ±0,3 %vol + 1 % v.m. (0 à 25 %vol)",
+  "en": "±0.5 Vol.% + 1.5 % of mv (>25 to 50 Vol.%) · ±0.3 Vol.% + 1 % of mv (0 to 25 Vol.%)",
+  "ar": "±0.5 Vol.% + 1.5 % of mv (>25 to 50 Vol.%) · ±0.3 Vol.% + 1 % of mv (0 to 25 Vol.%)"
+ },
+ "0,1 %vol (> 25 %vol) · 0,01 %vol (0 à 25 %vol)": {
+  "fr": "0,1 %vol (> 25 %vol) · 0,01 %vol (0 à 25 %vol)",
+  "en": "0.01 Vol.% (0 to 25 Vol.%) · 0.1 Vol.% (> 25 Vol.%)",
+  "ar": "0.01 Vol.% (0 to 25 Vol.%) · 0.1 Vol.% (> 25 Vol.%)"
+ },
+ "0 à +40 m / s": {
+  "fr": "0 à +40 m/s",
+  "en": "0 to +40 m/s",
+  "ar": "0 to +40 m/s"
+ },
+ "0,1 m / s (0 à +40 m / s)": {
+  "fr": "0,1 m/s (0 à +40 m/s)",
+  "en": "0.1 m/s (0 to +40 m/s)",
+  "ar": "0.1 m/s (0 to +40 m/s)"
+ },
+ "100 à 40000 ppm": {
+  "fr": "100 à 40000 ppm",
+  "en": "100 to 40000 ppm",
+  "ar": "100 to 40000 ppm"
+ },
+ "4000 ppm) · < 400 ppm (100 à 4000 ppm)": {
+  "fr": "4000 ppm) · < 400 ppm (100 à 4000 ppm)",
+  "en": "< 400 ppm (100 to 4000 ppm) · 4000 ppm)",
+  "ar": "< 400 ppm (100 to 4000 ppm) · 4000 ppm)"
+ },
+ "2 % + (2 x mv méthane)": {
+  "fr": "2 % + (2 x mV méthane)",
+  "en": "2 % + (2 x mV methane)",
+  "ar": "2 % + (2 x mV methane)"
+ },
+ "100 à 21000 ppm": {
+  "fr": "100 à 21000 ppm",
+  "en": "100 to 21000 ppm",
+  "ar": "100 to 21000 ppm"
+ },
+ "1,5": {
+  "fr": "1,5",
+  "en": "1.5",
+  "ar": "1.5"
+ },
+ "100 à 18000 ppm": {
+  "fr": "100 à 18000 ppm",
+  "en": "100 to 18000 ppm",
+  "ar": "100 to 18000 ppm"
+ },
+ "2 % + (6,5 x mv butane)": {
+  "fr": "2 % + (6,5 x mV butane)",
+  "en": "2 % + (6.5 x mV butane)",
+  "ar": "2 % + (6.5 x mV butane)"
+ },
+ "0 à 200 ppm": {
+  "fr": "0 à 200 ppm",
+  "en": "0 to 200 ppm",
+  "ar": "0 to 200 ppm"
+ },
+ "±2 ppm (0 à 39,9 ppm) · ±5 (40 à 200 ppm)": {
+  "fr": "±2 ppm (0 à 39,9 ppm) · ±5 (40 à 200 ppm)",
+  "en": "±5 (40 to 200 ppm) · ±2 ppm (0 to 39.9 ppm)",
+  "ar": "±5 (40 to 200 ppm) · ±2 ppm (0 to 39.9 ppm)"
+ },
+ "en combinaison avec la sonde de prélèvement de gaz so2low spéciale 0563 1251 ou le kit de sonde industrielle chauffée 0600 7630": {
+  "fr": "En combinaison avec la sonde de prélèvement de gaz SO2low spéciale 0563 1251 ou le kit de sonde industrielle chauffée 0600 7630",
+  "en": "In combination with the special SO2low gas sampling probe 0563 1251 or the industrial heated probe kit 0600 7630",
+  "ar": "In combination with the special SO2low gas sampling probe 0563 1251 or the industrial heated probe kit 0600 7630"
+ },
+ "1 x sonde de température de l'air comburant; 1 x sonde de combustion; 1 x sonde de température; 1 x pression différentielle": {
+  "fr": "1 x sonde de température de l’air comburant; 1 x sonde de combustion; 1 x sonde de température; 1 x pression différentielle",
+  "en": "1 x combustion air temperature probe; 1 x flue gas probe; 1 x temperature probe; 1 x differential pressure",
+  "ar": "1 x combustion air temperature probe; 1 x flue gas probe; 1 x temperature probe; 1 x differential pressure"
+ },
+ "11v ... 40v": {
+  "fr": "11V ... 40V",
+  "en": "11V to 40V",
+  "ar": "11V to 40V"
+ },
+ "bloc d'alimentation ac, 100 v ... 240v (50 ...60 hz)": {
+  "fr": "Bloc d’alimentation AC, 100 V ... 240V (50 ...60 Hz)",
+  "en": "AC mains unit 100V to 240V (50 to 60 Hz)",
+  "ar": "AC mains unit 100V to 240V (50 to 60 Hz)"
+ },
+ "20 g / m³ de poussières dans le gaz de combustion": {
+  "fr": "20 g/m³ de poussières dans le gaz de combustion",
+  "en": "20 g/m³ dust in flue gas",
+  "ar": "20 g/m³ dust in flue gas"
+ },
+ "+70 °c (température du point de rosée sur l'entrée de gaz de mesure du coffret d'analyse)": {
+  "fr": "+70 °C (température du point de rosée sur l’entrée de gaz de mesure du coffret d’analyse)",
+  "en": "70 °C dewpoint temperature",
+  "ar": "70 °C dewpoint temperature"
+ },
+ "1 l / min. avec contrôle du débit": {
+  "fr": "1 l/min. avec contrôle du débit",
+  "en": "1 l/min. with through-flow monitoring",
+  "ar": "1 l/min. with through-flow monitoring"
+ },
+ "tension de 5 ... 12 volt (flancs ascendant ou descendant) ; largeur d'impulsions > 1 sec. ; charge : 5 v / max, 5 ma, 12 v / max. 40 ma": {
+  "fr": "Tension de 5 ... 12 Volt (flancs ascendant ou descendant) ; largeur d’impulsions > 1 sec. ; charge : 5 V/max, 5 mA, 12 V/max. 40 mA",
+  "en": "Voltage 5 to 12 Volt (rising or trailing edge) pulse width > 1 sec load: 5 V/max, 5 mA, 12 V/max. 40 mA",
+  "ar": "Voltage 5 to 12 Volt (rising or trailing edge) pulse width > 1 sec load: 5 V/max, 5 mA, 12 V/max. 40 mA"
+ },
+ "±3 %hr (65 à < 90 %hr) · ±0,06 %hr (0 à 60 °c) · ±5 %hr (90 à < 100 %hr) · ±2 %hr (20 à 80 %hr at 25 °c) · ±3 %hr (at 25 °c et 80 %hr) · ±1 %rh hystérèse · ±2 %hr (35 à < 65 %hr) · ±1 %rh / année dérive": {
+  "fr": "±3 %HR (65 à < 90 %HR) · ±0,06 %HR (0 à 60 °C) · ±5 %HR (90 à < 100 %HR) · ±2 %HR (20 à 80 %HR AT 25 °C) · ±3 %HR (AT 25 °C et 80 %HR) · ±1 %RH hystérèse · ±2 %HR (35 à < 65 %HR) · ±1 %RH/année dérive",
+  "en": "±3 %RH (at 25 °C and 80 %RH) · ±1 %rF/year Drift · ±3 %RH (65 to < 90 %RH) · ±1 %rF Hysterese · ±5 %RH (90 to < 100 %RH) · ±2 %RH (20 to 80 %RH at 25 °C) · ±2 %RH (35 to < 65 %RH) · ±0.06 %RH (0 to 60 °C)",
+  "ar": "±3 %RH (at 25 °C and 80 %RH) · ±1 %rF/year Drift · ±3 %RH (65 to < 90 %RH) · ±1 %rF Hysterese · ±5 %RH (90 to < 100 %RH) · ±2 %RH (20 to 80 %RH at 25 °C) · ±2 %RH (35 to < 65 %RH) · ±0.06 %RH (0 to 60 °C)"
+ },
+ "±3 mbar at +22 °c": {
+  "fr": "±3 mbar AT +22 °C",
+  "en": "±3 mbar at +22 °C",
+  "ar": "±3 mbar at +22 °C"
+ },
+ "± (100 ppm + 3 % v.m.) at + 25 °c (fonctionnement sur piles) · ± (50 ppm + 3 % v.m.) at + 25 °c": {
+  "fr": "± (100 ppm + 3 % v.m.) AT + 25 °C (fonctionnement sur piles) · ± (50 ppm + 3 % v.m.) AT + 25 °C",
+  "en": "± (100 ppm + 3 % of mv) at + 25 °C (with battery operation) · ± (50 ppm + 3 % of mv) at + 25 °C",
+  "ar": "± (100 ppm + 3 % of mv) at + 25 °C (with battery operation) · ± (50 ppm + 3 % of mv) at + 25 °C"
+ },
+ "117 x 82 x 32,0 mm": {
+  "fr": "117 x 82 x 32,0 mm",
+  "en": "117 x 82 x 32.0 mm",
+  "ar": "117 x 82 x 32.0 mm"
+ },
+ "1 min … 24 h (alimentation électri que permanente) ; 5 min … 24 h (fonctionnement sur piles)": {
+  "fr": "1 min … 24 h (alimentation électri que permanente); 5 min … 24 h (fonctionnement sur piles)",
+  "en": "1 min to 24 h (with continuous power supply); 5min… 24h (bei Batteriebetrieb)",
+  "ar": "1 min to 24 h (with continuous power supply); 5min… 24h (bei Batteriebetrieb)"
+ },
+ "1 an": {
+  "fr": "1 an",
+  "en": "1 year",
+  "ar": "1 year"
+ },
+ "± (0,2 hpa + 1,5 % v.m.) (+1 à +150 hpa) · ±0,05 hpa (0 à +1 hpa)": {
+  "fr": "±(0,2 hPa + 1,5 % v.m.) (+1 à +150 hPa) · ±0,05 hPa (0 à +1 hPa)",
+  "en": "±0.05 hPa (0 to +1 hPa) · ±(0.2 hPa + 1.5 % of mv) (+1 to +150 hPa)",
+  "ar": "±0.05 hPa (0 to +1 hPa) · ±(0.2 hPa + 1.5 % of mv) (+1 to +150 hPa)"
+ },
+ "150 heures": {
+  "fr": "150 heures",
+  "en": "150 h",
+  "ar": "150 h"
+ },
+ "-10 à +60 °c": {
+  "fr": "-10 à +60 °C",
+  "en": "-10 to +60 °C",
+  "ar": "-10 to +60 °C"
+ },
+ "±0,4 °c": {
+  "fr": "±0,4 °C",
+  "en": "±0.4 °C",
+  "ar": "±0.4 °C"
+ },
+ "±2 %hr + 1 digit à 25 °c (10 à +90 %hr) · ±3 %hr etendue de mesure restante": {
+  "fr": "±2 %HR + 1 Digit à 25 °C (10 à +90 %HR) · ±3 %HR Etendue de mesure restante",
+  "en": "±3 %RH Remaining Range · ±2 %RH + 1 Digit at 25 °C (10 to +90 %RH)",
+  "ar": "±3 %RH Remaining Range · ±2 %RH + 1 Digit at 25 °C (10 to +90 %RH)"
+ },
+ "240 g (sans pile)": {
+  "fr": "240 g (sans pile)",
+  "en": "240 g (without batteries)",
+  "ar": "240 g (without batteries)"
+ },
+ "4 piles mignon de type aa": {
+  "fr": "4 piles Mignon de type AA",
+  "en": "4 x type AA batteries",
+  "ar": "4 x type AA batteries"
+ },
+ "±1 % · 1 s · 0,1": {
+  "fr": "±1 % · 1 s · 0,1",
+  "en": "0.1 · ±1 % · 1 s",
+  "ar": "0.1 · ±1 % · 1 s"
+ },
+ "119 x 46 x 25 mm (incl. capot protection)": {
+  "fr": "119 x 46 x 25 mm (incl. capot protection)",
+  "en": "119 x 46 x 25 mm (incl. protective cap)",
+  "ar": "119 x 46 x 25 mm (incl. protective cap)"
+ },
+ "200 h (moyenne sans rétroéclairage)": {
+  "fr": "200 h (moyenne sans rétroéclairage)",
+  "en": "200 h (average, without display illumination)",
+  "ar": "200 h (average, without display illumination)"
+ },
+ "90 g (incl. capot de protection et pile)": {
+  "fr": "90 g (incl. capot de protection et pile)",
+  "en": "90 g (protective cap and batteries included)",
+  "ar": "90 g (protective cap and batteries included)"
+ },
+ "±0,5 °c (-30 à +70 °c) · ±0,5 °c ±0,5 % v.m. (-50 à -30 °c) · ±0,5 °c ±0,5 % v.m. (+70 à +300 °c)": {
+  "fr": "±0,5 °C (-30 à +70 °C) · ±0,5 °C ±0,5 % v.m. (-50 à -30 °C) · ±0,5 °C ±0,5 % v.m. (+70 à +300 °C)",
+  "en": "±0.5 °C ±0.5 % of mv (-50 to -30 °C) · ±0.5 °C ±0.5 % of mv (+70 to +300 °C) · ±0.5 °C (-30 to +70 °C)",
+  "ar": "±0.5 °C ±0.5 % of mv (-50 to -30 °C) · ±0.5 °C ±0.5 % of mv (+70 to +300 °C) · ±0.5 °C (-30 to +70 °C)"
+ },
+ "210 g (compris la batterie et softcase) · 154 g (compris la batterie, sans softcase)": {
+  "fr": "210 g (compris la batterie et Softcase) · 154 g (compris la batterie, sans Softcase)",
+  "en": "210 g (incl.battery and Softcase) · 154 g (incl. battery, without softcase)",
+  "ar": "210 g (incl.battery and Softcase) · 154 g (incl. battery, without softcase)"
+ },
+ "2500 h (usage normal à 23°c)": {
+  "fr": "2500 h (usage normal à 23°C)",
+  "en": "2500 h (typical, at 23 °C)",
+  "ar": "2500 h (typical, at 23 °C)"
+ },
+ "1 mbar à 4 bar": {
+  "fr": "1 mbar à 4 bar",
+  "en": "1 mbar to 4 bar",
+  "ar": "1 mbar to 4 bar"
+ },
+ "t90 = 0,2 s": {
+  "fr": "t90 = 0,2 s",
+  "en": "t90 = 0.2 s",
+  "ar": "t90 = 0.2 s"
+ },
+ "22 x 83 (diameter x height)": {
+  "fr": "22 x 83 (diameter x height)",
+  "en": "22 x 83 (ø x height)",
+  "ar": "22 x 83 (ø x height)"
+ },
+ "0 à 140 °c": {
+  "fr": "0 à 140 °C",
+  "en": "0 to 140 °C",
+  "ar": "0 to 140 °C"
+ },
+ "0,1": {
+  "fr": "0,1",
+  "en": "0.1",
+  "ar": "0.1"
+ },
+ "130 h (moyenne sans rétroéclairage)": {
+  "fr": "130 h (moyenne sans rétroéclairage)",
+  "en": "130 h (average, without display illumination)",
+  "ar": "130 h (average, without display illumination)"
+ },
+ "±0,02 % v.m.": {
+  "fr": "±0,02 % v.m.",
+  "en": "±0.02 % of mv",
+  "ar": "±0.02 % of mv"
+ },
+ "1 tr / min. (1000 à 99999 tr / min.) · 0,01 tr / min. (1 à 99,99 tr / min.) · 0,1 tr / min. (100 à 999,9 tr / min.)": {
+  "fr": "1 tr/min. (1000 à 99999 tr/min.) · 0,01 tr/min. (1 à 99,99 tr/min.) · 0,1 tr/min. (100 à 999,9 tr/min.)",
+  "en": "0.1 rpm (100 to 999.9 rpm) · 0.01 rpm (1 to 99.99 rpm) · 1 rpm (1000 to 99999 rpm)",
+  "ar": "0.1 rpm (100 to 999.9 rpm) · 0.01 rpm (1 to 99.99 rpm) · 1 rpm (1000 to 99999 rpm)"
+ },
+ "±0,2 % v.m.": {
+  "fr": "±0,2 % v.m.",
+  "en": "±0.2 % of mv",
+  "ar": "±0.2 % of mv"
+ },
+ "ecran lcd de 5 caractèr": {
+  "fr": "Ecran LCD de 5 caractèr",
+  "en": "5 digit LCD display",
+  "ar": "5 digit LCD display"
+ },
+ "-200 à +800 °c": {
+  "fr": "-200 à +800 °C",
+  "en": "-200 to +800 °C",
+  "ar": "-200 to +800 °C"
+ },
+ "±0,2 °c (-20 à +80 °c) ± 1 digit · ±0,3 °c (etendue de mesure restante) ± 1 digit": {
+  "fr": "±0,2 °C (-20 à +80 °C) ± 1 Digit · ±0,3 °C (Etendue de mesure restante) ± 1 Digit",
+  "en": "±0.3 °C (Remaining Range) ± 1 Digit · ±0.2 °C (-20 to +80 °C) ± 1 Digit",
+  "ar": "±0.3 °C (Remaining Range) ± 1 Digit · ±0.2 °C (-20 to +80 °C) ± 1 Digit"
+ },
+ "187,0 g": {
+  "fr": "187,0 g",
+  "en": "187.0 g",
+  "ar": "187.0 g"
+ },
+ "22 x 83 mm (ø x hauteur)": {
+  "fr": "22 x 83 mm (ø x Hauteur)",
+  "en": "22 x 83 mm (ø x height)",
+  "ar": "22 x 83 mm (ø x height)"
+ },
+ "±0,8 °c (-20 à 0 °c) · ±0,5 °c (0 à +60 °c)": {
+  "fr": "±0,8 °C (-20 à 0 °C) · ±0,5 °C (0 à +60 °C)",
+  "en": "±0.8 °C (-20 to 0 °C) · ±0.5 °C (0 to +60 °C)",
+  "ar": "±0.8 °C (-20 to 0 °C) · ±0.5 °C (0 to +60 °C)"
+ },
+ "stabilité à long terme: ±1 %hr / an · ±5 %hr (90 %hr) · hystérèse: ±1,0 %hr · ±3,0 %hr (10 à 35 %hr) (at +25°c) · ±2,0 %hr (35 à 65 %hr) (at +25°c) · ±3,0 %hr (65 à 90 %hr) (at +25°c)": {
+  "fr": "stabilité à long terme: ±1 %HR / an · ±5 %HR ( 90 %HR) · Hystérèse: ±1,0 %HR · ±3,0 %HR (10 à 35 %HR) (AT +25°C) · ±2,0 %HR (35 à 65 %HR) (AT +25°C) · ±3,0 %HR (65 à 90 %HR) (AT +25°C)",
+  "en": "Hysteresis: ±1.0 %RH · ±2.0 %RH (35 to 65 %RH) (at +25°C) · long-term stability: ±1 %RH / year · ±5 %RH ( 90 %RH) · ±3.0 %RH (65 to 90 %RH) (at +25°C) · ±3.0 %RH (10 to 35 %RH) (at +25°C)",
+  "ar": "Hysteresis: ±1.0 %RH · ±2.0 %RH (35 to 65 %RH) (at +25°C) · long-term stability: ±1 %RH / year · ±5 %RH ( 90 %RH) · ±3.0 %RH (65 to 90 %RH) (at +25°C) · ±3.0 %RH (10 to 35 %RH) (at +25°C)"
+ },
+ "86,4 g": {
+  "fr": "86,4 g",
+  "en": "86.4 g",
+  "ar": "86.4 g"
+ },
+ "±0,4 °c (+75 à +99,9 °c) · ±0,4 °c (-40 à -25,1 °c) · ±0,5 % v.m. (etendue de mesure restante) · ±0,2 °c (-25 à +74,9 °c)": {
+  "fr": "±0,4 °C (+75 à +99,9 °C) · ±0,4 °C (-40 à -25,1 °C) · ±0,5 % v.m. (Etendue de mesure restante) · ±0,2 °C (-25 à +74,9 °C)",
+  "en": "±0.4 °C (-40 to -25.1 °C) · ±0.4 °C (+75 to +99.9 °C) · ±0.5 % of mv (Remaining Range) · ±0.2 °C (-25 to +74.9 °C)",
+  "ar": "±0.4 °C (-40 to -25.1 °C) · ±0.4 °C (+75 to +99.9 °C) · ±0.5 % of mv (Remaining Range) · ±0.2 °C (-25 to +74.9 °C)"
+ },
+ "± (0,2 °c + 0,5 % v.m.) (etendue de mesure restante) · ±0,3 °c (-60 à +60 °c)": {
+  "fr": "±(0,2 °C + 0,5 % v.m.) (Etendue de mesure restante) · ±0,3 °C (-60 à +60 °C)",
+  "en": "±0.3 °C (-60 to +60 °C) · ±(0.2 °C + 0.5 % of mv) (Remaining Range)",
+  "ar": "±0.3 °C (-60 to +60 °C) · ±(0.2 °C + 0.5 % of mv) (Remaining Range)"
+ },
+ "0 à +100 %hr": {
+  "fr": "0 à +100 %HR",
+  "en": "0 to +100 %RH",
+  "ar": "0 to +100 %RH"
+ },
+ "0 à 2000 hpa": {
+  "fr": "0 à 2000 hPa",
+  "en": "0 to 2000 hPa",
+  "ar": "0 to 2000 hPa"
+ },
+ "-30 à +220 °c": {
+  "fr": "-30 à +220 °C",
+  "en": "-30 to +220 °C",
+  "ar": "-30 to +220 °C"
+ },
+ "±1,0 % v.m. (+100 à +220 °c) · ±0,5 °c (-30 à +99,9 °c)": {
+  "fr": "±1,0 % v.m. (+100 à +220 °C) · ±0,5 °C (-30 à +99,9 °C)",
+  "en": "±0.5 °C (-30 to +99.9 °C) · ±1.0 % of mv (+100 to +220 °C)",
+  "ar": "±0.5 °C (-30 to +99.9 °C) · ±1.0 % of mv (+100 to +220 °C)"
+ },
+ "46 g (y compris la batterie)": {
+  "fr": "46 g (y compris la batterie)",
+  "en": "46 g (including battery)",
+  "ar": "46 g (including battery)"
+ },
+ "189 x 35 x 19 mm (sonde sortie) · 115 x 35 x 19 mm (sonde repliée)": {
+  "fr": "189 x 35 x 19 mm (sonde sortie) · 115 x 35 x 19 mm (sonde repliée)",
+  "en": "189 x 35 x 19 mm (probe folded out) · 115 x 35 x 19 mm (probe folded away)",
+  "ar": "189 x 35 x 19 mm (probe folded out) · 115 x 35 x 19 mm (probe folded away)"
+ },
+ "-20 {#0} à +60 °c": {
+  "fr": "-20 {#0} à +60 °C",
+  "en": "-20 {#0} to +60 °C",
+  "ar": "-20 {#0} to +60 °C"
+ },
+ "u moyen du mécanisme pliable (env. 30°) / arrêt automatique après 60 min.": {
+  "fr": "u moyen du mécanisme pliable (env. 30°) / Arrêt automatique après 60 min.",
+  "en": "With folding mechanism (approx. 30°) / Auto off after 60 mins.",
+  "ar": "With folding mechanism (approx. 30°) / Auto off after 60 mins."
+ },
+ "300 h (à+25 °c) )": {
+  "fr": "300 h (à+25 °C))",
+  "en": "300 h (at +25 °C)",
+  "ar": "300 h (at +25 °C)"
+ },
+ "0,1 mv à 600 v": {
+  "fr": "0,1 mV à 600 V",
+  "en": "0.1 mV to 600 V",
+  "ar": "0.1 mV to 600 V"
+ },
+ "max. 1,0 μa": {
+  "fr": "max. 1,0 μA",
+  "en": "max. 1.0 μA",
+  "ar": "max. 1.0 μA"
+ },
+ "± (0,8 % v.m. + 3 digits)": {
+  "fr": "± (0,8 % v.m. + 3 Digits)",
+  "en": "± (0.8 % of mv + 3 Digits)",
+  "ar": "± (0.8 % of mv + 3 Digits)"
+ },
+ "max. 0,1 mv": {
+  "fr": "max. 0,1 mV",
+  "en": "max. 0.1 mV",
+  "ar": "max. 0.1 mV"
+ },
+ "± (1,0 % v.m. + 3 digits)": {
+  "fr": "± (1,0 % v.m. + 3 Digits)",
+  "en": "± (1.0 % of mv + 3 Digits)",
+  "ar": "± (1.0 % of mv + 3 Digits)"
+ },
+ "0,1 μa à 10 a": {
+  "fr": "0,1 μA à 10 A",
+  "en": "0.1 μA to 10 A",
+  "ar": "0.1 μA to 10 A"
+ },
+ "max. 0,1 μa": {
+  "fr": "max. 0,1 μA",
+  "en": "max. 0.1 μA",
+  "ar": "max. 0.1 μA"
+ },
+ "± (1,5 % v.m. + 5 digits)": {
+  "fr": "± (1,5 % v.m. + 5 Digits)",
+  "en": "± (1.5 % of mv + 5 Digits)",
+  "ar": "± (1.5 % of mv + 5 Digits)"
+ },
+ "0,01 ohm à 60,00 mohm": {
+  "fr": "0,01 Ohm à 60,00 MOhm",
+  "en": "0.01 Ohm to 60.00 MOhm",
+  "ar": "0.01 Ohm to 60.00 MOhm"
+ },
+ "± (1,5 % v.m. + 3 digits)": {
+  "fr": "± (1,5 % v.m. + 3 Digits)",
+  "en": "± (1.5 % of mv + 3 Digits)",
+  "ar": "± (1.5 % of mv + 3 Digits)"
+ },
+ "max. 0,001 nf": {
+  "fr": "max. 0,001 nF",
+  "en": "max. 0.001 nF",
+  "ar": "max. 0.001 nF"
+ },
+ "0,001 nf à 60,00 mf": {
+  "fr": "0,001 nF à 60,00 mF",
+  "en": "0.001 nF to 60.00 mF",
+  "ar": "0.001 nF to 60.00 mF"
+ },
+ "max. ± (1,5 % v.m. + 5 digits)": {
+  "fr": "max. ± (1,5 % v.m. + 5 Digits)",
+  "en": "max. ± (1.5 % of mv + 5 Digits)",
+  "ar": "max. ± (1.5 % of mv + 5 Digits)"
+ },
+ "0,1 hz à 60 mhz": {
+  "fr": "0,1 Hz à 60 MHz",
+  "en": "0.1 Hz to 60 MHz",
+  "ar": "0.1 Hz to 60 MHz"
+ },
+ "± (0,1 % v.m. + 1 digit)": {
+  "fr": "± (0,1 % v.m. + 1 Digit)",
+  "en": "± (0.1 % of mv + 1 Digit)",
+  "ar": "± (0.1 % of mv + 1 Digit)"
+ },
+ "4 bornes de mesure": {
+  "fr": "4 bornes de mesure",
+  "en": "4 measuring jacks",
+  "ar": "4 measuring jacks"
+ },
+ "cat iv 600 v": {
+  "fr": "CAT IV 600 V",
+  "en": "CAT IV 600V",
+  "ar": "CAT IV 600V"
+ },
+ "± (1 °c ±1 % v.m.)": {
+  "fr": "±(1 °C ±1 % v.m.)",
+  "en": "±(1 °C ±1 % of mv)",
+  "ar": "±(1 °C ±1 % of mv)"
+ },
+ "220 x 40 x 70 mm ( (l x i x h) )": {
+  "fr": "220 x 40 x 70 mm ((L x I x H))",
+  "en": "220 x 40 x 70 mm ((LxWxH))",
+  "ar": "220 x 40 x 70 mm ((LxWxH))"
+ },
+ "0 à +40 °c": {
+  "fr": "0 à +40 °C",
+  "en": "0 to +40 °C",
+  "ar": "0 to +40 °C"
+ },
+ "ce 2004 / 108 / cee": {
+  "fr": "CE 2004/108/CEE",
+  "en": "CE 2004/108/EWG",
+  "ar": "CE 2004/108/EWG"
+ },
+ "±1 % v.m. (+100 à +275 °c) · ±1,0 °c (-50 à -30,1 °c) · ±0,5 °c (-30 à +99,9 °c)": {
+  "fr": "±1 % v.m. (+100 à +275 °C) · ±1,0 °C (-50 à -30,1 °C) · ±0,5 °C (-30 à +99,9 °C)",
+  "en": "±1 % of mv (+100 to +275 °C) · ±1.0 °C (-50 to -30.1 °C) · ±0.5 °C (-30 to +99.9 °C)",
+  "ar": "±1 % of mv (+100 to +275 °C) · ±1.0 °C (-50 to -30.1 °C) · ±0.5 °C (-30 to +99.9 °C)"
+ },
+ "90 g (incl. pile et capot de protection)": {
+  "fr": "90 g (incl. pile et capot de protection)",
+  "en": "90 g (batteries and protective cap included)",
+  "ar": "90 g (batteries and protective cap included)"
+ },
+ "2 piles de type micro aaa, 1,5 v (lr03)": {
+  "fr": "2 piles de type Micro AAA, 1,5 V (LR03)",
+  "en": "2 batteries type micro AAA 1.5 V (LR03)",
+  "ar": "2 batteries type micro AAA 1.5 V (LR03)"
+ },
+ "0 à +1999 ppm": {
+  "fr": "0 à +1999 ppm",
+  "en": "0 to +1999 ppm",
+  "ar": "0 to +1999 ppm"
+ },
+ "±10 % v.m. (>100 ppm) · ±3 ppm (<20 ppm) · ±5 ppm (20 à +100 ppm)": {
+  "fr": "±10 % v.m. (>100 ppm) · ±3 ppm (<20 ppm) · ±5 ppm (20 à +100 ppm)",
+  "en": "±10 % of m.v. (>100 ppm) · ±3 ppm (<20 ppm) · ±5 ppm (20 to +100 ppm)",
+  "ar": "±10 % of m.v. (>100 ppm) · ±3 ppm (<20 ppm) · ±5 ppm (20 to +100 ppm)"
+ },
+ "150 h (bip éteint)": {
+  "fr": "150 h (bip éteint)",
+  "en": "150 h (with beeper switched off)",
+  "ar": "150 h (with beeper switched off)"
+ },
+ "-20 à +45 °c": {
+  "fr": "-20 à +45 °C",
+  "en": "-20 to +45 °C",
+  "ar": "-20 to +45 °C"
+ },
+ "±10 % (+30 à +1999 ppm) · ±3 ppm (0 à +29 ppm)": {
+  "fr": "±10 % (+30 à +1999 ppm) · ±3 ppm (0 à +29 ppm)",
+  "en": "±10 % (+30 to +1999 ppm) · ±3 ppm (0 to +29 ppm)",
+  "ar": "±10 % (+30 to +1999 ppm) · ±3 ppm (0 to +29 ppm)"
+ },
+ "5 h (sans liaison radio)": {
+  "fr": "5 h (sans liaison radio)",
+  "en": "5 h (without wireless connection)",
+  "ar": "5 h (without wireless connection)"
+ },
+ "accumulateur au lithium-ion, 2600 mah, 3.7 v": {
+  "fr": "Accumulateur au Lithium-Ion, 2600 mAh, 3.7 V",
+  "en": "Lithium-Ion rechargeable battery pack, 2600 mAh, 3.7 V",
+  "ar": "Lithium-Ion rechargeable battery pack, 2600 mAh, 3.7 V"
+ },
+ "bluetooth®; interface ir / irda; usb 2.0; bus de données; raccord réseau": {
+  "fr": "BLUETOOTH®; Interface IR/IRDA; USB 2.0; bus de données; Raccord réseau",
+  "en": "Bluetooth®; IR/IRDA interface; USB 2.0; data bus; Mains connection",
+  "ar": "Bluetooth®; IR/IRDA interface; USB 2.0; data bus; Mains connection"
+ },
+ "± (0,5 °c + 0,3 % v.m.) (-50 à +1000 °c) ¹⁾": {
+  "fr": "±(0,5 °C + 0,3 % v.m.) (-50 à +1000 °C)¹⁾",
+  "en": "±(0.5 °C + 0.3 % of mv) (-50 to +1000 °C)¹⁾",
+  "ar": "±(0.5 °C + 0.3 % of mv) (-50 to +1000 °C)¹⁾"
+ },
+ "150 x 45 x 30 mm ( (l x i x h) )": {
+  "fr": "150 x 45 x 30 mm ((L x I x H))",
+  "en": "150 x 45 x 30 mm ((LxWxH))",
+  "ar": "150 x 45 x 30 mm ((LxWxH))"
+ },
+ "3,5 mm": {
+  "fr": "3,5 mm",
+  "en": "3.5 mm",
+  "ar": "3.5 mm"
+ },
+ "1,6 mm": {
+  "fr": "1,6 mm",
+  "en": "1.6 mm",
+  "ar": "1.6 mm"
+ },
+ "pile bouton lr44": {
+  "fr": "Pile bouton LR44",
+  "en": "Button cell LR44",
+  "ar": "Button cell LR44"
+ },
+ "-20 à +230 °c": {
+  "fr": "-20 à +230 °C",
+  "en": "-20 to +230 °C",
+  "ar": "-20 to +230 °C"
+ },
+ "±1 °c (+90,1 à +180 °c) · ±1 °c (-20 à +53,9 °c) · ±0,8 °c (+54 à +90 °c) · ±1,5 °c (+180,1 à +230 °c)": {
+  "fr": "±1 °C (+90,1 à +180 °C) · ±1 °C (-20 à +53,9 °C) · ±0,8 °C (+54 à +90 °C) · ±1,5 °C (+180,1 à +230 °C)",
+  "en": "±0.8 °C (+54 to +90 °C) · ±1.5 °C (+180.1 to +230 °C) · ±1 °C (-20 to +53.9 °C) · ±1 °C (+90.1 to +180 °C)",
+  "ar": "±0.8 °C (+54 to +90 °C) · ±1.5 °C (+180.1 to +230 °C) · ±1 °C (-20 to +53.9 °C) · ±1 °C (+90.1 to +180 °C)"
+ },
+ "1,0 °c (etendue de mesure restante) · 0,1 °c (-19,9 à +199,9 °c)": {
+  "fr": "1,0 °C (Etendue de mesure restante) · 0,1 °C (-19,9 à +199,9 °C)",
+  "en": "0.1 °C (-19.9 to +199.9 °C) · 1.0 °C (Remaining Range)",
+  "ar": "0.1 °C (-19.9 to +199.9 °C) · 1.0 °C (Remaining Range)"
+ },
+ "12 à 1000 v": {
+  "fr": "12 à 1000 V",
+  "en": "12 to 1000 V",
+  "ar": "12 to 1000 V"
+ },
+ "1 mv à 600 v": {
+  "fr": "1 mV à 600 V",
+  "en": "1 mV to 600 V",
+  "ar": "1 mV to 600 V"
+ },
+ "max. 1,0 mv": {
+  "fr": "max. 1,0 mV",
+  "en": "max. 1.0 mV",
+  "ar": "max. 1.0 mV"
+ },
+ "1 ma à 10 a": {
+  "fr": "1 mA à 10 A",
+  "en": "1 mA to 10 A",
+  "ar": "1 mA to 10 A"
+ },
+ "max. 0,1 ohm": {
+  "fr": "max. 0,1 Ohm",
+  "en": "max. 0.1 Ohm",
+  "ar": "max. 0.1 Ohm"
+ },
+ "0,1 ohm à 40,00 mohm": {
+  "fr": "0,1 Ohm à 40,00 MOhm",
+  "en": "0.1 Ohm to 40.00 MOhm",
+  "ar": "0.1 Ohm to 40.00 MOhm"
+ },
+ "0,01 nf à 100 μf": {
+  "fr": "0,01 nF à 100 μF",
+  "en": "0.01 nF to 100 μF",
+  "ar": "0.01 nF to 100 μF"
+ },
+ "max. 0,001 hz": {
+  "fr": "max. 0,001 Hz",
+  "en": "max. 0.001 Hz",
+  "ar": "max. 0.001 Hz"
+ },
+ "0,001 hz à 512,0 khz": {
+  "fr": "0,001 Hz à 512,0 kHz",
+  "en": "0.001 Hz to 512.0 kHz",
+  "ar": "0.001 Hz to 512.0 kHz"
+ },
+ "cat iii 600 v": {
+  "fr": "CAT III 600 V",
+  "en": "CAT III 600V",
+  "ar": "CAT III 600V"
+ },
+ "147 x 35 x 23 mm ( (l x i x h) )": {
+  "fr": "147 x 35 x 23 mm ((L x I x H))",
+  "en": "147 x 35 x 23 mm ((LxWxH))",
+  "ar": "147 x 35 x 23 mm ((LxWxH))"
+ },
+ "±2 % v.m. (+100 à +150 °c) · ±2 °c (-30 à -10,1 °c) · ±1 °c (-10 à +99,9 °c)": {
+  "fr": "±2 % v.m. (+100 à +150 °C) · ±2 °C (-30 à -10,1 °C) · ±1 °C (-10 à +99,9 °C)",
+  "en": "±2 °C (-30 to -10.1 °C) · ±2 % of mv (+100 to +150 °C) · ±1 °C (-10 to +99.9 °C)",
+  "ar": "±2 °C (-30 to -10.1 °C) · ±2 % of mv (+100 to +150 °C) · ±1 °C (-10 to +99.9 °C)"
+ },
+ "1 °c (etendue de mesure restante) · 0,1 °c (-19,9 à +150 °c)": {
+  "fr": "1 °C (Etendue de mesure restante) · 0,1 °C (-19,9 à +150 °C)",
+  "en": "0.1 °C (-19.9 to +150 °C) · 1 °C (Remaining Range)",
+  "ar": "0.1 °C (-19.9 to +150 °C) · 1 °C (Remaining Range)"
+ },
+ "constante de tps rapide125 ms / constante de tps lente 1 s": {
+  "fr": "constante de tps rapide125 ms / constante de tps lente 1 s",
+  "en": "FAST 125 ms setting / SLOW 1 s setting",
+  "ar": "FAST 125 ms setting / SLOW 1 s setting"
+ },
+ "-0,002 db / hpa": {
+  "fr": "-0,002 dB/hPa",
+  "en": "-0.002 dB/hPa",
+  "ar": "-0.002 dB/hPa"
+ },
+ "+32 à +130 db": {
+  "fr": "+32 à +130 dB",
+  "en": "+32 to +130 dB",
+  "ar": "+32 to +130 dB"
+ },
+ "31,5 hz à 8 khz": {
+  "fr": "31,5 Hz à 8 kHz",
+  "en": "31.5 Hz to 8 kHz",
+  "ar": "31.5 Hz to 8 kHz"
+ },
+ "±1,0 db": {
+  "fr": "±1,0 dB",
+  "en": "±1.0 dB",
+  "ar": "±1.0 dB"
+ },
+ "0,1 db": {
+  "fr": "0,1 dB",
+  "en": "0.1 dB",
+  "ar": "0.1 dB"
+ },
+ "±0,2 % v.m. (etendue de mesure restante) · ±0,2 °c (-100 à +199,9 °c)": {
+  "fr": "±0,2 % v.m. (Etendue de mesure restante) · ±0,2 °C (-100 à +199,9 °C)",
+  "en": "±0.2 % of mv (Remaining Range) · ±0.2 °C (-100 to +199.9 °C)",
+  "ar": "±0.2 % of mv (Remaining Range) · ±0.2 °C (-100 to +199.9 °C)"
+ },
+ "0,05 °c": {
+  "fr": "0,05 °C",
+  "en": "0.05 °C",
+  "ar": "0.05 °C"
+ },
+ "±0,3 °c (-60 à +60 °c) · ± (0,2 °c + 0,3 % v.m.) (etendue de mesure restante)": {
+  "fr": "±0,3 °C (-60 à +60 °C) · ±(0,2 °C + 0,3 % v.m.) (Etendue de mesure restante)",
+  "en": "±0.3 °C (-60 to +60 °C) · ±(0.2 °C + 0.3 % of mv) (Remaining Range)",
+  "ar": "±0.3 °C (-60 to +60 °C) · ±(0.2 °C + 0.3 % of mv) (Remaining Range)"
+ },
+ "5 à 95 %hr": {
+  "fr": "5 à 95 %HR",
+  "en": "5 to 95 %RH",
+  "ar": "5 to 95 %RH"
+ },
+ "±3 %hr": {
+  "fr": "±3 %HR",
+  "en": "±3 %RH",
+  "ar": "±3 %RH"
+ },
+ "75 g (avec piles, sans emballage)": {
+  "fr": "75 g (avec piles, sans emballage)",
+  "en": "75 g (with batteries, without packaging)",
+  "ar": "75 g (with batteries, without packaging)"
+ },
+ "env. 1000 h": {
+  "fr": "Env. 1000 h",
+  "en": "Approx. 1000 h",
+  "ar": "Approx. 1000 h"
+ },
+ "±0,8 °c (-20 à 0 °c) · ±0,5 °c (0 à +70 °c)": {
+  "fr": "±0,8 °C (-20 à 0 °C) · ±0,5 °C (0 à +70 °C)",
+  "en": "±0.8 °C (-20 to 0 °C) · ±0.5 °C (0 to +70 °C)",
+  "ar": "±0.8 °C (-20 to 0 °C) · ±0.5 °C (0 to +70 °C)"
+ },
+ "0,1 mv à 1000 v": {
+  "fr": "0,1 mV à 1000 V",
+  "en": "0.1 mV to 1000 V",
+  "ar": "0.1 mV to 1000 V"
+ },
+ "0,001 nf à 60 mf": {
+  "fr": "0,001 nF à 60 mF",
+  "en": "0.001 nF to 60 mF",
+  "ar": "0.001 nF to 60 mF"
+ },
+ "0,1 hz à 60,00 mhz": {
+  "fr": "0,1 Hz à 60,00 MHz",
+  "en": "0.1 Hz to 60.00 MHz",
+  "ar": "0.1 Hz to 60.00 MHz"
+ },
+ "0 à 14 ph": {
+  "fr": "0 à 14 pH",
+  "en": "0 to 14 pH",
+  "ar": "0 to 14 pH"
+ },
+ "±0,02 ph": {
+  "fr": "±0,02 pH",
+  "en": "±0.02 pH",
+  "ar": "±0.02 pH"
+ },
+ "0,01 ph": {
+  "fr": "0,01 pH",
+  "en": "0.01 pH",
+  "ar": "0.01 pH"
+ },
+ "197 x 33 x 20 mm ( (l x i x h) ) · 110 x 33 x 20 (sans sonde et topsafe)": {
+  "fr": "197 x 33 x 20 mm ((L x I x H)) · 110 x 33 x 20 (sans sonde et TopSafe)",
+  "en": "197 x 33 x 20 mm ((LxWxH)) · 110 x 33 x 20 (without probe and TopSafe)",
+  "ar": "197 x 33 x 20 mm ((LxWxH)) · 110 x 33 x 20 (without probe and TopSafe)"
+ },
+ "0 à +60 °c": {
+  "fr": "0 à +60 °C",
+  "en": "0 to +60 °C",
+  "ar": "0 to +60 °C"
+ },
+ "35 mm · 3,5 mm": {
+  "fr": "35 mm · 3,5 mm",
+  "en": "3.5 mm · 35 mm",
+  "ar": "3.5 mm · 35 mm"
+ },
+ "2 canal": {
+  "fr": "2 canal",
+  "en": "2-channel",
+  "ar": "2-channel"
+ },
+ "2 mesures par seconde": {
+  "fr": "2 mesures par seconde",
+  "en": "2 measurements per second",
+  "ar": "2 measurements per second"
+ },
+ "+5 à +40 °c": {
+  "fr": "+5 à +40 °C",
+  "en": "+5 to +40 °C",
+  "ar": "+5 to +40 °C"
+ },
+ "jusqu'à 5 cm": {
+  "fr": "jusqu'à 5 cm",
+  "en": "up to 5 cm",
+  "ar": "up to 5 cm"
+ },
+ "±1,0 °c (-50 à +100 °c) · ±1 % v.m. (etendue de mesure restante)": {
+  "fr": "±1,0 °C (-50 à +100 °C) · ±1 % v.m. (Etendue de mesure restante)",
+  "en": "±1 % of mv (Remaining Range) · ±1.0 °C (-50 to +100 °C)",
+  "ar": "±1 % of mv (Remaining Range) · ±1.0 °C (-50 to +100 °C)"
+ },
+ "poignée bluetooth®: 88 g · sonde d'immersion / de pénétration: 11 g": {
+  "fr": "Poignée Bluetooth®: 88 g · Sonde d’immersion / de pénétration: 11 g",
+  "en": "Bluetooth® handle: 88 g · immersion/penetration probe: 11 g",
+  "ar": "Bluetooth® handle: 88 g · immersion/penetration probe: 11 g"
+ },
+ "poignée bluetooth®: 129 x 31 x 31 mm (l x i x h)": {
+  "fr": "Poignée Bluetooth®: 129 x 31 x 31 mm (L x I x H)",
+  "en": "Bluetooth® handle: 129 x 31 x 31 mm (LxWxH)",
+  "ar": "Bluetooth® handle: 129 x 31 x 31 mm (LxWxH)"
+ },
+ "-50 à +350 °c": {
+  "fr": "-50 à +350 °C",
+  "en": "-50 to +350 °C",
+  "ar": "-50 to +350 °C"
+ },
+ "± (1,0 °c + 1 % v.m.)": {
+  "fr": "±(1,0 °C + 1 % v.m.)",
+  "en": "±(1.0 °C + 1 % of mv)",
+  "ar": "±(1.0 °C + 1 % of mv)"
+ },
+ "poignée bluetooth®: 88 g · sonde de contact: 22 g": {
+  "fr": "Poignée Bluetooth®: 88 g · Sonde de contact: 22 g",
+  "en": "Bluetooth® handle: 88 g · surface probe: 22 g",
+  "ar": "Bluetooth® handle: 88 g · surface probe: 22 g"
+ },
+ "poignée bluetooth®: 88 g · sonde d'ambiance: 11 g": {
+  "fr": "Poignée Bluetooth®: 88 g · Sonde d’ambiance: 11 g",
+  "en": "Bluetooth® handle: 88 g · air probe: 11 g",
+  "ar": "Bluetooth® handle: 88 g · air probe: 11 g"
+ },
+ "requiert ios 13.0 ou plus récent; bluetooth_4.2_requirement; requiert android 8.0 ou plus récent": {
+  "fr": "requiert iOS 13.0 ou plus récent; bluetooth_4.2_requirement; requiert Android 8.0 ou plus récent",
+  "en": "requires iOS 13.0 or newer; requires mobile end device with Bluetooth 4.2; requires Android 8.0 or newer",
+  "ar": "requires iOS 13.0 or newer; requires mobile end device with Bluetooth 4.2; requires Android 8.0 or newer"
+ },
+ "± (0,7 °c + 1 % v.m.) (-50 à -30 °c) · ±1,0 °c (-30 à +80 °c) · ± (0,2 °c + 1 % v.m.) (+80 à +400 °c)": {
+  "fr": "±(0,7 °C + 1 % v.m.) (-50 à -30 °C) · ±1,0 °C (-30 à +80 °C) · ±(0,2 °C + 1 % v.m.) (+80 à +400 °C)",
+  "en": "±(0.7 °C + 1 % of mv) (-50 to -30 °C) · ±1.0 °C (-30 to +80 °C) · ±(0.2 °C + 1 % of mv) (+80 to +400 °C)",
+  "ar": "±(0.7 °C + 1 % of mv) (-50 to -30 °C) · ±1.0 °C (-30 to +80 °C) · ±(0.2 °C + 1 % of mv) (+80 to +400 °C)"
+ },
+ "poignée bluetooth®: 88 g · sonde flexible: 8 g": {
+  "fr": "Poignée Bluetooth®: 88 g · Sonde flexible: 8 g",
+  "en": "Bluetooth® handle: 88 g · flexible probe: 8 g",
+  "ar": "Bluetooth® handle: 88 g · flexible probe: 8 g"
+ },
+ "requiert ios 13.0 ou plus récent; requiert android 8.0 ou plus récent; requiert un terminal mobile doté d'un système bluetooth 4.0": {
+  "fr": "requiert iOS 13.0 ou plus récent; requiert Android 8.0 ou plus récent; requiert un terminal mobile doté d'un système Bluetooth 4.0",
+  "en": "requires iOS 13.0 or newer; requires Android 8.0 or newer; requires mobile end device with Bluetooth 4.0",
+  "ar": "requires iOS 13.0 or newer; requires Android 8.0 or newer; requires mobile end device with Bluetooth 4.0"
+ },
+ "±1,3 °c (-20 à +85 °c)": {
+  "fr": "±1,3 °C (-20 à +85 °C)",
+  "en": "±1.3 °C (-20 to +85 °C)",
+  "ar": "±1.3 °C (-20 to +85 °C)"
+ },
+ "127,4 g": {
+  "fr": "127,4 g",
+  "en": "127.4 g",
+  "ar": "127.4 g"
+ },
+ "65 g (sans topsafe) · 115 g (avec topsafe)": {
+  "fr": "65 g (sans TopSafe) · 115 g (avec TopSafe)",
+  "en": "115 g (with TopSafe) · 65 g (without TopSafe)",
+  "ar": "115 g (with TopSafe) · 65 g (without TopSafe)"
+ },
+ "197 x 33 x 20 mm ( (l x i x h) ) · 110 x 33 x 20 mm (sans sonde et topsafe)": {
+  "fr": "197 x 33 x 20 mm ((L x I x H)) · 110 x 33 x 20 mm (sans sonde et TopSafe)",
+  "en": "197 x 33 x 20 mm ((LxWxH)) · 110 x 33 x 20 mm (without probe and TopSafe)",
+  "ar": "197 x 33 x 20 mm ((LxWxH)) · 110 x 33 x 20 mm (without probe and TopSafe)"
+ },
+ "145 x 38 x 167 mm ( (l x i x h) )": {
+  "fr": "145 x 38 x 167 mm ((L x I x H))",
+  "en": "145 x 38 x 167 mm ((LxWxH))",
+  "ar": "145 x 38 x 167 mm ((LxWxH))"
+ },
+ "4 x piles boutons lr44": {
+  "fr": "4 x piles boutons LR44",
+  "en": "4 x Button cell LR44",
+  "ar": "4 x Button cell LR44"
+ },
+ "80 h (arrêt automatique après 10 min.)": {
+  "fr": "80 h (arrêt automatique après 10 min.)",
+  "en": "80 h (Auto Off 10 Min)",
+  "ar": "80 h (Auto Off 10 Min)"
+ },
+ "±1 °c (-50 à +99,9 °c) · ±1 % v.m. (etendue de mesure restante)": {
+  "fr": "±1 °C (-50 à +99,9 °C) · ±1 % v.m. (Etendue de mesure restante)",
+  "en": "±1 °C (-50 to +99.9 °C) · ±1 % of mv (Remaining Range)",
+  "ar": "±1 °C (-50 to +99.9 °C) · ±1 % of mv (Remaining Range)"
+ },
+ "270 x 40 x 70 mm ( (l x i x h) )": {
+  "fr": "270 x 40 x 70 mm ((L x I x H))",
+  "en": "270 x 40 x 70 mm ((LxWxH))",
+  "ar": "270 x 40 x 70 mm ((LxWxH))"
+ },
+ "±0,5 °c (-20 à +100 °c) · ±1,0 °c (-50 à -20,1 °c) · ±1 % v.m. (+100,1 à +275 °c)": {
+  "fr": "±0,5 °C (-20 à +100 °C) · ±1,0 °C (-50 à -20,1 °C) · ±1 % v.m. (+100,1 à +275 °C)",
+  "en": "±0.5 °C (-20 to +100 °C) · ±1 % of mv (+100.1 to +275 °C) · ±1.0 °C (-50 to -20.1 °C)",
+  "ar": "±0.5 °C (-20 to +100 °C) · ±1 % of mv (+100.1 to +275 °C) · ±1.0 °C (-50 to -20.1 °C)"
+ },
+ "204 g (compris clip pour ceinture et piles) · 156 g (y compris les piles)": {
+  "fr": "204 g (compris clip pour ceinture et piles) · 156 g (y compris les piles)",
+  "en": "204 g (incl. belt clip and batteries) · 156 g (incl. batteries)",
+  "ar": "204 g (incl. belt clip and batteries) · 156 g (incl. batteries)"
+ },
+ "148 x 38 x 73 mm (sans sonde) · 148 x 38 x 195 mm (avec sonde)": {
+  "fr": "148 x 38 x 73 mm (sans sonde) · 148 x 38 x 195 mm (avec sonde)",
+  "en": "148 x 38 x 73 mm (without probe) · 148 x 38 x 195 mm (with probe)",
+  "ar": "148 x 38 x 73 mm (without probe) · 148 x 38 x 195 mm (with probe)"
+ },
+ "30 à 130 db": {
+  "fr": "30 à 130 dB",
+  "en": "30 to 130 dB",
+  "ar": "30 to 130 dB"
+ },
+ "20 hz à 8 khz": {
+  "fr": "20 Hz à 8 kHz",
+  "en": "20 Hz to 8 kHz",
+  "ar": "20 Hz to 8 kHz"
+ },
+ "±1,4 db (dans les conditions de référence: 94 db, 1 khz)": {
+  "fr": "±1,4 dB (dans les conditions de référence: 94 dB, 1 kHz)",
+  "en": "±1.4 dB (under reference conditions: 94 dB, 1 kHz)",
+  "ar": "±1.4 dB (under reference conditions: 94 dB, 1 kHz)"
+ },
+ "0,5 \"": {
+  "fr": "0,5 \"",
+  "en": "0.5 \"",
+  "ar": "0.5 \""
+ },
+ "±1,5 °c ou ±1,5 % v.m. (0 à +250 °c) · ±2,5 °c (-30 à -20,1 °c) · ±2 °c (-20 à -0,1 °c)": {
+  "fr": "±1,5 °C ou ±1,5 % v.m. (0 à +250 °C) · ±2,5 °C (-30 à -20,1 °C) · ±2 °C (-20 à -0,1 °C)",
+  "en": "±1.5 °C or ±1.5 % of mv (0 to +250 °C) · ±2 °C (-20 to -0.1 °C) · ±2.5 °C (-30 to -20.1 °C)",
+  "ar": "±1.5 °C or ±1.5 % of mv (0 to +250 °C) · ±2 °C (-20 to -0.1 °C) · ±2.5 °C (-30 to -20.1 °C)"
+ },
+ "30 heures": {
+  "fr": "30 heures",
+  "en": "30 h",
+  "ar": "30 h"
+ },
+ "± (0,02 % v.m.)": {
+  "fr": "±(0,02 % v.m.)",
+  "en": "±(0.02 % of mv)",
+  "ar": "±(0.02 % of mv)"
+ },
+ "1 tr / min. (1000 à 29999 tr / min.) · 0,1 tr / min. (100 à 999,9 tr / min.)": {
+  "fr": "1 tr/min. (1000 à 29999 tr/min.) · 0,1 tr/min. (100 à 999,9 tr/min.)",
+  "en": "0.1 rpm (100 to 999.9 rpm) · 1 rpm (1000 to 29999 rpm)",
+  "ar": "0.1 rpm (100 to 999.9 rpm) · 1 rpm (1000 to 29999 rpm)"
+ },
+ "1,0 mv à 600,0 v": {
+  "fr": "1,0 mV à 600,0 V",
+  "en": "1.0 mV to 600.0 V",
+  "ar": "1.0 mV to 600.0 V"
+ },
+ "max. 0,1 a": {
+  "fr": "max. 0,1 A",
+  "en": "max. 0.1 A",
+  "ar": "max. 0.1 A"
+ },
+ "0,1 à 400 a": {
+  "fr": "0,1 à 400 A",
+  "en": "0.1 to 400 A",
+  "ar": "0.1 to 400 A"
+ },
+ "± (2,0 % v.m. + 5 digits)": {
+  "fr": "± (2,0 % v.m. + 5 Digits)",
+  "en": "± (2.0 % of mv + 5 Digits)",
+  "ar": "± (2.0 % of mv + 5 Digits)"
+ },
+ "0,01 nf à 100,0 μf": {
+  "fr": "0,01 nF à 100,0 μF",
+  "en": "0.01 nF to 100.0 μF",
+  "ar": "0.01 nF to 100.0 μF"
+ },
+ "13,8 kg": {
+  "fr": "13,8 kg",
+  "en": "13.8 kg",
+  "ar": "13.8 kg"
+ },
+ "huile compatible: iso vg 46": {
+  "fr": "Huile compatible: ISO VG 46",
+  "en": "Oil compatibility: ISO VG 46",
+  "ar": "Oil compatibility: ISO VG 46"
+ },
+ "± (0,1 hpa + 1,5 % v.m.) ± 1 digit (25,001 à 200 hpa) · ± (0,3 pa + 1 % v.m.) ± 1 digit (0 à 25 hpa)": {
+  "fr": "±(0,1 hPa + 1,5 % v.m.)± 1 digit (25,001 à 200 hPa) · ±(0,3 Pa + 1 % v.m.)± 1 digit (0 à 25 hPa)",
+  "en": "±(0.1 hPa + 1.5 % of mv)± 1 digit (25.001 to 200 hPa) · ±(0.3 Pa + 1 % of mv)± 1 digit (0 to 25 hPa)",
+  "ar": "±(0.1 hPa + 1.5 % of mv)± 1 digit (25.001 to 200 hPa) · ±(0.3 Pa + 1 % of mv)± 1 digit (0 to 25 hPa)"
+ },
+ "0,001 hpa (0 à + 2 hpa) · 0,10 hpa (20,1 à + 200 hpa) · 0,01 hpa (2,01 à + 20 hpa)": {
+  "fr": "0,001 hPa (0 à + 2 hPa) · 0,10 hPa (20,1 à + 200 hPa) · 0,01 hPa (2,01 à + 20 hPa)",
+  "en": "0.10 hPa (20.1 to + 200 hPa) · 0.01 hPa (2.01 to + 20 hPa) · 0.001 hPa (0 to + 2 hPa)",
+  "ar": "0.10 hPa (20.1 to + 200 hPa) · 0.01 hPa (2.01 to + 20 hPa) · 0.001 hPa (0 to + 2 hPa)"
+ },
+ "190,0 g": {
+  "fr": "190,0 g",
+  "en": "190.0 g",
+  "ar": "190.0 g"
+ },
+ "±2 %hr + 1 digit à +25 °c (10 à 90 %hr) · ±3 %hr etendue de mesure restante": {
+  "fr": "±2 %HR + 1 Digit à +25 °C (10 à 90 %HR) · ±3 %HR Etendue de mesure restante",
+  "en": "±3 %RH Remaining Range · ±2 %RH + 1 Digit at +25 °C (10 to 90 %RH)",
+  "ar": "±3 %RH Remaining Range · ±2 %RH + 1 Digit at +25 °C (10 to 90 %RH)"
+ },
+ "10 à 690 v": {
+  "fr": "10 à 690 V",
+  "en": "10 to 690 V",
+  "ar": "10 to 690 V"
+ },
+ "± (3 % v.m. + 5 digits)": {
+  "fr": "± (3 % v.m. + 5 Digits)",
+  "en": "± (3 % of mv + 5 Digits)",
+  "ar": "± (3 % of mv + 5 Digits)"
+ },
+ "0 à 95 %hr": {
+  "fr": "0 à 95 %HR",
+  "en": "0 to 95 %RH",
+  "ar": "0 to 95 %RH"
+ },
+ "162 g (y compris piles) · 210 g (compris clip pour ceinture et piles)": {
+  "fr": "162 g (y compris piles) · 210 g (compris clip pour ceinture et piles)",
+  "en": "162 g (incl. batteries) · 210 g (incl. belt clip and batteries)",
+  "ar": "162 g (incl. batteries) · 210 g (incl. belt clip and batteries)"
+ },
+ "148 x 38 x 73 mm (sans sonde) · 148 x 38 x 185 mm (avec sonde rattachable)": {
+  "fr": "148 x 38 x 73 mm (sans sonde) · 148 x 38 x 185 mm (avec sonde rattachable)",
+  "en": "148 x 38 x 185 mm (with attached probe) · 148 x 38 x 73 mm (without probe)",
+  "ar": "148 x 38 x 185 mm (with attached probe) · 148 x 38 x 73 mm (without probe)"
+ },
+ "0,1 μa (câbles de mesure) · 0,1 a (pince)": {
+  "fr": "0,1 μA (Câbles de mesure) · 0,1 A (Pince)",
+  "en": "0.1 A (clamp) · 0.1 μA (measuring cables)",
+  "ar": "0.1 A (clamp) · 0.1 μA (measuring cables)"
+ },
+ "± (1,5 % v.m. + 5 digits) (câbles de mesure) · ± (2,0 % v.m. + 5 digits) (pince)": {
+  "fr": "± (1,5 % v.m. + 5 Digits) (Câbles de mesure) · ± (2,0 % v.m. + 5 Digits) (Pince)",
+  "en": "± (1.5 % of mv + 5 Digits) (measuring cables) · ± (2.0 % of mv + 5 Digits) (clamp)",
+  "ar": "± (1.5 % of mv + 5 Digits) (measuring cables) · ± (2.0 % of mv + 5 Digits) (clamp)"
+ },
+ "30 à 300000 fpm": {
+  "fr": "30 à 300000 fpm",
+  "en": "30 to 300000 fpm",
+  "ar": "30 to 300000 fpm"
+ },
+ "0,02 % v.m.": {
+  "fr": "0,02 % v.m.",
+  "en": "0.02 % of mv",
+  "ar": "0.02 % of mv"
+ },
+ "±1 (1000 à 300000 fpm) · ±0,1 (30 à 999 fpm)": {
+  "fr": "±1 (1000 à 300000 fpm) · ±0,1 (30 à 999 fpm)",
+  "en": "±0.1 (30 to 999 fpm) · ±1 (1000 to 300000 fpm)",
+  "ar": "±0.1 (30 to 999 fpm) · ±1 (1000 to 300000 fpm)"
+ },
+ "env. 6500 k": {
+  "fr": "env. 6500 K",
+  "en": "Approx. 6500 K",
+  "ar": "Approx. 6500 K"
+ },
+ "4800 lux á 6000 fpm / 30 cm": {
+  "fr": "4800 Lux á 6000 FPM / 30 cm",
+  "en": "4800 Lux at 6000 FPM / 30 cm",
+  "ar": "4800 Lux at 6000 FPM / 30 cm"
+ },
+ "±2 °c (etendue de mesure restante) · ±1 °c (-10 à +100 °c)": {
+  "fr": "±2 °C (Etendue de mesure restante) · ±1 °C (-10 à +100 °C)",
+  "en": "±1 °C (-10 to +100 °C) · ±2 °C (Remaining Range)",
+  "ar": "±1 °C (-10 to +100 °C) · ±2 °C (Remaining Range)"
+ },
+ "1 °c (-50 à -20 °c) · 0,1 °c (-19,9 à +150 °c)": {
+  "fr": "1 °C (-50 à -20 °C) · 0,1 °C (-19,9 à +150 °C)",
+  "en": "0.1 °C (-19.9 to +150 °C) · 1 °C (-50 to -20 °C)",
+  "ar": "0.1 °C (-19.9 to +150 °C) · 1 °C (-50 to -20 °C)"
+ },
+ "100 x 64 x 18 mm ( (l x i x h) )": {
+  "fr": "100 x 64 x 18 mm ((L x I x H))",
+  "en": "100 x 64 x 18 mm ((LxWxH))",
+  "ar": "100 x 64 x 18 mm ((LxWxH))"
+ },
+ "12 à 690 v": {
+  "fr": "12 à 690 V",
+  "en": "12 to 690 V",
+  "ar": "12 to 690 V"
+ },
+ "conforme à din en 61243-3:2014": {
+  "fr": "conforme à DIN EN 61243-3:2014",
+  "en": "according to DIN EN 61243-3:2014",
+  "ar": "according to DIN EN 61243-3:2014"
+ },
+ "6 à 1000 v": {
+  "fr": "6 à 1000 V",
+  "en": "6 to 1000 V",
+  "ar": "6 to 1000 V"
+ },
+ "0,1 v": {
+  "fr": "0,1 V",
+  "en": "0.1 V",
+  "ar": "0.1 V"
+ },
+ "6 à 49,9 v: ± (1,5 % v.m. + 5 digits) · 50 à 1000,0 v: ± (1,5 % v.m. + 3 digits)": {
+  "fr": "6 à 49,9 V: ± (1,5 % v.m. + 5 Digits) · 50 à 1000,0 V: ± (1,5 % v.m. + 3 Digits)",
+  "en": "50 to 1000.0 V: ± (1.5 % of mv + 3 Digits) · 6 to 49.9 V: ± (1.5 % of mv + 5 Digits)",
+  "ar": "50 to 1000.0 V: ± (1.5 % of mv + 3 Digits) · 6 to 49.9 V: ± (1.5 % of mv + 5 Digits)"
+ },
+ "0,1 à 200 a": {
+  "fr": "0,1 à 200 A",
+  "en": "0.1 to 200 A",
+  "ar": "0.1 to 200 A"
+ },
+ "0,1 a": {
+  "fr": "0,1 A",
+  "en": "0.1 A",
+  "ar": "0.1 A"
+ },
+ "± (3 % v.m. + 3 digits)": {
+  "fr": "± (3 % v.m. + 3 Digits)",
+  "en": "± (3 % of mv + 3 Digits)",
+  "ar": "± (3 % of mv + 3 Digits)"
+ },
+ "30 à 100 kohm": {
+  "fr": "30 à 100 kOhm",
+  "en": "30 to 100 kOhm",
+  "ar": "30 to 100 kOhm"
+ },
+ "± (1 % v.m. + 5 digits)": {
+  "fr": "± (1 % v.m. + 5 Digits)",
+  "en": "± (1 % of mv + 5 Digits)",
+  "ar": "± (1 % of mv + 5 Digits)"
+ },
+ "0 à 75 %hr": {
+  "fr": "0 à 75 %HR",
+  "en": "0 to 75 %RH",
+  "ar": "0 to 75 %RH"
+ },
+ "225 x 40 x 30 mm ( (l x i x h) )": {
+  "fr": "225 x 40 x 30 mm ((L x I x H))",
+  "en": "225 x 40 x 30 mm ((LxWxH))",
+  "ar": "225 x 40 x 30 mm ((LxWxH))"
+ },
+ "±1 °c (-10 à +99,9 °c) · ±2 % v.m. (+100 à +199,9 °c) · ±3 % v.m. (+200 à +250 °c)": {
+  "fr": "±1 °C (-10 à +99,9 °C) · ±2 % v.m. (+100 à +199,9 °C) · ±3 % v.m. (+200 à +250 °C)",
+  "en": "±3 % of mv (+200 to +250 °C) · ±1 °C (-10 to +99.9 °C) · ±2 % of mv (+100 to +199.9 °C)",
+  "ar": "±3 % of mv (+200 to +250 °C) · ±1 °C (-10 to +99.9 °C) · ±2 % of mv (+100 to +199.9 °C)"
+ },
+ "110 x 33 x 20 (sans sonde et topsafe) · 197 x 35 x 20 mm ( (l x i x h) )": {
+  "fr": "110 x 33 x 20 (sans sonde et TopSafe) · 197 x 35 x 20 mm ((L x I x H))",
+  "en": "197 x 35 x 20 mm ((LxWxH)) · 110 x 33 x 20 (without probe and TopSafe)",
+  "ar": "197 x 35 x 20 mm ((LxWxH)) · 110 x 33 x 20 (without probe and TopSafe)"
+ },
+ "8 h (luminosité des led réglée sur 40%)": {
+  "fr": "8 h (luminosité des LED réglée sur 40%)",
+  "en": "8 hours (40 % brightness LED)",
+  "ar": "8 hours (40 % brightness LED)"
+ },
+ "2.4 pouces": {
+  "fr": "2.4 pouces",
+  "en": "2.4 inch",
+  "ar": "2.4 inch"
+ },
+ "4 piles alcalines aa": {
+  "fr": "4 piles alcalines AA",
+  "en": "4x AA alkaline batteries",
+  "ar": "4x AA alkaline batteries"
+ },
+ "0 à +2000 hpa": {
+  "fr": "0 à +2000 hPa",
+  "en": "0 to +2000 hPa",
+  "ar": "0 to +2000 hPa"
+ },
+ "0,5 % val.fin.": {
+  "fr": "0,5 % val.fin.",
+  "en": "0.5 % fs",
+  "ar": "0.5 % fs"
+ },
+ "145 x 45 x 25 mm ( (l x i x h) )": {
+  "fr": "145 x 45 x 25 mm ((L x I x H))",
+  "en": "145 x 45 x 25 mm ((LxWxH))",
+  "ar": "145 x 45 x 25 mm ((LxWxH))"
+ },
+ "±2 °c (etendue de mesure restante) · ±1 °c (-30 à +250,0 °c)": {
+  "fr": "±2 °C (Etendue de mesure restante) · ±1 °C (-30 à +250,0 °C)",
+  "en": "±1 °C (-30 to +250.0 °C) · ±2 °C (Remaining Range)",
+  "ar": "±1 °C (-30 to +250.0 °C) · ±2 °C (Remaining Range)"
+ },
+ "-20 à +100 °c": {
+  "fr": "-20 à +100 °C",
+  "en": "-20 to +100 °C",
+  "ar": "-20 to +100 °C"
+ },
+ "-40 à +600 °c": {
+  "fr": "-40 à +600 °C",
+  "en": "-40 to +600 °C",
+  "ar": "-40 to +600 °C"
+ },
+ "±0,5 °c ou ±0,5 %": {
+  "fr": "±0,5 °C ou ±0,5 %",
+  "en": "±0.5 °C or ±0.5 %",
+  "ar": "±0.5 °C or ±0.5 %"
+ },
+ "600 à 1150 hpa": {
+  "fr": "600 à 1150 hPa",
+  "en": "600 to 1150 hPa",
+  "ar": "600 to 1150 hPa"
+ },
+ "jusqu'á 1200 hpa": {
+  "fr": "Jusqu'á 1200 hPa",
+  "en": "to 1200 hPa",
+  "ar": "to 1200 hPa"
+ },
+ "0 à 10 l / h": {
+  "fr": "0 à 10 l/h",
+  "en": "0 to 10 l/h",
+  "ar": "0 to 10 l/h"
+ },
+ "±0,2 hpa ou ±5 % v.m.": {
+  "fr": "±0,2 hPa ou ±5 % v.m.",
+  "en": "±0.2 hPa or ±5 % of mv",
+  "ar": "±0.2 hPa or ±5 % of mv"
+ },
+ "0 à 1000 hpa": {
+  "fr": "0 à 1000 hPa",
+  "en": "0 to 1000 hPa",
+  "ar": "0 to 1000 hPa"
+ },
+ "±0,5 hpa ou ±3 % v.m.": {
+  "fr": "±0,5 hPa ou ±3 % v.m.",
+  "en": "±0.5 hPa or ±3 % of mv",
+  "ar": "±0.5 hPa or ±3 % of mv"
+ },
+ "2x din hirschmann pour raccordement des sondes de pression et température": {
+  "fr": "2x DIN Hirschmann pour raccordement des sondes de pression et température",
+  "en": "2 Hirschmann sockets for connecting pressure and temperature probes",
+  "ar": "2 Hirschmann sockets for connecting pressure and temperature probes"
+ },
+ "2x raccords pression dn 5": {
+  "fr": "2x raccords pression DN 5",
+  "en": "2 pressure connections DN 5",
+  "ar": "2 pressure connections DN 5"
+ },
+ "classe appareil l jusqu'à volume 200 litres": {
+  "fr": "Classe appareil L jusqu’à volume 200 litres",
+  "en": "Instrument class L up to volume = 200 litres",
+  "ar": "Instrument class L up to volume = 200 litres"
+ },
+ "±0,2 ou ±5 (1 à 200 l)": {
+  "fr": "±0,2 ou ±5 (1 à 200 l)",
+  "en": "±0.2 or ±5 (1 to 200 l)",
+  "ar": "±0.2 or ±5 (1 to 200 l)"
+ },
+ "selon en 50543": {
+  "fr": "Selon EN 50543",
+  "en": "According to EN 50543",
+  "ar": "According to EN 50543"
+ },
+ "+5 à +95 %hr": {
+  "fr": "+5 à +95 %HR",
+  "en": "+5 to +95 %RH",
+  "ar": "+5 to +95 %RH"
+ },
+ "±2,5 %hr (5 à +95 %hr)": {
+  "fr": "±2,5 %HR (5 à +95 %HR)",
+  "en": "±2.5 %RH (5 to +95 %RH)",
+  "ar": "±2.5 %RH (5 to +95 %RH)"
+ },
+ "±300 ppm (0 à 4000 ppm) · 8 % v.m. (4000 à 6000 ppm) · 500 ppm (6000 à 10000 ppm)": {
+  "fr": "±300 ppm (0 à 4000 ppm) · 8 % v.m. (4000 à 6000 ppm) · 500 ppm (6000 à 10000 ppm)",
+  "en": "500 ppm (6000 to 10000 ppm) · ±300 ppm (0 to 4000 ppm) · 8 % of mv (4000 to 6000 ppm)",
+  "ar": "500 ppm (6000 to 10000 ppm) · ±300 ppm (0 to 4000 ppm) · 8 % of mv (4000 to 6000 ppm)"
+ },
+ "0 à 100 ppm": {
+  "fr": "0 à 100 ppm",
+  "en": "0 to 100 ppm",
+  "ar": "0 to 100 ppm"
+ },
+ "±5 ppm (>20 ppm) · ±3 ppm (0 à 20 ppm)": {
+  "fr": "±5 ppm (>20 ppm) · ±3 ppm (0 à 20 ppm)",
+  "en": "±5 ppm (>20 ppm) · ±3 ppm (0 to 20 ppm)",
+  "ar": "±5 ppm (>20 ppm) · ±3 ppm (0 to 20 ppm)"
+ },
+ "0,5 ppm": {
+  "fr": "0,5 ppm",
+  "en": "0.5 ppm",
+  "ar": "0.5 ppm"
+ },
+ "±0,5 °c (±1 digit)": {
+  "fr": "±0,5 °C (±1 Digit)",
+  "en": "±0.5 °C (±1 Digit)",
+  "ar": "±0.5 °C (±1 Digit)"
+ },
+ "±0,01 % v.m.": {
+  "fr": "±0,01 % v.m.",
+  "en": "±0.01 % of mv",
+  "ar": "±0.01 % of mv"
+ },
+ "1 tr / min.": {
+  "fr": "1 tr/min.",
+  "en": "1 rpm",
+  "ar": "1 rpm"
+ },
+ "1200 lux à. 20 cm de distance": {
+  "fr": "1200 Lux à. 20 cm de distance",
+  "en": "1200 Lux at distance of approx. 20 cm",
+  "ar": "1200 Lux at distance of approx. 20 cm"
+ },
+ "6000...6500 k": {
+  "fr": "6000...6500 K",
+  "en": "6000 to 6500 K",
+  "ar": "6000 to 6500 K"
+ },
+ "0...5 v dtl / ttl compatible; 3,5 mm / 1 / 8 connecteur standard; uout=7,2 v non-régulé": {
+  "fr": "0...5 V DTL/TTL compatible; 3,5 mm / 1/8 connecteur standard; Uout=7,2 V non-régulé",
+  "en": "0 to 5 V DTL/TTL compatible; 3.5 mm / 1/8 Standard plug; Uout=7.2 V unregulated",
+  "ar": "0 to 5 V DTL/TTL compatible; 3.5 mm / 1/8 Standard plug; Uout=7.2 V unregulated"
+ },
+ "lcd 5 chiffres": {
+  "fr": "LCD 5 chiffres",
+  "en": "5 digit LCD display",
+  "ar": "5 digit LCD display"
+ },
+ "max. 3,5 h": {
+  "fr": "max. 3,5 h",
+  "en": "max. 3.5 h",
+  "ar": "max. 3.5 h"
+ },
+ "100...240 v, 50 / 60 hz": {
+  "fr": "100...240 V, 50/60 Hz",
+  "en": "100 to 240 V, 50/60 Hz",
+  "ar": "100 to 240 V, 50/60 Hz"
+ },
+ "+204 à +260 °c": {
+  "fr": "+204 à +260 °C",
+  "en": "+204 to +260 °C",
+  "ar": "+204 to +260 °C"
+ },
+ "±1 % v.m. ±1 °c": {
+  "fr": "±1 % v.m. ±1 °C",
+  "en": "±1 % of mv ±1 °C",
+  "ar": "±1 % of mv ±1 °C"
+ },
+ "+60 à +82 °c": {
+  "fr": "+60 à +82 °C",
+  "en": "+60 to +82 °C",
+  "ar": "+60 to +82 °C"
+ },
+ "±25,0 %hr (5 à +95 %hr)": {
+  "fr": "±25,0 %HR (5 à +95 %HR)",
+  "en": "±25.0 %RH (5 to +95 %RH)",
+  "ar": "±25.0 %RH (5 to +95 %RH)"
+ },
+ "selon vdi 4206-2": {
+  "fr": "Selon VDI 4206-2",
+  "en": "acc. VDI 4206-2",
+  "ar": "acc. VDI 4206-2"
+ },
+ "0,1 mg / m³ (>5mg / m³)": {
+  "fr": "0,1 mg/m³ (>5mg/m³)",
+  "en": "0.1 mg/m³ (>5mg/m³)",
+  "ar": "0.1 mg/m³ (>5mg/m³)"
+ },
+ "500.000 valeurs de mesure": {
+  "fr": "500.000 valeurs de mesure",
+  "en": "500.000 readings",
+  "ar": "500.000 readings"
+ },
+ "0 à 300 mg / m³": {
+  "fr": "0 à 300 mg/m³",
+  "en": "0 to 300 mg/m³",
+  "ar": "0 to 300 mg/m³"
+ },
+ "6 à 600 v": {
+  "fr": "6 à 600 V",
+  "en": "6 to 600 V",
+  "ar": "6 to 600 V"
+ },
+ "6 à 49,9 v: ± (1,5 % v.m. + 5 digits) · 50 à 600,0 v: ± (1,5 % v.m. + 3 digits)": {
+  "fr": "6 à 49,9 V: ± (1,5 % v.m. + 5 Digits) · 50 à 600,0 V: ± (1,5 % v.m. + 3 Digits)",
+  "en": "50 to 600.0 V: ± (1.5 % of mv + 3 Digits) · 6 to 49.9 V: ± (1.5 % of mv + 5 Digits)",
+  "ar": "50 to 600.0 V: ± (1.5 % of mv + 3 Digits) · 6 to 49.9 V: ± (1.5 % of mv + 5 Digits)"
+ },
+ "30 ohm à 100 kohm": {
+  "fr": "30 Ohm à 100 kOhm",
+  "en": "30 Ohm to 100 kOhm",
+  "ar": "30 Ohm to 100 kOhm"
+ },
+ "env. 17 kg": {
+  "fr": "env. 17 kg",
+  "en": "Approx. 17 kg",
+  "ar": "Approx. 17 kg"
+ },
+ "565 x 455 x 265 mm (mallette)": {
+  "fr": "565 x 455 x 265 mm (mallette)",
+  "en": "565 x 455 x 265 mm (case)",
+  "ar": "565 x 455 x 265 mm (case)"
+ },
+ "5 à +45 °c": {
+  "fr": "5 à +45 °C",
+  "en": "5 to +45 °C",
+  "ar": "5 to +45 °C"
+ },
+ "1 x sonde de température de l'air comburant; 1 x sonde de combustion; 1 x sonde de température; 1 x sonde de température; 1 x pression différentielle": {
+  "fr": "1 x sonde de température de l’air comburant; 1 x sonde de combustion; 1 x sonde de température; 1 x sonde de température; 1 x pression différentielle",
+  "en": "1 x combustion air temperature probe; 1 x flue gas probe; 1 x temperature probe; 1 x temperature probe; 1 x differential pressure",
+  "ar": "1 x combustion air temperature probe; 1 x flue gas probe; 1 x temperature probe; 1 x temperature probe; 1 x differential pressure"
+ },
+ "accumulateur lithium-ion; bloc d'alimentation ac 100 v ... 240 v (50 ... 60 hz)": {
+  "fr": "Accumulateur lithium-ion; Bloc d’alimentation AC 100 V ... 240 V (50 ... 60 Hz)",
+  "en": "Li ion rechargeable battery; AC mains unit 100 V to 240 V (50 to 60 Hz)",
+  "ar": "Li ion rechargeable battery; AC mains unit 100 V to 240 V (50 to 60 Hz)"
+ },
+ "0,04 °ctd; 99 °ctd": {
+  "fr": "0,04 °Ctd; 99 °Ctd",
+  "en": "0.04 °Ctd; 99 °Ctd",
+  "ar": "0.04 °Ctd; 99 °Ctd"
+ },
+ "±1,0 °c (-200 à -+1001,0 °c) · ±1,0 °c (200 à +1370,0 °c) · ±0,4 °c (-100 à +200,0 °c)": {
+  "fr": "±1,0 °C (-200 à -+1001,0 °C) · ±1,0 °C (200 à +1370,0 °C) · ±0,4 °C (-100 à +200,0 °C)",
+  "en": "±1.0 °C (200 to +1370.0 °C) · ±0.4 °C (-100 to +200.0 °C) · ±1.0 °C (-200 to -+1001.0 °C)",
+  "ar": "±1.0 °C (200 to +1370.0 °C) · ±0.4 °C (-100 to +200.0 °C) · ±1.0 °C (-200 to -+1001.0 °C)"
+ },
+ "±0,1 °c (-200 à +1370,0 °c)": {
+  "fr": "±0,1 °C (-200 à +1370,0 °C)",
+  "en": "±0.1 °C (-200 to +1370.0 °C)",
+  "ar": "±0.1 °C (-200 to +1370.0 °C)"
+ },
+ "10,0 · ±10 hpa à -5 à 45 °c": {
+  "fr": "10,0 · ±10 hPa à -5 à 45 °C",
+  "en": "±10 hPa at -5 to 45 °C · 10.0",
+  "ar": "±10 hPa at -5 to 45 °C · 10.0"
+ },
+ "0 à 3000 ppm": {
+  "fr": "0 à 3000 ppm",
+  "en": "0 to 3000 ppm",
+  "ar": "0 to 3000 ppm"
+ },
+ "0 à 40 %vol": {
+  "fr": "0 à 40 %vol",
+  "en": "0 to 40 %vol",
+  "ar": "0 to 40 %vol"
+ },
+ "+88 à +110 °c": {
+  "fr": "+88 à +110 °C",
+  "en": "+88 to +110 °C",
+  "ar": "+88 to +110 °C"
+ },
+ "jusqu'à 1200 hpa": {
+  "fr": "Jusqu’à 1200 hPa",
+  "en": "to 1200 hPa",
+  "ar": "to 1200 hPa"
+ },
+ "±0,2 l / h ou ±5 % v.m.": {
+  "fr": "±0,2 l/h ou ±5 % v.m.",
+  "en": "±0.2 l/h or ±5 % of mv",
+  "ar": "±0.2 l/h or ±5 % of mv"
+ },
+ "0,1 l / h": {
+  "fr": "0,1 l/h",
+  "en": "0.1 l/h",
+  "ar": "0.1 l/h"
+ },
+ "0 à 25 bar": {
+  "fr": "0 à 25 bar",
+  "en": "0 to 25 bar",
+  "ar": "0 to 25 bar"
+ },
+ "±0,6 % val.fin. (0 à 10 bar) · ±0,6 % val.fin. (> 10 à 25 bar)": {
+  "fr": "±0,6 % val.fin. (0 à 10 bar) · ±0,6 % val.fin. (> 10 à 25 bar)",
+  "en": "±0.6 % fs (> 10 to 25 bar) · ±0.6 % fs (0 to 10 bar)",
+  "ar": "±0.6 % fs (> 10 to 25 bar) · ±0.6 % fs (0 to 10 bar)"
+ },
+ "mini 5h de mesure, utilisation secteur possible": {
+  "fr": "Mini 5h de mesure, utilisation secteur possible",
+  "en": "approx. 5 h measurement time, mains operation possible",
+  "ar": "approx. 5 h measurement time, mains operation possible"
+ },
+ "160 g (avec pointe de mesure longue) · 162 g (testo 105 avec pointe pour produits congelés) · 156 g (testo 105 avec pointe de mesure standard) · 1124 g (poids total kit avec mallette)": {
+  "fr": "160 g (avec pointe de mesure longue) · 162 g (testo 105 avec pointe pour produits congelés) · 156 g (testo 105 avec pointe de mesure standard) · 1124 g (poids total kit avec mallette)",
+  "en": "1124 g (total weight kit with case) · 162 g (testo 105 with frozen food tip) · 156 g (testo 105 with standard measurement tip) · 160 g (with long measurement tip)",
+  "ar": "1124 g (total weight kit with case) · 162 g (testo 105 with frozen food tip) · 156 g (testo 105 with standard measurement tip) · 160 g (with long measurement tip)"
+ },
+ "148 x 38 x 297 mm (avec pointe de mesure longue) · 148 x 38 x 185 mm (avec pointe pour produits congelés) · 148 x 38 x 195 mm (avec pointe de mesure standard)": {
+  "fr": "148 x 38 x 297 mm (avec pointe de mesure longue) · 148 x 38 x 185 mm (avec pointe pour produits congelés) · 148 x 38 x 195 mm (avec pointe de mesure standard)",
+  "en": "148 x 38 x 195 mm (with standard measurement tip) · 148 x 38 x 185 mm (with frozen food tip) · 148 x 38 x 297 mm (with long measurement tip)",
+  "ar": "148 x 38 x 195 mm (with standard measurement tip) · 148 x 38 x 185 mm (with frozen food tip) · 148 x 38 x 297 mm (with long measurement tip)"
+ },
+ "80 h (usage normal)": {
+  "fr": "80 h (usage normal)",
+  "en": "80 h (typical)",
+  "ar": "80 h (typical)"
+ },
+ "+116 à +138 °c": {
+  "fr": "+116 à +138 °C",
+  "en": "+116 to +138 °C",
+  "ar": "+116 to +138 °C"
+ },
+ "+143 à +166 °c": {
+  "fr": "+143 à +166 °C",
+  "en": "+143 to +166 °C",
+  "ar": "+143 to +166 °C"
+ },
+ "±2 °c (+143 à +154 °c) · ± (1 °c + 1 v.m.) (etendue de mesure restante)": {
+  "fr": "±2 °C (+143 à +154 °C) · ±(1 °C + 1 v.m.) (Etendue de mesure restante)",
+  "en": "±2 °C (+143 to +154 °C) · ±(1 °C + 1 of mv) (Remaining Range)",
+  "ar": "±2 °C (+143 to +154 °C) · ±(1 °C + 1 of mv) (Remaining Range)"
+ },
+ "+199 à +224 °c": {
+  "fr": "+199 à +224 °C",
+  "en": "+199 to +224 °C",
+  "ar": "+199 to +224 °C"
+ },
+ "4,36 kg (avec piles et sac)": {
+  "fr": "4,36 kg (avec piles et sac)",
+  "en": "4.36 kg (incl. batteries and bag)",
+  "ar": "4.36 kg (incl. batteries and bag)"
+ },
+ "0 à 100 kg": {
+  "fr": "0 à 100 kg",
+  "en": "0 to 100 kg",
+  "ar": "0 to 100 kg"
+ },
+ "température de service +22 °c: · ≤ ± (10 g+ 0,05 %rdg) (30 à 100 kg) · ≤ ± (10 g+ 0,03 %rdg) (0 à 30 kg)": {
+  "fr": "Température de service +22 °C: · ≤ ±(10 g+ 0,05 %rdg) (30 à 100 kg) · ≤ ±(10 g+ 0,03 %rdg) (0 à 30 kg)",
+  "en": "Operating temperature +22 °C: · ≤ ±(10 g+ 0.03 %rdg) (0 to 30 kg) · ≤ ±(10 g+ 0.05 %rdg) (30 to 100 kg)",
+  "ar": "Operating temperature +22 °C: · ≤ ±(10 g+ 0.03 %rdg) (0 to 30 kg) · ≤ ±(10 g+ 0.05 %rdg) (30 to 100 kg)"
+ },
+ "0,01 kg": {
+  "fr": "0,01 kg",
+  "en": "0.01 kg",
+  "ar": "0.01 kg"
+ },
+ "310 x 287 x 58 mm (l x i x h)": {
+  "fr": "310 x 287 x 58 mm (L x I x H)",
+  "en": "310 x 287 x 58 mm (LxWxH)",
+  "ar": "310 x 287 x 58 mm (LxWxH)"
+ },
+ ">70 h à +25 °c": {
+  "fr": ">70 h à +25 °C",
+  "en": "> 70 h at +25 °C",
+  "ar": "> 70 h at +25 °C"
+ },
+ "+0,1 à +14 m / s · -120 à +120 pa": {
+  "fr": "+0,1 à +14 m/s · -120 à +120 Pa",
+  "en": "+0.1 to +14 m/s · -120 to +120 Pa",
+  "ar": "+0.1 to +14 m/s · -120 to +120 Pa"
+ },
+ "±2 % v.m. + 0,5 pa at +22 °c, 1013 hpa": {
+  "fr": "±2 % v.m. + 0,5 Pa at +22 °C, 1013 hPa",
+  "en": "±2 % of mv + 0.5 Pa at +22 °C, 1013 hPa",
+  "ar": "±2 % of mv + 0.5 Pa at +22 °C, 1013 hPa"
+ },
+ "0,001 pa · 0,01 m / s": {
+  "fr": "0,001 Pa · 0,01 m/s",
+  "en": "0.01 m/s · 0.001 Pa",
+  "ar": "0.01 m/s · 0.001 Pa"
+ },
+ "directive ue 2014 / 30 / ce": {
+  "fr": "Directive UE 2014/30/CE",
+  "en": "EU-guideline 2014/30/EU",
+  "ar": "EU-guideline 2014/30/EU"
+ },
+ "3,5\"": {
+  "fr": "3,5\"",
+  "en": "3.5\"",
+  "ar": "3.5\""
+ },
+ "2 gb (interne)": {
+  "fr": "2 GB (interne)",
+  "en": "2 GB (internal)",
+  "ar": "2 GB (internal)"
+ },
+ "10 à +60 °c (ambient temperature probe) · 5 à +40 °c (humidity / temperature probe)": {
+  "fr": "10 à +60 °C (ambient temperature probe) · 5 à +40 °C (humidity/temperature probe)",
+  "en": "10 to +60 °C (ambient temperature probe) · 5 to +40 °C (humidity/temperature probe)",
+  "ar": "10 to +60 °C (ambient temperature probe) · 5 to +40 °C (humidity/temperature probe)"
+ },
+ "± (0,3 °c + 0,3 % v.m.) (5 à +40 °c) (humidity / temperature probe) · ± (0,3 °c + 0,3 % v.m.) (10 à +60 °c) (ambient temperature probe)": {
+  "fr": "±(0,3 °C + 0,3 % v.m.) (5 à +40 °C) (humidity/temperature probe) · ±(0,3 °C + 0,3 % v.m.) (10 à +60 °C) (ambient temperature probe)",
+  "en": "±(0.3 °C + 0.3 % of mv) (5 to +40 °C) (humidity/temperature probe) · ±(0.3 °C + 0.3 % of mv) (10 to +60 °C) (ambient temperature probe)",
+  "ar": "±(0.3 °C + 0.3 % of mv) (5 to +40 °C) (humidity/temperature probe) · ±(0.3 °C + 0.3 % of mv) (10 to +60 °C) (ambient temperature probe)"
+ },
+ "0,01 °c (ambient temperature probe) · 0,01 °c (humidity / temperature probe)": {
+  "fr": "0,01 °C (ambient temperature probe) · 0,01 °C (humidity/temperature probe)",
+  "en": "0.01 °C (humidity/temperature probe) · 0.01 °C (ambient temperature probe)",
+  "ar": "0.01 °C (humidity/temperature probe) · 0.01 °C (ambient temperature probe)"
+ },
+ "0 à +120 °c": {
+  "fr": "0 à +120 °C",
+  "en": "0 to +120 °C",
+  "ar": "0 to +120 °C"
+ },
+ "classe 1 ¹⁾": {
+  "fr": "Classe 1 ¹⁾",
+  "en": "Class 1 ¹⁾",
+  "ar": "Class 1 ¹⁾"
+ },
+ "0,10 °c": {
+  "fr": "0,10 °C",
+  "en": "0.10 °C",
+  "ar": "0.10 °C"
+ },
+ "575 x 340 x 270 mm (l x i x h) (incl. case)": {
+  "fr": "575 x 340 x 270 mm (L x I x H) (incl. case)",
+  "en": "575 x 340 x 270 mm (LxWxH) (incl. case)",
+  "ar": "575 x 340 x 270 mm (LxWxH) (incl. case)"
+ },
+ "±0,4 °c (-40 à -25,1 °c) · ±0,5 % v.m. (etendue de mesure restante) · ±0,2 °c (-25 à +74,9 °c) · ±0,4 °c (75 à +99,9 °c)": {
+  "fr": "±0,4 °C (-40 à -25,1 °C) · ±0,5 % v.m. (Etendue de mesure restante) · ±0,2 °C (-25 à +74,9 °C) · ±0,4 °C (75 à +99,9 °C)",
+  "en": "±0.4 °C (-40 to -25.1 °C) · ±0.5 % of mv (Remaining Range) · ±0.4 °C (75 to +99.9 °C) · ±0.2 °C (-25 to +74.9 °C)",
+  "ar": "±0.4 °C (-40 to -25.1 °C) · ±0.5 % of mv (Remaining Range) · ±0.4 °C (75 to +99.9 °C) · ±0.2 °C (-25 to +74.9 °C)"
  }
 }
