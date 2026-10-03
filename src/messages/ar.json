@@ -72,6 +72,8 @@
     "specValueN": "القيمة {n}",
     "specColN": "العمود {n}",
     "relatedTitle": "من نفس الفئة",
+    "showMore": "عرض {n} أخرى",
+    "showLess": "عرض أقل",
     "probesTitle": "المسابير المتوافقة ({n})",
     "accessoriesTitle": "الملحقات المتوافقة ({n})",
     "compatibleWithTitle": "متوافق مع ({n})"

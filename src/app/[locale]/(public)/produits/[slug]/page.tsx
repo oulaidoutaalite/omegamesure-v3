@@ -2,6 +2,7 @@ import { IconDownload, IconPhoto } from '@tabler/icons-react'
 import { type Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
+import { Fragment, type ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 
 import { AddToQuoteButton } from '@/components/public/cart/AddToQuoteButton'
@@ -20,6 +21,47 @@ import { buildAlternates, buildSocial, metaDescriptionFrom } from '@/lib/seo'
 export const dynamic = 'force-dynamic'
 
 type ImageJson = { url: string; alt?: string; isPrimary?: boolean }
+
+// Arabe (RTL) : dans une cellule mêlant arabe, chiffres et unités, l'algorithme bidi du navigateur
+// mélange l'ordre (« 190 x 75 x 38 mm » s'affichait « x 75 x 38 mm 190 », « 200 g » → « g 200 »).
+// Chaque segment non arabe contenant lettres latines ou chiffres est isolé en LTR (<bdi dir="ltr">) ;
+// les mots arabes gardent le sens RTL de la page. Sans effet en français et en anglais.
+const plage = (a: number, b: number) => `${String.fromCharCode(a)}-${String.fromCharCode(b)}`
+const ARABE = plage(0x0600, 0x06ff) + plage(0x0750, 0x077f) + plage(0xfb50, 0xfdff) + plage(0xfe70, 0xfefe)
+const RLM = String.fromCharCode(0x200f)
+const SEGMENT_ARABE = new RegExp(`([${ARABE}][${ARABE}\\s${RLM}]*)`)
+const EST_ARABE = new RegExp(`[${ARABE}]`)
+// Parenthèses, crochets et séparateurs « · » restent hors des isolats : ils appartiennent à la
+// phrase RTL et y sont miroités normalement.
+const DELIMITEURS = /([()[\]]|\s*·\s*)/
+function isoleLtr(texte: string, locale: Locale): ReactNode {
+  if (locale !== 'ar' || !/[A-Za-z0-9]/.test(texte)) return texte
+  const morceaux = texte.split(SEGMENT_ARABE).flatMap((p) => (!p || EST_ARABE.test(p) ? [p] : p.split(DELIMITEURS)))
+  return morceaux.map((p, i) => {
+    if (!p || EST_ARABE.test(p) || !/[A-Za-z0-9]/.test(p)) return p
+    const m = /^(\s*)([\s\S]*?)(\s*)$/.exec(p)!
+    return (
+      <Fragment key={i}>
+        {m[1]}<bdi dir="ltr">{m[2]}</bdi>{m[3]}
+      </Fragment>
+    )
+  })
+}
+
+// Sondes / accessoires / appareils compatibles : nombre de cartes affichées avant « Voir les n autres ».
+const VISIBLES = 8
+
+function GrilleCartes({ items, locale }: { items: ProductCardData[]; locale: Locale }) {
+  return (
+    <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+      {items.map((r) => (
+        <li key={r.slug} className="contents">
+          <ProductCard data={r} locale={locale} />
+        </li>
+      ))}
+    </ul>
+  )
+}
 
 function withLocale(path: string, locale: Locale): string {
   if (locale === defaultLocale) return path
@@ -303,8 +345,8 @@ export default async function ProductPage({
                 <thead>
                   <tr>
                     {tbl.columns.map((c, j) => (
-                      <th key={j} className="whitespace-nowrap border-b-2 border-brand px-3 py-2 text-left font-semibold text-brand">
-                        {enTeteColonne(c)}
+                      <th key={j} className="whitespace-nowrap border-b-2 border-brand px-3 py-2 text-start font-semibold text-brand">
+                        {isoleLtr(enTeteColonne(c), locale)}
                       </th>
                     ))}
                   </tr>
@@ -314,7 +356,7 @@ export default async function ProductPage({
                     <tr key={i} className="border-b border-border last:border-0">
                       {row.map((cell, j) => (
                         <td key={j} className={`px-3 py-2 align-top ${j === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground'}`}>
-                          {j === 0 ? translateSpecLabel(cell, locale) : translateSpecValue(cell, locale)}
+                          {isoleLtr(j === 0 ? translateSpecLabel(cell, locale) : translateSpecValue(cell, locale), locale)}
                         </td>
                       ))}
                     </tr>
@@ -335,44 +377,29 @@ export default async function ProductPage({
         </section>
       )}
 
-      {sondes.length > 0 && (
-        <section className="mt-12">
-          <h2 className="mb-4 text-base font-semibold">{t('probesTitle', { n: sondes.length })}</h2>
-          <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            {sondes.map((r) => (
-              <li key={r.slug} className="contents">
-                <ProductCard data={r} locale={locale} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {accessoires.length > 0 && (
-        <section className="mt-12">
-          <h2 className="mb-4 text-base font-semibold">{t('accessoriesTitle', { n: accessoires.length })}</h2>
-          <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            {accessoires.map((r) => (
-              <li key={r.slug} className="contents">
-                <ProductCard data={r} locale={locale} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {compatibleAvec.length > 0 && (
-        <section className="mt-12">
-          <h2 className="mb-4 text-base font-semibold">{t('compatibleWithTitle', { n: compatibleAvec.length })}</h2>
-          <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            {compatibleAvec.map((r) => (
-              <li key={r.slug} className="contents">
-                <ProductCard data={r} locale={locale} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      {[
+        { cle: 'sondes', titre: t('probesTitle', { n: sondes.length }), items: sondes },
+        { cle: 'accessoires', titre: t('accessoriesTitle', { n: accessoires.length }), items: accessoires },
+        { cle: 'compatible', titre: t('compatibleWithTitle', { n: compatibleAvec.length }), items: compatibleAvec },
+      ]
+        .filter((s) => s.items.length > 0)
+        .map((s) => (
+          <section key={s.cle} className="mt-12">
+            <h2 className="mb-4 text-base font-semibold">{s.titre}</h2>
+            <GrilleCartes items={s.items.slice(0, VISIBLES)} locale={locale} />
+            {/* Listes longues (jusqu'à 85 sondes) : le reste dans un <details> natif,
+                sans JavaScript, et les liens restent dans la page pour le référencement. */}
+            {s.items.length > VISIBLES && (
+              <details className="group mt-4">
+                <summary className="inline-flex cursor-pointer list-none items-center [&::-webkit-details-marker]:hidden rounded-lg border border-border px-4 py-2 text-sm font-medium hover:bg-muted group-open:mb-4">
+                  <span className="group-open:hidden">{t('showMore', { n: s.items.length - VISIBLES })}</span>
+                  <span className="hidden group-open:inline">{t('showLess')}</span>
+                </summary>
+                <GrilleCartes items={s.items.slice(VISIBLES)} locale={locale} />
+              </details>
+            )}
+          </section>
+        ))}
 
       {related.length > 0 && (
         <section className="mt-12">
