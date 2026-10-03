@@ -256,6 +256,11 @@ model Product {
   subCategoryId String?
   subCategory   SubCategory? @relation(fields: [subCategoryId], references: [id], onDelete: SetNull)
 
+  // Accessoires compatibles (relation fabricant, ex. accessoriesProductRelations de testo.com).
+  // `accessories` : ce que l'appareil accepte ; `accessoryOf` : les appareils qui acceptent cet accessoire.
+  accessories Product[] @relation("ProductAccessories")
+  accessoryOf Product[] @relation("ProductAccessories")
+
   isPublished Boolean   @default(false)
   isFeatured  Boolean   @default(false)
   publishedAt DateTime?

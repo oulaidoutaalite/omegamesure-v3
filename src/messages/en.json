@@ -71,7 +71,9 @@
     "specValue": "Value",
     "specValueN": "Value {n}",
     "specColN": "Col. {n}",
-    "relatedTitle": "In the same family"
+    "relatedTitle": "In the same family",
+    "accessoriesTitle": "Compatible accessories ({n})",
+    "compatibleWithTitle": "Compatible with ({n})"
   },
   "quote": {
     "badge": "Quote",

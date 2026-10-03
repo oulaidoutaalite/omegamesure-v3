@@ -11763,5 +11763,690 @@
   "fr": "±0,4 °C (-40 à -25,1 °C) · ±0,5 % v.m. (Etendue de mesure restante) · ±0,2 °C (-25 à +74,9 °C) · ±0,4 °C (75 à +99,9 °C)",
   "en": "±0.4 °C (-40 to -25.1 °C) · ±0.5 % of mv (Remaining Range) · ±0.4 °C (75 to +99.9 °C) · ±0.2 °C (-25 to +74.9 °C)",
   "ar": "±0.4 °C (-40 إلى -25.1 °C) · ±0.5 % من القيمة المقاسة (بقية المدى) · ±0.4 °C (75 إلى +99.9 °C) · ±0.2 °C (-25 إلى +74.9 °C)"
+ },
+ "x ne convient pas pour les atmosphères sans rosée.": {
+  "fr": "* Ne convient pas pour les atmosphères avec condensation.",
+  "en": "* Not for condensing atmospheres.",
+  "ar": "* لا يصلح للأجواء التي يحدث فيها تكثّف."
+ },
+ "plastic": {
+  "fr": "plastique",
+  "en": "plastic",
+  "ar": "بلاستيك"
+ },
+ "vert; blanc": {
+  "fr": "gris ; blanc",
+  "en": "grey; white",
+  "ar": "رمادي؛ أبيض"
+ },
+ "noir; red": {
+  "fr": "noir ; rouge",
+  "en": "black; red",
+  "ar": "أسود؛ أحمر"
+ },
+ "jaune; vert": {
+  "fr": "jaune ; gris",
+  "en": "yellow; grey",
+  "ar": "أصفر؛ رمادي"
+ },
+ "vert; red": {
+  "fr": "gris ; rouge",
+  "en": "grey; red",
+  "ar": "رمادي؛ أحمر"
+ },
+ "vert; brun": {
+  "fr": "gris ; brun",
+  "en": "grey; brown",
+  "ar": "رمادي؛ بني"
+ },
+ "vert; noir": {
+  "fr": "gris ; noir",
+  "en": "grey; black",
+  "ar": "رمادي؛ أسود"
+ },
+ "noir; vert": {
+  "fr": "noir ; gris",
+  "en": "black; grey",
+  "ar": "أسود؛ رمادي"
+ },
+ "vert; green": {
+  "fr": "gris ; vert",
+  "en": "grey; green",
+  "ar": "رمادي؛ أخضر"
+ },
+ "green; vert": {
+  "fr": "vert ; gris",
+  "en": "green; grey",
+  "ar": "أخضر؛ رمادي"
+ },
+ "silver_oxide": {
+  "fr": "oxyde d’argent",
+  "en": "silver oxide",
+  "ar": "أكسيد الفضة"
+ },
+ "jaune": {
+  "fr": "jaune",
+  "en": "yellow",
+  "ar": "أصفر"
+ },
+ "noir; bleu; red": {
+  "fr": "noir ; bleu ; rouge",
+  "en": "black; blue; red",
+  "ar": "أسود؛ أزرق؛ أحمر"
+ },
+ "vert; vert": {
+  "fr": "vert ; gris",
+  "en": "green; grey",
+  "ar": "أخضر؛ رمادي"
+ },
+ "silver": {
+  "fr": "argent",
+  "en": "silver",
+  "ar": "فضي"
+ },
+ "vert": {
+  "fr": "gris",
+  "en": "grey",
+  "ar": "رمادي"
+ },
+ "vert / vert": {
+  "fr": "gris",
+  "en": "grey",
+  "ar": "رمادي"
+ },
+ "vert; bleu": {
+  "fr": "gris ; bleu",
+  "en": "grey; blue",
+  "ar": "رمادي؛ أزرق"
+ },
+ "bus de données; usb": {
+  "fr": "bus de données ; USB",
+  "en": "data bus; USB",
+  "ar": "ناقل بيانات؛ USB"
+ },
+ "bus de données": {
+  "fr": "bus de données",
+  "en": "data bus",
+  "ar": "ناقل بيانات"
+ },
+ "bayonet": {
+  "fr": "baïonnette",
+  "en": "bayonet",
+  "ar": "حربي (bayonet)"
+ },
+ "steel": {
+  "fr": "acier",
+  "en": "steel",
+  "ar": "فولاذ"
+ },
+ "metal_housing": {
+  "fr": "boîtier métallique",
+  "en": "metal housing",
+  "ar": "هيكل معدني"
+ },
+ "noir; silver": {
+  "fr": "noir ; argent",
+  "en": "black; silver",
+  "ar": "أسود؛ فضي"
+ },
+ "papier": {
+  "fr": "papier",
+  "en": "paper",
+  "ar": "ورق"
+ },
+ "noir; argent": {
+  "fr": "noir ; argent",
+  "en": "black; silver",
+  "ar": "أسود؛ فضي"
+ },
+ "https: / / www.testo.com / guarantee": {
+  "fr": "https://www.testo.com/guarantee",
+  "en": "https://www.testo.com/guarantee",
+  "ar": "https://www.testo.com/guarantee"
+ },
+ "imprimante bluetooth® / irda": {
+  "fr": "Imprimante BLUETOOTH® / IRDA",
+  "en": "BLUETOOTH® / IRDA printer",
+  "ar": "طابعة BLUETOOTH® / IRDA"
+ },
+ "noir; brun": {
+  "fr": "noir ; brun",
+  "en": "black; brown",
+  "ar": "أسود؛ بني"
+ },
+ "alimentation électrique externe bloc d'alimentation": {
+  "fr": "Alimentation électrique externe par bloc d'alimentation",
+  "en": "External power supply via mains unit",
+  "ar": "تغذية كهربائية خارجية عبر وحدة التغذية"
+ },
+ "xraccord tuc (testo universal connector) : pour le raccordement de sondes numériques avec fil et de sondes ctn.": {
+  "fr": "*Raccord TUC (Testo Universal Connector) : Pour le raccordement de sondes numériques avec fil et de sondes CTN.",
+  "en": "*TUC connection (Testo Universal Connector): For the connection of fixed cable digital probes and NTC probes.",
+  "ar": "*وصلة TUC ‏(Testo Universal Connector): لتوصيل المسابير الرقمية السلكية ومسابير NTC."
+ },
+ "blanc; noir": {
+  "fr": "blanc ; noir",
+  "en": "white; black",
+  "ar": "أبيض؛ أسود"
+ },
+ "plastique peek": {
+  "fr": "Plastique PEEK",
+  "en": "PEEK plastic",
+  "ar": "بلاستيك PEEK"
+ },
+ "plastique (pps)": {
+  "fr": "plastique (PPS)",
+  "en": "plastic (PPS)",
+  "ar": "بلاستيك (PPS)"
+ },
+ "plastique (ps)": {
+  "fr": "plastique (PS)",
+  "en": "plastic (PS)",
+  "ar": "بلاستيك (PS)"
+ },
+ "noir / orange; argent": {
+  "fr": "noir/orange ; argent",
+  "en": "black/orange; silver",
+  "ar": "أسود/برتقالي؛ فضي"
+ },
+ "noir; rouge": {
+  "fr": "noir ; rouge",
+  "en": "black; red",
+  "ar": "أسود؛ أحمر"
+ },
+ "transparent": {
+  "fr": "transparent",
+  "en": "transparent",
+  "ar": "شفاف"
+ },
+ "cordura": {
+  "fr": "Cordura",
+  "en": "Cordura",
+  "ar": "Cordura"
+ },
+ "aluminium": {
+  "fr": "aluminium",
+  "en": "aluminium",
+  "ar": "ألمنيوم"
+ },
+ "brun": {
+  "fr": "brun",
+  "en": "brown",
+  "ar": "بني"
+ },
+ "avancée: 1 min ... 24 h": {
+  "fr": "Avancée: 1 min ... 24 h",
+  "en": "Advanced: 1 min … 24 h",
+  "ar": "Advanced: ‏1 min … 24 h"
+ },
+ "transmission des signaux: sans fil, bande des fréquences: 2,4 ghz, standards wifi supportés: ieee 802.11 b / g / n et ieee 802.1x; méthodes de cryptage possibles: sans cryptage, wep, wpa, wpa2, wpa2 enterprise - les enregistreurs de données communiquent via le protocole standard mqtt et maîtrisent la synchronisation d'horloge sntp.": {
+  "fr": "Transmission des signaux: sans fil, bande des fréquences: 2,4 GHz, Standards WiFi supportés: IEEE 802.11 b/g/n et IEEE 802.1X; Méthodes de cryptage possibles: sans cryptage, WEP, WPA, WPA2, WPA2 Enterprise - Les enregistreurs de données communiquent via le protocole standard MQTT et maîtrisent la synchronisation d’horloge SNTP.",
+  "en": "Signal transmission: wireless, frequency band: 2.4 GHz, supported wireless LAN standards: IEEE 802.11 b/g/n and IEEE 802.1X; Possible encryption methods: without encryption, WEP, WPA, WPA2, WPA2 Enterprise - The data loggers communicate via the standard protocol MQTT and are SNTP time synchronization-capable.",
+  "ar": "نقل الإشارة: لاسلكي، نطاق التردّد: 2.4 GHz، معايير الشبكة اللاسلكية المدعومة: IEEE 802.11 b/g/n وIEEE 802.1X؛ طرق التشفير الممكنة: دون تشفير، WEP، ‏WPA، ‏WPA2، ‏WPA2 Enterprise - تتواصل مسجّلات البيانات عبر البروتوكول القياسي MQTT وتدعم مزامنة الوقت SNTP."
+ },
+ "4 x piles mignon aa almn ; bloc d'alimentation en option ; pour les températures inférieures à -10 °c, utiliser des piles energizer 0515 0572": {
+  "fr": "4 x piles Mignon AA AlMn ; bloc d'alimentation en option ; pour les températures inférieures à -10 °C, utiliser des piles Energizer 0515 0572",
+  "en": "4 x AA AlMn batteries; mains unit optional; for temperatures below -10 °C please use Energizer batteries 0515 0572",
+  "ar": "4 بطاريات AA ‏AlMn؛ وحدة تغذية اختيارية؛ لدرجات الحرارة أدنى من -10 °C يُرجى استخدام بطاريات Energizer ‏0515 0572"
+ },
+ "12 mois (valeur typique, dépend de l'infrastructure wifi) à +25 °c, 15 min de cadence de mesure et cadence de communication standard à -30 °c, 15 min de cadence de mesure et cadence de communication standard avec des piles energizer 0515 0572": {
+  "fr": "12 mois (valeur typique, dépend de l’infrastructure WiFi) à +25 °C, 15 min de cadence de mesure et cadence de communication standard à -30 °C, 15 min de cadence de mesure et cadence de communication standard avec des piles Energizer 0515 0572",
+  "en": "12 months (typical value, depending on the wireless LAN infrastructure) at +25 °C, 15-minute measuring cycle and standard communication cycle at -30 °C, 15-minute measuring cycle and standard communication cycle with Energizer batteries 0515 0572",
+  "ar": "12 شهرًا (قيمة نموذجية، حسب البنية التحتية للشبكة اللاسلكية) عند +25 °C بدورة قياس 15 دقيقة ودورة اتصال قياسية، وعند -30 °C بدورة قياس 15 دقيقة ودورة اتصال قياسية مع بطاريات Energizer ‏0515 0572"
+ },
+ "-40 à +70 °c (sans piles)": {
+  "fr": "-40 à +70 °C (sans piles)",
+  "en": "-40 to +70 °C (without batteries)",
+  "ar": "-40 إلى +70 °C (دون بطاريات)"
+ },
+ "±0,4 °c ±1 digit (-40 à -25,1 °c) · ±0,5 % v.m. ±1 digit (etendue de mesure restante) · ±0,4 °c ±1 digit (+75 à +99,9 °c) · ±0,2 °c ±1 digit (-25 à +74,9 °c)": {
+  "fr": "±0,4 °C ±1 Digit (-40 à -25,1 °C) · ±0,5 % v.m. ±1 Digit (Etendue de mesure restante) · ±0,4 °C ±1 Digit (+75 à +99,9 °C) · ±0,2 °C ±1 Digit (-25 à +74,9 °C)",
+  "en": "±0.5 % of mv ±1 Digit (Remaining Range) · ±0.4 °C ±1 Digit (+75 to +99.9 °C) · ±0.2 °C ±1 Digit (-25 to +74.9 °C) · ±0.4 °C ±1 Digit (-40 to -25.1 °C)",
+  "ar": "±0.5 % من القيمة المقاسة ±1 رقم (بقية المدى) · ±0.4 °C ±1 رقم (+75 إلى +99.9 °C) · ±0.2 °C ±1 رقم (-25 إلى +74.9 °C) · ±0.4 °C ±1 رقم (-40 إلى -25.1 °C)"
+ },
+ "0.5 sec": {
+  "fr": "0.5 sec",
+  "en": "0.5 s",
+  "ar": "0.5 s"
+ },
+ "±1,0 %rh / année dérive · ±1,0 %rh hystérèse · ±2,0 %hr à 0 … 90 %hr à +25 °c · ±0,03 %hr / k (k=1)": {
+  "fr": "±1,0 %RH/année dérive · ±1,0 %RH hystérèse · ±2,0 %HR à 0 … 90 %HR à +25 °C · ±0,03 %HR/K (k=1)",
+  "en": "±1.0 %rF/year Drift · ±1.0 %rF Hysterese · ±2,0 %RH at 0 … 90 %RH at +25 °C · ±0.03 %RH/K (k=1)",
+  "ar": "±1.0 %RH/سنة انجراف · ±1.0 %RH تخلّف (Hysteresis) · ±2.0 %RH عند 0 … 90 %RH عند +25 °C · ±0.03 %RH/K ‏(k=1)"
+ },
+ "±0,3 °c": {
+  "fr": "±0,3 °C",
+  "en": "±0.3 °C",
+  "ar": "±0.3 °C"
+ },
+ "windows 10; windows® 11 ; autres sur demande": {
+  "fr": "Windows 10; Windows® 11 ; autres sur demande",
+  "en": "Windows® 10; Windows® 11 ; others on request",
+  "ar": "Windows® 10؛ Windows® 11؛ غيرها عند الطلب"
+ },
+ "21 cfr part 11": {
+  "fr": "21 CFR Part 11",
+  "en": "CFR 21 Part 11 (in use with testo ComSoft CFR-Software)",
+  "ar": "CFR 21 Part 11 (عند الاستخدام مع برنامج testo ComSoft CFR)"
+ },
+ "715 g (avec accumulateur, rouleau de papier et bloc d'alimentation)": {
+  "fr": "715 g (avec accumulateur, rouleau de papier et bloc d’alimentation)",
+  "en": "715 g (including rechargeable battery pack, paper roll, mains unit)",
+  "ar": "715 g (مع حزمة البطارية القابلة لإعادة الشحن ولفّة الورق ووحدة التغذية)"
+ },
+ "150 x 80 x 41 mm ( (l x i x h) )": {
+  "fr": "150 x 80 x 41 mm ((L x I x H))",
+  "en": "150 x 80 x 41 mm ((LxWxH))",
+  "ar": "150 × 80 × 41 mm (الطول × العرض × الارتفاع)"
+ },
+ "directive ue 2004 / 108 / ce": {
+  "fr": "Directive UE 2004/108/CE",
+  "en": "EU-guideline 2004/108/EG",
+  "ar": "التوجيه الأوروبي 2004/108/EG"
+ },
+ "windows 7; windows 8; windows 10": {
+  "fr": "Windows 7; Windows 8; Windows 10",
+  "en": "Windows® 7; Windows® 8; Windows® 10",
+  "ar": "Windows® 7؛ Windows® 8؛ Windows® 10"
+ },
+ "2,5 m": {
+  "fr": "2,5 m",
+  "en": "2.5 m",
+  "ar": "2.5 m"
+ },
+ "3136,7 g": {
+  "fr": "3136,7 g",
+  "en": "3136.7 g",
+  "ar": "3136.7 g"
+ },
+ "500 x 400 x 160 mm (l x i x h)": {
+  "fr": "500 x 400 x 160 mm (L x I x H)",
+  "en": "500 x 400 x 160 mm (LxWxH)",
+  "ar": "500 × 400 × 160 mm (الطول × العرض × الارتفاع)"
+ },
+ "40 x 30 x 30 mm (l x i x h)": {
+  "fr": "40 x 30 x 30 mm (L x I x H)",
+  "en": "40 x 30 x 30 mm (LxWxH)",
+  "ar": "40 × 30 × 30 mm (الطول × العرض × الارتفاع)"
+ },
+ "hauteur: 12,9 mm, ø: 29 mm": {
+  "fr": "Hauteur: 12,9 mm, ø: 29 mm",
+  "en": "height: 12.9 mm, ø: 29 mm",
+  "ar": "الارتفاع: 12.9 mm، ‏ø: ‏29 mm"
+ },
+ "length: 12,9 mm, diameter: 29 mm": {
+  "fr": "length: 12,9 mm, diameter: 29 mm",
+  "en": "length: 12.9 mm, ø: 29 mm",
+  "ar": "الطول: 12.9 mm، ‏ø: ‏29 mm"
+ },
+ "length: 41,8 mm, diameter: 13,7 mm": {
+  "fr": "length: 41,8 mm, diameter: 13,7 mm",
+  "en": "length: 41.8 mm, ø: 13.7 mm",
+  "ar": "الطول: 41.8 mm، ‏ø: ‏13.7 mm"
+ },
+ "249,8 g": {
+  "fr": "249,8 g",
+  "en": "249.8 g",
+  "ar": "249.8 g"
+ },
+ "744,2 g": {
+  "fr": "744,2 g",
+  "en": "744.2 g",
+  "ar": "744.2 g"
+ },
+ "0 à 50 %vol": {
+  "fr": "0 à 50 %vol",
+  "en": "0 to 50 %vol",
+  "ar": "0 إلى 50 %vol"
+ },
+ "570 x 470 x 210 mm (l x i x h)": {
+  "fr": "570 x 470 x 210 mm (L x I x H)",
+  "en": "570 x 470 x 210 mm (LxWxH)",
+  "ar": "570 × 470 × 210 mm (الطول × العرض × الارتفاع)"
+ },
+ "53 x 90 x 65 mm / 2,1 x 3,5 x 2,6 in": {
+  "fr": "53 x 90 x 65 mm / 2,1 x 3,5 x 2,6 in",
+  "en": "53 x 90 x 65 mm / 2.1 x 3.5 x 2.6 in",
+  "ar": "53 × 90 × 65 mm / 2.1 × 3.5 × 2.6 in"
+ },
+ "-5 à +45 °c / 23,0 ... 113,0 °f": {
+  "fr": "-5 à +45 °C / 23,0 ... 113,0 °F",
+  "en": "-5 to +45 °C / 23.0 ... 113.0 °F",
+  "ar": "-5 إلى +45 °C / 23.0 ... 113.0 °F"
+ },
+ "via le connecteur du testo 350": {
+  "fr": "via le connecteur du testo 350",
+  "en": "via the socket of the testo 350",
+  "ar": "عبر مقبس testo 350"
+ },
+ "-20 à +50 °c / -4,0 ... 122,0 °f": {
+  "fr": "-20 à +50 °C / -4,0 ... 122,0 °F",
+  "en": "-20 to +50 °C / -4.0 ... 122.0 °F",
+  "ar": "-20 إلى +50 °C / -4.0 ... 122.0 °F"
+ },
+ "2,8 m": {
+  "fr": "2,8 m",
+  "en": "2.8 m",
+  "ar": "2.8 m"
+ },
+ "length: 30 mm, diameter: 14 mm": {
+  "fr": "length: 30 mm, diameter: 14 mm",
+  "en": "length: 30 mm, ø: 14 mm",
+  "ar": "الطول: 30 mm، ‏ø: ‏14 mm"
+ },
+ "height: 2,9 mm, diameter: 29,7 mm": {
+  "fr": "height: 2,9 mm, diameter: 29,7 mm",
+  "en": "height: 2.9 mm, ø: 29.7 mm",
+  "ar": "الارتفاع: 2.9 mm، ‏ø: ‏29.7 mm"
+ },
+ "1260 x 5 x 240 mm (l x i x h)": {
+  "fr": "1260 x 5 x 240 mm (L x I x H)",
+  "en": "1260 x 5 x 240 mm (LxWxH)",
+  "ar": "1260 × 5 × 240 mm (الطول × العرض × الارتفاع)"
+ },
+ "diameter (front) : 17 mm · length: 26 mm, diameter (rear) : 15 ,": {
+  "fr": "diameter (front): 17 mm · length: 26 mm, diameter (rear): 15 ,",
+  "en": "length: 26 mm, ø (rear): 15 , · ø (front): 17 mm",
+  "ar": "الطول: 26 mm، ‏ø (الخلفي): 15 · ‏ø (الأمامي): 17 mm"
+ },
+ "bloc d'alimentation 5 v, 1 a, 230 v, micro usb": {
+  "fr": "Bloc d'alimentation 5 V, 1 A, 230 V, micro USB",
+  "en": "5 V mains unit, 1 A, 230 V, Micro USB",
+  "ar": "وحدة تغذية 5 V، ‏1 A، ‏230 V، ‏Micro USB"
+ },
+ "730 x 220 x 245 mm ( (l x i x h) )": {
+  "fr": "730 x 220 x 245 mm ((L x I x H))",
+  "en": "730 x 220 x 245 mm ((LxWxH))",
+  "ar": "730 × 220 × 245 mm (الطول × العرض × الارتفاع)"
+ },
+ "500 x 130 mm (longueur x largeur)": {
+  "fr": "500 x 130 mm (Longueur x Largeur)",
+  "en": "500 x 130 mm (length x width)",
+  "ar": "500 × 130 mm (الطول × العرض)"
+ },
+ "rechargeable battery storage temperature: ±0 à +35 °c · -20 à +50 °c": {
+  "fr": "Rechargeable battery storage temperature: ±0 à +35 °C · -20 à +50 °C",
+  "en": "Rechargeable battery storage temperature: ±0 to +35 °C · -20 to +50 °C",
+  "ar": "حرارة تخزين البطارية القابلة لإعادة الشحن: ±0 إلى +35 °C · -20 إلى +50 °C"
+ },
+ "accumulateur au lithium-ion, 3500 mah, 3.7 v": {
+  "fr": "Accumulateur au Lithium-Ion, 3500 mAh, 3.7 V",
+  "en": "Lithium-Ion rechargeable battery pack, 3500 mAh, 3.7 V",
+  "ar": "حزمة بطارية ليثيوم أيون قابلة لإعادة الشحن، 3500 mAh، ‏3.7 V"
+ },
+ "±1,8 °c": {
+  "fr": "±1,8 °C",
+  "en": "±1.8 °C",
+  "ar": "±1.8 °C"
+ },
+ "0,6 à 50 m / s": {
+  "fr": "0,6 à 50 m/s",
+  "en": "0.6 to 50 m/s",
+  "ar": "0.6 إلى 50 m/s"
+ },
+ "± (0,2 m / s + 2 % v.m.) (40,1 à 50 m / s) · ± (0,2 m / s + 1 % v.m.) (0,6 à +40 m / s)": {
+  "fr": "±(0,2 m/s + 2 % v.m.) (40,1 à 50 m/s) · ±(0,2 m/s + 1 % v.m.) (0,6 à +40 m/s)",
+  "en": "±(0.2 m/s + 1 % of mv) (0.6 to +40 m/s) · ±(0.2 m/s + 2 % of mv) (40.1 to 50 m/s)",
+  "ar": "±(0.2 m/s + 1 % من القيمة المقاسة) (0.6 إلى +40 m/s) · ±(0.2 m/s + 2 % من القيمة المقاسة) (40.1 إلى 50 m/s)"
+ },
+ "0,1 à 15 m / s": {
+  "fr": "0,1 à 15 m/s",
+  "en": "0.1 to 15 m/s",
+  "ar": "0.1 إلى 15 m/s"
+ },
+ "0,3 à 35 m / s": {
+  "fr": "0,3 à 35 m/s",
+  "en": "0.3 to 35 m/s",
+  "ar": "0.3 إلى 35 m/s"
+ },
+ "± (0,2 m / s + 1,5 % v.m.) (20,01 à 35 m / s) · ± (0,1 m / s + 1,5 % v.m.) (0,3 à 20 m / s)": {
+  "fr": "±(0,2 m/s + 1,5 % v.m.) (20,01 à 35 m/s) · ±(0,1 m/s + 1,5 % v.m.) (0,3 à 20 m/s)",
+  "en": "±(0.1 m/s + 1.5 % of mv) (0.3 to 20 m/s) · ±(0.2 m/s + 1.5 % of mv) (20.01 to 35 m/s)",
+  "ar": "±(0.1 m/s + 1.5 % من القيمة المقاسة) (0.3 إلى 20 m/s) · ±(0.2 m/s + 1.5 % من القيمة المقاسة) (20.01 إلى 35 m/s)"
+ },
+ "±3 %hr (65 à 90 %hr) · stabilité à long terme: ±1%hr / an · ±5 %hr (etendue de mesure restante) · hystérèse: ±1,0 %hr · ±3 %hr (10 à 35 %hr) · ±2 %hr (35 à 65 %hr) · ±0,06 %hr / k (k=1)": {
+  "fr": "±3 %HR (65 à 90 %HR) · stabilité à long terme: ±1%HR / an · ±5 %HR (Etendue de mesure restante) · Hystérèse: ±1,0 %HR · ±3 %HR (10 à 35 %HR) · ±2 %HR (35 à 65 %HR) · ±0,06 %HR/K (k=1)",
+  "en": "Hysteresis: ±1.0 %RH · ±3 %RH (10 to 35 %RH) · ±0.06 %RH/K (k=1) · long-term stability: ±1%RH / year · ±3 %RH (65 to 90 %RH) · ±5 %RH (Remaining Range) · ±2 %RH (35 to 65 %RH)",
+  "ar": "التخلّف (Hysteresis): ±1.0 %RH · ±3 %RH (10 إلى 35 %RH) · ±0.06 %RH/K ‏(k=1) · الثبات على المدى الطويل: ±1 %RH/سنة · ±3 %RH (65 إلى 90 %RH) · ±5 %RH (بقية المدى) · ±2 %RH (35 إلى 65 %RH)"
+ },
+ "+700 à +1100 hpa": {
+  "fr": "+700 à +1100 hPa",
+  "en": "+700 to +1100 hPa",
+  "ar": "+700 إلى +1100 hPa"
+ },
+ "±3,0 hpa": {
+  "fr": "±3,0 hPa",
+  "en": "±3.0 hPa",
+  "ar": "±3.0 hPa"
+ },
+ "± (0,03 m / s + 4 % v.m.) · ± (0,5 m / s + 5 % v.m.) · (20,01 à 30 m / s) · (0 à 20 m / s)": {
+  "fr": "±(0,03 m/s + 4 % v.m.) · ±(0,5 m/s + 5 % v.m.) · (20,01 à 30 m/s) · (0 à 20 m/s)",
+  "en": "±(0.5 m/s + 5 % of mv) · (0 to 20 m/s) · ±(0.03 m/s + 4 % of mv) · (20.01 to 30 m/s)",
+  "ar": "±(0.5 m/s + 5 % من القيمة المقاسة) · (0 إلى 20 m/s) · ±(0.03 m/s + 4 % من القيمة المقاسة) · (20.01 إلى 30 m/s)"
+ },
+ "stabilité à long terme: ±1 %hr / an · ±2 %hr (5 à 90 %hr) · ±0,03 %hr / k (k=1)": {
+  "fr": "stabilité à long terme: ±1 %HR / an · ±2 %HR (5 à 90 %HR) · ±0,03 %HR/K (k=1)",
+  "en": "long-term stability: ±1 %RH / year · ±0.03 %RH/K (k=1) · ±2 %RH (5 to 90 %RH)",
+  "ar": "الثبات على المدى الطويل: ±1 %RH/سنة · ±0.03 %RH/K ‏(k=1) · ±2 %RH (5 إلى 90 %RH)"
+ },
+ "±0,5 °c (etendue de mesure restante) · ±0,3 °c (+15 à +30 °c)": {
+  "fr": "±0,5 °C (Etendue de mesure restante) · ±0,3 °C (+15 à +30 °C)",
+  "en": "±0.5 °C (Remaining Range) · ±0.3 °C (+15 to +30 °C)",
+  "ar": "±0.5 °C (بقية المدى) · ±0.3 °C (+15 إلى +30 °C)"
+ },
+ "± (1,0 %hr + 0,7 % v.m.) (90 à 100 %hr) · stabilité à long terme: ±1 %hr / an · ± (0,6 %hr + 0,7 % v.m.) (0 à 90 %hr) · hystérèse: ±0,4 %hr · ±0,03 %hr / k (k=1)": {
+  "fr": "±(1,0 %HR + 0,7 % v.m.) (90 à 100 %HR) · stabilité à long terme: ±1 %HR / an · ±(0,6 %HR + 0,7 % v.m.) (0 à 90 %HR) · Hystérèse: ±0,4 %HR · ±0,03 %HR/K (k=1)",
+  "en": "±(0.6 %RH + 0.7 % of mv) (0 to 90 %RH) · Hysteresis: ±0.4 %RH · long-term stability: ±1 %RH / year · ±0.03 %RH/K (k=1) · ±(1.0 %RH + 0.7 % of mv) (90 to 100 %RH)",
+  "ar": "±(0.6 %RH + 0.7 % من القيمة المقاسة) (0 إلى 90 %RH) · التخلّف (Hysteresis): ±0.4 %RH · الثبات على المدى الطويل: ±1 %RH/سنة · ±0.03 %RH/K ‏(k=1) · ±(1.0 %RH + 0.7 % من القيمة المقاسة) (90 إلى 100 %RH)"
+ },
+ "0,01 %hr": {
+  "fr": "0,01 %HR",
+  "en": "0.01 %RH",
+  "ar": "0.01 %RH"
+ },
+ "±3 %hr (65 à 90 %hr) · stabilité à long terme: ±1 %hr / an · ±5 %hr (etendue de mesure restante) · hystérèse: ±1,0 %hr · ±3 %hr (10 à 35 %hr) · ±2 %hr (35 à 65 %hr) · ±0,06 %hr / k (0 à +50 °c)": {
+  "fr": "±3 %HR (65 à 90 %HR) · stabilité à long terme: ±1 %HR / an · ±5 %HR (Etendue de mesure restante) · Hystérèse: ±1,0 %HR · ±3 %HR (10 à 35 %HR) · ±2 %HR (35 à 65 %HR) · ±0,06 %HR/K (0 à +50 °C)",
+  "en": "Hysteresis: ±1.0 %RH · ±0.06 %RH/K (0 to +50 °C) · long-term stability: ±1 %RH / year · ±3 %RH (10 to 35 %RH) · ±3 %RH (65 to 90 %RH) · ±5 %RH (Remaining Range) · ±2 %RH (35 to 65 %RH)",
+  "ar": "التخلّف (Hysteresis): ±1.0 %RH · ±0.06 %RH/K (0 إلى +50 °C) · الثبات على المدى الطويل: ±1 %RH/سنة · ±3 %RH (10 إلى 35 %RH) · ±3 %RH (65 إلى 90 %RH) · ±5 %RH (بقية المدى) · ±2 %RH (35 إلى 65 %RH)"
+ },
+ "± (100 ppm + 5 % v.m.) · (5001 à 10000 ppm) · ± (50 ppm + 3 % v.m.) · (0 à 5000 ppm)": {
+  "fr": "±(100 ppm + 5 % v.m.) · (5001 à 10000 ppm) · ±(50 ppm + 3 % v.m.) · (0 à 5000 ppm)",
+  "en": "(0 to 5000 ppm) · (5001 to 10000 ppm) · ±(50 ppm + 3 % of mv) · ±(100 ppm + 5 % of mv)",
+  "ar": "(0 إلى 5000 ppm) · (5001 إلى 10000 ppm) · ±(50 ppm + 3 % من القيمة المقاسة) · ±(100 ppm + 5 % من القيمة المقاسة)"
+ },
+ "100,1 à 500 ppm · 0 à 100 ppm": {
+  "fr": "100,1 à 500 ppm · 0 à 100 ppm",
+  "en": "100.1 to 500 ppm · 0 to 100 ppm",
+  "ar": "100.1 إلى 500 ppm · 0 إلى 100 ppm"
+ },
+ "±5 ppm (30,1 à 100 ppm) · ±10 % v.m. (100,1 à 500 ppm) · ±3 ppm (0 à 30 ppm)": {
+  "fr": "±5 ppm (30,1 à 100 ppm) · ±10 % v.m. (100,1 à 500 ppm) · ±3 ppm (0 à 30 ppm)",
+  "en": "±10 % of mv (100.1 to 500 ppm) · ±5 ppm (30.1 to 100 ppm) · ±3 ppm (0 to 30 ppm)",
+  "ar": "±10 % من القيمة المقاسة (100.1 إلى 500 ppm) · ±5 ppm (30.1 إلى 100 ppm) · ±3 ppm (0 إلى 30 ppm)"
+ },
+ "-5 à +50 °c · (recommandé: +10 à +30 °c)": {
+  "fr": "-5 à +50 °C · (recommandé: +10 à +30 °C)",
+  "en": "(recommended: +10 to +30 °C) · -5 to +50 °C",
+  "ar": "(موصى به: +10 إلى +30 °C) · -5 إلى +50 °C"
+ },
+ "télescope: 375 x 17 x 16 mm · angle: 65 x 65 x 15 mm": {
+  "fr": "télescope: 375 x 17 x 16 mm · angle: 65 x 65 x 15 mm",
+  "en": "angle: 65 x 65 x 15 mm · telescope: 375 x 17 x 16 mm",
+  "ar": "الزاوية: 65 × 65 × 15 mm · التلسكوب: 375 × 17 × 16 mm"
+ },
+ "475 x 16 x 16 mm (par tige de rallonge)": {
+  "fr": "475 x 16 x 16 mm (par tige de rallonge)",
+  "en": "475 x 16 x 16 mm (per rod)",
+  "ar": "475 × 16 × 16 mm (لكل قضيب)"
+ },
+ "longueur: 5000 mm, ø: 7 mm": {
+  "fr": "Longueur: 5000 mm, ø: 7 mm",
+  "en": "length: 5000 mm, ø: 7 mm",
+  "ar": "الطول: 5000 mm، ‏ø: ‏7 mm"
+ },
+ "520 x 400 x 130 mm (l x i x h)": {
+  "fr": "520 x 400 x 130 mm (L x I x H)",
+  "en": "520 x 400 x 130 mm (LxWxH)",
+  "ar": "520 × 400 × 130 mm (الطول × العرض × الارتفاع)"
+ },
+ "520 x 400 x 210 mm (l x i x h)": {
+  "fr": "520 x 400 x 210 mm (L x I x H)",
+  "en": "520 x 400 x 210 mm (LxWxH)",
+  "ar": "520 × 400 × 210 mm (الطول × العرض × الارتفاع)"
+ },
+ "256 x 516 x 135 mm ( (l x i x h) )": {
+  "fr": "256 x 516 x 135 mm ((L x I x H))",
+  "en": "256 x 516 x 135 mm ((LxWxH))",
+  "ar": "256 × 516 × 135 mm (الطول × العرض × الارتفاع)"
+ },
+ "85 x 55 x 90 mm (l x i x h)": {
+  "fr": "85 x 55 x 90 mm (L x I x H)",
+  "en": "85 x 55 x 90 mm LxWxH",
+  "ar": "85 × 55 × 90 mm (الطول × العرض × الارتفاع)"
+ },
+ "230 v ac / 5 v dc (2 a) , micro usb, applicable dans europe, états-unis, ca, au, uk, cn, corée": {
+  "fr": "230 V AC / 5 V DC (2 A), micro USB, applicable dans Europe, ÉTATS-UNIS, CA, AU, UK, CN, Corée",
+  "en": "230 V AC / 5 V DC (2 A), micro USB, for the use in USA, CA, AU, Europe, UK, CN, Korea",
+  "ar": "230 V AC / 5 V DC ‏(2 A)، micro USB، للاستخدام في الولايات المتحدة وكندا وأستراليا وأوروبا والمملكة المتحدة والصين وكوريا"
+ },
+ "136 x 89 x 39 mm ( (l x i x h) )": {
+  "fr": "136 x 89 x 39 mm ((L x I x H))",
+  "en": "136 x 89 x 39 mm (LxWxH)",
+  "ar": "136 × 89 × 39 mm (الطول × العرض × الارتفاع)"
+ },
+ "4 x sonde numérique avec câble ou sonde température ctn avec câble (par raccord tuc - testo universal connector) ; 2 x sonde température tc de type k avec câble": {
+  "fr": "4 x sonde numérique avec câble ou sonde température CTN avec câble (par raccord TUC - Testo Universal Connector); 2 x sonde température TC de Type K avec câble",
+  "en": "4 x digital probe with fixed cable or NTC temperature probe with fixed cable (via Testo Universal Connector - TUC); 2 x temperature probe TC type K with fixed cable",
+  "ar": "4 × مسبار رقمي بكابل ثابت أو مسبار حرارة NTC بكابل ثابت (عبر Testo Universal Connector - TUC)؛ 2 × مسبار حرارة TC النوع K بكابل ثابت"
+ },
+ "250 x 180 x 70 mm (l x i x h)": {
+  "fr": "250 x 180 x 70 mm (L x I x H)",
+  "en": "250 x 180 x 70 mm (LxWxH)",
+  "ar": "250 × 180 × 70 mm (الطول × العرض × الارتفاع)"
+ },
+ "windows 8; windows 10; windows® 11": {
+  "fr": "Windows 8; Windows 10; Windows® 11",
+  "en": "Windows® 8; Windows® 10; Windows® 11",
+  "ar": "Windows® 8؛ Windows® 10؛ Windows® 11"
+ },
+ "20 x 24 x 140 mm (l x i x h)": {
+  "fr": "20 x 24 x 140 mm (L x I x H)",
+  "en": "20 x 24 x 140 mm (LxWxH)",
+  "ar": "20 × 24 × 140 mm (الطول × العرض × الارتفاع)"
+ },
+ "80 x 90 x 75 mm (l x i x h)": {
+  "fr": "80 x 90 x 75 mm (L x I x H)",
+  "en": "80 x 90 x 75 mm (LxWxH)",
+  "ar": "80 × 90 × 75 mm (الطول × العرض × الارتفاع)"
+ },
+ "win7 (32 / 64 bits) ; windows 8; win10 ou plus récent": {
+  "fr": "Win7 (32/64 bits); Windows 8; Win10 ou plus récent",
+  "en": "Win®7 (32/64 bit); Windows® 8; Win®10 or newer",
+  "ar": "Win® 7 ‏(32/64 بت)؛ Windows® 8؛ Win® 10 أو أحدث"
+ },
+ "340 x 265 x 60 mm ( (l x i x h) )": {
+  "fr": "340 x 265 x 60 mm ((L x I x H))",
+  "en": "340 x 265 x 60 mm ((LxWxH))",
+  "ar": "340 × 265 × 60 mm (الطول × العرض × الارتفاع)"
+ },
+ "17 x 17 x 13 mm (l_w_h)": {
+  "fr": "17 x 17 x 13 mm (l_w_h)",
+  "en": "17 x 17 x 13 mm (LxWxH)",
+  "ar": "17 × 17 × 13 mm (الطول × العرض × الارتفاع)"
+ },
+ "21 x 28 x 29 mm (l_w_h)": {
+  "fr": "21 x 28 x 29 mm (l_w_h)",
+  "en": "21 x 28 x 29 mm (LxWxH)",
+  "ar": "21 × 28 × 29 mm (الطول × العرض × الارتفاع)"
+ },
+ "-50 à +70 °c": {
+  "fr": "-50 à +70 °C",
+  "en": "-50 to +70 °C",
+  "ar": "-50 إلى +70 °C"
+ },
+ "21 x 28 x 17 mm (l_w_h)": {
+  "fr": "21 x 28 x 17 mm (l_w_h)",
+  "en": "21 x 28 x 17 mm (LxWxH)",
+  "ar": "21 × 28 × 17 mm (الطول × العرض × الارتفاع)"
+ },
+ "82 x 77 x 69 mm ( (l x i x h) )": {
+  "fr": "82 x 77 x 69 mm ((L x I x H))",
+  "en": "82 x 77 x 69 mm ((LxWxH))",
+  "ar": "82 × 77 × 69 mm (الطول × العرض × الارتفاع)"
+ },
+ "520 x 410 x 160 mm (l x i x h)": {
+  "fr": "520 x 410 x 160 mm (L x I x H)",
+  "en": "520 x 410 x 160 mm LxWxH",
+  "ar": "520 × 410 × 160 mm (الطول × العرض × الارتفاع)"
+ },
+ "520 x 410 x 210 mm (l x i x h)": {
+  "fr": "520 x 410 x 210 mm (L x I x H)",
+  "en": "520 x 410 x 210 mm LxWxH",
+  "ar": "520 × 410 × 210 mm (الطول × العرض × الارتفاع)"
+ },
+ "570 g (avec piles)": {
+  "fr": "570 g (avec piles)",
+  "en": "570 g (incl. batteries)",
+  "ar": "570 g (مع البطاريات)"
+ },
+ "95 x 119 x 47 mm (l x i x h)": {
+  "fr": "95 x 119 x 47 mm (L x I x H)",
+  "en": "95 x 119 x 47 mm (LxWxH)",
+  "ar": "95 × 119 × 47 mm (الطول × العرض × الارتفاع)"
+ },
+ ">60 h + 3000 commandes de vann": {
+  "fr": ">60 h + 3000 commandes de vann",
+  "en": ">60 hrs + 3000 valve operations",
+  "ar": ">60 ساعة + 3000 عملية تشغيل للصمام"
+ },
+ "cat ii 1000 v": {
+  "fr": "CAT II 1000 V",
+  "en": "CAT II 1000V",
+  "ar": "CAT II 1000V"
+ },
+ "128 x 100 x 32 mm (l_w_h)": {
+  "fr": "128 x 100 x 32 mm (l_w_h)",
+  "en": "128 x 100 x 32 mm (LxWxH)",
+  "ar": "128 × 100 × 32 mm (الطول × العرض × الارتفاع)"
+ },
+ "112 x 73 x 30 mm (l_w_h)": {
+  "fr": "112 x 73 x 30 mm (l_w_h)",
+  "en": "112 x 73 x 30 mm (LxWxH)",
+  "ar": "112 × 73 × 30 mm (الطول × العرض × الارتفاع)"
+ },
+ "±0,5 db selon la norme iec 60942, classe 2": {
+  "fr": "±0,5 dB selon la norme IEC 60942, classe 2",
+  "en": "±0.5 dB in accordance with Class 2 to IEC 60942",
+  "ar": "±0.5 dB وفق الفئة 2 من IEC 60942"
+ },
+ "adapté pour tous les micros de 1 / 2 et 1 pouce": {
+  "fr": "Adapté pour tous les micros de 1/2 et 1 pouce",
+  "en": "Also suitable for 1/2 and 1 inch microphones by other manufacturers",
+  "ar": "مناسب أيضًا للميكروفونات 1/2 و1 بوصة من شركات أخرى"
+ },
+ "330 x 160 x 70 mm (l x i x h)": {
+  "fr": "330 x 160 x 70 mm (L x I x H)",
+  "en": "330 x 160 x 70 mm (LxWxH)",
+  "ar": "330 × 160 × 70 mm (الطول × العرض × الارتفاع)"
+ },
+ "±2,5 %hr (+5 à +95 %hr)": {
+  "fr": "±2,5 %HR (+5 à +95 %HR)",
+  "en": "±2.5 %RH (+5 to +95 %RH)",
+  "ar": "±2.5 %RH (+5 إلى +95 %RH)"
+ },
+ "0 à +600 °c": {
+  "fr": "0 à +600 °C",
+  "en": "0 to +600 °C",
+  "ar": "0 إلى +600 °C"
+ },
+ "+1 à +100 m / s": {
+  "fr": "+1 à +100 m/s",
+  "en": "+1 to +100 m/s",
+  "ar": "+1 إلى +100 m/s"
+ },
+ "0 à +100 °c": {
+  "fr": "0 à +100 °C",
+  "en": "0 to +100 °C",
+  "ar": "0 إلى +100 °C"
  }
 }

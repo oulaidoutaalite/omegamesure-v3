@@ -71,7 +71,9 @@
     "specValue": "القيمة",
     "specValueN": "القيمة {n}",
     "specColN": "العمود {n}",
-    "relatedTitle": "من نفس الفئة"
+    "relatedTitle": "من نفس الفئة",
+    "accessoriesTitle": "الملحقات المتوافقة ({n})",
+    "compatibleWithTitle": "متوافق مع ({n})"
   },
   "quote": {
     "badge": "عرض سعر",

@@ -20993,5 +20993,95 @@
   "fr": "Mesure de pression (sonde externe)",
   "en": "Pressure measurement (external probe)",
   "ar": "قياس الضغط (مجسّ خارجي)"
+ },
+ "point de rosée d'entrée": {
+  "fr": "Point de rosée d’entrée",
+  "en": "Inlet dew point",
+  "ar": "نقطة الندى عند الدخول"
+ },
+ "durée de mesure": {
+  "fr": "Durée de mesure",
+  "en": "Measurement period",
+  "ar": "مدة القياس"
+ },
+ "détermination du co- (avec compensation h₂) , dilution automatique": {
+  "fr": "Détermination du CO-(avec compensation H₂), dilution automatique",
+  "en": "CO determination (with H₂ compensation), automatic dilution",
+  "ar": "تحديد CO (مع تعويض H₂)، تخفيف آلي"
+ },
+ "température maximum": {
+  "fr": "Température maximum",
+  "en": "Maximum temperature",
+  "ar": "الحرارة القصوى"
+ },
+ "interface imprimante": {
+  "fr": "Interface imprimante",
+  "en": "Printer interface",
+  "ar": "واجهة الطابعة"
+ },
+ "vitesse d'impression": {
+  "fr": "Vitesse d’impression",
+  "en": "Print speed",
+  "ar": "سرعة الطباعة"
+ },
+ "diamètre de la tête de sonde": {
+  "fr": "Diamètre de la tête de sonde",
+  "en": "Probe head diameter",
+  "ar": "قطر رأس المسبار"
+ },
+ "longueur du télescope": {
+  "fr": "Longueur du télescope",
+  "en": "Telescope length",
+  "ar": "طول التلسكوب"
+ },
+ "diamètre du télescope": {
+  "fr": "Diamètre du télescope",
+  "en": "Telescope diameter",
+  "ar": "قطر التلسكوب"
+ },
+ "diameter_telescope": {
+  "fr": "Diamètre du télescope",
+  "en": "Telescope diameter",
+  "ar": "قطر التلسكوب"
+ },
+ "product_colour": {
+  "fr": "Couleur du produit",
+  "en": "Product colour",
+  "ar": "لون المنتج"
+ },
+ "sorties ac / dc": {
+  "fr": "Sorties AC / DC",
+  "en": "AC / DC outputs",
+  "ar": "مخارج AC / DC"
+ },
+ "pression de travail maximale": {
+  "fr": "Pression de travail maximale",
+  "en": "Maximum working pressure",
+  "ar": "ضغط العمل الأقصى"
+ },
+ "diamètre de la pointe": {
+  "fr": "Diamètre de la pointe",
+  "en": "Tip diameter",
+  "ar": "قطر الطرف"
+ },
+ "longueur de la pointe": {
+  "fr": "Longueur de la pointe",
+  "en": "Tip length",
+  "ar": "طول الطرف"
+ },
+ "longueur du câble de mesure": {
+  "fr": "Longueur du câble de mesure",
+  "en": "Measuring cable length",
+  "ar": "طول كابل القياس"
+ },
+ "son": {
+  "fr": "Son",
+  "en": "Sound",
+  "ar": "الصوت"
+ },
+ "câble étiré": {
+  "fr": "Câble étiré",
+  "en": "Extended cable",
+  "ar": "الكابل الممدود"
  }
 }

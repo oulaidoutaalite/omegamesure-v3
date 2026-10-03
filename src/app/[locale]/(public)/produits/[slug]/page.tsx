@@ -128,7 +128,22 @@ export default async function ProductPage({
         },
       })
     : []
-  const related: ProductCardData[] = relatedRows.map((r) => {
+  // Accessoires compatibles (appareil → accessoires) et, sur une fiche accessoire,
+  // les appareils qui l'acceptent. Relation fabricant, publiés seulement.
+  const carteSelect = {
+    name: true, slug: true, shortDescription: true, brand: true,
+    model: true, price: true, currency: true, images: true, translations: true,
+  } as const
+  const liens = await db.product.findUnique({
+    where: { id: product.id },
+    select: {
+      accessories: { where: { isPublished: true }, orderBy: { name: 'asc' }, select: carteSelect },
+      accessoryOf: { where: { isPublished: true }, orderBy: { name: 'asc' }, select: carteSelect },
+    },
+  })
+
+  type CarteRow = (typeof relatedRows)[number]
+  const versCarte = (r: CarteRow): ProductCardData => {
     const rimgs = Array.isArray(r.images) ? (r.images as unknown as ImageJson[]) : []
     const rtr = r.translations as TranslationsJson
     return {
@@ -142,7 +157,10 @@ export default async function ProductPage({
       imageUrl: (rimgs.find((i) => i.isPrimary) ?? rimgs[0])?.url ?? null,
       categoryColor: product.category?.color ?? null,
     }
-  })
+  }
+  const related: ProductCardData[] = relatedRows.map(versCarte)
+  const accessoires: ProductCardData[] = (liens?.accessories ?? []).map(versCarte)
+  const compatibleAvec: ProductCardData[] = (liens?.accessoryOf ?? []).map(versCarte)
 
   const ld = graph(
     await breadcrumbSchema(locale, [
@@ -306,6 +324,32 @@ export default async function ProductPage({
           <div className="prose prose-sm max-w-none whitespace-pre-wrap text-foreground">
             {description}
           </div>
+        </section>
+      )}
+
+      {accessoires.length > 0 && (
+        <section className="mt-12">
+          <h2 className="mb-4 text-base font-semibold">{t('accessoriesTitle', { n: accessoires.length })}</h2>
+          <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            {accessoires.map((r) => (
+              <li key={r.slug} className="contents">
+                <ProductCard data={r} locale={locale} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {compatibleAvec.length > 0 && (
+        <section className="mt-12">
+          <h2 className="mb-4 text-base font-semibold">{t('compatibleWithTitle', { n: compatibleAvec.length })}</h2>
+          <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            {compatibleAvec.map((r) => (
+              <li key={r.slug} className="contents">
+                <ProductCard data={r} locale={locale} />
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 
