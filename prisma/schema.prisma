@@ -260,6 +260,9 @@ model Product {
   // `accessories` : ce que l'appareil accepte ; `accessoryOf` : les appareils qui acceptent cet accessoire.
   accessories Product[] @relation("ProductAccessories")
   accessoryOf Product[] @relation("ProductAccessories")
+  // Sondes compatibles (onglet « Sondes » de testo.com, probesProductRelations), même principe.
+  probes      Product[] @relation("ProductProbes")
+  probeOf     Product[] @relation("ProductProbes")
 
   isPublished Boolean   @default(false)
   isFeatured  Boolean   @default(false)

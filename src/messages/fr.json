@@ -72,6 +72,7 @@
     "specValueN": "Valeur {n}",
     "specColN": "Col. {n}",
     "relatedTitle": "Dans la même famille",
+    "probesTitle": "Sondes compatibles ({n})",
     "accessoriesTitle": "Accessoires compatibles ({n})",
     "compatibleWithTitle": "Compatible avec ({n})"
   },

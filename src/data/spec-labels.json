@@ -21083,5 +21083,40 @@
   "fr": "Câble étiré",
   "en": "Extended cable",
   "ar": "الكابل الممدود"
+ },
+ "facteur d'émission": {
+  "fr": "Facteur d’émission",
+  "en": "Emissivity",
+  "ar": "معامل الانبعاث"
+ },
+ "etanche": {
+  "fr": "Etanche",
+  "en": "Waterproof",
+  "ar": "محكم ضد الماء"
+ },
+ "force d'adhérence": {
+  "fr": "Force d'adhérence",
+  "en": "Adhesive force",
+  "ar": "قوة الالتصاق"
+ },
+ "length_measuring_cable": {
+  "fr": "Longueur du câble de mesure",
+  "en": "Measuring cable length",
+  "ar": "طول كابل القياس"
+ },
+ "profondeur de pénétration minimale": {
+  "fr": "Profondeur de pénétration minimale",
+  "en": "Minimum immersion depth",
+  "ar": "عمق الغمر الأدنى"
+ },
+ "facteur de pitot": {
+  "fr": "Facteur de Pitot",
+  "en": "Pitot tube factor",
+  "ar": "معامل أنبوب بيتو"
+ },
+ "point de rosée de pression": {
+  "fr": "Point de rosée de pression",
+  "en": "Pressure dew point",
+  "ar": "نقطة الندى تحت الضغط"
  }
 }

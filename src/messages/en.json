@@ -72,6 +72,7 @@
     "specValueN": "Value {n}",
     "specColN": "Col. {n}",
     "relatedTitle": "In the same family",
+    "probesTitle": "Compatible probes ({n})",
     "accessoriesTitle": "Compatible accessories ({n})",
     "compatibleWithTitle": "Compatible with ({n})"
   },

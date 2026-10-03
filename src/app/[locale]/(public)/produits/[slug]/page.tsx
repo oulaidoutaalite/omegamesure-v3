@@ -139,6 +139,8 @@ export default async function ProductPage({
     select: {
       accessories: { where: { isPublished: true }, orderBy: { name: 'asc' }, select: carteSelect },
       accessoryOf: { where: { isPublished: true }, orderBy: { name: 'asc' }, select: carteSelect },
+      probes: { where: { isPublished: true }, orderBy: { name: 'asc' }, select: carteSelect },
+      probeOf: { where: { isPublished: true }, orderBy: { name: 'asc' }, select: carteSelect },
     },
   })
 
@@ -160,7 +162,13 @@ export default async function ProductPage({
   }
   const related: ProductCardData[] = relatedRows.map(versCarte)
   const accessoires: ProductCardData[] = (liens?.accessories ?? []).map(versCarte)
-  const compatibleAvec: ProductCardData[] = (liens?.accessoryOf ?? []).map(versCarte)
+  const sondes: ProductCardData[] = (liens?.probes ?? []).map(versCarte)
+  // Un accessoire peut être relié à un appareil comme accessoire ET comme sonde : dédoublonné.
+  const parents = [...(liens?.accessoryOf ?? []), ...(liens?.probeOf ?? [])]
+  const compatibleAvec: ProductCardData[] = parents
+    .filter((r, i) => parents.findIndex((x) => x.slug === r.slug) === i)
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map(versCarte)
 
   const ld = graph(
     await breadcrumbSchema(locale, [
@@ -324,6 +332,19 @@ export default async function ProductPage({
           <div className="prose prose-sm max-w-none whitespace-pre-wrap text-foreground">
             {description}
           </div>
+        </section>
+      )}
+
+      {sondes.length > 0 && (
+        <section className="mt-12">
+          <h2 className="mb-4 text-base font-semibold">{t('probesTitle', { n: sondes.length })}</h2>
+          <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            {sondes.map((r) => (
+              <li key={r.slug} className="contents">
+                <ProductCard data={r} locale={locale} />
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

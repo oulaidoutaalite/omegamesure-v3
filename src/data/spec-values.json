@@ -12448,5 +12448,1035 @@
   "fr": "0 à +100 °C",
   "en": "0 to +100 °C",
   "ar": "0 إلى +100 °C"
+ },
+ "ceramic": {
+  "fr": "céramique",
+  "en": "ceramic",
+  "ar": "سيراميك"
+ },
+ "noir; white": {
+  "fr": "noir ; blanc",
+  "en": "black; white",
+  "ar": "أسود؛ أبيض"
+ },
+ "abs / tpe / pur": {
+  "fr": "ABS / TPE / PUR",
+  "en": "ABS / TPE / PUR",
+  "ar": "ABS / TPE / PUR"
+ },
+ "vert; noir; argent": {
+  "fr": "gris ; noir ; argent",
+  "en": "grey; black; silver",
+  "ar": "رمادي؛ أسود؛ فضي"
+ },
+ "acier inoxydable / gfk": {
+  "fr": "acier inoxydable / GFK",
+  "en": "stainless steel / GFK",
+  "ar": "فولاذ مقاوم للصدأ / GFK"
+ },
+ "argent; blanc": {
+  "fr": "argent ; blanc",
+  "en": "silver; white",
+  "ar": "فضي؛ أبيض"
+ },
+ "sonde d'immersion / de pénétration ctn étanche": {
+  "fr": "Sonde d'immersion / de pénétration CTN étanche",
+  "en": "Waterproof NTC immersion/penetration probe",
+  "ar": "مسبار غمر / اختراق NTC محكم"
+ },
+ "vert; noir; silver": {
+  "fr": "gris ; noir ; argent",
+  "en": "grey; black; silver",
+  "ar": "رمادي؛ أسود؛ فضي"
+ },
+ "connecteur thermocouple": {
+  "fr": "Connecteur thermocouple",
+  "en": "Thermocouple connector",
+  "ar": "موصّل مزدوجة حرارية"
+ },
+ "argent; noir": {
+  "fr": "argent ; noir",
+  "en": "silver; black",
+  "ar": "فضي؛ أسود"
+ },
+ "sonde de contact étanche avec pointe de mesure élargie pour surfaces planes": {
+  "fr": "Sonde de contact étanche avec pointe de mesure élargie pour surfaces planes",
+  "en": "Waterproof surface probe with widened measuring tip for flat surfaces",
+  "ar": "مسبار تماس محكم بطرف قياس عريض للأسطح المستوية"
+ },
+ "fibre de verre": {
+  "fr": "fibre de verre",
+  "en": "glass fibre",
+  "ar": "ألياف زجاجية"
+ },
+ "thermelt / pur": {
+  "fr": "Thermelt / PUR",
+  "en": "Thermelt / PUR",
+  "ar": "Thermelt / PUR"
+ },
+ "noir; blanc": {
+  "fr": "noir ; blanc",
+  "en": "black; white",
+  "ar": "أسود؛ أبيض"
+ },
+ "noir; blanc; argent": {
+  "fr": "noir ; blanc ; argent",
+  "en": "black; white; silver",
+  "ar": "أسود؛ أبيض؛ فضي"
+ },
+ "sonde d'immersion et de pénétration étanche, tc de type k": {
+  "fr": "Sonde d'immersion et de pénétration étanche, TC de type K",
+  "en": "Waterproof immersion/penetration probe, TC type K",
+  "ar": "مسبار غمر واختراق محكم، TC من النوع K"
+ },
+ "ptfe": {
+  "fr": "PTFE",
+  "en": "PTFE",
+  "ar": "PTFE"
+ },
+ "brun; blanc": {
+  "fr": "brun ; blanc",
+  "en": "brown; white",
+  "ar": "بني؛ أبيض"
+ },
+ "blanc; argent": {
+  "fr": "blanc ; argent",
+  "en": "white; silver",
+  "ar": "أبيض؛ فضي"
+ },
+ "bleu; argent": {
+  "fr": "bleu ; argent",
+  "en": "blue; silver",
+  "ar": "أزرق؛ فضي"
+ },
+ "sonde à aiguille étanche et ultra-rapide pour des mesures sans traces visibles": {
+  "fr": "Sonde à aiguille étanche et ultra-rapide pour des mesures sans traces visibles",
+  "en": "Waterproof, super-quick needle probe for measurements without visible penetration hole",
+  "ar": "مسبار إبرة محكم وفائق السرعة للقياس دون أثر ظاهر"
+ },
+ "vert; blanc; argent": {
+  "fr": "gris ; blanc ; argent",
+  "en": "grey; white; silver",
+  "ar": "رمادي؛ أبيض؛ فضي"
+ },
+ "vert; argent; blanc": {
+  "fr": "gris ; argent ; blanc",
+  "en": "grey; silver; white",
+  "ar": "رمادي؛ فضي؛ أبيض"
+ },
+ "argent; noir; vert": {
+  "fr": "argent ; noir ; vert",
+  "en": "silver; black; green",
+  "ar": "فضي؛ أسود؛ أخضر"
+ },
+ "noir; vert; argent": {
+  "fr": "noir ; vert ; argent",
+  "en": "black; green; silver",
+  "ar": "أسود؛ أخضر؛ فضي"
+ },
+ "classe a": {
+  "fr": "Classe A",
+  "en": "Class A",
+  "ar": "الفئة A"
+ },
+ "classe b ¹⁾": {
+  "fr": "Classe B ¹⁾",
+  "en": "Class B ¹⁾",
+  "ar": "الفئة B ¹⁾"
+ },
+ "4,75 v ... 5,8 v": {
+  "fr": "4,75 V ... 5,8 V",
+  "en": "4.75 V ... 5.8 V",
+  "ar": "4.75 V ... 5.8 V"
+ },
+ "±0,2 °c · xveuillez également prendre en compte l'incertitude du périphérique.": {
+  "fr": "±0,2 °C · *Veuillez également prendre en compte l'incertitude du périphérique.",
+  "en": "*Please also take into account the device uncertainty. · ±0.2 °C",
+  "ar": "*يُرجى أيضًا مراعاة عدم يقين الجهاز. · ±0.2 °C"
+ },
+ "±2 %hr à +25 °c (+2 à +98 %hr) · %hr / année: ±1 %hr / an · xdla précision du capteur correspond à la précision du système. · ±0,03 %hr / k (k=1)": {
+  "fr": "±2 %HR à +25 °C (+2 à +98 %HR) · %HR / année: ±1 %HR / an · *DLa précision du capteur correspond à la précision du système. · ±0,03 %HR/K (k=1)",
+  "en": "%RH / year: ±1 %RH / year · ±0.03 %RH/K (k=1) · *The sensor accuracy corresponds to the system accuracy. · ±2 %RH at +25 °C (+2 to +98 %RH)",
+  "ar": "%RH/سنة: ±1 %RH/سنة · ±0.03 %RH/K ‏(k=1) · *دقة المستشعر تقابل دقة النظام. · ±2 %RH عند +25 °C ‏(+2 إلى +98 %RH)"
+ },
+ "1,2 m": {
+  "fr": "1,2 m",
+  "en": "1.2 m",
+  "ar": "1.2 m"
+ },
+ "xveuillez également prendre en compte l'incertitude du périphérique. · ±0,2 °c": {
+  "fr": "*Veuillez également prendre en compte l'incertitude du périphérique. · ±0,2 °C",
+  "en": "*Please also take into account the device uncertainty. · ±0.2 °C",
+  "ar": "*يُرجى أيضًا مراعاة عدم يقين الجهاز. · ±0.2 °C"
+ },
+ "±0,08 %hr / k (k=1) · stabilité à long terme: ±1 %hr / an · xdla précision du capteur correspond à la précision du système. · ±2 %hr à +25 °c (2 à +98 %hr)": {
+  "fr": "±0,08 %HR/K (k=1) · stabilité à long terme: ±1 %HR / an · *DLa précision du capteur correspond à la précision du système. · ±2 %HR à +25 °C (2 à +98 %HR)",
+  "en": "long-term stability: ±1 %RH / year · ±2 %RH at +25 °C (2 to +98 %RH) · ±0.08 %RH/K (k=1) · *The sensor accuracy corresponds to the system accuracy.",
+  "ar": "الثبات على المدى الطويل: ±1 %RH/سنة · ±2 %RH عند +25 °C ‏(2 إلى +98 %RH) · ±0.08 %RH/K ‏(k=1) · *دقة المستشعر تقابل دقة النظام."
+ },
+ "xveuillez également prendre en compte l'incertitude du périphérique. · ±0,2 °c (-20 à +50 °c) · ±0,4 (etendue de mesure restante)": {
+  "fr": "*Veuillez également prendre en compte l'incertitude du périphérique. · ±0,2 °C (-20 à +50 °C) · ±0,4 (Etendue de mesure restante)",
+  "en": "*Please also take into account the device uncertainty. · ±0.4 (Remaining Range) · ±0.2 °C (-20 to +50 °C)",
+  "ar": "*يُرجى أيضًا مراعاة عدم يقين الجهاز. · ±0.4 (بقية المدى) · ±0.2 °C (-20 إلى +50 °C)"
+ },
+ "±2 %hr à +25 °c (+2 à +98 %hr) · stabilité à long terme: ±1 %hr / an · xdla précision du capteur correspond à la précision du système. · ±0,03 %hr / k (k=1)": {
+  "fr": "±2 %HR à +25 °C (+2 à +98 %HR) · stabilité à long terme: ±1 %HR / an · *DLa précision du capteur correspond à la précision du système. · ±0,03 %HR/K (k=1)",
+  "en": "long-term stability: ±1 %RH / year · ±0.03 %RH/K (k=1) · *The sensor accuracy corresponds to the system accuracy. · ±2 %RH at +25 °C (+2 to +98 %RH)",
+  "ar": "الثبات على المدى الطويل: ±1 %RH/سنة · ±0.03 %RH/K ‏(k=1) · *دقة المستشعر تقابل دقة النظام. · ±2 %RH عند +25 °C ‏(+2 إلى +98 %RH)"
+ },
+ "0,1 °ctd · 0,1 %hr": {
+  "fr": "0,1 °Ctd · 0,1 %HR",
+  "en": "0.1 %RH · 0.1 °Ctd",
+  "ar": "0.1 %RH · 0.1 °Ctd"
+ },
+ "-50 à +80 °c": {
+  "fr": "-50 à +80 °C",
+  "en": "-50 to +80 °C",
+  "ar": "-50 إلى +80 °C"
+ },
+ "±0,2 °c (-25 à +80 °c) · ±0,5 °c (-40 à -25,1 °c)": {
+  "fr": "±0,2 °C (-25 à +80 °C) · ±0,5 °C (-40 à -25,1 °C)",
+  "en": "±0.5 °C (-40 to -25.1 °C) · ±0.2 °C (-25 to +80 °C)",
+  "ar": "±0.5 °C (-40 إلى -25.1 °C) · ±0.2 °C (-25 إلى +80 °C)"
+ },
+ "2,2 m": {
+  "fr": "2,2 m",
+  "en": "2.2 m",
+  "ar": "2.2 m"
+ },
+ "2,6 m": {
+  "fr": "2,6 m",
+  "en": "2.6 m",
+  "ar": "2.6 m"
+ },
+ "0,1 °c (1 à +100 °c)": {
+  "fr": "0,1 °C (1 à +100 °C)",
+  "en": "0.1 °C (1 to +100 °C)",
+  "ar": "0.1 °C (1 إلى +100 °C)"
+ },
+ "-50 à +150 °c ¹⁾": {
+  "fr": "-50 à +150 °C ¹⁾",
+  "en": "-50 to +150 °C ¹⁾",
+  "ar": "-50 إلى +150 °C ¹⁾"
+ },
+ "±0,4 °c (etendue de mesure restante) · ±0,2 °c (-25 à +74,9 °c) · ±0,5 % v.m. (100 à +150 °c)": {
+  "fr": "±0,4 °C (Etendue de mesure restante) · ±0,2 °C (-25 à +74,9 °C) · ±0,5 % v.m. (100 à +150 °C)",
+  "en": "±0.5 % of mv (100 to +150 °C) · ±0.2 °C (-25 to +74.9 °C) · ±0.4 °C (Remaining Range)",
+  "ar": "±0.5 % من القيمة المقاسة (100 إلى +150 °C) · ±0.2 °C (-25 إلى +74.9 °C) · ±0.4 °C (بقية المدى)"
+ },
+ "1) mesure de longue durée à +125°c, de courte durée à +150°c ou +140°c (2 minutes)": {
+  "fr": "1) Mesure de longue durée à +125°C, de courte durée à +150°C ou +140°C (2 minutes)",
+  "en": "1) Long-term measurement range +125°C, short-term +150°C or +140°C (2 minutes)",
+  "ar": "1) مدى القياس الطويل الأمد +125 °C، والقصير الأمد +150 °C أو +140 °C (دقيقتان)"
+ },
+ "-50 à +125 °c ²⁾": {
+  "fr": "-50 à +125 °C ²⁾",
+  "en": "-50 to +125 °C ²⁾",
+  "ar": "-50 إلى +125 °C ²⁾"
+ },
+ "±0,4 °c (etendue de mesure restante) · ±0,2 °c (-25 à +80 °c)": {
+  "fr": "±0,4 °C (Etendue de mesure restante) · ±0,2 °C (-25 à +80 °C)",
+  "en": "±0.2 °C (-25 to +80 °C) · ±0.4 °C (Remaining Range)",
+  "ar": "±0.2 °C (-25 إلى +80 °C) · ±0.4 °C (بقية المدى)"
+ },
+ "1,1 m": {
+  "fr": "1,1 m",
+  "en": "1.1 m",
+  "ar": "1.1 m"
+ },
+ "±0,2 °c (-25 à +70 °c) · ±0,4 °c (-50 à -25,1 °c)": {
+  "fr": "±0,2 °C (-25 à +70 °C) · ±0,4 °C (-50 à -25,1 °C)",
+  "en": "±0.2 °C (-25 to +70 °C) · ±0.4 °C (-50 to -25.1 °C)",
+  "ar": "±0.2 °C (-25 إلى +70 °C) · ±0.4 °C (-50 إلى -25.1 °C)"
+ },
+ "±0,5 % v.m. (+100 à +150 °c) · ±0,2 °c (-25 à +74,9 °c) · ±0,4 °c (étendue restante)": {
+  "fr": "±0,5 % v.m. (+100 à +150 °C) · ±0,2 °C (-25 à +74,9 °C) · ±0,4 °C (étendue restante)",
+  "en": "±0.4 °C (remaining range) · ±0.2 °C (-25 to +74.9 °C) · ±0.5 % of mv (+100 to +150 °C)",
+  "ar": "±0.4 °C (بقية المدى) · ±0.2 °C (-25 إلى +74.9 °C) · ±0.5 % من القيمة المقاسة (+100 إلى +150 °C)"
+ },
+ "1) mesure longue durée à +125 °c, à courte durée +150 °c, +140°c (2 minutes)": {
+  "fr": "1) Mesure longue durée à +125 °C, à courte durée +150 °C, +140°C (2 minutes)",
+  "en": "1) Long-term measurement range +125°C, short-term +150°C or +140°C (2 minutes)",
+  "ar": "1) مدى القياس الطويل الأمد +125 °C، والقصير الأمد +150 °C أو +140 °C (دقيقتان)"
+ },
+ "-50 à +140 °c ¹⁾": {
+  "fr": "-50 à +140 °C ¹⁾",
+  "en": "-50 to +140 °C ¹⁾",
+  "ar": "-50 إلى +140 °C ¹⁾"
+ },
+ "±0,2 °c (-25 à +75 °c) · ±0,4 °c (etendue de mesure restante) · ±0,5 % v.m. (+100 à +140 °c)": {
+  "fr": "±0,2 °C (-25 à +75 °C) · ±0,4 °C (Etendue de mesure restante) · ±0,5 % v.m. (+100 à +140 °C)",
+  "en": "±0.2 °C (-25 to +75 °C) · ±0.5 % of mv (+100 to +140 °C) · ±0.4 °C (Remaining Range)",
+  "ar": "±0.2 °C (-25 إلى +75 °C) · ±0.5 % من القيمة المقاسة (+100 إلى +140 °C) · ±0.4 °C (بقية المدى)"
+ },
+ "-25 à +150 °c ¹⁾": {
+  "fr": "-25 à +150 °C ¹⁾",
+  "en": "-25 to +150 °C ¹⁾",
+  "ar": "-25 إلى +150 °C ¹⁾"
+ },
+ "1,3 m": {
+  "fr": "1,3 m",
+  "en": "1.3 m",
+  "ar": "1.3 m"
+ },
+ "±0,4 °c (etendue de mesure restante) · ±0,5 % v.m. (+100 à +150 °c) · ±0,2 °c (-25 à +74,9 °c)": {
+  "fr": "±0,4 °C (Etendue de mesure restante) · ±0,5 % v.m. (+100 à +150 °C) · ±0,2 °C (-25 à +74,9 °C)",
+  "en": "±0.2 °C (-25 to +74.9 °C) · ±0.5 % of mv (+100 to +150 °C) · ±0.4 °C (Remaining Range)",
+  "ar": "±0.2 °C (-25 إلى +74.9 °C) · ±0.5 % من القيمة المقاسة (+100 إلى +150 °C) · ±0.4 °C (بقية المدى)"
+ },
+ "0 à 5 m / s": {
+  "fr": "0 à 5 m/s",
+  "en": "0 to 5 m/s",
+  "ar": "0 إلى 5 m/s"
+ },
+ "± (0,03 m / s + 4 % v.m.)": {
+  "fr": "±(0,03 m/s + 4 % v.m.)",
+  "en": "±(0.03 m/s + 4 % of mv)",
+  "ar": "±(0.03 m/s + 4 % من القيمة المقاسة)"
+ },
+ "0 à 9300 ftc · 0 à 100000 lux": {
+  "fr": "0 à 9300 ftc · 0 à 100000 Lux",
+  "en": "0 to 9300 ftc · 0 to 100000 Lux",
+  "ar": "0 إلى 9300 ftc · 0 إلى 100000 Lux"
+ },
+ "din 13032-1 annexe b · f2 = 5 % = évaluation conforme cos · classe c selon din 5032-7 · f1 = 6 % = adaptation v (lambda)": {
+  "fr": "DIN 13032-1 Annexe B · F2 = 5 % = évaluation conforme cos · Classe C selon DIN 5032-7 · F1 = 6 % = adaptation V(Lambda)",
+  "en": "F1 = 6 % = V(Lambda) adjustment · Class C according to DIN 5032-7 · DIN 13032-1 Appendix B · F2 = 5 % = cos-true evaluation",
+  "ar": "F1 = 6 % = مطابقة V(Lambda) · الفئة C وفق DIN 5032-7 · ‏DIN 13032-1 الملحق B · ‏F2 = 5 % = تقييم cos الحقيقي"
+ },
+ "0,1 lux (< 10000) · 1 lux (> 10000)": {
+  "fr": "0,1 Lux (< 10000 ) · 1 Lux (> 10000 )",
+  "en": "0.1 Lux (< 10000 ) · 1 Lux (> 10000 )",
+  "ar": "0.1 Lux (< 10000 ) · 1 Lux (> 10000 )"
+ },
+ "± (50 ppm + 3 % v.m.) (0 à 5000) · ± (100 ppm + 5 % v.m.) (5001 à 10000)": {
+  "fr": "±(50 ppm + 3 % v.m.) (0 à 5000 ) · ±(100 ppm + 5 % v.m.) (5001 à 10000 )",
+  "en": "±(100 ppm + 5 % of mv) (5001 to 10000 ) · ±(50 ppm + 3 % of mv) (0 to 5000 )",
+  "ar": "±(100 ppm + 5 % من القيمة المقاسة) (5001 إلى 10000 ) · ±(50 ppm + 3 % من القيمة المقاسة) (0 إلى 5000 )"
+ },
+ "±0,06 %hr / k (0 à +50 °c) · ±3 %hr (65 à 90 %hr) · stabilité à long terme: ±1 %hr / an · ±5 %hr (etendue de mesure restante) · hystérèse: ±1,0 %hr · ±3 %hr (10 à 35 %hr) · ±2 %hr (35 à 65 %hr)": {
+  "fr": "±0,06 %HR/K (0 à +50 °C) · ±3 %HR (65 à 90 %HR) · stabilité à long terme: ±1 %HR / an · ±5 %HR (Etendue de mesure restante) · Hystérèse: ±1,0 %HR · ±3 %HR (10 à 35 %HR) · ±2 %HR (35 à 65 %HR)",
+  "en": "Hysteresis: ±1.0 %RH · long-term stability: ±1 %RH / year · ±3 %RH (10 to 35 %RH) · ±0.06 %RH/K (0 to +50 °C) · ±3 %RH (65 to 90 %RH) · ±5 %RH (Remaining Range) · ±2 %RH (35 to 65 %RH)",
+  "ar": "التخلّف (Hysteresis): ±1.0 %RH · الثبات على المدى الطويل: ±1 %RH/سنة · ±3 %RH (10 إلى 35 %RH) · ±0.06 %RH/K (0 إلى +50 °C) · ±3 %RH (65 إلى 90 %RH) · ±5 %RH (بقية المدى) · ±2 %RH (35 إلى 65 %RH)"
+ },
+ "(recommandé: -10 à +30 °c) · -20 à +50 °c": {
+  "fr": "(recommandé: -10 à +30 °C) · -20 à +50 °C",
+  "en": "(recommended: -10 to +30 °C) · -20 to +50 °C",
+  "ar": "(موصى به: -10 إلى +30 °C) · -20 إلى +50 °C"
+ },
+ "-20 à +180 °c": {
+  "fr": "-20 à +180 °C",
+  "en": "-20 to +180 °C",
+  "ar": "-20 إلى +180 °C"
+ },
+ "±0,5 °c (+50,1 à +180 °c) · ±0,4 °c (+0,1 à +50 °c) · ±0,5 °c (-20 à 0 °c)": {
+  "fr": "±0,5 °C (+50,1 à +180 °C) · ±0,4 °C (+0,1 à +50 °C) · ±0,5 °C (-20 à 0 °C)",
+  "en": "±0.5 °C (-20 to 0 °C) · ±0.4 °C (+0.1 to +50 °C) · ±0.5 °C (+50.1 to +180 °C)",
+  "ar": "±0.5 °C (-20 إلى 0 °C) · ±0.4 °C (+0.1 إلى +50 °C) · ±0.5 °C (+50.1 إلى +180 °C)"
+ },
+ "±0,06 %hr / k (+50 à +180 °c) (k=1) · stabilité à long terme: ±1 %hr / an · ±3 %hr (98 à 100 %hr) · ±0,03 %hr / k (-20 à +50 °c) (k=1) · ±3 %hr (0 à 2 %hr) · ±2 %hr (2,1 à 98 %hr)": {
+  "fr": "±0,06 %HR/K (+50 à +180 °C) (k=1) · stabilité à long terme: ±1 %HR / an · ±3 %HR (98 à 100 %HR) · ±0,03 %HR/K (-20 à +50 °C) (k=1) · ±3 %HR (0 à 2 %HR) · ±2 %HR (2,1 à 98 %HR)",
+  "en": "±3 %RH (0 to 2 %RH) · ±0.06 %RH/K (+50 to +180 °C) (k=1) · ±2 %RH (2.1 to 98 %RH) · long-term stability: ±1 %RH / year · ±0.03 %RH/K (-20 to +50 °C) (k=1) · ±3 %RH (98 to 100 %RH)",
+  "ar": "±3 %RH (0 إلى 2 %RH) · ±0.06 %RH/K (+50 إلى +180 °C) ‏(k=1) · ±2 %RH (2.1 إلى 98 %RH) · الثبات على المدى الطويل: ±1 %RH/سنة · ±0.03 %RH/K (-20 إلى +50 °C) ‏(k=1) · ±3 %RH (98 إلى 100 %RH)"
+ },
+ "-50 à +125 °c": {
+  "fr": "-50 à +125 °C",
+  "en": "-50 to +125 °C",
+  "ar": "-50 إلى +125 °C"
+ },
+ "-40 à +125 °c": {
+  "fr": "-40 à +125 °C",
+  "en": "-40 to +125 °C",
+  "ar": "-40 إلى +125 °C"
+ },
+ "±1 °c (-20 à +85 °c)": {
+  "fr": "±1 °C (-20 à +85 °C)",
+  "en": "±1 °C (-20 to +85 °C)",
+  "ar": "±1 °C (-20 إلى +85 °C)"
+ },
+ "-60 à +400 °c": {
+  "fr": "-60 à +400 °C",
+  "en": "-60 to +400 °C",
+  "ar": "-60 إلى +400 °C"
+ },
+ "classe 2 ¹⁾": {
+  "fr": "Classe 2 ¹⁾",
+  "en": "Class 2 ¹⁾",
+  "ar": "الفئة 2 ¹⁾"
+ },
+ "1) selon norme en 60584-1, précision classe 2 de -40...+1200 °c.": {
+  "fr": "1) Selon norme EN 60584-1, précision Classe 2 de -40...+1200 °C.",
+  "en": "1) According to standard EN 60584-1, the accuracy of Class 2 refers to -40 to +1200 °C.",
+  "ar": "1) وفق المعيار EN 60584-1، تنطبق دقة الفئة 2 على المدى من -40 إلى +1200 °C."
+ },
+ "longueur: 255 mm": {
+  "fr": "Longueur: 255 mm",
+  "en": "length: 255 mm",
+  "ar": "الطول: 255 mm"
+ },
+ "1,16 m": {
+  "fr": "1,16 m",
+  "en": "1.16 m",
+  "ar": "1.16 m"
+ },
+ "-60 à +300 °c": {
+  "fr": "-60 à +300 °C",
+  "en": "-60 to +300 °C",
+  "ar": "-60 إلى +300 °C"
+ },
+ "longueur: 253 mm": {
+  "fr": "Longueur: 253 mm",
+  "en": "length: 253 mm",
+  "ar": "الطول: 253 mm"
+ },
+ "1,17 m": {
+  "fr": "1,17 m",
+  "en": "1.17 m",
+  "ar": "1.17 m"
+ },
+ "0 à +300 °c": {
+  "fr": "0 à +300 °C",
+  "en": "0 to +300 °C",
+  "ar": "0 إلى +300 °C"
+ },
+ "classe 2 x": {
+  "fr": "Classe 2 *",
+  "en": "Class 2 *",
+  "ar": "الفئة 2 *"
+ },
+ "longueur: 280 mm": {
+  "fr": "Longueur: 280 mm",
+  "en": "length: 280 mm",
+  "ar": "الطول: 280 mm"
+ },
+ "-60 à +1000 °c": {
+  "fr": "-60 à +1000 °C",
+  "en": "-60 to +1000 °C",
+  "ar": "-60 إلى +1000 °C"
+ },
+ "1) selon la norme en 60584-1, la précision de la classe 1 se rapporte à -40...+1000 °c (type k)": {
+  "fr": "1) Selon la norme EN 60584-1, la précision de la classe 1 se rapporte à -40...+1000 °C (type K)",
+  "en": "1) According to standard EN 60584-1, the accuracy of Class 1 refers to -40 to +1000 °C (Type K)",
+  "ar": "1) وفق المعيار EN 60584-1، تنطبق دقة الفئة 1 على المدى من -40 إلى +1000 °C (النوع K)"
+ },
+ "longueur: 300 mm": {
+  "fr": "Longueur: 300 mm",
+  "en": "length: 300 mm",
+  "ar": "الطول: 300 mm"
+ },
+ "longueur: 207 mm": {
+  "fr": "Longueur: 207 mm",
+  "en": "length: 207 mm",
+  "ar": "الطول: 207 mm"
+ },
+ "1,18 m": {
+  "fr": "1,18 m",
+  "en": "1.18 m",
+  "ar": "1.18 m"
+ },
+ "-50 à +170 °c": {
+  "fr": "-50 à +170 °C",
+  "en": "-50 to +170 °C",
+  "ar": "-50 إلى +170 °C"
+ },
+ "1,55 m": {
+  "fr": "1,55 m",
+  "en": "1.55 m",
+  "ar": "1.55 m"
+ },
+ "1,47 m": {
+  "fr": "1,47 m",
+  "en": "1.47 m",
+  "ar": "1.47 m"
+ },
+ "-50 à +120 °c": {
+  "fr": "-50 à +120 °C",
+  "en": "-50 to +120 °C",
+  "ar": "-50 إلى +120 °C"
+ },
+ "-60 à +130 °c": {
+  "fr": "-60 à +130 °C",
+  "en": "-60 to +130 °C",
+  "ar": "-60 إلى +130 °C"
+ },
+ "longueur: 165 mm": {
+  "fr": "Longueur: 165 mm",
+  "en": "length: 165 mm",
+  "ar": "الطول: 165 mm"
+ },
+ "longueur: 105 mm": {
+  "fr": "Longueur: 105 mm",
+  "en": "length: 105 mm",
+  "ar": "الطول: 105 mm"
+ },
+ "1) selon norme en 60584-1, précision classe 1 de -40...+1000 °c (type k) , classe 2 de -40...+1200 °c (type k) , classe 3 de -200...+40 °c (type k) .": {
+  "fr": "1) Selon norme EN 60584-1, précision Classe 1 de -40...+1000 °C (type K), Classe 2 de -40...+1200 °C (type K), Classe 3 de -200...+40 °C (type K).",
+  "en": "1) According to standard EN 60584-1, the accuracy of Class 1 refers to -40 to +1000 °C (Type K), Class 2 to -40 to +1200 °C (Type K), Class 3 to -200 to +40 °C (Type K).",
+  "ar": "1) وفق المعيار EN 60584-1، تنطبق دقة الفئة 1 على المدى من -40 إلى +1000 °C (النوع K)، والفئة 2 على المدى من -40 إلى +1200 °C (النوع K)، والفئة 3 على المدى من -200 إلى +40 °C (النوع K)."
+ },
+ "-60 à +800 °c": {
+  "fr": "-60 à +800 °C",
+  "en": "-60 to +800 °C",
+  "ar": "-60 إلى +800 °C"
+ },
+ "-40 à +1000 °c": {
+  "fr": "-40 à +1000 °C",
+  "en": "-40 to +1000 °C",
+  "ar": "-40 إلى +1000 °C"
+ },
+ "1) selon la norme en 60584-1, la précision de la classe 1 se rapporte à -40...+1000°c (type k) ; classe 2 à -40...+1200°c (type k) ; classe 3 à -200...+40°c (type k) .": {
+  "fr": "1) Selon la norme EN 60584-1, la précision de la classe 1 se rapporte à -40...+1000°C (type K) ; classe 2 à -40...+1200°C (type K) ; classe 3 à -200...+40°C (type K).",
+  "en": "1) According to standard EN 60584-1, the accuracy of Class 1 refers to -40 to +1000 °C (Type K), Class 2 to -40 to +1200 °C (Type K), Class 3 to -200 to +40 °C (Type K).",
+  "ar": "1) وفق المعيار EN 60584-1، تنطبق دقة الفئة 1 على المدى من -40 إلى +1000 °C (النوع K)، والفئة 2 على المدى من -40 إلى +1200 °C (النوع K)، والفئة 3 على المدى من -200 إلى +40 °C (النوع K)."
+ },
+ "3,7 mm": {
+  "fr": "3,7 mm",
+  "en": "3.7 mm",
+  "ar": "3.7 mm"
+ },
+ "2,2 mm x 1,4 mm": {
+  "fr": "2,2 mm x 1,4 mm",
+  "en": "2.2 mm x 1.4 mm",
+  "ar": "2.2 mm x 1.4 mm"
+ },
+ "0,25 mm": {
+  "fr": "0,25 mm",
+  "en": "0.25 mm",
+  "ar": "0.25 mm"
+ },
+ "classe 2 ²⁾": {
+  "fr": "Classe 2 ²⁾",
+  "en": "Class 2 ²⁾",
+  "ar": "الفئة 2 ²⁾"
+ },
+ "3,2 mm": {
+  "fr": "3,2 mm",
+  "en": "3.2 mm",
+  "ar": "3.2 mm"
+ },
+ "1) selon la norme en 60584-1, la précision de a classe 1 se rapporte à -40...+1000°c (type k) ; classe 2 à -40...+1200°c (type k) ; classe 3 à -200...+40°c (type k)": {
+  "fr": "1) Selon la norme EN 60584-1, la précision de a classe 1 se rapporte à -40...+1000°C (type K) ; classe 2 à -40...+1200°C (type K) ; classe 3 à -200...+40°C (type K)",
+  "en": "1) According to standard EN 60584-1, the accuracy of Class 1 refers to -40 to +1000 °C (Type K), Class 2 to -40 to +1200 °C (Type K), Class 3 to -200 to +40 °C (Type K).",
+  "ar": "1) وفق المعيار EN 60584-1، تنطبق دقة الفئة 1 على المدى من -40 إلى +1000 °C (النوع K)، والفئة 2 على المدى من -40 إلى +1200 °C (النوع K)، والفئة 3 على المدى من -200 إلى +40 °C (النوع K)."
+ },
+ "-100 à +260 °c": {
+  "fr": "-100 à +260 °C",
+  "en": "-100 to +260 °C",
+  "ar": "-100 إلى +260 °C"
+ },
+ "53 x 288 x 122 mm (l x i x h)": {
+  "fr": "53 x 288 x 122 mm (L x I x H)",
+  "en": "53 x 288 x 122 mm (LxWxH)",
+  "ar": "53 × 288 × 122 mm (الطول × العرض × الارتفاع)"
+ },
+ "± (0,15 °c + 0,05 % v.m.) (0 à +100 °c) · ± (0,15 °c + 0,2 % v.m.) (+100,01 à +350 °c) · ± (0,5 °c + 0,5 % v.m.) (+350,01 à +400 °c) · ± (0,15 °c + 0,2 % v.m.) (-100 à -0,01 °c)": {
+  "fr": "±(0,15 °C + 0,05 % v.m.) (0 à +100 °C) · ±(0,15 °C + 0,2 % v.m.) (+100,01 à +350 °C) · ±(0,5 °C + 0,5 % v.m.) (+350,01 à +400 °C) · ±(0,15 °C + 0,2 % v.m.) (-100 à -0,01 °C)",
+  "en": "±(0.15 °C + 0.05 % of mv) (0 to +100 °C) · ±(0.15 °C + 0.2 % of mv) (+100.01 to +350 °C) · ±(0.5 °C + 0.5 % of mv) (+350.01 to +400 °C) · ±(0.15 °C + 0.2 % of mv) (-100 to -0.01 °C)",
+  "ar": "±(0.15 °C + 0.05 % من القيمة المقاسة) (0 إلى +100 °C) · ±(0.15 °C + 0.2 % من القيمة المقاسة) (+100.01 إلى +350 °C) · ±(0.5 °C + 0.5 % من القيمة المقاسة) (+350.01 إلى +400 °C) · ±(0.15 °C + 0.2 % من القيمة المقاسة) (-100 إلى -0.01 °C)"
+ },
+ "360 x 50 x 40 mm (l x i x h)": {
+  "fr": "360 x 50 x 40 mm (L x I x H)",
+  "en": "360 x 50 x 40 mm (LxWxH)",
+  "ar": "360 × 50 × 40 mm (الطول × العرض × الارتفاع)"
+ },
+ "± (0,3 °c + 0,3 % v.m.) (-50 à +300 °c) · ± (0,4 °c + 0,6 % v.m.) (+300,01 à +400 °c)": {
+  "fr": "±(0,3 °C + 0,3 % v.m.) (-50 à +300 °C) · ±(0,4 °C + 0,6 % v.m.) (+300,01 à +400 °C)",
+  "en": "±(0.4 °C + 0.6 % of mv) (+300.01 to +400 °C) · ±(0.3 °C + 0.3 % of mv) (-50 to +300 °C)",
+  "ar": "±(0.4 °C + 0.6 % من القيمة المقاسة) (+300.01 إلى +400 °C) · ±(0.3 °C + 0.3 % من القيمة المقاسة) (-50 إلى +300 °C)"
+ },
+ "250 x 6 x 50 mm (l x i x h)": {
+  "fr": "250 x 6 x 50 mm (L x I x H)",
+  "en": "250 x 6 x 50 mm (LxWxH)",
+  "ar": "250 × 6 × 50 mm (الطول × العرض × الارتفاع)"
+ },
+ "1,6 m": {
+  "fr": "1,6 m",
+  "en": "1.6 m",
+  "ar": "1.6 m"
+ },
+ "-80 à +300 °c": {
+  "fr": "-80 à +300 °C",
+  "en": "-80 to +300 °C",
+  "ar": "-80 إلى +300 °C"
+ },
+ "±0,3 °c (-80 à -40,001 °c) · ±0,05 °c (0 à +100 °c) · ± (0,1 °c + 0,05 % v.m.) (-40 à -0,001 °c) · ± (0,05 °c + 0,05 % v.m.) (100,001 à 300 °c)": {
+  "fr": "±0,3 °C (-80 à -40,001 °C) · ±0,05 °C (0 à +100 °C) · ±(0,1 °C + 0,05 % v.m.) (-40 à -0,001 °C) · ±(0,05 °C + 0,05 % v.m.) (100,001 à 300 °C)",
+  "en": "±(0.1 °C + 0.05 % of mv) (-40 to -0.001 °C) · ±0.05 °C (0 to +100 °C) · ±0.3 °C (-80 to -40.001 °C) · ±(0.05 °C + 0.05 % of mv) (100.001 to 300 °C)",
+  "ar": "±(0.1 °C + 0.05 % من القيمة المقاسة) (-40 إلى -0.001 °C) · ±0.05 °C (0 إلى +100 °C) · ±0.3 °C (-80 إلى -40.001 °C) · ±(0.05 °C + 0.05 % من القيمة المقاسة) (100.001 إلى 300 °C)"
+ },
+ "0,001 °c": {
+  "fr": "0,001 °C",
+  "en": "0.001 °C",
+  "ar": "0.001 °C"
+ },
+ "450 x 50 x 40 mm (l x i x h)": {
+  "fr": "450 x 50 x 40 mm (L x I x H)",
+  "en": "450 x 50 x 40 mm (LxWxH)",
+  "ar": "450 × 50 × 40 mm (الطول × العرض × الارتفاع)"
+ },
+ "±0,2 °c (-25 à +80 °c)": {
+  "fr": "±0,2 °C (-25 à +80 °C)",
+  "en": "±0.2 °C (-25 to +80 °C)",
+  "ar": "±0.2 °C (-25 إلى +80 °C)"
+ },
+ "35 x 190 x 150 mm (l x i x h)": {
+  "fr": "35 x 190 x 150 mm (L x I x H)",
+  "en": "35 x 190 x 150 mm LxWxH",
+  "ar": "35 × 190 × 150 mm (الطول × العرض × الارتفاع)"
+ },
+ "±3 %hr (65 à 90 %hr) · stabilité à long terme: ±1 %hr / an · ±5 %hr (etendue de mesure restante) · hystérèse: ±1,0 %hr · ±3 %hr (10 à 35 %hr) · ±2 %hr (35 à 65 %hr) · ±0,06 %hr / k (k=1)": {
+  "fr": "±3 %HR (65 à 90 %HR) · stabilité à long terme: ±1 %HR / an · ±5 %HR (Etendue de mesure restante) · Hystérèse: ±1,0 %HR · ±3 %HR (10 à 35 %HR) · ±2 %HR (35 à 65 %HR) · ±0,06 %HR/K (k=1)",
+  "en": "Hysteresis: ±1.0 %RH · long-term stability: ±1 %RH / year · ±3 %RH (10 to 35 %RH) · ±0.06 %RH/K (k=1) · ±3 %RH (65 to 90 %RH) · ±5 %RH (Remaining Range) · ±2 %RH (35 to 65 %RH)",
+  "ar": "التخلّف (Hysteresis): ±1.0 %RH · الثبات على المدى الطويل: ±1 %RH/سنة · ±3 %RH (10 إلى 35 %RH) · ±0.06 %RH/K ‏(k=1) · ±3 %RH (65 إلى 90 %RH) · ±5 %RH (بقية المدى) · ±2 %RH (35 إلى 65 %RH)"
+ },
+ "± (0,5 m / s + 5 % v.m.) (20,01 à 30 m / s) · ± (0,03 m / s + 4 % v.m.) (0 à 20 m / s)": {
+  "fr": "±(0,5 m/s + 5 % v.m.) (20,01 à 30 m/s) · ±(0,03 m/s + 4 % v.m.) (0 à 20 m/s)",
+  "en": "±(0.5 m/s + 5 % of mv) (20.01 to 30 m/s) · ±(0.03 m/s + 4 % of mv) (0 to 20 m/s)",
+  "ar": "±(0.5 m/s + 5 % من القيمة المقاسة) (20.01 إلى 30 m/s) · ±(0.03 m/s + 4 % من القيمة المقاسة) (0 إلى 20 m/s)"
+ },
+ "±3 %hr (65 à 90 %hr) · stabilité à long terme: ±1 %hr / an · ±5 (etendue de mesure restante) · hystérèse: ±1,0 %hr · ±3 %hr (10 à 35 %hr) · ±2 %hr (35 à 65 %hr) · ±0,06 %hr / k (k=1)": {
+  "fr": "±3 %HR (65 à 90 %HR) · stabilité à long terme: ±1 %HR / an · ±5 (Etendue de mesure restante) · Hystérèse: ±1,0 %HR · ±3 %HR (10 à 35 %HR) · ±2 %HR (35 à 65 %HR) · ±0,06 %HR/K (k=1)",
+  "en": "Hysteresis: ±1.0 %RH · long-term stability: ±1 %RH / year · ±3 %RH (10 to 35 %RH) · ±0.06 %RH/K (k=1) · ±3 %RH (65 to 90 %RH) · ±2 %RH (35 to 65 %RH) · ±5 (Remaining Range)",
+  "ar": "التخلّف (Hysteresis): ±1.0 %RH · الثبات على المدى الطويل: ±1 %RH/سنة · ±3 %RH (10 إلى 35 %RH) · ±0.06 %RH/K ‏(k=1) · ±3 %RH (65 إلى 90 %RH) · ±2 %RH (35 إلى 65 %RH) · ±5 (بقية المدى)"
+ },
+ "1,7 m": {
+  "fr": "1,7 m",
+  "en": "1.7 m",
+  "ar": "1.7 m"
+ },
+ "± (0,2 m / s + 2 % v.m.) (40,1 à 50 m / s) · ± (0,2 m / s + 1 % v.m.) (0,6 à 40 m / s)": {
+  "fr": "±(0,2 m/s + 2 % v.m.) (40,1 à 50 m/s) · ±(0,2 m/s + 1 % v.m.) (0,6 à 40 m/s)",
+  "en": "±(0.2 m/s + 1 % of mv) (0.6 to 40 m/s) · ±(0.2 m/s + 2 % of mv) (40.1 to 50 m/s)",
+  "ar": "±(0.2 m/s + 1 % من القيمة المقاسة) (0.6 إلى 40 m/s) · ±(0.2 m/s + 2 % من القيمة المقاسة) (40.1 إلى 50 m/s)"
+ },
+ "± (0,02 m / s + 5 % v.m.)": {
+  "fr": "±(0,02 m/s + 5 % v.m.)",
+  "en": "±(0.02 m/s + 5 % of mv)",
+  "ar": "±(0.02 m/s + 5 % من القيمة المقاسة)"
+ },
+ "0 à +20 m / s": {
+  "fr": "0 à +20 m/s",
+  "en": "0 to +20 m/s",
+  "ar": "0 إلى +20 m/s"
+ },
+ "± (0,03 m / s + 5 % v.m.)": {
+  "fr": "±(0,03 m/s + 5 % v.m.)",
+  "en": "±(0.03 m/s + 5 % of mv)",
+  "ar": "±(0.03 m/s + 5 % من القيمة المقاسة)"
+ },
+ "0 à +10 m / s": {
+  "fr": "0 à +10 m/s",
+  "en": "0 to +10 m/s",
+  "ar": "0 إلى +10 m/s"
+ },
+ "2) selon norme en 60584-1, précision classe 2 de -40...+1200 °c.": {
+  "fr": "2) Selon norme EN 60584-1, précision Classe 2 de -40...+1200 °C.",
+  "en": "2) According to standard EN 60584-1, the accuracy of Class 2 refers to -40 to +1200 °C.",
+  "ar": "2) وفق المعيار EN 60584-1، تنطبق دقة الفئة 2 على المدى من -40 إلى +1200 °C."
+ },
+ "longueur: 35 mm": {
+  "fr": "Longueur: 35 mm",
+  "en": "length: 35 mm",
+  "ar": "الطول: 35 mm"
+ },
+ "+1 à +30 m / s": {
+  "fr": "+1 à +30 m/s",
+  "en": "+1 to +30 m/s",
+  "ar": "+1 إلى +30 m/s"
+ },
+ "0,0 à +600 °c": {
+  "fr": "0,0 à +600 °C",
+  "en": "0.0 to +600 °C",
+  "ar": "0.0 إلى +600 °C"
+ },
+ "0,67": {
+  "fr": "0,67",
+  "en": "0.67",
+  "ar": "0.67"
+ },
+ "brièvement +200 ° c": {
+  "fr": "brièvement +200 ° C",
+  "en": "briefly +200 ° C",
+  "ar": "لفترة قصيرة +200 °C"
+ },
+ "21,2 mm": {
+  "fr": "21,2 mm",
+  "en": "21.2 mm",
+  "ar": "21.2 mm"
+ },
+ "4,15 mm": {
+  "fr": "4,15 mm",
+  "en": "4.15 mm",
+  "ar": "4.15 mm"
+ },
+ "±0,4 °c · ±0,5 % v.m. (+100 à +150 °c) · ±0,2 °c (-25 à +74,9 °c)": {
+  "fr": "±0,4 °C · ±0,5 % v.m. (+100 à +150 °C) · ±0,2 °C (-25 à +74,9 °C)",
+  "en": "±0.4 °C · ±0.2 °C (-25 to +74.9 °C) · ±0.5 % of mv (+100 to +150 °C)",
+  "ar": "±0.4 °C · ±0.2 °C (-25 إلى +74.9 °C) · ±0.5 % من القيمة المقاسة (+100 إلى +150 °C)"
+ },
+ "±0,2 °c (-25 à +80 °c) · ±0,4 °c etendue de mesure restante · ±0,5 % v.m. (100 à +125 °c)": {
+  "fr": "±0,2 °C (-25 à +80 °C) · ±0,4 °C Etendue de mesure restante · ±0,5 % v.m. (100 à +125 °C)",
+  "en": "±0.5 % of mv (100 to +125 °C) · ±0.4 °C Remaining Range · ±0.2 °C (-25 to +80 °C)",
+  "ar": "±0.5 % من القيمة المقاسة (100 إلى +125 °C) · ±0.4 °C بقية المدى · ±0.2 °C (-25 إلى +80 °C)"
+ },
+ "-35 à +80 °c": {
+  "fr": "-35 à +80 °C",
+  "en": "-35 to +80 °C",
+  "ar": "-35 إلى +80 °C"
+ },
+ "±0,2 °c (-25 à +75 °c) · ±0,4 °c (etendue de mesure restante)": {
+  "fr": "±0,2 °C (-25 à +75 °C) · ±0,4 °C (Etendue de mesure restante)",
+  "en": "±0.2 °C (-25 to +75 °C) · ±0.4 °C (Remaining Range)",
+  "ar": "±0.2 °C (-25 إلى +75 °C) · ±0.4 °C (بقية المدى)"
+ },
+ "±0,4 °c (-35 à -25,1 °c) · ±0,2 °c (-25 à +75 °c) · ±0,4 °c (+75 à +80 °c)": {
+  "fr": "±0,4 °C (-35 à -25,1 °C) · ±0,2 °C (-25 à +75 °C) · ±0,4 °C (+75 à +80 °C)",
+  "en": "±0.2 °C (-25 to +75 °C) · ±0.4 °C (-35 to -25.1 °C) · ±0.4 °C (+75 to +80 °C)",
+  "ar": "±0.2 °C (-25 إلى +75 °C) · ±0.4 °C (-35 إلى -25.1 °C) · ±0.4 °C (+75 إلى +80 °C)"
+ },
+ "-30 à +90 °c": {
+  "fr": "-30 à +90 °C",
+  "en": "-30 to +90 °C",
+  "ar": "-30 إلى +90 °C"
+ },
+ "±0,2 °c (0 à +70 °c) · ±0,5 °c (etendue de mesure restante)": {
+  "fr": "±0,2 °C (0 à +70 °C) · ±0,5 °C (Etendue de mesure restante)",
+  "en": "±0.5 °C (Remaining Range) · ±0.2 °C (0 to +70 °C)",
+  "ar": "±0.5 °C (بقية المدى) · ±0.2 °C (0 إلى +70 °C)"
+ },
+ "2,4 m": {
+  "fr": "2,4 m",
+  "en": "2.4 m",
+  "ar": "2.4 m"
+ },
+ "±0,2 °c (-20 à +40 °c) · ±0,4 °c (40,1 à +70 °c)": {
+  "fr": "±0,2 °C (-20 à +40 °C) · ±0,4 °C (40,1 à +70 °C)",
+  "en": "±0.2 °C (-20 to +40 °C) · ±0.4 °C (40.1 to +70 °C)",
+  "ar": "±0.2 °C (-20 إلى +40 °C) · ±0.4 °C (40.1 إلى +70 °C)"
+ },
+ "±0,2 °c (0 à +70 °c)": {
+  "fr": "±0,2 °C (0 à +70 °C)",
+  "en": "±0.2 °C (0 to +70 °C)",
+  "ar": "±0.2 °C (0 إلى +70 °C)"
+ },
+ "±0,2 °c (-25 à +74,9 °c) · ±0,5 % v.m. (100 à +150 °c) · ±0,4 °c (étendue restante)": {
+  "fr": "±0,2 °C (-25 à +74,9 °C) · ±0,5 % v.m. (100 à +150 °C) · ±0,4 °C (étendue restante)",
+  "en": "±0.5 % of mv (100 to +150 °C) · ±0.4 °C (remaining range) · ±0.2 °C (-25 to +74.9 °C)",
+  "ar": "±0.5 % من القيمة المقاسة (100 إلى +150 °C) · ±0.4 °C (بقية المدى) · ±0.2 °C (-25 إلى +74.9 °C)"
+ },
+ "0,6 m": {
+  "fr": "0,6 m",
+  "en": "0.6 m",
+  "ar": "0.6 m"
+ },
+ "0 à 20000 lux": {
+  "fr": "0 à 20000 Lux",
+  "en": "0 to 20000 Lux",
+  "ar": "0 إلى 20000 Lux"
+ },
+ "conforme à din 5032-7 classe c. · ±3 lux ou ±3 % v.m. (par rapport à une référence din 5032-7 classe l)": {
+  "fr": "Conforme à DIN 5032-7 classe C. · ±3 Lux ou ±3 % v.m. (par rapport à une référence DIN 5032-7 classe L)",
+  "en": "±3 Lux or ±3 % of mv (refers to reference DIN 5032-7 Class L) · DIN 5032-7 Class C-compliant.",
+  "ar": "±3 Lux أو ±3 % من القيمة المقاسة (بالرجوع إلى المرجع DIN 5032-7 الفئة L) · مطابق لـ DIN 5032-7 الفئة C."
+ },
+ "0 à +10000 mw / m²": {
+  "fr": "0 à +10000 mW/m²",
+  "en": "0 to +10000 mW/m²",
+  "ar": "0 إلى +10000 mW/m²"
+ },
+ "±5 mw / m² ou ±5 % v.m. (par rapport à une référence externe)": {
+  "fr": "±5 mW/m² ou ±5 % v.m. (par rapport à une référence externe)",
+  "en": "±5 mW/m² or ±5 % of mv (refers to external reference)",
+  "ar": "±5 mW/m² أو ±5 % من القيمة المقاسة (بالرجوع إلى مرجع خارجي)"
+ },
+ "±1,0 %hr de dérive par an · ±1,0 %hr hystérésis · ±3,0 %hr à +25,0 °c et 80 %hr · ±2,0 %hr à +25,0 °c et 20 à 80 %hr": {
+  "fr": "±1,0 %HR de dérive par an · ±1,0 %HR hystérésis · ±3,0 %HR à +25,0 °C et 80 %HR · ±2,0 %HR à +25,0 °C et 20 à 80 %HR",
+  "en": "±3.0 %RH at +25.0 °C and 80 %RH · ±1.0 %RH / year drift · ±1.0 %RH hysteresis · ±2.0 %RH at +25.0 °C and 20 to 80 %RH",
+  "ar": "±3.0 %RH عند +25.0 °C و80 %RH · ±1.0 %RH/سنة انجراف · ±1.0 %RH تخلّف (Hysteresis) · ±2.0 %RH عند +25.0 °C و20 إلى 80 %RH"
+ },
+ "classe 1 ²⁾": {
+  "fr": "Classe 1 ²⁾",
+  "en": "Class 1 ²⁾",
+  "ar": "الفئة 1 ²⁾"
+ },
+ "1) selon norme en 60584-1, précision classe 1 de -40...+350 °c (type t) .": {
+  "fr": "1) Selon norme EN 60584-1, précision Classe 1 de -40...+350 °C (type T).",
+  "en": "1) According to standard EN 60584-1, the accuracy of Class 1 refers to -40 to +350 °C (Type T).",
+  "ar": "1) وفق المعيار EN 60584-1، تنطبق دقة الفئة 1 على المدى من -40 إلى +350 °C (النوع T)."
+ },
+ "±0,2 °c (-20 à +70 °c) · classe 1 (etendue de mesure restante) ¹⁾": {
+  "fr": "±0,2 °C (-20 à +70 °C) · Classe 1 (Etendue de mesure restante) ¹⁾",
+  "en": "±0.2 °C (-20 to +70 °C) · Class 1 (Remaining Range) ¹⁾",
+  "ar": "±0.2 °C (-20 إلى +70 °C) · الفئة 1 (بقية المدى) ¹⁾"
+ },
+ "1) selon norme en 60584-2, précision classe 1 de -40...+350 °c (type t) .": {
+  "fr": "1) Selon norme EN 60584-2, précision Classe 1 de -40...+350 °C (type T).",
+  "en": "1) According to standard EN 60584-2, the accuracy of Class 1 refers to -40 to +350 °C (Type T).",
+  "ar": "1) وفق المعيار EN 60584-2، تنطبق دقة الفئة 1 على المدى من -40 إلى +350 °C (النوع T)."
+ },
+ "1) selon la norme en 60584-2, la précision de la classe 1se rapporte à -40...+350 °c (type t)": {
+  "fr": "1) Selon la norme EN 60584-2, la précision de la classe 1se rapporte à -40...+350 °C (type T)",
+  "en": "1) According to standard EN 60584-2, the accuracy of Class 1 refers to -40 to +350 °C (Type T).",
+  "ar": "1) وفق المعيار EN 60584-2، تنطبق دقة الفئة 1 على المدى من -40 إلى +350 °C (النوع T)."
+ },
+ "3,3 mm": {
+  "fr": "3,3 mm",
+  "en": "3.3 mm",
+  "ar": "3.3 mm"
+ },
+ "±0,5 °c (-40 à +133 °c) · classe 1 etendue de mesure restante": {
+  "fr": "±0,5 °C (-40 à +133 °C) · Classe 1 Etendue de mesure restante",
+  "en": "±0.5 °C (-40 to +133 °C) · Class 1 Remaining Range",
+  "ar": "±0.5 °C (-40 إلى +133 °C) · الفئة 1 بقية المدى"
+ },
+ "1) selon la norme en 60584-2, la précision de la classe 1 et classe 2 se rapporte à -40 ... +350 °c (type t) .": {
+  "fr": "1) Selon la norme EN 60584-2, la précision de la classe 1 et classe 2 se rapporte à -40 ... +350 °C (type T).",
+  "en": "1) According to standard EN 60584-2, the accuracy of Class 1 and Class 2 refers to -40 to +350 °C (Type T).",
+  "ar": "1) وفق المعيار EN 60584-2، تنطبق دقة الفئتين 1 و2 على المدى من -40 إلى +350 °C (النوع T)."
+ },
+ "1,4 mm": {
+  "fr": "1,4 mm",
+  "en": "1.4 mm",
+  "ar": "1.4 mm"
+ },
+ "1,25 m": {
+  "fr": "1,25 m",
+  "en": "1.25 m",
+  "ar": "1.25 m"
+ },
+ "±0,2 °c (-20 à +70 °c) · classe 1 (t1) ¹⁾": {
+  "fr": "±0,2 °C (-20 à +70 °C) · Classe 1 (t1) ¹⁾",
+  "en": "Class 1 (t1) ¹⁾ · ±0.2 °C (-20 to +70 °C)",
+  "ar": "الفئة 1 (t1) ¹⁾ · ±0.2 °C (-20 إلى +70 °C)"
+ },
+ "-50 à +205 °c": {
+  "fr": "-50 à +205 °C",
+  "en": "-50 to +205 °C",
+  "ar": "-50 إلى +205 °C"
+ },
+ "1) selon la norme en 60584-2, la précision de la classe 1 se rapporte à -40...+1000°c (type k) ; classe 2 à -40...+1200°c (type k) ; classe 3 à -200...+40°c (type k) .": {
+  "fr": "1) Selon la norme EN 60584-2, la précision de la classe 1 se rapporte à -40...+1000°C (type K) ; classe 2 à -40...+1200°C (type K) ; classe 3 à -200...+40°C (type K).",
+  "en": "1) According to standard EN 60584-2, the accuracy of Class 1 refers to -40 to +1000 °C (Type K), Class 2 to -40 to +1200 °C (Type K), Class 3 to -200 to +40 °C (Type K).",
+  "ar": "1) وفق المعيار EN 60584-2، تنطبق دقة الفئة 1 على المدى من -40 إلى +1000 °C (النوع K)، والفئة 2 على المدى من -40 إلى +1200 °C (النوع K)، والفئة 3 على المدى من -200 إلى +40 °C (النوع K)."
+ },
+ "1,9 m": {
+  "fr": "1,9 m",
+  "en": "1.9 m",
+  "ar": "1.9 m"
+ },
+ "1,15 m": {
+  "fr": "1,15 m",
+  "en": "1.15 m",
+  "ar": "1.15 m"
+ },
+ "-40 à +220 °c": {
+  "fr": "-40 à +220 °C",
+  "en": "-40 to +220 °C",
+  "ar": "-40 إلى +220 °C"
+ },
+ "3,6 mm": {
+  "fr": "3,6 mm",
+  "en": "3.6 mm",
+  "ar": "3.6 mm"
+ },
+ "1) selon norme en 60584-2, précision classe 1 de -40...+1000 °c (type k) , classe 2 de -40...+1200 °c (type k) , classe 3 de -200...+40 °c (type k) .": {
+  "fr": "1) Selon norme EN 60584-2, précision Classe 1 de -40...+1000 °C (type K), Classe 2 de -40...+1200 °C (type K), Classe 3 de -200...+40 °C (type K).",
+  "en": "1) According to standard EN 60584-2, the accuracy of Class 1 refers to -40 to +1000 °C (Type K), Class 2 to -40 to +1200 °C (Type K), Class 3 to -200 to +40 °C (Type K).",
+  "ar": "1) وفق المعيار EN 60584-2، تنطبق دقة الفئة 1 على المدى من -40 إلى +1000 °C (النوع K)، والفئة 2 على المدى من -40 إلى +1200 °C (النوع K)، والفئة 3 على المدى من -200 إلى +40 °C (النوع K)."
+ },
+ "stabilité à long terme: ±1 %hr / an · ±2 %hr · xdla précision du capteur correspond à la précision du système. · ±0,03 %hr / k (k=1)": {
+  "fr": "stabilité à long terme: ±1 %HR / an · ±2 %HR · *DLa précision du capteur correspond à la précision du système. · ±0,03 %HR/K (k=1)",
+  "en": "±2 %RH · long-term stability: ±1 %RH / year · ±0.03 %RH/K (k=1) · *The sensor accuracy corresponds to the system accuracy.",
+  "ar": "±2 %RH · الثبات على المدى الطويل: ±1 %RH/سنة · ±0.03 %RH/K ‏(k=1) · *دقة المستشعر تقابل دقة النظام."
+ },
+ "-85 à +150 °c": {
+  "fr": "-85 à +150 °C",
+  "en": "-85 to +150 °C",
+  "ar": "-85 إلى +150 °C"
+ },
+ "classe b (etendue de mesure restante) ¹⁾ · classe a (-50 à +300 °c)": {
+  "fr": "Classe B (Etendue de mesure restante) ¹⁾ · Classe A (-50 à +300 °C)",
+  "en": "Class A (-50 to +300 °C) · Class B (Remaining Range) ¹⁾",
+  "ar": "الفئة A (-50 إلى +300 °C) · الفئة B (بقية المدى) ¹⁾"
+ },
+ "1) selon norme en 60751, précision classe a et b de -200...+600 °c (pt100) .": {
+  "fr": "1) Selon norme EN 60751, précision Classe A et B de -200...+600 °C (Pt100).",
+  "en": "1) According to standard 60751, the accuracies of Class A and B refer to -200 to +600 °C (Pt100)",
+  "ar": "1) وفق المعيار 60751، تنطبق دقة الفئتين A وB على المدى من -200 إلى +600 °C ‏(Pt100)"
+ },
+ "1) selon norme en 60751 ; les précisions des classes a et b se rapportent à -200...+600 °c (pt100)": {
+  "fr": "1) Selon norme EN 60751 ; les précisions des classes A et B se rapportent à -200...+600 °C (Pt100)",
+  "en": "1) According to standard 60751, the accuracies of Class A and B refer to -200 to +600 °C (Pt100)",
+  "ar": "1) وفق المعيار 60751، تنطبق دقة الفئتين A وB على المدى من -200 إلى +600 °C ‏(Pt100)"
+ },
+ "±0,2 °c (-25 à +70 °c) · ±0,4 °c (-50 à -25 °c)": {
+  "fr": "±0,2 °C (-25 à +70 °C) · ±0,4 °C (-50 à -25 °C)",
+  "en": "±0.2 °C (-25 to +70 °C) · ±0.4 °C (-50 to -25 °C)",
+  "ar": "±0.2 °C (-25 إلى +70 °C) · ±0.4 °C (-50 إلى -25 °C)"
+ },
+ "25 x 290 x 45 mm (l x i x h)": {
+  "fr": "25 x 290 x 45 mm (L x I x H)",
+  "en": "25 x 290 x 45 mm LxWxH",
+  "ar": "25 × 290 × 45 mm (الطول × العرض × الارتفاع)"
+ },
+ "±0,8 °c (-20 à +0 °c) · ±0,5 °c (0 à +60 °c)": {
+  "fr": "±0,8 °C (-20 à +0 °C) · ±0,5 °C (0 à +60 °C)",
+  "en": "±0.8 °C (-20 to +0 °C) · ±0.5 °C (0 to +60 °C)",
+  "ar": "±0.8 °C (-20 إلى +0 °C) · ±0.5 °C (0 إلى +60 °C)"
+ },
+ "±1,0 %rh / année dérive · ±1,0 %rh hystérèse · ±0,03 %hr / k (à 0 à 60 °c) · ±1,8 %hr +3 % v.m. (à 25 °c, 5 % à 80 %rh)": {
+  "fr": "±1,0 %RH/année dérive · ±1,0 %RH hystérèse · ±0,03 %HR/K (à 0 à 60 °C ) · ±1,8 %HR +3 % v.m. (à 25 °C, 5 % à 80 %RH)",
+  "en": "±1.0 %rF/year Drift · ±0.03 %RH/K (at 0 to 60 °C ) · ±1.0 %rF Hysterese · ±1.8 %RH +3 % of mv (at 25 °C, 5 % to 80 %RH)",
+  "ar": "±1.0 %RH/سنة انجراف · ±0.03 %RH/K (عند 0 إلى 60 °C) · ±1.0 %RH تخلّف (Hysteresis) · ±1.8 %RH +3 % من القيمة المقاسة (عند 25 °C، 5 % إلى 80 %RH)"
+ },
+ "-120 à +120 pa": {
+  "fr": "-120 à +120 Pa",
+  "en": "-120 to +120 Pa",
+  "ar": "-120 إلى +120 Pa"
+ },
+ "0,001 pa": {
+  "fr": "0,001 Pa",
+  "en": "0.001 Pa",
+  "ar": "0.001 Pa"
+ },
+ "50 à 4000 m³ / h": {
+  "fr": "50 à 4000 m³/h",
+  "en": "50 to 4000 m³/h",
+  "ar": "50 إلى 4000 m³/h"
+ },
+ "±3 % v.m. + 12 m³ / h at +22 °c · 1013 hpa (85 à 3500 m³ / h)": {
+  "fr": "±3 % v.m. + 12 m³/h at +22 °C · 1013 hPa (85 à 3500 m³/h)",
+  "en": "1013 hPa (85 to 3500 m³/h) · ±3 % of mv + 12 m³/h at +22 °C",
+  "ar": "1013 hPa (85 إلى 3500 m³/h) · ±3 % من القيمة المقاسة + 12 m³/h عند +22 °C"
+ },
+ "± (0,25 °c + 0,2 % v.m.) (-50 à +100 °c) · ± (0,25 °c + 0,3 % v.m.) °c (etendue de mesure restante)": {
+  "fr": "±(0,25 °C + 0,2 % v.m.) (-50 à +100 °C) · ±(0,25 °C + 0,3 % v.m.) °C (Etendue de mesure restante)",
+  "en": "±(0.25 °C + 0.2 % of mv) (-50 to +100 °C) · ±(0.25 °C + 0.3 % of mv) °C (Remaining Range)",
+  "ar": "±(0.25 °C + 0.2 % من القيمة المقاسة) (-50 إلى +100 °C) · ±(0.25 °C + 0.3 % من القيمة المقاسة) °C (بقية المدى)"
+ },
+ "8,5 mm": {
+  "fr": "8,5 mm",
+  "en": "8.5 mm",
+  "ar": "8.5 mm"
+ },
+ "-50 à +350 °c · court terme: +500 °c": {
+  "fr": "-50 à +350 °C · court terme: +500 °C",
+  "en": "-50 to +350 °C · short-term: +500 °C",
+  "ar": "-50 إلى +350 °C · لفترة قصيرة: +500 °C"
+ },
+ "poignée radio: · ± (0,5 °c + 0,3 % v.m.) (-40 à +500 °c) · ± (0,7 °c + 0,5 % v.m.) (etendue de mesure restante) · tête de sonde tc: classe 2": {
+  "fr": "Poignée radio: · ±(0,5 °C + 0,3 % v.m.) (-40 à +500 °C) · ±(0,7 °C + 0,5 % v.m.) (Etendue de mesure restante) · Tête de sonde TC: Classe 2",
+  "en": "±(0.7 °C + 0.5 % of mv) (Remaining Range) · T/C probe head: Class 2 · Radio handle: · ±(0.5 °C + 0.3 % of mv) (-40 to +500 °C)",
+  "ar": "±(0.7 °C + 0.5 % من القيمة المقاسة) (بقية المدى) · رأس مسبار TC: الفئة 2 · المقبض اللاسلكي: · ±(0.5 °C + 0.3 % من القيمة المقاسة) (-40 إلى +500 °C)"
+ },
+ "1,0 °c etendue de mesure restante · 0,1 °c (-50 à +199,9 °c)": {
+  "fr": "1,0 °C Etendue de mesure restante · 0,1 °C (-50 à +199,9 °C)",
+  "en": "0.1 °C (-50 to +199.9 °C) · 1.0 °C Remaining Range",
+  "ar": "0.1 °C (-50 إلى +199.9 °C) · 1.0 °C بقية المدى"
+ },
+ "±2 %hr (+2 à +98 %hr)": {
+  "fr": "±2 %HR (+2 à +98 %HR)",
+  "en": "±2 %RH (+2 to +98 %RH)",
+  "ar": "±2 %RH (+2 إلى +98 %RH)"
+ },
+ "-20 à +50 °ctpd": {
+  "fr": "-20 à +50 °Ctpd",
+  "en": "-20 to +50 °Ctpd",
+  "ar": "-20 إلى +50 °Ctpd"
+ },
+ "±1 °ctpd (0 à +4,9 °ctpd) · ±0,9 °ctpd (+5,0 à +50,0 °ctpd) · ±4 °ctpd (-20,0 à -10,1 °ctpd) · ±2 °ctpd (-5,0 à -0,1 °ctpd) · ±3 °ctpd (-10,0 à -5,1 °ctpd)": {
+  "fr": "±1 °Ctpd (0 à +4,9 °Ctpd) · ±0,9 °Ctpd (+5,0 à +50,0 °Ctpd) · ±4 °Ctpd (-20,0 à -10,1 °Ctpd) · ±2 °Ctpd (-5,0 à -0,1 °Ctpd) · ±3 °Ctpd (-10,0 à -5,1 °Ctpd)",
+  "en": "±3 °Ctpd (-10.0 to -5.1 °Ctpd) · ±2 °Ctpd (-5.0 to -0.1 °Ctpd) · ±0.9 °Ctpd (+5.0 to +50.0 °Ctpd) · ±4 °Ctpd (-20.0 to -10.1 °Ctpd) · ±1 °Ctpd (0 to +4.9 °Ctpd)",
+  "ar": "±3 °Ctpd (-10.0 إلى -5.1 °Ctpd) · ±2 °Ctpd (-5.0 إلى -0.1 °Ctpd) · ±0.9 °Ctpd (+5.0 إلى +50.0 °Ctpd) · ±4 °Ctpd (-20.0 إلى -10.1 °Ctpd) · ±1 °Ctpd (0 إلى +4.9 °Ctpd)"
+ },
+ "-40 à +50 °ctpd": {
+  "fr": "-40 à +50 °Ctpd",
+  "en": "-40 to +50 °Ctpd",
+  "ar": "-40 إلى +50 °Ctpd"
+ },
+ "±3 °ctpd (-29,9 à -20 °ctpd) · ±1 °ctpd (-9,9 à -5 °ctpd) · ±2 °ctpd (-19 à -10 °ctpd) · ±0,8 °ctpd (-4,9 à +50 °ctpd) · ±4 °ctpd (-40 à -30 °ctpd)": {
+  "fr": "±3 °Ctpd (-29,9 à -20 °Ctpd) · ±1 °Ctpd (-9,9 à -5 °Ctpd) · ±2 °Ctpd (-19 à -10 °Ctpd) · ±0,8 °Ctpd (-4,9 à +50 °Ctpd) · ±4 °Ctpd (-40 à -30 °Ctpd)",
+  "en": "±4 °Ctpd (-40 to -30 °Ctpd) · ±0.8 °Ctpd (-4.9 to +50 °Ctpd) · ±1 °Ctpd (-9.9 to -5 °Ctpd) · ±3 °Ctpd (-29.9 to -20 °Ctpd) · ±2 °Ctpd (-19 to -10 °Ctpd)",
+  "ar": "±4 °Ctpd (-40 إلى -30 °Ctpd) · ±0.8 °Ctpd (-4.9 إلى +50 °Ctpd) · ±1 °Ctpd (-9.9 إلى -5 °Ctpd) · ±3 °Ctpd (-29.9 إلى -20 °Ctpd) · ±2 °Ctpd (-19 إلى -10 °Ctpd)"
+ },
+ "stabilité à long terme: ±1 %hr / an · ±0,15 %hr / k (k=1) · ±2 %hr at +25 °c (+2 à +98 %hr) · xdla précision du capteur correspond à la précision du système.": {
+  "fr": "stabilité à long terme: ±1 %HR / an · ±0,15 %HR/K (k=1) · ±2 %HR AT +25 °C (+2 à +98 %HR) · *DLa précision du capteur correspond à la précision du système.",
+  "en": "±0.15 %RH/K (k=1) · long-term stability: ±1 %RH / year · *The sensor accuracy corresponds to the system accuracy. · ±2 %RH at +25 °C (+2 to +98 %RH)",
+  "ar": "±0.15 %RH/K ‏(k=1) · الثبات على المدى الطويل: ±1 %RH/سنة · *دقة المستشعر تقابل دقة النظام. · ±2 %RH عند +25 °C ‏(+2 إلى +98 %RH)"
+ },
+ "-20 à +125 °c": {
+  "fr": "-20 à +125 °C",
+  "en": "-20 to +125 °C",
+  "ar": "-20 إلى +125 °C"
+ },
+ "±0,5 °c (-20 à 0°c, +50 à +80°c) · +1,2 % v.m. (etendue de mesure restante) · ±0,4 °c (0 à +50°c) ,": {
+  "fr": "±0,5 °C (-20 à 0°C, +50 à +80°C) · +1,2 % v.m. (Etendue de mesure restante) · ±0,4 °C (0 à +50°C),",
+  "en": "±0.4 °C (0 to +50°C), · +1.2 % of mv (Remaining Range) · ±0.5 °C (-20 to 0°C, +50 to +80°C)",
+  "ar": "±0.4 °C (0 إلى +50°C), · +1.2 % من القيمة المقاسة (بقية المدى) · ±0.5 °C (-20 إلى 0°C, +50 إلى +80°C)"
+ },
+ "stabilité à long terme: ±1 %hr / an · ±2 %hr at +25 °c (+0 à +100 %hr) · xdla précision du capteur correspond à la précision du système. · ±0,03 %hr / k (k=1)": {
+  "fr": "stabilité à long terme: ±1 %HR / an · ±2 %HR AT +25 °C (+0 à +100 %HR) · *DLa précision du capteur correspond à la précision du système. · ±0,03 %HR/K (k=1)",
+  "en": "±2 %RH at +25 °C (+0 to +100 %RH) · long-term stability: ±1 %RH / year · ±0.03 %RH/K (k=1) · *The sensor accuracy corresponds to the system accuracy.",
+  "ar": "±2 %RH عند +25 °C ‏(+0 إلى +100 %RH) · الثبات على المدى الطويل: ±1 %RH/سنة · ±0.03 %RH/K ‏(k=1) · *دقة المستشعر تقابل دقة النظام."
+ },
+ "stabilité à long terme: ±1 %hr / an · ±2 %hr at +25 °c (+2 à +98 %hr) · xdla précision du capteur correspond à la précision du système. · ±0,03 %hr / k (k=1)": {
+  "fr": "stabilité à long terme: ±1 %HR / an · ±2 %HR AT +25 °C (+2 à +98 %HR) · *DLa précision du capteur correspond à la précision du système. · ±0,03 %HR/K (k=1)",
+  "en": "long-term stability: ±1 %RH / year · ±0.03 %RH/K (k=1) · *The sensor accuracy corresponds to the system accuracy. · ±2 %RH at +25 °C (+2 to +98 %RH)",
+  "ar": "الثبات على المدى الطويل: ±1 %RH/سنة · ±0.03 %RH/K ‏(k=1) · *دقة المستشعر تقابل دقة النظام. · ±2 %RH عند +25 °C ‏(+2 إلى +98 %RH)"
+ },
+ "classe 1 ¹⁾ · xen utilisation avec une sonde radio d'humidité ou ctn pour la mesure de température extérieure et une différence de 20 k de l'air intérieur / extérieur · facteur u: ± (0,1 °c + 0,2 % v.m.) x": {
+  "fr": "Classe 1 ¹⁾ · *en utilisation avec une sonde radio d'humidité ou CTN pour la mesure de température extérieure et une différence de 20 K de l'air intérieur/extérieur · Facteur U: ±(0,1 °C + 0,2 % v.m.)*",
+  "en": "Class 1 ¹⁾ · U-value: ±(0.1 °C + 0.2 % of mv)* · *when used with an NTC or wireless humidity probe for measuring outside temperature and 20 K difference between the air inside and outside",
+  "ar": "الفئة 1 ¹⁾ · قيمة U: ±(0.1 °C + 0.2 % من القيمة المقاسة)* · *عند الاستخدام مع مسبار NTC أو مسبار رطوبة لاسلكي لقياس الحرارة الخارجية وفارق 20 K بين الهواء الداخلي والخارجي"
+ },
+ "1) selon norme en 60584-2, précision classe 2 de -40...+1200 °c.": {
+  "fr": "1) Selon norme EN 60584-2, précision Classe 2 de -40...+1200 °C.",
+  "en": "1) According to standard EN 60584-2, the accuracy of Class 2 refers to -40 to +1200 °C.",
+  "ar": "1) وفق المعيار EN 60584-2، تنطبق دقة الفئة 2 على المدى من -40 إلى +1200 °C."
+ },
+ "± (0,5 °c + 0,3 % v.m.) (-40 à +500 °c) · ± (0,7 °c + 0,5 % v.m.) (etendue de mesure restante) · tête de sonde tc: classe 2": {
+  "fr": "±(0,5 °C + 0,3 % v.m.) (-40 à +500 °C) · ±(0,7 °C + 0,5 % v.m.) (Etendue de mesure restante) · Tête de sonde TC: Classe 2",
+  "en": "±(0.7 °C + 0.5 % of mv) (Remaining Range) · T/C probe head: Class 2 · ±(0.5 °C + 0.3 % of mv) (-40 to +500 °C)",
+  "ar": "±(0.7 °C + 0.5 % من القيمة المقاسة) (بقية المدى) · رأس مسبار TC: الفئة 2 · ±(0.5 °C + 0.3 % من القيمة المقاسة) (-40 إلى +500 °C)"
+ },
+ "3,4 mm": {
+  "fr": "3,4 mm",
+  "en": "3.4 mm",
+  "ar": "3.4 mm"
+ },
+ "-60 à +250 °c": {
+  "fr": "-60 à +250 °C",
+  "en": "-60 to +250 °C",
+  "ar": "-60 إلى +250 °C"
+ },
+ "1) selon la norme en 60584-2, la précision de la classe 1 se rapporte à -40...+1000 °c (type k) , celle de la classe 2 à -40...+1200 °c (type k) et celle de la classe 3 à -200...+40 °c (type k)": {
+  "fr": "1) Selon la norme EN 60584-2, la précision de la classe 1 se rapporte à -40...+1000 °C (type K), celle de la classe 2 à -40...+1200 °C (type K) et celle de la classe 3 à -200...+40 °C (type K)",
+  "en": "1) According to standard EN 60584-2, the accuracy of Class 1 refers to -40 to +1000 °C (Type K), Class 2 to -40 to +1200 °C (Type K), Class 3 to -200 to +40 °C (Type K).",
+  "ar": "1) وفق المعيار EN 60584-2، تنطبق دقة الفئة 1 على المدى من -40 إلى +1000 °C (النوع K)، والفئة 2 على المدى من -40 إلى +1200 °C (النوع K)، والفئة 3 على المدى من -200 إلى +40 °C (النوع K)."
+ },
+ "±0,6 % val.fin. (0 à 10 bar) · ±0,6 % val.fin. (> 10 bar)": {
+  "fr": "±0,6 % val.fin. (0 à 10 bar) · ±0,6 % val.fin. ( > 10 bar)",
+  "en": "±0.6 % of fsv ( > 10 bar) · ±0.6 % of fsv (0 to 10 bar)",
+  "ar": "±0.6 % من نهاية المقياس ( > 10 bar) · ±0.6 % من نهاية المقياس (0 إلى 10 bar)"
+ },
+ "2 à +14 ph": {
+  "fr": "2 à +14 pH",
+  "en": "2 to +14 pH",
+  "ar": "2 إلى +14 pH"
+ },
+ "140 x 20 x 65 ( (l x i x h) )": {
+  "fr": "140 x 20 x 65 ((L x I x H))",
+  "en": "140 x 20 x 65 (LxWxH)",
+  "ar": "140 × 20 × 65 (الطول × العرض × الارتفاع)"
+ },
+ "0 à +14 ph": {
+  "fr": "0 à +14 pH",
+  "en": "0 to +14 pH",
+  "ar": "0 إلى +14 pH"
+ },
+ "0 à +60 °c ( (à court terme jusqu'à +80 °c) )": {
+  "fr": "0 à +60 °C ((à court terme jusqu’à +80 °C))",
+  "en": "0 to +60 °C ((short-term to +80 °C))",
+  "ar": "0 إلى +60 °C (لفترة قصيرة حتى +80 °C)"
  }
 }
