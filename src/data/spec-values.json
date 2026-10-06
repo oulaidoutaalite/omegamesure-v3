@@ -13478,5 +13478,745 @@
   "fr": "0 à +60 °C ((à court terme jusqu’à +80 °C))",
   "en": "0 to +60 °C ((short-term to +80 °C))",
   "ar": "0 إلى +60 °C (لفترة قصيرة حتى +80 °C)"
+ },
+ "max. +25 °c ¹⁾": {
+  "fr": "max. +25 °C ¹⁾",
+  "en": "max. +25 °C ¹⁾",
+  "ar": "بحد أقصى +25 °C ¹⁾"
+ },
+ "10 000 valeurs de mesure / canal": {
+  "fr": "10 000 Valeurs de mesure / Canal",
+  "en": "10 000 measured values / channel",
+  "ar": "10 000 قيمة قياس / قناة"
+ },
+ "max. 1320 ma": {
+  "fr": "max. 1320 mA",
+  "en": "max. 1320 mA",
+  "ar": "بحد أقصى 1320 mA"
+ },
+ "pile 9 v indice de protection ip 68": {
+  "fr": "Pile 9 V, indice de protection IP 68",
+  "en": "9 V battery, protection class IP 68",
+  "ar": "بطارية 9 V، درجة الحماية IP 68"
+ },
+ "94 db / 114 db, réglable": {
+  "fr": "94 dB/114 dB, réglable",
+  "en": "94 dB/114 dB, adjustable",
+  "ar": "94 dB/114 dB، قابل للضبط"
+ },
+ "2) mesure de longue durée à +125°c, de courte durée à +150°c ou +140°c (2 minutes)": {
+  "fr": "2) Mesure de longue durée à +125°C, de courte durée à +150°C ou +140°C (2 minutes)",
+  "en": "2) Long-term measurement at +125 °C, short-term at +150 °C or +140 °C (2 minutes)",
+  "ar": "2) قياس طويل الأمد عند +125 °C، وقصير الأمد عند +150 °C أو +140 °C (دقيقتان)"
+ },
+ "21,5 h": {
+  "fr": "21,5 h",
+  "en": "21.5 h",
+  "ar": "21.5 h"
+ },
+ "0,95": {
+  "fr": "0,95",
+  "en": "0.95",
+  "ar": "0.95"
+ },
+ "0 à co₂ max": {
+  "fr": "0 à CO₂ max",
+  "en": "0 to CO₂ max",
+  "ar": "0 إلى CO₂ الأقصى"
+ },
+ "10 min": {
+  "fr": "10 min",
+  "en": "10 min",
+  "ar": "10 min"
+ },
+ "10 minx": {
+  "fr": "10 min*",
+  "en": "10 min*",
+  "ar": "10 min*"
+ },
+ "t90 = 30 min": {
+  "fr": "t90 = 30 min",
+  "en": "t90 = 30 min",
+  "ar": "t90 = 30 min"
+ },
+ "90 jours jours à compter du premier démarrage du programme (mesures toutes les 5 minutes, -35 °c)": {
+  "fr": "90 jours à compter du premier démarrage du programme (mesures toutes les 5 minutes, -35 °C)",
+  "en": "90 days from the first program start (measurement every 5 minutes, -35 °C)",
+  "ar": "90 يومًا من أول تشغيل للبرنامج (قياس كل 5 دقائق، -35 °C)"
+ },
+ "16 000 valeurs de mesure": {
+  "fr": "16 000 Valeurs de mesure",
+  "en": "16 000 measured values",
+  "ar": "16 000 قيمة قياس"
+ },
+ "1 min - 24 h": {
+  "fr": "1 min - 24 h",
+  "en": "1 min to 24 h",
+  "ar": "1 min إلى 24 h"
+ },
+ "150 jours jours à compter du premier démarrage du programme (mesures toutes les 5 minutes, -35 °c)": {
+  "fr": "150 jours à compter du premier démarrage du programme (mesures toutes les 5 minutes, -35 °C)",
+  "en": "150 days from the first program start (measurement every 5 minutes, -35 °C)",
+  "ar": "150 يومًا من أول تشغيل للبرنامج (قياس كل 5 دقائق، -35 °C)"
+ },
+ "40 000 valeurs de mesure": {
+  "fr": "40 000 Valeurs de mesure",
+  "en": "40 000 measured values",
+  "ar": "40 000 قيمة قياس"
+ },
+ "x selon norme en 60584-1, précision classe 2 de -40...+1200 °c.": {
+  "fr": "* Selon norme EN 60584-1, précision Classe 2 de -40...+1200 °C.",
+  "en": "* According to EN 60584-1, Class 2 accuracy from -40 to +1200 °C.",
+  "ar": "* وفق المعيار EN 60584-1، دقة الفئة 2 من -40 إلى +1200 °C."
+ },
+ "-60 à +300 °c · jusqu'à +500 à 500°c": {
+  "fr": "-60 à +300 °C · jusqu’à +500 °C à court terme",
+  "en": "-60 to +300 °C · short-term up to +500 °C",
+  "ar": "-60 إلى +300 °C · لفترة قصيرة حتى +500 °C"
+ },
+ "-50 à +100 °c , plage de mesure à court terme jusqu'à +130 °c": {
+  "fr": "-50 à +100 °C , plage de mesure à court terme jusqu’à +130 °C",
+  "en": "-50 to +100 °C, short-term measuring range up to +130 °C",
+  "ar": "-50 إلى +100 °C، مدى قياس قصير الأمد حتى +130 °C"
+ },
+ "illimitée · 500 jours (à +25 °c et avec une cadence de mesur e de 15 min.)": {
+  "fr": "Illimitée · 500 jours (à +25 °C et avec une cadence de mesure de 15 min.)",
+  "en": "Unlimited · 500 days (at +25 °C and with a 15 min measuring cycle)",
+  "ar": "غير محدودة · 500 يوم (عند +25 °C وبمعدّل قياس 15 min)"
+ },
+ "pile lithium cr2450, 3 v, remplaçable": {
+  "fr": "Pile Lithium CR2450, 3 V, remplaçable",
+  "en": "CR2450 lithium battery, 3 V, replaceable",
+  "ar": "بطارية ليثيوم CR2450، ‏3 V، قابلة للاستبدال"
+ },
+ "2) selon norme en 60584-1, précision classe 1 de -40...+1000 °c (type k) , classe 2 de -40...+1200 °c (type k) , classe 3 de -200...+40 °c (type k) .": {
+  "fr": "2) Selon norme EN 60584-1, précision Classe 1 de -40...+1000 °C (type K), Classe 2 de -40...+1200 °C (type K), Classe 3 de -200...+40 °C (type K).",
+  "en": "2) According to EN 60584-1, Class 1 accuracy from -40 to +1000 °C (type K), Class 2 from -40 to +1200 °C (type K), Class 3 from -200 to +40 °C (type K).",
+  "ar": "2) وفق المعيار EN 60584-1، دقة الفئة 1 من -40 إلى +1000 °C (النوع K)، والفئة 2 من -40 إلى +1200 °C (النوع K)، والفئة 3 من -200 إلى +40 °C (النوع K)."
+ },
+ "5 … 95 %hr sans condensation": {
+  "fr": "5 … 95 %HR sans condensation",
+  "en": "5 … 95 %RH non-condensing",
+  "ar": "5 … 95 %RH دون تكثّف"
+ },
+ "communication avec l'app testo smart; wlan : ieee 802.11a / n / acx": {
+  "fr": "Communication avec l’App testo Smart; WLAN : IEEE 802.11a/n/ac*",
+  "en": "Communication with the testo Smart App; WLAN: IEEE 802.11a/n/ac*",
+  "ar": "اتصال مع تطبيق testo Smart؛ WLAN: ‏IEEE 802.11a/n/ac*"
+ },
+ "jusqu'à une distance de 10 m du terminal mobile (via wlan": {
+  "fr": "Jusqu’à une distance de 10 m du terminal mobile (via WLAN)",
+  "en": "Up to 10 m from the mobile device (via WLAN)",
+  "ar": "حتى مسافة 10 m من الجهاز المحمول (عبر WLAN)"
+ },
+ "x vous trouverez une vue d'ensemble des homologations radio dans les différents pays dans la zone de téléchargement de la page produit de la testo 860i dans le document « quick start guide testo 860i ».": {
+  "fr": "* Une vue d’ensemble des homologations radio par pays figure dans le guide de démarrage rapide de la testo 860i.",
+  "en": "* An overview of the radio approvals by country is given in the testo 860i Quick Start Guide.",
+  "ar": "* ترد نظرة عامة على تراخيص الراديو حسب البلد في دليل البدء السريع لجهاز testo 860i."
+ },
+ "±3 °c ou ±3 % v.m. (pour une temp. ambiante de -10 à +40 °c et une temp. de scène de 0 à +150 °c ou de +100 à +350 °c": {
+  "fr": "±3 °C ou ±3 % v.m. (pour une temp. ambiante de -10 à +40 °C et une temp. de scène de 0 à +150 °C ou de +100 à +350 °C)",
+  "en": "±3 °C or ±3 % of mv (at an ambient temperature of -10 to +40 °C and a scene temperature of 0 to +150 °C or +100 to +350 °C)",
+  "ar": "±3 °C أو ±3 % من القيمة المقاسة (عند حرارة محيطة من -10 إلى +40 °C وحرارة مشهد من 0 إلى +150 °C أو من +100 إلى +350 °C)"
+ },
+ "points chaud / froid, delta t, jusqu'à 10 points de mesure individuels au choix, mesure sur zone (min-max sur zone)": {
+  "fr": "points chaud/froid, delta T, jusqu’à 10 points de mesure individuels au choix, mesure sur zone (min-max sur zone)",
+  "en": "Hot/cold spot, delta T, up to 10 freely selectable individual measuring points, area measurement (min/max over area)",
+  "ar": "نقطة ساخنة/باردة، فرق الحرارة delta T، حتى 10 نقاط قياس فردية قابلة للاختيار، قياس على منطقة (أدنى/أقصى على المنطقة)"
+ },
+ "transfert automatique des valeurs de mesure des thermo-hygromètres testo 605i ou testo 625 disponibles en option à l'app testo smart via bluetooth": {
+  "fr": "Transfert automatique des valeurs de mesure des thermo-hygromètres testo 605i ou testo 625 disponibles en option à l’App testo Smart via Bluetooth",
+  "en": "Automatic transfer of readings from the optional testo 605i or testo 625 thermo-hygrometers to the testo Smart App via Bluetooth",
+  "ar": "نقل آلي لقيم القياس من مقياسَي الحرارة والرطوبة testo 605i أو testo 625 الاختياريين إلى تطبيق testo Smart عبر Bluetooth"
+ },
+ "transfert automatique des valeurs de mesure de la pince ampèremétrique testo 770-3 disponible en option à l'app testo smart via bluetooth": {
+  "fr": "Transfert automatique des valeurs de mesure de la pince ampèremétrique testo 770-3 disponible en option à l’App testo Smart via Bluetooth",
+  "en": "Automatic transfer of readings from the optional testo 770-3 clamp meter to the testo Smart App via Bluetooth",
+  "ar": "نقل آلي لقيم القياس من المقياس الكلّابي testo 770-3 الاختياري إلى تطبيق testo Smart عبر Bluetooth"
+ },
+ "largeur du clip : 134 mm min., 190 mm max. et profondeur de l'appareil jusqu'à 12 mm max": {
+  "fr": "Largeur du clip : 134 mm min., 190 mm max. et profondeur de l’appareil jusqu’à 12 mm max",
+  "en": "Clip width: 134 mm min., 190 mm max., device depth up to 12 mm max.",
+  "ar": "عرض المشبك: 134 mm كحد أدنى، 190 mm كحد أقصى، وعمق الجهاز حتى 12 mm كحد أقصى"
+ },
+ "env. 90 min (charger la batterie vide pendant 15 min offre 30 minutes d'opération)": {
+  "fr": "env. 90 min (Charger la batterie vide pendant 15 min offre 30 minutes d’opération)",
+  "en": "approx. 90 min (charging an empty battery for 15 min gives 30 minutes of operation)",
+  "ar": "حوالي 90 min (شحن بطارية فارغة لمدة 15 min يتيح 30 دقيقة من التشغيل)"
+ },
+ "requiert ios 17.0 ou plus récent; requiert android 14.0 ou plus récent; requiert un terminal mobile doté d'un système bluetooth 4.0": {
+  "fr": "requiert iOS 17.0 ou plus récent; requiert Android 14.0 ou plus récent; requiert un terminal mobile doté d'un système Bluetooth 4.0",
+  "en": "requires iOS 17.0 or newer; requires Android 14.0 or newer; requires a mobile device with Bluetooth 4.0",
+  "ar": "يتطلب iOS 17.0 أو أحدث؛ يتطلب Android 14.0 أو أحدث؛ يتطلب جهازًا محمولًا مزوّدًا بـ Bluetooth 4.0"
+ },
+ "iec 60068-2-27 avec 30 g": {
+  "fr": "IEC 60068-2-27 avec 30 g",
+  "en": "IEC 60068-2-27 with 30 g",
+  "ar": "IEC 60068-2-27 مع 30 g"
+ },
+ "communication avec l'app testo smart; wlan : ieee 802.11b / g / n": {
+  "fr": "Communication avec l’App testo Smart; WLAN : IEEE 802.11b/g/n",
+  "en": "Communication with the testo Smart App; WLAN: IEEE 802.11b/g/n",
+  "ar": "اتصال مع تطبيق testo Smart؛ WLAN: ‏IEEE 802.11b/g/n"
+ },
+ "12 gb disponibles pour l'utilisateur": {
+  "fr": "12 GB disponibles pour l’utilisateur",
+  "en": "12 GB available to the user",
+  "ar": "12 GB متاحة للمستخدم"
+ },
+ "±2 °c / ±2 % v.m. (à une température ambiante entre +21 °c et +25 °c)": {
+  "fr": "±2 °C / ±2 % v.m. (à une température ambiante entre +21 °C et +25 °C)",
+  "en": "±2 °C / ±2 % of mv (at an ambient temperature between +21 °C and +25 °C)",
+  "ar": "±2 °C / ±2 % من القيمة المقاسة (عند حرارة محيطة بين +21 °C و+25 °C)"
+ },
+ "point chaud, point froid, deltaheat, delta t, 5 points réglables, 3 zones d'intérêt": {
+  "fr": "point chaud, point froid, DeltaHeat, delta T, 5 points réglables, 3 zones d'intérêt",
+  "en": "Hot spot, cold spot, DeltaHeat, delta T, 5 adjustable points, 3 areas of interest",
+  "ar": "نقطة ساخنة، نقطة باردة، DeltaHeat، فرق الحرارة delta T، ‏5 نقاط قابلة للضبط، 3 مناطق اهتمام"
+ },
+ "transfert automatique des valeurs de mesure du thermo-hygromètre testo 605i disponible en option directement à la testo 862 via bluetooth": {
+  "fr": "transfert automatique des valeurs de mesure du thermo-hygromètre testo 605i disponible en option directement à la testo 862 via Bluetooth",
+  "en": "Automatic transfer of readings from the optional testo 605i thermo-hygrometer directly to the testo 862 via Bluetooth",
+  "ar": "نقل آلي لقيم القياس من مقياس الحرارة والرطوبة testo 605i الاختياري مباشرة إلى testo 862 عبر Bluetooth"
+ },
+ "transfert automatique des valeurs de mesure de la pince ampèremétrique testo 770-3 disponible en option directement à la testo 862 via bluetooth": {
+  "fr": "transfert automatique des valeurs de mesure de la pince ampèremétrique testo 770-3 disponible en option directement à la testo 862 via Bluetooth",
+  "en": "Automatic transfer of readings from the optional testo 770-3 clamp meter directly to the testo 862 via Bluetooth",
+  "ar": "نقل آلي لقيم القياس من المقياس الكلّابي testo 770-3 الاختياري مباشرة إلى testo 862 عبر Bluetooth"
+ },
+ "env. 170 min; une charge de 15 min. d'une batterie vide permet 25 min. de fonctionnement": {
+  "fr": "env. 170 min; une charge de 15 min. d'une batterie vide permet 25 min. de fonctionnement",
+  "en": "approx. 170 min; charging an empty battery for 15 min gives 25 min of operation",
+  "ar": "حوالي 170 min؛ شحن بطارية فارغة لمدة 15 min يتيح 25 min من التشغيل"
+ },
+ "1 000 000 valeurs de mesure": {
+  "fr": "1 000 000 Valeurs de mesure",
+  "en": "1 000 000 measured values",
+  "ar": "1 000 000 قيمة قياس"
+ },
+ "100 jours (cadence de mesure de 15 min.) · illimitée": {
+  "fr": "100 jours (cadence de mesure de 15 min.) · Illimitée",
+  "en": "100 days (15 min measuring cycle) · Unlimited",
+  "ar": "100 يوم (معدّل قياس 15 min) · غير محدودة"
+ },
+ "pile lithium tlh2450, 3.6 v, remplaçable": {
+  "fr": "Pile Lithium TLH2450, 3.6 V, remplaçable",
+  "en": "TLH2450 lithium battery, 3.6 V, replaceable",
+  "ar": "بطارية ليثيوم TLH2450، ‏3.6 V، قابلة للاستبدال"
+ },
+ "en 14175 3 / 4 tc de type k (étalonnage impossible au-delà de 300 °c)": {
+  "fr": "EN 14175 3/ 4 TC de type K (étalonnage impossible au-delà de 300 °C)",
+  "en": "EN 14175-3/-4; TC type K (calibration not possible above 300 °C)",
+  "ar": "EN 14175-3/-4؛ TC من النوع K (المعايرة غير ممكنة فوق 300 °C)"
+ },
+ "supported_wlan_standard; méthodes de cryptage possibles: wpa2 enterprise : eap-tls, eap-ttls-tls, eap-ttls-mschapv2, eap-ttls-psk, eap-peap0-tls, eap-peap0-mschapv2, eap-peap0-psk, eap-peap1-tls, eap-peap1-mschapv2, eap-peap1-psk, wpa personal, wpa2 (aes) , wpa (tkip) , wep": {
+  "fr": "Méthodes de cryptage possibles : WPA2 Enterprise : EAP-TLS, EAP-TTLS-TLS, EAP-TTLS-MSCHAPv2, EAP-TTLS-PSK, EAP-PEAP0-TLS, EAP-PEAP0-MSCHAPv2, EAP-PEAP0-PSK, EAP-PEAP1-TLS, EAP-PEAP1-MSCHAPv2, EAP-PEAP1-PSK, WPA Personal, WPA2 (AES), WPA (TKIP), WEP",
+  "en": "Possible encryption methods: WPA2 Enterprise: EAP-TLS, EAP-TTLS-TLS, EAP-TTLS-MSCHAPv2, EAP-TTLS-PSK, EAP-PEAP0-TLS, EAP-PEAP0-MSCHAPv2, EAP-PEAP0-PSK, EAP-PEAP1-TLS, EAP-PEAP1-MSCHAPv2, EAP-PEAP1-PSK, WPA Personal, WPA2 (AES), WPA (TKIP), WEP",
+  "ar": "طرق التشفير الممكنة: WPA2 Enterprise: ‏EAP-TLS، EAP-TTLS-TLS، EAP-TTLS-MSCHAPv2، EAP-TTLS-PSK، EAP-PEAP0-TLS، EAP-PEAP0-MSCHAPv2، EAP-PEAP0-PSK، EAP-PEAP1-TLS، EAP-PEAP1-MSCHAPv2، EAP-PEAP1-PSK، WPA Personal، WPA2 (AES)، WPA (TKIP)، WEP"
+ },
+ "220 g (avec piles)": {
+  "fr": "220 g (avec piles)",
+  "en": "220 g (with batteries)",
+  "ar": "220 g (مع البطاريات)"
+ },
+ "alimentation externe 4 piles de secours aa": {
+  "fr": "Alimentation externe ; 4 piles de secours AA",
+  "en": "External power supply; 4 AA backup batteries",
+  "ar": "تغذية خارجية؛ 4 بطاريات احتياطية AA"
+ },
+ "arrêt après 10 minutes": {
+  "fr": "Arrêt après 10 minutes",
+  "en": "Switch-off after 10 minutes",
+  "ar": "إيقاف بعد 10 دقائق"
+ },
+ "250 g (avec piles)": {
+  "fr": "250 g (avec piles)",
+  "en": "250 g (with batteries)",
+  "ar": "250 g (مع البطاريات)"
+ },
+ "0 à 100 %hr (sans condensation)": {
+  "fr": "0 à 100 %HR (sans condensation)",
+  "en": "0 to 100 %RH (non-condensing)",
+  "ar": "0 إلى 100 %RH (دون تكثّف)"
+ },
+ "20...80%hr (sans rosée)": {
+  "fr": "20 … 80 %HR (sans condensation)",
+  "en": "20 … 80 %RH (non-condensing)",
+  "ar": "20 … 80 %RH (دون تكثّف)"
+ },
+ "mémoire interne (2.8 gb)": {
+  "fr": "Mémoire interne (2.8 GB)",
+  "en": "Internal memory (2.8 GB)",
+  "ar": "ذاكرة داخلية (2.8 GB)"
+ },
+ "± 2 °c, ± 2 % de la valeur de mesure": {
+  "fr": "± 2 °C, ± 2 % de la valeur de mesure",
+  "en": "± 2 °C, ± 2 % of mv",
+  "ar": "± 2 °C، ± 2 % من القيمة المقاسة"
+ },
+ "2 000 000 valeurs de mesure": {
+  "fr": "2 000 000 Valeurs de mesure",
+  "en": "2 000 000 measured values",
+  "ar": "2 000 000 قيمة قياس"
+ },
+ "min. 0.5 m": {
+  "fr": "min. 0.5 m",
+  "en": "min. 0.5 m",
+  "ar": "0.5 m كحد أدنى"
+ },
+ "transfert des mesures sans fil du thermo-hygromètre testo 605i, de la pince ampéremètrique testo 770-3 (en option) ; autorisé dans l'ue, aele, usa, canada, australie, turquie": {
+  "fr": "Transfert des mesures sans fil du thermo-hygromètre testo 605i, de la pince ampéremètrique testo 770-3 (en option) ; autorisé dans l’UE, AELE, USA, Canada, Australie, Turquie",
+  "en": "Wireless transfer of readings from the testo 605i thermo-hygrometer and the testo 770-3 clamp meter (optional); approved in the EU, EFTA, USA, Canada, Australia, Turkey",
+  "ar": "نقل لاسلكي لقيم القياس من مقياس الحرارة والرطوبة testo 605i والمقياس الكلّابي testo 770-3 (اختياريان)؛ معتمد في الاتحاد الأوروبي ورابطة التجارة الحرة الأوروبية والولايات المتحدة وكندا وأستراليا وتركيا"
+ },
+ "transfert automatique des mesures du thermo-hygromètre testo 605i via bluetooth (l'appareil doit être commandé séparément) ; autorisé dans l'ue, aele, usa, canada, australie, turquie": {
+  "fr": "Transfert automatique des mesures du thermo-hygromètre testo 605i via Bluetooth (l'appareil doit être commandé séparément); autorisé dans l’UE, AELE, USA, Canada, Australie, Turquie",
+  "en": "Automatic transfer of readings from the testo 605i thermo-hygrometer via Bluetooth (instrument to be ordered separately); approved in the EU, EFTA, USA, Canada, Australia, Turkey",
+  "ar": "نقل آلي لقيم القياس من مقياس الحرارة والرطوبة testo 605i عبر Bluetooth (يُطلب الجهاز بشكل منفصل)؛ معتمد في الاتحاد الأوروبي ورابطة التجارة الحرة الأوروبية والولايات المتحدة وكندا وأستراليا وتركيا"
+ },
+ "transmission automatique des valeurs de mesure de la pince ampèremétrique testo 770-3 via bluetooth (en option) ; homologation radio dans les pays de l'ue, de l'efta, des usa, ainsi qu'au canada, en australie et en turquie": {
+  "fr": "Transmission automatique des valeurs de mesure de la pince ampèremétrique testo 770-3 via Bluetooth (en option); Homologation radio dans les pays de l'UE, de l'EFTA, des USA, ainsi qu'au Canada, en Australie et en Turquie",
+  "en": "Automatic transfer of readings from the testo 770-3 clamp meter via Bluetooth (optional); radio approval in the EU, EFTA, USA, Canada, Australia and Turkey",
+  "ar": "نقل آلي لقيم القياس من المقياس الكلّابي testo 770-3 عبر Bluetooth (اختياري)؛ ترخيص راديو في الاتحاد الأوروبي ورابطة التجارة الحرة الأوروبية والولايات المتحدة وكندا وأستراليا وتركيا"
+ },
+ "transmission des valeurs de mesure duthermo-hygromètre testo 605i, de la pinceampèremétrique testo 770-3 (en option) xx": {
+  "fr": "transmission des valeurs de mesure du thermo-hygromètre testo 605i, de la pince ampèremétrique testo 770-3 (en option)**",
+  "en": "Transfer of readings from the testo 605i thermo-hygrometer and the testo 770-3 clamp meter (optional)**",
+  "ar": "نقل قيم القياس من مقياس الحرارة والرطوبة testo 605i والمقياس الكلّابي testo 770-3 (اختياريان)**"
+ },
+ "x vous trouvez une vue d'ensemble des homologations radio dans les différents pays dans l0a zone de téléchargement de la page du produit concerné (www.testo.com) . xx à l'exception des usa, de la chine laser: à l'exception des usa, de la chine et du japon commentaire vocal: vous trouvez une vue d'ensemble des homologations radio dans les différents pays dans la zone de téléchargement de la page du produit concerné (www.testo.com) .": {
+  "fr": "* Les homologations radio par pays figurent dans la documentation du produit. ** À l’exception des USA et de la Chine. Laser : à l’exception des USA, de la Chine et du Japon.",
+  "en": "* Radio approvals by country are given in the product documentation. ** Except USA and China. Laser: except USA, China and Japan.",
+  "ar": "* ترد تراخيص الراديو حسب البلد في وثائق المنتج. ** باستثناء الولايات المتحدة والصين. الليزر: باستثناء الولايات المتحدة والصين واليابان."
+ },
+ "mémoire interne (5 gb)": {
+  "fr": "Mémoire interne (5 GB)",
+  "en": "Internal memory (5 GB)",
+  "ar": "ذاكرة داخلية (5 GB)"
+ },
+ "30° x 23° (objectif standard) , 12° x 9° (téléobjectif, en option)": {
+  "fr": "30° x 23° (Objectif standard), 12° x 9° (Téléobjectif, en option)",
+  "en": "30° x 23° (standard lens), 12° x 9° (optional telephoto lens)",
+  "ar": "30° × 23° (العدسة القياسية)، 12° × 9° (عدسة مقرّبة اختيارية)"
+ },
+ "1.7 mrad (objectif standard) , 0.7 mrad (téléobjectif)": {
+  "fr": "1.7 mrad (Objectif standard), 0.7 mrad (Téléobjectif)",
+  "en": "1.7 mrad (standard lens), 0.7 mrad (telephoto lens)",
+  "ar": "1.7 mrad (العدسة القياسية)، 0.7 mrad (العدسة المقرّبة)"
+ },
+ "1.1 mrad (objectif standard) , 0.4 mrad (téléobjectif)": {
+  "fr": "1.1 mrad (Objectif standard), 0.4 mrad (Téléobjectif)",
+  "en": "1.1 mrad (standard lens), 0.4 mrad (telephoto lens)",
+  "ar": "1.1 mrad (العدسة القياسية)، 0.4 mrad (العدسة المقرّبة)"
+ },
+ "x au sein de l'union européenne, en dehors de 9 hz": {
+  "fr": "* Au sein de l’Union européenne, en dehors de 9 Hz",
+  "en": "* Within the European Union, outside 9 Hz",
+  "ar": "* داخل الاتحاد الأوروبي، خارج 9 Hz"
+ },
+ "±2 °c, ±2% de la valeur de mesure; (une valeur plus élevée s'applique)": {
+  "fr": "±2 °C, ±2% de la valeur de mesure; (une valeur plus élevée s'applique)",
+  "en": "±2 °C, ±2 % of mv (the higher value applies)",
+  "ar": "±2 °C، ±2 % من القيمة المقاسة (تُطبَّق القيمة الأعلى)"
+ },
+ "jusqu'à 5 points de mesure individuels au choix, détection des points chauds et froids, delta t, mesure de zone (min-max sur zone) , alarmes, isotherme": {
+  "fr": "Jusqu’à 5 points de mesure individuels au choix, détection des points chauds et froids, Delta T, mesure de zone (min-max sur zone), alarmes, isotherme",
+  "en": "Up to 5 freely selectable individual measuring points, hot and cold spot detection, delta T, area measurement (min/max over area), alarms, isotherm",
+  "ar": "حتى 5 نقاط قياس فردية قابلة للاختيار، كشف النقاط الساخنة والباردة، فرق الحرارة delta T، قياس على منطقة (أدنى/أقصى على المنطقة)، إنذارات، خط تساوي الحرارة"
+ },
+ "60 000 valeurs de mesure": {
+  "fr": "60 000 Valeurs de mesure",
+  "en": "60 000 measured values",
+  "ar": "60 000 قيمة قياس"
+ },
+ "42° x 32° (objectif grand-angle) , 12° x 9° (téléobjectif, en option)": {
+  "fr": "42° x 32° (Objectif grand-angle), 12° x 9° (Téléobjectif, en option)",
+  "en": "42° x 32° (wide-angle lens), 12° x 9° (optional telephoto lens)",
+  "ar": "42° × 32° (عدسة واسعة الزاوية)، 12° × 9° (عدسة مقرّبة اختيارية)"
+ },
+ "0.1 m (objectif grand-angle) ; 0.5 (téléobjectif)": {
+  "fr": "0.1 m (Objectif grand-angle); 0.5 (Téléobjectif)",
+  "en": "0.1 m (wide-angle lens); 0.5 m (telephoto lens)",
+  "ar": "0.1 m (عدسة واسعة الزاوية)؛ 0.5 m (عدسة مقرّبة)"
+ },
+ "2.3 mrad (objectif grand-angle) , 0.7 mrad (téléobjectif)": {
+  "fr": "2.3 mrad (Objectif grand-angle), 0.7 mrad (Téléobjectif)",
+  "en": "2.3 mrad (wide-angle lens), 0.7 mrad (telephoto lens)",
+  "ar": "2.3 mrad (عدسة واسعة الزاوية)، 0.7 mrad (عدسة مقرّبة)"
+ },
+ "1.4 mrad (objectif grand-angle) , 0.4 mrad (téléobjectif)": {
+  "fr": "1.4 mrad (Objectif grand-angle), 0.4 mrad (Téléobjectif)",
+  "en": "1.4 mrad (wide-angle lens), 0.4 mrad (telephoto lens)",
+  "ar": "1.4 mrad (عدسة واسعة الزاوية)، 0.4 mrad (عدسة مقرّبة)"
+ },
+ "510 g (appareil de mesure)": {
+  "fr": "510 g (appareil de mesure )",
+  "en": "510 g (measuring instrument)",
+  "ar": "510 g (جهاز القياس)"
+ },
+ "4 x sonde numérique bluetooth® ou testo smart probe; 2 x sonde numérique avec câble ou sonde température ctn avec câble (par raccord tuc - testo universal connector) ; 2 x sonde température tc de type k avec câble": {
+  "fr": "4 x sonde numérique Bluetooth® ou testo Smart Probe; 2 x sonde numérique avec câble ou sonde température CTN avec câble (par raccord TUC - Testo Universal Connector); 2 x sonde température TC de Type K avec câble",
+  "en": "4 x digital Bluetooth® probe or testo Smart Probe; 2 x digital probe with cable or NTC temperature probe with cable (via TUC - Testo Universal Connector); 2 x TC type K temperature probe with cable",
+  "ar": "4 × مسبار رقمي Bluetooth® أو testo Smart Probe؛ 2 × مسبار رقمي بكابل أو مسبار حرارة NTC بكابل (عبر وصلة TUC - Testo Universal Connector)؛ 2 × مسبار حرارة TC من النوع K بكابل"
+ },
+ "env. 10 h en utilisation continue": {
+  "fr": "env. 10 h en utilisation continue",
+  "en": "approx. 10 h in continuous operation",
+  "ar": "حوالي 10 h في التشغيل المتواصل"
+ },
+ "écran tactile 5,0\", hd 1280x720 pixels, ips (160k)": {
+  "fr": "Écran tactile 5,0\", HD 1280*720 pixels, IPS (160k)",
+  "en": "5.0\" touchscreen, HD 1280 x 720 pixels, IPS (160k)",
+  "ar": "شاشة لمس 5.0 بوصة، HD ‏1280 × 720 بكسل، IPS ‏(160k)"
+ },
+ "2 gb; 1 000 000 valeurs de mesure": {
+  "fr": "2 GB; 1 000 000 Valeurs de mesure",
+  "en": "2 GB; 1 000 000 measured values",
+  "ar": "2 GB؛ 1 000 000 قيمة قياس"
+ },
+ "ip68, 1 mètre": {
+  "fr": "IP68, 1 mètre",
+  "en": "IP68, 1 metre",
+  "ar": "IP68، متر واحد"
+ },
+ "xtyp., en fonction de la référence interne, pour une température ambiante de 25 °c · ±2 % tpm (+40 à +190 °c) x · xtypique, en fonction de la référence interne de testo, pour une température ambiante de 25 °c": {
+  "fr": "*typ., en fonction de la référence interne, pour une température ambiante de 25 °C · ±2 % TPM (+40 à +190 °C)* · *typique, en fonction de la référence interne de Testo, pour une température ambiante de 25 °C",
+  "en": "*typ., depending on the Testo internal reference, at an ambient temperature of 25 °C · ±2 % TPM (+40 to +190 °C)*",
+  "ar": "*نموذجي، حسب المرجع الداخلي لـ Testo، عند حرارة محيطة 25 °C · ±2 % TPM (+40 إلى +190 °C)*"
+ },
+ "env. 30 s": {
+  "fr": "env. 30 s",
+  "en": "approx. 30 s",
+  "ar": "حوالي 30 s"
+ },
+ "jusqu'à 10 h": {
+  "fr": "Jusqu’à 10 h",
+  "en": "Up to 10 h",
+  "ar": "حتى 10 h"
+ },
+ "8,8 à 54,8 % de la masse; hêtre, épicéa, mélèze, bouleau, cerisier, noyer · 0,9 à 22,1 % de la masse; chape-ciment, béton · 0,0 à 11,0 % de la masse; chape d‘anhydrite · 0,7 à 8,6 de la masse; mortier de ciment · 0,1 à 16,5 % de la masse; brique · 7,0 à 47,9 % de la masse; chêne, pin, érable, frêne, douglas, meranti · 0,6 à 9,9 % de la masse; mortier de chaux , plâtre": {
+  "fr": "8,8 à 54,8 % de la masse; Hêtre, épicéa, mélèze, bouleau, cerisier, noyer · 0,9 à 22,1 % de la masse; Chape-ciment, béton · 0,0 à 11,0 % de la masse; Chape d‘anhydrite · 0,7 à 8,6 de la masse; Mortier de ciment · 0,1 à 16,5 % de la masse; Brique · 7,0 à 47,9 % de la masse; Chêne, pin, érable, frêne, Douglas, Meranti · 0,6 à 9,9 % de la masse; Mortier de chaux , plâtre",
+  "en": "8.8 to 54.8 % by mass: beech, spruce, larch, birch, cherry, walnut · 0.9 to 22.1 % by mass: cement screed, concrete · 0.0 to 11.0 % by mass: anhydrite screed · 0.7 to 8.6 % by mass: cement mortar · 0.1 to 16.5 % by mass: brick · 7.0 to 47.9 % by mass: oak, pine, maple, ash, Douglas fir, meranti · 0.6 to 9.9 % by mass: lime mortar, plaster",
+  "ar": "8.8 إلى 54.8 % من الكتلة: الزان، التنوب، اللاركس، البتولا، الكرز، الجوز · 0.9 إلى 22.1 % من الكتلة: ملاط الإسمنت، الخرسانة · 0.0 إلى 11.0 % من الكتلة: ملاط الأنهيدريت · 0.7 إلى 8.6 % من الكتلة: ملاط الإسمنت · 0.1 إلى 16.5 % من الكتلة: الطوب · 7.0 إلى 47.9 % من الكتلة: البلوط، الصنوبر، القيقب، الدردار، تنوب دوغلاس، الميرانتي · 0.6 إلى 9.9 % من الكتلة: ملاط الجير، الجص"
+ },
+ "ip67 (avec la testo sonde fournie installée)": {
+  "fr": "IP67 (avec la sonde Testo fournie installée)",
+  "en": "IP67 (with the supplied Testo probe fitted)",
+  "ar": "IP67 (مع تركيب مسبار Testo المرفق)"
+ },
+ "ip20 (avec sonde connectée ip40) ; ip65 avec topsafe": {
+  "fr": "IP20 (avec sonde connectée IP40); IP65 avec TopSafe",
+  "en": "IP20 (with connected probe IP40); IP65 with TopSafe",
+  "ar": "IP20 (مع مسبار موصول IP40)؛ IP65 مع TopSafe"
+ },
+ "2) selon norme en 60584-2, précision classe 1 de -40...+1000 °c (type k) , classe 2 de -40...+1200 °c (type k) , classe 3 de -200...+40 °c (type k) .": {
+  "fr": "2) Selon norme EN 60584-2, précision Classe 1 de -40...+1000 °C (type K), Classe 2 de -40...+1200 °C (type K), Classe 3 de -200...+40 °C (type K).",
+  "en": "2) According to EN 60584-2, Class 1 accuracy from -40 to +1000 °C (type K), Class 2 from -40 to +1200 °C (type K), Class 3 from -200 to +40 °C (type K).",
+  "ar": "2) وفق المعيار EN 60584-2، دقة الفئة 1 من -40 إلى +1000 °C (النوع K)، والفئة 2 من -40 إلى +1200 °C (النوع K)، والفئة 3 من -200 إلى +40 °C (النوع K)."
+ },
+ "-50 à +350 °c (à court terme jusqu'à 500°c)": {
+  "fr": "-50 à +350 °C (à court terme jusqu’à 500°C)",
+  "en": "-50 to +350 °C (short-term up to 500 °C)",
+  "ar": "-50 إلى +350 °C (لفترة قصيرة حتى 500 °C)"
+ },
+ "ip 67 avec topsafe": {
+  "fr": "IP 67 avec TopSafe",
+  "en": "IP 67 with TopSafe",
+  "ar": "IP 67 مع TopSafe"
+ },
+ "llimitée · 500 jours (à +25 °c et avec une cadence de mesure de 15 min.)": {
+  "fr": "Illimitée · 500 jours (à +25 °C et avec une cadence de mesure de 15 min.)",
+  "en": "Unlimited · 500 days (at +25 °C and with a 15 min measuring cycle)",
+  "ar": "غير محدودة · 500 يوم (عند +25 °C وبمعدّل قياس 15 min)"
+ },
+ "0 à +60 °c (à court terme (max. 5 min.) : jusqu'à +80 °c)": {
+  "fr": "0 à +60 °C (à court terme (max. 5 min.) : jusqu’à +80 °C)",
+  "en": "0 to +60 °C (short-term (max. 5 min): up to +80 °C)",
+  "ar": "0 إلى +60 °C (لفترة قصيرة (5 min كحد أقصى): حتى +80 °C)"
+ },
+ "80 h (auto off 10 min)": {
+  "fr": "80 h (Auto Off 10 min)",
+  "en": "80 h (Auto Off 10 min)",
+  "ar": "80 h (إيقاف تلقائي بعد 10 min)"
+ },
+ "au moyen du bloc d'alimentation interne : 100 v ac / 2,1 a -240 v ac / 0,95 a (50-60 hz)": {
+  "fr": "au moyen du bloc d’alimentation interne : 100 V AC/2,1 A -240 V AC/ 0,95 A (50-60 Hz)",
+  "en": "via internal power supply unit: 100 V AC/2.1 A - 240 V AC/0.95 A (50-60 Hz)",
+  "ar": "عبر وحدة التغذية الداخلية: 100 V AC/2.1 A - 240 V AC/0.95 A ‏(50-60 Hz)"
+ },
+ "100 à 29999 tr / min.": {
+  "fr": "100 à 29999 tr/min.",
+  "en": "100 to 29999 rpm",
+  "ar": "100 إلى 29999 rpm"
+ },
+ "max. 1 mv": {
+  "fr": "max. 1 mV",
+  "en": "max. 1 mV",
+  "ar": "بحد أقصى 1 mV"
+ },
+ "10 cfm / 283 l / min": {
+  "fr": "10 CFM / 283 l/min",
+  "en": "10 CFM / 283 l/min",
+  "ar": "10 CFM / 283 l/min"
+ },
+ "0,1 à 400,0 μa (câbles de mesure) · 0,1 à 400,0 a (pince)": {
+  "fr": "0,1 à 400,0 μA (Câbles de mesure) · 0,1 à 400,0 A (Pince)",
+  "en": "0.1 to 400.0 μA (measuring cables) · 0.1 to 400.0 A (clamp)",
+  "ar": "0.1 إلى 400.0 μA (كابلات القياس) · 0.1 إلى 400.0 A (الكلّاب)"
+ },
+ "0,1 à 400 μa (câbles de mesure) · 0,1 à 400,0 a (pince)": {
+  "fr": "0,1 à 400 μA (Câbles de mesure) · 0,1 à 400,0 A (Pince)",
+  "en": "0.1 to 400 μA (measuring cables) · 0.1 to 400.0 A (clamp)",
+  "ar": "0.1 إلى 400 μA (كابلات القياس) · 0.1 إلى 400.0 A (الكلّاب)"
+ },
+ "ip 40 selon en 60529": {
+  "fr": "IP 40 selon EN 60529",
+  "en": "IP 40 according to EN 60529",
+  "ar": "IP 40 وفق EN 60529"
+ },
+ "max. 1200 l": {
+  "fr": "max. 1200 l",
+  "en": "max. 1200 l",
+  "ar": "بحد أقصى 1200 l"
+ },
+ "70 h de mesure (à +20 °c) , / utilisation sur secteur possible": {
+  "fr": "70 h de mesure (à +20 °C) ; utilisation sur secteur possible",
+  "en": "70 h of measurement (at +20 °C); mains operation possible",
+  "ar": "70 h من القياس (عند +20 °C)؛ التشغيل بالتيار الكهربائي ممكن"
+ },
+ "ecran couleurs, représentation graphique solution saline à 11,3 %hr et 75,3 %hr": {
+  "fr": "Ecran couleurs, représentation graphique solution saline à 11,3 %HR et 75,3 %HR",
+  "en": "Colour display, graphic representation; saline solution at 11.3 %RH and 75.3 %RH",
+  "ar": "شاشة ملوّنة، عرض بياني؛ محلول ملحي عند 11.3 %RH و75.3 %RH"
+ },
+ "cadence de mesure de 15 min. / à +25 °c)": {
+  "fr": "cadence de mesure de 15 min. / à +25 °C)",
+  "en": "15 min measuring cycle / at +25 °C",
+  "ar": "معدّل قياس 15 min / عند +25 °C"
+ },
+ "8 ans (15 min cadence de mesure, +25°c)": {
+  "fr": "8 ans (15 min cadence de mesure, +25°C)",
+  "en": "8 years (15 min measuring cycle, +25 °C)",
+  "ar": "8 سنوات (معدّل قياس 15 min، +25 °C)"
+ },
+ "llimitée · 120 jours (à +25°c et avec une cadence de mesure de 15 min.)": {
+  "fr": "Illimitée · 120 jours (à +25 °C et avec une cadence de mesure de 15 min.)",
+  "en": "Unlimited · 120 days (at +25 °C and with a 15 min measuring cycle)",
+  "ar": "غير محدودة · 120 يومًا (عند +25 °C وبمعدّل قياس 15 min)"
+ },
+ "64 000 valeurs de mesure (température et humidité) ; 1 000 valeurs de mesure (choc)": {
+  "fr": "64 000 Valeurs de mesure (température et humidité); 1 000 Valeurs de mesure (choc)",
+  "en": "64 000 measured values (temperature and humidity); 1 000 measured values (shock)",
+  "ar": "64 000 قيمة قياس (الحرارة والرطوبة)؛ 1 000 قيمة قياس (الصدمات)"
+ },
+ "mémoire interne (2,8 gb)": {
+  "fr": "Mémoire interne (2,8 GB)",
+  "en": "Internal memory (2.8 GB)",
+  "ar": "ذاكرة داخلية (2.8 GB)"
+ },
+ "10 (fer, arc-en-ciel, arc-en-ciel hc, froid-chaud, bleu-rouge, gris, gris inversé,sépia, testo, fer ht)": {
+  "fr": "10 (fer, arc-en-ciel, arc-en-ciel HC, froid-chaud, bleu-rouge, gris, gris inversé, sépia, Testo, fer HT)",
+  "en": "10 (iron, rainbow, rainbow HC, cold-hot, blue-red, grey, inverted grey, sepia, Testo, iron HT)",
+  "ar": "10 (الحديد، قوس قزح، قوس قزح HC، بارد-ساخن، أزرق-أحمر، رمادي، رمادي معكوس، بني داكن (sepia)، Testo، الحديد HT)"
+ },
+ "±2 °c, ±2% de la valeur de mesure": {
+  "fr": "±2 °C, ±2% de la valeur de mesure",
+  "en": "±2 °C, ±2 % of mv",
+  "ar": "±2 °C، ±2 % من القيمة المقاسة"
+ },
+ "30 000 valeurs de mesure / canal": {
+  "fr": "30 000 Valeurs de mesure / Canal",
+  "en": "30 000 measured values / channel",
+  "ar": "30 000 قيمة قياس / قناة"
+ },
+ "16 000 paires de valeurs de mesure (16,000t + 16,000h)": {
+  "fr": "16 000 paires de valeurs de mesure (16,000T + 16,000H)",
+  "en": "16 000 pairs of measured values (16 000 T + 16 000 H)",
+  "ar": "16 000 زوج من قيم القياس (16 000 T + 16 000 H)"
+ },
+ "-50 à +350 °c (sonde de contact) · -50 à +400 °c (sonde d'ambiance, sonde d'immersion / de pénétration)": {
+  "fr": "-50 à +350 °C (sonde de contact) · -50 à +400 °C (sonde d’ambiance, sonde d’immersion/de pénétration)",
+  "en": "-50 to +350 °C (surface probe) · -50 to +400 °C (air probe, immersion/penetration probe)",
+  "ar": "-50 إلى +350 °C (مسبار السطح) · -50 إلى +400 °C (مسبار الهواء، مسبار الغمر/الاختراق)"
+ },
+ "t90 = 3 s (sonde d'immersion / de pénétration, sonde de contact) · t90 = 60 s (sonde d'ambiance)": {
+  "fr": "t90 = 3 s (sonde d’immersion / de pénétration, sonde de contact) · t90 = 60 s (sonde d’ambiance)",
+  "en": "t90 = 3 s (immersion/penetration probe, surface probe) · t90 = 60 s (air probe)",
+  "ar": "t90 = 3 s (مسبار الغمر/الاختراق، مسبار السطح) · t90 = 60 s (مسبار الهواء)"
+ },
+ "ip 20 (sonde d'ambiance, sonde de contact) ; ip 40 (sonde d'immersion / de pénétration)": {
+  "fr": "IP 20 (sonde d’ambiance, sonde de contact); IP 40 (sonde d’immersion / de pénétration)",
+  "en": "IP 20 (air probe, surface probe); IP 40 (immersion/penetration probe)",
+  "ar": "IP 20 (مسبار الهواء، مسبار السطح)؛ IP 40 (مسبار الغمر/الاختراق)"
+ },
+ "0,01 à 600,0 a (pince) · 0,1 à 600,0 μa (câbles de mesure)": {
+  "fr": "0,01 à 600,0 A (Pince) · 0,1 à 600,0 μA (Câbles de mesure)",
+  "en": "0.01 to 600.0 A (clamp) · 0.1 to 600.0 μA (measuring cables)",
+  "ar": "0.01 إلى 600.0 A (الكلّاب) · 0.1 إلى 600.0 μA (كابلات القياس)"
+ },
+ "8 ans avec une cadence de mesure de 15 min.": {
+  "fr": "8 ans avec une cadence de mesure de 15 min.",
+  "en": "8 years with a 15 min measuring cycle",
+  "ar": "8 سنوات بمعدّل قياس 15 min"
+ },
+ "1 à 99999 tr / min.": {
+  "fr": "1 à 99999 tr/min.",
+  "en": "1 to 99999 rpm",
+  "ar": "1 إلى 99999 rpm"
+ },
+ "0,1 à 19999 tr / min.": {
+  "fr": "0,1 à 19999 tr/min.",
+  "en": "0.1 to 19999 rpm",
+  "ar": "0.1 إلى 19999 rpm"
+ },
+ "2 ans - sans mise à l'arrêt de l'appareil": {
+  "fr": "2 ans - sans mise à l'arrêt de l'appareil",
+  "en": "2 years - without switching the instrument off",
+  "ar": "سنتان - دون إيقاف الجهاز"
+ },
+ "7 cfm / 198 l / min": {
+  "fr": "7 CFM / 198 l/min",
+  "en": "7 CFM / 198 l/min",
+  "ar": "7 CFM / 198 l/min"
+ },
+ "t99 = 15 s (dans de la viande congelé env. 60 s)": {
+  "fr": "t99 = 15 s (dans de la viande congelée env. 60 s)",
+  "en": "t99 = 15 s (approx. 60 s in frozen meat)",
+  "ar": "t99 = 15 s (حوالي 60 s في اللحم المجمّد)"
+ },
+ "accu nimh: ca. 11 h à 6000 fpm; pile: env. 5 h à 6000 fpm": {
+  "fr": "Accu NiMH : env. 11 h à 6000 fpm ; pile : env. 5 h à 6000 fpm",
+  "en": "NiMH rechargeable battery: approx. 11 h at 6000 fpm; battery: approx. 5 h at 6000 fpm",
+  "ar": "بطارية NiMH قابلة لإعادة الشحن: حوالي 11 h عند 6000 fpm؛ بطارية: حوالي 5 h عند 6000 fpm"
+ },
+ "10 h de mesure (à +20 °c) , / utilisation sur secteur possible": {
+  "fr": "10 h de mesure (à +20 °C) ; utilisation sur secteur possible",
+  "en": "10 h of measurement (at +20 °C); mains operation possible",
+  "ar": "10 h من القياس (عند +20 °C)؛ التشغيل بالتيار الكهربائي ممكن"
+ },
+ "max. 40 w": {
+  "fr": "max. 40 W",
+  "en": "max. 40 W",
+  "ar": "بحد أقصى 40 W"
+ },
+ "1 l / min. with flow monitoring": {
+  "fr": "1 l/min avec surveillance du débit",
+  "en": "1 l/min with flow monitoring",
+  "ar": "1 l/min مع مراقبة التدفق"
+ },
+ "0 à 80 °c (dépend de l'électrode utilisée)": {
+  "fr": "0 à 80 °C (dépend de l'électrode utilisée)",
+  "en": "0 to 80 °C (depends on the electrode used)",
+  "ar": "0 إلى 80 °C (حسب القطب المستخدم)"
+ },
+ "t99 (pour produits congelés) = 15 s (dans de la viande congelé env. 60 s) · t99 (sonde courte / longue) = 10 s": {
+  "fr": "t99 (produits congelés) = 15 s (dans de la viande congelée env. 60 s) · t99 (sonde courte/longue) = 10 s",
+  "en": "t99 (frozen products) = 15 s (approx. 60 s in frozen meat) · t99 (short/long probe) = 10 s",
+  "ar": "t99 (المنتجات المجمّدة) = 15 s (حوالي 60 s في اللحم المجمّد) · t99 (المسبار القصير/الطويل) = 10 s"
+ },
+ "advanced: 1 min … 24 h": {
+  "fr": "Advanced: 1 min … 24 h",
+  "en": "Advanced: 1 min … 24 h",
+  "ar": "Advanced: ‏1 min … 24 h"
+ },
+ "mains unit 5 v / 4 a, alternatively powerbank usb 5 v min 3 a output (minimum requirements of powerbank)": {
+  "fr": "Bloc d’alimentation 5 V / 4 A, ou batterie externe USB 5 V (sortie min. 3 A)",
+  "en": "Mains unit 5 V / 4 A, alternatively USB powerbank 5 V (min. 3 A output)",
+  "ar": "وحدة تغذية 5 V / 4 A، أو بطارية خارجية USB ‏5 V (خرج 3 A كحد أدنى)"
+ },
+ "min. 10 k dewpoint distance": {
+  "fr": "Écart au point de rosée min. 10 K",
+  "en": "Min. 10 K dewpoint distance",
+  "ar": "فارق نقطة الندى 10 K كحد أدنى"
+ },
+ "standard temperature +10 °c (min. 10 °c below surroundings)": {
+  "fr": "Température standard +10 °C (au moins 10 °C sous la température ambiante)",
+  "en": "Standard temperature +10 °C (min. 10 °C below surroundings)",
+  "ar": "الحرارة القياسية +10 °C (أقل بـ 10 °C على الأقل من الحرارة المحيطة)"
+ },
+ "nécessaire jusqu'à la vidange du pot de condensation :; 2h_60_entry_dewpoint; 3h_45_entry_dewpoint": {
+  "fr": "Autonomie jusqu’à la vidange du pot de condensation : 2 h à 60 °C de point de rosée d’entrée ; 3 h à 45 °C de point de rosée d’entrée",
+  "en": "Run time until the condensate trap must be emptied: 2 h at 60 °C inlet dew point; 3 h at 45 °C inlet dew point",
+  "ar": "مدة التشغيل حتى تفريغ وعاء التكثيف: ساعتان عند نقطة ندى دخول 60 °C؛ 3 ساعات عند نقطة ندى دخول 45 °C"
+ },
+ "140 g / 0,31 lbs": {
+  "fr": "140 g / 0,31 lbs",
+  "en": "140 g / 0.31 lbs",
+  "ar": "140 g / 0.31 lbs"
+ },
+ "environ 400 g (avec accumulateur, rouleau de papier et bloc d'alimentation)": {
+  "fr": "environ 400 g (avec accumulateur, rouleau de papier et bloc d’alimentation)",
+  "en": "approx. 400 g (with rechargeable battery, paper roll and mains unit)",
+  "ar": "حوالي 400 g (مع البطارية القابلة لإعادة الشحن ولفّة الورق ووحدة التغذية)"
+ },
+ "6 - 8,5 h": {
+  "fr": "6 - 8,5 h",
+  "en": "6 - 8.5 h",
+  "ar": "6 - 8.5 h"
+ },
+ "360 000 valeurs de mesure; 1,5 mb": {
+  "fr": "360 000 Valeurs de mesure; 1,5 MB",
+  "en": "360 000 measured values; 1.5 MB",
+  "ar": "360 000 قيمة قياس؛ 1.5 MB"
+ },
+ "partie supérieure : acier inoxydable 1.4404, logement pour sonde : ppsu noir": {
+  "fr": "Partie supérieure : acier inoxydable 1.4404, logement pour sonde : PPSU noir",
+  "en": "Top part: stainless steel 1.4404, probe housing: black PPSU",
+  "ar": "الجزء العلوي: فولاذ مقاوم للصدأ 1.4404، تجويف المسبار: PPSU أسود"
+ },
+ "support pour câble : acier inoxydable 1.4571, adaptateur : pps naturel": {
+  "fr": "Support pour câble : acier inoxydable 1.4571, adaptateur : PPS naturel",
+  "en": "Cable holder: stainless steel 1.4571, adapter: natural PPS",
+  "ar": "حامل الكابل: فولاذ مقاوم للصدأ 1.4571، المحوّل: PPS طبيعي"
+ },
+ "300 valeurs de mesure / canal": {
+  "fr": "300 Valeurs de mesure / Canal",
+  "en": "300 measured values / channel",
+  "ar": "300 قيمة قياس / قناة"
+ },
+ "0 à +440 m³ / h (testo 417 utilisé avec un cône (0563 4170) ) · 0 à +99999 m³ / h · 0,1 à +200 m³ / h , recommandée 0.1 à 100 m³ / h (testo 417 utilisé avec un cône et un redresseur de flux (0554 4172) )": {
+  "fr": "0 à +440 m³/h (testo 417 utilisé avec un cône (0563 4170)) · 0 à +99999 m³/h · 0,1 à +200 m³/h , recommandée 0.1 à 100 m³/h (testo 417 utilisé avec un cône et un redresseur de flux (0554 4172))",
+  "en": "0 to +440 m³/h (testo 417 used with a cone (0563 4170)) · 0 to +99999 m³/h · 0.1 to +200 m³/h, recommended 0.1 to 100 m³/h (testo 417 used with a cone and a flow straightener (0554 4172))",
+  "ar": "0 إلى +440 m³/h (testo 417 مع مخروط (0563 4170)) · 0 إلى +99999 m³/h · 0.1 إلى +200 m³/h، موصى به 0.1 إلى 100 m³/h (testo 417 مع مخروط ومُقوِّم تدفق (0554 4172))"
+ },
+ "win10 ou plus récent; windows® 8.1": {
+  "fr": "Win10 ou plus récent; Windows® 8.1",
+  "en": "Win 10 or newer; Windows® 8.1",
+  "ar": "Win 10 أو أحدث؛ Windows® 8.1"
+ },
+ "x ne convient pas pour les atmosphères sans rosée. pour des utilisations constantes dans des milieux extrêmement humides (> 80 %hr à ≤ 30 °c pendant > 12 h, > 60 %hr à >30 °c pendant >12 h) , veuillez nous contacter via notre site.": {
+  "fr": "* Ne convient pas aux atmosphères avec condensation. Pour une utilisation permanente en milieu extrêmement humide (> 80 %HR à ≤ 30 °C pendant > 12 h, > 60 %HR à > 30 °C pendant > 12 h), veuillez nous contacter.",
+  "en": "* Not suitable for condensing atmospheres. For continuous use in extremely humid environments (> 80 %RH at ≤ 30 °C for > 12 h, > 60 %RH at > 30 °C for > 12 h), please contact us.",
+  "ar": "* غير مناسب للأجواء التي يحدث فيها تكثّف. للاستخدام الدائم في بيئات شديدة الرطوبة (> 80 %RH عند ≤ 30 °C لأكثر من 12 h، و> 60 %RH عند > 30 °C لأكثر من 12 h)، يُرجى التواصل معنا."
+ },
+ "max. 16.2 m (correspond à cinq rallonges pour tuyau de sonde)": {
+  "fr": "max. 16.2 m (correspond à cinq rallonges pour tuyau de sonde)",
+  "en": "max. 16.2 m (corresponds to five probe hose extensions)",
+  "ar": "بحد أقصى 16.2 m (يقابل خمس وصلات تمديد لخرطوم المسبار)"
+ },
+ "250 000 valeurs de mesure": {
+  "fr": "250 000 valeurs de mesure",
+  "en": "250 000 measured values",
+  "ar": "250 000 قيمة قياس"
+ },
+ "ip 40; ip65 avec topsafe": {
+  "fr": "IP 40; IP65 avec TopSafe",
+  "en": "IP 40; IP65 with TopSafe",
+  "ar": "IP 40؛ IP65 مع TopSafe"
+ },
+ "max. 1 ma": {
+  "fr": "max. 1 mA",
+  "en": "max. 1 mA",
+  "ar": "بحد أقصى 1 mA"
+ },
+ "< 50 % (du bois) · < 20 % (matériaux de construction)": {
+  "fr": "< 50 % (du bois) · < 20 % (matériaux de construction)",
+  "en": "< 50 % (wood) · < 20 % (building materials)",
+  "ar": "< 50 % (الخشب) · < 20 % (مواد البناء)"
+ },
+ "30 à 12500 tr / min.": {
+  "fr": "30 à 12500 tr/min.",
+  "en": "30 to 12500 rpm",
+  "ar": "30 إلى 12500 rpm"
  }
 }
