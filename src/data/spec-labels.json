@@ -21118,5 +21118,410 @@
   "fr": "Point de rosée de pression",
   "en": "Pressure dew point",
   "ar": "نقطة الندى تحت الضغط"
+ },
+ "data upload interval": {
+  "fr": "Intervalle d'envoi des données",
+  "en": "Data Upload Interval",
+  "ar": "فاصل رفع البيانات"
+ },
+ "wireless connection interval": {
+  "fr": "Intervalle de connexion sans fil",
+  "en": "Wireless Connection Interval",
+  "ar": "فاصل الاتصال اللاسلكي"
+ },
+ "battery capacity": {
+  "fr": "Capacité de la batterie",
+  "en": "Battery Capacity",
+  "ar": "سعة البطارية"
+ },
+ "temperature measuring range": {
+  "fr": "Plage de mesure de température",
+  "en": "Temperature Measuring Range",
+  "ar": "نطاق قياس الحرارة"
+ },
+ "humidity measuring range": {
+  "fr": "Plage de mesure d'humidité",
+  "en": "Humidity Measuring Range",
+  "ar": "نطاق قياس الرطوبة"
+ },
+ "log interval": {
+  "fr": "Intervalle d'enregistrement",
+  "en": "Log Interval",
+  "ar": "فاصل التسجيل"
+ },
+ "alarm log interval": {
+  "fr": "Intervalle d'enregistrement en alarme",
+  "en": "Alarm Log Interval",
+  "ar": "فاصل التسجيل عند الإنذار"
+ },
+ "protection grade": {
+  "fr": "Indice de protection",
+  "en": "Protection Grade",
+  "ar": "درجة الحماية"
+ },
+ "max weighing": {
+  "fr": "Pesée max.",
+  "en": "Max weighing",
+  "ar": "أقصى وزن"
+ },
+ "temperature fluctuation range": {
+  "fr": "Plage de fluctuation de température",
+  "en": "Temperature fluctuation range",
+  "ar": "نطاق تذبذب الحرارة"
+ },
+ "product size": {
+  "fr": "Dimensions du produit",
+  "en": "Product size",
+  "ar": "أبعاد المنتج"
+ },
+ "view and control the scale via mobile app": {
+  "fr": "Consultation et pilotage de la balance via l'application mobile",
+  "en": "View and control the scale via mobile APP",
+  "ar": "عرض الميزان والتحكم فيه عبر تطبيق الهاتف"
+ },
+ "sensor type": {
+  "fr": "Type de capteur",
+  "en": "Sensor type",
+  "ar": "نوع المستشعر"
+ },
+ "temperature sensor type": {
+  "fr": "Type de capteur de température",
+  "en": "Temperature sensor type",
+  "ar": "نوع مستشعر الحرارة"
+ },
+ "humidity sensor type": {
+  "fr": "Type de capteur d'humidité",
+  "en": "Humidity sensor type",
+  "ar": "نوع مستشعر الرطوبة"
+ },
+ "record cycle": {
+  "fr": "Cycle d'enregistrement",
+  "en": "Record cycle",
+  "ar": "دورة التسجيل"
+ },
+ "record capacity": {
+  "fr": "Capacité d'enregistrement",
+  "en": "Record capacity",
+  "ar": "سعة التسجيل"
+ },
+ "applicable environment": {
+  "fr": "Environnement d'utilisation",
+  "en": "Applicable environment",
+  "ar": "بيئة الاستخدام"
+ },
+ "external alarm relay": {
+  "fr": "Relais d'alarme externe",
+  "en": "External alarm relay",
+  "ar": "مرحّل الإنذار الخارجي"
+ },
+ "alarm mode": {
+  "fr": "Mode d'alarme",
+  "en": "Alarm mode",
+  "ar": "وضع الإنذار"
+ },
+ "power indicator (power)": {
+  "fr": "Voyant d'alimentation (Power)",
+  "en": "Power indicator(Power)",
+  "ar": "مؤشر الطاقة (Power)"
+ },
+ "status indicator (status)": {
+  "fr": "Voyant d'état (Status)",
+  "en": "Status indicator (Status)",
+  "ar": "مؤشر الحالة (Status)"
+ },
+ "pressure unit": {
+  "fr": "Unité de pression",
+  "en": "Pressure Unit",
+  "ar": "وحدة الضغط"
+ },
+ "pressure measuring range": {
+  "fr": "Plage de mesure de pression",
+  "en": "Pressure measuring range",
+  "ar": "نطاق قياس الضغط"
+ },
+ "maximum overload pressure": {
+  "fr": "Pression de surcharge max.",
+  "en": "Maximum overload pressure",
+  "ar": "أقصى ضغط زائد"
+ },
+ "offline records": {
+  "fr": "Enregistrements hors ligne",
+  "en": "Offline records",
+  "ar": "السجلات دون اتصال"
+ },
+ "fitting": {
+  "fr": "Raccord",
+  "en": "Fitting",
+  "ar": "الوصلة"
+ },
+ "wireless range": {
+  "fr": "Portée sans fil",
+  "en": "Wireless range",
+  "ar": "المدى اللاسلكي"
+ },
+ "operating temperature and humidity": {
+  "fr": "Température et humidité de fonctionnement",
+  "en": "Operating Temperature and Humidity",
+  "ar": "حرارة ورطوبة التشغيل"
+ },
+ "resolution pressure": {
+  "fr": "Résolution (pression)",
+  "en": "Resolution pressure",
+  "ar": "دقة التمييز (الضغط)"
+ },
+ "accuracy pressure": {
+  "fr": "Précision (pression)",
+  "en": "Accuracy pressure",
+  "ar": "الدقة (الضغط)"
+ },
+ "sampling period": {
+  "fr": "Période d'échantillonnage",
+  "en": "Sampling Period",
+  "ar": "فترة أخذ العينات"
+ },
+ "measurement units": {
+  "fr": "Unités de mesure",
+  "en": "Measurement Units",
+  "ar": "وحدات القياس"
+ },
+ "out-of-range alarm pressure": {
+  "fr": "Alarme de dépassement (pression)",
+  "en": "Out-of-Range Alarm pressure",
+  "ar": "إنذار تجاوز النطاق (الضغط)"
+ },
+ "u.m": {
+  "fr": "Unités de mesure",
+  "en": "U.M",
+  "ar": "وحدات القياس"
+ },
+ "memory capacity": {
+  "fr": "Capacité mémoire",
+  "en": "Memory capacity",
+  "ar": "سعة الذاكرة"
+ },
+ "in-use time": {
+  "fr": "Durée d'utilisation",
+  "en": "In-use time",
+  "ar": "مدة الاستخدام"
+ },
+ "max overload pressure": {
+  "fr": "Pression de surcharge max.",
+  "en": "Max overload pressure",
+  "ar": "أقصى ضغط زائد"
+ },
+ "wireless transmission distance": {
+  "fr": "Distance de transmission sans fil",
+  "en": "Wireless transmission distance",
+  "ar": "مسافة الإرسال اللاسلكي"
+ },
+ "maximum clamp opening": {
+  "fr": "Ouverture max. de la pince",
+  "en": "Maximum Clamp Opening",
+  "ar": "أقصى فتحة للمشبك"
+ },
+ "working pressure": {
+  "fr": "Pression de service",
+  "en": "Working Pressure",
+  "ar": "ضغط التشغيل"
+ },
+ "burst pressure": {
+  "fr": "Pression d'éclatement",
+  "en": "Burst Pressure",
+  "ar": "ضغط الانفجار"
+ },
+ "wireless mode": {
+  "fr": "Mode sans fil",
+  "en": "Wireless mode",
+  "ar": "الوضع اللاسلكي"
+ },
+ "rated power supply": {
+  "fr": "Alimentation nominale",
+  "en": "Rated power supply",
+  "ar": "التغذية الاسمية"
+ },
+ "extreme pressure": {
+  "fr": "Vide limite",
+  "en": "Extreme pressure",
+  "ar": "الضغط النهائي"
+ },
+ "external dimensions": {
+  "fr": "Dimensions extérieures",
+  "en": "External dimensions",
+  "ar": "الأبعاد الخارجية"
+ },
+ "blue gauge": {
+  "fr": "Manomètre bleu",
+  "en": "Blue gauge",
+  "ar": "المقياس الأزرق"
+ },
+ "backlight time": {
+  "fr": "Durée du rétroéclairage",
+  "en": "Backlight time",
+  "ar": "مدة الإضاءة الخلفية"
+ },
+ "parameter settings": {
+  "fr": "Paramètres réglables",
+  "en": "Parameter settings",
+  "ar": "إعدادات المعلمات"
+ },
+ "overpressure alarm": {
+  "fr": "Alarme de surpression",
+  "en": "Overpressure alarm",
+  "ar": "إنذار الضغط الزائد"
+ },
+ "working range": {
+  "fr": "Plage de fonctionnement",
+  "en": "Working Range",
+  "ar": "نطاق العمل"
+ },
+ "cut off laser": {
+  "fr": "Extinction du laser",
+  "en": "Cut off Laser",
+  "ar": "إطفاء الليزر"
+ },
+ "auto power-off": {
+  "fr": "Arrêt automatique",
+  "en": "Auto Power-off",
+  "ar": "الإطفاء التلقائي"
+ },
+ "storage humidity": {
+  "fr": "Humidité de stockage",
+  "en": "Storage Humidity",
+  "ar": "رطوبة التخزين"
+ },
+ "minimum sensitivity": {
+  "fr": "Sensibilité minimale",
+  "en": "Minimum Sensitivity",
+  "ar": "الحد الأدنى للحساسية"
+ },
+ "warm-up time": {
+  "fr": "Temps de préchauffage",
+  "en": "Warm-up time",
+  "ar": "زمن الإحماء"
+ },
+ "ambient environment": {
+  "fr": "Environnement ambiant",
+  "en": "Ambient Environment",
+  "ar": "البيئة المحيطة"
+ },
+ "sensor lifetime": {
+  "fr": "Durée de vie du capteur",
+  "en": "Sensor lifetime",
+  "ar": "عمر المستشعر"
+ },
+ "sensitivity range": {
+  "fr": "Niveaux de sensibilité",
+  "en": "Sensitivity range",
+  "ar": "نطاق الحساسية"
+ },
+ "maximum sensitivity": {
+  "fr": "Sensibilité maximale",
+  "en": "Maximum sensitivity",
+  "ar": "أقصى حساسية"
+ },
+ "auto off": {
+  "fr": "Arrêt automatique",
+  "en": "Auto off",
+  "ar": "الإطفاء التلقائي"
+ },
+ "reset time": {
+  "fr": "Temps de réinitialisation",
+  "en": "Reset time",
+  "ar": "زمن إعادة الضبط"
+ },
+ "refrigerants": {
+  "fr": "Fluides frigorigènes",
+  "en": "Refrigerants",
+  "ar": "غازات التبريد"
+ },
+ "charging voltage": {
+  "fr": "Tension de charge",
+  "en": "Charging Voltage",
+  "ar": "جهد الشحن"
+ },
+ "approvals": {
+  "fr": "Homologations",
+  "en": "Approvals",
+  "ar": "الاعتمادات"
+ },
+ "minimum detectable leakage": {
+  "fr": "Fuite minimale détectable",
+  "en": "Minimum detectable leakage",
+  "ar": "أدنى تسرب قابل للكشف"
+ },
+ "reaction time": {
+  "fr": "Temps de réaction",
+  "en": "Reaction time",
+  "ar": "زمن الاستجابة"
+ },
+ "operating temperature range": {
+  "fr": "Plage de température de fonctionnement",
+  "en": "Operating temperature range",
+  "ar": "نطاق حرارة التشغيل"
+ },
+ "operating humidity range": {
+  "fr": "Plage d'humidité de fonctionnement",
+  "en": "Operating humidity range",
+  "ar": "نطاق رطوبة التشغيل"
+ },
+ "applicable refrigerant": {
+  "fr": "Fluides frigorigènes compatibles",
+  "en": "Applicable refrigerant",
+  "ar": "غازات التبريد المناسبة"
+ },
+ "reset": {
+  "fr": "Réinitialisation",
+  "en": "Reset",
+  "ar": "إعادة الضبط"
+ },
+ "humidity measurement range": {
+  "fr": "Plage de mesure d'humidité",
+  "en": "Humidity measurement range",
+  "ar": "نطاق قياس الرطوبة"
+ },
+ "logging interval": {
+  "fr": "Intervalle d'enregistrement",
+  "en": "Logging interval",
+  "ar": "فاصل التسجيل"
+ },
+ "alarm thresholds": {
+  "fr": "Seuils d'alarme",
+  "en": "Alarm thresholds",
+  "ar": "حدود الإنذار"
+ },
+ "unit": {
+  "fr": "Unité",
+  "en": "Unit",
+  "ar": "الوحدة"
+ },
+ "max capacity": {
+  "fr": "Capacité max.",
+  "en": "Max capacity",
+  "ar": "السعة القصوى"
+ },
+ "storage temperature range": {
+  "fr": "Plage de température de stockage",
+  "en": "Storage temperature range",
+  "ar": "نطاق حرارة التخزين"
+ },
+ "scale body": {
+  "fr": "Plateau de la balance",
+  "en": "Scale body",
+  "ar": "جسم الميزان"
+ },
+ "max wighing": {
+  "fr": "Pesée max.",
+  "en": "Max wighing",
+  "ar": "أقصى وزن"
+ },
+ "scale platform": {
+  "fr": "Plateau de la balance",
+  "en": "Scale platform",
+  "ar": "منصة الميزان"
+ },
+ "value": {
+  "fr": "Valeur",
+  "en": "Value",
+  "ar": "القيمة"
  }
 }

@@ -14218,5 +14218,675 @@
   "fr": "30 à 12500 tr/min.",
   "en": "30 to 12500 rpm",
   "ar": "30 إلى 12500 rpm"
+ },
+ "1min~24hr adjustable, 1min by default": {
+  "fr": "1 min~24 h réglable, 1 min par défaut",
+  "en": "1min~24hr adjustable, 1min by default",
+  "ar": "قابل للضبط 1min~24hr، ‏1min افتراضيًا"
+ },
+ "1 million": {
+  "fr": "1 million",
+  "en": "1 million",
+  "ar": "1 مليون"
+ },
+ "48 hours at 25℃, upload interval 5 min, 20 sensors access; 24 hours at -10℃, upload interval 5 min, 20 sensors access": {
+  "fr": "48 heures à 25 ℃, intervalle d'envoi 5 min, 20 capteurs connectés ; 24 heures à -10 ℃, intervalle d'envoi 5 min, 20 capteurs connectés",
+  "en": "48 hours at 25℃, upload interval 5 min, 20 sensors access; 24 hours at -10℃, upload interval 5 min, 20 sensors access",
+  "ar": "48 ساعة عند 25℃، بفاصل رفع 5 min و20 مستشعرًا متصلًا؛ 24 ساعة عند -10℃، بفاصل رفع 5 min و20 مستشعرًا متصلًا"
+ },
+ "5000mah rechargeable lithium battery": {
+  "fr": "Batterie lithium rechargeable 5000 mAh",
+  "en": "5000mAh rechargeable lithium battery",
+  "ar": "بطارية ليثيوم قابلة لإعادة الشحن 5000mAh"
+ },
+ "-20~50℃ (internal) ; -40~85℃ (external)": {
+  "fr": "-20~50 ℃ (interne) ; -40~85 ℃ (externe)",
+  "en": "-20~50℃(Internal); -40~85℃(External)",
+  "ar": "-20~50℃ (داخلي)؛ -40~85℃ (خارجي)"
+ },
+ "1min~24hr adjustable, 5min by default": {
+  "fr": "1 min~24 h réglable, 5 min par défaut",
+  "en": "1min~24hr adjustable, 5min by default",
+  "ar": "قابل للضبط 1min~24hr، ‏5min افتراضيًا"
+ },
+ "1min~24hr adjustable, 2min by default": {
+  "fr": "1 min~24 h réglable, 2 min par défaut",
+  "en": "1min~24hr adjustable, 2min by default",
+  "ar": "قابل للضبط 1min~24hr، ‏2min افتراضيًا"
+ },
+ "3200mah rechargeable lithium battery": {
+  "fr": "Batterie lithium rechargeable 3200 mAh",
+  "en": "3200mAh rechargeable lithium battery",
+  "ar": "بطارية ليثيوم قابلة لإعادة الشحن 3200mAh"
+ },
+ "hand-held device: 5 aaa alkaline batteries; scale platform: 5 aa alkaline batteries": {
+  "fr": "Boîtier portatif : 5 piles alcalines AAA ; plateau : 5 piles alcalines AA",
+  "en": "hand-held device: 5 AAA alkaline batteries; scale platform: 5 AA alkaline batteries",
+  "ar": "الجهاز اليدوي: 5 بطاريات قلوية AAA؛ منصة الميزان: 5 بطاريات قلوية AA"
+ },
+ "hand-held controller: 40h; scale platform: 80h": {
+  "fr": "Boîtier portatif : 40 h ; plateau : 80 h",
+  "en": "Hand-held controller: 40H; Scale Platform: 80H",
+  "ar": "وحدة التحكم اليدوية: 40H؛ منصة الميزان: 80H"
+ },
+ "12vac i dc-24v ac i dc": {
+  "fr": "12 V AC/DC à 24 V AC/DC",
+  "en": "12VAC I DC-24V AC I DC",
+  "ar": "12VAC/DC إلى 24V AC/DC"
+ },
+ "± 0.5 (0℃-4℃) ; ± 1 (-25℃-0℃) ; ± 2 (others) (if sensor wire is longer than 50 m, accuracy deviates 1%)": {
+  "fr": "± 0,5 (0 ℃-4 ℃) ; ± 1 (-25 ℃-0 ℃) ; ± 2 (autres) (si le câble du capteur dépasse 50 m, la précision s'écarte de 1 %)",
+  "en": "± 0.5 (0℃-4℃); ± 1 (-25℃-0℃ ); ± 2 (others) (If sensor wire is longer than 50 M, accuracy deviates 1%)",
+  "ar": "± 0.5 (0℃-4℃)؛ ± 1 (-25℃-0℃)؛ ± 2 (غير ذلك) (إذا تجاوز طول سلك المستشعر 50 M، تنحرف الدقة بنسبة 1%)"
+ },
+ "1min to 24 hours continuously set": {
+  "fr": "1 min à 24 heures, réglage continu",
+  "en": "1min to 24 hours continuously set",
+  "ar": "من 1min إلى 24 ساعة، ضبط مستمر"
+ },
+ "each channel 20000 points (max)": {
+  "fr": "20000 points par voie (max.)",
+  "en": "each channel 20000 points (MAX)",
+  "ar": "20000 قراءة لكل قناة (كحد أقصى)"
+ },
+ "temperature -20℃-50℃; humidity 0%-95%": {
+  "fr": "Température -20 ℃-50 ℃ ; humidité 0 %-95 %",
+  "en": "temperature -20℃-50℃; humidity 0%-95%",
+  "ar": "الحرارة -20℃-50℃؛ الرطوبة 0%-95%"
+ },
+ "12v / 2.5a (dc) communication mode: wi-fi": {
+  "fr": "12 V / 2,5 A (DC) ; mode de communication : Wi-Fi",
+  "en": "12V/2.5A(DC) Communication mode: Wi-Fi",
+  "ar": "12V/2.5A(DC)؛ وضع الاتصال: Wi-Fi"
+ },
+ "lcd indicator, buzzer, sms (sent by the cloud) , mobile app": {
+  "fr": "Voyant LCD, buzzer, SMS (envoyé par le cloud), application mobile",
+  "en": "LCD indicator, buzzer, SMS (sent by the Cloud), mobile APP",
+  "ar": "مؤشر LCD، طنان، رسائل قصيرة (تُرسل من السحابة)، تطبيق الهاتف"
+ },
+ "5000 mah rechargeable lithium battery, 12 hours of continuous use": {
+  "fr": "Batterie lithium rechargeable 5000 mAh, 12 heures d'utilisation continue",
+  "en": "5000 mAh rechargeable lithium battery, 12 hours of continuous use",
+  "ar": "بطارية ليثيوم قابلة لإعادة الشحن 5000mAh، ‏12 ساعة من الاستخدام المتواصل"
+ },
+ "temperature: -30℃~65℃ / -22℉~117℉; humidity: 10~100%rh": {
+  "fr": "Température : -30 ℃~65 ℃ / -22 ℉~117 ℉ ; humidité : 10~100 %HR",
+  "en": "temperature: -30℃~65℃/-22℉~117℉; Humidity: 10~100%RH",
+  "ar": "الحرارة: -30℃~65℃ / -22℉~117℉؛ الرطوبة: 10~100%RH"
+ },
+ "temperature: 0.5℃; humidity:5%rh": {
+  "fr": "Température : 0,5 ℃ ; humidité : 5 %HR",
+  "en": "temperature: 0.5℃; humidity:5%RH",
+  "ar": "الحرارة: 0.5℃؛ الرطوبة: 5%RH"
+ },
+ "1min~24hr; uploading mode: lora memory capacity: 20, 000 readings": {
+  "fr": "1 min~24 h ; mode d'envoi : LoRa ; capacité mémoire : 20 000 mesures",
+  "en": "1min~24hr; Uploading mode: LoRa Memory capacity: 20, 000 readings",
+  "ar": "1min~24hr؛ وضع الرفع: LoRa؛ سعة الذاكرة: 20,000 قراءة"
+ },
+ "ip65 ; operating frequency: 470~510 mhz ism": {
+  "fr": "IP65 ; fréquence de fonctionnement : 470~510 MHz ISM",
+  "en": "IP65 ; Operating frequency: 470~510 MHz ISM",
+  "ar": "IP65؛ تردد التشغيل: 470~510 MHz ISM"
+ },
+ "on: green led is always on; off: the indicator is off.network indicator (net) : wi-fi version: it is always on after wi-fi is connected": {
+  "fr": "ON : LED verte allumée en permanence ; OFF : voyant éteint. Voyant réseau (Net) : version Wi-Fi : allumé en permanence une fois le Wi-Fi connecté",
+  "en": "ON: Green LED is always on; OFF: The indicator is off.Network indicator (Net): Wi-Fi version: It is always on after Wi-Fi is connected",
+  "ar": "ON: مؤشر LED أخضر مضاء دائمًا؛ OFF: المؤشر مطفأ. مؤشر الشبكة (Net): نسخة Wi-Fi: يبقى مضاءً دائمًا بعد الاتصال بشبكة Wi-Fi"
+ },
+ "green led blinks once every one second to indicate it is in normal status. it blinks quickly continuously to indicate data is uploaded": {
+  "fr": "La LED verte clignote une fois par seconde pour indiquer un fonctionnement normal. Elle clignote rapidement en continu pour indiquer l'envoi de données",
+  "en": "Green LED blinks once every one second to indicate it is in normal status. It blinks quickly continuously to indicate data is uploaded",
+  "ar": "يومض مؤشر LED الأخضر مرة كل ثانية للدلالة على الحالة الطبيعية، ويومض بسرعة وباستمرار للدلالة على رفع البيانات"
+ },
+ "7000 points": {
+  "fr": "7000 points",
+  "en": "7000 points",
+  "ar": "7000 قراءة"
+ },
+ "3xaa alkaline batteries": {
+  "fr": "3 piles alcalines AA",
+  "en": "3*AA alkaline batteries",
+  "ar": "3 بطاريات قلوية AA"
+ },
+ "600 hours": {
+  "fr": "600 heures",
+  "en": "600 hours",
+  "ar": "600 ساعة"
+ },
+ "1 / 8'' male npt": {
+  "fr": "1/8\" NPT mâle",
+  "en": "1/8’’ male NPT",
+  "ar": "1/8\" NPT ذكر"
+ },
+ "0.001mpa; temperature: ±1℃": {
+  "fr": "0,001 MPa ; température : ±1 ℃",
+  "en": "0.001MPa; temperature: ±1℃",
+  "ar": "0.001MPa؛ الحرارة: ±1℃"
+ },
+ "±0.5%fs (22℃~28℃) ; temperature: ±1℃": {
+  "fr": "±0,5 % PE (22 ℃~28 ℃) ; température : ±1 ℃",
+  "en": "±0.5%FS (22℃~28℃); temperature: ±1℃",
+  "ar": "±0.5%FS (22℃~28℃)؛ الحرارة: ±1℃"
+ },
+ "six months": {
+  "fr": "Six mois",
+  "en": "Six months",
+  "ar": "ستة أشهر"
+ },
+ "3v cr2450 button battery": {
+  "fr": "Pile bouton 3 V CR2450",
+  "en": "3V CR2450 button battery",
+  "ar": "بطارية زر 3V CR2450"
+ },
+ "full": {
+  "fr": "FULL",
+  "en": "FULL",
+  "ar": "FULL"
+ },
+ "7000 readings": {
+  "fr": "7000 mesures",
+  "en": "7000 readings",
+  "ar": "7000 قراءة"
+ },
+ "3aa batteries": {
+  "fr": "3 piles AA",
+  "en": "3AA batteries",
+  "ar": "3 بطاريات AA"
+ },
+ "320x240 color": {
+  "fr": "320*240 couleur",
+  "en": "320*240 color",
+  "ar": "320*240 ملونة"
+ },
+ "touch / rotary button": {
+  "fr": "Bouton tactile / rotatif",
+  "en": "Touch/rotary button",
+  "ar": "زر لمس / دوّار"
+ },
+ "2pa / 15 microns": {
+  "fr": "2 Pa / 15 microns",
+  "en": "2Pa /15 Microns",
+  "ar": "2Pa / 15 ميكرون"
+ },
+ "red gauge: -0.100 ~ 5.515mpa (-14.5-800 psi)": {
+  "fr": "Manomètre rouge : -0,100 ~ 5,515 MPa (-14,5-800 psi)",
+  "en": "Red gauge: -0.100 ~ 5.515MPa(-14.5-800 psi)",
+  "ar": "المقياس الأحمر: -0.100 ~ 5.515MPa ‏(-14.5-800 psi)"
+ },
+ "the backlight will be off after 3s, 4s, 5s, 10s or 15s asset in case of no operation": {
+  "fr": "Le rétroéclairage s'éteint après 3 s, 4 s, 5 s, 10 s ou 15 s sans manipulation",
+  "en": "The backlight will be off after 3s, 4s, 5s, 10s or 15s asset in case of no operation",
+  "ar": "تنطفئ الإضاءة الخلفية بعد 3s أو 4s أو 5s أو 10s أو 15s عند عدم التشغيل"
+ },
+ "if this function enabled the gauge will be off automatically after 10 (or 20, 30, 40) minutes per your settings. you may also disable this function by setting it as off, i. e the gauge will be on all the time": {
+  "fr": "Si cette fonction est activée, le manomètre s'éteint automatiquement après 10 (ou 20, 30, 40) minutes selon vos réglages. Vous pouvez aussi la désactiver en la réglant sur OFF : le manomètre reste alors allumé en permanence",
+  "en": "If this function enabled the gauge will be off automatically after 10 (or 20, 30, 40 )minutes per your settings. You may also disable this function by setting it as OFF, i. e the gauge will be on all the time",
+  "ar": "عند تفعيل هذه الوظيفة ينطفئ المقياس تلقائيًا بعد 10 (أو 20 أو 30 أو 40) دقيقة حسب إعداداتك. ويمكنك أيضًا تعطيلها بضبطها على OFF، فيبقى المقياس قيد التشغيل طوال الوقت"
+ },
+ "auto off, pressure / temperature unit, backlight time": {
+  "fr": "Arrêt automatique, unité de pression/température, durée du rétroéclairage",
+  "en": "Auto off, pressure/temperature unit, backlight time",
+  "ar": "الإطفاء التلقائي، وحدة الضغط/الحرارة، مدة الإضاءة الخلفية"
+ },
+ "3 aaa batteries": {
+  "fr": "3 piles AAA",
+  "en": "3 AAA batteries",
+  "ar": "3 بطاريات AAA"
+ },
+ "approx. 1 year": {
+  "fr": "Environ 1 an",
+  "en": "Approx. 1 year",
+  "ar": "سنة واحدة تقريبًا"
+ },
+ "temperature:-10℃~60℃; humidity 35% – 85%rh": {
+  "fr": "Température : -10 ℃~60 ℃ ; humidité 35 % – 85 %HR",
+  "en": "Temperature:-10℃~60℃; Humidity 35% – 85%RH",
+  "ar": "الحرارة: -10℃~60℃؛ الرطوبة 35% – 85%RH"
+ },
+ "alarm shows on the top right of the screen if the blue gauge pressure goes above 500psi and the red gauge above 800psi; alarm shows with backlight flashing if the blue gauge pressure goes above 625psi and the red gauge above 1000psi": {
+  "fr": "ALARM s'affiche en haut à droite de l'écran si la pression du manomètre bleu dépasse 500 psi et celle du rouge 800 psi ; ALARM s'affiche avec rétroéclairage clignotant si la pression du bleu dépasse 625 psi et celle du rouge 1000 psi",
+  "en": "ALARM shows on the top right of the screen if the blue gauge pressure goes above 500psi and the red gauge above 800psi; ALARM shows with backlight flashing if the blue gauge pressure goes above 625psi and the red gauge above 1000psi",
+  "ar": "تظهر ALARM في أعلى يمين الشاشة إذا تجاوز ضغط المقياس الأزرق 500psi والمقياس الأحمر 800psi؛ وتظهر ALARM مع وميض الإضاءة الخلفية إذا تجاوز ضغط الأزرق 625psi والأحمر 1000psi"
+ },
+ "blister pack": {
+  "fr": "Blister",
+  "en": "Blister pack",
+  "ar": "عبوة بليستر"
+ },
+ "red gauge: -0.100-5.515mpa (-14.5-800psi) blue gauge: -0.100-3.448mpa (-14.5-500psi)": {
+  "fr": "Manomètre rouge : -0,100-5,515 MPa (-14,5-800 psi) ; manomètre bleu : -0,100-3,448 MPa (-14,5-500 psi)",
+  "en": "Red gauge: -0.100-5.515MPa(-14.5-800psi) Blue gauge: -0.100-3.448MPa(-14.5-500psi)",
+  "ar": "المقياس الأحمر: -0.100-5.515MPa ‏(-14.5-800psi)؛ المقياس الأزرق: -0.100-3.448MPa ‏(-14.5-500psi)"
+ },
+ "temperature:-10℃~60℃; humidity 35% - 85%rh": {
+  "fr": "Température : -10 ℃~60 ℃ ; humidité 35 % - 85 %HR",
+  "en": "Temperature:-10℃~60℃; Humidity 35% - 85%RH",
+  "ar": "الحرارة: -10℃~60℃؛ الرطوبة 35% - 85%RH"
+ },
+ "20s (single measurement)": {
+  "fr": "20 s (mesure unique)",
+  "en": "20s (single measurement)",
+  "ar": "20s (قياس فردي)"
+ },
+ "8000 times for single measurement": {
+  "fr": "8000 mesures uniques",
+  "en": "8000 times for single measurement",
+  "ar": "8000 مرة للقياس الفردي"
+ },
+ "heated diode sensor": {
+  "fr": "Capteur à diode chauffée",
+  "en": "Heated Diode sensor",
+  "ar": "مستشعر صمام ثنائي مُسخَّن"
+ },
+ "<80%rh (non-condensing)": {
+  "fr": "<80 %HR (sans condensation)",
+  "en": "<80%RH (non-condensing)",
+  "ar": "<80%RH (دون تكاثف)"
+ },
+ "temperature: 32°f~122°f (0℃~50℃) ; humidity: < 80%rh (non condensing)": {
+  "fr": "Température : 32 °F~122 °F (0 ℃~50 ℃) ; humidité : < 80 %HR (sans condensation)",
+  "en": "Temperature: 32°F~122°F(0℃~50℃); Humidity: < 80%RH(non condensing)",
+  "ar": "الحرارة: 32°F~122°F ‏(0℃~50℃)؛ الرطوبة: < 80%RH (دون تكاثف)"
+ },
+ "highlight led display": {
+  "fr": "Affichage LED haute luminosité",
+  "en": "Highlight LED display",
+  "ar": "شاشة LED عالية السطوع"
+ },
+ "red gauge: -0.100 ~ 5.515mpa (-14.5-800psi) blue gauge: -0.100-3.448mpa (-14.5-500psi)": {
+  "fr": "Manomètre rouge : -0,100 ~ 5,515 MPa (-14,5-800 psi) ; manomètre bleu : -0,100-3,448 MPa (-14,5-500 psi)",
+  "en": "Red gauge: -0.100 ~ 5.515MPa (-14.5-800psi) Blue gauge: -0.100-3.448MPa(-14.5-500psi)",
+  "ar": "المقياس الأحمر: -0.100 ~ 5.515MPa ‏(-14.5-800psi)؛ المقياس الأزرق: -0.100-3.448MPa ‏(-14.5-500psi)"
+ },
+ "the backlight will be off after 3s, 4s, 5s, 10s, or 15sasset in case of no operation": {
+  "fr": "Le rétroéclairage s'éteint après 3 s, 4 s, 5 s, 10 s ou 15 s sans manipulation",
+  "en": "The backlight will be off after 3s, 4s, 5s, 10s, or 15sasset in case of no operation",
+  "ar": "تنطفئ الإضاءة الخلفية بعد 3s أو 4s أو 5s أو 10s أو 15s عند عدم التشغيل"
+ },
+ "40,000 hrs": {
+  "fr": "40 000 h",
+  "en": "40,000 hrs",
+  "ar": "40,000 ساعة"
+ },
+ "3 levels": {
+  "fr": "3 niveaux",
+  "en": "3 Levels",
+  "ar": "3 مستويات"
+ },
+ "audible and visual alarm, tst indication": {
+  "fr": "Alarme sonore et visuelle, indication TST",
+  "en": "Audible and visual alarm, TST indication",
+  "ar": "إنذار صوتي ومرئي، مؤشر TST"
+ },
+ "after 10 minutes of inactivity": {
+  "fr": "Après 10 minutes d'inactivité",
+  "en": "After 10 minutes of inactivity",
+  "ar": "بعد 10 دقائق من عدم النشاط"
+ },
+ "about 30s": {
+  "fr": "Environ 30 s",
+  "en": "about 30s",
+  "ar": "حوالي 30s"
+ },
+ "2x 18650 lithium battery": {
+  "fr": "2 batteries lithium 18650",
+  "en": "2* 18650 Lithium Battery",
+  "ar": "بطاريتا ليثيوم 18650"
+ },
+ "8h, charging time approx. 4 hours": {
+  "fr": "8 h, temps de charge env. 4 heures",
+  "en": "8h, Charging time approx. 4 hours",
+  "ar": "8h، وزمن الشحن 4 ساعات تقريبًا"
+ },
+ "compliant to rohs, sae-j1627 and en14624": {
+  "fr": "Conforme RoHS, SAE-J1627 et EN14624",
+  "en": "Compliant to RoHS, SAE-J1627 and EN14624",
+  "ar": "مطابق لمعايير RoHS وSAE-J1627 وEN14624"
+ },
+ "temperature: 14°f to 125.6 °f (-10°c-52°c)": {
+  "fr": "Température : 14 °F à 125,6 °F (-10 °C-52 °C)",
+  "en": "Temperature: 14°F to 125.6 °F(-10°C-52°C)",
+  "ar": "الحرارة: من 14°F إلى 125.6°F ‏(-10°C-52°C)"
+ },
+ "maximum 90%rh (non-condensing)": {
+  "fr": "90 %HR max. (sans condensation)",
+  "en": "Maximum 90%RH(non-condensing)",
+  "ar": "90%RH كحد أقصى (دون تكاثف)"
+ },
+ "heated diode gas sensor": {
+  "fr": "Capteur de gaz à diode chauffée",
+  "en": "Heated diode gas sensor",
+  "ar": "مستشعر غاز بالصمام الثنائي المُسخَّن"
+ },
+ "≤3 g / year": {
+  "fr": "≤3 g/an",
+  "en": "≤3 g/year",
+  "ar": "≤3 g/سنة"
+ },
+ "≤3 seconds": {
+  "fr": "≤3 secondes",
+  "en": "≤3 seconds",
+  "ar": "≤3 ثوانٍ"
+ },
+ "30 seconds": {
+  "fr": "30 secondes",
+  "en": "30 seconds",
+  "ar": "30 ثانية"
+ },
+ "≤10 seconds": {
+  "fr": "≤10 secondes",
+  "en": "≤10 seconds",
+  "ar": "≤10 ثوانٍ"
+ },
+ "cfcs, hcfcs, hfcs, hcs and hfos": {
+  "fr": "CFC, HCFC, HFC, HC et HFO",
+  "en": "CFCs, HCFCs, HFCs, HCs and HFOs",
+  "ar": "CFCs وHCFCs وHFCs وHCs وHFOs"
+ },
+ "≥1 year": {
+  "fr": "≥1 an",
+  "en": "≥1 year",
+  "ar": "≥1 سنة"
+ },
+ "automatic / manual": {
+  "fr": "Automatique / manuelle",
+  "en": "Automatic/manual",
+  "ar": "تلقائي / يدوي"
+ },
+ "7 hours": {
+  "fr": "7 heures",
+  "en": "7 hours",
+  "ar": "7 ساعات"
+ },
+ "±0.3℃ / ±0.6℉ (-20℃~40℃) ; ±0.5℃ (other)": {
+  "fr": "±0,3 ℃ / ±0,6 ℉ (-20 ℃~40 ℃) ; ±0,5 ℃ (autres)",
+  "en": "±0.3℃/±0.6℉(-20℃~40℃); ±0.5℃(other)",
+  "ar": "±0.3℃/±0.6℉ ‏(-20℃~40℃)؛ ±0.5℃ (غير ذلك)"
+ },
+ "±3%rh (25℃: 20%rh-80%rh) ; ±5%rh (other)": {
+  "fr": "±3 %HR (25 ℃ : 20 %HR-80 %HR) ; ±5 %HR (autres)",
+  "en": "±3%RH(25℃: 20%RH-80%RH); ±5%RH(other)",
+  "ar": "±3%RH ‏(25℃: 20%RH-80%RH)؛ ±5%RH (غير ذلك)"
+ },
+ "external temperature-humidity probe": {
+  "fr": "Sonde de température-humidité externe",
+  "en": "External temperature-humidity probe",
+  "ar": "مسبار حرارة ورطوبة خارجي"
+ },
+ "temperature: 0.1; humidity: 0.1%rh": {
+  "fr": "Température : 0,1 ; humidité : 0,1 %HR",
+  "en": "Temperature: 0.1; Humidity: 0.1%RH",
+  "ar": "الحرارة: 0.1؛ الرطوبة: 0.1%RH"
+ },
+ "32,000 data points": {
+  "fr": "32 000 points de mesure",
+  "en": "32,000 data points",
+  "ar": "32,000 قراءة"
+ },
+ "cr2450 3.0v button cell": {
+  "fr": "Pile bouton CR2450 3,0 V",
+  "en": "CR2450 3.0V Button Cell",
+  "ar": "بطارية زر CR2450 ‏3.0V"
+ },
+ "temperature: up to 3 high limits and 2 low limits": {
+  "fr": "Température : jusqu'à 3 seuils hauts et 2 seuils bas",
+  "en": "Temperature: up to 3 high limits and 2 low limits",
+  "ar": "الحرارة: حتى 3 حدود عليا وحدّين أدنى"
+ },
+ "3 x aa batteries": {
+  "fr": "3 piles AA",
+  "en": "3 x AA batteries",
+  "ar": "3 بطاريات AA"
+ },
+ "9943 readings": {
+  "fr": "9943 mesures",
+  "en": "9943 readings",
+  "ar": "9943 قراءة"
+ },
+ "handle device: 5 x aaa batteries": {
+  "fr": "Boîtier portatif : 5 piles AAA",
+  "en": "Handle device: 5 x AAA batteries",
+  "ar": "الجهاز اليدوي: 5 بطاريات AAA"
+ },
+ "5 x aa batteries": {
+  "fr": "5 piles AA",
+  "en": "5 x AA batteries",
+  "ar": "5 بطاريات AA"
+ },
+ "remote: 5aaa batteries": {
+  "fr": "Télécommande : 5 piles AAA",
+  "en": "Remote: 5AAA batteries",
+  "ar": "وحدة التحكم: 5 بطاريات AAA"
+ },
+ "5 aa batteries": {
+  "fr": "5 piles AA",
+  "en": "5 AA batteries",
+  "ar": "5 بطاريات AA"
+ },
+ "remote: 50h": {
+  "fr": "Télécommande : 50 h",
+  "en": "Remote: 50h",
+  "ar": "وحدة التحكم: 50h"
+ },
+ "5 aaa batteries": {
+  "fr": "5 piles AAA",
+  "en": "5 AAA batteries",
+  "ar": "5 بطاريات AAA"
+ },
+ "35 hours": {
+  "fr": "35 heures",
+  "en": "35 hours",
+  "ar": "35 ساعة"
+ },
+ "10.6 inch x 10.6 inch x 2.9 inch": {
+  "fr": "10,6 pouces x 10,6 pouces x 2,9 pouces",
+  "en": "10.6 inch x 10.6 inch x 2.9 inch",
+  "ar": "10.6 بوصة × 10.6 بوصة × 2.9 بوصة"
+ },
+ "gateway": {
+  "fr": "Passerelle",
+  "en": "Gateway",
+  "ar": "بوابة"
+ },
+ "internal t&h sensor": {
+  "fr": "Capteur T&H interne",
+  "en": "Internal T&H Sensor",
+  "ar": "مستشعر T&H داخلي"
+ },
+ "external t&h sensor": {
+  "fr": "Capteur T&H externe",
+  "en": "External T&H Sensor",
+  "ar": "مستشعر T&H خارجي"
+ },
+ "bluetooth with app control": {
+  "fr": "Bluetooth avec pilotage par application",
+  "en": "Bluetooth with APP control",
+  "ar": "Bluetooth مع التحكم عبر التطبيق"
+ },
+ "rcw-360pro-wg-dc-4g+wifi / device only": {
+  "fr": "RCW-360Pro-WG-DC-4G+WIFI / Appareil seul",
+  "en": "RCW-360Pro-WG-DC-4G+WIFI / Device Only",
+  "ar": "RCW-360Pro-WG-DC-4G+WIFI / الجهاز فقط"
+ },
+ "rcw-360pro-wg-dc-4g+wifi / tde: dual temp probe": {
+  "fr": "RCW-360Pro-WG-DC-4G+WIFI / TDE : double sonde de température",
+  "en": "RCW-360Pro-WG-DC-4G+WIFI / TDE: Dual Temp Probe",
+  "ar": "RCW-360Pro-WG-DC-4G+WIFI / TDE: مسبار حرارة مزدوج"
+ },
+ "rcw-360pro-wg-dc-4g+wifi / gle: single gel temp probe": {
+  "fr": "RCW-360Pro-WG-DC-4G+WIFI / GLE : sonde de température à gel",
+  "en": "RCW-360Pro-WG-DC-4G+WIFI / GLE: Single Gel Temp Probe",
+  "ar": "RCW-360Pro-WG-DC-4G+WIFI / GLE: مسبار حرارة هلامي مفرد"
+ },
+ "rcw-360pro-wg-dc-4g+wifi / te: single temp probe": {
+  "fr": "RCW-360Pro-WG-DC-4G+WIFI / TE : sonde de température simple",
+  "en": "RCW-360Pro-WG-DC-4G+WIFI / TE: Single Temp Probe",
+  "ar": "RCW-360Pro-WG-DC-4G+WIFI / TE: مسبار حرارة مفرد"
+ },
+ "rcw-360pro-wg-dc-4g+wifi / the: temp humidiy probe": {
+  "fr": "RCW-360Pro-WG-DC-4G+WIFI / THE : sonde de température et d’humidité",
+  "en": "RCW-360Pro-WG-DC-4G+WIFI / THE: Temp Humidiy Probe",
+  "ar": "RCW-360Pro-WG-DC-4G+WIFI / THE: مسبار حرارة ورطوبة"
+ },
+ "rcw-360pro-wg-dc-4g+wifi / tle: single ultra-low temp probe": {
+  "fr": "RCW-360Pro-WG-DC-4G+WIFI / TLE : sonde ultra-basse température",
+  "en": "RCW-360Pro-WG-DC-4G+WIFI / TLE: Single Ultra-low Temp Probe",
+  "ar": "RCW-360Pro-WG-DC-4G+WIFI / TLE: مسبار حرارة منخفضة جدًا"
+ },
+ "rcw-360pro-wg-dc-4g+wifi / ppm: low-concentration co2 probe": {
+  "fr": "RCW-360Pro-WG-DC-4G+WIFI / PPM : sonde CO2 basse concentration",
+  "en": "RCW-360Pro-WG-DC-4G+WIFI / PPM: Low-Concentration CO2 Probe",
+  "ar": "RCW-360Pro-WG-DC-4G+WIFI / PPM: مسبار CO2 منخفض التركيز"
+ },
+ "rcw-360pro-wg-dc-4g+wifi / vol: high-concentration co2 probe": {
+  "fr": "RCW-360Pro-WG-DC-4G+WIFI / VOL : sonde CO2 haute concentration",
+  "en": "RCW-360Pro-WG-DC-4G+WIFI / VOL: High-Concentration CO2 Probe",
+  "ar": "RCW-360Pro-WG-DC-4G+WIFI / VOL: مسبار CO2 عالي التركيز"
+ },
+ "dr-230w-thde (wifi real-time) / no sound and light alarm": {
+  "fr": "DR-230W-THDE(Wi-Fi temps réel) / Sans alarme sonore et lumineuse",
+  "en": "DR-230W-THDE(WiFi Real-time) / No sound and light alarm",
+  "ar": "DR-230W-THDE(Wi-Fi لحظي) / دون إنذار صوتي وضوئي"
+ },
+ "dr-230w-thde (wifi real-time) / with sound and light alarm": {
+  "fr": "DR-230W-THDE(Wi-Fi temps réel) / Avec alarme sonore et lumineuse",
+  "en": "DR-230W-THDE(WiFi Real-time) / With sound and light alarm",
+  "ar": "DR-230W-THDE(Wi-Fi لحظي) / مع إنذار صوتي وضوئي"
+ },
+ "dr-230w-the (wifi real-time) / no sound and light alarm": {
+  "fr": "DR-230W-THE(Wi-Fi temps réel) / Sans alarme sonore et lumineuse",
+  "en": "DR-230W-THE(WiFi Real-time) / No sound and light alarm",
+  "ar": "DR-230W-THE(Wi-Fi لحظي) / دون إنذار صوتي وضوئي"
+ },
+ "dr-230w-the (wifi real-time) / with sound and light alarm": {
+  "fr": "DR-230W-THE(Wi-Fi temps réel) / Avec alarme sonore et lumineuse",
+  "en": "DR-230W-THE(WiFi Real-time) / With sound and light alarm",
+  "ar": "DR-230W-THE(Wi-Fi لحظي) / مع إنذار صوتي وضوئي"
+ },
+ "rcw-360pro-w-dc wifi / device only": {
+  "fr": "RCW-360Pro-W-DC WIFI / Appareil seul",
+  "en": "RCW-360Pro-W-DC WIFI / Device Only",
+  "ar": "RCW-360Pro-W-DC WIFI / الجهاز فقط"
+ },
+ "rcw-360pro-w-dc wifi / tde: dual temp probe": {
+  "fr": "RCW-360Pro-W-DC WIFI / TDE : double sonde de température",
+  "en": "RCW-360Pro-W-DC WIFI / TDE: Dual Temp Probe",
+  "ar": "RCW-360Pro-W-DC WIFI / TDE: مسبار حرارة مزدوج"
+ },
+ "rcw-360pro-w-dc wifi / gle: single gel temp probe": {
+  "fr": "RCW-360Pro-W-DC WIFI / GLE : sonde de température à gel",
+  "en": "RCW-360Pro-W-DC WIFI / GLE: Single Gel Temp Probe",
+  "ar": "RCW-360Pro-W-DC WIFI / GLE: مسبار حرارة هلامي مفرد"
+ },
+ "rcw-360pro-w-dc wifi / te: single temp probe": {
+  "fr": "RCW-360Pro-W-DC WIFI / TE : sonde de température simple",
+  "en": "RCW-360Pro-W-DC WIFI / TE: Single Temp Probe",
+  "ar": "RCW-360Pro-W-DC WIFI / TE: مسبار حرارة مفرد"
+ },
+ "rcw-360pro-w-dc wifi / the: temp humidiy probe": {
+  "fr": "RCW-360Pro-W-DC WIFI / THE : sonde de température et d’humidité",
+  "en": "RCW-360Pro-W-DC WIFI / THE: Temp Humidiy Probe",
+  "ar": "RCW-360Pro-W-DC WIFI / THE: مسبار حرارة ورطوبة"
+ },
+ "rcw-360pro-w-dc wifi / tle: single ultra-low temp probe": {
+  "fr": "RCW-360Pro-W-DC WIFI / TLE : sonde ultra-basse température",
+  "en": "RCW-360Pro-W-DC WIFI / TLE: Single Ultra-low Temp Probe",
+  "ar": "RCW-360Pro-W-DC WIFI / TLE: مسبار حرارة منخفضة جدًا"
+ },
+ "rcw-360pro-w-dc wifi / ppm: low-concentration co2 probe": {
+  "fr": "RCW-360Pro-W-DC WIFI / PPM : sonde CO2 basse concentration",
+  "en": "RCW-360Pro-W-DC WIFI / PPM: Low-Concentration CO2 Probe",
+  "ar": "RCW-360Pro-W-DC WIFI / PPM: مسبار CO2 منخفض التركيز"
+ },
+ "rcw-360pro-w-dc wifi / vol: high-concentration co2 probe": {
+  "fr": "RCW-360Pro-W-DC WIFI / VOL : sonde CO2 haute concentration",
+  "en": "RCW-360Pro-W-DC WIFI / VOL: High-Concentration CO2 Probe",
+  "ar": "RCW-360Pro-W-DC WIFI / VOL: مسبار CO2 عالي التركيز"
+ },
+ "rcw-360pro-dc 4g / device only": {
+  "fr": "RCW-360Pro-DC 4G / Appareil seul",
+  "en": "RCW-360Pro-DC 4G / Device Only",
+  "ar": "RCW-360Pro-DC 4G / الجهاز فقط"
+ },
+ "rcw-360pro-dc 4g / tde: dual temp probe": {
+  "fr": "RCW-360Pro-DC 4G / TDE : double sonde de température",
+  "en": "RCW-360Pro-DC 4G / TDE: Dual Temp Probe",
+  "ar": "RCW-360Pro-DC 4G / TDE: مسبار حرارة مزدوج"
+ },
+ "rcw-360pro-dc 4g / gle: single gel temp probe": {
+  "fr": "RCW-360Pro-DC 4G / GLE : sonde de température à gel",
+  "en": "RCW-360Pro-DC 4G / GLE: Single Gel Temp Probe",
+  "ar": "RCW-360Pro-DC 4G / GLE: مسبار حرارة هلامي مفرد"
+ },
+ "rcw-360pro-dc 4g / te: single temp probe": {
+  "fr": "RCW-360Pro-DC 4G / TE : sonde de température simple",
+  "en": "RCW-360Pro-DC 4G / TE: Single Temp Probe",
+  "ar": "RCW-360Pro-DC 4G / TE: مسبار حرارة مفرد"
+ },
+ "rcw-360pro-dc 4g / the: temp humidiy probe": {
+  "fr": "RCW-360Pro-DC 4G / THE : sonde de température et d’humidité",
+  "en": "RCW-360Pro-DC 4G / THE: Temp Humidiy Probe",
+  "ar": "RCW-360Pro-DC 4G / THE: مسبار حرارة ورطوبة"
+ },
+ "rcw-360pro-dc 4g / tle: single ultra-low temp probe": {
+  "fr": "RCW-360Pro-DC 4G / TLE : sonde ultra-basse température",
+  "en": "RCW-360Pro-DC 4G / TLE: Single Ultra-low Temp Probe",
+  "ar": "RCW-360Pro-DC 4G / TLE: مسبار حرارة منخفضة جدًا"
+ },
+ "rcw-360pro-dc 4g / ppm: low-concentration co2 probe": {
+  "fr": "RCW-360Pro-DC 4G / PPM : sonde CO2 basse concentration",
+  "en": "RCW-360Pro-DC 4G / PPM: Low-Concentration CO2 Probe",
+  "ar": "RCW-360Pro-DC 4G / PPM: مسبار CO2 منخفض التركيز"
+ },
+ "rcw-360pro-dc 4g / vol: high-concentration co2 probe": {
+  "fr": "RCW-360Pro-DC 4G / VOL : sonde CO2 haute concentration",
+  "en": "RCW-360Pro-DC 4G / VOL: High-Concentration CO2 Probe",
+  "ar": "RCW-360Pro-DC 4G / VOL: مسبار CO2 عالي التركيز"
+ },
+ "rc-4 pro (external t+ internal temp) / 1 piece+holder": {
+  "fr": "RC-4 Pro(T externe + température interne) / 1 pièce + support",
+  "en": "RC-4 Pro(External T+ Internal Temp) / 1 piece+Holder",
+  "ar": "RC-4 Pro(حرارة خارجية + حرارة داخلية) / قطعة واحدة + حامل"
+ },
+ "rc-4h pro (external t+ internal temp&hum) / 1 piece+holder": {
+  "fr": "RC-4H Pro(T externe + température et humidité internes) / 1 pièce + support",
+  "en": "RC-4H Pro(External T+ Internal Temp&Hum) / 1 piece+Holder",
+  "ar": "RC-4H Pro(حرارة خارجية + حرارة ورطوبة داخلية) / قطعة واحدة + حامل"
+ },
+ "dr-230-the (bluetooth) / no sound and light alarm": {
+  "fr": "DR-230-THE(Bluetooth) / Sans alarme sonore et lumineuse",
+  "en": "DR-230-THE(Bluetooth) / No sound and light alarm",
+  "ar": "DR-230-THE(Bluetooth) / دون إنذار صوتي وضوئي"
+ },
+ "dr-230-the (bluetooth) / with sound and light alarm": {
+  "fr": "DR-230-THE(Bluetooth) / Avec alarme sonore et lumineuse",
+  "en": "DR-230-THE(Bluetooth) / With sound and light alarm",
+  "ar": "DR-230-THE(Bluetooth) / مع إنذار صوتي وضوئي"
+ },
+ "dr-230-thde (bluetooth) / no sound and light alarm": {
+  "fr": "DR-230-THDE(Bluetooth) / Sans alarme sonore et lumineuse",
+  "en": "DR-230-THDE(Bluetooth) / No sound and light alarm",
+  "ar": "DR-230-THDE(Bluetooth) / دون إنذار صوتي وضوئي"
+ },
+ "dr-230-thde (bluetooth) / with sound and light alarm": {
+  "fr": "DR-230-THDE(Bluetooth) / Avec alarme sonore et lumineuse",
+  "en": "DR-230-THDE(Bluetooth) / With sound and light alarm",
+  "ar": "DR-230-THDE(Bluetooth) / مع إنذار صوتي وضوئي"
+ },
+ "lmg-10+rh-3 hoses": {
+  "fr": "LMG-10+RH-3 (flexibles)",
+  "en": "LMG-10+RH-3 Hoses",
+  "ar": "LMG-10+RH-3 (خراطيم)"
+ },
+ "dmg-4b only": {
+  "fr": "DMG-4B seul",
+  "en": "DMG-4B only",
+  "ar": "DMG-4B فقط"
+ },
+ "dmg-4b+hose": {
+  "fr": "DMG-4B+flexible",
+  "en": "DMG-4B+Hose",
+  "ar": "DMG-4B+خرطوم"
  }
 }
