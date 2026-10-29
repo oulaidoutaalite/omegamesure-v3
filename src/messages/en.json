@@ -15,7 +15,9 @@
     "requestQuote": "Request a quote",
     "discover": "Discover",
     "contactUs": "Contact us",
-    "viewCatalog": "Browse catalog"
+    "viewCatalog": "Browse catalog",
+    "previous": "Previous",
+    "next": "Next"
   },
   "navbar": {
     "home": "Home",

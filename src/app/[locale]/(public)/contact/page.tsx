@@ -41,7 +41,7 @@ export default async function ContactPage({
 
   return (
     <>
-      <section className="bande-marine">
+      <section className="bande-sombre">
         <Container>
           <div className="mx-auto max-w-2xl py-12 text-center sm:py-14">
             <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-cta-400">{t('badge')}</p>
@@ -103,7 +103,7 @@ function ContactRow({
 }) {
   const content = (
     <>
-      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-brand/10 text-brand">
+      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-ink/10 text-ink">
         <Icon size={16} />
       </span>
       <div>
@@ -114,7 +114,7 @@ function ContactRow({
   )
   if (href) {
     return (
-      <a href={href} className="flex gap-3 rounded-sm border border-border bg-card p-4 transition hover:border-brand/40">
+      <a href={href} className="flex gap-3 rounded-sm border border-border bg-card p-4 transition hover:border-ink/40">
         {content}
       </a>
     )

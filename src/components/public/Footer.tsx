@@ -57,7 +57,7 @@ export async function Footer({
   return (
     // Marine profond : le pied de page ferme la page comme la barre de
     // navigation l'ouvre, et les colonnes de liens y gagnent en lisibilite.
-    <footer className="bg-brand-800 text-white/70">
+    <footer className="bg-ink-900 text-white/70">
       <Container className="py-14">
         <div className="grid gap-10 lg:grid-cols-6">
           {/* Col 1 — Brand */}

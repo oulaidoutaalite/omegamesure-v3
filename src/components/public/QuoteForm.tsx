@@ -107,8 +107,8 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
   return (
     <form onSubmit={onSubmit} className="space-y-5">
       {hasCart && (
-        <div className="rounded-sm border border-brand/20 bg-brand/5 p-4">
-          <p className="mb-2 text-sm font-semibold text-brand">
+        <div className="rounded-sm border border-ink/20 bg-ink/5 p-4">
+          <p className="mb-2 text-sm font-semibold text-ink">
             {tCart('selectedTitle')} ({cartItems.length})
           </p>
           <ul className="space-y-1.5">

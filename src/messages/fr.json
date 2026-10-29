@@ -15,7 +15,9 @@
     "requestQuote": "Demander un devis",
     "discover": "Découvrir",
     "contactUs": "Nous contacter",
-    "viewCatalog": "Voir le catalogue"
+    "viewCatalog": "Voir le catalogue",
+    "previous": "Précédent",
+    "next": "Suivant"
   },
   "navbar": {
     "home": "Accueil",

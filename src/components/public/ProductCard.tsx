@@ -92,7 +92,7 @@ export async function ProductCard({
         )}
         <div className="mt-auto flex items-center justify-between gap-2 pt-3">
           {data.price !== null ? (
-            <span className="text-sm font-semibold text-brand">
+            <span className="text-sm font-semibold text-ink">
               {data.price.toLocaleString(locale === 'ar' ? 'ar-MA' : locale === 'en' ? 'en-US' : 'fr-FR')} {data.currency}
             </span>
           ) : (
@@ -103,7 +103,7 @@ export async function ProductCard({
               variant="card"
               item={{ slug: data.slug, name: data.name, brand: data.brand, image: data.imageUrl }}
             />
-            <span className="inline-flex items-center gap-1 text-xs font-medium text-brand">
+            <span className="inline-flex items-center gap-1 text-xs font-medium text-ink">
               {tCommon('details')} <IconArrowRight size={12} className="transition group-hover:translate-x-0.5 rtl:rotate-180" />
             </span>
           </div>

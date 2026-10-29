@@ -80,7 +80,7 @@ export function LocaleSwitcher() {
                     onClick={() => switchTo(l)}
                     className={cn(
                       'flex w-full items-center gap-2 px-3 py-1.5 text-left text-xs hover:bg-accent',
-                      isActive ? 'text-brand font-medium' : 'text-foreground',
+                      isActive ? 'text-ink font-medium' : 'text-foreground',
                     )}
                   >
                     <span>{def.flag}</span>

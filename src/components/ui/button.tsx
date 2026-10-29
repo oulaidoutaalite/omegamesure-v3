@@ -10,11 +10,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        // ⚠️ Le bouton par defaut est CYAN, la couleur d'action du theme, et non
-        // plus marine. L'en-tete affichait deja un « Demander un devis » cyan
-        // quand la fiche produit en montrait un marine : deux appels a l'action
-        // de meme nature, de deux couleurs. Le marine reste disponible sous
-        // `brand`, pour un bouton pose sur un fond clair ou le cyan crierait.
+        // ⚠️ Le bouton par defaut porte la couleur d'ACTION du theme — `cta`,
+        // aujourd'hui rouge brique. L'en-tete affichait jadis un « Demander un
+        // devis » d'une couleur quand la fiche produit en montrait une autre :
+        // deux appels a l'action de meme nature, de deux couleurs. Un seul
+        // defaut evite que cela recommence.
+        //
+        // `brand` (marine) ne sert plus nulle part dans le site public : il n'y
+        // reste aucun aplat marine. La variante est conservee pour
+        // l'administration, qui garde cette palette.
         default:     'bg-cta text-white hover:bg-cta-600 shadow-sm',
         brand:       'bg-brand text-white hover:bg-brand-700 shadow-sm',
         secondary:   'bg-secondary text-secondary-foreground hover:bg-secondary/80',

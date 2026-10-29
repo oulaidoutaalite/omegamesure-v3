@@ -15,7 +15,9 @@
     "requestQuote": "طلب عرض سعر",
     "discover": "اكتشف",
     "contactUs": "اتصل بنا",
-    "viewCatalog": "تصفح الكتالوج"
+    "viewCatalog": "تصفح الكتالوج",
+    "previous": "السابق",
+    "next": "التالي"
   },
   "navbar": {
     "home": "الرئيسية",

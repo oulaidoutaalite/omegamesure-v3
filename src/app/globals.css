@@ -4,39 +4,44 @@
 
 @layer base {
   :root {
-    /* Jetons shadcn/ui — thème clair, accordés au bleu marine #172D51 et au
-       cyan d'action #0187AC. Les teintes neutres tirent legerement vers le bleu
-       pour ne pas jurer avec les aplats marine. */
-    --background: 0 0% 100%;
-    --foreground: 214 55% 14%;
+    /* Jetons shadcn/ui — thème clair sur le modèle carlroth.com : une page gris
+       très clair, des cartes blanches par-dessus, du texte presque noir, et le
+       rouge brique réservé aux actions.
+       ⚠️ Le fond de page n'est plus blanc : les cartes ne se détacheraient pas.
+       `--card` reste blanc, c'est ce contraste-là qui fait la mise en page. */
+    --background: 210 6% 95.7%;        /* #f3f4f5, relevé sur carlroth.com */
+    --foreground: 213 12% 14%;         /* encre #1f2328 */
 
     --card: 0 0% 100%;
-    --card-foreground: 214 55% 14%;
+    --card-foreground: 213 12% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 214 55% 14%;
+    --popover-foreground: 213 12% 14%;
 
-    --primary: 194 99% 34%;            /* cyan d'action #0187AC */
+    --primary: 359 59% 39%;            /* rouge brique d'action #9E2A2B */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 45% 97%;
-    --secondary-foreground: 214 55% 14%;
+    --secondary: 210 6% 97%;
+    --secondary-foreground: 213 12% 14%;
 
-    --muted: 210 40% 96.5%;
-    --muted-foreground: 213 18% 45%;
+    --muted: 210 6% 96.5%;
+    --muted-foreground: 213 8% 42%;
 
-    --accent: 207 60% 96%;
-    --accent-foreground: 214 55% 14%;
+    --accent: 359 60% 97%;
+    --accent-foreground: 213 12% 14%;
 
     --destructive: 0 72% 48%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 213 32% 90%;
-    --input: 213 32% 90%;
-    --ring: 194 99% 34%;
+    --border: 213 10% 88%;
+    --input: 213 10% 88%;
+    --ring: 359 59% 39%;
 
-    /* Des angles francs : les catalogues d'instrumentation n'arrondissent pas. */
-    --radius: 0.25rem;
+    /* Carl Roth arrondit : la barre de recherche est une pilule, les cartes et
+       les boutons ont des angles francs mais doux. On remonte donc le rayon.
+       ⚠️ Les pilules (recherche, boutons d'action, ronds d'icônes) ne dependent
+       PAS de ce jeton : elles utilisent `rounded-full`, qui ne bouge jamais. */
+    --radius: 0.5rem;
   }
 
   .dark {
@@ -86,7 +91,7 @@
 
 @layer components {
   /* Le sur-titre qui coiffe chaque section — « PRODUITS », « LE GROUPE ».
-     Un filet cyan le relie au corps du texte. */
+     Un filet rouge le relie au corps du texte. */
   .eyebrow {
     @apply inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-cta;
   }
@@ -95,11 +100,59 @@
     @apply h-px w-6 bg-cta;
   }
 
-  /* Bande marine pleine largeur, avec un halo discret pour eviter l'aplat mort. */
-  .bande-marine {
-    @apply relative overflow-hidden bg-brand text-white;
+  /* Bande sombre pleine largeur.
+     ⚠️ Cette classe s'appelait `.bande-sombre` : le nom disait la COULEUR, et il
+     a fallu la renommer en changeant de palette — exactement l'erreur que la
+     clef `cta` evite en nommant la fonction. `.bande-sombre` dit le ROLE.
+     Encre neutre, plus de halo cyan : le modele carlroth.com ne pose pas
+     d'aplats colores, le rouge y reste reserve aux actions. */
+  .bande-sombre {
+    @apply relative overflow-hidden bg-ink-800 text-white;
     background-image:
-      radial-gradient(60rem 30rem at 15% -20%, rgb(1 135 172 / 0.30), transparent 60%),
-      radial-gradient(45rem 25rem at 95% 120%, rgb(1 135 172 / 0.18), transparent 60%);
+      radial-gradient(60rem 30rem at 15% -20%, rgb(255 255 255 / 0.06), transparent 60%),
+      radial-gradient(45rem 25rem at 95% 120%, rgb(158 42 43 / 0.22), transparent 60%);
+  }
+
+  /* ── Carte de sous-categorie, pour le carrousel ─────────────────────────
+     ⚠️ Ces classes existent pour le POIDS de la page, pas par gout du CSS.
+     Le carrousel porte 323 cartes, et chacune repetait la meme chaine de
+     classes utilitaires : 315 Ko sur une page de 467, soit 67 % du HTML pour
+     du texte identique recopie 323 fois. Regroupees ici, elles ne voyagent
+     plus qu'une fois dans la feuille de style — que le navigateur met en cache,
+     alors que la page est en `force-dynamic` et se retelecharge a chaque visite.
+     Ne pas « simplifier » en remettant les utilitaires dans le composant. */
+  .carte-piste {
+    @apply w-[46%] shrink-0 snap-start sm:w-[31%] lg:w-[23.5%] xl:w-[19%];
+  }
+  .carte-lien {
+    @apply flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card
+           transition hover:border-cta/40 hover:shadow-card;
+  }
+  .carte-photo {
+    @apply h-full w-full object-contain p-3 transition-transform duration-500
+           group-hover:scale-[1.05];
+  }
+  .carte-corps {
+    @apply flex flex-1 flex-col border-t border-border p-3.5;
+  }
+  .carte-famille {
+    @apply text-[10px] font-semibold uppercase tracking-[0.14em] text-ink-400;
+  }
+  .carte-titre {
+    @apply mt-1.5 line-clamp-2 text-[13px] font-semibold leading-snug text-ink
+           group-hover:text-cta sm:text-sm;
+  }
+  .carte-compte {
+    @apply mt-auto pt-2.5 text-[11px] text-ink-400;
+  }
+
+  /* La barre de recherche en pilule et les ronds d'icones de l'en-tete. */
+  .pilule-recherche {
+    @apply flex items-center rounded-full border border-border bg-white shadow-sm transition
+           focus-within:border-cta/40 focus-within:shadow-md;
+  }
+  .rond-icone {
+    @apply inline-flex h-11 w-11 items-center justify-center rounded-full bg-ink-100 text-ink-600
+           transition hover:bg-ink-200 hover:text-ink;
   }
 }

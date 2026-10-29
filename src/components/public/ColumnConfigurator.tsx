@@ -172,7 +172,7 @@ function QtyStepper({ label, value, onChange, decLabel, incLabel }: {
   decLabel: string; incLabel: string
 }) {
   const clamp = (n: number) => Math.max(QTY_MIN, Math.min(QTY_MAX, n))
-  const btn = 'inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-input bg-background text-foreground transition hover:border-brand hover:bg-brand hover:text-white disabled:pointer-events-none disabled:opacity-40'
+  const btn = 'inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-input bg-background text-foreground transition hover:border-ink hover:bg-ink hover:text-white disabled:pointer-events-none disabled:opacity-40'
   return (
     <div className="space-y-1.5">
       <Label htmlFor="col-qty">{label} *</Label>
@@ -282,7 +282,7 @@ export function ColumnConfigurator() {
       <label htmlFor="col-free" className="mt-5 flex cursor-pointer items-start gap-2.5 rounded-sm border border-border bg-muted/30 p-3 text-sm">
         <input id="col-free" type="checkbox" checked={freeMode}
                onChange={(e) => setFreeMode(e.target.checked)}
-               className="mt-0.5 h-4 w-4 shrink-0 accent-[hsl(var(--brand,210_72%_37%))]" />
+               className="mt-0.5 h-4 w-4 shrink-0 accent-[hsl(var(--ink,210_72%_37%))]" />
         <span className="text-muted-foreground">{t.freeToggle}</span>
       </label>
 
@@ -291,7 +291,7 @@ export function ColumnConfigurator() {
         <div className="mt-5 inline-flex rounded-lg border border-border p-1">
           {(['HPLC', 'GC', 'SPE'] as ColType[]).map((v) => (
             <button key={v} type="button" onClick={() => switchType(v)}
-              className={`rounded-md px-5 py-1.5 text-sm font-semibold transition ${type === v ? 'bg-brand text-white' : 'text-muted-foreground hover:text-foreground'}`}>
+              className={`rounded-md px-5 py-1.5 text-sm font-semibold transition ${type === v ? 'bg-ink text-white' : 'text-muted-foreground hover:text-foreground'}`}>
               {v}
             </button>
           ))}
@@ -358,8 +358,8 @@ export function ColumnConfigurator() {
 
       {/* Live summary */}
       {valid && !freeMode && (
-        <div className="mt-5 rounded-sm border border-brand/20 bg-brand/5 p-3 text-sm">
-          <span className="font-semibold text-brand">{t.summary} : </span>{buildName()}
+        <div className="mt-5 rounded-sm border border-ink/20 bg-ink/5 p-3 text-sm">
+          <span className="font-semibold text-ink">{t.summary} : </span>{buildName()}
         </div>
       )}
 
@@ -367,7 +367,7 @@ export function ColumnConfigurator() {
         <p className="text-[11px] text-muted-foreground">{freeMode ? t.freeHint : t.hint}</p>
         <div className="flex items-center gap-3">
           {cart.ready && cart.count > 0 && (
-            <Link href={devisHref} className="text-sm font-medium text-brand underline-offset-2 hover:underline">{t.goQuote} ({cart.count})</Link>
+            <Link href={devisHref} className="text-sm font-medium text-ink underline-offset-2 hover:underline">{t.goQuote} ({cart.count})</Link>
           )}
           <Button type="button" size="lg" onClick={onAdd} disabled={!valid}>
             {justAdded ? <IconCheck size={16} /> : <IconShoppingCartPlus size={16} />}

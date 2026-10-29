@@ -40,6 +40,16 @@ function itemPath(item: HeaderNavItem): string {
   return `/${item.slug}`
 }
 
+/**
+ * L'en-tete, sur la structure de carlroth.com : une fine barre de service, puis
+ * un bandeau blanc qui porte le logo, la baseline, la grande pilule de recherche
+ * et les ronds d'icones, et enfin une barre de navigation en texte simple.
+ *
+ * ⚠️ La barre de navigation n'est PLUS un aplat de couleur. Le modele pose des
+ * liens noirs sur blanc entre deux filets gris ; un bandeau colore sous le
+ * bandeau blanc faisait deux barres empilees, et le rouge y aurait concurrence
+ * les boutons d'action — or dans ce theme le rouge ne sert qu'a agir.
+ */
 export function Header({ brand, items, contact }: Props) {
   const pathname = usePathname() ?? '/'
   const [open, setOpen]         = useState(false)
@@ -56,89 +66,103 @@ export function Header({ brand, items, contact }: Props) {
 
   const cta   = items.find((i) => i.isCta)
   const links = items.filter((i) => !i.isCta)
-  // Le logo est heberge hors du site : s'il ne charge pas, on retombe sur la
-  // pastille Ω plutot que d'afficher l'icone d'image cassee du navigateur.
-  const [logoCasse, setLogoCasse] = useState(false)
+
+  // Le logo est heberge hors du site, et le stockage Supabase repond en HTTP 402
+  // depuis l'incident de quota : le repli n'est pas theorique, c'est ce qui
+  // s'affiche aujourd'hui.
+  //
+  // ⚠️ On n'attend PAS `onError` pour basculer. Teste : l'image echoue avant que
+  // React n'ait attache son gestionnaire, et le navigateur laissait sa vignette
+  // d'image cassee en haut de chaque page. On fait l'inverse — la pastille Ω est
+  // la par defaut, et l'image ne prend sa place qu'une fois CHARGEE.
+  const [logoCharge, setLogoCharge] = useState(false)
 
   return (
     <header
       className={cn(
-        // The header itself is not sticky (the tall logo row scrolls away);
-        // only the navy menu bar below sticks to the top — see its classes.
-        'relative z-40 w-full transition-shadow',
-        scrolled
-          ? 'border-b border-border bg-background/95 shadow-sm backdrop-blur'
-          : 'bg-background/95 backdrop-blur',
+        'relative z-40 w-full bg-card transition-shadow',
+        scrolled && 'shadow-sm',
       )}
     >
       {/* ── Barre de service ──────────────────────────────────────────────
-          Le marine le plus sombre de la palette, pour que le bandeau logo
-          blanc qui suit paraisse poser dessus. Masquee sous `sm` : sur un
-          telephone, ces deux lignes mangeaient un tiers du premier ecran. */}
-      <div className="hidden bg-brand-800 text-white/80 sm:block">
+          Masquee sous `sm` : sur un telephone, ces deux lignes mangeaient un
+          tiers du premier ecran. */}
+      <div className="hidden border-b border-border bg-surface text-ink-500 sm:block">
         <Container>
           <div className="flex h-9 items-center justify-between gap-4 text-[12px]">
             <div className="flex items-center gap-5">
               {contact?.phone && (
-                <a href={`tel:${contact.phone.replace(/\s+/g, '')}`} className="inline-flex items-center gap-1.5 transition hover:text-white">
+                <a href={`tel:${contact.phone.replace(/\s+/g, '')}`} className="inline-flex items-center gap-1.5 transition hover:text-cta">
                   <IconPhone size={13} /> {contact.phone}
                 </a>
               )}
               {contact?.email && (
-                <a href={`mailto:${contact.email}`} className="inline-flex items-center gap-1.5 transition hover:text-white">
+                <a href={`mailto:${contact.email}`} className="inline-flex items-center gap-1.5 transition hover:text-cta">
                   <IconMail size={13} /> {contact.email}
                 </a>
               )}
             </div>
-            {brand.tagline && (
-              <span className="hidden truncate text-white/60 lg:block">{brand.tagline}</span>
-            )}
+            <LocaleSwitcher />
           </div>
         </Container>
       </div>
 
+      {/* ── Bandeau principal ─────────────────────────────────────────── */}
       <Container>
-        <div className="flex min-h-16 items-center justify-between gap-4 py-2">
-          <Link href="/" className="flex shrink-0 items-center gap-2">
-            {brand.logoUrl && !logoCasse ? (
-              // 397x320 px et 191 ko a la source, affiche a 96 px de haut : sans
-              // optimisation on telechargeait le logo pleine taille sur CHAQUE page.
-              // `priority` car il est au-dessus de la ligne de flottaison.
-              <Image
-                src={brand.logoUrl}
-                alt={brand.siteName}
-                width={397}
-                height={320}
-                priority
-                onError={() => setLogoCasse(true)}
-                className="h-24 w-auto object-contain sm:h-28"
-              />
-            ) : (
-              <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand text-base font-bold text-white">
-                Ω
-              </span>
-            )}
-            {/* Le nom seul : l'accroche est remontee dans la barre de service,
-                ou elle ne concurrence plus le logo. */}
-            <span className="hidden text-sm font-bold uppercase tracking-wide text-brand md:block">
-              {brand.siteName}
+        <div className="flex min-h-[5.5rem] items-center gap-4 py-3 lg:gap-8">
+          <Link href="/" className="flex shrink-0 items-center gap-3">
+            <span className="relative grid h-16 place-items-center sm:h-[4.5rem]">
+              {/* Le repli : un carre rouge frappe d'un Ω, dans l'esprit du carre
+                  de marque du modele. Il tient la place tant que le vrai logo
+                  n'est pas la — et il la garde si le logo ne vient jamais. */}
+              {!logoCharge && (
+                <span className="grid h-14 w-14 place-items-center rounded-md bg-cta text-2xl font-bold text-white">
+                  Ω
+                </span>
+              )}
+              {brand.logoUrl && (
+                // 397x320 px a la source, affiche a 64 px de haut : sans
+                // optimisation on telechargeait le logo pleine taille sur CHAQUE
+                // page. `priority` car il est au-dessus de la ligne de flottaison.
+                <Image
+                  src={brand.logoUrl}
+                  alt={brand.siteName}
+                  width={397}
+                  height={320}
+                  priority
+                  onLoad={(e) => {
+                    // Une image en erreur peut quand meme declencher `load` sur
+                    // certains navigateurs : on ne bascule que si elle a de
+                    // vraies dimensions.
+                    if (e.currentTarget.naturalWidth > 0) setLogoCharge(true)
+                  }}
+                  className={cn(
+                    'h-16 w-auto object-contain sm:h-[4.5rem]',
+                    logoCharge ? 'block' : 'absolute opacity-0',
+                  )}
+                />
+              )}
             </span>
           </Link>
 
-          {/* Search bar (Reagecon-style), centered between logo and actions.
-              Shown inline only on desktop (lg+). On tablet/mobile it moves to its
-              own full-width row just below (so it never collides with the actions). */}
-          <div className="hidden flex-1 justify-center px-4 lg:flex">
-            <SearchBar className="max-w-xl" />
+          {/* La baseline, en rouge et en italique gras comme chez le modele.
+              Elle tient au-dessus de la recherche sur grand ecran, et disparait
+              en dessous de `lg` ou la place manque. */}
+          <div className="hidden min-w-0 flex-1 flex-col gap-2 lg:flex">
+            {brand.tagline && (
+              <p className="truncate text-[17px] font-bold italic leading-none text-cta">
+                {brand.tagline}
+              </p>
+            )}
+            <SearchBar className="max-w-2xl" />
           </div>
 
-          <div className="flex shrink-0 items-center gap-2">
+          <div className="ms-auto flex shrink-0 items-center gap-2">
             <CartWidget />
-            <LocaleSwitcher />
             {cta && (
               <Button
                 asChild
-                className="hidden whitespace-nowrap bg-cta uppercase tracking-wide text-white hover:bg-cta-600 sm:inline-flex"
+                className="hidden whitespace-nowrap rounded-full bg-cta px-6 text-white hover:bg-cta-600 sm:inline-flex"
               >
                 <Link href={itemPath(cta)}>{cta.label}</Link>
               </Button>
@@ -146,7 +170,7 @@ export function Header({ brand, items, contact }: Props) {
             <button
               type="button"
               onClick={() => setOpen((s) => !s)}
-              className="grid h-10 w-10 place-items-center rounded-lg text-foreground hover:bg-accent lg:hidden"
+              className="rond-icone lg:hidden"
               aria-label="Menu"
               aria-expanded={open}
             >
@@ -156,22 +180,23 @@ export function Header({ brand, items, contact }: Props) {
         </div>
       </Container>
 
-      {/* Search row for tablet/mobile (< lg): full width, always visible,
-          so the search stays prominent without crowding the actions row. */}
+      {/* La recherche sur sa propre ligne en dessous de `lg`, pour ne jamais
+          entrer en collision avec les actions. */}
       <div className="border-t border-border lg:hidden">
         <Container>
-          <div className="py-2">
+          <div className="py-2.5">
             <SearchBar />
           </div>
         </Container>
       </div>
 
-      {/* Desktop menu bar — navy, full width (Reagecon-style).
-          Sticks to the top alone so the page content is never hidden
-          behind the tall logo row. */}
-      <div className="hidden bg-brand shadow-sm lg:sticky lg:top-0 lg:z-40 lg:block">
+      {/* ── Barre de navigation ───────────────────────────────────────────
+          Texte simple entre deux filets, comme « Assortment · Sale · New … »
+          chez le modele. Elle colle seule en haut, pour que le contenu ne
+          disparaisse jamais derriere le haut bandeau du logo. */}
+      <div className="hidden border-y border-border bg-card lg:sticky lg:top-0 lg:z-40 lg:block">
         <Container>
-          <nav className="flex flex-wrap items-stretch">
+          <nav className="flex flex-wrap items-stretch gap-x-2">
             {links.map((it) => {
               const path = itemPath(it)
               const isActive = pathname === path || (path !== '/' && pathname.startsWith(path))
@@ -180,14 +205,13 @@ export function Header({ brand, items, contact }: Props) {
                   key={it.id}
                   href={path}
                   className={cn(
-                    // Le filet cyan sous l'onglet actif remplace la pastille
-                    // arrondie : il raccroche la barre a la page sans rien
-                    // ajouter au survol, et tient dans 2 px de hauteur.
-                    'relative whitespace-nowrap px-4 py-3.5 text-[13px] font-semibold uppercase tracking-wide transition',
+                    // Le filet rouge sous l'onglet actif : il raccroche la barre
+                    // a la page sans rien ajouter au survol, et tient dans 3 px.
+                    'relative whitespace-nowrap px-3 py-4 text-[15px] transition',
                     'after:absolute after:inset-x-3 after:bottom-0 after:h-[3px] after:transition-colors',
                     isActive
-                      ? 'text-white after:bg-cta'
-                      : 'text-white/80 after:bg-transparent hover:text-white hover:after:bg-white/30',
+                      ? 'font-semibold text-ink after:bg-cta'
+                      : 'text-ink-600 after:bg-transparent hover:text-cta hover:after:bg-cta/30',
                   )}
                 >
                   {it.label}
@@ -198,12 +222,9 @@ export function Header({ brand, items, contact }: Props) {
         </Container>
       </div>
 
-      {/* ── Menu mobile ───────────────────────────────────────────────────
-          Sur fond marine, comme la barre de navigation du bureau : c'est le
-          meme menu, il doit se reconnaitre. Et le filet cyan a gauche de
-          l'entree active reprend celui qui souligne l'onglet sur grand ecran. */}
+      {/* ── Menu mobile ───────────────────────────────────────────────── */}
       {open && (
-        <nav className="bg-brand lg:hidden">
+        <nav className="border-t border-border bg-card lg:hidden">
           <Container>
             <ul className="py-3">
               {links.map((it) => {
@@ -214,10 +235,10 @@ export function Header({ brand, items, contact }: Props) {
                     <Link
                       href={path}
                       className={cn(
-                        'block border-s-[3px] px-4 py-2.5 text-sm font-semibold uppercase tracking-wide transition',
+                        'block border-s-[3px] px-4 py-2.5 text-[15px] transition',
                         isActive
-                          ? 'border-cta bg-white/5 text-white'
-                          : 'border-transparent text-white/75 hover:bg-white/5 hover:text-white',
+                          ? 'border-cta bg-accent font-semibold text-ink'
+                          : 'border-transparent text-ink-600 hover:bg-accent hover:text-ink',
                       )}
                     >
                       {it.label}
@@ -227,7 +248,7 @@ export function Header({ brand, items, contact }: Props) {
               })}
               {cta && (
                 <li className="px-4 pb-1 pt-3">
-                  <Button asChild className="w-full uppercase tracking-wide">
+                  <Button asChild className="w-full rounded-full">
                     <Link href={itemPath(cta)}>{cta.label}</Link>
                   </Button>
                 </li>

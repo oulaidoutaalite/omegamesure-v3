@@ -39,7 +39,7 @@ export function AddToQuoteButton({ item, variant = 'full', className }: Props) {
         aria-label={t('add')}
         title={t('add')}
         className={cn(
-          'inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-border bg-card text-brand transition hover:border-brand hover:bg-brand hover:text-white',
+          'inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-border bg-card text-ink transition hover:border-ink hover:bg-ink hover:text-white',
           className,
         )}
       >
@@ -53,7 +53,7 @@ export function AddToQuoteButton({ item, variant = 'full', className }: Props) {
       type="button"
       onClick={onClick}
       className={cn(
-        'inline-flex items-center justify-center gap-2 rounded-lg border border-brand/30 bg-brand/5 px-5 py-2.5 text-sm font-semibold text-brand transition hover:bg-brand hover:text-white',
+        'inline-flex items-center justify-center gap-2 rounded-lg border border-ink/30 bg-ink/5 px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-ink hover:text-white',
         className,
       )}
     >

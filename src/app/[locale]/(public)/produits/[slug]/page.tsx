@@ -302,9 +302,9 @@ export default async function ProductPage({
           </div>
 
           {product.price !== null && (
-            <div className="rounded-sm border border-brand/20 bg-brand/5 p-5">
+            <div className="rounded-sm border border-ink/20 bg-ink/5 p-5">
               <p className="text-xs uppercase tracking-widest text-muted-foreground">{t('from')}</p>
-              <p className="mt-1 text-3xl font-bold text-brand">
+              <p className="mt-1 text-3xl font-bold text-ink">
                 {Number(product.price).toLocaleString(locale === 'ar' ? 'ar-MA' : locale === 'en' ? 'en-US' : 'fr-FR')} {product.currency}
               </p>
               <p className="mt-1 text-xs text-muted-foreground">{t('shippingNote')}</p>
@@ -346,7 +346,7 @@ export default async function ProductPage({
               le lecteur l'attend — ce qu'il veut savoir apres avoir vu l'objet. */}
           {description && (
             <div className="border-t border-border pt-6">
-              <h2 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-400">
+              <h2 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-400">
                 {t('descriptionTitle')}
               </h2>
               <div className="whitespace-pre-wrap text-[15px] leading-relaxed text-foreground/90">
@@ -359,7 +359,7 @@ export default async function ProductPage({
 
       {specs && specs.rows.length > 0 && (
         <section className="mt-12 border border-border bg-card">
-          <h2 className="border-b border-border bg-brand-50 px-6 py-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-brand">
+          <h2 className="border-b border-border bg-ink-50 px-6 py-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">
             {t('specsTitle')}
           </h2>
           <div className="p-6 sm:p-8">
@@ -373,7 +373,7 @@ export default async function ProductPage({
                         // tableaux comptent parfois vingt lignes et debordent en
                         // largeur, et la ligne d'en-tete se perdait des qu'on
                         // faisait defiler horizontalement.
-                        <th key={j} className="whitespace-nowrap bg-brand px-3.5 py-2.5 text-start text-[12px] font-semibold uppercase tracking-wide text-white">
+                        <th key={j} className="whitespace-nowrap bg-ink px-3.5 py-2.5 text-start text-[12px] font-semibold uppercase tracking-wide text-white">
                           {isoleLtr(enTeteColonne(c), locale)}
                         </th>
                       ))}
@@ -385,7 +385,7 @@ export default async function ProductPage({
                       // perdait sa ligne en passant d'une colonne a l'autre.
                       <tr key={i} className="border-b border-border last:border-0 odd:bg-secondary/50">
                         {row.map((cell, j) => (
-                          <td key={j} className={`px-3.5 py-2.5 align-top ${j === 0 ? 'font-semibold text-brand' : 'text-muted-foreground'}`}>
+                          <td key={j} className={`px-3.5 py-2.5 align-top ${j === 0 ? 'font-semibold text-ink' : 'text-muted-foreground'}`}>
                             {isoleLtr(j === 0 ? translateSpecLabel(cell, locale) : translateSpecValue(cell, locale), locale)}
                           </td>
                         ))}

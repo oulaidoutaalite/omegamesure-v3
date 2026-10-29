@@ -136,7 +136,7 @@ export default async function SearchPage({
       {/* Bandeau marine, comme les autres pages intérieures. Le champ de
           recherche y est repris en grand : sur une page de résultats, c'est
           l'action qu'on vient refaire le plus souvent. */}
-      <section className="bande-marine">
+      <section className="bande-sombre">
         <Container>
           <div className="mx-auto max-w-2xl py-12 text-center sm:py-14">
             <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">{t('title')}</h1>

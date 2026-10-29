@@ -204,7 +204,7 @@ export default async function CategoryPage({
           et le bandeau ne se distinguait pas du reste de la page. La couleur de
           la categorie reste employee la ou elle se lit : les pastilles de
           sous-categories. */}
-      <section className="bande-marine">
+      <section className="bande-sombre">
         <Container>
           <div className="py-8 sm:py-10">
             <nav className="mb-3 text-[12px] text-white/50">
@@ -220,7 +220,7 @@ export default async function CategoryPage({
               <Button
                 asChild
                 variant="outline"
-                className="shrink-0 border-white/30 bg-transparent uppercase tracking-wide text-white hover:bg-white hover:text-brand"
+                className="shrink-0 border-white/30 bg-transparent uppercase tracking-wide text-white hover:bg-white hover:text-ink"
               >
                 <Link href={withLocale('/devis', locale)}>{tCta('requestQuote')}</Link>
               </Button>
@@ -253,8 +253,8 @@ export default async function CategoryPage({
                       scroll={false}
                       className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition ${
                         active
-                          ? 'border-brand bg-brand text-white'
-                          : 'border-border bg-card hover:border-brand/40 hover:bg-accent/40'
+                          ? 'border-ink bg-ink text-white'
+                          : 'border-border bg-card hover:border-ink/40 hover:bg-accent/40'
                       }`}
                     >
                       {tp.name}
@@ -280,8 +280,8 @@ export default async function CategoryPage({
                         scroll={false}
                         className={`inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-sm transition ${
                           active
-                            ? 'border-brand bg-brand/10 font-semibold text-brand'
-                            : 'border-border bg-card text-muted-foreground hover:border-brand/40 hover:text-foreground'
+                            ? 'border-ink bg-ink/10 font-semibold text-ink'
+                            : 'border-border bg-card text-muted-foreground hover:border-ink/40 hover:text-foreground'
                         }`}
                       >
                         {c.name}
@@ -301,7 +301,7 @@ export default async function CategoryPage({
         <Container>
           <header className="mb-5 flex items-end justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-brand">{t('selection')}</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-ink">{t('selection')}</p>
               <h2 className="mt-1 text-2xl font-bold tracking-tight">{selected ? selected.name : t('productsHeading')}</h2>
             </div>
             {selected && !isColumnConfigurator && selected.products.length > 0 && (

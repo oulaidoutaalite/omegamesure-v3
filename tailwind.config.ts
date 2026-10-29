@@ -73,18 +73,48 @@ const config: Config = {
           900: '#060e1e',
         },
 
-        // Accent d'action — cyan. ⚠️ La clef s'appelait `orange` : le nom disait
-        // la couleur, si bien qu'il a fallu reecrire chaque usage en changeant de
-        // teinte. `cta` dit la FONCTION, et traversera le prochain changement.
+        // Accent d'action. ⚠️ La clef s'appelait `orange`, puis a porte du cyan :
+        // le nom disait la COULEUR, si bien qu'il a fallu reecrire chaque usage a
+        // chaque changement de teinte. `cta` dit la FONCTION — c'est ce qui permet
+        // de passer ici du cyan au rouge brique sans toucher un seul appel.
+        //
+        // Rouge brique sobre, volontairement distinct du rouge vif de Carl Roth
+        // (#C8102E) : meme registre, mais ce n'est pas leur marque.
+        // ⚠️ `cta` ne sert nulle part dans l'admin (verifie) : le changer ne
+        // repeint que le site public.
         cta: {
-          DEFAULT: '#0187AC',
-          50:  '#e6f5fa',
-          100: '#c7e9f3',
-          400: '#19a3c9',
-          500: '#0187AC',
-          600: '#01708f',
-          700: '#015a74',
+          DEFAULT: '#9E2A2B',
+          50:  '#fdf4f4',
+          100: '#fae4e4',
+          200: '#f2c3c3',
+          400: '#c0433f',
+          500: '#9E2A2B',
+          600: '#862324',
+          700: '#6b1c1d',
+          900: '#3f1011',
         },
+
+        // Encre — les gris neutres du texte et des aplats du site public.
+        // ⚠️ Ne PAS reutiliser `brand` pour cela : `brand` (marine) habille les
+        // 23 fichiers de l'administration, et en changer la teinte repeindrait
+        // une interface que personne n'a demande de refaire.
+        ink: {
+          DEFAULT: '#1f2328',
+          50:  '#f7f8f8',
+          100: '#eceef0',
+          200: '#d9dde1',
+          300: '#b4bbc2',
+          400: '#78818b',
+          500: '#4d555e',
+          600: '#343b42',
+          700: '#272c32',
+          800: '#1f2328',
+          900: '#14171a',
+        },
+
+        // Le fond de page : le gris tres clair de carlroth.com, releve sur leur
+        // site (rgb(243,244,245)). Les cartes restent blanches par-dessus.
+        surface: '#f3f4f5',
 
         // Accents de section, pour differencier les familles du catalogue.
         teal:   { DEFAULT: '#0EA5A4' },

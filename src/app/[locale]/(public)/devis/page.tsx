@@ -57,7 +57,7 @@ export default async function QuotePage({
     <>
       {/* Même bandeau marine que les pages de catégorie : l'en-tête dit sur
           quelle page on se trouve, et il doit le dire de la même façon partout. */}
-      <section className="bande-marine">
+      <section className="bande-sombre">
         <Container>
           <div className="mx-auto max-w-2xl py-12 text-center sm:py-14">
             <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-cta-400">{t('badge')}</p>
@@ -92,7 +92,7 @@ function TrustItem({
 }: { icon: typeof IconCheck; title: string; text: string }) {
   return (
     <div className="flex gap-3 rounded-sm border border-border bg-card p-4">
-      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-brand/10 text-brand">
+      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-ink/10 text-ink">
         <Icon size={16} />
       </span>
       <div>
