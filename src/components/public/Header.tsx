@@ -1,6 +1,6 @@
 'use client'
 
-import { IconMenu2, IconX } from '@tabler/icons-react'
+import { IconMail, IconMenu2, IconPhone, IconX } from '@tabler/icons-react'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
@@ -29,6 +29,8 @@ export type HeaderBrand = {
 type Props = {
   brand: HeaderBrand
   items: HeaderNavItem[]
+  /** Telephone et courriel, affiches dans la barre de service. */
+  contact?: { phone?: string; email?: string }
 }
 
 /** Locale-agnostic path for a nav item (next-intl's Link adds the locale). */
@@ -38,7 +40,7 @@ function itemPath(item: HeaderNavItem): string {
   return `/${item.slug}`
 }
 
-export function Header({ brand, items }: Props) {
+export function Header({ brand, items, contact }: Props) {
   const pathname = usePathname() ?? '/'
   const [open, setOpen]         = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -69,6 +71,32 @@ export function Header({ brand, items }: Props) {
           : 'bg-background/95 backdrop-blur',
       )}
     >
+      {/* ── Barre de service ──────────────────────────────────────────────
+          Le marine le plus sombre de la palette, pour que le bandeau logo
+          blanc qui suit paraisse poser dessus. Masquee sous `sm` : sur un
+          telephone, ces deux lignes mangeaient un tiers du premier ecran. */}
+      <div className="hidden bg-brand-800 text-white/80 sm:block">
+        <Container>
+          <div className="flex h-9 items-center justify-between gap-4 text-[12px]">
+            <div className="flex items-center gap-5">
+              {contact?.phone && (
+                <a href={`tel:${contact.phone.replace(/\s+/g, '')}`} className="inline-flex items-center gap-1.5 transition hover:text-white">
+                  <IconPhone size={13} /> {contact.phone}
+                </a>
+              )}
+              {contact?.email && (
+                <a href={`mailto:${contact.email}`} className="inline-flex items-center gap-1.5 transition hover:text-white">
+                  <IconMail size={13} /> {contact.email}
+                </a>
+              )}
+            </div>
+            {brand.tagline && (
+              <span className="hidden truncate text-white/60 lg:block">{brand.tagline}</span>
+            )}
+          </div>
+        </Container>
+      </div>
+
       <Container>
         <div className="flex min-h-16 items-center justify-between gap-4 py-2">
           <Link href="/" className="flex shrink-0 items-center gap-2">
@@ -90,12 +118,10 @@ export function Header({ brand, items }: Props) {
                 Ω
               </span>
             )}
-            {/* Brand name + tagline, always shown next to the logo / mark. */}
-            <span className="hidden flex-col leading-tight md:flex">
-              <span className="text-sm font-bold text-brand">{brand.siteName}</span>
-              {brand.tagline && (
-                <span className="text-[10px] text-muted-foreground">{brand.tagline}</span>
-              )}
+            {/* Le nom seul : l'accroche est remontee dans la barre de service,
+                ou elle ne concurrence plus le logo. */}
+            <span className="hidden text-sm font-bold uppercase tracking-wide text-brand md:block">
+              {brand.siteName}
             </span>
           </Link>
 
@@ -112,7 +138,7 @@ export function Header({ brand, items }: Props) {
             {cta && (
               <Button
                 asChild
-                className="hidden whitespace-nowrap bg-orange uppercase tracking-wide text-white hover:bg-orange-600 sm:inline-flex"
+                className="hidden whitespace-nowrap bg-cta uppercase tracking-wide text-white hover:bg-cta-600 sm:inline-flex"
               >
                 <Link href={itemPath(cta)}>{cta.label}</Link>
               </Button>
@@ -143,9 +169,9 @@ export function Header({ brand, items }: Props) {
       {/* Desktop menu bar — navy, full width (Reagecon-style).
           Sticks to the top alone so the page content is never hidden
           behind the tall logo row. */}
-      <div className="hidden border-t border-white/10 bg-brand shadow-sm lg:sticky lg:top-0 lg:z-40 lg:block">
+      <div className="hidden bg-brand shadow-sm lg:sticky lg:top-0 lg:z-40 lg:block">
         <Container>
-          <nav className="flex flex-wrap items-center gap-x-1 gap-y-0.5 py-1.5">
+          <nav className="flex flex-wrap items-stretch">
             {links.map((it) => {
               const path = itemPath(it)
               const isActive = pathname === path || (path !== '/' && pathname.startsWith(path))
@@ -154,10 +180,14 @@ export function Header({ brand, items }: Props) {
                   key={it.id}
                   href={path}
                   className={cn(
-                    'whitespace-nowrap rounded px-3 py-2 text-[13px] font-semibold uppercase tracking-wide transition',
+                    // Le filet cyan sous l'onglet actif remplace la pastille
+                    // arrondie : il raccroche la barre a la page sans rien
+                    // ajouter au survol, et tient dans 2 px de hauteur.
+                    'relative whitespace-nowrap px-4 py-3.5 text-[13px] font-semibold uppercase tracking-wide transition',
+                    'after:absolute after:inset-x-3 after:bottom-0 after:h-[3px] after:transition-colors',
                     isActive
-                      ? 'text-orange'
-                      : 'text-white/90 hover:bg-white/10 hover:text-orange',
+                      ? 'text-white after:bg-cta'
+                      : 'text-white/80 after:bg-transparent hover:text-white hover:after:bg-white/30',
                   )}
                 >
                   {it.label}
@@ -168,11 +198,14 @@ export function Header({ brand, items }: Props) {
         </Container>
       </div>
 
-      {/* Mobile menu */}
+      {/* ── Menu mobile ───────────────────────────────────────────────────
+          Sur fond marine, comme la barre de navigation du bureau : c'est le
+          meme menu, il doit se reconnaitre. Et le filet cyan a gauche de
+          l'entree active reprend celui qui souligne l'onglet sur grand ecran. */}
       {open && (
-        <Container>
-          <nav className="border-t border-border py-3 lg:hidden">
-            <ul className="space-y-1">
+        <nav className="bg-brand lg:hidden">
+          <Container>
+            <ul className="py-3">
               {links.map((it) => {
                 const path = itemPath(it)
                 const isActive = pathname === path || (path !== '/' && pathname.startsWith(path))
@@ -181,8 +214,10 @@ export function Header({ brand, items }: Props) {
                     <Link
                       href={path}
                       className={cn(
-                        'block rounded-md px-3 py-2 text-sm font-semibold uppercase tracking-wide',
-                        isActive ? 'bg-orange/10 text-orange' : 'text-brand hover:bg-accent',
+                        'block border-s-[3px] px-4 py-2.5 text-sm font-semibold uppercase tracking-wide transition',
+                        isActive
+                          ? 'border-cta bg-white/5 text-white'
+                          : 'border-transparent text-white/75 hover:bg-white/5 hover:text-white',
                       )}
                     >
                       {it.label}
@@ -191,15 +226,15 @@ export function Header({ brand, items }: Props) {
                 )
               })}
               {cta && (
-                <li className="pt-2">
-                  <Button asChild className="w-full bg-orange uppercase tracking-wide text-white hover:bg-orange-600">
+                <li className="px-4 pb-1 pt-3">
+                  <Button asChild className="w-full uppercase tracking-wide">
                     <Link href={itemPath(cta)}>{cta.label}</Link>
                   </Button>
                 </li>
               )}
             </ul>
-          </nav>
-        </Container>
+          </Container>
+        </nav>
       )}
     </header>
   )

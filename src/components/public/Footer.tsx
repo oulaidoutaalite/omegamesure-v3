@@ -55,33 +55,35 @@ export async function Footer({
   const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-border bg-slate-50">
-      <Container className="py-12">
+    // Marine profond : le pied de page ferme la page comme la barre de
+    // navigation l'ouvre, et les colonnes de liens y gagnent en lisibilite.
+    <footer className="bg-brand-800 text-white/70">
+      <Container className="py-14">
         <div className="grid gap-10 lg:grid-cols-6">
           {/* Col 1 — Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2">
-              <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand text-base font-bold text-white">Ω</span>
-              <span className="text-sm font-bold text-brand">{siteName}</span>
+            <div className="flex items-center gap-2.5">
+              <span className="grid h-9 w-9 place-items-center bg-cta text-base font-bold text-white">Ω</span>
+              <span className="text-sm font-bold uppercase tracking-wide text-white">{siteName}</span>
             </div>
-            {tagline && <p className="mt-2 text-sm text-muted-foreground">{tagline}</p>}
+            {tagline && <p className="mt-3 text-sm leading-relaxed text-white/60">{tagline}</p>}
 
             {contact.address && (
-              <p className="mt-4 flex items-start gap-2 text-xs text-muted-foreground">
-                <IconMapPin size={14} className="mt-0.5 shrink-0" />
+              <p className="mt-5 flex items-start gap-2.5 text-[13px]">
+                <IconMapPin size={15} className="mt-0.5 shrink-0 text-cta-400" />
                 <span className="whitespace-pre-line">{contact.address}</span>
               </p>
             )}
             {contact.phone && (
-              <p className="mt-1 flex items-center gap-2 text-xs text-muted-foreground">
-                <IconPhone size={14} />
-                <a href={`tel:${contact.phone.replace(/\s+/g, '')}`} className="hover:text-foreground">{contact.phone}</a>
+              <p className="mt-2 flex items-center gap-2.5 text-[13px]">
+                <IconPhone size={15} className="text-cta-400" />
+                <a href={`tel:${contact.phone.replace(/\s+/g, '')}`} className="transition hover:text-white">{contact.phone}</a>
               </p>
             )}
             {contact.email && (
-              <p className="mt-1 flex items-center gap-2 text-xs text-muted-foreground">
-                <IconMail size={14} />
-                <a href={`mailto:${contact.email}`} className="hover:text-foreground">{contact.email}</a>
+              <p className="mt-2 flex items-center gap-2.5 text-[13px]">
+                <IconMail size={15} className="text-cta-400" />
+                <a href={`mailto:${contact.email}`} className="transition hover:text-white">{contact.email}</a>
               </p>
             )}
 
@@ -111,10 +113,10 @@ export async function Footer({
           {/* Col 5 — Certifications */}
           <FooterCol title={t('certifications')}>
             {certifications.length === 0
-              ? <li className="text-xs text-muted-foreground">—</li>
+              ? <li className="text-[13px] text-white/40">—</li>
               : certifications.map((cert) => (
-                  <li key={cert} className="text-xs text-muted-foreground">
-                    <span className="inline-flex items-center rounded-full bg-brand/10 px-2.5 py-0.5 font-medium text-brand">
+                  <li key={cert} className="text-[13px]">
+                    <span className="inline-flex items-center border border-white/15 bg-white/5 px-2.5 py-1 font-medium text-white/80">
                       {cert}
                     </span>
                   </li>
@@ -122,9 +124,9 @@ export async function Footer({
           </FooterCol>
         </div>
 
-        <hr className="my-8 border-border" />
+        <hr className="my-9 border-white/10" />
 
-        <div className="flex flex-col-reverse items-start justify-between gap-4 text-xs text-muted-foreground sm:flex-row sm:items-center">
+        <div className="flex flex-col-reverse items-start justify-between gap-4 text-[12px] text-white/50 sm:flex-row sm:items-center">
           <p>{t('rights', { year, name: siteName })}</p>
           {contact.hours && <p>{contact.hours}</p>}
         </div>
@@ -136,10 +138,10 @@ export async function Footer({
 function FooterCol({ title, children }: { title: string; children: ReactNode }) {
   return (
     <div>
-      <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-foreground">
+      <h4 className="mb-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
         {title}
       </h4>
-      <ul className="space-y-2">{children}</ul>
+      <ul className="space-y-2.5">{children}</ul>
     </div>
   )
 }
@@ -147,7 +149,7 @@ function FooterCol({ title, children }: { title: string; children: ReactNode }) 
 function FooterLink({ href, children }: { href: string; children: ReactNode }) {
   return (
     <li>
-      <Link href={href} className="text-xs text-muted-foreground transition hover:text-brand">
+      <Link href={href} className="text-[13px] text-white/70 transition hover:text-cta-400">
         {children}
       </Link>
     </li>
@@ -165,7 +167,7 @@ function Socials({ links }: { links: FooterSocial }) {
 
   if (items.length === 0) return null
   return (
-    <div className="mt-4 flex items-center gap-2">
+    <div className="mt-6 flex items-center gap-2">
       {items.map(({ url, Icon, label }) => (
         <a
           key={label}
@@ -173,9 +175,9 @@ function Socials({ links }: { links: FooterSocial }) {
           target="_blank"
           rel="noreferrer"
           aria-label={label}
-          className="grid h-8 w-8 place-items-center rounded-md border border-border bg-card text-muted-foreground transition hover:border-brand hover:text-brand"
+          className="grid h-9 w-9 place-items-center border border-white/15 text-white/70 transition hover:border-cta hover:bg-cta hover:text-white"
         >
-          <Icon size={14} />
+          <Icon size={15} />
         </a>
       ))}
     </div>

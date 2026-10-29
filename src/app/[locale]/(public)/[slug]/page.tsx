@@ -198,30 +198,40 @@ export default async function CategoryPage({
   return (
     <>
       <JsonLd data={ld} />
-      {/* Hero */}
-      <section
-        className="border-b border-border py-4 sm:py-5"
-        style={{ background: `linear-gradient(135deg, ${category.color ?? '#185FA5'}10 0%, transparent 100%)` }}
-      >
+      {/* ── Bandeau de categorie ──────────────────────────────────────────
+          Marine, comme l'accueil et le pied de page : la teinte propre a chaque
+          categorie servait de lavis a 6 % sur fond blanc — invisible a l'ecran,
+          et le bandeau ne se distinguait pas du reste de la page. La couleur de
+          la categorie reste employee la ou elle se lit : les pastilles de
+          sous-categories. */}
+      <section className="bande-marine">
         <Container>
-          <nav className="mb-2 text-xs text-muted-foreground">
-            <Link href={withLocale('/', locale)} className="hover:text-foreground">{tCommon('home')}</Link> / {catName}
-          </nav>
-          <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
-            <div className="min-w-0">
-              <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">{catName}</h1>
-              {catDesc && <p className="mt-1.5 max-w-2xl text-sm text-muted-foreground">{catDesc}</p>}
+          <div className="py-8 sm:py-10">
+            <nav className="mb-3 text-[12px] text-white/50">
+              <Link href={withLocale('/', locale)} className="transition hover:text-white">{tCommon('home')}</Link>
+              <span className="mx-1.5">/</span>
+              <span className="text-white/80">{catName}</span>
+            </nav>
+            <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
+              <div className="min-w-0">
+                <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">{catName}</h1>
+                {catDesc && <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-white/70">{catDesc}</p>}
+              </div>
+              <Button
+                asChild
+                variant="outline"
+                className="shrink-0 border-white/30 bg-transparent uppercase tracking-wide text-white hover:bg-white hover:text-brand"
+              >
+                <Link href={withLocale('/devis', locale)}>{tCta('requestQuote')}</Link>
+              </Button>
             </div>
-            <Button asChild variant="outline" className="shrink-0">
-              <Link href={withLocale('/devis', locale)}>{tCta('requestQuote')}</Link>
-            </Button>
+            {isMetrologie && (
+              <div className="mt-6 inline-flex items-start gap-2.5 border border-white/20 bg-white/5 p-4 text-sm text-white/80">
+                <IconCircleCheck size={16} className="mt-0.5 shrink-0 text-cta-400" />
+                <span dangerouslySetInnerHTML={{ __html: t.raw('metrologyNotice') }} />
+              </div>
+            )}
           </div>
-          {isMetrologie && (
-            <div className="mt-4 inline-flex items-start gap-2 rounded-lg border border-brand/20 bg-brand/5 p-3 text-sm">
-              <IconCircleCheck size={16} className="mt-0.5 shrink-0 text-brand" />
-              <span dangerouslySetInnerHTML={{ __html: t.raw('metrologyNotice') }} />
-            </div>
-          )}
         </Container>
       </section>
 
@@ -306,7 +316,7 @@ export default async function CategoryPage({
           {isColumnConfigurator ? (
             <ColumnConfigurator />
           ) : !selected || selected.products.length === 0 ? (
-            <div className="rounded-2xl border border-dashed border-border bg-muted/30 p-12 text-center">
+            <div className="rounded-sm border border-dashed border-border bg-muted/30 p-12 text-center">
               <p className="text-sm text-muted-foreground">{isServiceCategory ? t('serviceOnQuote') : t('noProducts')}</p>
               <Button asChild className="mt-4" variant="outline">
                 <Link href={withLocale('/devis', locale)}>{t('noProductsCta')}</Link>

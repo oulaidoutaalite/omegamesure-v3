@@ -89,7 +89,7 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
 
   if (success) {
     return (
-      <div className="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-10 text-center">
+      <div className="rounded-sm border border-emerald-200 bg-emerald-50/60 p-10 text-center">
         <IconCircleCheck size={40} className="mx-auto text-emerald-600" />
         <h2 className="mt-4 text-xl font-bold tracking-tight">{t('successTitle')}</h2>
         <p className="mt-2 text-sm text-emerald-900/80">
@@ -107,7 +107,7 @@ export function QuoteForm({ config, defaultRequestType, productSlug }: Props) {
   return (
     <form onSubmit={onSubmit} className="space-y-5">
       {hasCart && (
-        <div className="rounded-xl border border-brand/20 bg-brand/5 p-4">
+        <div className="rounded-sm border border-brand/20 bg-brand/5 p-4">
           <p className="mb-2 text-sm font-semibold text-brand">
             {tCart('selectedTitle')} ({cartItems.length})
           </p>

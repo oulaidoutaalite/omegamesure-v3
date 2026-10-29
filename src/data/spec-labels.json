@@ -21523,5 +21523,10 @@
   "fr": "Valeur",
   "en": "Value",
   "ar": "القيمة"
+ },
+ "groupe": {
+  "fr": "Groupe",
+  "en": "Group",
+  "ar": "المجموعة"
  }
 }

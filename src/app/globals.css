@@ -4,36 +4,39 @@
 
 @layer base {
   :root {
-    /* shadcn/ui CSS variables — light theme */
+    /* Jetons shadcn/ui — thème clair, accordés au bleu marine #172D51 et au
+       cyan d'action #0187AC. Les teintes neutres tirent legerement vers le bleu
+       pour ne pas jurer avec les aplats marine. */
     --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
+    --foreground: 214 55% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
+    --card-foreground: 214 55% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 214 55% 14%;
 
-    --primary: 31 82% 53%;             /* action orange #EA8423 (Reagecon-style) */
+    --primary: 194 99% 34%;            /* cyan d'action #0187AC */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 45% 97%;
+    --secondary-foreground: 214 55% 14%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96.5%;
+    --muted-foreground: 213 18% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 207 60% 96%;
+    --accent-foreground: 214 55% 14%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 72% 48%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 246 32% 25%;
+    --border: 213 32% 90%;
+    --input: 213 32% 90%;
+    --ring: 194 99% 34%;
 
-    --radius: 0.5rem;
+    /* Des angles francs : les catalogues d'instrumentation n'arrondissent pas. */
+    --radius: 0.25rem;
   }
 
   .dark {
@@ -69,10 +72,34 @@
   * { @apply border-border; }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background font-sans text-foreground;
     font-feature-settings: 'kern', 'liga', 'calt';
   }
 
+  /* Les titres serrent leur interlettrage : Poppins est large, et sans cette
+     correction les intitules en capitales paraissaient delaves. */
+  h1, h2, h3 { @apply font-semibold tracking-tight; }
+
   /* RTL support for Arabic */
   html[dir='rtl'] body { font-family: var(--font-arabic), system-ui, sans-serif; }
+}
+
+@layer components {
+  /* Le sur-titre qui coiffe chaque section — « PRODUITS », « LE GROUPE ».
+     Un filet cyan le relie au corps du texte. */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-cta;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-6 bg-cta;
+  }
+
+  /* Bande marine pleine largeur, avec un halo discret pour eviter l'aplat mort. */
+  .bande-marine {
+    @apply relative overflow-hidden bg-brand text-white;
+    background-image:
+      radial-gradient(60rem 30rem at 15% -20%, rgb(1 135 172 / 0.30), transparent 60%),
+      radial-gradient(45rem 25rem at 95% 120%, rgb(1 135 172 / 0.18), transparent 60%);
+  }
 }

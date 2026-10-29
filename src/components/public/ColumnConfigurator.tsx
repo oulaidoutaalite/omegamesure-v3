@@ -274,12 +274,12 @@ export function ColumnConfigurator() {
   const selectCls = SELECT_CLS
 
   return (
-    <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
+    <div className="rounded-sm border border-border bg-card p-6 sm:p-8">
       <h3 className="text-xl font-bold tracking-tight">{t.title}</h3>
       <p className="mt-1 text-sm text-muted-foreground">{t.subtitle}</p>
 
       {/* Free-text opt-out */}
-      <label htmlFor="col-free" className="mt-5 flex cursor-pointer items-start gap-2.5 rounded-xl border border-border bg-muted/30 p-3 text-sm">
+      <label htmlFor="col-free" className="mt-5 flex cursor-pointer items-start gap-2.5 rounded-sm border border-border bg-muted/30 p-3 text-sm">
         <input id="col-free" type="checkbox" checked={freeMode}
                onChange={(e) => setFreeMode(e.target.checked)}
                className="mt-0.5 h-4 w-4 shrink-0 accent-[hsl(var(--brand,210_72%_37%))]" />
@@ -358,7 +358,7 @@ export function ColumnConfigurator() {
 
       {/* Live summary */}
       {valid && !freeMode && (
-        <div className="mt-5 rounded-xl border border-brand/20 bg-brand/5 p-3 text-sm">
+        <div className="mt-5 rounded-sm border border-brand/20 bg-brand/5 p-3 text-sm">
           <span className="font-semibold text-brand">{t.summary} : </span>{buildName()}
         </div>
       )}

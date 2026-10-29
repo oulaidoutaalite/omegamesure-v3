@@ -41,12 +41,12 @@ export default async function ContactPage({
 
   return (
     <>
-      <section className="border-b border-border py-12">
+      <section className="bande-marine">
         <Container>
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-brand">{t('badge')}</p>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">{t('heading')}</h1>
-            <p className="mt-3 text-base text-muted-foreground">{t('lead')}</p>
+          <div className="mx-auto max-w-2xl py-12 text-center sm:py-14">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-cta-400">{t('badge')}</p>
+            <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('heading')}</h1>
+            <p className="mt-4 text-[15px] leading-relaxed text-white/70">{t('lead')}</p>
           </div>
         </Container>
       </section>
@@ -72,7 +72,7 @@ export default async function ContactPage({
             </aside>
 
             <div className="lg:col-span-2">
-              <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
+              <div className="rounded-sm border border-border bg-card p-6 sm:p-8">
                 <h2 className="mb-5 text-lg font-semibold">{tForm('title')}</h2>
                 <ContactForm />
               </div>
@@ -80,7 +80,7 @@ export default async function ContactPage({
           </div>
 
           {mapUrl && (
-            <div className="mt-10 overflow-hidden rounded-2xl border border-border">
+            <div className="mt-10 overflow-hidden rounded-sm border border-border">
               <iframe src={mapUrl} title="Localisation"
                       className="h-[360px] w-full"
                       loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
@@ -114,10 +114,10 @@ function ContactRow({
   )
   if (href) {
     return (
-      <a href={href} className="flex gap-3 rounded-xl border border-border bg-card p-4 transition hover:border-brand/40">
+      <a href={href} className="flex gap-3 rounded-sm border border-border bg-card p-4 transition hover:border-brand/40">
         {content}
       </a>
     )
   }
-  return <div className="flex gap-3 rounded-xl border border-border bg-card p-4">{content}</div>
+  return <div className="flex gap-3 rounded-sm border border-border bg-card p-4">{content}</div>
 }

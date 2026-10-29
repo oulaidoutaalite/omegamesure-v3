@@ -71,6 +71,7 @@ export default async function PublicLayout({
       <Header
         brand={{ siteName: brand.siteName, tagline: brand.tagline, logoUrl: brand.logoUrl }}
         items={items}
+        contact={{ phone: contact.phone, email: contact.email }}
       />
       <main>{children}</main>
       <Footer

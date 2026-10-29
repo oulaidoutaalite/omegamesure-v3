@@ -247,11 +247,15 @@ export default async function ProductPage({
         {' / '}{name}
       </nav>
 
-      <div className="grid gap-10 lg:grid-cols-2">
-        {/* Gallery */}
-        <div className="space-y-3">
+      {/* `items-start` : sans lui, la colonne photo s'etire sur toute la hauteur
+          du descriptif, et son cadre descendait tres bas dans le vide. */}
+      <div className="grid items-start gap-10 lg:grid-cols-2">
+        {/* Gallery — collante : le descriptif peut faire trente lignes, et la
+            photo doit rester sous les yeux pendant qu'on le lit. `top-28` degage
+            la barre de navigation, elle-meme collante. */}
+        <div className="space-y-3 lg:sticky lg:top-28">
           {/* `relative` est requis par `fill` ; il ne change rien au rendu. */}
-          <div className="relative aspect-square overflow-hidden rounded-2xl border border-border bg-muted">
+          <div className="relative aspect-square overflow-hidden rounded-sm border border-border bg-muted">
             {main ? (
               // Image principale : candidate LCP de la fiche, donc `priority`.
               // Source en 1110–1450 px pour un affichage de ~600 px au plus.
@@ -298,7 +302,7 @@ export default async function ProductPage({
           </div>
 
           {product.price !== null && (
-            <div className="rounded-2xl border border-brand/20 bg-brand/5 p-5">
+            <div className="rounded-sm border border-brand/20 bg-brand/5 p-5">
               <p className="text-xs uppercase tracking-widest text-muted-foreground">{t('from')}</p>
               <p className="mt-1 text-3xl font-bold text-brand">
                 {Number(product.price).toLocaleString(locale === 'ar' ? 'ar-MA' : locale === 'en' ? 'en-US' : 'fr-FR')} {product.currency}
@@ -327,55 +331,74 @@ export default async function ProductPage({
           {product.category && (
             <p className="text-xs text-muted-foreground">
               {t('categoryLabel')}{' '}
-              <Link href={withLocale(`/${product.category.slug}`, locale)} className="text-brand hover:underline">
+              <Link href={withLocale(`/${product.category.slug}`, locale)} className="text-cta hover:underline">
                 {catName}
               </Link>
               {subCatName && <> · {subCatName}</>}
             </p>
           )}
+
+          {/* ⚠️ Le descriptif vit ICI, a cote de la photo, et non plus dans une
+              section a part sous le tableau de specifications. La plupart de nos
+              fiches n'ont ni prix (« prix sur demande ») ni accroche courte : la
+              colonne de droite se reduisait alors au titre et a deux boutons, et
+              laissait un grand vide face a une photo carree. C'est aussi la que
+              le lecteur l'attend — ce qu'il veut savoir apres avoir vu l'objet. */}
+          {description && (
+            <div className="border-t border-border pt-6">
+              <h2 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-400">
+                {t('descriptionTitle')}
+              </h2>
+              <div className="whitespace-pre-wrap text-[15px] leading-relaxed text-foreground/90">
+                {description}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
       {specs && specs.rows.length > 0 && (
-        <section className="mt-12 rounded-2xl border border-border bg-card p-8">
-          <h2 className="mb-4 text-base font-semibold">{t('specsTitle')}</h2>
-          {[specs, ...(specs.extra ?? [])].map((tbl, k) => (
-            <div key={k} className={`overflow-x-auto${k > 0 ? ' mt-8' : ''}`}>
-              <table className="w-full border-collapse text-sm">
-                <thead>
-                  <tr>
-                    {tbl.columns.map((c, j) => (
-                      <th key={j} className="whitespace-nowrap border-b-2 border-brand px-3 py-2 text-start font-semibold text-brand">
-                        {isoleLtr(enTeteColonne(c), locale)}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {tbl.rows.map((row, i) => (
-                    <tr key={i} className="border-b border-border last:border-0">
-                      {row.map((cell, j) => (
-                        <td key={j} className={`px-3 py-2 align-top ${j === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground'}`}>
-                          {isoleLtr(j === 0 ? translateSpecLabel(cell, locale) : translateSpecValue(cell, locale), locale)}
-                        </td>
+        <section className="mt-12 border border-border bg-card">
+          <h2 className="border-b border-border bg-brand-50 px-6 py-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-brand">
+            {t('specsTitle')}
+          </h2>
+          <div className="p-6 sm:p-8">
+            {[specs, ...(specs.extra ?? [])].map((tbl, k) => (
+              <div key={k} className={`overflow-x-auto${k > 0 ? ' mt-10' : ''}`}>
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr>
+                      {tbl.columns.map((c, j) => (
+                        // En-tete sur fond marine plutot qu'un simple filet : ces
+                        // tableaux comptent parfois vingt lignes et debordent en
+                        // largeur, et la ligne d'en-tete se perdait des qu'on
+                        // faisait defiler horizontalement.
+                        <th key={j} className="whitespace-nowrap bg-brand px-3.5 py-2.5 text-start text-[12px] font-semibold uppercase tracking-wide text-white">
+                          {isoleLtr(enTeteColonne(c), locale)}
+                        </th>
                       ))}
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          ))}
-        </section>
-      )}
-
-      {description && (
-        <section className="mt-12 rounded-2xl border border-border bg-card p-8">
-          <h2 className="mb-4 text-base font-semibold">{t('descriptionTitle')}</h2>
-          <div className="prose prose-sm max-w-none whitespace-pre-wrap text-foreground">
-            {description}
+                  </thead>
+                  <tbody>
+                    {tbl.rows.map((row, i) => (
+                      // Une ligne sur deux teintee : sur un tableau large, l'oeil
+                      // perdait sa ligne en passant d'une colonne a l'autre.
+                      <tr key={i} className="border-b border-border last:border-0 odd:bg-secondary/50">
+                        {row.map((cell, j) => (
+                          <td key={j} className={`px-3.5 py-2.5 align-top ${j === 0 ? 'font-semibold text-brand' : 'text-muted-foreground'}`}>
+                            {isoleLtr(j === 0 ? translateSpecLabel(cell, locale) : translateSpecValue(cell, locale), locale)}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ))}
           </div>
         </section>
       )}
+
 
       {[
         { cle: 'sondes', titre: t('probesTitle', { n: sondes.length }), items: sondes },

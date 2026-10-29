@@ -55,31 +55,38 @@ const config: Config = {
           foreground:'hsl(var(--card-foreground))',
         },
 
-        // Brand palette — Omega Mesure (navy, Reagecon-inspired theme)
+        // Brand palette — Omega Mesure.
+        // Bleu marine profond, la couleur des catalogues d'instrumentation : elle
+        // tient sur de grands aplats sans fatiguer, et laisse les photos de
+        // produits (presque toutes detourees sur blanc) ressortir franchement.
         brand: {
-          DEFAULT: '#2E2A52',
-          50:  '#f2f2f7',
-          100: '#e4e3ee',
-          200: '#c7c5dc',
-          300: '#a09cc1',
-          400: '#6f6a9c',
-          500: '#494472',
-          600: '#2E2A52',  // primary navy
-          700: '#262247',
-          800: '#1d1a39',
-          900: '#15132b',
+          DEFAULT: '#172D51',
+          50:  '#f2f6fb',
+          100: '#e3ebf4',
+          200: '#c3d3e5',
+          300: '#8fa9c7',
+          400: '#3c5b8e',
+          500: '#24406e',
+          600: '#172D51',  // marine principal
+          700: '#112340',
+          800: '#0b1830',
+          900: '#060e1e',
         },
 
-        // Accent — warm orange (Reagecon-style action color)
-        orange: {
-          DEFAULT: '#EA8423',
-          50:  '#fdf3e8',
-          400: '#f0993f',
-          500: '#EA8423',
-          600: '#cf6f12',
+        // Accent d'action — cyan. ⚠️ La clef s'appelait `orange` : le nom disait
+        // la couleur, si bien qu'il a fallu reecrire chaque usage en changeant de
+        // teinte. `cta` dit la FONCTION, et traversera le prochain changement.
+        cta: {
+          DEFAULT: '#0187AC',
+          50:  '#e6f5fa',
+          100: '#c7e9f3',
+          400: '#19a3c9',
+          500: '#0187AC',
+          600: '#01708f',
+          700: '#015a74',
         },
 
-        // Section accents
+        // Accents de section, pour differencier les familles du catalogue.
         teal:   { DEFAULT: '#0EA5A4' },
         coral:  { DEFAULT: '#F06A5C' },
         purple: { DEFAULT: '#7C3AED' },
@@ -90,8 +97,13 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
         arabic: ['var(--font-arabic)', 'system-ui', 'sans-serif'],
+      },
+      boxShadow: {
+        // Ombres basses et larges : une carte posee sur la page, pas flottante.
+        card: '0 1px 2px rgb(23 45 81 / 0.06), 0 8px 24px -12px rgb(23 45 81 / 0.18)',
+        'card-hover': '0 2px 4px rgb(23 45 81 / 0.08), 0 16px 40px -16px rgb(23 45 81 / 0.28)',
       },
       keyframes: {
         'accordion-down': {

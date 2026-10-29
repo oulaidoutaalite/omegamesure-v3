@@ -27,12 +27,15 @@ export function SearchBar({ className }: { className?: string }) {
         onChange={(e) => setQ(e.target.value)}
         placeholder={t('placeholder')}
         aria-label={t('button')}
-        className="min-w-0 flex-1 bg-[#e7e1d9] px-5 py-3 text-[15px] italic text-foreground placeholder:text-muted-foreground/80 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange/50"
+        // Le beige de l'ancien theme jurait avec le marine : un gris bleute tres
+        // clair, borde, tient mieux a cote du bouton cyan. Et pas d'italique :
+        // il donnait au champ un air de citation plutot que de champ de saisie.
+        className="min-w-0 flex-1 border border-r-0 border-border bg-secondary px-5 py-3 text-[15px] text-foreground placeholder:text-muted-foreground focus:border-cta focus:outline-none focus:ring-1 focus:ring-inset focus:ring-cta"
       />
       <button
         type="submit"
         aria-label={t('button')}
-        className="grid shrink-0 place-items-center bg-orange px-5 text-white transition hover:bg-orange-600"
+        className="grid shrink-0 place-items-center bg-cta px-5 text-white transition hover:bg-cta-600"
       >
         <IconSearch size={20} />
       </button>

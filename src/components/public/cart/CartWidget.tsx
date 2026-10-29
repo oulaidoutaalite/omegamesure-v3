@@ -45,7 +45,7 @@ export function CartWidget() {
       >
         <IconShoppingCart size={20} />
         {cart.ready && cart.count > 0 && (
-          <span className="absolute -right-0.5 -top-0.5 grid h-4 min-w-4 place-items-center rounded-full bg-orange px-1 text-[10px] font-bold leading-none text-white">
+          <span className="absolute -right-0.5 -top-0.5 grid h-4 min-w-4 place-items-center rounded-full bg-cta px-1 text-[10px] font-bold leading-none text-white">
             {cart.count}
           </span>
         )}
@@ -126,7 +126,7 @@ export function CartWidget() {
 
             {cart.items.length > 0 && (
               <div className="space-y-2 border-t border-border p-4">
-                <Button asChild className="w-full bg-orange uppercase tracking-wide text-white hover:bg-orange-600">
+                <Button asChild className="w-full bg-cta uppercase tracking-wide text-white hover:bg-cta-600">
                   <Link href="/devis" onClick={() => setOpen(false)}>
                     <IconFileInvoice size={16} /> {t('requestQuote')}
                   </Link>

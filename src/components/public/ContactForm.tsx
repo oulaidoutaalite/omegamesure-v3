@@ -35,7 +35,7 @@ export function ContactForm() {
 
   if (success) {
     return (
-      <div className="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-10 text-center">
+      <div className="rounded-sm border border-emerald-200 bg-emerald-50/60 p-10 text-center">
         <IconCircleCheck size={40} className="mx-auto text-emerald-600" />
         <h2 className="mt-4 text-xl font-bold tracking-tight">{t('successTitle')}</h2>
         <p className="mt-2 text-sm text-emerald-900/80">{t('successBody')}</p>

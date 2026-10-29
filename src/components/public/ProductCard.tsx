@@ -41,7 +41,10 @@ export async function ProductCard({
     <Link
       href={withLocale(`/produits/${data.slug}`, locale)}
       className={cn(
-        'group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:-translate-y-0.5 hover:shadow-md',
+        // Angles francs et ombre basse : la carte se pose sur la page au lieu
+        // de flotter, et s'accorde aux vignettes de categorie et aux bandeaux,
+        // tous a angles vifs depuis le passage au theme marine.
+        'group flex flex-col overflow-hidden rounded-sm border border-border bg-card transition hover:-translate-y-0.5 hover:border-cta/40 hover:shadow-card-hover',
         className,
       )}
     >

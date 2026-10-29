@@ -42,7 +42,13 @@
     "statExperience": "Années d'expérience",
     "statMetrology": "Métrologie sur site",
     "statMetrologyValue": "Toutes marques",
-    "productCount": "{count, plural, =0 {0 produit} one {1 produit} other {# produits}}"
+    "productCount": "{count, plural, =0 {0 produit} one {1 produit} other {# produits}}",
+    "statFamilies": "Familles au catalogue",
+    "servicesTitle": "Nos prestations",
+    "servicesHeading": "Étalonnage, qualification, accompagnement",
+    "servicesLead": "Au-delà de la fourniture, nous intervenons sur site pour l'étalonnage de vos instruments et l'accompagnement de vos démarches qualité.",
+    "supportTitle": "Une question ? Un conseil ?",
+    "supportLead": "Notre équipe technique vous oriente sur le choix d'un instrument, ses accessoires et sa mise en service."
   },
   "category": {
     "subCategoriesTitle": "Sous-catégories",

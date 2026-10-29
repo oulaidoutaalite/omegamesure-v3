@@ -1,15 +1,21 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import { headers } from 'next/headers'
 import type { ReactNode } from 'react'
 
 import { defaultLocale, isLocale, isRtl } from '@/i18n'
 import './globals.css'
 
-const inter = Inter({
-  subsets: ['latin'],
+// Poppins : geometrique, large, et lisible en capitales — ce que demandent les
+// intitules courts du catalogue (« INSTRUMENTS DE MESURE », « MÉTROLOGIE »).
+// ⚠️ Les graisses sont enumerees : Poppins n'a pas d'axe variable chez Google,
+// et sans cette liste Next ne telecharge que le 400, si bien que les titres
+// s'affichaient en faux gras synthetise par le navigateur.
+const poppins = Poppins({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '500', '600', '700', '800'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-sans',
 })
 
 export const metadata: Metadata = {
@@ -45,7 +51,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html
       lang={locale}
       dir={isRtl(locale) ? 'rtl' : 'ltr'}
-      className={inter.variable}
+      className={poppins.variable}
       suppressHydrationWarning
     >
       <body>{children}</body>

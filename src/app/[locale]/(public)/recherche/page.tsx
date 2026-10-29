@@ -132,23 +132,31 @@ export default async function SearchPage({
   })
 
   return (
-    <Container className="py-10 lg:py-14">
-      <header className="mx-auto max-w-2xl text-center">
-        <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">{t('title')}</h1>
-        <div className="mt-5">
-          <SearchBar />
-        </div>
-        {q && (
-          <p className="mt-4 text-sm text-muted-foreground">
-            {t('resultsFor')} <span className="font-medium text-foreground">« {q} »</span>
-            {' · '}{t('count', { n: products.length })}
-          </p>
-        )}
-      </header>
+    <>
+      {/* Bandeau marine, comme les autres pages intérieures. Le champ de
+          recherche y est repris en grand : sur une page de résultats, c'est
+          l'action qu'on vient refaire le plus souvent. */}
+      <section className="bande-marine">
+        <Container>
+          <div className="mx-auto max-w-2xl py-12 text-center sm:py-14">
+            <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">{t('title')}</h1>
+            <div className="mt-6">
+              <SearchBar />
+            </div>
+            {q && (
+              <p className="mt-4 text-sm text-white/70">
+                {t('resultsFor')} <span className="font-semibold text-white">« {q} »</span>
+                {' · '}{t('count', { n: products.length })}
+              </p>
+            )}
+          </div>
+        </Container>
+      </section>
 
-      <section className="mt-10">
+      <Container className="py-10 lg:py-14">
+      <section>
         {q && products.length === 0 ? (
-          <div className="rounded-2xl border border-dashed border-border bg-muted/30 p-12 text-center">
+          <div className="rounded-sm border border-dashed border-border bg-muted/30 p-12 text-center">
             <IconSearch className="mx-auto h-8 w-8 text-muted-foreground" />
             <p className="mt-3 text-sm text-muted-foreground">{t('noResults')}</p>
           </div>
@@ -159,7 +167,8 @@ export default async function SearchPage({
             ))}
           </ul>
         )}
-      </section>
-    </Container>
+        </section>
+      </Container>
+    </>
   )
 }
