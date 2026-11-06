@@ -5,6 +5,15 @@
 
 generator client {
   provider = "prisma-client-js"
+
+  // ⚠️ Sans cette ligne, `native` fait choisir a Prisma le moteur
+  // `linux-musl`, qui est lie a OpenSSL 1.1 — absent de `node:20-alpine`
+  // (Alpine 3.19 livre OpenSSL 3). Le conteneur demarrait puis rendait des
+  // HTTP 500 avec :
+  //   Error loading shared library libssl.so.1.1: No such file or directory
+  // `native` reste en tete pour que le developpement sous Windows/macOS
+  // continue de fonctionner.
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
 }
 
 datasource db {

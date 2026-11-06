@@ -39,7 +39,10 @@ RUN npx prisma generate && npx next build
 
 FROM node:20-alpine AS runner
 WORKDIR /app
-RUN apk add --no-cache libc6-compat
+# ⚠️ `openssl` n'est pas decoratif : le moteur de requetes Prisma s'y lie AU
+# DEMARRAGE. Sans lui, l'image se construit sans erreur, le conteneur demarre,
+# et chaque page rend un HTTP 500. Le symptome n'apparait donc qu'en production.
+RUN apk add --no-cache libc6-compat openssl
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
