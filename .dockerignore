@@ -1,0 +1,29 @@
+# ⚠️ Ne PAS exclure `public/` : les 3 931 photos produit et les 6 vignettes de
+# catégorie sont servies depuis l'image. Les exclure donnerait un site qui
+# démarre et s'affiche sans une seule image.
+
+.git
+.github
+node_modules
+.next
+out
+dist
+
+# Les secrets ne doivent jamais entrer dans une image publique.
+.env
+.env.*
+!.env.example
+
+# Outillage de moisson et d'import : non versionné de toute façon, mais on le
+# redit ici pour que le contexte de build reste léger.
+scripts
+
+# Divers
+.vscode
+.idea
+*.log
+npm-debug.log*
+coverage
+.DS_Store
+Thumbs.db
+README*.md

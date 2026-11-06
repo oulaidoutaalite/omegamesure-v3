@@ -7,6 +7,15 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
 
+  // ⚠️ Necessaire pour sortir de Vercel. En `standalone`, Next ecrit dans
+  // `.next/standalone` un serveur autonome avec SES SEULES dependances : l'image
+  // Docker tombe de ~1,2 Go (tout `node_modules`) a ~200 Mo, et demarre par
+  // `node server.js` sans `next start` ni npm.
+  // Les fichiers `public/` et `.next/static` ne sont PAS copies dedans par Next :
+  // c'est au Dockerfile de les mettre a cote, sinon les 3 931 photos produit et
+  // tout le CSS manquent a l'appel.
+  output: 'standalone',
+
   // Les branches create/update des formulaires admin ont ete reecrites : le
   // projet compile a zero erreur, on remet donc le garde-fou. `eslint` reste
   // tolere (avertissements de style uniquement).
