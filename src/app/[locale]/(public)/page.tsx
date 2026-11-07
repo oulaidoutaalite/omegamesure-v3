@@ -27,7 +27,16 @@ import { graph, organizationSchema, webSiteSchema } from '@/lib/schema-org'
 import { buildAlternates, buildSocial, getSeoBrand } from '@/lib/seo'
 import { getContactConfig, loadAllConfig, pickConfigText } from '@/lib/site-config'
 
-export const dynamic = 'force-dynamic'
+// ⚠️ Cette page etait en `force-dynamic` : chaque visiteur refaisait toutes les
+// requetes. Or le serveur est a New York et la base a Francfort — 98 ms
+// d'aller-retour par vague de requetes, et le carrousel en balaie 323
+// sous-categories avec leurs photos. Resultat mesure : 2,3 a 3,7 s par page.
+//
+// En ISR, la page est rendue une fois puis resservie pendant 5 minutes, et la
+// regeneration se fait en arriere-plan : le visiteur ne l'attend jamais. Une
+// modification faite dans l'admin met donc jusqu'a 5 minutes a apparaitre ici,
+// ce qui est le prix a payer — et reste invisible pour un catalogue.
+export const revalidate = 300
 
 function withLocale(path: string, locale: Locale): string {
   if (locale === defaultLocale) return path

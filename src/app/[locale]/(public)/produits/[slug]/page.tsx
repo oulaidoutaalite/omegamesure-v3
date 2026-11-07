@@ -18,7 +18,10 @@ import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
 import { breadcrumbSchema, graph, productSchema } from '@/lib/schema-org'
 import { buildAlternates, buildSocial, metaDescriptionFrom } from '@/lib/seo'
 
-export const dynamic = 'force-dynamic'
+// Meme raison que pour l'accueil. Une fiche produit ne change que lorsqu'on
+// l'edite dans l'admin ; la recalculer a chaque visite coute deux traversees de
+// l'Atlantique pour rien. Voir le commentaire detaille dans la page d'accueil.
+export const revalidate = 300
 
 type ImageJson = { url: string; alt?: string; isPrimary?: boolean }
 

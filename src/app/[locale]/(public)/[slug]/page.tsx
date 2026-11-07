@@ -15,7 +15,11 @@ import { pickLocaleField, type TranslationsJson } from '@/lib/i18n-helpers'
 import { breadcrumbSchema, graph, itemListSchema } from '@/lib/schema-org'
 import { buildAlternates, buildSocial } from '@/lib/seo'
 
-export const dynamic = 'force-dynamic'
+// Meme raison que pour l'accueil : la base est a Francfort, le serveur a New
+// York. Une page de categorie est identique pour tous les visiteurs, elle n'a
+// aucune raison d'etre recalculee a chaque appel. Voir le commentaire detaille
+// dans la page d'accueil.
+export const revalidate = 300
 
 type ImageJson = { url: string; alt?: string; isPrimary?: boolean }
 
